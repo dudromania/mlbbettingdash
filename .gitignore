@@ -1,0 +1,16 @@
+# MLB Dashboard — GitHub Pages repo
+# Only the index.html and JSON data files go to GitHub
+
+# Keep these:
+# index.html
+# data/processed/*.json
+# morning_run.bat
+# README.md
+
+# Ignore everything else
+*.pyc
+__pycache__/
+.env
+*.log
+.DS_Store
+Thumbs.db

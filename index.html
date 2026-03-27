@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MLB Edge</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:       #080c10;
+  --surface:  #0e1318;
+  --card:     #131920;
+  --border:   #1e2830;
+  --border2:  #243040;
+  --text:     #e8eef4;
+  --muted:    #5a7080;
+  --muted2:   #3a5060;
+  --blue:     #2d8cff;
+  --green:    #1db96a;
+  --amber:    #f59e0b;
+  --red:      #ef4444;
+  --cyan:     #06b6d4;
+  --font-head: 'Archivo Black', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'DM Mono', monospace;
+  --radius:   8px;
+  --radius-lg:12px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* ── HEADER ── */
+header {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-family: var(--font-head);
+  font-size: 20px;
+  color: var(--blue);
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.logo span { color: var(--text); font-size: 13px; font-family: var(--font-body); font-weight: 300; letter-spacing: 0; }
+
+#header-date { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+
+/* ── NAV ── */
+nav {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0 24px;
+  display: flex;
+  gap: 2px;
+  overflow-x: auto;
+}
+nav::-webkit-scrollbar { display: none; }
+
+.nav-tab {
+  padding: 12px 18px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--muted);
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  transition: color .15s, border-color .15s;
+  user-select: none;
+}
+.nav-tab:hover { color: var(--text); }
+.nav-tab.active { color: var(--blue); border-bottom-color: var(--blue); }
+
+/* ── LAYOUT ── */
+main { padding: 24px; max-width: 1400px; margin: 0 auto; }
+.tab-panel { display: none; }
+.tab-panel.active { display: block; animation: fadeIn .2s ease; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ── SECTION TITLES ── */
+.section-title {
+  font-family: var(--font-head);
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin: 28px 0 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+.section-title:first-child { margin-top: 0; }
+
+/* ── METRIC ROW ── */
+.metrics-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.metric {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
+}
+.metric-val {
+  font-family: var(--font-head);
+  font-size: 28px;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+.metric-lbl {
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: .8px;
+  text-transform: uppercase;
+}
+
+/* ── CARDS ── */
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 12px;
+  transition: border-color .15s;
+}
+.card:hover { border-color: var(--border2); }
+.card-header {
+  padding: 12px 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: .5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-body { padding: 16px; }
+
+/* ── BADGES ── */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  letter-spacing: .3px;
+}
+.badge-strong { background: #f59e0b22; color: var(--amber); border: 1px solid #f59e0b44; }
+.badge-lean   { background: #1db96a22; color: var(--green); border: 1px solid #1db96a44; }
+.badge-slight { background: #2d8cff22; color: var(--blue);  border: 1px solid #2d8cff44; }
+.badge-none   { background: #1e283088; color: var(--muted); border: 1px solid var(--border); }
+.badge-w      { background: #1db96a33; color: var(--green); }
+.badge-l      { background: #ef444433; color: var(--red); }
+.badge-p      { background: #1e2830; color: var(--muted); }
+
+/* ── GAME CARDS ── */
+.game-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px 20px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: 200px 1fr 180px 180px;
+  gap: 20px;
+  align-items: center;
+  transition: border-color .15s, background .15s;
+  cursor: default;
+}
+.game-card:hover { border-color: var(--border2); background: #131920ee; }
+.game-card.has-edge { border-left: 3px solid var(--green); }
+.game-card.has-strong { border-left: 3px solid var(--amber); }
+
+.team-matchup { }
+.team-row { display: flex; align-items: center; gap: 8px; margin: 3px 0; }
+.team-abbr { font-family: var(--font-head); font-size: 15px; min-width: 36px; }
+.team-sp { font-size: 12px; color: var(--muted); }
+.at-sym { color: var(--muted2); font-size: 11px; padding: 2px 0; }
+.game-time { font-family: var(--font-mono); font-size: 11px; color: var(--muted); margin-bottom: 8px; }
+
+.win-prob-section { }
+.prob-label { font-size: 11px; color: var(--muted); margin-bottom: 6px; display: flex; justify-content: space-between; }
+.prob-bar { height: 10px; border-radius: 5px; background: var(--border); overflow: hidden; display: flex; }
+.prob-bar-away { background: #ef444466; }
+.prob-bar-home { background: #1db96a66; }
+.prob-nums { display: flex; justify-content: space-between; margin-top: 4px; font-size: 12px; font-weight: 600; }
+
+.model-section { }
+.model-row { display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 4px; }
+.model-row .lbl { color: var(--muted); }
+.model-row .val { font-weight: 600; }
+.vegas-note { font-size: 11px; color: var(--muted); margin-top: 6px; font-family: var(--font-mono); }
+
+.edge-section { display: flex; flex-direction: column; gap: 6px; align-items: flex-end; }
+.conf-wrap { display: flex; align-items: center; gap: 8px; margin-top: 6px; }
+.conf-bar-outer { width: 70px; height: 6px; background: var(--border); border-radius: 3px; overflow: hidden; }
+.conf-bar-inner { height: 100%; border-radius: 3px; }
+.conf-num { font-family: var(--font-mono); font-size: 12px; }
+
+/* ── BEST BETS ── */
+.best-bets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 12px;
+  margin-bottom: 28px;
+}
+.best-bet-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 16px;
+  border-left: 3px solid var(--green);
+}
+.best-bet-card.strong { border-left-color: var(--amber); }
+.bb-meta { font-size: 11px; color: var(--muted); margin-bottom: 8px; font-family: var(--font-mono); }
+.bb-matchup { font-size: 16px; font-family: var(--font-head); margin-bottom: 2px; }
+.bb-pitchers { font-size: 12px; color: var(--muted); margin-bottom: 12px; }
+.bb-bottom { display: flex; justify-content: space-between; align-items: flex-end; }
+.bb-bet { }
+.bb-bet-type { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .8px; }
+.bb-bet-val { font-family: var(--font-head); font-size: 20px; }
+.bb-edge { text-align: right; }
+.bb-edge-num { font-family: var(--font-head); font-size: 28px; }
+.bb-edge-sub { font-size: 10px; color: var(--muted); }
+
+/* ── TABLE ── */
+.tbl-wrap { overflow-x: auto; border: 1px solid var(--border); border-radius: var(--radius-lg); }
+table { width: 100%; border-collapse: collapse; }
+thead th {
+  background: var(--surface);
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 11px;
+  color: var(--muted);
+  letter-spacing: .8px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  border-bottom: 1px solid var(--border);
+  font-weight: 500;
+  cursor: pointer;
+  user-select: none;
+}
+thead th:hover { color: var(--text); }
+thead th.sort-asc::after { content: ' ↑'; color: var(--blue); }
+thead th.sort-desc::after { content: ' ↓'; color: var(--blue); }
+tbody tr { border-bottom: 1px solid var(--border); transition: background .1s; }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:hover { background: #1319208a; }
+tbody td { padding: 10px 14px; white-space: nowrap; }
+.td-center { text-align: center; }
+.td-right { text-align: right; }
+.td-mono { font-family: var(--font-mono); font-size: 12px; }
+.td-team { font-weight: 600; }
+
+/* ── FILTERS ── */
+.filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+.filter-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  font-size: 12px;
+  font-family: var(--font-body);
+  cursor: pointer;
+  transition: all .15s;
+}
+.filter-btn:hover { border-color: var(--border2); color: var(--text); }
+.filter-btn.active { background: var(--blue); color: #fff; border-color: var(--blue); }
+
+/* ── PITCHER CARDS ── */
+.pitcher-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 16px;
+}
+.pitcher-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.pitcher-header {
+  padding: 14px 16px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.pitcher-name { font-family: var(--font-head); font-size: 17px; letter-spacing: .3px; }
+.pitcher-meta { font-size: 12px; color: var(--muted); margin-top: 3px; }
+.pitcher-era { text-align: right; }
+.era-val { font-family: var(--font-head); font-size: 30px; line-height: 1; }
+.era-lbl { font-size: 10px; color: var(--muted); letter-spacing: .5px; text-transform: uppercase; }
+.stat-pills { display: flex; flex-wrap: wrap; gap: 6px; padding: 12px 16px; border-bottom: 1px solid var(--border); }
+.stat-pill {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 12px;
+  text-align: center;
+}
+.sp-val { font-family: var(--font-head); font-size: 16px; line-height: 1.2; }
+.sp-lbl { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+.pitcher-body { display: grid; grid-template-columns: 1fr 1fr; gap: 0; }
+.pitcher-col { padding: 14px 16px; }
+.pitcher-col:first-child { border-right: 1px solid var(--border); }
+.col-title { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: .8px; margin-bottom: 10px; }
+.starts-table { width: 100%; font-size: 12px; border-collapse: collapse; }
+.starts-table th { color: var(--muted); font-weight: 400; text-align: left; padding: 2px 5px; font-size: 10px; }
+.starts-table td { padding: 4px 5px; border-top: 1px solid #1e283044; }
+.k-pred-big { font-family: var(--font-head); font-size: 44px; line-height: 1; color: var(--cyan); }
+.k-pred-range { font-size: 12px; color: var(--muted); margin-top: 4px; }
+.k-pred-details { margin-top: 10px; font-size: 12px; color: var(--muted); line-height: 1.8; }
+.pitch-pills { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
+.pitch-pill {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  padding: 3px 10px;
+  font-size: 11px;
+  font-family: var(--font-mono);
+}
+
+/* ── STANDINGS ── */
+.standings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+  gap: 16px;
+}
+.division-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+}
+.division-header {
+  padding: 10px 14px;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  font-family: var(--font-head);
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: var(--blue);
+  text-transform: uppercase;
+}
+.std-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+.std-table th { padding: 8px 10px; font-size: 10px; color: var(--muted); text-align: left; font-weight: 500; letter-spacing: .5px; }
+.std-table td { padding: 9px 10px; border-top: 1px solid var(--border); }
+.std-table tr:hover td { background: #1e283033; }
+.team-name-cell { font-weight: 600; }
+.win-pct-cell { font-family: var(--font-mono); }
+.gb-cell { font-family: var(--font-mono); color: var(--muted); }
+.rd-cell { font-family: var(--font-mono); }
+
+/* ── TRENDS ── */
+.trends-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.trend-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--border2);
+  border-radius: 0 var(--radius-lg) var(--radius-lg) 0;
+  padding: 12px 16px;
+  margin-bottom: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: border-color .15s;
+}
+.trend-card.hot  { border-left-color: var(--amber); }
+.trend-card.cold { border-left-color: var(--cyan); }
+.trend-card.neutral { border-left-color: var(--muted2); }
+.trend-name { font-weight: 600; font-size: 14px; margin-bottom: 3px; }
+.trend-sub { font-size: 12px; color: var(--muted); }
+.trend-delta { font-family: var(--font-head); font-size: 22px; }
+.trend-delta-sub { font-size: 10px; color: var(--muted); text-align: right; }
+
+/* ── SERIES MOMENTUM ── */
+.series-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 12px;
+  margin-top: 14px;
+}
+.series-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 14px;
+}
+.series-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px; }
+.series-matchup { font-family: var(--font-head); font-size: 15px; }
+.series-record { font-size: 12px; }
+.series-games { display: flex; gap: 6px; flex-wrap: wrap; }
+.series-game {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 11px;
+  text-align: center;
+  min-width: 54px;
+}
+.series-game.final-home { background: #1db96a18; border-color: #1db96a44; }
+.series-game.final-away { background: #ef444418; border-color: #ef444444; }
+.sg-score { font-family: var(--font-mono); font-weight: 500; }
+.sg-date  { color: var(--muted); font-size: 10px; margin-top: 2px; }
+
+/* ── BATTER PROPS ── */
+.batter-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 12px;
+}
+.batter-prop-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 14px 16px;
+  border-left: 3px solid var(--border2);
+}
+.batter-prop-card.lean   { border-left-color: var(--green); }
+.batter-prop-card.strong { border-left-color: var(--amber); }
+.bp-game { font-size: 11px; color: var(--muted); margin-bottom: 6px; font-family: var(--font-mono); }
+.bp-top { display: flex; justify-content: space-between; align-items: flex-start; }
+.bp-team { font-family: var(--font-head); font-size: 16px; }
+.bp-vs { font-size: 12px; color: var(--muted); margin-top: 2px; }
+.bp-prop { text-align: right; }
+.bp-prop-type { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: .5px; }
+.bp-prop-val { font-family: var(--font-head); font-size: 20px; }
+.bp-stats { display: flex; gap: 16px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); }
+.bp-stat { font-size: 12px; }
+.bp-stat .lbl { color: var(--muted); }
+.bp-stat .val { font-weight: 600; }
+
+/* ── LOADING ── */
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  color: var(--muted);
+  gap: 12px;
+}
+.spinner {
+  width: 32px; height: 32px;
+  border: 2px solid var(--border);
+  border-top-color: var(--blue);
+  border-radius: 50%;
+  animation: spin .8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.empty-state {
+  text-align: center;
+  padding: 60px 20px;
+  color: var(--muted);
+}
+.empty-icon { font-size: 36px; margin-bottom: 10px; }
+.empty-msg { font-size: 14px; }
+.empty-sub { font-size: 12px; margin-top: 6px; font-family: var(--font-mono); }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 900px) {
+  .game-card { grid-template-columns: 1fr 1fr; gap: 14px; }
+  .trends-grid { grid-template-columns: 1fr; }
+  .pitcher-grid { grid-template-columns: 1fr; }
+  .pitcher-body { grid-template-columns: 1fr; }
+  .pitcher-col:first-child { border-right: none; border-bottom: 1px solid var(--border); }
+}
+@media (max-width: 600px) {
+  main { padding: 14px; }
+  .game-card { grid-template-columns: 1fr; gap: 12px; }
+  .metrics-row { grid-template-columns: repeat(2, 1fr); }
+}
+</style>
+</head>
+<body>
+
+
+<header>
+  <div class="logo">⚾ MLB EDGE <span id="header-date"></span></div>
+  <div id="header-date-right" style="font-family:var(--font-mono);font-size:12px;color:var(--muted)"></div>
+</header>
+
+<nav id="main-nav">
+  <div class="nav-tab active" data-tab="model">Model Output</div>
+  <div class="nav-tab" data-tab="games">Today's Games</div>
+  <div class="nav-tab" data-tab="pitchers">Pitchers</div>
+  <div class="nav-tab" data-tab="batters">Batter Props</div>
+  <div class="nav-tab" data-tab="standings">Standings</div>
+  <div class="nav-tab" data-tab="trends">Trends</div>
+</nav>
+
+<main>
+
+<!-- ── TAB: MODEL OUTPUT ── -->
+<div id="tab-model" class="tab-panel active">
+  <div id="model-metrics" class="metrics-row"></div>
+  <div class="section-title">Best Bets</div>
+  <div id="best-bets" class="best-bets-grid"></div>
+  <div class="section-title">All Predictions</div>
+  <div class="filters" id="model-filters">
+    <button class="filter-btn active" data-filter="all">All Games</button>
+    <button class="filter-btn" data-filter="edge">Has Edge</button>
+    <button class="filter-btn" data-filter="spread">Run Line Only</button>
+    <button class="filter-btn" data-filter="total">Total Only</button>
+  </div>
+  <div class="tbl-wrap">
+    <table id="model-table">
+      <thead>
+        <tr>
+          <th data-col="time">Time</th>
+          <th data-col="matchup">Matchup</th>
+          <th data-col="pitchers">Pitchers</th>
+          <th data-col="margin" class="td-center">Proj Margin</th>
+          <th data-col="total" class="td-center">Proj Total</th>
+          <th data-col="win_prob" class="td-center">Home Win%</th>
+          <th data-col="rl_edge" class="td-center">RL Edge</th>
+          <th data-col="ou_edge" class="td-center">O/U Edge</th>
+          <th data-col="best_bet">Best Bet</th>
+          <th data-col="conf" class="td-center">Conf</th>
+        </tr>
+      </thead>
+      <tbody id="model-tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ── TAB: TODAY'S GAMES ── -->
+<div id="tab-games" class="tab-panel">
+  <div class="section-title">Game Schedule — Chronological</div>
+  <div id="games-list"></div>
+</div>
+
+<!-- ── TAB: PITCHERS ── -->
+<div id="tab-pitchers" class="tab-panel">
+  <div class="filters" id="pitcher-filters" style="margin-bottom:20px">
+    <button class="filter-btn active" data-psort="kpred">K Prediction ↓</button>
+    <button class="filter-btn" data-psort="era">ERA ↑</button>
+    <button class="filter-btn" data-psort="k9">K/9 ↓</button>
+    <button class="filter-btn" data-psort="fip">FIP ↑</button>
+    <button class="filter-btn" data-psort="name">Name</button>
+  </div>
+  <div id="pitcher-grid" class="pitcher-grid"></div>
+</div>
+
+<!-- ── TAB: BATTER PROPS ── -->
+<div id="tab-batters" class="tab-panel">
+  <div class="section-title">Best Batter Prop Matchups</div>
+  <p style="color:var(--muted);font-size:13px;margin-bottom:20px">
+    Favorable situations based on opposing pitcher K rate, ERA trend, and team platoon splits.
+  </p>
+  <div id="batter-grid" class="batter-grid"></div>
+</div>
+
+<!-- ── TAB: STANDINGS ── -->
+<div id="tab-standings" class="tab-panel">
+  <div class="filters" id="standings-filters" style="margin-bottom:20px">
+    <button class="filter-btn active" data-league="both">Both Leagues</button>
+    <button class="filter-btn" data-league="AL">American League</button>
+    <button class="filter-btn" data-league="NL">National League</button>
+  </div>
+  <div id="standings-grid" class="standings-grid"></div>
+</div>
+
+<!-- ── TAB: TRENDS ── -->
+<div id="tab-trends" class="tab-panel">
+  <div class="section-title">🔥 Hot & Cold — Pitchers</div>
+  <div id="trending-pitchers"></div>
+  <div class="section-title" style="margin-top:28px">📈 Team Form — Last 5 Games</div>
+  <div id="trending-teams"></div>
+  <div class="section-title" style="margin-top:28px">Series Momentum</div>
+  <div id="series-momentum" class="series-grid"></div>
+</div>
+
+</main>
+
+<script>
+// ── DATA ────────────────────────────────────────────────────────────────────
+const DATA = { today: null, series: null, pitchers: null, history: null };
+const BASE = '';  // set to your GitHub Pages base URL in production
+
+async function loadJSON(path, fallback = null) {
+  try {
+    const r = await fetch(path);
+    if (!r.ok) throw new Error(r.status);
+    return await r.json();
+  } catch {
+    return fallback;
+  }
+}
+
+async function loadAllData() {
+  const [today, series, pitchers, history] = await Promise.all([
+    loadJSON('data/processed/picks_today.json',      { date: today_str(), games: SAMPLE_PICKS }),
+    loadJSON('data/processed/series_schedule.json',  SAMPLE_SERIES),
+    loadJSON('data/processed/pitcher_cards.json',    SAMPLE_PITCHERS),
+    loadJSON('data/processed/picks_history.json',    []),
+  ]);
+
+  DATA.today    = today;
+  DATA.series   = Array.isArray(series) ? series : [];
+  DATA.pitchers = Array.isArray(pitchers) ? pitchers : [];
+  DATA.history  = Array.isArray(history) ? history : [];
+
+  // Normalize games array
+  DATA.games = (DATA.today?.games || DATA.today || [])
+    .sort((a,b) => (a.game_time_ct||'').localeCompare(b.game_time_ct||''));
+
+  renderAll();
+}
+
+// ── ROUTING ─────────────────────────────────────────────────────────────────
+let activeTab = 'model';
+
+document.querySelectorAll('.nav-tab').forEach(t => {
+  t.addEventListener('click', () => {
+    document.querySelectorAll('.nav-tab').forEach(x => x.classList.remove('active'));
+    document.querySelectorAll('.tab-panel').forEach(x => x.classList.remove('active'));
+    t.classList.add('active');
+    document.getElementById('tab-' + t.dataset.tab).classList.add('active');
+    activeTab = t.dataset.tab;
+  });
+});
+
+// ── RENDER ALL ───────────────────────────────────────────────────────────────
+function renderAll() {
+  renderHeader();
+  renderModelTab();
+  renderGamesTab();
+  renderPitchersTab();
+  renderBattersTab();
+  renderStandingsTab();
+  renderTrendsTab();
+}
+
+// ── HEADER ───────────────────────────────────────────────────────────────────
+function renderHeader() {
+  const d = DATA.today?.date || today_str();
+  document.getElementById('header-date').textContent = '';
+  document.getElementById('header-date-right').textContent =
+    new Date(d + 'T12:00:00').toLocaleDateString('en-US',
+      { weekday:'long', month:'long', day:'numeric', year:'numeric' });
+}
+
+// ── MODEL TAB ────────────────────────────────────────────────────────────────
+let modelFilter = 'all';
+
+function renderModelTab() {
+  const games = DATA.games;
+
+  // Metrics
+  const edges_rl  = games.filter(g => ['STRONG','LEAN'].includes(g.spread_edge_label)).length;
+  const edges_ou  = games.filter(g => ['STRONG','LEAN'].includes(g.total_edge_label)).length;
+  const avg_conf  = games.length ? Math.round(games.reduce((s,g)=>s+(g.spread_confidence||50),0)/games.length) : 0;
+  const best_edge = games.reduce((m,g) => Math.max(m, Math.abs((g.edge_spread||0)*100)), 0).toFixed(1);
+
+  document.getElementById('model-metrics').innerHTML = [
+    metric(games.length, 'Games Today', 'var(--blue)'),
+    metric(edges_rl, 'RL Edges', 'var(--green)'),
+    metric(edges_ou, 'O/U Edges', 'var(--amber)'),
+    metric(avg_conf, 'Avg Confidence', 'var(--muted)'),
+    metric('+' + best_edge + '%', 'Best Edge', 'var(--amber)'),
+  ].join('');
+
+  // Best bets
+  const best = games
+    .filter(g => ['STRONG','LEAN'].includes(g.spread_edge_label) ||
+                 ['STRONG','LEAN'].includes(g.total_edge_label))
+    .sort((a,b) => (b.edge_score||0)-(a.edge_score||0))
+    .slice(0,6);
+
+  document.getElementById('best-bets').innerHTML = best.length
+    ? best.map(bestBetCard).join('')
+    : '<div class="empty-state"><div class="empty-icon">📊</div><div class="empty-msg">No strong edges today</div></div>';
+
+  renderModelTable();
+
+  // Filter buttons
+  document.querySelectorAll('#model-filters .filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#model-filters .filter-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      modelFilter = btn.dataset.filter;
+      renderModelTable();
+    });
+  });
+}
+
+function renderModelTable() {
+  let games = [...DATA.games];
+  if (modelFilter === 'edge')
+    games = games.filter(g => g.spread_edge_label !== 'NONE' && g.spread_edge_label !== 'NO LINE' ||
+                               g.total_edge_label  !== 'NONE' && g.total_edge_label  !== 'NO LINE');
+  if (modelFilter === 'spread') games = games.filter(g => g.spread_bet);
+  if (modelFilter === 'total')  games = games.filter(g => g.total_bet);
+
+  document.getElementById('model-tbody').innerHTML = games.map(g => {
+    const margin = g.predicted_margin || 0;
+    const favTeam = margin >= 0 ? g.home_abbr : g.away_abbr;
+    const favAmt  = Math.abs(margin).toFixed(1);
+    const conf    = g.spread_confidence || 50;
+    const confCol = conf>=70?'var(--green)':conf>=55?'var(--blue)':conf>=40?'var(--amber)':'var(--muted)';
+    const rlEdge  = ((g.edge_spread||0)*100).toFixed(1);
+    const ouEdge  = ((g.edge_total||0)*100).toFixed(1);
+    const bestBet = g.spread_bet
+      ? `RL: ${g.spread_bet==='home_cover' ? g.home_abbr+' '+g.vegas_spread : g.away_abbr+' +1.5'}`
+      : g.total_bet
+      ? `O/U: ${g.total_bet.toUpperCase()} ${g.vegas_total}`
+      : '—';
+
+    return `<tr>
+      <td class="td-mono">${g.game_time_ct||'—'}</td>
+      <td class="td-team">${g.away_abbr} @ ${g.home_abbr}</td>
+      <td style="color:var(--muted);font-size:12px;max-width:200px;overflow:hidden;text-overflow:ellipsis">${(g.away_sp||'TBD')} vs ${(g.home_sp||'TBD')}</td>
+      <td class="td-center td-mono">${favTeam} -${favAmt}</td>
+      <td class="td-center td-mono">${(g.predicted_total||0).toFixed(1)}</td>
+      <td class="td-center">${Math.round((g.home_win_prob||.5)*100)}%</td>
+      <td class="td-center">${badge(g.spread_edge_label)} <span class="td-mono" style="font-size:11px">${rlEdge>0?'+':''}${rlEdge}%</span></td>
+      <td class="td-center">${badge(g.total_edge_label)} <span class="td-mono" style="font-size:11px">${ouEdge>0?'+':''}${ouEdge}%</span></td>
+      <td style="font-size:12px;font-weight:600">${bestBet}</td>
+      <td class="td-center">
+        <div style="display:flex;align-items:center;gap:6px;justify-content:center">
+          <div style="width:50px;height:5px;background:var(--border);border-radius:3px;overflow:hidden">
+            <div style="width:${conf}%;height:100%;background:${confCol};border-radius:3px"></div>
+          </div>
+          <span class="td-mono" style="font-size:11px;color:${confCol}">${conf}</span>
+        </div>
+      </td>
+    </tr>`;
+  }).join('') || `<tr><td colspan="10" style="text-align:center;padding:40px;color:var(--muted)">No games match filter</td></tr>`;
+}
+
+// ── GAMES TAB ────────────────────────────────────────────────────────────────
+function renderGamesTab() {
+  const games = DATA.games;
+  document.getElementById('games-list').innerHTML = games.length
+    ? games.map(gameCard).join('')
+    : empty('No games today');
+}
+
+function gameCard(g) {
+  const margin  = g.predicted_margin || 0;
+  const favTeam = margin >= 0 ? g.home_name : g.away_name;
+  const favAmt  = Math.abs(margin).toFixed(1);
+  const hp      = Math.round((g.home_win_prob||.5)*100);
+  const ap      = 100 - hp;
+  const conf    = g.spread_confidence || 50;
+  const confCol = conf>=70?'var(--green)':conf>=55?'var(--blue)':conf>=40?'var(--amber)':'var(--muted)';
+  const hasStrong = ['STRONG','LEAN'].includes(g.spread_edge_label);
+  const hasEdge   = hasStrong || ['STRONG','LEAN'].includes(g.total_edge_label);
+  const cls = hasStrong?'has-strong':hasEdge?'has-edge':'';
+
+  return `<div class="game-card ${cls}">
+    <div class="team-matchup">
+      <div class="game-time">${g.game_time_ct||'TBD'}</div>
+      <div class="team-row">
+        <span class="team-abbr">${g.away_abbr}</span>
+        <span class="team-sp">${g.away_sp||'TBD'}</span>
+      </div>
+      <div class="at-sym">@</div>
+      <div class="team-row">
+        <span class="team-abbr">${g.home_abbr}</span>
+        <span class="team-sp">${g.home_sp||'TBD'}</span>
+      </div>
+    </div>
+    <div class="win-prob-section">
+      <div class="prob-label">
+        <span>${g.away_abbr} ${ap}%</span>
+        <span>${g.home_abbr} ${hp}%</span>
+      </div>
+      <div class="prob-bar">
+        <div class="prob-bar-away" style="width:${ap}%"></div>
+        <div class="prob-bar-home" style="width:${hp}%"></div>
+      </div>
+      <div class="prob-nums">
+        <span style="color:var(--red)">${ap}%</span>
+        <span style="color:var(--green)">${hp}%</span>
+      </div>
+    </div>
+    <div class="model-section">
+      <div class="model-row">
+        <span class="lbl">Margin</span>
+        <span class="val">${favTeam} -${favAmt}</span>
+      </div>
+      <div class="model-row">
+        <span class="lbl">Total</span>
+        <span class="val">${(g.predicted_total||0).toFixed(1)}</span>
+      </div>
+      ${g.vegas_spread != null
+        ? `<div class="vegas-note">Vegas: ${g.vegas_spread>0?'+':''}${g.vegas_spread} | O/U ${g.vegas_total}</div>`
+        : ''}
+    </div>
+    <div class="edge-section">
+      <div>${badge(g.spread_edge_label)} <span style="font-size:11px;color:var(--muted)">RL</span></div>
+      <div>${badge(g.total_edge_label)} <span style="font-size:11px;color:var(--muted)">O/U</span></div>
+      <div class="conf-wrap">
+        <div class="conf-bar-outer">
+          <div class="conf-bar-inner" style="width:${conf}%;background:${confCol}"></div>
+        </div>
+        <span class="conf-num" style="color:${confCol}">${conf}</span>
+      </div>
+    </div>
+  </div>`;
+}
+
+// ── PITCHERS TAB ─────────────────────────────────────────────────────────────
+let pitcherSort = 'kpred';
+
+function renderPitchersTab() {
+  let cards = [...DATA.pitchers];
+  if (!cards.length) { document.getElementById('pitcher-grid').innerHTML = empty('No pitcher data — run model first', 'python main.py --mode today'); return; }
+
+  const sort = pitcherSort;
+  cards.sort((a,b) => {
+    if (sort==='kpred') return (b.k_prediction?.predicted_ks||0) - (a.k_prediction?.predicted_ks||0);
+    if (sort==='era')   return (a.season_stats?.ERA||99) - (b.season_stats?.ERA||99);
+    if (sort==='k9')    return (b.season_stats?.K9||0)  - (a.season_stats?.K9||0);
+    if (sort==='fip')   return (a.season_stats?.FIP||99)- (b.season_stats?.FIP||99);
+    return (a.name||'').localeCompare(b.name||'');
+  });
+
+  document.getElementById('pitcher-grid').innerHTML = cards.map(pitcherCard).join('');
+
+  document.querySelectorAll('#pitcher-filters .filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#pitcher-filters .filter-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      pitcherSort = btn.dataset.psort;
+      renderPitchersTab();
+    });
+  });
+}
+
+function pitcherCard(c) {
+  const ss   = c.season_stats || {};
+  const kp   = c.k_prediction || {};
+  const starts = (c.last_starts || []).slice(0,5);
+  const arsenal = c.arsenal || [];
+
+  const era     = ss.ERA ?? '—';
+  const eraNum  = parseFloat(era);
+  const eraCol  = eraNum < 3.5 ? 'var(--green)' : eraNum > 4.5 ? 'var(--red)' : 'var(--amber)';
+  const trend   = c.trend || 'neutral';
+  const trendCol= trend==='improving'?'var(--green)':trend==='declining'?'var(--red)':'var(--muted)';
+
+  const startsRows = starts.map(s => {
+    const erCol = (s.ER||0)===0?'var(--green)':(s.ER||0)>=4?'var(--red)':'var(--text)';
+    const dt = s.date ? new Date(s.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}) : '—';
+    return `<tr>
+      <td>${dt}</td><td>${s.opponent||'—'}</td>
+      <td>${s.IP||'—'}</td>
+      <td style="color:var(--cyan);font-weight:600">${s.K??'—'}</td>
+      <td style="color:${erCol}">${s.ER??'—'}</td>
+      <td>${s.BB??'—'}</td>
+      <td style="color:var(--muted)">${s.pitches||'—'}</td>
+    </tr>`;
+  }).join('');
+
+  const pitchPills = arsenal.slice(0,6).map(p =>
+    `<span class="pitch-pill">${p.pitch_name||p.pitch_type} ${p.usage_pct}%${p.avg_velo?' · '+p.avg_velo+'mph':''}</span>`
+  ).join('');
+
+  const kPred = kp.predicted_ks;
+
+  return `<div class="pitcher-card">
+    <div class="pitcher-header">
+      <div>
+        <div class="pitcher-name" style="border-left:3px solid ${trendCol};padding-left:10px">${trend==='improving'?'↑':trend==='declining'?'↓':'→'} ${c.name||'Unknown'}</div>
+        <div class="pitcher-meta">${c.team_abbr||''} vs ${c.opponent||''} · ${c.game_time_ct||''} · ${c.days_rest!=null?c.days_rest+' days rest':'—'}</div>
+      </div>
+      <div class="pitcher-era">
+        <div class="era-val" style="color:${eraCol}">${era}</div>
+        <div class="era-lbl">ERA</div>
+      </div>
+    </div>
+    <div class="stat-pills">
+      ${statPill('FIP', ss.FIP??'—')}
+      ${statPill('WHIP', ss.WHIP??'—')}
+      ${statPill('K/9', ss.K9??'—')}
+      ${statPill('BB/9', ss.BB9??'—')}
+      ${statPill('K%', ss.K_pct!=null?ss.K_pct+'%':'—')}
+      ${statPill('IP', ss.IP??'—')}
+    </div>
+    <div class="pitcher-body">
+      <div class="pitcher-col">
+        <div class="col-title">Last ${starts.length} Starts</div>
+        ${starts.length
+          ? `<table class="starts-table">
+              <thead><tr><th>Date</th><th>Opp</th><th>IP</th><th>K</th><th>ER</th><th>BB</th><th>Pit</th></tr></thead>
+              <tbody>${startsRows}</tbody>
+             </table>`
+          : '<div style="color:var(--muted);font-size:12px">No start data</div>'}
+      </div>
+      <div class="pitcher-col">
+        <div class="col-title">K Prediction vs ${c.opponent||'Opp'}</div>
+        ${kPred != null ? `
+          <div class="k-pred-big">${kPred}</div>
+          <div class="k-pred-range">Range: ${kp.k_low_25||'?'}–${kp.k_high_75||'?'} (25–75th pct)</div>
+          <div class="k-pred-details">
+            Blended K/9: ${kp.blended_k9||'—'}<br>
+            Opp K%: ${kp.opp_k_pct||'—'}% (${(kp.opp_k_pct_vs_lg||0)>=0?'+':''}${kp.opp_k_pct_vs_lg||'—'}% vs avg)<br>
+            Expected IP: ${kp.expected_ip||'—'}
+          </div>
+        ` : '<div style="color:var(--muted);font-size:12px">—</div>'}
+        ${pitchPills ? `
+          <div class="col-title" style="margin-top:14px">Arsenal</div>
+          <div class="pitch-pills">${pitchPills}</div>
+        ` : ''}
+      </div>
+    </div>
+  </div>`;
+}
+
+// ── BATTERS TAB ──────────────────────────────────────────────────────────────
+function renderBattersTab() {
+  const games   = DATA.games;
+  const pitchers= DATA.pitchers;
+  const props   = [];
+
+  games.forEach(g => {
+    ['home','away'].forEach(side => {
+      const battingTeam = side==='home' ? g.home_abbr : g.away_abbr;
+      const oppSP       = side==='home' ? g.away_sp   : g.home_sp;
+      const oppCard     = pitchers.find(c => c.name === oppSP);
+
+      const spK9    = oppCard?.season_stats?.K9   ?? 8.5;
+      const spERA   = oppCard?.season_stats?.ERA  ?? 4.1;
+      const spWHIP  = oppCard?.season_stats?.WHIP ?? 1.28;
+      const spTrend = oppCard?.trend ?? 'neutral';
+
+      // Edge: positive = good for hitters
+      const hitsEdge = parseFloat((((8.5 - spK9) * 0.12) + ((1.28 - spWHIP) * 0.5)).toFixed(2));
+      const tbEdge   = parseFloat((((8.5 - spK9) * 0.08) + ((4.1 - spERA) * 0.06)).toFixed(2));
+
+      if (Math.abs(hitsEdge) > 0.03 || spTrend === 'declining') {
+        const propType = spTrend==='declining' || spERA > 4.5 ? 'Hits OVER' : spK9>9.5 ? 'Ks UNDER' : 'Hits OVER';
+        const edge = propType==='Hits OVER' ? hitsEdge : -hitsEdge * 0.8;
+        const label = Math.abs(edge) >= 0.08 ? 'strong' : 'lean';
+        props.push({ game: `${g.away_abbr} @ ${g.home_abbr}`, time: g.game_time_ct,
+          battingTeam, oppSP: oppSP||'TBD', spK9, spERA, spWHIP, spTrend, propType,
+          edge: Math.abs(edge*100).toFixed(1), label,
+          trendIcon: spTrend==='improving'?'↑':spTrend==='declining'?'↓':'→' });
+      }
+    });
+  });
+
+  props.sort((a,b) => parseFloat(b.edge)-parseFloat(a.edge));
+
+  document.getElementById('batter-grid').innerHTML = props.length
+    ? props.slice(0,12).map(p => {
+        const col = p.label==='strong' ? 'var(--amber)' : 'var(--green)';
+        return `<div class="batter-prop-card ${p.label}">
+          <div class="bp-game">${p.time} · ${p.game}</div>
+          <div class="bp-top">
+            <div>
+              <div class="bp-team">${p.battingTeam} Batters</div>
+              <div class="bp-vs">vs ${p.oppSP} ${p.trendIcon}</div>
+            </div>
+            <div class="bp-prop">
+              <div class="bp-prop-type">${p.propType}</div>
+              <div class="bp-prop-val" style="color:${col}">+${p.edge}%</div>
+            </div>
+          </div>
+          <div class="bp-stats">
+            <div class="bp-stat"><div class="lbl">SP K/9</div><div class="val">${p.spK9}</div></div>
+            <div class="bp-stat"><div class="lbl">SP ERA</div><div class="val">${p.spERA}</div></div>
+            <div class="bp-stat"><div class="lbl">SP WHIP</div><div class="val">${p.spWHIP}</div></div>
+            <div class="bp-stat"><div class="lbl">Trend</div><div class="val" style="text-transform:capitalize">${p.spTrend}</div></div>
+          </div>
+        </div>`;
+      }).join('')
+    : empty('No strong batter matchups today');
+}
+
+// ── STANDINGS TAB ────────────────────────────────────────────────────────────
+let standingsLeague = 'both';
+
+async function renderStandingsTab() {
+  const el = document.getElementById('standings-grid');
+  el.innerHTML = `<div class="loading"><div class="spinner"></div><span>Loading standings...</span></div>`;
+
+  let standings = [];
+  try {
+    const r = await fetch('https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason&hydrate=team');
+    const data = await r.json();
+    data.records?.forEach(div => {
+      const divName = div.division?.name || '';
+      const league  = divName.includes('American') ? 'AL' : 'NL';
+      const division= divName.replace('American League ','').replace('National League ','');
+      div.teamRecords?.forEach(tr => {
+        const rs = parseInt(tr.runsScored||0), ra = parseInt(tr.runsAllowed||0);
+        const w = tr.wins, l = tr.losses;
+        standings.push({
+          team:    tr.team.abbreviation, name: tr.team.name,
+          league, division, W:w, L:l,
+          pct:    (w/(w+l+.0001)).toFixed(3),
+          GB:     tr.divisionGamesBack||'—',
+          RS:rs, RA:ra, rd: rs-ra,
+          pyth:   (rs+ra>0 ? rs**1.83/(rs**1.83+ra**1.83) : .5).toFixed(3),
+          L10:    (tr.records?.splitRecords?.find(x=>x.type==='lastTen')?.wins||'?') + '-' +
+                  (tr.records?.splitRecords?.find(x=>x.type==='lastTen')?.losses||'?')
+        });
+      });
+    });
+  } catch {
+    standings = SAMPLE_STANDINGS;
+  }
+
+  const filtered = standingsLeague === 'both' ? standings
+    : standings.filter(t => t.league === standingsLeague);
+
+  const divs = {};
+  filtered.forEach(t => {
+    const key = t.league + ' ' + t.division;
+    if (!divs[key]) divs[key] = [];
+    divs[key].push(t);
+  });
+
+  el.innerHTML = Object.entries(divs).sort().map(([div, teams]) => {
+    const rows = teams.sort((a,b) => parseFloat(b.pct)-parseFloat(a.pct)).map((t,i) => {
+      const pctCol = parseFloat(t.pct)>=.550?'var(--green)':parseFloat(t.pct)<=.450?'var(--red)':'var(--text)';
+      const rdCol  = t.rd>20?'var(--green)':t.rd<-20?'var(--red)':'var(--muted)';
+      return `<tr>
+        <td style="font-weight:600;padding:9px 10px">${t.team}</td>
+        <td style="padding:9px 10px">${t.W}</td>
+        <td style="padding:9px 10px;color:var(--muted)">${t.L}</td>
+        <td style="padding:9px 10px;color:${pctCol};font-family:var(--font-mono);font-weight:600">${t.pct}</td>
+        <td style="padding:9px 10px;color:var(--muted);font-family:var(--font-mono)">${t.GB}</td>
+        <td style="padding:9px 10px;color:${rdCol};font-family:var(--font-mono)">${t.rd>0?'+':''}${t.rd}</td>
+        <td style="padding:9px 10px;color:var(--muted);font-family:var(--font-mono)">${t.pyth}</td>
+        <td style="padding:9px 10px;font-family:var(--font-mono)">${t.L10}</td>
+      </tr>`;
+    }).join('');
+
+    return `<div class="division-card">
+      <div class="division-header">${div}</div>
+      <table class="std-table">
+        <thead><tr>
+          <th>Team</th><th>W</th><th>L</th><th>PCT</th><th>GB</th><th>+/-</th><th>PYTH</th><th>L10</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>`;
+  }).join('');
+
+  // Filter buttons
+  document.querySelectorAll('#standings-filters .filter-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#standings-filters .filter-btn').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      standingsLeague = btn.dataset.league;
+      renderStandingsTab();
+    });
+  });
+}
+
+// ── TRENDS TAB ───────────────────────────────────────────────────────────────
+function renderTrendsTab() {
+  // Pitcher trends
+  const pitcherTrends = DATA.pitchers
+    .filter(c => c.last_starts?.length >= 2)
+    .map(c => {
+      const starts = c.last_starts.slice(0,3);
+      const l3k  = starts.reduce((s,x)=>s+(x.K||0),0);
+      const l3ip = starts.reduce((s,x)=>s+(x.IP||0),0);
+      const l3er = starts.reduce((s,x)=>s+(x.ER||0),0);
+      const l3era = l3ip > 0 ? (l3er/l3ip*9).toFixed(2) : null;
+      const sERA  = c.season_stats?.ERA;
+      const delta = l3era && sERA ? (sERA - l3era).toFixed(2) : null;
+      const k9l3  = l3ip > 0 ? (l3k/l3ip*9).toFixed(1) : null;
+      const dir   = delta >= 0.5 ? 'hot' : delta <= -0.5 ? 'cold' : 'neutral';
+      return { name:c.name, team:c.team_abbr, l3era, sERA, delta, k9l3, l3k, l3ip, dir };
+    })
+    .filter(x => x.delta !== null)
+    .sort((a,b) => Math.abs(b.delta)-Math.abs(a.delta));
+
+  document.getElementById('trending-pitchers').innerHTML = pitcherTrends.length
+    ? pitcherTrends.slice(0,8).map(p => {
+        const col = p.dir==='hot'?'var(--amber)':p.dir==='cold'?'var(--cyan)':'var(--muted)';
+        const icon = p.dir==='hot'?'🔥':p.dir==='cold'?'❄️':'↔️';
+        const deltaStr = p.delta >= 0
+          ? `${p.delta} ERA better than season avg` : `${Math.abs(p.delta)} ERA worse than season avg`;
+        return `<div class="trend-card ${p.dir}">
+          <div>
+            <div class="trend-name">${icon} ${p.name} <span style="color:var(--muted);font-weight:400;font-size:12px">${p.team}</span></div>
+            <div class="trend-sub">Last 3: ${p.l3k}K in ${p.l3ip}IP · ${deltaStr}</div>
+          </div>
+          <div>
+            <div class="trend-delta" style="color:${col}">${p.k9l3||'—'}</div>
+            <div class="trend-delta-sub" style="color:var(--muted)">K/9 last 3</div>
+          </div>
+        </div>`;
+      }).join('')
+    : '<div style="color:var(--muted);padding:20px">No pitcher trend data — needs game log data</div>';
+
+  // Team trends from history
+  const history = DATA.history.filter(h => h.actual_margin != null);
+  const teamMap  = {};
+  history.forEach(h => {
+    ['home','away'].forEach(side => {
+      const abbr   = h[side+'_abbr'];
+      const margin = side==='home' ? h.actual_margin : -h.actual_margin;
+      if (!abbr) return;
+      if (!teamMap[abbr]) teamMap[abbr] = [];
+      teamMap[abbr].push({ date: h.date, margin, win: margin > 0 });
+    });
+  });
+
+  const teamTrends = Object.entries(teamMap)
+    .map(([abbr, games]) => {
+      const last5 = games.sort((a,b)=>b.date.localeCompare(a.date)).slice(0,5);
+      const w = last5.filter(g=>g.win).length;
+      const l = last5.length - w;
+      const avgMargin = last5.reduce((s,g)=>s+g.margin,0)/last5.length;
+      const dir = w>=4?'hot':w<=1?'cold':'neutral';
+      return { abbr, w, l, avgMargin:avgMargin.toFixed(1), dir };
+    })
+    .filter(t => t.w+t.l >= 3)
+    .sort((a,b) => Math.abs(b.w-2.5)-Math.abs(a.w-2.5));
+
+  document.getElementById('trending-teams').innerHTML = teamTrends.length
+    ? `<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:8px">
+        ${teamTrends.slice(0,10).map(t => {
+          const col  = t.dir==='hot'?'var(--amber)':t.dir==='cold'?'var(--cyan)':'var(--muted)';
+          const icon = t.dir==='hot'?'🔥':t.dir==='cold'?'❄️':'↔️';
+          return `<div class="trend-card ${t.dir}">
+            <div>
+              <div class="trend-name">${icon} ${t.abbr}</div>
+              <div class="trend-sub">Avg margin: ${t.avgMargin>0?'+':''}${t.avgMargin} runs</div>
+            </div>
+            <div class="trend-delta" style="color:${col}">${t.w}–${t.l}</div>
+          </div>`;
+        }).join('')}
+      </div>`
+    : '<div style="color:var(--muted);padding:20px">No team trend data yet — needs graded history</div>';
+
+  // Series momentum
+  const seriesList = DATA.series || [];
+  document.getElementById('series-momentum').innerHTML = seriesList.length
+    ? seriesList.slice(0,12).map(s => {
+        const hw = s.home_wins||0, aw = s.away_wins||0;
+        const leader = hw>aw?s.home_abbr:aw>hw?s.away_abbr:null;
+        const col = leader ? 'var(--amber)' : 'var(--muted)';
+        const recordStr = leader
+          ? `${leader} leads ${Math.max(hw,aw)}–${Math.min(hw,aw)}`
+          : 'Series tied';
+        const gameBoxes = (s.games||[]).map(g => {
+          if (g.status==='F') {
+            const homeWon = (g.home_score||0) > (g.away_score||0);
+            const cls = homeWon ? 'final-home' : 'final-away';
+            const dt  = g.date ? new Date(g.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}) : '';
+            return `<div class="series-game ${cls}">
+              <div class="sg-score">${g.away_score}–${g.home_score}</div>
+              <div class="sg-date">${dt}</div>
+            </div>`;
+          } else {
+            const dt = g.date ? new Date(g.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}) : '—';
+            return `<div class="series-game">
+              <div class="sg-date">${dt}</div>
+              <div style="font-size:10px;color:var(--muted)">${g.home_sp||'TBD'}</div>
+            </div>`;
+          }
+        }).join('');
+        return `<div class="series-card">
+          <div class="series-header">
+            <div class="series-matchup">${s.away_abbr} @ ${s.home_abbr}</div>
+            <div class="series-record" style="color:${col}">${recordStr}</div>
+          </div>
+          <div class="series-games">${gameBoxes}</div>
+        </div>`;
+      }).join('')
+    : '<div style="color:var(--muted);padding:20px">No series data — run model first</div>';
+}
+
+// ── HELPERS ──────────────────────────────────────────────────────────────────
+function metric(val, lbl, col='var(--text)') {
+  return `<div class="metric">
+    <div class="metric-val" style="color:${col}">${val}</div>
+    <div class="metric-lbl">${lbl}</div>
+  </div>`;
+}
+
+function badge(label) {
+  const map = { STRONG:'strong', LEAN:'lean', SLIGHT:'slight' };
+  const cls = map[label] || 'none';
+  if (!label || label==='NONE' || label==='NO LINE') return `<span class="badge badge-none">—</span>`;
+  return `<span class="badge badge-${cls}">${label}</span>`;
+}
+
+function bestBetCard(g) {
+  const isRL = ['STRONG','LEAN'].includes(g.spread_edge_label) &&
+    Math.abs(g.edge_spread||0) >= Math.abs(g.edge_total||0);
+  const label  = isRL ? g.spread_edge_label : g.total_edge_label;
+  const type   = isRL ? 'Run Line' : 'Over/Under';
+  const bet    = isRL
+    ? (g.spread_bet==='home_cover' ? `${g.home_abbr} ${g.vegas_spread}` : `${g.away_abbr} +1.5`)
+    : `${(g.total_bet||'').toUpperCase()} ${g.vegas_total}`;
+  const edge   = isRL ? (g.edge_spread||0) : (g.edge_total||0);
+  const edgePct= (Math.abs(edge)*100).toFixed(1);
+  const col    = label==='STRONG'?'var(--amber)':'var(--green)';
+  const cls    = label==='STRONG'?'strong':'';
+
+  return `<div class="best-bet-card ${cls}">
+    <div class="bb-meta">${g.game_time_ct||''} · Conf ${g.spread_confidence||50}</div>
+    <div class="bb-matchup">${g.away_abbr} @ ${g.home_abbr}</div>
+    <div class="bb-pitchers">${g.away_sp||'TBD'} vs ${g.home_sp||'TBD'}</div>
+    <div class="bb-bottom">
+      <div class="bb-bet">
+        <div class="bb-bet-type">${type}</div>
+        <div class="bb-bet-val" style="color:${col}">${bet}</div>
+        ${badge(label)}
+      </div>
+      <div class="bb-edge">
+        <div class="bb-edge-num" style="color:${col}">+${edgePct}%</div>
+        <div class="bb-edge-sub">vs break-even</div>
+      </div>
+    </div>
+  </div>`;
+}
+
+function statPill(lbl, val) {
+  return `<div class="stat-pill"><div class="sp-val">${val}</div><div class="sp-lbl">${lbl}</div></div>`;
+}
+
+function empty(msg, sub='') {
+  return `<div class="empty-state">
+    <div class="empty-icon">⚾</div>
+    <div class="empty-msg">${msg}</div>
+    ${sub?`<div class="empty-sub">${sub}</div>`:''}
+  </div>`;
+}
+
+function today_str() {
+  return new Date().toISOString().slice(0,10);
+}
+
+// ── SAMPLE DATA (shown before JSON files exist) ──────────────────────────────
+const SAMPLE_PICKS = [
+  {home_name:"New York Yankees",away_name:"Boston Red Sox",home_abbr:"NYY",away_abbr:"BOS",
+   home_sp:"Gerrit Cole",away_sp:"Nick Pivetta",game_time_ct:"6:35 PM CT",
+   predicted_margin:1.2,predicted_total:8.4,home_win_prob:.58,spread_confidence:72,
+   vegas_spread:-1.5,vegas_total:8.5,vegas_ml_home:-145,edge_spread:.07,edge_total:.04,
+   spread_edge_label:"LEAN",total_edge_label:"SLIGHT",spread_bet:"home_cover",total_bet:"over",edge_score:7},
+  {home_name:"Los Angeles Dodgers",away_name:"San Francisco Giants",home_abbr:"LAD",away_abbr:"SF",
+   home_sp:"Tyler Glasnow",away_sp:"Logan Webb",game_time_ct:"9:10 PM CT",
+   predicted_margin:0.8,predicted_total:9.1,home_win_prob:.55,spread_confidence:61,
+   vegas_spread:-1.5,vegas_total:9.0,vegas_ml_home:-130,edge_spread:.05,edge_total:-.03,
+   spread_edge_label:"SLIGHT",total_edge_label:"NONE",spread_bet:"home_cover",total_bet:"",edge_score:5},
+  {home_name:"Atlanta Braves",away_name:"Philadelphia Phillies",home_abbr:"ATL",away_abbr:"PHI",
+   home_sp:"Spencer Strider",away_sp:"Ranger Suarez",game_time_ct:"7:20 PM CT",
+   predicted_margin:1.5,predicted_total:8.7,home_win_prob:.62,spread_confidence:78,
+   vegas_spread:-1.5,vegas_total:8.5,vegas_ml_home:-155,edge_spread:.09,edge_total:.02,
+   spread_edge_label:"LEAN",total_edge_label:"NONE",spread_bet:"home_cover",total_bet:"",edge_score:8},
+  {home_name:"Houston Astros",away_name:"Texas Rangers",home_abbr:"HOU",away_abbr:"TEX",
+   home_sp:"Framber Valdez",away_sp:"Jon Gray",game_time_ct:"7:10 PM CT",
+   predicted_margin:-0.3,predicted_total:7.9,home_win_prob:.47,spread_confidence:48,
+   vegas_spread:1.5,vegas_total:8.0,vegas_ml_home:110,edge_spread:-.02,edge_total:.06,
+   spread_edge_label:"NONE",total_edge_label:"LEAN",spread_bet:"",total_bet:"over",edge_score:4},
+];
+
+const SAMPLE_STANDINGS = [
+  {team:"NYY",name:"New York Yankees",league:"AL",division:"East",W:58,L:42,pct:".580",GB:"—",RS:512,RA:431,rd:81,pyth:".583",L10:"7-3"},
+  {team:"BAL",name:"Baltimore Orioles",league:"AL",division:"East",W:54,L:46,pct:".540",GB:"4.0",RS:489,RA:451,rd:38,pyth:".538",L10:"6-4"},
+  {team:"BOS",name:"Boston Red Sox",league:"AL",division:"East",W:49,L:51,pct:".490",GB:"9.0",RS:471,RA:468,rd:3,pyth:".501",L10:"5-5"},
+  {team:"TB", name:"Tampa Bay Rays", league:"AL",division:"East",W:47,L:53,pct:".470",GB:"11.0",RS:441,RA:453,rd:-12,pyth:".489",L10:"5-5"},
+  {team:"TOR",name:"Toronto Blue Jays",league:"AL",division:"East",W:44,L:56,pct:".440",GB:"14.0",RS:428,RA:461,rd:-33,pyth:".468",L10:"4-6"},
+  {team:"LAD",name:"Los Angeles Dodgers",league:"NL",division:"West",W:65,L:35,pct:".650",GB:"—",RS:558,RA:421,rd:137,pyth:".635",L10:"9-1"},
+  {team:"SD", name:"San Diego Padres",league:"NL",division:"West",W:49,L:51,pct:".490",GB:"16.0",RS:451,RA:448,rd:3,pyth:".503",L10:"5-5"},
+  {team:"ATL",name:"Atlanta Braves",league:"NL",division:"East",W:62,L:38,pct:".620",GB:"—",RS:539,RA:432,rd:107,pyth:".613",L10:"8-2"},
+  {team:"PHI",name:"Philadelphia Phillies",league:"NL",division:"East",W:55,L:45,pct:".550",GB:"7.0",RS:498,RA:451,rd:47,pyth:".548",L10:"7-3"},
+  {team:"MIL",name:"Milwaukee Brewers",league:"NL",division:"Central",W:53,L:47,pct:".530",GB:"—",RS:471,RA:449,rd:22,pyth:".524",L10:"7-3"},
+];
+const SAMPLE_SERIES = [];
+const SAMPLE_PITCHERS = [];
+
+// ── INIT ────────────────────────────────────────────────────────────────────
+loadAllData();
+</script>
+
+
+</body>
+</html> 
