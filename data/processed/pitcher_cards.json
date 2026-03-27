@@ -1148,6 +1148,34 @@
     "game_time_ct": "3:10 PM CT"
   },
   {
+    "player_id": 547179,
+    "name": "Michael Lorenzen",
+    "team_abbr": "COL",
+    "opponent": "MIA",
+    "throws": "R",
+    "days_rest": null,
+    "trend": "neutral",
+    "season_stats": {},
+    "last_starts": [],
+    "arsenal": [],
+    "splits": {},
+    "k_prediction": {
+      "predicted_ks": 5.2,
+      "k_low_25": 4,
+      "k_high_75": 7,
+      "expected_ip": 5.5,
+      "season_k9": 8.5,
+      "last3_k9": 8.5,
+      "blended_k9": 8.5,
+      "opp_k_pct": 22.5,
+      "opp_k_pct_vs_lg": 0.0,
+      "adj_factor": 1.0
+    },
+    "game_id": 823892,
+    "game_date": "2026-03-28",
+    "game_time_ct": "3:10 PM CT"
+  },
+  {
     "player_id": 592332,
     "name": "Kevin Gausman",
     "team_abbr": "TOR",
