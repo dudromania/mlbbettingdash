@@ -321,11 +321,13 @@ tbody td {
 /* pitcher columns: away | divider | home */
 .bc-pitchers {
   display: grid;
-  grid-template-columns: 1fr 1px 1fr;
+  grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid var(--b1);
 }
 .bc-sp {
   padding: 5px 8px;
+  min-width: 0;
+  overflow: hidden;
 }
 .bc-sp.home { border-left: 1px solid var(--b1); }
 .bc-sp-name {
@@ -335,20 +337,26 @@ tbody td {
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 3px;
+  max-width: 100%;
 }
 .bc-sp-row {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
   font-family: var(--mono);
   font-size: 9px;
   color: var(--t3);
   padding: 1px 0;
+  gap: 4px;
+  white-space: nowrap;
 }
-.bc-sp-row .val { color: var(--t1); }
+.bc-sp-row span:first-child { flex-shrink: 0; }
+.bc-sp-row .val { color: var(--t1); text-align: right; flex-shrink: 0; }
 .bc-sp-row .val.pos { color: var(--pos); }
 .bc-sp-row .val.neg { color: var(--neg); }
 .bc-sp-row .val.warn { color: var(--warn); }
-.bc-sp-label { font-size: 8px; letter-spacing: .3px; text-transform: uppercase; color: var(--t3); }
+.bc-sp-row .val.hi  { color: var(--hi); }
+.bc-sp-label { font-size: 8px; letter-spacing: .3px; text-transform: uppercase; color: var(--t3); margin-bottom: 2px; }
 
 /* bottom data strip */
 .bc-data {
@@ -449,8 +457,13 @@ tbody td {
 .k-range { font-family: var(--mono); font-size: 10px; color: var(--t3); }
 .k-detail { font-family: var(--mono); font-size: 10px; color: var(--t3); margin-top: 6px; line-height: 1.8; }
 
-.arsenal-list { display: flex; flex-wrap: wrap; gap: 1px; background: var(--b1); margin-top: 8px; }
-.arsenal-item { background: var(--s1); padding: 4px 8px; font-family: var(--mono); font-size: 10px; color: var(--t2); }
+.arsenal-tbl { width: 100%; border-collapse: collapse; font-family: var(--mono); font-size: 10px; margin-top: 10px; }
+.arsenal-tbl th { font-size: 9px; color: var(--t3); text-align: left; padding: 3px 6px; border-bottom: 1px solid var(--b1); font-weight: 400; letter-spacing: .5px; text-transform: uppercase; }
+.arsenal-tbl th.tr { text-align: right; }
+.arsenal-tbl td { padding: 4px 6px; border-top: 1px solid #0a0a0a; color: var(--t2); }
+.arsenal-tbl td.tr { text-align: right; }
+.arsenal-tbl tr:hover td { background: var(--s2); }
+.arsenal-primary { color: var(--t1) !important; font-weight: 500; }
 
 @media(max-width:700px){
   .pitcher-header-row { grid-template-columns: 1fr repeat(3,56px) 70px; }
@@ -979,6 +992,8 @@ function betRow(g) {
         <div class="bc-sp-row"><span>trend</span><span class="val">—</span></div>
       </div>`;
     }
+    // cap name at 10 chars to prevent overflow
+    const displayName = name.length > 12 ? name.slice(0,11)+'…' : name;
     const ss  = card.season_stats || {};
     const tr  = card.trend || 'neutral';
     const ti  = tr==='improving' ? '↑ hot' : tr==='declining' ? '↓ cold' : '→ flat';
@@ -994,7 +1009,7 @@ function betRow(g) {
     const kpred = card.k_prediction?.predicted_ks;
     return `<div class="bc-sp ${side}">
       <div class="bc-sp-label">${sideLabel}</div>
-      <div class="bc-sp-name">${name}</div>
+      <div class="bc-sp-name">${displayName}</div>
       <div class="bc-sp-row"><span>era</span><span class="val ${ec}">${ss.ERA??'—'}</span></div>
       <div class="bc-sp-row"><span>k/9</span><span class="val">${ss.K9??'—'}</span></div>
       <div class="bc-sp-row"><span>whip</span><span class="val">${ss.WHIP??'—'}</span></div>
@@ -1146,8 +1161,28 @@ function renderPitchers() {
       </tr>`;
     }).join('');
 
-    const arsenalHtml = ar.length
-      ? `<div class="arsenal-list">${ar.map(p=>`<div class="arsenal-item">${p.pitch_name||p.pitch_type} ${p.usage_pct}%${p.avg_velo?' '+p.avg_velo:''}</div>`).join('')}</div>` : '';
+    const arsenalHtml = ar.length ? `
+      <div class="pitcher-col-title" style="margin-top:14px">Pitch Arsenal</div>
+      <table class="arsenal-tbl">
+        <thead><tr>
+          <th>Pitch</th>
+          <th class="tr">Usage</th>
+          <th class="tr">Velo</th>
+          <th class="tr">Spin</th>
+          <th class="tr">Whiff%</th>
+          <th class="tr">PutAway%</th>
+        </tr></thead>
+        <tbody>
+          ${ar.map((p,i) => `<tr>
+            <td class="${i===0?'arsenal-primary':''}">${p.pitch_name||p.pitch_type||'—'}</td>
+            <td class="tr ${i===0?'arsenal-primary':''}">${p.usage_pct?p.usage_pct+'%':'—'}</td>
+            <td class="tr">${p.avg_velo||'—'}</td>
+            <td class="tr ${p.avg_spin>2400?'pos':p.avg_spin&&p.avg_spin<2000?'dim':''}">${p.avg_spin||'—'}</td>
+            <td class="tr ${p.whiff_pct>=30?'pos':p.whiff_pct&&p.whiff_pct<15?'neg':''}">${p.whiff_pct?p.whiff_pct+'%':'—'}</td>
+            <td class="tr ${p.put_away_pct>=30?'pos':''}">${p.put_away_pct?p.put_away_pct+'%':'—'}</td>
+          </tr>`).join('')}
+        </tbody>
+      </table>` : '';
 
     return `<div class="pitcher-block" id="pb-${i}">
       <div class="pitcher-header-row" onclick="togglePitcher(${i})">
