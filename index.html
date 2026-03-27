@@ -279,10 +279,12 @@ tbody td {
   padding: 1px 5px;
   letter-spacing: .5px;
 }
-.tag-strong { background: #99661122; color: #bb9944; border: 1px solid #99661144; }
-.tag-lean   { background: #33886622; color: #66aa77; border: 1px solid #33886644; }
+.tag-strong { background: #2d6e4422; color: #5aaa77; border: 1px solid #2d6e4466; }
+.tag-lean   { background: #6e5a0022; color: #bbaa44; border: 1px solid #6e5a0066; }
 .tag-slight { background: #33557722; color: #6688aa; border: 1px solid #33557744; }
 .tag-none   { color: var(--t3); }
+.strong-col { color: #5aaa77; }
+.lean-col   { color: #bbaa44; }
 
 /* ── BEST BETS — COMPACT ROWS ── */
 .bet-list {
@@ -298,8 +300,8 @@ tbody td {
   font-size: 11px;
 }
 .bet-card:hover { background: var(--s2); }
-.bet-card.edge-strong { border-left-color: var(--warn); }
-.bet-card.edge-lean   { border-left-color: var(--pos); }
+.bet-card.edge-strong { border-left-color: #5aaa77; }
+.bet-card.edge-lean   { border-left-color: #bbaa44; }
 
 /* top strip: matchup left, bet call right — single compact line */
 .bc-top {
@@ -389,8 +391,8 @@ tbody td {
 }
 .game-row:last-child { border-bottom: none; }
 .game-row:hover { background: var(--s2); }
-.game-row.has-edge { border-left: 2px solid var(--pos); }
-.game-row.has-strong { border-left: 2px solid var(--warn); }
+.game-row.has-edge { border-left: 2px solid #bbaa44; }
+.game-row.has-strong { border-left: 2px solid #5aaa77; }
 @media(max-width:900px){
   .game-row { grid-template-columns: 75px 1fr 100px; }
   .game-row .hide-sm { display: none; }
@@ -456,6 +458,60 @@ tbody td {
   .pitcher-detail { grid-template-columns: 1fr; }
   .pitcher-col:first-child { border-right: none; border-bottom: 1px solid var(--b1); }
 }
+
+/* ── LIVE SCORES ── */
+.live-bar {
+  background: var(--s1);
+  border-bottom: 1px solid var(--b1);
+  padding: 0;
+  overflow-x: auto;
+  white-space: nowrap;
+  font-family: var(--mono);
+  font-size: 11px;
+}
+.live-bar::-webkit-scrollbar { height: 3px; }
+.live-bar::-webkit-scrollbar-thumb { background: var(--b2); }
+
+.live-games-row {
+  display: inline-flex;
+  gap: 1px;
+  padding: 0;
+  background: var(--b1);
+  min-width: 100%;
+}
+.live-game {
+  display: inline-flex;
+  flex-direction: column;
+  padding: 5px 12px;
+  background: var(--s1);
+  cursor: default;
+  min-width: 120px;
+  border-right: 1px solid var(--b1);
+}
+.live-game:last-child { border-right: none; }
+.live-game.live-active { background: #0d1a0d; }
+.live-game.live-final { opacity: .7; }
+.lg-teams { display: flex; justify-content: space-between; gap: 8px; margin-bottom: 2px; }
+.lg-team  { display: flex; justify-content: space-between; gap: 6px; width: 100%; }
+.lg-abbr  { color: var(--t2); }
+.lg-score { color: var(--t1); font-weight: 500; min-width: 14px; text-align: right; }
+.lg-score.winning { color: #5aaa77; }
+.lg-status { font-size: 9px; color: var(--t3); letter-spacing: .3px; margin-top: 1px; }
+.lg-status.live { color: #bbaa44; }
+.live-label {
+  padding: 4px 10px;
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--t3);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  border-right: 1px solid var(--b1);
+  display: inline-flex;
+  align-items: center;
+  background: var(--s2);
+  flex-shrink: 0;
+}
+#live-updated { font-size: 9px; color: var(--t3); padding: 4px 8px; display: inline-flex; align-items: center; background: var(--s1); }
 
 /* ── STANDINGS ── */
 .standings-wrap {
@@ -624,6 +680,14 @@ tbody td {
   <span id="status-games"></span>
   <span id="status-edges"></span>
   <span id="status-date"></span>
+</div>
+
+<div class="live-bar" id="live-bar">
+  <span class="live-label">⬤ LIVE</span>
+  <div class="live-games-row" id="live-games-row">
+    <span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">Loading scores...</span>
+  </div>
+  <span id="live-updated"></span>
 </div>
 
 <main>
@@ -880,14 +944,30 @@ function betRow(g) {
     : `${(g.total_bet||'').toUpperCase()} ${g.vegas_total}`;
   const edge  = Math.abs(isRL ? g.edge_spread||0 : g.edge_total||0);
   const cls   = label==='STRONG' ? 'edge-strong' : 'edge-lean';
-  const ecol  = label==='STRONG' ? 'warn' : 'pos';
+  const ecol  = label==='STRONG' ? 'strong-col' : 'lean-col';
 
-  // SP cards
-  const hCard = DATA.pitchers.find(c => c.name === g.home_sp);
-  const aCard = DATA.pitchers.find(c => c.name === g.away_sp);
+  // SP cards — match by name first, fall back to team abbr
+  function findCard(sp_name, team_abbr, opp_abbr) {
+    if (sp_name && sp_name !== 'TBD') {
+      const exact = DATA.pitchers.find(c => c.name === sp_name);
+      if (exact) return exact;
+      // Last name match
+      const lastName = sp_name.split(' ').pop().toLowerCase();
+      const byLast = DATA.pitchers.find(c =>
+        c.name.split(' ').pop().toLowerCase() === lastName &&
+        c.team_abbr === team_abbr);
+      if (byLast) return byLast;
+    }
+    // Fall back to team — find pitcher scheduled for this team today
+    return DATA.pitchers.find(c =>
+      c.team_abbr === team_abbr && c.opponent === opp_abbr) ||
+      DATA.pitchers.find(c => c.team_abbr === team_abbr) || null;
+  }
+  const hCard = findCard(g.home_sp, g.home_abbr, g.away_abbr);
+  const aCard = findCard(g.away_sp, g.away_abbr, g.home_abbr);
 
   function spBlock(card, sp, side) {
-    const name = (sp||'TBD').split(' ').pop();
+    const name = card ? card.name.split(' ').pop() : (sp||'TBD').split(' ').pop();
     const sideLabel = side === 'away' ? 'AWAY SP' : 'HOME SP';
     if (!card) {
       return `<div class="bc-sp ${side}">
@@ -1126,7 +1206,9 @@ function renderBatters() {
     ['home','away'].forEach(side => {
       const bTeam = side==='home'?g.home_abbr:g.away_abbr;
       const oppSP = side==='home'?g.away_sp:g.home_sp;
-      const card  = DATA.pitchers.find(c=>c.name===oppSP);
+      const card  = DATA.pitchers.find(c=>c.name===oppSP) ||
+                   DATA.pitchers.find(c=>c.team_abbr===(side==='home'?g.away_abbr:g.home_abbr)&&c.opponent===(side==='home'?g.home_abbr:g.away_abbr)) ||
+                   DATA.pitchers.find(c=>c.team_abbr===(side==='home'?g.away_abbr:g.home_abbr));
       const k9    = card?.season_stats?.K9??8.5;
       const era   = card?.season_stats?.ERA??4.1;
       const whip  = card?.season_stats?.WHIP??1.28;
@@ -1370,7 +1452,87 @@ const SAMPLE_STD = [
   {team:"ATL",lg:"NL",dv:"East",W:62,L:38,G:100,pct:".620",GB:"—",rs:539,ra:432,rd:107,pyth:".613",L10:"8-2"},
 ];
 
+// ── LIVE SCORES ──────────────────────────────────────────────────────────────
+let liveInterval = null;
+
+async function fetchLiveScores() {
+  const today = DATA.date || todayStr();
+  const espnDate = today.replace(/-/g, '');
+  const url = `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${espnDate}`;
+
+  try {
+    const r = await fetch(url);
+    const data = await r.json();
+    const events = data.events || [];
+
+    if (!events.length) {
+      document.getElementById('live-games-row').innerHTML =
+        '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">No games today</span>';
+      return;
+    }
+
+    let hasLive = false;
+    const html = events.map(ev => {
+      const comp   = ev.competitions?.[0];
+      const status = comp?.status?.type;
+      const state  = status?.state || 'pre';   // pre, in, post
+      const detail = status?.shortDetail || '';
+      const home   = comp?.competitors?.find(t => t.homeAway === 'home');
+      const away   = comp?.competitors?.find(t => t.homeAway === 'away');
+      if (!home || !away) return '';
+
+      const hAbbr  = home.team.abbreviation;
+      const aAbbr  = away.team.abbreviation;
+      const hScore = home.score ?? '';
+      const aScore = away.score ?? '';
+      const hWin   = state === 'post' && parseInt(hScore) > parseInt(aScore);
+      const aWin   = state === 'post' && parseInt(aScore) > parseInt(hScore);
+      const hLive  = state === 'in'   && parseInt(hScore) > parseInt(aScore);
+      const aLive  = state === 'in'   && parseInt(aScore) > parseInt(hScore);
+
+      if (state === 'in') hasLive = true;
+
+      const cls = state === 'in' ? 'live-active' : state === 'post' ? 'live-final' : '';
+      const statusCls = state === 'in' ? 'live' : '';
+      const statusTxt = state === 'pre'  ? detail :
+                        state === 'in'   ? detail :
+                        state === 'post' ? 'F' : detail;
+
+      return `<div class="live-game ${cls}">
+        <div class="lg-teams">
+          <div class="lg-team">
+            <span class="lg-abbr">${aAbbr}</span>
+            <span class="lg-score ${aWin||aLive?'winning':''}">${aScore !== '' ? aScore : '—'}</span>
+          </div>
+        </div>
+        <div class="lg-teams">
+          <div class="lg-team">
+            <span class="lg-abbr">${hAbbr}</span>
+            <span class="lg-score ${hWin||hLive?'winning':''}">${hScore !== '' ? hScore : '—'}</span>
+          </div>
+        </div>
+        <div class="lg-status ${statusCls}">${statusTxt}</div>
+      </div>`;
+    }).join('');
+
+    document.getElementById('live-games-row').innerHTML = html ||
+      '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">No games</span>';
+
+    const now = new Date().toLocaleTimeString('en-US', {hour:'numeric',minute:'2-digit'});
+    document.getElementById('live-updated').textContent = now;
+
+    // Auto-refresh every 60s when games are live, every 5min otherwise
+    if (liveInterval) clearInterval(liveInterval);
+    liveInterval = setInterval(fetchLiveScores, hasLive ? 60000 : 300000);
+
+  } catch(e) {
+    document.getElementById('live-games-row').innerHTML =
+      '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">Scores unavailable</span>';
+  }
+}
+
 init();
+fetchLiveScores();
 </script>
 </body>
 </html>
