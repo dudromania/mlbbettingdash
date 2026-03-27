@@ -414,6 +414,85 @@ tbody td {
 .prob-home { background: #449966; }
 .prob-labels { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 10px; color: var(--t3); margin-top: 2px; }
 
+/* ── GAME EXPAND ── */
+.game-block { border-bottom: 1px solid #0f0f0f; }
+.game-block:last-child { border-bottom: none; }
+
+.game-expand {
+  display: none;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+  background: var(--b1);
+  border-top: 1px solid var(--b1);
+}
+.game-expand.open { display: grid; }
+.ge-col {
+  background: var(--s1);
+  padding: 8px 10px;
+}
+.ge-col-title {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--t3);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+.ge-sp-block { margin-bottom: 8px; }
+.ge-sp-name { font-size: 11px; font-weight: 500; margin-bottom: 3px; }
+.ge-sp-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--t3);
+  padding: 1px 0;
+  gap: 4px;
+}
+.ge-sp-row .val { color: var(--t1); }
+.ge-sp-row .val.pos { color: var(--pos); }
+.ge-sp-row .val.neg { color: var(--neg); }
+.ge-lineup { font-family: var(--mono); font-size: 10px; color: var(--t2); line-height: 1.8; }
+.ge-lineup-item { display: flex; gap: 8px; padding: 2px 0; border-bottom: 1px solid #0a0a0a; }
+.ge-lineup-num { color: var(--t3); width: 14px; flex-shrink: 0; }
+.ge-lineup-pos { color: var(--t3); width: 24px; flex-shrink: 0; }
+.ge-weather { font-family: var(--mono); font-size: 11px; }
+.ge-weather-main { font-size: 18px; font-weight: 300; margin-bottom: 4px; }
+.ge-weather-row { font-size: 10px; color: var(--t3); padding: 2px 0; display: flex; justify-content: space-between; }
+.ge-weather-row .val { color: var(--t2); }
+.game-expand-toggle {
+  cursor: pointer;
+  user-select: none;
+}
+.game-expand-toggle:hover { background: var(--s2); }
+.ge-arrow { font-size: 9px; color: var(--t3); transition: transform .15s; }
+.ge-arrow.open { transform: rotate(90deg); }
+
+@media(max-width:700px){
+  .game-expand { grid-template-columns: 1fr; }
+}
+
+/* ── PITCHER DATE DROPDOWN ── */
+.pitcher-date-wrap { margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
+.pitcher-date-select {
+  background: var(--s2);
+  color: var(--t1);
+  border: 1px solid var(--b2);
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 5px 10px;
+  cursor: pointer;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 24px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23777'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+}
+.pitcher-date-select:hover { border-color: var(--t3); }
+.pitcher-date-count { font-family: var(--mono); font-size: 10px; color: var(--t3); }
+
 /* ── PITCHER LAYOUT ── */
 .pitcher-list { display: flex; flex-direction: column; gap: 1px; background: var(--b1); }
 .pitcher-block { background: var(--s1); }
@@ -738,12 +817,11 @@ tbody td {
 
   <!-- PITCHERS -->
   <div id="tab-pitchers" class="tab-panel">
-    <div class="filters" id="pitcher-filters" style="margin-bottom:10px">
-      <button class="fb active" data-psort="kpred">K PROJ</button>
-      <button class="fb" data-psort="era">ERA</button>
-      <button class="fb" data-psort="k9">K/9</button>
-      <button class="fb" data-psort="fip">FIP</button>
-      <button class="fb" data-psort="name">NAME</button>
+    <div class="pitcher-date-wrap">
+      <select class="pitcher-date-select" id="pitcher-date-select">
+        <option value="all">All Dates</option>
+      </select>
+      <span class="pitcher-date-count" id="pitcher-date-count"></span>
     </div>
     <div class="sec">Starting Pitchers — click row to expand</div>
     <div id="pitcher-list" class="pitcher-list"></div>
@@ -880,6 +958,7 @@ function renderAll() {
 
   renderModel();
   renderGames();
+  initPitcherDateDropdown();
   renderPitchers();
   renderBatters();
   renderTrends();
@@ -1091,52 +1170,288 @@ function betRow(g) {
 
 
 // ── GAMES ────────────────────────────────────────────────────────────────────
+let openGame = null;
+
 function renderGames() {
-  document.getElementById('games-list').innerHTML = DATA.games.length
-    ? DATA.games.map(g => {
-        const m   = g.predicted_margin||0;
-        const fav = m>=0?g.home_abbr:g.away_abbr;
-        const hp  = Math.round((g.home_win_prob||.5)*100);
-        const ap  = 100-hp;
-        const strong = ['STRONG','LEAN'].includes(g.spread_edge_label);
-        const hasEdge= strong||['STRONG','LEAN'].includes(g.total_edge_label);
-        const vLine  = g.vegas_spread!=null
-          ? `<span class="mono dim">${g.vegas_spread>0?'+':''}${g.vegas_spread} | O/U ${g.vegas_total}</span>` : '';
-        return `<div class="game-row ${strong?'has-strong':hasEdge?'has-edge':''}">
-          <span class="mono dim" style="font-size:10px">${g.game_time_ct||'TBD'}</span>
-          <div class="matchup-cell">
-            <div class="teams">${g.away_abbr} <span class="dim">@</span> ${g.home_abbr}</div>
-            <div class="pitchers">${g.away_sp||'TBD'} / ${g.home_sp||'TBD'}</div>
-          </div>
-          <div class="hide-sm">
-            <div class="prob-labels"><span>${g.away_abbr} ${ap}%</span><span>${g.home_abbr} ${hp}%</span></div>
-            <div class="prob-bar"><div class="prob-away" style="width:${ap}%"></div><div class="prob-home" style="width:${hp}%"></div></div>
-          </div>
-          <div class="hide-sm">
-            <div class="mono" style="font-size:11px">${fav} <span class="${m>=0?'pos':'neg'}">${Math.abs(m).toFixed(1)}</span> | ${(g.predicted_total||0).toFixed(1)}</div>
-            ${vLine}
-          </div>
-          <div class="hide-sm">${tag(g.spread_edge_label)} <span class="dim" style="font-size:10px">RL</span><br>${tag(g.total_edge_label)} <span class="dim" style="font-size:10px">O/U</span></div>
-          <div class="mono dim hide-sm" style="font-size:11px">CONF <span style="color:var(--t2)">${g.spread_confidence||50}</span></div>
-        </div>`;
-      }).join('')
-    : '<div class="empty">No games found</div>';
+  if (!DATA.games.length) {
+    document.getElementById('games-list').innerHTML = '<div class="empty">No games found</div>';
+    return;
+  }
+  document.getElementById('games-list').innerHTML = DATA.games.map((g, i) => {
+    const m      = g.predicted_margin||0;
+    const fav    = m>=0?g.home_abbr:g.away_abbr;
+    const hp     = Math.round((g.home_win_prob||.5)*100);
+    const ap     = 100-hp;
+    const strong = ['STRONG','LEAN'].includes(g.spread_edge_label);
+    const hasEdge= strong||['STRONG','LEAN'].includes(g.total_edge_label);
+    const vLine  = g.vegas_spread!=null
+      ? `<span class="mono dim">${g.vegas_spread>0?'+':''}${g.vegas_spread} | O/U ${g.vegas_total}</span>` : '';
+
+    // SP data from pitcher cards
+    const hCard = findCard(g.home_sp, g.home_abbr, g.away_abbr);
+    const aCard = findCard(g.away_sp, g.away_abbr, g.home_abbr);
+
+    function miniSP(card, sp, abbr) {
+      const name = card ? card.name : (sp||'TBD');
+      const ss   = card?.season_stats || {};
+      const ec   = (ss.ERA||99)<3.5?'pos':(ss.ERA||99)>4.5?'neg':'';
+      const tr   = card?.trend||'neutral';
+      const ti   = tr==='improving'?'↑':tr==='declining'?'↓':'→';
+      const tc   = tr==='improving'?'pos':tr==='declining'?'neg':'dim';
+      const sts  = (card?.last_starts||[]).slice(0,3);
+      const l3ip = sts.reduce((s,x)=>s+(x.IP||0),0);
+      const l3er = sts.reduce((s,x)=>s+(x.ER||0),0);
+      const l3era= l3ip>0?(l3er/l3ip*9).toFixed(2):null;
+      const kp   = card?.k_prediction?.predicted_ks;
+      return `<div class="ge-sp-block">
+        <div class="ge-sp-name"><span class="dim" style="font-size:9px">${abbr} —</span> ${name}</div>
+        <div class="ge-sp-row"><span>era</span><span class="val ${ec}">${ss.ERA??'—'}</span></div>
+        <div class="ge-sp-row"><span>k/9</span><span class="val">${ss.K9??'—'}</span></div>
+        <div class="ge-sp-row"><span>whip</span><span class="val">${ss.WHIP??'—'}</span></div>
+        <div class="ge-sp-row"><span>fip</span><span class="val">${ss.FIP??'—'}</span></div>
+        ${l3era?`<div class="ge-sp-row"><span>l3 era</span><span class="val ${l3era&&ss.ERA&&parseFloat(l3era)<ss.ERA?'pos':parseFloat(l3era)>ss.ERA+0.5?'neg':''}">${l3era}</span></div>`:''}
+        <div class="ge-sp-row"><span>trend</span><span class="val ${tc}">${ti} ${tr}</span></div>
+        ${kp!=null?`<div class="ge-sp-row"><span>k proj</span><span class="val hi">${kp}</span></div>`:''}
+      </div>`;
+    }
+
+    return `<div class="game-block" id="gb-${i}">
+      <div class="game-row game-expand-toggle ${strong?'has-strong':hasEdge?'has-edge':''}" onclick="toggleGame(${i}, '${g.home_abbr}', '${g.away_abbr}')">
+        <span class="mono dim" style="font-size:10px">${g.game_time_ct||'TBD'}</span>
+        <div class="matchup-cell">
+          <div class="teams">${g.away_abbr} <span class="dim">@</span> ${g.home_abbr} <span class="ge-arrow" id="ga-${i}">›</span></div>
+          <div class="pitchers">${aCard?aCard.name.split(' ').pop():(g.away_sp||'TBD')} / ${hCard?hCard.name.split(' ').pop():(g.home_sp||'TBD')}</div>
+        </div>
+        <div class="hide-sm">
+          <div class="prob-labels"><span>${g.away_abbr} ${ap}%</span><span>${g.home_abbr} ${hp}%</span></div>
+          <div class="prob-bar"><div class="prob-away" style="width:${ap}%"></div><div class="prob-home" style="width:${hp}%"></div></div>
+        </div>
+        <div class="hide-sm">
+          <div class="mono" style="font-size:11px">${fav} <span class="${m>=0?'pos':'neg'}">${Math.abs(m).toFixed(1)}</span> | ${(g.predicted_total||0).toFixed(1)}</div>
+          ${vLine}
+        </div>
+        <div class="hide-sm">${tag(g.spread_edge_label)} <span class="dim" style="font-size:10px">RL</span><br>${tag(g.total_edge_label)} <span class="dim" style="font-size:10px">O/U</span></div>
+        <div class="mono dim hide-sm" style="font-size:11px">CONF <span style="color:var(--t2)">${g.spread_confidence||50}</span></div>
+      </div>
+      <div class="game-expand" id="ge-${i}">
+        <div class="ge-col">
+          <div class="ge-col-title">Starting Pitchers</div>
+          ${miniSP(aCard, g.away_sp, g.away_abbr)}
+          ${miniSP(hCard, g.home_sp, g.home_abbr)}
+        </div>
+        <div class="ge-col">
+          <div class="ge-col-title">Projected Lineups</div>
+          <div id="lineup-${i}" class="ge-lineup"><span class="dim" style="font-size:10px">Click to load...</span></div>
+        </div>
+        <div class="ge-col">
+          <div class="ge-col-title">Weather</div>
+          <div id="weather-${i}" class="ge-weather"><span class="dim" style="font-size:10px">Click to load...</span></div>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+async function toggleGame(i, homeAbbr, awayAbbr) {
+  const el    = document.getElementById(`ge-${i}`);
+  const arrow = document.getElementById(`ga-${i}`);
+  const isOpen = el.classList.contains('open');
+
+  // Close all
+  document.querySelectorAll('.game-expand').forEach(e => e.classList.remove('open'));
+  document.querySelectorAll('.ge-arrow').forEach(a => a.classList.remove('open'));
+
+  if (!isOpen) {
+    el.classList.add('open');
+    arrow.classList.add('open');
+    loadLineup(i, homeAbbr, awayAbbr);
+    loadWeather(i, homeAbbr);
+  }
+}
+
+async function loadLineup(i, homeAbbr, awayAbbr) {
+  const el = document.getElementById(`lineup-${i}`);
+  if (el.dataset.loaded) return;
+  el.dataset.loaded = '1';
+
+  // ESPN probable lineups API
+  try {
+    const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/summary?event=${await getGameId(homeAbbr, awayAbbr)}`);
+    const data = await r.json();
+    const rosters = data.rosters || [];
+
+    if (!rosters.length) {
+      el.innerHTML = '<span class="dim" style="font-size:10px">Lineups not yet posted</span>';
+      return;
+    }
+
+    let html = '';
+    for (const team of rosters) {
+      const abbr = team.team?.abbreviation || '';
+      const starters = (team.roster||[]).filter(p => p.starter);
+      if (!starters.length) continue;
+      html += `<div style="font-size:9px;color:var(--t3);letter-spacing:1px;margin-bottom:3px;margin-top:${html?'8px':'0'}">${abbr} LINEUP</div>`;
+      starters.slice(0,9).forEach((p, n) => {
+        const name = p.athlete?.shortName || p.athlete?.displayName || '—';
+        const pos  = p.position?.abbreviation || '—';
+        html += `<div class="ge-lineup-item"><span class="ge-lineup-num">${n+1}</span><span class="ge-lineup-pos dim">${pos}</span><span>${name}</span></div>`;
+      });
+    }
+    el.innerHTML = html || '<span class="dim" style="font-size:10px">Lineups not yet posted</span>';
+  } catch {
+    el.innerHTML = '<span class="dim" style="font-size:10px">Lineups not available</span>';
+  }
+}
+
+async function getGameId(homeAbbr, awayAbbr) {
+  try {
+    const today = DATA.date || todayStr();
+    const espnDate = today.replace(/-/g,'');
+    const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${espnDate}`);
+    const data = await r.json();
+    const ev = (data.events||[]).find(e => {
+      const comps = e.competitions?.[0]?.competitors||[];
+      const abbrs = comps.map(c=>c.team?.abbreviation);
+      return abbrs.includes(homeAbbr) && abbrs.includes(awayAbbr);
+    });
+    return ev?.id || '';
+  } catch { return ''; }
+}
+
+// Weather lookup by stadium coordinates
+const STADIUM_COORDS = {
+  NYY:{lat:40.829,lon:-73.926,name:'Yankee Stadium'},
+  NYM:{lat:40.757,lon:-73.846,name:'Citi Field'},
+  BOS:{lat:42.347,lon:-71.097,name:'Fenway Park'},
+  LAD:{lat:34.074,lon:-118.240,name:'Dodger Stadium'},
+  LAA:{lat:33.800,lon:-117.883,name:'Angel Stadium'},
+  SF: {lat:37.778,lon:-122.389,name:'Oracle Park'},
+  OAK:{lat:37.751,lon:-122.201,name:'Oakland Coliseum'},
+  ATH:{lat:37.751,lon:-122.201,name:'Oakland Coliseum'},
+  SD: {lat:32.707,lon:-117.157,name:'Petco Park'},
+  SEA:{lat:47.591,lon:-122.332,name:'T-Mobile Park'},
+  TEX:{lat:32.747,lon:-97.083,name:'Globe Life Field'},
+  HOU:{lat:29.757,lon:-95.355,name:'Minute Maid Park'},
+  OAK:{lat:37.751,lon:-122.200,name:'Oakland Coliseum'},
+  MIN:{lat:44.982,lon:-93.278,name:'Target Field'},
+  CHC:{lat:41.948,lon:-87.655,name:'Wrigley Field'},
+  CWS:{lat:41.831,lon:-87.634,name:'Guaranteed Rate Field'},
+  CLE:{lat:41.496,lon:-81.685,name:'Progressive Field'},
+  DET:{lat:42.339,lon:-83.049,name:'Comerica Park'},
+  KC: {lat:39.051,lon:-94.480,name:'Kauffman Stadium'},
+  MIL:{lat:43.028,lon:-87.971,name:'American Family Field'},
+  STL:{lat:38.623,lon:-90.193,name:'Busch Stadium'},
+  PIT:{lat:40.447,lon:-80.006,name:'PNC Park'},
+  CIN:{lat:39.097,lon:-84.507,name:'Great American Ball Park'},
+  ATL:{lat:33.891,lon:-84.468,name:'Truist Park'},
+  MIA:{lat:25.778,lon:-80.220,name:'LoanDepot Park'},
+  WSH:{lat:38.873,lon:-77.007,name:'Nationals Park'},
+  PHI:{lat:39.906,lon:-75.166,name:'Citizens Bank Park'},
+  NYM:{lat:40.757,lon:-73.846,name:'Citi Field'},
+  COL:{lat:39.756,lon:-104.994,name:'Coors Field'},
+  ARI:{lat:33.445,lon:-112.067,name:'Chase Field'},
+  TB: {lat:27.768,lon:-82.653,name:'Tropicana Field'},
+  BAL:{lat:39.284,lon:-76.622,name:'Oriole Park'},
+  TOR:{lat:43.641,lon:-79.389,name:'Rogers Centre'},
+};
+
+async function loadWeather(i, homeAbbr) {
+  const el = document.getElementById(`weather-${i}`);
+  if (el.dataset.loaded) return;
+  el.dataset.loaded = '1';
+
+  const loc = STADIUM_COORDS[homeAbbr];
+  if (!loc) {
+    el.innerHTML = '<span class="dim" style="font-size:10px">Stadium not mapped</span>';
+    return;
+  }
+
+  try {
+    const r = await fetch(
+      `https://api.open-meteo.com/v1/forecast?latitude=${loc.lat}&longitude=${loc.lon}&current=temperature_2m,wind_speed_10m,wind_direction_10m,precipitation,weather_code&temperature_unit=fahrenheit&wind_speed_unit=mph`
+    );
+    const data = await r.json();
+    const c = data.current || {};
+
+    const temp  = c.temperature_2m != null ? Math.round(c.temperature_2m)+'°F' : '—';
+    const wind  = c.wind_speed_10m != null ? Math.round(c.wind_speed_10m)+' mph' : '—';
+    const wdir  = c.wind_direction_10m != null ? degToCompass(c.wind_direction_10m) : '—';
+    const precip= c.precipitation != null ? c.precipitation+'mm' : '—';
+    const desc  = weatherDesc(c.weather_code||0);
+    const windCol = c.wind_speed_10m > 15 ? 'warn' : c.wind_speed_10m > 10 ? '' : 'pos';
+    const tempCol = c.temperature_2m < 45 ? 'neg' : c.temperature_2m > 85 ? 'neg' : '';
+
+    el.innerHTML = `
+      <div class="ge-weather-main">${desc}</div>
+      <div style="font-size:9px;color:var(--t3);margin-bottom:6px">${loc.name}</div>
+      <div class="ge-weather-row"><span>temp</span><span class="val ${tempCol}">${temp}</span></div>
+      <div class="ge-weather-row"><span>wind</span><span class="val ${windCol}">${wind} ${wdir}</span></div>
+      <div class="ge-weather-row"><span>precip</span><span class="val">${precip}</span></div>
+      <div style="font-size:9px;color:var(--t3);margin-top:6px">${c.wind_speed_10m>12?'Wind may affect totals':'Neutral conditions'}</div>
+    `;
+  } catch {
+    el.innerHTML = '<span class="dim" style="font-size:10px">Weather unavailable</span>';
+  }
+}
+
+function degToCompass(deg) {
+  const dirs = ['N','NE','E','SE','S','SW','W','NW'];
+  return dirs[Math.round(deg/45)%8];
+}
+
+function weatherDesc(code) {
+  if (code===0) return 'Clear';
+  if (code<=3)  return 'Partly Cloudy';
+  if (code<=49) return 'Foggy';
+  if (code<=69) return 'Rainy';
+  if (code<=79) return 'Snow/Sleet';
+  if (code<=99) return 'Thunderstorms';
+  return 'Unknown';
 }
 
 // ── PITCHERS ─────────────────────────────────────────────────────────────────
-let pSort = 'kpred';
 let openPitcher = null;
+let pitcherDateFilter = 'all';
+
+function initPitcherDateDropdown() {
+  const cards = DATA.pitchers;
+  if (!cards.length) return;
+
+  // Collect unique dates from pitcher cards
+  const dates = [...new Set(cards.map(c => c.game_date).filter(Boolean))].sort();
+  const sel = document.getElementById('pitcher-date-select');
+  sel.innerHTML = '<option value="all">All Dates</option>';
+  dates.forEach(d => {
+    const label = new Date(d+'T12:00:00').toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
+    sel.innerHTML += `<option value="${d}">${label}</option>`;
+  });
+
+  // Default to today if available
+  const today = DATA.date || todayStr();
+  if (dates.includes(today)) {
+    sel.value = today;
+    pitcherDateFilter = today;
+  }
+
+  sel.addEventListener('change', () => {
+    pitcherDateFilter = sel.value;
+    renderPitchers();
+  });
+}
 
 function renderPitchers() {
   let cards = [...DATA.pitchers];
   if (!cards.length) { document.getElementById('pitcher-list').innerHTML='<div class="empty">No pitcher data — run model</div>'; return; }
-  cards.sort((a,b)=>{
-    if(pSort==='kpred') return (b.k_prediction?.predicted_ks||0)-(a.k_prediction?.predicted_ks||0);
-    if(pSort==='era')   return (a.season_stats?.ERA||99)-(b.season_stats?.ERA||99);
-    if(pSort==='k9')    return (b.season_stats?.K9||0)-(a.season_stats?.K9||0);
-    if(pSort==='fip')   return (a.season_stats?.FIP||99)-(b.season_stats?.FIP||99);
-    return (a.name||'').localeCompare(b.name||'');
-  });
+
+  // Filter by date
+  if (pitcherDateFilter !== 'all') {
+    cards = cards.filter(c => c.game_date === pitcherDateFilter);
+  }
+
+  // Sort by game time then name
+  cards.sort((a,b) => (a.game_time_ct||'').localeCompare(b.game_time_ct||'') || (a.name||'').localeCompare(b.name||''));
+
+  document.getElementById('pitcher-date-count').textContent = cards.length + ' pitchers';
 
   document.getElementById('pitcher-list').innerHTML = cards.map((c,i) => {
     const ss  = c.season_stats||{};
@@ -1218,12 +1533,7 @@ function renderPitchers() {
     </div>`;
   }).join('');
 
-  document.querySelectorAll('#pitcher-filters .fb').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('#pitcher-filters .fb').forEach(b=>b.classList.remove('active'));
-      btn.classList.add('active'); pSort=btn.dataset.psort; renderPitchers();
-    });
-  });
+
 }
 
 function togglePitcher(i) {
