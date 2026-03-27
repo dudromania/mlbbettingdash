@@ -1026,6 +1026,21 @@ function renderModelTable() {
   }).join('') || '<tr><td colspan="10" class="empty">No games match filter</td></tr>';
 }
 
+// SP card lookup — used by betRow and renderGames
+function findCard(sp_name, team_abbr, opp_abbr) {
+  if (sp_name && sp_name !== 'TBD') {
+    const exact = DATA.pitchers.find(c => c.name === sp_name);
+    if (exact) return exact;
+    const lastName = sp_name.split(' ').pop().toLowerCase();
+    const byLast = DATA.pitchers.find(c =>
+      c.name.split(' ').pop().toLowerCase() === lastName &&
+      c.team_abbr === team_abbr);
+    if (byLast) return byLast;
+  }
+  return DATA.pitchers.find(c => c.team_abbr === team_abbr && c.opponent === opp_abbr) ||
+         DATA.pitchers.find(c => c.team_abbr === team_abbr) || null;
+}
+
 function betRow(g) {
   const isRL  = ['STRONG','LEAN'].includes(g.spread_edge_label) &&
                 Math.abs(g.edge_spread||0) >= Math.abs(g.edge_total||0);
@@ -1038,23 +1053,6 @@ function betRow(g) {
   const cls   = label==='STRONG' ? 'edge-strong' : 'edge-lean';
   const ecol  = label==='STRONG' ? 'strong-col' : 'lean-col';
 
-  // SP cards — match by name first, fall back to team abbr
-  function findCard(sp_name, team_abbr, opp_abbr) {
-    if (sp_name && sp_name !== 'TBD') {
-      const exact = DATA.pitchers.find(c => c.name === sp_name);
-      if (exact) return exact;
-      // Last name match
-      const lastName = sp_name.split(' ').pop().toLowerCase();
-      const byLast = DATA.pitchers.find(c =>
-        c.name.split(' ').pop().toLowerCase() === lastName &&
-        c.team_abbr === team_abbr);
-      if (byLast) return byLast;
-    }
-    // Fall back to team — find pitcher scheduled for this team today
-    return DATA.pitchers.find(c =>
-      c.team_abbr === team_abbr && c.opponent === opp_abbr) ||
-      DATA.pitchers.find(c => c.team_abbr === team_abbr) || null;
-  }
   const hCard = findCard(g.home_sp, g.home_abbr, g.away_abbr);
   const aCard = findCard(g.away_sp, g.away_abbr, g.home_abbr);
 
