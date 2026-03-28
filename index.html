@@ -833,6 +833,7 @@ tbody td {
     <div class="drawer-label">Output</div>
     <div class="nav-direct active" data-tab="model">Model Output</div>
     <div class="nav-direct" data-tab="games">Today's Games</div>
+    <div class="nav-direct" data-tab="nrfi">NRFI Matrix</div>
   </div>
   <div class="drawer-section">
     <div class="drawer-label">Analysis</div>
@@ -855,7 +856,6 @@ tbody td {
     </div>
   </div>
   <div class="drawer-section">
-    <div class="nav-direct" data-tab="nrfi">NRFI Matrix</div>
     <div class="nav-direct" data-tab="results">Model Performance</div>
   </div>
 </nav>
@@ -1947,10 +1947,32 @@ function renderNRFI() {
   const el = document.getElementById('nrfi-list');
 
   if (!DATA.nrfi.length) {
-    el.innerHTML = `
-      <div class="sec">No Run First Inning — ${DATA.date||'Today'}</div>
-      <div class="empty">No NRFI data yet — run model with updated pitcher_profile.py and daily_export.py</div>`;
-    return;
+    // Build a basic NRFI estimate from today's games + pitcher cards as fallback
+    const fallback = DATA.games.map(g => {
+      const hCard = findCard(g.home_sp, g.home_abbr, g.away_abbr);
+      const aCard = findCard(g.away_sp, g.away_abbr, g.home_abbr);
+      const hEra  = hCard?.season_stats?.ERA || 4.2;
+      const aEra  = aCard?.season_stats?.ERA || 4.2;
+      // Simple ERA-based estimate
+      const hClean = Math.max(30, Math.min(80, 72 - (hEra - 3.5) * 8));
+      const aClean = Math.max(30, Math.min(80, 72 - (aEra - 3.5) * 8));
+      const nrfiProb = Math.round((hClean/100 * 0.72) * (aClean/100 * 0.72) * 100 * 1.4);
+      const label = nrfiProb>=68?'STRONG NRFI':nrfiProb>=62?'LEAN NRFI':nrfiProb<=38?'LEAN YRFI':'NEUTRAL';
+      return {
+        game_time: g.game_time_ct, home_abbr: g.home_abbr, away_abbr: g.away_abbr,
+        home_sp: g.home_sp, away_sp: g.away_sp, nrfi_prob: nrfiProb, label,
+        confidence: 'low',
+        home_pitcher: { name: hCard?.name||g.home_sp, season_era: hEra, first_inning: hCard?.first_inning||{} },
+        away_pitcher: { name: aCard?.name||g.away_sp, season_era: aEra, first_inning: aCard?.first_inning||{} },
+        away_batting_1st: null, home_batting_1st: null,
+        _estimated: true,
+      };
+    });
+    DATA.nrfi = fallback;
+    if (!fallback.length) {
+      el.innerHTML = '<div class="empty">No games today</div>';
+      return;
+    }
   }
 
   const strong = DATA.nrfi.filter(g => g.label === 'STRONG NRFI').length;
@@ -2050,105 +2072,119 @@ let resultsFilter = 'all';
 let resultsRendered = false;
 
 function renderResults() {
-  const hist = DATA.history.filter(h => h.result && h.result !== 'pending');
+  // picks_history.json uses spread_result/total_result fields and spread_bet/total_bet
+  // Normalize to a flat "result" and "bet_type" for display
+  const hist = DATA.history.map(h => {
+    const betType = h.spread_bet ? 'spread' : h.total_bet ? 'total' : null;
+    const rawResult = betType === 'spread' ? h.spread_result :
+                      betType === 'total'  ? h.total_result  : null;
+    const result = rawResult === 'W' || rawResult === 'win'  ? 'win'  :
+                   rawResult === 'L' || rawResult === 'loss' ? 'loss' :
+                   rawResult === 'P' || rawResult === 'push' ? 'push' : null;
+    const pnl = (h.pnl_spread||0) + (h.pnl_total||0) + (h.pnl_ml||0);
+    return {...h, bet_type: betType, result, pnl};
+  }).filter(h => h.result);
+
   if (!hist.length) {
     document.getElementById('results-stats').innerHTML =
-      '<div class="stat-cell"><div class="v dim">—</div><div class="l">No graded picks yet</div></div>';
+      `<div class="stat-cell"><div class="v dim">0–0</div><div class="l">RECORD</div></div>
+       <div class="stat-cell"><div class="v dim">—</div><div class="l">WIN RATE</div></div>
+       <div class="stat-cell"><div class="v dim">0.0u</div><div class="l">P&L UNITS</div></div>
+       <div class="stat-cell"><div class="v dim">0</div><div class="l">PUSHES</div></div>
+       <div class="stat-cell"><div class="v dim">—</div><div class="l">STREAK</div></div>`;
     document.getElementById('results-tbody').innerHTML =
-      '<tr><td colspan="8" class="empty">No graded results yet — run model daily and results populate after games finish</td></tr>';
+      '<tr><td colspan="8" class="empty">No graded results yet — results populate automatically after games finish each day</td></tr>';
+    renderResultsListeners();
     return;
   }
 
-  // Aggregate stats
-  const bets = hist.filter(h => h.bet_type && h.result !== 'push');
-  const wins = bets.filter(h => h.result === 'win').length;
-  const losses = bets.filter(h => h.result === 'loss').length;
-  const pushes = hist.filter(h => h.result === 'push').length;
-  const total = wins + losses;
-  const pct = total > 0 ? (wins/total*100).toFixed(1) : '—';
-  const pnl = bets.reduce((s,h) => s + (h.pnl || 0), 0).toFixed(1);
-  const pnlCol = parseFloat(pnl) > 0 ? 'pos' : parseFloat(pnl) < 0 ? 'neg' : '';
-  const streak = calcStreak(hist);
+  const bets    = hist.filter(h => h.result !== 'push');
+  const wins    = bets.filter(h => h.result === 'win').length;
+  const losses  = bets.filter(h => h.result === 'loss').length;
+  const pushes  = hist.filter(h => h.result === 'push').length;
+  const total   = wins + losses;
+  const pct     = total > 0 ? (wins/total*100).toFixed(1) : '—';
+  const pnl     = bets.reduce((s,h) => s + (h.pnl||0), 0).toFixed(2);
+  const pnlCol  = parseFloat(pnl) > 0 ? 'pos' : parseFloat(pnl) < 0 ? 'neg' : '';
+  const streak  = calcStreak(hist);
 
-  // By type breakdown
   const rlBets = bets.filter(h => h.bet_type === 'spread');
   const ouBets = bets.filter(h => h.bet_type === 'total');
-  const rlW = rlBets.filter(h=>h.result==='win').length;
-  const ouW = ouBets.filter(h=>h.result==='win').length;
+  const rlW    = rlBets.filter(h => h.result === 'win').length;
+  const ouW    = ouBets.filter(h => h.result === 'win').length;
 
   document.getElementById('results-stats').innerHTML =
     sc(wins+'-'+losses, 'RECORD') +
-    sc(pct+'%', 'WIN RATE', parseFloat(pct)>55?'pos':parseFloat(pct)<48?'neg':'') +
-    sc((parseFloat(pnl)>0?'+':'')+pnl+'u', 'P&L UNITS', pnlCol) +
+    sc(pct+'%', 'WIN RATE', parseFloat(pct)>55?'pos':parseFloat(pct)<48&&total>5?'neg':'') +
+    sc((parseFloat(pnl)>=0?'+':'')+pnl+'u', 'P&L UNITS', pnlCol) +
     sc(pushes, 'PUSHES', 'dim') +
     sc(streak, 'STREAK');
 
-  document.getElementById('results-by-type').innerHTML = `
-    <div class="stat-cell">
-      <div class="v">${rlW}-${rlBets.length-rlW}</div>
-      <div class="l">Run Line</div>
-    </div>
-    <div class="stat-cell">
-      <div class="v">${ouW}-${ouBets.length-ouW}</div>
-      <div class="l">Over/Under</div>
-    </div>
-    <div class="stat-cell">
-      <div class="v ${rlBets.length>0?(rlW/rlBets.length*100).toFixed(0)>=55?'pos':(rlW/rlBets.length*100).toFixed(0)<=45?'neg':'':''}">${rlBets.length>0?(rlW/rlBets.length*100).toFixed(1)+'%':'—'}</div>
-      <div class="l">RL Win Rate</div>
-    </div>
-    <div class="stat-cell">
-      <div class="v ${ouBets.length>0?(ouW/ouBets.length*100).toFixed(0)>=55?'pos':(ouW/ouBets.length*100).toFixed(0)<=45?'neg':'':''}">${ouBets.length>0?(ouW/ouBets.length*100).toFixed(1)+'%':'—'}</div>
-      <div class="l">O/U Win Rate</div>
-    </div>`;
+  document.getElementById('results-by-type').innerHTML =
+    `<div class="stat-cell"><div class="v">${rlW}–${rlBets.length-rlW}</div><div class="l">Run Line</div></div>` +
+    `<div class="stat-cell"><div class="v">${ouW}–${ouBets.length-ouW}</div><div class="l">Over/Under</div></div>` +
+    `<div class="stat-cell"><div class="v ${rlBets.length>0?(rlW/rlBets.length>=.55?'pos':rlW/rlBets.length<=.45&&rlBets.length>5?'neg':''):''}">${rlBets.length>0?(rlW/rlBets.length*100).toFixed(1)+'%':'—'}</div><div class="l">RL Win%</div></div>` +
+    `<div class="stat-cell"><div class="v ${ouBets.length>0?(ouW/ouBets.length>=.55?'pos':ouW/ouBets.length<=.45&&ouBets.length>5?'neg':''):''}">${ouBets.length>0?(ouW/ouBets.length*100).toFixed(1)+'%':'—'}</div><div class="l">O/U Win%</div></div>`;
 
-  renderResultsTable();
-
-  if (!resultsRendered) {
-    resultsRendered = true;
-    document.querySelectorAll('#results-filters .fb').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('#results-filters .fb').forEach(b=>b.classList.remove('active'));
-        btn.classList.add('active');
-        resultsFilter = btn.dataset.rf;
-        renderResultsTable();
-      });
-    });
-  }
+  renderResultsTable(hist);
+  renderResultsListeners(hist);
 }
 
-function renderResultsTable() {
-  let hist = [...DATA.history].filter(h => h.result && h.result !== 'pending')
-    .sort((a,b) => (b.date||'').localeCompare(a.date||''));
+function renderResultsTable(histIn) {
+  const hist = histIn || DATA.history.map(h => {
+    const betType = h.spread_bet ? 'spread' : h.total_bet ? 'total' : null;
+    const rawResult = betType === 'spread' ? h.spread_result : betType === 'total' ? h.total_result : null;
+    const result = rawResult==='W'||rawResult==='win'?'win':rawResult==='L'||rawResult==='loss'?'loss':rawResult==='P'||rawResult==='push'?'push':null;
+    return {...h, bet_type: betType, result, pnl:(h.pnl_spread||0)+(h.pnl_total||0)+(h.pnl_ml||0)};
+  }).filter(h => h.result);
 
-  if (resultsFilter === 'spread') hist = hist.filter(h => h.bet_type === 'spread');
-  if (resultsFilter === 'total')  hist = hist.filter(h => h.bet_type === 'total');
-  if (resultsFilter === 'w')      hist = hist.filter(h => h.result === 'win');
-  if (resultsFilter === 'l')      hist = hist.filter(h => h.result === 'loss');
+  let rows = [...hist].sort((a,b) => (b.date||'').localeCompare(a.date||''));
+  if (resultsFilter === 'spread') rows = rows.filter(h => h.bet_type === 'spread');
+  if (resultsFilter === 'total')  rows = rows.filter(h => h.bet_type === 'total');
+  if (resultsFilter === 'w')      rows = rows.filter(h => h.result === 'win');
+  if (resultsFilter === 'l')      rows = rows.filter(h => h.result === 'loss');
 
-  document.getElementById('results-tbody').innerHTML = hist.length
-    ? hist.map(h => {
-        const res = h.result || '—';
-        const rc  = res==='win'?'pos':res==='loss'?'neg':'dim';
-        const edge = h.edge_spread || h.edge_total || 0;
-        const bet  = h.bet_type === 'spread'
-          ? (h.spread_bet === 'home_cover' ? `${h.home_abbr} RL` : `${h.away_abbr} +1.5`)
-          : h.total_bet ? `${h.total_bet?.toUpperCase()} ${h.vegas_total}` : '—';
-        const actual = h.actual_margin != null
-          ? `${h.away_abbr} ${h.actual_away_score??''} - ${h.actual_home_score??''} ${h.home_abbr}`
+  document.getElementById('results-tbody').innerHTML = rows.length
+    ? rows.map(h => {
+        const res    = h.result;
+        const edge   = Math.abs(h.edge_spread||h.edge_total||0);
+        const bet    = h.bet_type === 'spread'
+          ? (h.spread_bet==='home_cover' ? `${h.home_abbr||''} RL` : `${h.away_abbr||''} +1.5`)
+          : h.total_bet ? `${(h.total_bet).toUpperCase()} ${h.vegas_total||''}` : '—';
+        const actual = h.actual_away_score!=null
+          ? `${h.away_abbr||''} ${h.actual_away_score} – ${h.actual_home_score} ${h.home_abbr||''}`
           : '—';
-        const dt = h.date ? new Date(h.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}) : '—';
+        const dt     = h.date ? new Date(h.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}) : '—';
+        const resTag = res==='win'
+          ? `<span class="tag tag-lean">WIN</span>`
+          : res==='loss'
+          ? `<span class="tag" style="background:#44111122;color:var(--neg);border:1px solid #44111144">LOSS</span>`
+          : `<span class="tag tag-none">PUSH</span>`;
         return `<tr>
           <td class="mono dim" style="font-size:10px">${dt}</td>
-          <td>${(h.away_abbr||'')} @ ${(h.home_abbr||'')}</td>
+          <td>${h.away_abbr||'—'} @ ${h.home_abbr||'—'}</td>
           <td class="mono" style="font-size:11px">${bet}</td>
-          <td class="mono dim">${h.spread_edge_label||h.total_edge_label||'—'}</td>
+          <td>${h.spread_edge_label!=='NONE'&&h.spread_edge_label!=='NO LINE'?h.spread_edge_label||'—':h.total_edge_label||'—'}</td>
           <td class="tc mono ${edge>0?'pos':'dim'}">${edge?(edge*100).toFixed(1)+'%':'—'}</td>
-          <td class="tc"><span class="tag tag-${res==='win'?'lean':res==='loss'?'none':'none'}" style="${res==='win'?'':'color:var(--t3)'}">${res.toUpperCase()}</span></td>
+          <td class="tc">${resTag}</td>
           <td class="mono dim" style="font-size:10px">${actual}</td>
           <td class="tc mono dim">${h.spread_confidence||'—'}</td>
         </tr>`;
       }).join('')
     : '<tr><td colspan="8" class="empty">No results match filter</td></tr>';
+}
+
+function renderResultsListeners() {
+  if (resultsRendered) return;
+  resultsRendered = true;
+  document.querySelectorAll('#results-filters .fb').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#results-filters .fb').forEach(b=>b.classList.remove('active'));
+      btn.classList.add('active');
+      resultsFilter = btn.dataset.rf;
+      renderResultsTable();
+    });
+  });
 }
 
 function calcStreak(hist) {
@@ -2161,7 +2197,7 @@ function calcStreak(hist) {
     if (h.result === last) count++;
     else break;
   }
-  return (last==='win'?'W':'L') + count;
+  return (last==='win'?'W':'L')+count;
 }
 
 // ── LIVE SCORES ──────────────────────────────────────────────────────────────
