@@ -42,8 +42,7 @@ git add data\processed\picks_today.json
 git add data\processed\series_schedule.json
 git add data\processed\pitcher_cards.json
 git add data\processed\picks_history.json
-git commit -m "picks $DATE"
-git push origin main
+git add data\processed\nrfi_data.json
 
 if ($LASTEXITCODE -eq 0) {
     Write-Host ""
