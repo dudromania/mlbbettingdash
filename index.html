@@ -678,6 +678,95 @@ tbody td {
 .sg-score { font-weight: 500; }
 .sg-date  { font-size: 9px; color: var(--t3); margin-top: 2px; }
 
+/* ── NRFI MATRIX ── */
+.nrfi-card {
+  background: var(--s1);
+  border: 1px solid var(--b1);
+  border-left: 3px solid transparent;
+  margin-bottom: 1px;
+  overflow: hidden;
+}
+.nrfi-card.strong-nrfi { border-left-color: #5aaa77; }
+.nrfi-card.lean-nrfi   { border-left-color: #bbaa44; }
+.nrfi-card.lean-yrfi   { border-left-color: #cc3333; }
+.nrfi-card.neutral     { border-left-color: var(--b2); }
+
+.nrfi-head {
+  display: grid;
+  grid-template-columns: 80px 140px 1fr 80px 100px 80px;
+  gap: 0;
+  padding: 7px 10px;
+  align-items: center;
+  border-bottom: 1px solid var(--b1);
+}
+.nrfi-prob {
+  font-family: var(--mono);
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 1;
+}
+.nrfi-label { font-family: var(--mono); font-size: 10px; margin-top: 2px; }
+.nrfi-conf  { font-family: var(--mono); font-size: 9px; color: var(--t3); }
+
+.nrfi-body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1px;
+  background: var(--b1);
+}
+.nrfi-col {
+  background: var(--s1);
+  padding: 7px 10px;
+}
+.nrfi-col-title {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--t3);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.nrfi-stat-row {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--t3);
+  padding: 2px 0;
+  gap: 4px;
+}
+.nrfi-stat-row .val { color: var(--t1); }
+.nrfi-stat-row .val.pos { color: var(--pos); }
+.nrfi-stat-row .val.neg { color: var(--neg); }
+.nrfi-stat-row .val.warn { color: var(--warn); }
+
+.nrfi-meter {
+  height: 6px;
+  background: var(--b1);
+  margin: 8px 0 4px;
+  position: relative;
+}
+.nrfi-meter-fill {
+  height: 100%;
+  transition: width .3s ease;
+}
+.nrfi-meter-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--t3);
+}
+
+@media(max-width:900px){
+  .nrfi-head { grid-template-columns: 80px 120px 1fr 80px; }
+  .nrfi-head .hide-sm { display: none; }
+  .nrfi-body { grid-template-columns: 1fr 1fr; }
+}
+@media(max-width:500px){
+  .nrfi-body { grid-template-columns: 1fr; }
+}
+
 /* ── BATTER PROPS ── */
 .prop-list { border: 1px solid var(--b1); }
 .prop-row {
@@ -764,6 +853,10 @@ tbody td {
       <div class="nav-item" data-tab="standings">Standings</div>
       <div class="nav-item" data-tab="trends">Trends</div>
     </div>
+  </div>
+  <div class="drawer-section">
+    <div class="nav-direct" data-tab="nrfi">NRFI Matrix</div>
+    <div class="nav-direct" data-tab="results">Model Performance</div>
   </div>
 </nav>
 
@@ -858,6 +951,36 @@ tbody td {
     <div id="standings-wrap" class="standings-wrap"></div>
   </div>
 
+  <!-- NRFI -->
+  <div id="tab-nrfi" class="tab-panel">
+    <div id="nrfi-list"></div>
+  </div>
+
+  <!-- RESULTS -->
+  <div id="tab-results" class="tab-panel">
+    <div id="results-stats" class="stat-row"></div>
+    <div class="sec">Performance by Bet Type</div>
+    <div id="results-by-type" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1px;background:var(--b1);margin-bottom:14px"></div>
+    <div class="sec">Recent Results</div>
+    <div class="filters" id="results-filters">
+      <button class="fb active" data-rf="all">ALL</button>
+      <button class="fb" data-rf="spread">RUN LINE</button>
+      <button class="fb" data-rf="total">TOTAL</button>
+      <button class="fb" data-rf="w">WINS</button>
+      <button class="fb" data-rf="l">LOSSES</button>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr>
+          <th>DATE</th><th>MATCHUP</th><th>BET</th><th>LINE</th>
+          <th class="tc">EDGE</th><th class="tc">RESULT</th>
+          <th class="tc">ACTUAL</th><th class="tc">CONF</th>
+        </tr></thead>
+        <tbody id="results-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
   <!-- TRENDS -->
   <div id="tab-trends" class="tab-panel">
     <div class="trends-cols">
@@ -877,8 +1000,8 @@ tbody td {
 </main>
 
 <script>
-const DATA = { games:[], series:[], pitchers:[], history:[], date:'' };
-const LABELS = { model:'MODEL OUTPUT', games:"TODAY'S GAMES", pitchers:'PITCHER STATS', batters:'BATTER PROPS', standings:'STANDINGS', trends:'TRENDS' };
+const DATA = { games:[], series:[], pitchers:[], history:[], nrfi:[], date:'' };
+const LABELS = { model:'MODEL OUTPUT', games:"TODAY'S GAMES", pitchers:'PITCHER STATS', batters:'BATTER PROPS', standings:'STANDINGS', trends:'TRENDS', nrfi:'NRFI MATRIX', results:'MODEL PERFORMANCE' };
 
 async function loadJSON(path, fallback) {
   try {
@@ -889,16 +1012,18 @@ async function loadJSON(path, fallback) {
 }
 
 async function init() {
-  const [today, series, pitchers, history] = await Promise.all([
+  const [today, series, pitchers, history, nrfi] = await Promise.all([
     loadJSON('data/processed/picks_today.json',     { date:'', games: SAMPLE }),
     loadJSON('data/processed/series_schedule.json', []),
     loadJSON('data/processed/pitcher_cards.json',   []),
     loadJSON('data/processed/picks_history.json',   []),
+    loadJSON('data/processed/nrfi_data.json',       []),
   ]);
   DATA.games    = ((today?.games||today||[]).filter(g=>g?.home_abbr)).sort((a,b)=>(a.game_time_ct||'').localeCompare(b.game_time_ct||''));
   DATA.series   = Array.isArray(series)   ? series   : [];
   DATA.pitchers = Array.isArray(pitchers) ? pitchers : [];
   DATA.history  = Array.isArray(history)  ? history  : [];
+  DATA.nrfi     = Array.isArray(nrfi)     ? nrfi     : [];
   DATA.date     = today?.date || todayStr();
 
   const d = new Date(DATA.date + 'T12:00:00');
@@ -922,6 +1047,8 @@ function showTab(tab) {
   document.getElementById('status-page').textContent = LABELS[tab]||tab;
   closeDrawer();
   if (tab==='standings') renderStandings();
+  if (tab==='results') renderResults();
+  if (tab==='nrfi') renderNRFI();
   window.scrollTo(0,0);
 }
 
@@ -1525,6 +1652,26 @@ function renderPitchers() {
               exp ip: ${kp.expected_ip||'—'}
             </div>
           `:'<span class="dim" style="font-size:11px">—</span>'}
+          ${(()=>{
+            const fi = c.first_inning||{};
+            if (!fi.games) return '';
+            const fec = (fi.era_1st||99)<2?'pos':(fi.era_1st||99)>4?'neg':'';
+            const cpc = (fi.clean_innings_pct||0)>=70?'pos':(fi.clean_innings_pct||0)<=40?'neg':'';
+            return `<div class="pitcher-col-title" style="margin-top:14px">1st Inning (NRFI)</div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--b1);margin-bottom:6px">
+                <div style="background:var(--s1);padding:5px 8px;text-align:center">
+                  <div class="mono ${fec}" style="font-size:14px">${fi.era_1st??'—'}</div>
+                  <div style="font-size:9px;color:var(--t3);text-transform:uppercase">1st ERA</div>
+                </div>
+                <div style="background:var(--s1);padding:5px 8px;text-align:center">
+                  <div class="mono ${cpc}" style="font-size:14px">${fi.clean_innings_pct??'—'}%</div>
+                  <div style="font-size:9px;color:var(--t3);text-transform:uppercase">0-run starts</div>
+                </div>
+              </div>
+              <div style="font-family:var(--mono);font-size:10px;color:var(--t3)">
+                ${fi.games} starts · ${fi.h_1st??'—'}H ${fi.bb_1st??'—'}BB ${fi.k_1st??'—'}K in 1st
+              </div>`;
+          })()}
           ${arsenalHtml}
         </div>
       </div>
@@ -1794,6 +1941,228 @@ const SAMPLE_STD = [
   {team:"LAD",lg:"NL",dv:"West",W:65,L:35,G:100,pct:".650",GB:"—",rs:558,ra:421,rd:137,pyth:".635",L10:"9-1"},
   {team:"ATL",lg:"NL",dv:"East",W:62,L:38,G:100,pct:".620",GB:"—",rs:539,ra:432,rd:107,pyth:".613",L10:"8-2"},
 ];
+
+// ── NRFI MATRIX ──────────────────────────────────────────────────────────────
+function renderNRFI() {
+  const el = document.getElementById('nrfi-list');
+
+  if (!DATA.nrfi.length) {
+    el.innerHTML = `
+      <div class="sec">No Run First Inning — ${DATA.date||'Today'}</div>
+      <div class="empty">No NRFI data yet — run model with updated pitcher_profile.py and daily_export.py</div>`;
+    return;
+  }
+
+  const strong = DATA.nrfi.filter(g => g.label === 'STRONG NRFI').length;
+  const lean   = DATA.nrfi.filter(g => g.label === 'LEAN NRFI').length;
+  const yrfi   = DATA.nrfi.filter(g => g.label === 'LEAN YRFI').length;
+  const avgProb = (DATA.nrfi.reduce((s,g)=>s+(g.nrfi_prob||0),0)/DATA.nrfi.length).toFixed(1);
+
+  el.innerHTML = `
+    <div class="sec">NRFI Matrix — ${DATA.date||'Today'} <span class="dim" style="font-size:9px;margin-left:8px;letter-spacing:.5px">2026 STATS ONLY · CLICK CARD FOR DETAIL</span></div>
+    <div class="stat-row" style="margin-bottom:14px">
+      ${sc(DATA.nrfi.length,'GAMES')}
+      ${sc(strong,'STRONG NRFI','strong-col')}
+      ${sc(lean,'LEAN NRFI','lean-col')}
+      ${sc(yrfi,'LEAN YRFI','neg')}
+      ${sc(avgProb+'%','AVG NRFI PROB')}
+    </div>
+    ${DATA.nrfi.map(g => nrfiCard(g)).join('')}
+  `;
+}
+
+function nrfiCard(g) {
+  const prob   = g.nrfi_prob || 50;
+  const label  = g.label || 'NEUTRAL';
+  const cls    = label === 'STRONG NRFI' ? 'strong-nrfi' :
+                 label === 'LEAN NRFI'   ? 'lean-nrfi'   :
+                 label === 'LEAN YRFI'   ? 'lean-yrfi'   : 'neutral';
+  const probCol = prob >= 65 ? '#5aaa77' : prob >= 58 ? '#bbaa44' : prob <= 40 ? '#cc3333' : 'var(--t2)';
+  const confCol = g.confidence === 'high' ? 'pos' : g.confidence === 'medium' ? '' : 'dim';
+
+  function pitcherBlock(p, label) {
+    if (!p) return `<div class="nrfi-col"><div class="nrfi-col-title">${label}</div><div class="dim" style="font-size:10px">—</div></div>`;
+    const fi  = p.first_inning || {};
+    const era = p.season_era;
+    const eraCol = era && era < 3.5 ? 'pos' : era && era > 4.5 ? 'neg' : '';
+    const cleanCol = (fi.clean_innings_pct||0) >= 65 ? 'pos' : (fi.clean_innings_pct||0) <= 45 ? 'neg' : '';
+    return `<div class="nrfi-col">
+      <div class="nrfi-col-title">${label}</div>
+      <div style="font-size:11px;font-weight:500;margin-bottom:4px">${(p.name||'TBD').split(' ').pop()}</div>
+      ${fi.games >= 1 ? `
+        <div class="nrfi-stat-row"><span>1st ERA</span><span class="val ${(fi.era_1st||99)<3?'pos':(fi.era_1st||99)>4.5?'neg':''}">${fi.era_1st??'—'}</span></div>
+        <div class="nrfi-stat-row"><span>0-run%</span><span class="val ${cleanCol}">${fi.clean_innings_pct??'—'}%</span></div>
+        <div class="nrfi-stat-row"><span>runs/gm</span><span class="val">${fi.er_per_start??'—'}</span></div>
+        <div class="nrfi-stat-row"><span>k (1st)</span><span class="val">${fi.k_1st??'—'}</span></div>
+        <div class="nrfi-stat-row dim" style="font-size:9px">${fi.games} starts tracked</div>
+      ` : `
+        <div class="nrfi-stat-row"><span>season ERA</span><span class="val ${eraCol}">${era??'—'}</span></div>
+        <div class="nrfi-stat-row dim" style="font-size:9px">no 1st inn data yet</div>
+      `}
+    </div>`;
+  }
+
+  function battingBlock(b, label) {
+    if (!b || !b.games) return `<div class="nrfi-col"><div class="nrfi-col-title">${label}</div><div class="dim" style="font-size:10px">No 2026 data yet</div></div>`;
+    const spCol = (b.scored_pct||0) >= 35 ? 'neg' : (b.scored_pct||0) <= 20 ? 'pos' : '';
+    const baCol = (b.ba_1st||0) >= .280 ? 'neg' : (b.ba_1st||0) <= .220 ? 'pos' : '';
+    return `<div class="nrfi-col">
+      <div class="nrfi-col-title">${label}</div>
+      <div class="nrfi-stat-row"><span>scores%</span><span class="val ${spCol}">${b.scored_pct??'—'}%</span></div>
+      <div class="nrfi-stat-row"><span>runs/gm</span><span class="val ${spCol}">${b.runs_per_game??'—'}</span></div>
+      <div class="nrfi-stat-row"><span>BA (1st)</span><span class="val ${baCol}">${b.ba_1st??'—'}</span></div>
+      <div class="nrfi-stat-row"><span>OBP (1st)</span><span class="val">${b.obp_1st??'—'}</span></div>
+      <div class="nrfi-stat-row"><span>K% (1st)</span><span class="val ${(b.k_pct_1st||0)>=27?'pos':(b.k_pct_1st||0)<=18?'neg':''}">${b.k_pct_1st??'—'}%</span></div>
+      <div class="nrfi-stat-row dim" style="font-size:9px">${b.games} games tracked</div>
+    </div>`;
+  }
+
+  return `<div class="nrfi-card ${cls}">
+    <div class="nrfi-head">
+      <span class="mono dim" style="font-size:10px">${g.game_time||'—'}</span>
+      <span style="font-size:12px;font-weight:500">${g.away_abbr} @ ${g.home_abbr}</span>
+      <div>
+        <div class="nrfi-meter">
+          <div class="nrfi-meter-fill" style="width:${prob}%;background:${probCol}"></div>
+        </div>
+        <div class="nrfi-meter-label"><span>0% (YRFI)</span><span>100% (NRFI)</span></div>
+      </div>
+      <div>
+        <div class="nrfi-prob" style="color:${probCol}">${prob}%</div>
+        <div class="nrfi-label" style="color:${probCol}">${label}</div>
+      </div>
+      <div class="nrfi-conf hide-sm">
+        <div class="mono ${confCol}" style="font-size:11px">${g.confidence||'—'}</div>
+        <div style="font-size:9px;color:var(--t3)">data confidence</div>
+      </div>
+    </div>
+    <div class="nrfi-body">
+      ${pitcherBlock(g.away_pitcher, 'AWAY SP (bats 1st)')}
+      ${battingBlock(g.away_batting_1st, 'AWAY BATTING 1ST')}
+      ${pitcherBlock(g.home_pitcher, 'HOME SP (bats 2nd)')}
+      ${battingBlock(g.home_batting_1st, 'HOME BATTING 1ST')}
+    </div>
+  </div>`;
+}
+
+// ── MODEL PERFORMANCE ────────────────────────────────────────────────────────
+let resultsFilter = 'all';
+let resultsRendered = false;
+
+function renderResults() {
+  const hist = DATA.history.filter(h => h.result && h.result !== 'pending');
+  if (!hist.length) {
+    document.getElementById('results-stats').innerHTML =
+      '<div class="stat-cell"><div class="v dim">—</div><div class="l">No graded picks yet</div></div>';
+    document.getElementById('results-tbody').innerHTML =
+      '<tr><td colspan="8" class="empty">No graded results yet — run model daily and results populate after games finish</td></tr>';
+    return;
+  }
+
+  // Aggregate stats
+  const bets = hist.filter(h => h.bet_type && h.result !== 'push');
+  const wins = bets.filter(h => h.result === 'win').length;
+  const losses = bets.filter(h => h.result === 'loss').length;
+  const pushes = hist.filter(h => h.result === 'push').length;
+  const total = wins + losses;
+  const pct = total > 0 ? (wins/total*100).toFixed(1) : '—';
+  const pnl = bets.reduce((s,h) => s + (h.pnl || 0), 0).toFixed(1);
+  const pnlCol = parseFloat(pnl) > 0 ? 'pos' : parseFloat(pnl) < 0 ? 'neg' : '';
+  const streak = calcStreak(hist);
+
+  // By type breakdown
+  const rlBets = bets.filter(h => h.bet_type === 'spread');
+  const ouBets = bets.filter(h => h.bet_type === 'total');
+  const rlW = rlBets.filter(h=>h.result==='win').length;
+  const ouW = ouBets.filter(h=>h.result==='win').length;
+
+  document.getElementById('results-stats').innerHTML =
+    sc(wins+'-'+losses, 'RECORD') +
+    sc(pct+'%', 'WIN RATE', parseFloat(pct)>55?'pos':parseFloat(pct)<48?'neg':'') +
+    sc((parseFloat(pnl)>0?'+':'')+pnl+'u', 'P&L UNITS', pnlCol) +
+    sc(pushes, 'PUSHES', 'dim') +
+    sc(streak, 'STREAK');
+
+  document.getElementById('results-by-type').innerHTML = `
+    <div class="stat-cell">
+      <div class="v">${rlW}-${rlBets.length-rlW}</div>
+      <div class="l">Run Line</div>
+    </div>
+    <div class="stat-cell">
+      <div class="v">${ouW}-${ouBets.length-ouW}</div>
+      <div class="l">Over/Under</div>
+    </div>
+    <div class="stat-cell">
+      <div class="v ${rlBets.length>0?(rlW/rlBets.length*100).toFixed(0)>=55?'pos':(rlW/rlBets.length*100).toFixed(0)<=45?'neg':'':''}">${rlBets.length>0?(rlW/rlBets.length*100).toFixed(1)+'%':'—'}</div>
+      <div class="l">RL Win Rate</div>
+    </div>
+    <div class="stat-cell">
+      <div class="v ${ouBets.length>0?(ouW/ouBets.length*100).toFixed(0)>=55?'pos':(ouW/ouBets.length*100).toFixed(0)<=45?'neg':'':''}">${ouBets.length>0?(ouW/ouBets.length*100).toFixed(1)+'%':'—'}</div>
+      <div class="l">O/U Win Rate</div>
+    </div>`;
+
+  renderResultsTable();
+
+  if (!resultsRendered) {
+    resultsRendered = true;
+    document.querySelectorAll('#results-filters .fb').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('#results-filters .fb').forEach(b=>b.classList.remove('active'));
+        btn.classList.add('active');
+        resultsFilter = btn.dataset.rf;
+        renderResultsTable();
+      });
+    });
+  }
+}
+
+function renderResultsTable() {
+  let hist = [...DATA.history].filter(h => h.result && h.result !== 'pending')
+    .sort((a,b) => (b.date||'').localeCompare(a.date||''));
+
+  if (resultsFilter === 'spread') hist = hist.filter(h => h.bet_type === 'spread');
+  if (resultsFilter === 'total')  hist = hist.filter(h => h.bet_type === 'total');
+  if (resultsFilter === 'w')      hist = hist.filter(h => h.result === 'win');
+  if (resultsFilter === 'l')      hist = hist.filter(h => h.result === 'loss');
+
+  document.getElementById('results-tbody').innerHTML = hist.length
+    ? hist.map(h => {
+        const res = h.result || '—';
+        const rc  = res==='win'?'pos':res==='loss'?'neg':'dim';
+        const edge = h.edge_spread || h.edge_total || 0;
+        const bet  = h.bet_type === 'spread'
+          ? (h.spread_bet === 'home_cover' ? `${h.home_abbr} RL` : `${h.away_abbr} +1.5`)
+          : h.total_bet ? `${h.total_bet?.toUpperCase()} ${h.vegas_total}` : '—';
+        const actual = h.actual_margin != null
+          ? `${h.away_abbr} ${h.actual_away_score??''} - ${h.actual_home_score??''} ${h.home_abbr}`
+          : '—';
+        const dt = h.date ? new Date(h.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}) : '—';
+        return `<tr>
+          <td class="mono dim" style="font-size:10px">${dt}</td>
+          <td>${(h.away_abbr||'')} @ ${(h.home_abbr||'')}</td>
+          <td class="mono" style="font-size:11px">${bet}</td>
+          <td class="mono dim">${h.spread_edge_label||h.total_edge_label||'—'}</td>
+          <td class="tc mono ${edge>0?'pos':'dim'}">${edge?(edge*100).toFixed(1)+'%':'—'}</td>
+          <td class="tc"><span class="tag tag-${res==='win'?'lean':res==='loss'?'none':'none'}" style="${res==='win'?'':'color:var(--t3)'}">${res.toUpperCase()}</span></td>
+          <td class="mono dim" style="font-size:10px">${actual}</td>
+          <td class="tc mono dim">${h.spread_confidence||'—'}</td>
+        </tr>`;
+      }).join('')
+    : '<tr><td colspan="8" class="empty">No results match filter</td></tr>';
+}
+
+function calcStreak(hist) {
+  const sorted = [...hist].filter(h=>h.result&&h.result!=='push')
+    .sort((a,b)=>(b.date||'').localeCompare(a.date||''));
+  if (!sorted.length) return '—';
+  const last = sorted[0].result;
+  let count = 0;
+  for (const h of sorted) {
+    if (h.result === last) count++;
+    else break;
+  }
+  return (last==='win'?'W':'L') + count;
+}
 
 // ── LIVE SCORES ──────────────────────────────────────────────────────────────
 let liveInterval = null;
