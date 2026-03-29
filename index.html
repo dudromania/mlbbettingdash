@@ -2204,8 +2204,15 @@ function calcStreak(hist) {
 let liveInterval = null;
 
 async function fetchLiveScores() {
-  const today = DATA.date || todayStr();
-  const espnDate = today.replace(/-/g, '');
+  // Use DATA.date (the model's date) as the canonical game date.
+  // Only roll forward to actual today if we're past midnight CT.
+  const modelDate = DATA.date || todayStr();
+  const nowCT = new Date(new Date().toLocaleString('en-US', {timeZone: 'America/Chicago'}));
+  const ctDateStr = nowCT.getFullYear() + '-'
+    + String(nowCT.getMonth()+1).padStart(2,'0') + '-'
+    + String(nowCT.getDate()).padStart(2,'0');
+  // Stay on model date unless CT clock has ticked past midnight to a new day
+  const espnDate = (ctDateStr > modelDate ? ctDateStr : modelDate).replace(/-/g, '');
   const url = `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${espnDate}`;
 
   try {
