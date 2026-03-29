@@ -610,12 +610,48 @@ tbody td {
 .live-game {
   display: inline-flex;
   flex-direction: column;
-  padding: 5px 12px;
+  padding: 5px 10px;
   background: var(--s1);
   cursor: default;
-  min-width: 120px;
+  min-width: 110px;
   border-right: 1px solid var(--b1);
 }
+.lg-situation {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 3px;
+}
+.lg-bases {
+  display: grid;
+  grid-template-areas: ". 2 ." "1 . 3";
+  grid-template-columns: 7px 7px 7px;
+  grid-template-rows: 7px 7px;
+  gap: 1px;
+}
+.lg-base {
+  width: 7px;
+  height: 7px;
+  background: var(--b2);
+  transform: rotate(45deg);
+}
+.lg-base.on { background: #cc8800; }
+.lg-base-2  { grid-area: 2; }
+.lg-base-1  { grid-area: 1; }
+.lg-base-3  { grid-area: 3; }
+.lg-outs {
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+.lg-out {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--b2);
+  border: 1px solid var(--t3);
+}
+.lg-out.on { background: var(--t3); }
 .live-game:last-child { border-right: none; }
 .live-game.live-active { background: #0d1a0d; }
 .live-game.live-final { opacity: .7; }
@@ -1831,9 +1867,12 @@ async function renderStandings() {
       const data = await r.json();
       stdCache = [];
       data.records?.forEach(div => {
-        const dn = div.division?.name || '';
-        const lg = dn.includes('American') ? 'AL' : 'NL';
-        const dv = dn.replace('American League ', '').replace('National League ', '');
+        const dn  = div.division?.name || '';
+        const lid = div.league?.id || div.division?.parentOrganization?.id || 0;
+        // leagueId 103 = AL, 104 = NL. Fall back to name matching
+        const lg  = (lid === 103 || dn.includes('American') || dn.startsWith('AL')) ? 'AL' : 'NL';
+        const dv  = dn.replace('American League ','').replace('National League ','')
+                      .replace('AL ','').replace('NL ','');
         div.teamRecords?.forEach(tr => {
           const rs = parseInt(tr.runsScored||0), ra = parseInt(tr.runsAllowed||0);
           const w = tr.wins, l = tr.losses, g = w + l;
@@ -2397,6 +2436,29 @@ async function fetchLiveScores() {
         const hL = state==='in'   && parseInt(hS)>parseInt(aS);
         const aL = state==='in'   && parseInt(aS)>parseInt(hS);
         if (state==='in') hasLive = true;
+
+        // Situation data for live games
+        let situationHtml = '';
+        if (state === 'in') {
+          const ls    = comp.situation || {};
+          const outs  = ls.outs ?? comp.status?.type?.description?.match(/\d+ Out/)?.[0]?.[0] ?? 0;
+          const on1   = ls.onFirst  || false;
+          const on2   = ls.onSecond || false;
+          const on3   = ls.onThird  || false;
+          const inning = comp.status?.type?.shortDetail || detail;
+          situationHtml = `<div class="lg-situation">
+            <div class="lg-bases">
+              <div class="lg-base lg-base-2 ${on2?'on':''}"></div>
+              <div class="lg-base lg-base-1 ${on1?'on':''}"></div>
+              <div class="lg-base lg-base-3 ${on3?'on':''}"></div>
+            </div>
+            <div class="lg-outs">
+              <div class="lg-out ${parseInt(outs)>=1?'on':''}"></div>
+              <div class="lg-out ${parseInt(outs)>=2?'on':''}"></div>
+            </div>
+          </div>`;
+        }
+
         return `<div class="live-game ${state==='in'?'live-active':state==='post'?'live-final':''}">
           <div class="lg-teams"><div class="lg-team">
             <span class="lg-abbr">${aA}</span>
@@ -2407,6 +2469,7 @@ async function fetchLiveScores() {
             <span class="lg-score ${hW||hL?'winning':''}">${hS!==''?hS:'—'}</span>
           </div></div>
           <div class="lg-status ${state==='in'?'live':''}">${state==='post'?'F':detail}</div>
+          ${situationHtml}
         </div>`;
       }).filter(Boolean).join('');
 
