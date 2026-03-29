@@ -683,19 +683,54 @@ tbody td {
   background: var(--s1);
   border: 1px solid var(--b1);
   border-left: 3px solid transparent;
-  margin-bottom: 1px;
+  margin-bottom: 12px;
   overflow: hidden;
 }
-.nrfi-card.strong-nrfi { border-left-color: #5aaa77; }
+.nrfi-card.strong-nrfi { border-left-color: #5aaa77; background: #080f0a; }
 .nrfi-card.lean-nrfi   { border-left-color: #bbaa44; }
 .nrfi-card.lean-yrfi   { border-left-color: #cc3333; }
-.nrfi-card.neutral     { border-left-color: var(--b2); }
+.nrfi-card.neutral     { border-left-color: var(--b2); opacity: .8; }
+
+.nrfi-group-label {
+  font-family: var(--mono);
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--t3);
+  padding: 16px 0 6px;
+  border-bottom: 1px solid var(--b1);
+  margin-bottom: 12px;
+}
+.nrfi-group-label.grp-strong { color: #5aaa77; border-bottom-color: #5aaa7733; }
+.nrfi-group-label.grp-lean-n { color: #bbaa44; border-bottom-color: #bbaa4433; }
+.nrfi-group-label.grp-lean-y { color: #cc3333; border-bottom-color: #cc333333; }
+.nrfi-group-label.grp-neutral { color: var(--t3); }
+
+.nrfi-prob-big {
+  font-family: var(--mono);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+}
+.nrfi-edge-pill {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 9px;
+  padding: 1px 6px;
+  margin-top: 3px;
+  letter-spacing: .3px;
+}
+.nrfi-edge-pill.pos  { background: transparent; color: #5aaa77; border: 1px solid #5aaa7744; }
+.nrfi-edge-pill.warn { background: transparent; color: #bbaa44; border: 1px solid #bbaa4444; }
+.nrfi-edge-pill.neg  { background: transparent; color: #a44444; border: 1px solid #a4444444; }
+.nrfi-edge-pill.dim  { background: transparent; color: var(--t3); border: 1px solid var(--b2); }
 
 .nrfi-head {
   display: grid;
-  grid-template-columns: 80px 140px 1fr 80px 100px 80px;
+  grid-template-columns: 80px 140px 1fr 110px 90px;
   gap: 0;
-  padding: 7px 10px;
+  padding: 8px 12px;
   align-items: center;
   border-bottom: 1px solid var(--b1);
 }
@@ -1980,16 +2015,31 @@ function renderNRFI() {
   const yrfi   = DATA.nrfi.filter(g => g.label === 'LEAN YRFI').length;
   const avgProb = (DATA.nrfi.reduce((s,g)=>s+(g.nrfi_prob||0),0)/DATA.nrfi.length).toFixed(1);
 
+  // Group games by label
+  const grpStrong  = DATA.nrfi.filter(g => g.label === 'STRONG NRFI');
+  const grpLeanN   = DATA.nrfi.filter(g => g.label === 'LEAN NRFI');
+  const grpNeutral = DATA.nrfi.filter(g => g.label === 'NEUTRAL');
+  const grpLeanY   = DATA.nrfi.filter(g => g.label === 'LEAN YRFI');
+
+  function grpBlock(label, cls, games) {
+    if (!games.length) return '';
+    return `<div class="nrfi-group-label ${cls}">${label} — ${games.length} game${games.length>1?'s':''}</div>
+      ${games.map(g => nrfiCard(g)).join('')}`;
+  }
+
   el.innerHTML = `
-    <div class="sec">NRFI Matrix — ${DATA.date||'Today'} <span class="dim" style="font-size:9px;margin-left:8px;letter-spacing:.5px">2026 STATS ONLY · CLICK CARD FOR DETAIL</span></div>
-    <div class="stat-row" style="margin-bottom:14px">
+    <div class="sec">NRFI Matrix — ${DATA.date||'Today'} <span class="dim" style="font-size:9px;margin-left:8px;letter-spacing:.5px">2026 STATS ONLY · BREAK-EVEN ~55%</span></div>
+    <div class="stat-row" style="margin-bottom:20px">
       ${sc(DATA.nrfi.length,'GAMES')}
       ${sc(strong,'STRONG NRFI','strong-col')}
       ${sc(lean,'LEAN NRFI','lean-col')}
       ${sc(yrfi,'LEAN YRFI','neg')}
       ${sc(avgProb+'%','AVG NRFI PROB')}
     </div>
-    ${DATA.nrfi.map(g => nrfiCard(g)).join('')}
+    ${grpBlock('STRONG NRFI', 'grp-strong', grpStrong)}
+    ${grpBlock('LEAN NRFI',   'grp-lean-n', grpLeanN)}
+    ${grpBlock('NEUTRAL',     'grp-neutral', grpNeutral)}
+    ${grpBlock('LEAN YRFI',   'grp-lean-y', grpLeanY)}
   `;
 }
 
@@ -2039,6 +2089,14 @@ function nrfiCard(g) {
     </div>`;
   }
 
+  // Edge calculation vs ~55% break-even for NRFI at typical -120 juice
+  const BREAK_EVEN = 55;
+  const edgeVal  = (prob - BREAK_EVEN).toFixed(1);
+  const edgeCls  = parseFloat(edgeVal) >= 10 ? 'pos' :
+                   parseFloat(edgeVal) >= 5  ? 'warn' :
+                   parseFloat(edgeVal) < -5  ? 'neg'  : 'dim';
+  const edgeTxt  = (parseFloat(edgeVal) > 0 ? '+' : '') + edgeVal + '% edge';
+
   return `<div class="nrfi-card ${cls}">
     <div class="nrfi-head">
       <span class="mono dim" style="font-size:10px">${g.game_time||'—'}</span>
@@ -2049,13 +2107,13 @@ function nrfiCard(g) {
         </div>
         <div class="nrfi-meter-label"><span>0% (YRFI)</span><span>100% (NRFI)</span></div>
       </div>
-      <div>
-        <div class="nrfi-prob" style="color:${probCol}">${prob}%</div>
-        <div class="nrfi-label" style="color:${probCol}">${label}</div>
+      <div style="text-align:right;line-height:1.3">
+        <div class="nrfi-prob-big" style="color:${probCol}">${prob}%</div>
+        <div class="nrfi-edge-pill ${edgeCls}">${edgeTxt}</div>
       </div>
-      <div class="nrfi-conf hide-sm">
-        <div class="mono ${confCol}" style="font-size:11px">${g.confidence||'—'}</div>
-        <div style="font-size:9px;color:var(--t3)">data confidence</div>
+      <div class="hide-sm" style="text-align:right">
+        <div class="mono ${confCol}" style="font-size:10px">${g.confidence||'—'}</div>
+        <div style="font-size:9px;color:var(--t3);margin-top:2px">confidence</div>
       </div>
     </div>
     <div class="nrfi-body">
@@ -2204,36 +2262,61 @@ function calcStreak(hist) {
 let liveInterval = null;
 
 async function fetchLiveScores() {
-  // Use DATA.date (the model's date) as the canonical game date.
-  // Only roll forward to actual today if we're past midnight CT.
-  const modelDate = DATA.date || todayStr();
-  const nowCT = new Date(new Date().toLocaleString('en-US', {timeZone: 'America/Chicago'}));
-  const ctDateStr = nowCT.getFullYear() + '-'
-    + String(nowCT.getMonth()+1).padStart(2,'0') + '-'
-    + String(nowCT.getDate()).padStart(2,'0');
-  // Stay on model date unless CT clock has ticked past midnight to a new day
-  const espnDate = (ctDateStr > modelDate ? ctDateStr : modelDate).replace(/-/g, '');
-  const url = `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${espnDate}`;
+  // Build a set of today's matchups from DATA.games so we can filter
+  // ESPN results — ESPN sometimes returns tomorrow's slate early regardless
+  // of the date param, so we whitelist only our known today games.
+  const todayMatchups = new Set(
+    DATA.games.map(g => g.home_abbr + '|' + g.away_abbr)
+  );
+
+  // Try today's date first, fall back to yesterday if nothing matches
+  const modelDate = (DATA.date || todayStr()).replace(/-/g, '');
 
   try {
-    const r = await fetch(url);
+    const r = await fetch(
+      `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${modelDate}`
+    );
     const data = await r.json();
-    const events = data.events || [];
+    const allEvents = data.events || [];
 
-    if (!events.length) {
+    // Filter to only games we have picks on today
+    const events = allEvents.filter(ev => {
+      const comp = ev.competitions?.[0];
+      const home = comp?.competitors?.find(t => t.homeAway === 'home');
+      const away = comp?.competitors?.find(t => t.homeAway === 'away');
+      if (!home || !away) return false;
+      const hAbbr = home.team.abbreviation;
+      const aAbbr = away.team.abbreviation;
+      // Match either direction — some abbr mismatches (e.g. WSH vs WAS)
+      return todayMatchups.has(hAbbr+'|'+aAbbr) ||
+             todayMatchups.has(aAbbr+'|'+hAbbr) ||
+             [...todayMatchups].some(m => {
+               const [mh, ma] = m.split('|');
+               return (mh.startsWith(hAbbr.slice(0,2)) && ma.startsWith(aAbbr.slice(0,2))) ||
+                      (mh.startsWith(aAbbr.slice(0,2)) && ma.startsWith(hAbbr.slice(0,2)));
+             });
+    });
+
+    // If we got zero matches and have no games yet, show all (early morning)
+    const displayEvents = events.length > 0 ? events :
+                          todayMatchups.size === 0 ? allEvents : [];
+
+    if (!displayEvents.length) {
       document.getElementById('live-games-row').innerHTML =
         '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">No games today</span>';
+      if (liveInterval) clearInterval(liveInterval);
+      liveInterval = setInterval(fetchLiveScores, 300000);
       return;
     }
 
     let hasLive = false;
-    const html = events.map(ev => {
-      const comp   = ev.competitions?.[0];
-      const status = comp?.status?.type;
-      const state  = status?.state || 'pre';   // pre, in, post
-      const detail = status?.shortDetail || '';
-      const home   = comp?.competitors?.find(t => t.homeAway === 'home');
-      const away   = comp?.competitors?.find(t => t.homeAway === 'away');
+    const html = displayEvents.map(ev => {
+      const comp      = ev.competitions?.[0];
+      const status    = comp?.status?.type;
+      const state     = status?.state || 'pre';
+      const detail    = status?.shortDetail || '';
+      const home      = comp?.competitors?.find(t => t.homeAway === 'home');
+      const away      = comp?.competitors?.find(t => t.homeAway === 'away');
       if (!home || !away) return '';
 
       const hAbbr  = home.team.abbreviation;
@@ -2247,11 +2330,9 @@ async function fetchLiveScores() {
 
       if (state === 'in') hasLive = true;
 
-      const cls = state === 'in' ? 'live-active' : state === 'post' ? 'live-final' : '';
+      const cls       = state === 'in' ? 'live-active' : state === 'post' ? 'live-final' : '';
       const statusCls = state === 'in' ? 'live' : '';
-      const statusTxt = state === 'pre'  ? detail :
-                        state === 'in'   ? detail :
-                        state === 'post' ? 'F' : detail;
+      const statusTxt = state === 'post' ? 'F' : detail;
 
       return `<div class="live-game ${cls}">
         <div class="lg-teams">
@@ -2273,10 +2354,9 @@ async function fetchLiveScores() {
     document.getElementById('live-games-row').innerHTML = html ||
       '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">No games</span>';
 
-    const now = new Date().toLocaleTimeString('en-US', {hour:'numeric',minute:'2-digit'});
+    const now = new Date().toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
     document.getElementById('live-updated').textContent = now;
 
-    // Auto-refresh every 60s when games are live, every 5min otherwise
     if (liveInterval) clearInterval(liveInterval);
     liveInterval = setInterval(fetchLiveScores, hasLive ? 60000 : 300000);
 
