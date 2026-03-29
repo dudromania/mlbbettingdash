@@ -1650,8 +1650,8 @@ async function loadLineup(i, homeAbbr, awayAbbr) {
         if (!splits.length) continue;
         const s = splits[0].stat || {};
         const pa = parseInt(s.plateAppearances||0);
-        if (pa < 1) continue; // skip players with no ABs
-        map[person.id] = {
+        if (pa < 1) continue;
+        const stat = {
           ba:   parseFloat(s.avg||0).toFixed(3),
           obp:  parseFloat(s.obp||0).toFixed(3),
           slg:  parseFloat(s.slg||0).toFixed(3),
@@ -1660,6 +1660,12 @@ async function loadLineup(i, homeAbbr, awayAbbr) {
           pa,
           kpct: (parseInt(s.strikeOuts||0)/pa*100).toFixed(0)+'%',
         };
+        // Key by MLB player ID AND by full name AND last name for flexible matching
+        map[person.id] = stat;
+        const fullName = (person.fullName||'').toLowerCase();
+        const lastName = fullName.split(' ').pop();
+        map[fullName] = stat;
+        map[lastName] = stat;
       }
       return map;
     } catch(e) { return {}; }
@@ -1697,7 +1703,16 @@ async function loadLineup(i, homeAbbr, awayAbbr) {
         const name   = p.athlete?.shortName || p.athlete?.displayName || '—';
         const pos    = p.position?.abbreviation || '—';
         const pid    = p.athlete?.id;
-        const st     = statMap[pid] || {};
+        // Try MLB ID, then ESPN ID, then name matching
+        const espnName   = (p.athlete?.displayName||'').toLowerCase();
+        const espnLast   = espnName.split(' ').pop();
+        const espnShort  = (p.athlete?.shortName||'').toLowerCase();
+        const espnShortL = espnShort.split('. ').pop();
+        const st = statMap[pid]
+                || statMap[espnName]
+                || statMap[espnLast]
+                || statMap[espnShortL]
+                || {};
         const baCol  = st.ba  ? (parseFloat(st.ba) >=.280?'pos':parseFloat(st.ba)<=.220?'neg':'') : 'dim';
         const obpCol = st.obp ? (parseFloat(st.obp)>=.350?'pos':parseFloat(st.obp)<=.290?'neg':'') : 'dim';
         html += `<div style="display:grid;grid-template-columns:14px 20px 1fr 32px 32px 26px;gap:0 4px;padding:2px 0;border-bottom:1px solid #0a0a0a;font-family:var(--mono);font-size:10px;align-items:center">
