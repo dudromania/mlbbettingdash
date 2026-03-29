@@ -2311,50 +2311,74 @@ function calcStreak(hist) {
 let liveInterval = null;
 
 async function fetchLiveScores() {
-  const bar        = document.getElementById('live-games-row');
-  const modelDate  = DATA.date || todayStr();
-  const espnDate   = modelDate.replace(/-/g, '');
-  const espnBase   = `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${espnDate}`;
+  const bar       = document.getElementById('live-games-row');
+  const modelDate = DATA.date || todayStr();
+  const espnDate  = modelDate.replace(/-/g, '');
 
-  // CORS proxies — tried in order until one works
+  // Build a lookup of today's exact matchups: "AWAY@HOME"
+  // This is the definitive filter — tomorrow's games will be different matchups
+  const todayMatchups = new Set(
+    DATA.games.map(g => g.away_abbr + '@' + g.home_abbr)
+  );
+
+  const espnUrl = `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${espnDate}`;
   const proxies = [
-    u => `https://corsproxy.io/?url=${encodeURIComponent(u)}`,
-    u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
-    u => u,   // direct (works if CORS headers present)
+    `https://corsproxy.io/?url=${encodeURIComponent(espnUrl)}`,
+    `https://api.allorigins.win/raw?url=${encodeURIComponent(espnUrl)}`,
+    espnUrl,
   ];
 
-  for (const proxy of proxies) {
+  for (const url of proxies) {
     try {
-      const url = proxy(espnBase);
       const res = await fetch(url, { cache: 'no-store' });
       if (!res.ok) continue;
-      const data = await res.json();
+      const raw  = await res.json();
+      const data = raw.contents ? JSON.parse(raw.contents) : raw;
+      const all  = data.events || [];
+      if (!all.length) continue;
 
-      // Handle allorigins wrapping (returns {contents: "..."})
-      const parsed = typeof data === 'string' ? JSON.parse(data) :
-                     data.contents ? JSON.parse(data.contents) : data;
+      // Filter to ONLY matchups from DATA.games
+      // This is bulletproof — tomorrow's matchups won't match today's picks
+      const events = todayMatchups.size > 0
+        ? all.filter(ev => {
+            const comp = ev.competitions?.[0];
+            const h = comp?.competitors?.find(t => t.homeAway==='home')?.team?.abbreviation || '';
+            const a = comp?.competitors?.find(t => t.homeAway==='away')?.team?.abbreviation || '';
+            return todayMatchups.has(a + '@' + h);
+          })
+        : all;
 
-      const allEvents = parsed.events || [];
+      if (!events.length) {
+        // Matchups don't match — ESPN has advanced to tomorrow
+        // Show today's games as final since they must be done
+        bar.innerHTML = DATA.games.map(g =>
+          `<div class="live-game live-final">
+            <div class="lg-teams"><div class="lg-team">
+              <span class="lg-abbr">${g.away_abbr}</span>
+              <span class="lg-score">F</span>
+            </div></div>
+            <div class="lg-teams"><div class="lg-team">
+              <span class="lg-abbr">${g.home_abbr}</span>
+              <span class="lg-score">F</span>
+            </div></div>
+            <div class="lg-status">Final</div>
+          </div>`
+        ).join('');
+        document.getElementById('live-updated').textContent =
+          new Date().toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}) + ' · Final';
+        if (liveInterval) clearInterval(liveInterval);
+        liveInterval = setInterval(fetchLiveScores, 600000);
+        return;
+      }
 
-      // Filter to today's date — ESPN dates are UTC, convert to ET
-      const events = allEvents.filter(ev => {
-        const d = ev.competitions?.[0]?.date || ev.date || '';
-        if (!d) return true;
-        const et = new Date(d).toLocaleDateString('en-US',
-          {timeZone:'America/New_York', year:'numeric', month:'2-digit', day:'2-digit'})
-          .split('/');
-        return `${et[2]}-${et[0]}-${et[1]}` === modelDate;
-      });
-
-      if (!allEvents.length) continue; // proxy returned empty, try next
-
+      // Render matched games
       let hasLive = false;
       const html  = events.map(ev => {
-        const comp = ev.competitions?.[0];
+        const comp   = ev.competitions?.[0];
         const state  = comp?.status?.type?.state || 'pre';
         const detail = comp?.status?.type?.shortDetail || '';
-        const home   = comp?.competitors?.find(t => t.homeAway === 'home');
-        const away   = comp?.competitors?.find(t => t.homeAway === 'away');
+        const home   = comp?.competitors?.find(t => t.homeAway==='home');
+        const away   = comp?.competitors?.find(t => t.homeAway==='away');
         if (!home || !away) return '';
         const hA = home.team?.abbreviation || '';
         const aA = away.team?.abbreviation || '';
@@ -2378,39 +2402,26 @@ async function fetchLiveScores() {
         </div>`;
       }).filter(Boolean).join('');
 
-      // If date filter removed everything, show "games complete"
-      if (!html && events.length === 0 && allEvents.length > 0) {
-        bar.innerHTML = DATA.games.map(g =>
-          `<div class="live-game live-final">
-            <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.away_abbr}</span><span class="lg-score">—</span></div></div>
-            <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.home_abbr}</span><span class="lg-score">—</span></div></div>
-            <div class="lg-status">Final</div>
-          </div>`
-        ).join('');
-      } else {
-        bar.innerHTML = html || '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">No games</span>';
-      }
-
+      bar.innerHTML = html;
       document.getElementById('live-updated').textContent =
-        new Date().toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
+        new Date().toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
       if (liveInterval) clearInterval(liveInterval);
       liveInterval = setInterval(fetchLiveScores, hasLive ? 30000 : 120000);
-      return; // success — stop trying proxies
+      return;
 
     } catch(e) { continue; }
   }
 
-  // All proxies failed — show game times from picks as placeholder
-  bar.innerHTML = DATA.games.length
-    ? DATA.games.map(g =>
-        `<div class="live-game">
-          <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.away_abbr}</span><span class="lg-score">—</span></div></div>
-          <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.home_abbr}</span><span class="lg-score">—</span></div></div>
-          <div class="lg-status" style="font-size:9px">${(g.game_time_ct||'').replace(' CT','')}</div>
-        </div>`).join('')
-    : '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">Scores unavailable</span>';
+  // All failed — show scheduled times from picks
+  bar.innerHTML = DATA.games.map(g =>
+    `<div class="live-game">
+      <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.away_abbr}</span><span class="lg-score">—</span></div></div>
+      <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.home_abbr}</span><span class="lg-score">—</span></div></div>
+      <div class="lg-status" style="font-size:9px">${(g.game_time_ct||'').replace(' CT','')}</div>
+    </div>`
+  ).join('') || '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">Scores unavailable</span>';
   document.getElementById('live-updated').textContent =
-    new Date().toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
+    new Date().toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
   if (liveInterval) clearInterval(liveInterval);
   liveInterval = setInterval(fetchLiveScores, 120000);
 }
