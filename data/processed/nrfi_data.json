@@ -1,98 +1,6 @@
 [
   {
     "date": "2026-03-29",
-    "game_time": "12:40 PM CT",
-    "home_abbr": "NYM",
-    "away_abbr": "PIT",
-    "home_sp": "Nolan McLean",
-    "away_sp": "Carmen Mlodzinski",
-    "nrfi_prob": 45.0,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Nolan McLean",
-      "first_inning": {},
-      "season_era": 2.06
-    },
-    "away_pitcher": {
-      "name": "Carmen Mlodzinski",
-      "first_inning": {},
-      "season_era": 3.55
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-03-29",
-    "game_time": "12:37 PM CT",
-    "home_abbr": "TOR",
-    "away_abbr": "ATH",
-    "home_sp": "Eric Lauer",
-    "away_sp": "Luis Morales",
-    "nrfi_prob": 42.2,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Eric Lauer",
-      "first_inning": {},
-      "season_era": 3.18
-    },
-    "away_pitcher": {
-      "name": "Luis Morales",
-      "first_inning": {},
-      "season_era": 3.14
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-03-29",
-    "game_time": "12:40 PM CT",
-    "home_abbr": "CIN",
-    "away_abbr": "BOS",
-    "home_sp": "Rhett Lowder",
-    "away_sp": "Connelly Early",
-    "nrfi_prob": 40.9,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Rhett Lowder",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_pitcher": {
-      "name": "Connelly Early",
-      "first_inning": {},
-      "season_era": 2.33
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-03-29",
-    "game_time": "12:35 PM CT",
-    "home_abbr": "PHI",
-    "away_abbr": "TEX",
-    "home_sp": "Jes\u00fas Luzardo",
-    "away_sp": "MacKenzie Gore",
-    "nrfi_prob": 34.8,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Jes\u00fas Luzardo",
-      "first_inning": {},
-      "season_era": 3.92
-    },
-    "away_pitcher": {
-      "name": "MacKenzie Gore",
-      "first_inning": {},
-      "season_era": 4.17
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-03-29",
     "game_time": "1:15 PM CT",
     "home_abbr": "STL",
     "away_abbr": "TB",
@@ -116,52 +24,6 @@
   },
   {
     "date": "2026-03-29",
-    "game_time": "12:35 PM CT",
-    "home_abbr": "ATL",
-    "away_abbr": "KC",
-    "home_sp": "Grant Holmes",
-    "away_sp": "Seth Lugo",
-    "nrfi_prob": 34.6,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Grant Holmes",
-      "first_inning": {},
-      "season_era": 3.99
-    },
-    "away_pitcher": {
-      "name": "Seth Lugo",
-      "first_inning": {},
-      "season_era": 4.15
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-03-29",
-    "game_time": "12:40 PM CT",
-    "home_abbr": "MIA",
-    "away_abbr": "COL",
-    "home_sp": "Max Meyer",
-    "away_sp": "Jose Quintana",
-    "nrfi_prob": 32.5,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Max Meyer",
-      "first_inning": {},
-      "season_era": 4.73
-    },
-    "away_pitcher": {
-      "name": "Jose Quintana",
-      "first_inning": {},
-      "season_era": 3.96
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-03-29",
     "game_time": "1:10 PM CT",
     "home_abbr": "MIL",
     "away_abbr": "CWS",
@@ -179,29 +41,6 @@
       "name": "Anthony Kay",
       "first_inning": {},
       "season_era": null
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-03-29",
-    "game_time": "1:20 PM CT",
-    "home_abbr": "CHC",
-    "away_abbr": "WSH",
-    "home_sp": "Shota Imanaga",
-    "away_sp": "Jake Irvin",
-    "nrfi_prob": 31.2,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Shota Imanaga",
-      "first_inning": {},
-      "season_era": 3.73
-    },
-    "away_pitcher": {
-      "name": "Jake Irvin",
-      "first_inning": {},
-      "season_era": 5.7
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -248,29 +87,6 @@
       "name": "Jack Kochanowicz",
       "first_inning": {},
       "season_era": 6.81
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-03-29",
-    "game_time": "12:35 PM CT",
-    "home_abbr": "BAL",
-    "away_abbr": "MIN",
-    "home_sp": "Shane Baz",
-    "away_sp": "Bailey Ober",
-    "nrfi_prob": 27.8,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Shane Baz",
-      "first_inning": {},
-      "season_era": 4.87
-    },
-    "away_pitcher": {
-      "name": "Bailey Ober",
-      "first_inning": {},
-      "season_era": 5.1
     },
     "away_batting_1st": {},
     "home_batting_1st": {}

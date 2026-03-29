@@ -1,249 +1,5 @@
 [
   {
-    "player_id": 656550,
-    "name": "Grant Holmes",
-    "team_abbr": "ATL",
-    "opponent": "KC",
-    "throws": "R",
-    "days_rest": 246,
-    "trend": "declining",
-    "season_stats": {
-      "season": 2025,
-      "W": 4,
-      "L": 9,
-      "ERA": 3.99,
-      "FIP": 4.18,
-      "WHIP": 1.34,
-      "IP": 115.0,
-      "GS": 21,
-      "G": 22,
-      "K": 123,
-      "BB": 54,
-      "HR": 16,
-      "H": 100,
-      "ER": 51,
-      "K9": 9.63,
-      "BB9": 4.23,
-      "HR9": 1.25,
-      "K_pct": 25.0,
-      "BB_pct": 11.0,
-      "K_BB": 2.28,
-      "note": "2025 stats (current season insufficient)"
-    },
-    "last_starts": [
-      {
-        "date": "2025-07-26",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 4.0,
-        "H": 6,
-        "ER": 4,
-        "BB": 2,
-        "K": 2,
-        "HR": 0,
-        "pitches": 81,
-        "era_start": 9.0,
-        "game_id": 776993
-      },
-      {
-        "date": "2025-07-20",
-        "opponent": "",
-        "decision": "L",
-        "IP": 6.0,
-        "H": 7,
-        "ER": 3,
-        "BB": 2,
-        "K": 2,
-        "HR": 1,
-        "pitches": 100,
-        "era_start": 4.5,
-        "game_id": 777083
-      },
-      {
-        "date": "2025-07-11",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 3.0,
-        "H": 9,
-        "ER": 5,
-        "BB": 2,
-        "K": 1,
-        "HR": 0,
-        "pitches": 86,
-        "era_start": 15.0,
-        "game_id": 777147
-      },
-      {
-        "date": "2025-07-06",
-        "opponent": "",
-        "decision": "L",
-        "IP": 6.0,
-        "H": 4,
-        "ER": 2,
-        "BB": 3,
-        "K": 5,
-        "HR": 1,
-        "pitches": 96,
-        "era_start": 3.0,
-        "game_id": 777222
-      },
-      {
-        "date": "2025-07-01",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 6.0,
-        "H": 3,
-        "ER": 0,
-        "BB": 3,
-        "K": 10,
-        "HR": 0,
-        "pitches": 106,
-        "era_start": 0.0,
-        "game_id": 777298
-      }
-    ],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 3.0,
-      "k_low_25": 2,
-      "k_high_75": 4,
-      "expected_ip": 4.5,
-      "season_k9": 9.63,
-      "last3_k9": 3.46,
-      "blended_k9": 5.93,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 824944,
-    "game_date": "2026-03-29",
-    "game_time_ct": "12:35 PM CT"
-  },
-  {
-    "player_id": 607625,
-    "name": "Seth Lugo",
-    "team_abbr": "KC",
-    "opponent": "ATL",
-    "throws": "R",
-    "days_rest": 212,
-    "trend": "declining",
-    "season_stats": {
-      "season": 2025,
-      "W": 8,
-      "L": 7,
-      "ERA": 4.15,
-      "FIP": 4.93,
-      "WHIP": 1.29,
-      "IP": 145.3,
-      "GS": 26,
-      "G": 26,
-      "K": 125,
-      "BB": 55,
-      "HR": 27,
-      "H": 133,
-      "ER": 67,
-      "K9": 7.74,
-      "BB9": 3.41,
-      "HR9": 1.67,
-      "K_pct": 20.5,
-      "BB_pct": 9.0,
-      "K_BB": 2.27,
-      "note": "2025 stats (current season insufficient)"
-    },
-    "last_starts": [
-      {
-        "date": "2025-08-29",
-        "opponent": "",
-        "decision": "L",
-        "IP": 3.3,
-        "H": 8,
-        "ER": 4,
-        "BB": 4,
-        "K": 5,
-        "HR": 0,
-        "pitches": 85,
-        "era_start": 10.8,
-        "game_id": 776540
-      },
-      {
-        "date": "2025-08-24",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 4.3,
-        "H": 6,
-        "ER": 6,
-        "BB": 2,
-        "K": 5,
-        "HR": 2,
-        "pitches": 79,
-        "era_start": 12.46,
-        "game_id": 776615
-      },
-      {
-        "date": "2025-08-19",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 6.3,
-        "H": 3,
-        "ER": 2,
-        "BB": 2,
-        "K": 5,
-        "HR": 2,
-        "pitches": 102,
-        "era_start": 2.84,
-        "game_id": 776675
-      },
-      {
-        "date": "2025-08-13",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 4.0,
-        "H": 6,
-        "ER": 6,
-        "BB": 4,
-        "K": 2,
-        "HR": 2,
-        "pitches": 92,
-        "era_start": 13.5,
-        "game_id": 776759
-      },
-      {
-        "date": "2025-08-08",
-        "opponent": "",
-        "decision": "L",
-        "IP": 4.0,
-        "H": 9,
-        "ER": 7,
-        "BB": 2,
-        "K": 1,
-        "HR": 2,
-        "pitches": 82,
-        "era_start": 15.75,
-        "game_id": 776827
-      }
-    ],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 4.6,
-      "k_low_25": 3,
-      "k_high_75": 6,
-      "expected_ip": 4.6,
-      "season_k9": 7.74,
-      "last3_k9": 9.71,
-      "blended_k9": 8.92,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 824944,
-    "game_date": "2026-03-29",
-    "game_time_ct": "12:35 PM CT"
-  },
-  {
     "player_id": 837227,
     "name": "Tatsuya Imai",
     "team_abbr": "HOU",
@@ -253,7 +9,44 @@
     "trend": "neutral",
     "season_stats": {},
     "last_starts": [],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 49.2,
+        "avg_velo": 95.9,
+        "avg_spin": 2062,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 38.5,
+        "avg_velo": 87.0,
+        "avg_spin": 2182,
+        "whiff_pct": 46.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FS",
+        "pitch_name": "Splitter",
+        "usage_pct": 7.7,
+        "avg_velo": 85.3,
+        "avg_spin": 1146,
+        "whiff_pct": 50.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 4.6,
+        "avg_velo": 86.2,
+        "avg_spin": 1831,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 5.2,
@@ -375,8 +168,64 @@
         "game_id": 777159
       }
     ],
-    "arsenal": [],
-    "splits": {},
+    "arsenal": [
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 35.2,
+        "avg_velo": 96.5,
+        "avg_spin": 2152,
+        "whiff_pct": 17.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 24.2,
+        "avg_velo": 87.6,
+        "avg_spin": 2768,
+        "whiff_pct": 36.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 22.0,
+        "avg_velo": 89.3,
+        "avg_spin": 2094,
+        "whiff_pct": 54.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 18.5,
+        "avg_velo": 96.7,
+        "avg_spin": 2296,
+        "whiff_pct": 8.7,
+        "put_away_pct": 0.0
+      }
+    ],
+    "splits": {
+      "vs_lhb": {
+        "avg": 0.5,
+        "ops": 1.35,
+        "k_pct": 0.0,
+        "bb_pct": 20.0,
+        "hr9": 0.0,
+        "whip": 4.5,
+        "bf": 5
+      },
+      "vs_rhb": {
+        "avg": 0.154,
+        "ops": 0.584,
+        "k_pct": 17.6,
+        "bb_pct": 23.5,
+        "hr9": 0.0,
+        "whip": 1.8,
+        "bf": 17
+      }
+    },
     "k_prediction": {
       "predicted_ks": 2.0,
       "k_low_25": 1,
@@ -393,250 +242,6 @@
     "game_id": 824215,
     "game_date": "2026-03-29",
     "game_time_ct": "1:10 PM CT"
-  },
-  {
-    "player_id": 676974,
-    "name": "Max Meyer",
-    "team_abbr": "MIA",
-    "opponent": "COL",
-    "throws": "R",
-    "days_rest": 300,
-    "trend": "declining",
-    "season_stats": {
-      "season": 2025,
-      "W": 3,
-      "L": 5,
-      "ERA": 4.73,
-      "FIP": 4.34,
-      "WHIP": 1.42,
-      "IP": 64.7,
-      "GS": 12,
-      "G": 12,
-      "K": 68,
-      "BB": 20,
-      "HR": 12,
-      "H": 72,
-      "ER": 34,
-      "K9": 9.46,
-      "BB9": 2.78,
-      "HR9": 1.67,
-      "K_pct": 23.9,
-      "BB_pct": 7.0,
-      "K_BB": 3.4,
-      "note": "2025 stats (current season insufficient)"
-    },
-    "last_starts": [
-      {
-        "date": "2025-06-02",
-        "opponent": "",
-        "decision": "L",
-        "IP": 5.0,
-        "H": 10,
-        "ER": 4,
-        "BB": 1,
-        "K": 5,
-        "HR": 2,
-        "pitches": 77,
-        "era_start": 7.2,
-        "game_id": 777673
-      },
-      {
-        "date": "2025-05-27",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 3.3,
-        "H": 7,
-        "ER": 4,
-        "BB": 2,
-        "K": 0,
-        "HR": 1,
-        "pitches": 74,
-        "era_start": 10.8,
-        "game_id": 777742
-      },
-      {
-        "date": "2025-05-21",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 6.0,
-        "H": 5,
-        "ER": 1,
-        "BB": 1,
-        "K": 4,
-        "HR": 1,
-        "pitches": 99,
-        "era_start": 1.5,
-        "game_id": 777833
-      },
-      {
-        "date": "2025-05-16",
-        "opponent": "",
-        "decision": "W",
-        "IP": 5.0,
-        "H": 5,
-        "ER": 3,
-        "BB": 0,
-        "K": 7,
-        "HR": 0,
-        "pitches": 82,
-        "era_start": 5.4,
-        "game_id": 777903
-      },
-      {
-        "date": "2025-05-09",
-        "opponent": "",
-        "decision": "L",
-        "IP": 6.3,
-        "H": 5,
-        "ER": 5,
-        "BB": 3,
-        "K": 5,
-        "HR": 1,
-        "pitches": 90,
-        "era_start": 7.11,
-        "game_id": 777991
-      }
-    ],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 3.8,
-      "k_low_25": 2,
-      "k_high_75": 5,
-      "expected_ip": 4.8,
-      "season_k9": 9.46,
-      "last3_k9": 5.66,
-      "blended_k9": 7.18,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 823891,
-    "game_date": "2026-03-29",
-    "game_time_ct": "12:40 PM CT"
-  },
-  {
-    "player_id": 500779,
-    "name": "Jose Quintana",
-    "team_abbr": "COL",
-    "opponent": "MIA",
-    "throws": "R",
-    "days_rest": 196,
-    "trend": "declining",
-    "season_stats": {
-      "season": 2025,
-      "W": 11,
-      "L": 7,
-      "ERA": 3.96,
-      "FIP": 4.66,
-      "WHIP": 1.29,
-      "IP": 131.7,
-      "GS": 24,
-      "G": 24,
-      "K": 89,
-      "BB": 50,
-      "HR": 18,
-      "H": 120,
-      "ER": 58,
-      "K9": 6.08,
-      "BB9": 3.42,
-      "HR9": 1.23,
-      "K_pct": 16.0,
-      "BB_pct": 9.0,
-      "K_BB": 1.78,
-      "note": "2025 stats (current season insufficient)"
-    },
-    "last_starts": [
-      {
-        "date": "2025-09-14",
-        "opponent": "",
-        "decision": "L",
-        "IP": 4.0,
-        "H": 4,
-        "ER": 3,
-        "BB": 2,
-        "K": 2,
-        "HR": 0,
-        "pitches": 67,
-        "era_start": 6.75,
-        "game_id": 776326
-      },
-      {
-        "date": "2025-09-08",
-        "opponent": "",
-        "decision": "L",
-        "IP": 6.7,
-        "H": 4,
-        "ER": 5,
-        "BB": 2,
-        "K": 4,
-        "HR": 1,
-        "pitches": 85,
-        "era_start": 6.75,
-        "game_id": 776406
-      },
-      {
-        "date": "2025-09-03",
-        "opponent": "",
-        "decision": "W",
-        "IP": 6.3,
-        "H": 7,
-        "ER": 3,
-        "BB": 3,
-        "K": 6,
-        "HR": 1,
-        "pitches": 97,
-        "era_start": 4.26,
-        "game_id": 776471
-      },
-      {
-        "date": "2025-08-28",
-        "opponent": "",
-        "decision": "L",
-        "IP": 3.7,
-        "H": 5,
-        "ER": 6,
-        "BB": 4,
-        "K": 2,
-        "HR": 0,
-        "pitches": 95,
-        "era_start": 14.73,
-        "game_id": 776553
-      },
-      {
-        "date": "2025-08-22",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 5.3,
-        "H": 2,
-        "ER": 2,
-        "BB": 2,
-        "K": 2,
-        "HR": 2,
-        "pitches": 82,
-        "era_start": 3.38,
-        "game_id": 776634
-      }
-    ],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 3.9,
-      "k_low_25": 3,
-      "k_high_75": 5,
-      "expected_ip": 5.7,
-      "season_k9": 6.08,
-      "last3_k9": 6.35,
-      "blended_k9": 6.24,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 823891,
-    "game_date": "2026-03-29",
-    "game_time_ct": "12:40 PM CT"
   },
   {
     "player_id": 676106,
@@ -741,7 +346,53 @@
         "game_id": 777495
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 27.0,
+        "avg_velo": 95.1,
+        "avg_spin": 2383,
+        "whiff_pct": 36.4,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 23.0,
+        "avg_velo": 86.8,
+        "avg_spin": 2322,
+        "whiff_pct": 23.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 22.5,
+        "avg_velo": 95.1,
+        "avg_spin": 2313,
+        "whiff_pct": 15.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 22.5,
+        "avg_velo": 78.3,
+        "avg_spin": 2696,
+        "whiff_pct": 50.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 5.1,
+        "avg_velo": 86.2,
+        "avg_spin": 1525,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 3.4,
@@ -863,7 +514,53 @@
         "game_id": 776493
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 37.6,
+        "avg_velo": 94.7,
+        "avg_spin": 2415,
+        "whiff_pct": 17.9,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 29.3,
+        "avg_velo": 88.7,
+        "avg_spin": 2380,
+        "whiff_pct": 33.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 13.5,
+        "avg_velo": 75.9,
+        "avg_spin": 2376,
+        "whiff_pct": 38.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 9.6,
+        "avg_velo": 82.6,
+        "avg_spin": 2453,
+        "whiff_pct": 41.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 9.2,
+        "avg_velo": 95.1,
+        "avg_spin": 2314,
+        "whiff_pct": 9.1,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 4.8,
@@ -881,875 +578,6 @@
     "game_id": 823160,
     "game_date": "2026-03-29",
     "game_time_ct": "6:20 PM CT"
-  },
-  {
-    "player_id": 641778,
-    "name": "Eric Lauer",
-    "team_abbr": "TOR",
-    "opponent": "ATH",
-    "throws": "R",
-    "days_rest": 214,
-    "trend": "declining",
-    "season_stats": {
-      "season": 2025,
-      "W": 9,
-      "L": 2,
-      "ERA": 3.18,
-      "FIP": 3.76,
-      "WHIP": 1.11,
-      "IP": 104.7,
-      "GS": 15,
-      "G": 28,
-      "K": 102,
-      "BB": 26,
-      "HR": 15,
-      "H": 90,
-      "ER": 37,
-      "K9": 8.77,
-      "BB9": 2.24,
-      "HR9": 1.29,
-      "K_pct": 23.9,
-      "BB_pct": 6.1,
-      "K_BB": 3.92,
-      "note": "2025 stats (current season insufficient)"
-    },
-    "last_starts": [
-      {
-        "date": "2025-08-27",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 4.7,
-        "H": 10,
-        "ER": 6,
-        "BB": 0,
-        "K": 4,
-        "HR": 4,
-        "pitches": 98,
-        "era_start": 11.57,
-        "game_id": 776567
-      },
-      {
-        "date": "2025-08-16",
-        "opponent": "",
-        "decision": "W",
-        "IP": 5.0,
-        "H": 4,
-        "ER": 1,
-        "BB": 3,
-        "K": 4,
-        "HR": 0,
-        "pitches": 102,
-        "era_start": 1.8,
-        "game_id": 776723
-      },
-      {
-        "date": "2025-08-10",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 3.0,
-        "H": 6,
-        "ER": 3,
-        "BB": 4,
-        "K": 4,
-        "HR": 2,
-        "pitches": 71,
-        "era_start": 9.0,
-        "game_id": 776788
-      },
-      {
-        "date": "2025-08-04",
-        "opponent": "",
-        "decision": "W",
-        "IP": 6.0,
-        "H": 7,
-        "ER": 1,
-        "BB": 1,
-        "K": 4,
-        "HR": 0,
-        "pitches": 97,
-        "era_start": 1.5,
-        "game_id": 776872
-      },
-      {
-        "date": "2025-07-29",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 5.0,
-        "H": 5,
-        "ER": 2,
-        "BB": 1,
-        "K": 4,
-        "HR": 0,
-        "pitches": 77,
-        "era_start": 3.6,
-        "game_id": 776962
-      }
-    ],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 4.3,
-      "k_low_25": 3,
-      "k_high_75": 6,
-      "expected_ip": 4.5,
-      "season_k9": 8.77,
-      "last3_k9": 8.5,
-      "blended_k9": 8.61,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 822837,
-    "game_date": "2026-03-29",
-    "game_time_ct": "12:37 PM CT"
-  },
-  {
-    "player_id": 806960,
-    "name": "Luis Morales",
-    "team_abbr": "ATH",
-    "opponent": "TOR",
-    "throws": "R",
-    "days_rest": 183,
-    "trend": "declining",
-    "season_stats": {
-      "season": 2025,
-      "W": 4,
-      "L": 3,
-      "ERA": 3.14,
-      "FIP": 4.58,
-      "WHIP": 1.15,
-      "IP": 48.7,
-      "GS": 9,
-      "G": 10,
-      "K": 43,
-      "BB": 18,
-      "HR": 8,
-      "H": 38,
-      "ER": 17,
-      "K9": 7.95,
-      "BB9": 3.33,
-      "HR9": 1.48,
-      "K_pct": 21.6,
-      "BB_pct": 9.0,
-      "K_BB": 2.39,
-      "note": "2025 stats (current season insufficient)"
-    },
-    "last_starts": [
-      {
-        "date": "2025-09-27",
-        "opponent": "",
-        "decision": "L",
-        "IP": 4.7,
-        "H": 5,
-        "ER": 2,
-        "BB": 2,
-        "K": 5,
-        "HR": 0,
-        "pitches": 101,
-        "era_start": 3.86,
-        "game_id": 776154
-      },
-      {
-        "date": "2025-09-20",
-        "opponent": "",
-        "decision": "L",
-        "IP": 6.0,
-        "H": 5,
-        "ER": 2,
-        "BB": 2,
-        "K": 4,
-        "HR": 2,
-        "pitches": 96,
-        "era_start": 3.0,
-        "game_id": 776249
-      },
-      {
-        "date": "2025-09-14",
-        "opponent": "",
-        "decision": "W",
-        "IP": 5.0,
-        "H": 4,
-        "ER": 3,
-        "BB": 2,
-        "K": 2,
-        "HR": 2,
-        "pitches": 80,
-        "era_start": 5.4,
-        "game_id": 776327
-      },
-      {
-        "date": "2025-09-08",
-        "opponent": "",
-        "decision": "L",
-        "IP": 4.7,
-        "H": 7,
-        "ER": 5,
-        "BB": 1,
-        "K": 2,
-        "HR": 2,
-        "pitches": 84,
-        "era_start": 9.64,
-        "game_id": 776410
-      },
-      {
-        "date": "2025-09-01",
-        "opponent": "",
-        "decision": "W",
-        "IP": 5.7,
-        "H": 5,
-        "ER": 2,
-        "BB": 1,
-        "K": 8,
-        "HR": 1,
-        "pitches": 91,
-        "era_start": 3.18,
-        "game_id": 776497
-      }
-    ],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 4.1,
-      "k_low_25": 3,
-      "k_high_75": 5,
-      "expected_ip": 5.2,
-      "season_k9": 7.95,
-      "last3_k9": 6.31,
-      "blended_k9": 6.97,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 822837,
-    "game_date": "2026-03-29",
-    "game_time_ct": "12:37 PM CT"
-  },
-  {
-    "player_id": 669358,
-    "name": "Shane Baz",
-    "team_abbr": "BAL",
-    "opponent": "MIN",
-    "throws": "R",
-    "days_rest": 186,
-    "trend": "improving",
-    "season_stats": {
-      "season": 2025,
-      "W": 10,
-      "L": 12,
-      "ERA": 4.87,
-      "FIP": 4.17,
-      "WHIP": 1.33,
-      "IP": 166.3,
-      "GS": 31,
-      "G": 31,
-      "K": 176,
-      "BB": 64,
-      "HR": 26,
-      "H": 158,
-      "ER": 90,
-      "K9": 9.52,
-      "BB9": 3.46,
-      "HR9": 1.41,
-      "K_pct": 24.8,
-      "BB_pct": 9.0,
-      "K_BB": 2.75,
-      "note": "2025 stats (current season insufficient)"
-    },
-    "last_starts": [
-      {
-        "date": "2025-09-24",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 4.0,
-        "H": 0,
-        "ER": 0,
-        "BB": 3,
-        "K": 3,
-        "HR": 0,
-        "pitches": 49,
-        "era_start": 0.0,
-        "game_id": 776203
-      },
-      {
-        "date": "2025-09-18",
-        "opponent": "",
-        "decision": "W",
-        "IP": 5.0,
-        "H": 2,
-        "ER": 0,
-        "BB": 1,
-        "K": 4,
-        "HR": 0,
-        "pitches": 74,
-        "era_start": 0.0,
-        "game_id": 776269
-      },
-      {
-        "date": "2025-09-12",
-        "opponent": "",
-        "decision": "L",
-        "IP": 2.3,
-        "H": 6,
-        "ER": 5,
-        "BB": 3,
-        "K": 5,
-        "HR": 0,
-        "pitches": 67,
-        "era_start": 19.29,
-        "game_id": 776352
-      },
-      {
-        "date": "2025-09-06",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 5.0,
-        "H": 5,
-        "ER": 2,
-        "BB": 1,
-        "K": 8,
-        "HR": 0,
-        "pitches": 82,
-        "era_start": 3.6,
-        "game_id": 776438
-      },
-      {
-        "date": "2025-09-01",
-        "opponent": "",
-        "decision": "W",
-        "IP": 6.0,
-        "H": 5,
-        "ER": 0,
-        "BB": 2,
-        "K": 6,
-        "HR": 0,
-        "pitches": 83,
-        "era_start": 0.0,
-        "game_id": 776504
-      }
-    ],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 4.8,
-      "k_low_25": 3,
-      "k_high_75": 6,
-      "expected_ip": 4.5,
-      "season_k9": 9.52,
-      "last3_k9": 9.56,
-      "blended_k9": 9.54,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 824864,
-    "game_date": "2026-03-29",
-    "game_time_ct": "12:35 PM CT"
-  },
-  {
-    "player_id": 641927,
-    "name": "Bailey Ober",
-    "team_abbr": "MIN",
-    "opponent": "BAL",
-    "throws": "R",
-    "days_rest": 185,
-    "trend": "neutral",
-    "season_stats": {
-      "season": 2025,
-      "W": 6,
-      "L": 9,
-      "ERA": 5.1,
-      "FIP": 4.76,
-      "WHIP": 1.3,
-      "IP": 146.3,
-      "GS": 27,
-      "G": 27,
-      "K": 120,
-      "BB": 31,
-      "HR": 30,
-      "H": 159,
-      "ER": 83,
-      "K9": 7.38,
-      "BB9": 1.91,
-      "HR9": 1.85,
-      "K_pct": 19.2,
-      "BB_pct": 5.0,
-      "K_BB": 3.87,
-      "note": "2025 stats (current season insufficient)"
-    },
-    "last_starts": [
-      {
-        "date": "2025-09-25",
-        "opponent": "",
-        "decision": "W",
-        "IP": 6.0,
-        "H": 2,
-        "ER": 0,
-        "BB": 1,
-        "K": 5,
-        "HR": 0,
-        "pitches": 78,
-        "era_start": 0.0,
-        "game_id": 776183
-      },
-      {
-        "date": "2025-09-20",
-        "opponent": "",
-        "decision": "L",
-        "IP": 5.0,
-        "H": 8,
-        "ER": 6,
-        "BB": 2,
-        "K": 1,
-        "HR": 0,
-        "pitches": 90,
-        "era_start": 10.8,
-        "game_id": 776243
-      },
-      {
-        "date": "2025-09-14",
-        "opponent": "",
-        "decision": "L",
-        "IP": 6.0,
-        "H": 4,
-        "ER": 4,
-        "BB": 0,
-        "K": 9,
-        "HR": 1,
-        "pitches": 101,
-        "era_start": 6.0,
-        "game_id": 776324
-      },
-      {
-        "date": "2025-09-07",
-        "opponent": "",
-        "decision": "W",
-        "IP": 5.3,
-        "H": 4,
-        "ER": 1,
-        "BB": 1,
-        "K": 6,
-        "HR": 0,
-        "pitches": 85,
-        "era_start": 1.69,
-        "game_id": 776422
-      },
-      {
-        "date": "2025-09-01",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 5.0,
-        "H": 6,
-        "ER": 4,
-        "BB": 2,
-        "K": 3,
-        "HR": 2,
-        "pitches": 69,
-        "era_start": 7.2,
-        "game_id": 776502
-      }
-    ],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 4.9,
-      "k_low_25": 3,
-      "k_high_75": 6,
-      "expected_ip": 5.7,
-      "season_k9": 7.38,
-      "last3_k9": 7.94,
-      "blended_k9": 7.72,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 824864,
-    "game_date": "2026-03-29",
-    "game_time_ct": "12:35 PM CT"
-  },
-  {
-    "player_id": 684007,
-    "name": "Shota Imanaga",
-    "team_abbr": "CHC",
-    "opponent": "WSH",
-    "throws": "R",
-    "days_rest": 185,
-    "trend": "declining",
-    "season_stats": {
-      "season": 2025,
-      "W": 9,
-      "L": 8,
-      "ERA": 3.73,
-      "FIP": 4.81,
-      "WHIP": 0.99,
-      "IP": 144.7,
-      "GS": 25,
-      "G": 25,
-      "K": 117,
-      "BB": 26,
-      "HR": 31,
-      "H": 117,
-      "ER": 60,
-      "K9": 7.28,
-      "BB9": 1.62,
-      "HR9": 1.93,
-      "K_pct": 20.6,
-      "BB_pct": 4.6,
-      "K_BB": 4.5,
-      "note": "2025 stats (current season insufficient)"
-    },
-    "last_starts": [
-      {
-        "date": "2025-09-25",
-        "opponent": "",
-        "decision": "L",
-        "IP": 5.7,
-        "H": 9,
-        "ER": 8,
-        "BB": 1,
-        "K": 3,
-        "HR": 2,
-        "pitches": 91,
-        "era_start": 12.71,
-        "game_id": 776187
-      },
-      {
-        "date": "2025-09-19",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 5.0,
-        "H": 4,
-        "ER": 3,
-        "BB": 2,
-        "K": 4,
-        "HR": 3,
-        "pitches": 83,
-        "era_start": 5.4,
-        "game_id": 776267
-      },
-      {
-        "date": "2025-09-14",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 5.0,
-        "H": 7,
-        "ER": 3,
-        "BB": 0,
-        "K": 9,
-        "HR": 2,
-        "pitches": 91,
-        "era_start": 5.4,
-        "game_id": 776321
-      },
-      {
-        "date": "2025-09-08",
-        "opponent": "",
-        "decision": "L",
-        "IP": 6.0,
-        "H": 5,
-        "ER": 3,
-        "BB": 0,
-        "K": 4,
-        "HR": 1,
-        "pitches": 80,
-        "era_start": 4.5,
-        "game_id": 776412
-      },
-      {
-        "date": "2025-09-02",
-        "opponent": "",
-        "decision": "W",
-        "IP": 6.0,
-        "H": 5,
-        "ER": 3,
-        "BB": 1,
-        "K": 2,
-        "HR": 2,
-        "pitches": 78,
-        "era_start": 4.5,
-        "game_id": 776487
-      }
-    ],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 4.9,
-      "k_low_25": 3,
-      "k_high_75": 6,
-      "expected_ip": 5.2,
-      "season_k9": 7.28,
-      "last3_k9": 9.17,
-      "blended_k9": 8.41,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 824700,
-    "game_date": "2026-03-29",
-    "game_time_ct": "1:20 PM CT"
-  },
-  {
-    "player_id": 663623,
-    "name": "Jake Irvin",
-    "team_abbr": "WSH",
-    "opponent": "CHC",
-    "throws": "R",
-    "days_rest": 183,
-    "trend": "neutral",
-    "season_stats": {
-      "season": 2025,
-      "W": 9,
-      "L": 13,
-      "ERA": 5.7,
-      "FIP": 5.5,
-      "WHIP": 1.43,
-      "IP": 180.0,
-      "GS": 33,
-      "G": 33,
-      "K": 124,
-      "BB": 62,
-      "HR": 38,
-      "H": 195,
-      "ER": 114,
-      "K9": 6.2,
-      "BB9": 3.1,
-      "HR9": 1.9,
-      "K_pct": 15.8,
-      "BB_pct": 7.9,
-      "K_BB": 2.0,
-      "note": "2025 stats (current season insufficient)"
-    },
-    "last_starts": [
-      {
-        "date": "2025-09-27",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 6.0,
-        "H": 6,
-        "ER": 4,
-        "BB": 1,
-        "K": 6,
-        "HR": 2,
-        "pitches": 73,
-        "era_start": 6.0,
-        "game_id": 776160
-      },
-      {
-        "date": "2025-09-21",
-        "opponent": "",
-        "decision": "W",
-        "IP": 5.3,
-        "H": 6,
-        "ER": 2,
-        "BB": 2,
-        "K": 5,
-        "HR": 1,
-        "pitches": 93,
-        "era_start": 3.38,
-        "game_id": 776237
-      },
-      {
-        "date": "2025-09-16",
-        "opponent": "",
-        "decision": "L",
-        "IP": 6.0,
-        "H": 8,
-        "ER": 5,
-        "BB": 2,
-        "K": 5,
-        "HR": 2,
-        "pitches": 102,
-        "era_start": 7.5,
-        "game_id": 777825
-      },
-      {
-        "date": "2025-09-10",
-        "opponent": "",
-        "decision": "L",
-        "IP": 5.0,
-        "H": 5,
-        "ER": 3,
-        "BB": 0,
-        "K": 4,
-        "HR": 0,
-        "pitches": 74,
-        "era_start": 5.4,
-        "game_id": 776386
-      },
-      {
-        "date": "2025-09-05",
-        "opponent": "",
-        "decision": "L",
-        "IP": 3.3,
-        "H": 5,
-        "ER": 7,
-        "BB": 4,
-        "K": 2,
-        "HR": 2,
-        "pitches": 79,
-        "era_start": 18.9,
-        "game_id": 776455
-      }
-    ],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 4.8,
-      "k_low_25": 3,
-      "k_high_75": 6,
-      "expected_ip": 5.8,
-      "season_k9": 6.2,
-      "last3_k9": 8.32,
-      "blended_k9": 7.47,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 824700,
-    "game_date": "2026-03-29",
-    "game_time_ct": "1:20 PM CT"
-  },
-  {
-    "player_id": 695076,
-    "name": "Rhett Lowder",
-    "team_abbr": "CIN",
-    "opponent": "BOS",
-    "throws": "R",
-    "days_rest": null,
-    "trend": "neutral",
-    "season_stats": {},
-    "last_starts": [],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 5.2,
-      "k_low_25": 4,
-      "k_high_75": 7,
-      "expected_ip": 5.5,
-      "season_k9": 8.5,
-      "last3_k9": 8.5,
-      "blended_k9": 8.5,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 824538,
-    "game_date": "2026-03-29",
-    "game_time_ct": "12:40 PM CT"
-  },
-  {
-    "player_id": 813349,
-    "name": "Connelly Early",
-    "team_abbr": "BOS",
-    "opponent": "CIN",
-    "throws": "R",
-    "days_rest": 183,
-    "trend": "declining",
-    "season_stats": {
-      "season": 2025,
-      "W": 1,
-      "L": 2,
-      "ERA": 2.33,
-      "FIP": 0.72,
-      "WHIP": 1.09,
-      "IP": 19.3,
-      "GS": 4,
-      "G": 4,
-      "K": 29,
-      "BB": 4,
-      "HR": 0,
-      "H": 17,
-      "ER": 5,
-      "K9": 13.5,
-      "BB9": 1.86,
-      "HR9": 0.0,
-      "K_pct": 36.7,
-      "BB_pct": 5.1,
-      "K_BB": 7.25,
-      "note": "2025 stats (current season insufficient)"
-    },
-    "last_starts": [
-      {
-        "date": "2025-09-27",
-        "opponent": "",
-        "decision": "L",
-        "IP": 5.0,
-        "H": 4,
-        "ER": 2,
-        "BB": 1,
-        "K": 7,
-        "HR": 0,
-        "pitches": 86,
-        "era_start": 3.6,
-        "game_id": 776157
-      },
-      {
-        "date": "2025-09-21",
-        "opponent": "",
-        "decision": "L",
-        "IP": 4.0,
-        "H": 3,
-        "ER": 2,
-        "BB": 2,
-        "K": 4,
-        "HR": 0,
-        "pitches": 67,
-        "era_start": 4.5,
-        "game_id": 776236
-      },
-      {
-        "date": "2025-09-16",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 5.3,
-        "H": 5,
-        "ER": 1,
-        "BB": 0,
-        "K": 7,
-        "HR": 0,
-        "pitches": 80,
-        "era_start": 1.69,
-        "game_id": 776310
-      },
-      {
-        "date": "2025-09-09",
-        "opponent": "",
-        "decision": "W",
-        "IP": 5.0,
-        "H": 5,
-        "ER": 0,
-        "BB": 1,
-        "K": 11,
-        "HR": 0,
-        "pitches": 90,
-        "era_start": 0.0,
-        "game_id": 776396
-      }
-    ],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 6.5,
-      "k_low_25": 5,
-      "k_high_75": 8,
-      "expected_ip": 4.8,
-      "season_k9": 13.5,
-      "last3_k9": 11.33,
-      "blended_k9": 12.2,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 824538,
-    "game_date": "2026-03-29",
-    "game_time_ct": "12:40 PM CT"
   },
   {
     "player_id": 687075,
@@ -1840,8 +668,82 @@
         "game_id": 776429
       }
     ],
-    "arsenal": [],
-    "splits": {},
+    "arsenal": [
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 37.9,
+        "avg_velo": 96.6,
+        "avg_spin": 1979,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 16.7,
+        "avg_velo": 82.8,
+        "avg_spin": 2529,
+        "whiff_pct": 28.6,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 16.7,
+        "avg_velo": 94.4,
+        "avg_spin": 2163,
+        "whiff_pct": 21.4,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 14.9,
+        "avg_velo": 86.7,
+        "avg_spin": 2412,
+        "whiff_pct": 58.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 11.5,
+        "avg_velo": 91.9,
+        "avg_spin": 1740,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 2.3,
+        "avg_velo": 97.5,
+        "avg_spin": 1817,
+        "whiff_pct": 50.0,
+        "put_away_pct": 0.0
+      }
+    ],
+    "splits": {
+      "vs_lhb": {
+        "avg": 0.429,
+        "ops": 1.886,
+        "k_pct": 20.0,
+        "bb_pct": 30.0,
+        "hr9": 13.5,
+        "whip": 4.5,
+        "bf": 10
+      },
+      "vs_rhb": {
+        "avg": 0.429,
+        "ops": 1.357,
+        "k_pct": 12.5,
+        "bb_pct": 12.5,
+        "hr9": 5.4,
+        "whip": 2.4,
+        "bf": 8
+      }
+    },
     "k_prediction": {
       "predicted_ks": 3.6,
       "k_low_25": 2,
@@ -1869,8 +771,73 @@
     "trend": "neutral",
     "season_stats": {},
     "last_starts": [],
-    "arsenal": [],
-    "splits": {},
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 29.6,
+        "avg_velo": 95.4,
+        "avg_spin": 2351,
+        "whiff_pct": 12.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 24.3,
+        "avg_velo": 90.3,
+        "avg_spin": 2433,
+        "whiff_pct": 13.2,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 18.3,
+        "avg_velo": 95.1,
+        "avg_spin": 2240,
+        "whiff_pct": 14.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 14.3,
+        "avg_velo": 84.4,
+        "avg_spin": 1645,
+        "whiff_pct": 39.1,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 13.6,
+        "avg_velo": 82.3,
+        "avg_spin": 2465,
+        "whiff_pct": 35.7,
+        "put_away_pct": 0.0
+      }
+    ],
+    "splits": {
+      "vs_lhb": {
+        "avg": 0.0,
+        "ops": 0.2,
+        "k_pct": 20.0,
+        "bb_pct": 20.0,
+        "hr9": 0.0,
+        "whip": 0.75,
+        "bf": 5
+      },
+      "vs_rhb": {
+        "avg": 0.231,
+        "ops": 0.99,
+        "k_pct": 25.0,
+        "bb_pct": 18.8,
+        "hr9": 2.7,
+        "whip": 1.8,
+        "bf": 16
+      }
+    },
     "k_prediction": {
       "predicted_ks": 5.2,
       "k_low_25": 4,
@@ -1887,494 +854,6 @@
     "game_id": 823810,
     "game_date": "2026-03-29",
     "game_time_ct": "1:10 PM CT"
-  },
-  {
-    "player_id": 690997,
-    "name": "Nolan McLean",
-    "team_abbr": "NYM",
-    "opponent": "PIT",
-    "throws": "R",
-    "days_rest": 185,
-    "trend": "declining",
-    "season_stats": {
-      "season": 2025,
-      "W": 5,
-      "L": 1,
-      "ERA": 2.06,
-      "FIP": 2.81,
-      "WHIP": 1.04,
-      "IP": 48.0,
-      "GS": 8,
-      "G": 8,
-      "K": 57,
-      "BB": 16,
-      "HR": 4,
-      "H": 34,
-      "ER": 11,
-      "K9": 10.69,
-      "BB9": 3.0,
-      "HR9": 0.75,
-      "K_pct": 30.3,
-      "BB_pct": 8.5,
-      "K_BB": 3.56,
-      "note": "2025 stats (current season insufficient)"
-    },
-    "last_starts": [
-      {
-        "date": "2025-09-25",
-        "opponent": "",
-        "decision": "W",
-        "IP": 5.3,
-        "H": 5,
-        "ER": 5,
-        "BB": 2,
-        "K": 11,
-        "HR": 3,
-        "pitches": 94,
-        "era_start": 8.44,
-        "game_id": 776187
-      },
-      {
-        "date": "2025-09-20",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 5.0,
-        "H": 4,
-        "ER": 1,
-        "BB": 2,
-        "K": 6,
-        "HR": 0,
-        "pitches": 92,
-        "era_start": 1.8,
-        "game_id": 776252
-      },
-      {
-        "date": "2025-09-14",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 6.0,
-        "H": 5,
-        "ER": 0,
-        "BB": 2,
-        "K": 7,
-        "HR": 0,
-        "pitches": 92,
-        "era_start": 0.0,
-        "game_id": 776335
-      },
-      {
-        "date": "2025-09-08",
-        "opponent": "",
-        "decision": "L",
-        "IP": 5.3,
-        "H": 7,
-        "ER": 1,
-        "BB": 3,
-        "K": 5,
-        "HR": 0,
-        "pitches": 91,
-        "era_start": 1.69,
-        "game_id": 776405
-      },
-      {
-        "date": "2025-09-02",
-        "opponent": "",
-        "decision": "W",
-        "IP": 6.0,
-        "H": 3,
-        "ER": 2,
-        "BB": 3,
-        "K": 7,
-        "HR": 0,
-        "pitches": 90,
-        "era_start": 3.0,
-        "game_id": 776490
-      }
-    ],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 7.4,
-      "k_low_25": 5,
-      "k_high_75": 9,
-      "expected_ip": 5.4,
-      "season_k9": 10.69,
-      "last3_k9": 13.25,
-      "blended_k9": 12.23,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 823647,
-    "game_date": "2026-03-29",
-    "game_time_ct": "12:40 PM CT"
-  },
-  {
-    "player_id": 669387,
-    "name": "Carmen Mlodzinski",
-    "team_abbr": "PIT",
-    "opponent": "NYM",
-    "throws": "R",
-    "days_rest": 208,
-    "trend": "improving",
-    "season_stats": {
-      "season": 2025,
-      "W": 5,
-      "L": 8,
-      "ERA": 3.55,
-      "FIP": 3.17,
-      "WHIP": 1.3,
-      "IP": 99.0,
-      "GS": 12,
-      "G": 34,
-      "K": 89,
-      "BB": 27,
-      "HR": 8,
-      "H": 102,
-      "ER": 39,
-      "K9": 8.09,
-      "BB9": 2.45,
-      "HR9": 0.73,
-      "K_pct": 21.2,
-      "BB_pct": 6.4,
-      "K_BB": 3.3,
-      "note": "2025 stats (current season insufficient)"
-    },
-    "last_starts": [
-      {
-        "date": "2025-09-02",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 2.0,
-        "H": 2,
-        "ER": 1,
-        "BB": 1,
-        "K": 1,
-        "HR": 0,
-        "pitches": 50,
-        "era_start": 4.5,
-        "game_id": 776496
-      },
-      {
-        "date": "2025-08-27",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 3.0,
-        "H": 3,
-        "ER": 1,
-        "BB": 3,
-        "K": 4,
-        "HR": 0,
-        "pitches": 46,
-        "era_start": 3.0,
-        "game_id": 776568
-      },
-      {
-        "date": "2025-08-17",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 4.0,
-        "H": 1,
-        "ER": 0,
-        "BB": 0,
-        "K": 3,
-        "HR": 0,
-        "pitches": 44,
-        "era_start": 0.0,
-        "game_id": 776704
-      },
-      {
-        "date": "2025-05-17",
-        "opponent": "",
-        "decision": "L",
-        "IP": 3.3,
-        "H": 7,
-        "ER": 4,
-        "BB": 1,
-        "K": 2,
-        "HR": 1,
-        "pitches": 78,
-        "era_start": 10.8,
-        "game_id": 777894
-      },
-      {
-        "date": "2025-05-11",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 5.7,
-        "H": 4,
-        "ER": 0,
-        "BB": 1,
-        "K": 2,
-        "HR": 0,
-        "pitches": 83,
-        "era_start": 0.0,
-        "game_id": 777967
-      }
-    ],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 4.0,
-      "k_low_25": 3,
-      "k_high_75": 5,
-      "expected_ip": 4.5,
-      "season_k9": 8.09,
-      "last3_k9": 8.0,
-      "blended_k9": 8.04,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 823647,
-    "game_date": "2026-03-29",
-    "game_time_ct": "12:40 PM CT"
-  },
-  {
-    "player_id": 666200,
-    "name": "Jes\u00fas Luzardo",
-    "team_abbr": "PHI",
-    "opponent": "TEX",
-    "throws": "R",
-    "days_rest": 186,
-    "trend": "improving",
-    "season_stats": {
-      "season": 2025,
-      "W": 15,
-      "L": 7,
-      "ERA": 3.92,
-      "FIP": 2.81,
-      "WHIP": 1.22,
-      "IP": 183.7,
-      "GS": 32,
-      "G": 32,
-      "K": 216,
-      "BB": 57,
-      "HR": 16,
-      "H": 167,
-      "ER": 80,
-      "K9": 10.58,
-      "BB9": 2.79,
-      "HR9": 0.78,
-      "K_pct": 28.5,
-      "BB_pct": 7.5,
-      "K_BB": 3.79,
-      "note": "2025 stats (current season insufficient)"
-    },
-    "last_starts": [
-      {
-        "date": "2025-09-24",
-        "opponent": "",
-        "decision": "W",
-        "IP": 7.0,
-        "H": 3,
-        "ER": 0,
-        "BB": 0,
-        "K": 10,
-        "HR": 0,
-        "pitches": 103,
-        "era_start": 0.0,
-        "game_id": 776201
-      },
-      {
-        "date": "2025-09-17",
-        "opponent": "",
-        "decision": "L",
-        "IP": 7.0,
-        "H": 6,
-        "ER": 4,
-        "BB": 1,
-        "K": 6,
-        "HR": 2,
-        "pitches": 106,
-        "era_start": 5.14,
-        "game_id": 776280
-      },
-      {
-        "date": "2025-09-11",
-        "opponent": "",
-        "decision": "W",
-        "IP": 8.0,
-        "H": 5,
-        "ER": 4,
-        "BB": 0,
-        "K": 10,
-        "HR": 0,
-        "pitches": 97,
-        "era_start": 4.5,
-        "game_id": 776371
-      },
-      {
-        "date": "2025-09-06",
-        "opponent": "",
-        "decision": "W",
-        "IP": 6.0,
-        "H": 5,
-        "ER": 2,
-        "BB": 4,
-        "K": 8,
-        "HR": 0,
-        "pitches": 100,
-        "era_start": 3.0,
-        "game_id": 776433
-      },
-      {
-        "date": "2025-08-31",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 6.7,
-        "H": 2,
-        "ER": 0,
-        "BB": 1,
-        "K": 7,
-        "HR": 0,
-        "pitches": 104,
-        "era_start": 0.0,
-        "game_id": 776522
-      }
-    ],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 8.7,
-      "k_low_25": 7,
-      "k_high_75": 11,
-      "expected_ip": 7.3,
-      "season_k9": 10.58,
-      "last3_k9": 10.64,
-      "blended_k9": 10.62,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 823487,
-    "game_date": "2026-03-29",
-    "game_time_ct": "12:35 PM CT"
-  },
-  {
-    "player_id": 669022,
-    "name": "MacKenzie Gore",
-    "team_abbr": "TEX",
-    "opponent": "PHI",
-    "throws": "R",
-    "days_rest": 188,
-    "trend": "neutral",
-    "season_stats": {
-      "season": 2025,
-      "W": 5,
-      "L": 15,
-      "ERA": 4.17,
-      "FIP": 3.61,
-      "WHIP": 1.35,
-      "IP": 159.7,
-      "GS": 30,
-      "G": 30,
-      "K": 185,
-      "BB": 64,
-      "HR": 20,
-      "H": 152,
-      "ER": 74,
-      "K9": 10.43,
-      "BB9": 3.61,
-      "HR9": 1.13,
-      "K_pct": 27.2,
-      "BB_pct": 9.4,
-      "K_BB": 2.89,
-      "note": "2025 stats (current season insufficient)"
-    },
-    "last_starts": [
-      {
-        "date": "2025-09-22",
-        "opponent": "",
-        "decision": "L",
-        "IP": 2.0,
-        "H": 4,
-        "ER": 4,
-        "BB": 4,
-        "K": 3,
-        "HR": 1,
-        "pitches": 71,
-        "era_start": 18.0,
-        "game_id": 776221
-      },
-      {
-        "date": "2025-09-16",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 5.3,
-        "H": 2,
-        "ER": 0,
-        "BB": 3,
-        "K": 5,
-        "HR": 0,
-        "pitches": 92,
-        "era_start": 0.0,
-        "game_id": 776307
-      },
-      {
-        "date": "2025-09-11",
-        "opponent": "",
-        "decision": "L",
-        "IP": 5.0,
-        "H": 4,
-        "ER": 2,
-        "BB": 2,
-        "K": 4,
-        "HR": 0,
-        "pitches": 78,
-        "era_start": 3.6,
-        "game_id": 776367
-      },
-      {
-        "date": "2025-08-26",
-        "opponent": "",
-        "decision": "L",
-        "IP": 5.0,
-        "H": 3,
-        "ER": 3,
-        "BB": 2,
-        "K": 3,
-        "HR": 0,
-        "pitches": 99,
-        "era_start": 5.4,
-        "game_id": 776588
-      },
-      {
-        "date": "2025-08-21",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 4.3,
-        "H": 6,
-        "ER": 3,
-        "BB": 4,
-        "K": 5,
-        "HR": 2,
-        "pitches": 94,
-        "era_start": 6.23,
-        "game_id": 776650
-      }
-    ],
-    "arsenal": [],
-    "splits": {},
-    "k_prediction": {
-      "predicted_ks": 4.7,
-      "k_low_25": 3,
-      "k_high_75": 6,
-      "expected_ip": 4.5,
-      "season_k9": 10.43,
-      "last3_k9": 8.78,
-      "blended_k9": 9.44,
-      "opp_k_pct": 22.5,
-      "opp_k_pct_vs_lg": 0.0,
-      "adj_factor": 1.0
-    },
-    "first_inning": {},
-    "game_id": 823487,
-    "game_date": "2026-03-29",
-    "game_time_ct": "12:35 PM CT"
   },
   {
     "player_id": 669160,
@@ -2479,8 +958,82 @@
         "game_id": 776856
       }
     ],
-    "arsenal": [],
-    "splits": {},
+    "arsenal": [
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 22.3,
+        "avg_velo": 86.1,
+        "avg_spin": 3072,
+        "whiff_pct": 20.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 21.7,
+        "avg_velo": 97.5,
+        "avg_spin": 2331,
+        "whiff_pct": 31.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 21.7,
+        "avg_velo": 96.7,
+        "avg_spin": 2277,
+        "whiff_pct": 13.6,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 14.1,
+        "avg_velo": 93.1,
+        "avg_spin": 2414,
+        "whiff_pct": 20.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 10.9,
+        "avg_velo": 90.9,
+        "avg_spin": 1789,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 9.2,
+        "avg_velo": 83.5,
+        "avg_spin": 3095,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      }
+    ],
+    "splits": {
+      "vs_lhb": {
+        "avg": 0.364,
+        "ops": 0.962,
+        "k_pct": 16.7,
+        "bb_pct": 8.3,
+        "hr9": 0.0,
+        "whip": 2.14,
+        "bf": 12
+      },
+      "vs_rhb": {
+        "avg": 0.6,
+        "ops": 1.5,
+        "k_pct": 10.0,
+        "bb_pct": 0.0,
+        "hr9": 0.0,
+        "whip": 4.5,
+        "bf": 10
+      }
+    },
     "k_prediction": {
       "predicted_ks": 4.5,
       "k_low_25": 3,
@@ -2559,8 +1112,64 @@
         "game_id": 778290
       }
     ],
-    "arsenal": [],
-    "splits": {},
+    "arsenal": [
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 47.7,
+        "avg_velo": 93.8,
+        "avg_spin": 2219,
+        "whiff_pct": 4.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 28.9,
+        "avg_velo": 83.5,
+        "avg_spin": 2340,
+        "whiff_pct": 29.6,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 12.5,
+        "avg_velo": 85.4,
+        "avg_spin": 2213,
+        "whiff_pct": 25.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 10.9,
+        "avg_velo": 79.8,
+        "avg_spin": 2300,
+        "whiff_pct": 40.0,
+        "put_away_pct": 0.0
+      }
+    ],
+    "splits": {
+      "vs_lhb": {
+        "avg": 0.375,
+        "ops": 0.75,
+        "k_pct": 0.0,
+        "bb_pct": 0.0,
+        "hr9": 0.0,
+        "whip": 1.8,
+        "bf": 8
+      },
+      "vs_rhb": {
+        "avg": 0.25,
+        "ops": 0.891,
+        "k_pct": 15.4,
+        "bb_pct": 7.7,
+        "hr9": 2.7,
+        "whip": 1.2,
+        "bf": 13
+      }
+    },
     "k_prediction": {
       "predicted_ks": 3.5,
       "k_low_25": 2,
@@ -2681,7 +1290,53 @@
         "game_id": 776473
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 33.9,
+        "avg_velo": 91.2,
+        "avg_spin": 2074,
+        "whiff_pct": 9.1,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 30.1,
+        "avg_velo": 83.9,
+        "avg_spin": 2466,
+        "whiff_pct": 29.6,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 15.1,
+        "avg_velo": 92.5,
+        "avg_spin": 2202,
+        "whiff_pct": 18.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 12.9,
+        "avg_velo": 86.0,
+        "avg_spin": 1355,
+        "whiff_pct": 44.4,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 8.1,
+        "avg_velo": 88.1,
+        "avg_spin": 2123,
+        "whiff_pct": 12.5,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 6.0,
@@ -2701,118 +1356,164 @@
     "game_time_ct": "6:15 PM CT"
   },
   {
-    "player_id": 650644,
-    "name": "Aaron Civale",
+    "player_id": 682052,
+    "name": "Jacob Lopez",
     "team_abbr": "ATH",
     "opponent": "ATL",
     "throws": "R",
-    "days_rest": 214,
+    "days_rest": 217,
     "trend": "declining",
     "season_stats": {
       "season": 2025,
-      "W": 4,
-      "L": 9,
-      "ERA": 4.85,
-      "FIP": 4.38,
-      "WHIP": 1.26,
-      "IP": 102.0,
-      "GS": 18,
-      "G": 23,
-      "K": 88,
-      "BB": 33,
-      "HR": 16,
-      "H": 96,
-      "ER": 55,
-      "K9": 7.76,
-      "BB9": 2.91,
-      "HR9": 1.41,
-      "K_pct": 20.2,
-      "BB_pct": 7.6,
-      "K_BB": 2.67,
+      "W": 7,
+      "L": 7,
+      "ERA": 4.08,
+      "FIP": 3.96,
+      "WHIP": 1.27,
+      "IP": 92.7,
+      "GS": 17,
+      "G": 21,
+      "K": 113,
+      "BB": 37,
+      "HR": 15,
+      "H": 81,
+      "ER": 42,
+      "K9": 10.97,
+      "BB9": 3.59,
+      "HR9": 1.46,
+      "K_pct": 28.3,
+      "BB_pct": 9.3,
+      "K_BB": 3.05,
       "note": "2025 stats (current season insufficient)"
     },
     "last_starts": [
       {
-        "date": "2025-08-27",
+        "date": "2025-08-24",
         "opponent": "",
         "decision": "L",
-        "IP": 4.7,
-        "H": 5,
-        "ER": 5,
-        "BB": 1,
-        "K": 4,
-        "HR": 1,
-        "pitches": 86,
-        "era_start": 9.64,
-        "game_id": 776569
-      },
-      {
-        "date": "2025-08-22",
-        "opponent": "",
-        "decision": "ND",
-        "IP": 5.0,
-        "H": 5,
-        "ER": 4,
-        "BB": 4,
-        "K": 5,
-        "HR": 1,
-        "pitches": 91,
-        "era_start": 7.2,
-        "game_id": 776639
-      },
-      {
-        "date": "2025-08-15",
-        "opponent": "",
-        "decision": "L",
-        "IP": 6.0,
-        "H": 8,
-        "ER": 3,
-        "BB": 1,
-        "K": 3,
-        "HR": 1,
-        "pitches": 95,
-        "era_start": 4.5,
-        "game_id": 776728
-      },
-      {
-        "date": "2025-08-08",
-        "opponent": "",
-        "decision": "L",
-        "IP": 3.3,
-        "H": 8,
+        "IP": 2.0,
+        "H": 6,
         "ER": 9,
-        "BB": 2,
-        "K": 6,
-        "HR": 0,
-        "pitches": 77,
-        "era_start": 24.3,
-        "game_id": 776833
+        "BB": 6,
+        "K": 2,
+        "HR": 2,
+        "pitches": 65,
+        "era_start": 40.5,
+        "game_id": 776602
       },
       {
-        "date": "2025-08-02",
+        "date": "2025-08-19",
         "opponent": "",
         "decision": "W",
-        "IP": 6.3,
-        "H": 1,
+        "IP": 6.0,
+        "H": 4,
+        "ER": 2,
+        "BB": 1,
+        "K": 8,
+        "HR": 2,
+        "pitches": 94,
+        "era_start": 3.0,
+        "game_id": 776674
+      },
+      {
+        "date": "2025-08-12",
+        "opponent": "",
+        "decision": "W",
+        "IP": 7.0,
+        "H": 4,
+        "ER": 0,
+        "BB": 0,
+        "K": 9,
+        "HR": 0,
+        "pitches": 96,
+        "era_start": 0.0,
+        "game_id": 776762
+      },
+      {
+        "date": "2025-08-07",
+        "opponent": "",
+        "decision": "W",
+        "IP": 7.7,
+        "H": 3,
+        "ER": 0,
+        "BB": 0,
+        "K": 10,
+        "HR": 0,
+        "pitches": 114,
+        "era_start": 0.0,
+        "game_id": 776837
+      },
+      {
+        "date": "2025-08-01",
+        "opponent": "",
+        "decision": "W",
+        "IP": 5.0,
+        "H": 5,
         "ER": 0,
         "BB": 2,
-        "K": 8,
+        "K": 5,
         "HR": 0,
-        "pitches": 94,
+        "pitches": 95,
         "era_start": 0.0,
-        "game_id": 776898
+        "game_id": 776914
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 38.2,
+        "avg_velo": 90.4,
+        "avg_spin": 2125,
+        "whiff_pct": 25.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 26.7,
+        "avg_velo": 78.5,
+        "avg_spin": 2394,
+        "whiff_pct": 23.1,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 18.8,
+        "avg_velo": 86.8,
+        "avg_spin": 2148,
+        "whiff_pct": 53.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 7.9,
+        "avg_velo": 82.1,
+        "avg_spin": 2013,
+        "whiff_pct": 25.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 7.9,
+        "avg_velo": 89.8,
+        "avg_spin": 2048,
+        "whiff_pct": 20.0,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
-      "predicted_ks": 4.2,
-      "k_low_25": 3,
-      "k_high_75": 5,
-      "expected_ip": 5.2,
-      "season_k9": 7.76,
-      "last3_k9": 6.88,
-      "blended_k9": 7.23,
+      "predicted_ks": 6.2,
+      "k_low_25": 4,
+      "k_high_75": 8,
+      "expected_ip": 5.0,
+      "season_k9": 10.97,
+      "last3_k9": 11.4,
+      "blended_k9": 11.23,
       "opp_k_pct": 22.5,
       "opp_k_pct_vs_lg": 0.0,
       "adj_factor": 1.0
@@ -2925,7 +1626,53 @@
         "game_id": 777167
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "SV",
+        "pitch_name": "Slurve",
+        "usage_pct": 32.1,
+        "avg_velo": 80.7,
+        "avg_spin": 2927,
+        "whiff_pct": 55.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 31.6,
+        "avg_velo": 94.3,
+        "avg_spin": 2513,
+        "whiff_pct": 25.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 13.8,
+        "avg_velo": 94.2,
+        "avg_spin": 2346,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 12.8,
+        "avg_velo": 89.7,
+        "avg_spin": 2592,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 9.2,
+        "avg_velo": 86.4,
+        "avg_spin": 2198,
+        "whiff_pct": 33.3,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 5.1,
@@ -3047,7 +1794,53 @@
         "game_id": 776437
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 49.6,
+        "avg_velo": 93.5,
+        "avg_spin": 2374,
+        "whiff_pct": 19.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 22.7,
+        "avg_velo": 87.6,
+        "avg_spin": 2395,
+        "whiff_pct": 40.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 11.7,
+        "avg_velo": 77.5,
+        "avg_spin": 2638,
+        "whiff_pct": 33.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 10.2,
+        "avg_velo": 83.4,
+        "avg_spin": 1602,
+        "whiff_pct": 57.1,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 5.1,
+        "avg_velo": 80.6,
+        "avg_spin": 2542,
+        "whiff_pct": 22.2,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 4.7,
@@ -3169,7 +1962,62 @@
         "game_id": 776582
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 42.8,
+        "avg_velo": 91.0,
+        "avg_spin": 2080,
+        "whiff_pct": 4.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 17.7,
+        "avg_velo": 88.5,
+        "avg_spin": 2120,
+        "whiff_pct": 22.2,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 13.4,
+        "avg_velo": 70.0,
+        "avg_spin": 2247,
+        "whiff_pct": 27.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 9.5,
+        "avg_velo": 84.0,
+        "avg_spin": 1690,
+        "whiff_pct": 11.1,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 9.5,
+        "avg_velo": 90.8,
+        "avg_spin": 2066,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 7.1,
+        "avg_velo": 71.6,
+        "avg_spin": 2295,
+        "whiff_pct": 50.0,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 4.3,
@@ -3291,7 +2139,62 @@
         "game_id": 776468
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 29.3,
+        "avg_velo": 97.2,
+        "avg_spin": 2440,
+        "whiff_pct": 12.9,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 19.5,
+        "avg_velo": 91.3,
+        "avg_spin": 1531,
+        "whiff_pct": 40.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 19.5,
+        "avg_velo": 87.7,
+        "avg_spin": 2686,
+        "whiff_pct": 46.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 13.8,
+        "avg_velo": 96.9,
+        "avg_spin": 2346,
+        "whiff_pct": 29.4,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 9.8,
+        "avg_velo": 94.1,
+        "avg_spin": 2498,
+        "whiff_pct": 14.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 8.0,
+        "avg_velo": 82.8,
+        "avg_spin": 2752,
+        "whiff_pct": 37.5,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 6.1,
@@ -3309,6 +2212,271 @@
     "game_id": 824863,
     "game_date": "2026-03-30",
     "game_time_ct": "5:35 PM CT"
+  },
+  {
+    "player_id": 665795,
+    "name": "Edward Cabrera",
+    "team_abbr": "CHC",
+    "opponent": "LAA",
+    "throws": "R",
+    "days_rest": 182,
+    "trend": "declining",
+    "season_stats": {
+      "season": 2025,
+      "W": 8,
+      "L": 7,
+      "ERA": 3.53,
+      "FIP": 3.57,
+      "WHIP": 1.23,
+      "IP": 137.7,
+      "GS": 26,
+      "G": 26,
+      "K": 150,
+      "BB": 48,
+      "HR": 17,
+      "H": 121,
+      "ER": 54,
+      "K9": 9.81,
+      "BB9": 3.14,
+      "HR9": 1.11,
+      "K_pct": 25.8,
+      "BB_pct": 8.3,
+      "K_BB": 3.12,
+      "note": "2025 stats (current season insufficient)"
+    },
+    "last_starts": [
+      {
+        "date": "2025-09-28",
+        "opponent": "",
+        "decision": "W",
+        "IP": 5.0,
+        "H": 2,
+        "ER": 0,
+        "BB": 5,
+        "K": 7,
+        "HR": 0,
+        "pitches": 83,
+        "era_start": 0.0,
+        "game_id": 776148
+      },
+      {
+        "date": "2025-09-23",
+        "opponent": "",
+        "decision": "ND",
+        "IP": 4.0,
+        "H": 5,
+        "ER": 3,
+        "BB": 1,
+        "K": 3,
+        "HR": 2,
+        "pitches": 67,
+        "era_start": 6.75,
+        "game_id": 776215
+      },
+      {
+        "date": "2025-08-30",
+        "opponent": "",
+        "decision": "ND",
+        "IP": 4.0,
+        "H": 8,
+        "ER": 5,
+        "BB": 1,
+        "K": 4,
+        "HR": 3,
+        "pitches": 79,
+        "era_start": 11.25,
+        "game_id": 776535
+      },
+      {
+        "date": "2025-08-25",
+        "opponent": "",
+        "decision": "W",
+        "IP": 7.0,
+        "H": 1,
+        "ER": 0,
+        "BB": 2,
+        "K": 10,
+        "HR": 0,
+        "pitches": 100,
+        "era_start": 0.0,
+        "game_id": 776600
+      },
+      {
+        "date": "2025-08-19",
+        "opponent": "",
+        "decision": "L",
+        "IP": 4.3,
+        "H": 11,
+        "ER": 4,
+        "BB": 1,
+        "K": 6,
+        "HR": 0,
+        "pitches": 99,
+        "era_start": 8.31,
+        "game_id": 776686
+      }
+    ],
+    "arsenal": [
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 34.4,
+        "avg_velo": 93.2,
+        "avg_spin": 1730,
+        "whiff_pct": 20.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 24.8,
+        "avg_velo": 96.2,
+        "avg_spin": 2192,
+        "whiff_pct": 3.4,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 15.6,
+        "avg_velo": 97.1,
+        "avg_spin": 2178,
+        "whiff_pct": 5.6,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 13.0,
+        "avg_velo": 87.8,
+        "avg_spin": 2411,
+        "whiff_pct": 38.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 12.2,
+        "avg_velo": 83.6,
+        "avg_spin": 2452,
+        "whiff_pct": 7.7,
+        "put_away_pct": 0.0
+      }
+    ],
+    "splits": {},
+    "k_prediction": {
+      "predicted_ks": 4.9,
+      "k_low_25": 3,
+      "k_high_75": 6,
+      "expected_ip": 4.5,
+      "season_k9": 9.81,
+      "last3_k9": 9.69,
+      "blended_k9": 9.74,
+      "opp_k_pct": 22.5,
+      "opp_k_pct_vs_lg": 0.0,
+      "adj_factor": 1.0
+    },
+    "first_inning": {},
+    "game_id": 824702,
+    "game_date": "2026-03-30",
+    "game_time_ct": "6:40 PM CT"
+  },
+  {
+    "player_id": 696270,
+    "name": "Ryan Johnson",
+    "team_abbr": "LAA",
+    "opponent": "CHC",
+    "throws": "R",
+    "days_rest": null,
+    "trend": "neutral",
+    "season_stats": {
+      "season": 2025,
+      "W": 1,
+      "L": 1,
+      "ERA": 7.36,
+      "FIP": 5.49,
+      "WHIP": 1.98,
+      "IP": 14.7,
+      "GS": 0,
+      "G": 14,
+      "K": 16,
+      "BB": 5,
+      "HR": 4,
+      "H": 24,
+      "ER": 12,
+      "K9": 9.82,
+      "BB9": 3.07,
+      "HR9": 2.45,
+      "K_pct": 22.2,
+      "BB_pct": 6.9,
+      "K_BB": 3.2,
+      "note": "2025 stats (current season insufficient)"
+    },
+    "last_starts": [],
+    "arsenal": [
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 33.0,
+        "avg_velo": 91.3,
+        "avg_spin": 2453,
+        "whiff_pct": 33.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 27.5,
+        "avg_velo": 93.8,
+        "avg_spin": 2179,
+        "whiff_pct": 10.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 20.4,
+        "avg_velo": 78.5,
+        "avg_spin": 2430,
+        "whiff_pct": 27.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FS",
+        "pitch_name": "Splitter",
+        "usage_pct": 18.1,
+        "avg_velo": 85.4,
+        "avg_spin": 1871,
+        "whiff_pct": 37.9,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 1.0,
+        "avg_velo": 94.5,
+        "avg_spin": 2337,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      }
+    ],
+    "splits": {},
+    "k_prediction": {
+      "predicted_ks": 6.0,
+      "k_low_25": 4,
+      "k_high_75": 8,
+      "expected_ip": 5.5,
+      "season_k9": 9.82,
+      "last3_k9": 9.82,
+      "blended_k9": 9.82,
+      "opp_k_pct": 22.5,
+      "opp_k_pct_vs_lg": 0.0,
+      "adj_factor": 1.0
+    },
+    "first_inning": {},
+    "game_id": 824702,
+    "game_date": "2026-03-30",
+    "game_time_ct": "6:40 PM CT"
   },
   {
     "player_id": 695505,
@@ -3413,7 +2581,44 @@
         "game_id": 777160
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 55.8,
+        "avg_velo": 97.9,
+        "avg_spin": 2462,
+        "whiff_pct": 15.9,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 34.6,
+        "avg_velo": 90.2,
+        "avg_spin": 2599,
+        "whiff_pct": 55.9,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 5.8,
+        "avg_velo": 90.7,
+        "avg_spin": 1648,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 3.8,
+        "avg_velo": 84.2,
+        "avg_spin": 2630,
+        "whiff_pct": 100.0,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 7.5,
@@ -3535,7 +2740,44 @@
         "game_id": 776637
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 31.3,
+        "avg_velo": 95.2,
+        "avg_spin": 2276,
+        "whiff_pct": 28.6,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 30.6,
+        "avg_velo": 91.7,
+        "avg_spin": 2547,
+        "whiff_pct": 29.6,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 24.6,
+        "avg_velo": 85.2,
+        "avg_spin": 2535,
+        "whiff_pct": 37.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 13.4,
+        "avg_velo": 96.6,
+        "avg_spin": 2394,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 4.9,
@@ -3657,7 +2899,62 @@
         "game_id": 777235
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 26.4,
+        "avg_velo": 89.7,
+        "avg_spin": 2353,
+        "whiff_pct": 10.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 20.0,
+        "avg_velo": 86.4,
+        "avg_spin": 2031,
+        "whiff_pct": 55.6,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 17.3,
+        "avg_velo": 92.5,
+        "avg_spin": 2069,
+        "whiff_pct": 28.6,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 16.4,
+        "avg_velo": 93.0,
+        "avg_spin": 2163,
+        "whiff_pct": 14.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "KC",
+        "pitch_name": "Knuckle Curve",
+        "usage_pct": 10.9,
+        "avg_velo": 81.0,
+        "avg_spin": 2924,
+        "whiff_pct": 37.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 9.1,
+        "avg_velo": 82.5,
+        "avg_spin": 2728,
+        "whiff_pct": 33.3,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 4.5,
@@ -3779,7 +3076,62 @@
         "game_id": 776459
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 23.7,
+        "avg_velo": 89.8,
+        "avg_spin": 1985,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 22.8,
+        "avg_velo": 80.3,
+        "avg_spin": 1240,
+        "whiff_pct": 22.2,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 19.3,
+        "avg_velo": 85.7,
+        "avg_spin": 2094,
+        "whiff_pct": 18.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 17.5,
+        "avg_velo": 90.4,
+        "avg_spin": 1900,
+        "whiff_pct": 12.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 9.6,
+        "avg_velo": 74.3,
+        "avg_spin": 2153,
+        "whiff_pct": 40.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 7.0,
+        "avg_velo": 80.8,
+        "avg_spin": 2150,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 4.0,
@@ -3901,7 +3253,53 @@
         "game_id": 777304
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 42.3,
+        "avg_velo": 91.7,
+        "avg_spin": 2355,
+        "whiff_pct": 25.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 22.2,
+        "avg_velo": 86.1,
+        "avg_spin": 1439,
+        "whiff_pct": 40.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 14.9,
+        "avg_velo": 85.3,
+        "avg_spin": 2484,
+        "whiff_pct": 50.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 10.8,
+        "avg_velo": 91.7,
+        "avg_spin": 2082,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 9.8,
+        "avg_velo": 82.4,
+        "avg_spin": 2605,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 3.6,
@@ -3911,6 +3309,165 @@
       "season_k9": 8.97,
       "last3_k9": 6.04,
       "blended_k9": 7.21,
+      "opp_k_pct": 22.5,
+      "opp_k_pct_vs_lg": 0.0,
+      "adj_factor": 1.0
+    },
+    "first_inning": {},
+    "game_id": 824135,
+    "game_date": "2026-03-30",
+    "game_time_ct": "3:10 PM CT"
+  },
+  {
+    "player_id": 680573,
+    "name": "Simeon Woods Richardson",
+    "team_abbr": "MIN",
+    "opponent": "KC",
+    "throws": "R",
+    "days_rest": 182,
+    "trend": "improving",
+    "season_stats": {
+      "season": 2025,
+      "W": 7,
+      "L": 4,
+      "ERA": 4.04,
+      "FIP": 4.4,
+      "WHIP": 1.28,
+      "IP": 111.3,
+      "GS": 22,
+      "G": 23,
+      "K": 107,
+      "BB": 46,
+      "HR": 17,
+      "H": 96,
+      "ER": 50,
+      "K9": 8.65,
+      "BB9": 3.72,
+      "HR9": 1.37,
+      "K_pct": 22.7,
+      "BB_pct": 9.8,
+      "K_BB": 2.33,
+      "note": "2025 stats (current season insufficient)"
+    },
+    "last_starts": [
+      {
+        "date": "2025-09-28",
+        "opponent": "",
+        "decision": "ND",
+        "IP": 6.0,
+        "H": 1,
+        "ER": 0,
+        "BB": 0,
+        "K": 9,
+        "HR": 0,
+        "pitches": 81,
+        "era_start": 0.0,
+        "game_id": 776141
+      },
+      {
+        "date": "2025-09-21",
+        "opponent": "",
+        "decision": "ND",
+        "IP": 5.0,
+        "H": 3,
+        "ER": 2,
+        "BB": 2,
+        "K": 3,
+        "HR": 1,
+        "pitches": 80,
+        "era_start": 3.6,
+        "game_id": 776225
+      },
+      {
+        "date": "2025-09-15",
+        "opponent": "",
+        "decision": "W",
+        "IP": 6.0,
+        "H": 2,
+        "ER": 0,
+        "BB": 3,
+        "K": 11,
+        "HR": 0,
+        "pitches": 92,
+        "era_start": 0.0,
+        "game_id": 776313
+      },
+      {
+        "date": "2025-09-08",
+        "opponent": "",
+        "decision": "W",
+        "IP": 5.0,
+        "H": 5,
+        "ER": 3,
+        "BB": 1,
+        "K": 6,
+        "HR": 0,
+        "pitches": 89,
+        "era_start": 5.4,
+        "game_id": 776411
+      },
+      {
+        "date": "2025-09-02",
+        "opponent": "",
+        "decision": "ND",
+        "IP": 5.0,
+        "H": 2,
+        "ER": 2,
+        "BB": 3,
+        "K": 7,
+        "HR": 1,
+        "pitches": 85,
+        "era_start": 3.6,
+        "game_id": 776484
+      }
+    ],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 40.1,
+        "avg_velo": 92.0,
+        "avg_spin": 2100,
+        "whiff_pct": 21.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 26.2,
+        "avg_velo": 84.7,
+        "avg_spin": 2237,
+        "whiff_pct": 31.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FS",
+        "pitch_name": "Splitter",
+        "usage_pct": 25.8,
+        "avg_velo": 85.3,
+        "avg_spin": 1083,
+        "whiff_pct": 31.2,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 7.9,
+        "avg_velo": 76.5,
+        "avg_spin": 2458,
+        "whiff_pct": 25.0,
+        "put_away_pct": 0.0
+      }
+    ],
+    "splits": {},
+    "k_prediction": {
+      "predicted_ks": 6.8,
+      "k_low_25": 5,
+      "k_high_75": 8,
+      "expected_ip": 5.7,
+      "season_k9": 8.65,
+      "last3_k9": 12.18,
+      "blended_k9": 10.77,
       "opp_k_pct": 22.5,
       "opp_k_pct_vs_lg": 0.0,
       "adj_factor": 1.0
@@ -4023,7 +3580,44 @@
         "game_id": 778345
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 40.1,
+        "avg_velo": 97.6,
+        "avg_spin": 1975,
+        "whiff_pct": 7.1,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FS",
+        "pitch_name": "Splitter",
+        "usage_pct": 27.5,
+        "avg_velo": 85.7,
+        "avg_spin": 515,
+        "whiff_pct": 61.9,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 22.5,
+        "avg_velo": 87.1,
+        "avg_spin": 2003,
+        "whiff_pct": 33.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 9.9,
+        "avg_velo": 97.2,
+        "avg_spin": 2113,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 3.1,
@@ -4145,7 +3739,62 @@
         "game_id": 776505
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 35.4,
+        "avg_velo": 92.6,
+        "avg_spin": 2114,
+        "whiff_pct": 17.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 21.0,
+        "avg_velo": 83.9,
+        "avg_spin": 1819,
+        "whiff_pct": 36.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 11.8,
+        "avg_velo": 85.6,
+        "avg_spin": 2249,
+        "whiff_pct": 15.4,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 11.4,
+        "avg_velo": 76.9,
+        "avg_spin": 2301,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 11.4,
+        "avg_velo": 91.4,
+        "avg_spin": 2049,
+        "whiff_pct": 13.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 9.2,
+        "avg_velo": 89.5,
+        "avg_spin": 2078,
+        "whiff_pct": 8.3,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 6.1,
@@ -4267,7 +3916,71 @@
         "game_id": 776781
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 32.4,
+        "avg_velo": 93.4,
+        "avg_spin": 2190,
+        "whiff_pct": 26.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 19.0,
+        "avg_velo": 87.4,
+        "avg_spin": 1988,
+        "whiff_pct": 28.6,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 16.8,
+        "avg_velo": 84.9,
+        "avg_spin": 1736,
+        "whiff_pct": 35.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 11.2,
+        "avg_velo": 78.0,
+        "avg_spin": 2096,
+        "whiff_pct": 22.2,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 10.6,
+        "avg_velo": 93.1,
+        "avg_spin": 2062,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 8.9,
+        "avg_velo": 80.4,
+        "avg_spin": 2293,
+        "whiff_pct": 37.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 1.1,
+        "avg_velo": 82.2,
+        "avg_spin": 2054,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 2.5,
@@ -4389,7 +4102,62 @@
         "game_id": 776484
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 28.9,
+        "avg_velo": 93.9,
+        "avg_spin": 2368,
+        "whiff_pct": 28.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 22.2,
+        "avg_velo": 87.2,
+        "avg_spin": 2576,
+        "whiff_pct": 45.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 18.2,
+        "avg_velo": 92.8,
+        "avg_spin": 2383,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 16.9,
+        "avg_velo": 89.5,
+        "avg_spin": 2492,
+        "whiff_pct": 35.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 8.4,
+        "avg_velo": 89.1,
+        "avg_spin": 2052,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 5.3,
+        "avg_velo": 81.0,
+        "avg_spin": 2923,
+        "whiff_pct": 42.9,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 3.9,
@@ -4511,7 +4279,44 @@
         "game_id": 777717
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 51.5,
+        "avg_velo": 94.9,
+        "avg_spin": 2314,
+        "whiff_pct": 25.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SV",
+        "pitch_name": "Slurve",
+        "usage_pct": 21.4,
+        "avg_velo": 82.3,
+        "avg_spin": 2158,
+        "whiff_pct": 50.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 15.8,
+        "avg_velo": 85.9,
+        "avg_spin": 1483,
+        "whiff_pct": 26.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 11.3,
+        "avg_velo": 94.4,
+        "avg_spin": 2240,
+        "whiff_pct": 13.3,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 5.4,
@@ -4633,7 +4438,62 @@
         "game_id": 776941
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 24.1,
+        "avg_velo": 77.7,
+        "avg_spin": 1629,
+        "whiff_pct": 18.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 23.2,
+        "avg_velo": 88.7,
+        "avg_spin": 2290,
+        "whiff_pct": 3.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 21.4,
+        "avg_velo": 91.7,
+        "avg_spin": 2172,
+        "whiff_pct": 4.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 17.3,
+        "avg_velo": 92.2,
+        "avg_spin": 2198,
+        "whiff_pct": 9.1,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 8.6,
+        "avg_velo": 85.0,
+        "avg_spin": 2290,
+        "whiff_pct": 12.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 5.5,
+        "avg_velo": 78.9,
+        "avg_spin": 2461,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 3.5,
@@ -4755,7 +4615,62 @@
         "game_id": 776566
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 26.7,
+        "avg_velo": 79.7,
+        "avg_spin": 2358,
+        "whiff_pct": 20.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 21.7,
+        "avg_velo": 91.4,
+        "avg_spin": 1970,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 20.0,
+        "avg_velo": 86.1,
+        "avg_spin": 2384,
+        "whiff_pct": 50.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FS",
+        "pitch_name": "Splitter",
+        "usage_pct": 20.0,
+        "avg_velo": 86.9,
+        "avg_spin": 1392,
+        "whiff_pct": 10.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 6.7,
+        "avg_velo": 91.0,
+        "avg_spin": 2112,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 5.0,
+        "avg_velo": 72.8,
+        "avg_spin": 2221,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 2.6,
@@ -4765,6 +4680,99 @@
       "season_k9": 6.26,
       "last3_k9": 3.6,
       "blended_k9": 4.66,
+      "opp_k_pct": 22.5,
+      "opp_k_pct_vs_lg": 0.0,
+      "adj_factor": 1.0
+    },
+    "first_inning": {},
+    "game_id": 823484,
+    "game_date": "2026-03-30",
+    "game_time_ct": "5:40 PM CT"
+  },
+  {
+    "player_id": 656492,
+    "name": "Foster Griffin",
+    "team_abbr": "WSH",
+    "opponent": "PHI",
+    "throws": "R",
+    "days_rest": null,
+    "trend": "neutral",
+    "season_stats": {},
+    "last_starts": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 25.2,
+        "avg_velo": 92.0,
+        "avg_spin": 2121,
+        "whiff_pct": 41.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 21.1,
+        "avg_velo": 87.8,
+        "avg_spin": 2210,
+        "whiff_pct": 14.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 18.7,
+        "avg_velo": 80.7,
+        "avg_spin": 2516,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 11.4,
+        "avg_velo": 83.8,
+        "avg_spin": 1867,
+        "whiff_pct": 50.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FS",
+        "pitch_name": "Splitter",
+        "usage_pct": 11.4,
+        "avg_velo": 81.6,
+        "avg_spin": 1202,
+        "whiff_pct": 50.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 7.3,
+        "avg_velo": 78.5,
+        "avg_spin": 2358,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 4.9,
+        "avg_velo": 91.0,
+        "avg_spin": 2032,
+        "whiff_pct": 25.0,
+        "put_away_pct": 0.0
+      }
+    ],
+    "splits": {},
+    "k_prediction": {
+      "predicted_ks": 5.2,
+      "k_low_25": 4,
+      "k_high_75": 7,
+      "expected_ip": 5.5,
+      "season_k9": 8.5,
+      "last3_k9": 8.5,
+      "blended_k9": 8.5,
       "opp_k_pct": 22.5,
       "opp_k_pct_vs_lg": 0.0,
       "adj_factor": 1.0
@@ -4877,7 +4885,71 @@
         "game_id": 776820
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 20.3,
+        "avg_velo": 92.4,
+        "avg_spin": 2223,
+        "whiff_pct": 6.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 17.0,
+        "avg_velo": 87.5,
+        "avg_spin": 1438,
+        "whiff_pct": 43.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 16.6,
+        "avg_velo": 88.9,
+        "avg_spin": 2375,
+        "whiff_pct": 17.9,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 15.5,
+        "avg_velo": 81.3,
+        "avg_spin": 2679,
+        "whiff_pct": 43.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "KC",
+        "pitch_name": "Knuckle Curve",
+        "usage_pct": 13.7,
+        "avg_velo": 75.8,
+        "avg_spin": 2540,
+        "whiff_pct": 40.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 9.6,
+        "avg_velo": 92.4,
+        "avg_spin": 2073,
+        "whiff_pct": 15.4,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 7.4,
+        "avg_velo": 85.8,
+        "avg_spin": 2516,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 3.2,
@@ -4999,7 +5071,53 @@
         "game_id": 777199
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 44.6,
+        "avg_velo": 93.8,
+        "avg_spin": 2022,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 30.4,
+        "avg_velo": 77.2,
+        "avg_spin": 3066,
+        "whiff_pct": 45.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 12.1,
+        "avg_velo": 91.2,
+        "avg_spin": 2178,
+        "whiff_pct": 30.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 10.7,
+        "avg_velo": 87.3,
+        "avg_spin": 1970,
+        "whiff_pct": 8.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 2.2,
+        "avg_velo": 93.6,
+        "avg_spin": 2171,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 5.1,
@@ -5121,7 +5239,53 @@
         "game_id": 776504
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 37.0,
+        "avg_velo": 95.0,
+        "avg_spin": 2165,
+        "whiff_pct": 29.4,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 24.7,
+        "avg_velo": 84.2,
+        "avg_spin": 2230,
+        "whiff_pct": 37.9,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 21.3,
+        "avg_velo": 95.2,
+        "avg_spin": 2098,
+        "whiff_pct": 22.6,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 14.9,
+        "avg_velo": 86.7,
+        "avg_spin": 1845,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 2.1,
+        "avg_velo": 91.5,
+        "avg_spin": 2178,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 5.9,
@@ -5243,7 +5407,53 @@
         "game_id": 777689
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 30.0,
+        "avg_velo": 98.1,
+        "avg_spin": 2326,
+        "whiff_pct": 15.9,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 29.6,
+        "avg_velo": 84.9,
+        "avg_spin": 2627,
+        "whiff_pct": 47.1,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 17.5,
+        "avg_velo": 87.9,
+        "avg_spin": 2015,
+        "whiff_pct": 30.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 16.8,
+        "avg_velo": 96.3,
+        "avg_spin": 2315,
+        "whiff_pct": 9.1,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 6.1,
+        "avg_velo": 90.2,
+        "avg_spin": 2660,
+        "whiff_pct": 28.6,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 4.6,
@@ -5309,7 +5519,62 @@
         "game_id": 776142
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 25.2,
+        "avg_velo": 93.6,
+        "avg_spin": 2187,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 22.8,
+        "avg_velo": 93.4,
+        "avg_spin": 2151,
+        "whiff_pct": 16.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 18.4,
+        "avg_velo": 89.8,
+        "avg_spin": 2304,
+        "whiff_pct": 7.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 12.8,
+        "avg_velo": 81.9,
+        "avg_spin": 2270,
+        "whiff_pct": 13.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 12.8,
+        "avg_velo": 84.0,
+        "avg_spin": 2563,
+        "whiff_pct": 15.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 8.0,
+        "avg_velo": 88.3,
+        "avg_spin": 1458,
+        "whiff_pct": 18.2,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 4.1,
@@ -5431,7 +5696,62 @@
         "game_id": 776558
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 40.8,
+        "avg_velo": 94.5,
+        "avg_spin": 2153,
+        "whiff_pct": 16.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 24.8,
+        "avg_velo": 82.1,
+        "avg_spin": 2858,
+        "whiff_pct": 12.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 12.8,
+        "avg_velo": 89.5,
+        "avg_spin": 2584,
+        "whiff_pct": 33.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 12.0,
+        "avg_velo": 89.5,
+        "avg_spin": 1206,
+        "whiff_pct": 40.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 6.4,
+        "avg_velo": 81.7,
+        "avg_spin": 2995,
+        "whiff_pct": 20.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 3.2,
+        "avg_velo": 87.2,
+        "avg_spin": 2738,
+        "whiff_pct": 66.7,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 3.3,
@@ -5460,7 +5780,53 @@
     "trend": "neutral",
     "season_stats": {},
     "last_starts": [],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 45.8,
+        "avg_velo": 95.4,
+        "avg_spin": 2471,
+        "whiff_pct": 29.2,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 21.5,
+        "avg_velo": 90.4,
+        "avg_spin": 2405,
+        "whiff_pct": 23.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FS",
+        "pitch_name": "Splitter",
+        "usage_pct": 17.5,
+        "avg_velo": 87.8,
+        "avg_spin": 867,
+        "whiff_pct": 46.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 14.1,
+        "avg_velo": 83.3,
+        "avg_spin": 2343,
+        "whiff_pct": 9.1,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 1.1,
+        "avg_velo": 84.9,
+        "avg_spin": 2228,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {},
     "k_prediction": {
       "predicted_ks": 5.2,
@@ -5470,6 +5836,183 @@
       "season_k9": 8.5,
       "last3_k9": 8.5,
       "blended_k9": 8.5,
+      "opp_k_pct": 22.5,
+      "opp_k_pct_vs_lg": 0.0,
+      "adj_factor": 1.0
+    },
+    "first_inning": {},
+    "game_id": 822834,
+    "game_date": "2026-03-30",
+    "game_time_ct": "6:07 PM CT"
+  },
+  {
+    "player_id": 608372,
+    "name": "Tomoyuki Sugano",
+    "team_abbr": "COL",
+    "opponent": "TOR",
+    "throws": "R",
+    "days_rest": 183,
+    "trend": "declining",
+    "season_stats": {
+      "season": 2025,
+      "W": 10,
+      "L": 10,
+      "ERA": 4.64,
+      "FIP": 5.17,
+      "WHIP": 1.33,
+      "IP": 157.0,
+      "GS": 30,
+      "G": 30,
+      "K": 106,
+      "BB": 36,
+      "HR": 33,
+      "H": 173,
+      "ER": 81,
+      "K9": 6.08,
+      "BB9": 2.06,
+      "HR9": 1.89,
+      "K_pct": 15.7,
+      "BB_pct": 5.3,
+      "K_BB": 2.94,
+      "note": "2025 stats (current season insufficient)"
+    },
+    "last_starts": [
+      {
+        "date": "2025-09-27",
+        "opponent": "",
+        "decision": "L",
+        "IP": 4.3,
+        "H": 5,
+        "ER": 4,
+        "BB": 0,
+        "K": 3,
+        "HR": 3,
+        "pitches": 73,
+        "era_start": 8.31,
+        "game_id": 776162
+      },
+      {
+        "date": "2025-09-20",
+        "opponent": "",
+        "decision": "L",
+        "IP": 3.0,
+        "H": 6,
+        "ER": 4,
+        "BB": 1,
+        "K": 3,
+        "HR": 2,
+        "pitches": 87,
+        "era_start": 12.0,
+        "game_id": 776257
+      },
+      {
+        "date": "2025-09-13",
+        "opponent": "",
+        "decision": "ND",
+        "IP": 6.0,
+        "H": 4,
+        "ER": 1,
+        "BB": 0,
+        "K": 4,
+        "HR": 1,
+        "pitches": 63,
+        "era_start": 1.5,
+        "game_id": 776343
+      },
+      {
+        "date": "2025-09-07",
+        "opponent": "",
+        "decision": "L",
+        "IP": 3.0,
+        "H": 7,
+        "ER": 3,
+        "BB": 0,
+        "K": 1,
+        "HR": 3,
+        "pitches": 67,
+        "era_start": 9.0,
+        "game_id": 776427
+      },
+      {
+        "date": "2025-08-31",
+        "opponent": "",
+        "decision": "L",
+        "IP": 3.3,
+        "H": 10,
+        "ER": 7,
+        "BB": 1,
+        "K": 4,
+        "HR": 1,
+        "pitches": 80,
+        "era_start": 18.9,
+        "game_id": 776507
+      }
+    ],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 24.1,
+        "avg_velo": 92.5,
+        "avg_spin": 2400,
+        "whiff_pct": 7.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 20.7,
+        "avg_velo": 89.0,
+        "avg_spin": 2464,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FS",
+        "pitch_name": "Splitter",
+        "usage_pct": 19.8,
+        "avg_velo": 86.5,
+        "avg_spin": 1598,
+        "whiff_pct": 35.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 13.8,
+        "avg_velo": 83.9,
+        "avg_spin": 2554,
+        "whiff_pct": 10.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 11.2,
+        "avg_velo": 92.3,
+        "avg_spin": 2302,
+        "whiff_pct": 28.6,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 10.3,
+        "avg_velo": 79.7,
+        "avg_spin": 2636,
+        "whiff_pct": 20.0,
+        "put_away_pct": 0.0
+      }
+    ],
+    "splits": {},
+    "k_prediction": {
+      "predicted_ks": 3.2,
+      "k_low_25": 2,
+      "k_high_75": 4,
+      "expected_ip": 4.5,
+      "season_k9": 6.08,
+      "last3_k9": 6.77,
+      "blended_k9": 6.49,
       "opp_k_pct": 22.5,
       "opp_k_pct_vs_lg": 0.0,
       "adj_factor": 1.0
