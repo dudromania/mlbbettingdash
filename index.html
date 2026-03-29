@@ -1607,30 +1607,58 @@ async function loadLineup(i, homeAbbr, awayAbbr) {
   if (el.dataset.loaded) return;
   el.dataset.loaded = '1';
 
-  // Fetch player season stats from MLB Stats API by team
+  // Cache of team IDs to avoid repeated lookups
+  if (!window._mlbTeamIds) window._mlbTeamIds = {};
+
+  async function getTeamId(abbr) {
+    if (window._mlbTeamIds[abbr]) return window._mlbTeamIds[abbr];
+    const r = await fetch(`https://statsapi.mlb.com/api/v1/teams?sportId=1&season=2026`);
+    const d = await r.json();
+    for (const t of d.teams||[]) window._mlbTeamIds[t.abbreviation] = t.id;
+    return window._mlbTeamIds[abbr] || null;
+  }
+
   async function getTeamBatterStats(abbr) {
     try {
-      const tr = await fetch(`https://statsapi.mlb.com/api/v1/teams?sportId=1&season=2026`);
-      const td = await tr.json();
-      const team = (td.teams||[]).find(t => t.abbreviation === abbr);
-      if (!team) return {};
-      const sr = await fetch(
-        `https://statsapi.mlb.com/api/v1/teams/${team.id}/roster?rosterType=active&season=2026&hydrate=person(stats(type=season,season=2026,group=hitting))`
+      const teamId = await getTeamId(abbr);
+      if (!teamId) return {};
+
+      // Use team stats/leaders endpoint — more reliable than roster hydration
+      const r = await fetch(
+        `https://statsapi.mlb.com/api/v1/teams/${teamId}/stats?stats=season&season=2026&group=hitting`
       );
-      const sd = await sr.json();
+      const d = await r.json();
+
+      // Also get individual player stats via team roster
+      const r2 = await fetch(
+        `https://statsapi.mlb.com/api/v1/teams/${teamId}/roster?rosterType=active&season=2026`
+      );
+      const d2 = await r2.json();
+      const playerIds = (d2.roster||[]).map(p => p.person.id).slice(0,25).join(',');
+
+      if (!playerIds) return {};
+
+      // Batch fetch stats for all roster players
+      const r3 = await fetch(
+        `https://statsapi.mlb.com/api/v1/people?personIds=${playerIds}&hydrate=stats(type=season,season=2026,group=hitting)`
+      );
+      const d3 = await r3.json();
+
       const map = {};
-      for (const p of sd.roster || []) {
-        const stats = p.person?.stats?.[0]?.splits?.[0]?.stat;
-        if (!stats) continue;
-        map[p.person.id] = {
-          ba:  parseFloat(stats.avg||0).toFixed(3),
-          obp: parseFloat(stats.obp||0).toFixed(3),
-          slg: parseFloat(stats.slg||0).toFixed(3),
-          hr:  parseInt(stats.homeRuns||0),
-          rbi: parseInt(stats.rbi||0),
-          kpct: stats.plateAppearances > 0
-            ? (parseInt(stats.strikeOuts||0)/parseInt(stats.plateAppearances||1)*100).toFixed(0)+'%'
-            : '—',
+      for (const person of d3.people||[]) {
+        const splits = person.stats?.[0]?.splits || [];
+        if (!splits.length) continue;
+        const s = splits[0].stat || {};
+        const pa = parseInt(s.plateAppearances||0);
+        if (pa < 1) continue; // skip players with no ABs
+        map[person.id] = {
+          ba:   parseFloat(s.avg||0).toFixed(3),
+          obp:  parseFloat(s.obp||0).toFixed(3),
+          slg:  parseFloat(s.slg||0).toFixed(3),
+          hr:   parseInt(s.homeRuns||0),
+          rbi:  parseInt(s.rbi||0),
+          pa,
+          kpct: (parseInt(s.strikeOuts||0)/pa*100).toFixed(0)+'%',
         };
       }
       return map;
