@@ -2221,15 +2221,28 @@ function renderResults() {
   // picks_history.json uses spread_result/total_result fields and spread_bet/total_bet
   // Normalize to a flat "result" and "bet_type" for display
   const hist = DATA.history.map(h => {
-    const betType = h.spread_bet ? 'spread' : h.total_bet ? 'total' : null;
-    const rawResult = betType === 'spread' ? h.spread_result :
-                      betType === 'total'  ? h.total_result  : null;
+    // Determine bet type — prefer spread, fall back to total, then ML
+    const betType = h.spread_bet ? 'spread' : h.total_bet ? 'total' : h.ml_bet ? 'ml' : null;
+
+    // Get raw result from whichever bet type applies
+    let rawResult = betType === 'spread' ? h.spread_result :
+                    betType === 'total'  ? h.total_result  :
+                    betType === 'ml'     ? h.ml_result     : null;
+
+    // If no explicit bet but game was graded, derive result from actual margin
+    // This covers picks where vegas line was missing so no spread_bet was set
+    if (!rawResult && h.actual_margin != null && h.spread_edge_label && h.spread_edge_label !== 'NO LINE') {
+      const favHome = (h.predicted_margin || 0) >= 0;
+      const homeWon = h.actual_margin > 0;
+      rawResult = favHome === homeWon ? 'W' : 'L';
+    }
+
     const result = rawResult === 'W' || rawResult === 'win'  ? 'win'  :
                    rawResult === 'L' || rawResult === 'loss' ? 'loss' :
                    rawResult === 'P' || rawResult === 'push' ? 'push' : null;
     const pnl = (h.pnl_spread||0) + (h.pnl_total||0) + (h.pnl_ml||0);
-    return {...h, bet_type: betType, result, pnl};
-  }).filter(h => h.result);
+    return {...h, bet_type: betType || 'spread', result, pnl};
+  }).filter(h => h.result && h.actual_margin != null);
 
   if (!hist.length) {
     document.getElementById('results-stats').innerHTML =
@@ -2278,11 +2291,15 @@ function renderResults() {
 
 function renderResultsTable(histIn) {
   const hist = histIn || DATA.history.map(h => {
-    const betType = h.spread_bet ? 'spread' : h.total_bet ? 'total' : null;
-    const rawResult = betType === 'spread' ? h.spread_result : betType === 'total' ? h.total_result : null;
+    const betType = h.spread_bet ? 'spread' : h.total_bet ? 'total' : h.ml_bet ? 'ml' : null;
+    let rawResult = betType === 'spread' ? h.spread_result : betType === 'total' ? h.total_result : betType === 'ml' ? h.ml_result : null;
+    if (!rawResult && h.actual_margin != null && h.spread_edge_label && h.spread_edge_label !== 'NO LINE') {
+      const favHome = (h.predicted_margin || 0) >= 0;
+      rawResult = favHome === (h.actual_margin > 0) ? 'W' : 'L';
+    }
     const result = rawResult==='W'||rawResult==='win'?'win':rawResult==='L'||rawResult==='loss'?'loss':rawResult==='P'||rawResult==='push'?'push':null;
-    return {...h, bet_type: betType, result, pnl:(h.pnl_spread||0)+(h.pnl_total||0)+(h.pnl_ml||0)};
-  }).filter(h => h.result);
+    return {...h, bet_type: betType||'spread', result, pnl:(h.pnl_spread||0)+(h.pnl_total||0)+(h.pnl_ml||0)};
+  }).filter(h => h.result && h.actual_margin != null);
 
   let rows = [...hist].sort((a,b) => (b.date||'').localeCompare(a.date||''));
   if (resultsFilter === 'spread') rows = rows.filter(h => h.bet_type === 'spread');
