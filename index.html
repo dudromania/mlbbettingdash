@@ -2311,118 +2311,104 @@ function calcStreak(hist) {
 let liveInterval = null;
 
 async function fetchLiveScores() {
-  const bar = document.getElementById('live-games-row');
-  const modelDate = DATA.date || todayStr(); // e.g. "2026-03-28"
+  const bar        = document.getElementById('live-games-row');
+  const modelDate  = DATA.date || todayStr();
+  const espnDate   = modelDate.replace(/-/g, '');
+  const espnBase   = `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${espnDate}`;
 
-  // Team set from today's picks
-  const todayTeams = new Set();
-  DATA.games.forEach(g => { todayTeams.add(g.home_abbr); todayTeams.add(g.away_abbr); });
+  // CORS proxies — tried in order until one works
+  const proxies = [
+    u => `https://corsproxy.io/?url=${encodeURIComponent(u)}`,
+    u => `https://api.allorigins.win/raw?url=${encodeURIComponent(u)}`,
+    u => u,   // direct (works if CORS headers present)
+  ];
 
-  // Try ESPN — filter events by their actual competition date
-  // This prevents tomorrow's games from showing even if ESPN auto-advances
-  try {
-    const espnDate = modelDate.replace(/-/g, '');
-    const res = await fetch(
-      `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${espnDate}`,
-      { cache: 'no-store' }
-    );
-    if (!res.ok) throw new Error('ESPN HTTP ' + res.status);
-    const data = await res.json();
+  for (const proxy of proxies) {
+    try {
+      const url = proxy(espnBase);
+      const res = await fetch(url, { cache: 'no-store' });
+      if (!res.ok) continue;
+      const data = await res.json();
 
-    const events = (data.events || []).filter(ev => {
-      // Each competition has a date field — only show if it matches our model date
-      const compDate = ev.competitions?.[0]?.date || ev.date || '';
-      const evDate   = compDate.slice(0, 10); // "2026-03-28"
-      return evDate === modelDate;
-    });
+      // Handle allorigins wrapping (returns {contents: "..."})
+      const parsed = typeof data === 'string' ? JSON.parse(data) :
+                     data.contents ? JSON.parse(data.contents) : data;
 
-    if (!events.length) {
-      // ESPN returned no events for our date — show all-final placeholder
-      bar.innerHTML = DATA.games.map(g =>
-        `<div class="live-game live-final">
-          <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.away_abbr}</span><span class="lg-score">F</span></div></div>
-          <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.home_abbr}</span><span class="lg-score">F</span></div></div>
-          <div class="lg-status">Final</div>
-        </div>`
-      ).join('') || '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">Games complete</span>';
+      const allEvents = parsed.events || [];
+
+      // Filter to today's date — ESPN dates are UTC, convert to ET
+      const events = allEvents.filter(ev => {
+        const d = ev.competitions?.[0]?.date || ev.date || '';
+        if (!d) return true;
+        const et = new Date(d).toLocaleDateString('en-US',
+          {timeZone:'America/New_York', year:'numeric', month:'2-digit', day:'2-digit'})
+          .split('/');
+        return `${et[2]}-${et[0]}-${et[1]}` === modelDate;
+      });
+
+      if (!allEvents.length) continue; // proxy returned empty, try next
+
+      let hasLive = false;
+      const html  = events.map(ev => {
+        const comp = ev.competitions?.[0];
+        const state  = comp?.status?.type?.state || 'pre';
+        const detail = comp?.status?.type?.shortDetail || '';
+        const home   = comp?.competitors?.find(t => t.homeAway === 'home');
+        const away   = comp?.competitors?.find(t => t.homeAway === 'away');
+        if (!home || !away) return '';
+        const hA = home.team?.abbreviation || '';
+        const aA = away.team?.abbreviation || '';
+        const hS = home.score ?? '';
+        const aS = away.score ?? '';
+        const hW = state==='post' && parseInt(hS)>parseInt(aS);
+        const aW = state==='post' && parseInt(aS)>parseInt(hS);
+        const hL = state==='in'   && parseInt(hS)>parseInt(aS);
+        const aL = state==='in'   && parseInt(aS)>parseInt(hS);
+        if (state==='in') hasLive = true;
+        return `<div class="live-game ${state==='in'?'live-active':state==='post'?'live-final':''}">
+          <div class="lg-teams"><div class="lg-team">
+            <span class="lg-abbr">${aA}</span>
+            <span class="lg-score ${aW||aL?'winning':''}">${aS!==''?aS:'—'}</span>
+          </div></div>
+          <div class="lg-teams"><div class="lg-team">
+            <span class="lg-abbr">${hA}</span>
+            <span class="lg-score ${hW||hL?'winning':''}">${hS!==''?hS:'—'}</span>
+          </div></div>
+          <div class="lg-status ${state==='in'?'live':''}">${state==='post'?'F':detail}</div>
+        </div>`;
+      }).filter(Boolean).join('');
+
+      // If date filter removed everything, show "games complete"
+      if (!html && events.length === 0 && allEvents.length > 0) {
+        bar.innerHTML = DATA.games.map(g =>
+          `<div class="live-game live-final">
+            <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.away_abbr}</span><span class="lg-score">—</span></div></div>
+            <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.home_abbr}</span><span class="lg-score">—</span></div></div>
+            <div class="lg-status">Final</div>
+          </div>`
+        ).join('');
+      } else {
+        bar.innerHTML = html || '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">No games</span>';
+      }
+
       document.getElementById('live-updated').textContent =
         new Date().toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
       if (liveInterval) clearInterval(liveInterval);
-      liveInterval = setInterval(fetchLiveScores, 600000);
-      return;
-    }
+      liveInterval = setInterval(fetchLiveScores, hasLive ? 30000 : 120000);
+      return; // success — stop trying proxies
 
-    let hasLive = false;
-    const html = events.map(ev => {
-      const comp   = ev.competitions?.[0];
-      const status = comp?.status?.type;
-      const state  = status?.state || 'pre';
-      const detail = status?.shortDetail || '';
-      const home   = comp?.competitors?.find(t => t.homeAway === 'home');
-      const away   = comp?.competitors?.find(t => t.homeAway === 'away');
-      if (!home || !away) return '';
+    } catch(e) { continue; }
+  }
 
-      const hA = home.team?.abbreviation || '';
-      const aA = away.team?.abbreviation || '';
-      const hS = home.score ?? '';
-      const aS = away.score ?? '';
-      const hW = state === 'post' && parseInt(hS) > parseInt(aS);
-      const aW = state === 'post' && parseInt(aS) > parseInt(hS);
-      const hL = state === 'in'   && parseInt(hS) > parseInt(aS);
-      const aL = state === 'in'   && parseInt(aS) > parseInt(hS);
-      if (state === 'in') hasLive = true;
-
-      const cls = state === 'in' ? 'live-active' : state === 'post' ? 'live-final' : '';
-      const stx = state === 'post' ? 'F' : state === 'in' ? (detail||'Live') : detail;
-
-      return `<div class="live-game ${cls}">
-        <div class="lg-teams"><div class="lg-team">
-          <span class="lg-abbr">${aA}</span>
-          <span class="lg-score ${aW||aL?'winning':''}">${aS!==''?aS:'—'}</span>
-        </div></div>
-        <div class="lg-teams"><div class="lg-team">
-          <span class="lg-abbr">${hA}</span>
-          <span class="lg-score ${hW||hL?'winning':''}">${hS!==''?hS:'—'}</span>
-        </div></div>
-        <div class="lg-status ${state==='in'?'live':''}">${stx}</div>
-      </div>`;
-    }).filter(Boolean).join('');
-
-    bar.innerHTML = html || '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">No games</span>';
-    document.getElementById('live-updated').textContent =
-      new Date().toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
-
-    if (liveInterval) clearInterval(liveInterval);
-    liveInterval = setInterval(fetchLiveScores, hasLive ? 30000 : 120000);
-    return;
-
-  } catch(e) {}
-
-  // Fallback: live_scores.json written by model
-  try {
-    const res = await fetch('data/processed/live_scores.json?v=' + Date.now(), { cache: 'no-store' });
-    if (res.ok) {
-      const data  = await res.json();
-      const games = (data.games || []).filter(g =>
-        todayTeams.size === 0 || todayTeams.has(g.home_abbr) || todayTeams.has(g.away_abbr)
-      );
-      if (games.length) {
-        renderScoreBar(games);
-        if (liveInterval) clearInterval(liveInterval);
-        liveInterval = setInterval(fetchLiveScores, 120000);
-        return;
-      }
-    }
-  } catch(e) {}
-
-  // Last resort: show scheduled game times from picks
-  bar.innerHTML = DATA.games.map(g =>
-    `<div class="live-game">
-      <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.away_abbr}</span><span class="lg-score">—</span></div></div>
-      <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.home_abbr}</span><span class="lg-score">—</span></div></div>
-      <div class="lg-status dim" style="font-size:9px">${(g.game_time_ct||'').replace(' CT','')}</div>
-    </div>`
-  ).join('') || '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">Loading scores...</span>';
+  // All proxies failed — show game times from picks as placeholder
+  bar.innerHTML = DATA.games.length
+    ? DATA.games.map(g =>
+        `<div class="live-game">
+          <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.away_abbr}</span><span class="lg-score">—</span></div></div>
+          <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.home_abbr}</span><span class="lg-score">—</span></div></div>
+          <div class="lg-status" style="font-size:9px">${(g.game_time_ct||'').replace(' CT','')}</div>
+        </div>`).join('')
+    : '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">Scores unavailable</span>';
   document.getElementById('live-updated').textContent =
     new Date().toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
   if (liveInterval) clearInterval(liveInterval);
