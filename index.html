@@ -1082,7 +1082,7 @@ tbody td {
 </main>
 
 <script>
-const DATA = { games:[], series:[], pitchers:[], history:[], nrfi:[], date:'' };
+const DATA = { games:[], series:[], pitchers:[], history:[], nrfi:[], scores:[], date:'' };
 const LABELS = { model:'MODEL OUTPUT', games:"TODAY'S GAMES", pitchers:'PITCHER STATS', batters:'BATTER PROPS', standings:'STANDINGS', trends:'TRENDS', nrfi:'NRFI MATRIX', results:'MODEL PERFORMANCE' };
 
 async function loadJSON(path, fallback) {
@@ -1094,18 +1094,20 @@ async function loadJSON(path, fallback) {
 }
 
 async function init() {
-  const [today, series, pitchers, history, nrfi] = await Promise.all([
+  const [today, series, pitchers, history, nrfi, scores] = await Promise.all([
     loadJSON('data/processed/picks_today.json',     { date:'', games: SAMPLE }),
     loadJSON('data/processed/series_schedule.json', []),
     loadJSON('data/processed/pitcher_cards.json',   []),
     loadJSON('data/processed/picks_history.json',   []),
     loadJSON('data/processed/nrfi_data.json',       []),
+    loadJSON('data/processed/live_scores.json',     { games:[] }),
   ]);
   DATA.games    = ((today?.games||today||[]).filter(g=>g?.home_abbr)).sort((a,b)=>(a.game_time_ct||'').localeCompare(b.game_time_ct||''));
   DATA.series   = Array.isArray(series)   ? series   : [];
   DATA.pitchers = Array.isArray(pitchers) ? pitchers : [];
   DATA.history  = Array.isArray(history)  ? history  : [];
   DATA.nrfi     = Array.isArray(nrfi)     ? nrfi     : [];
+  DATA.scores   = scores?.games || [];
   DATA.date     = today?.date || todayStr();
 
   const d = new Date(DATA.date + 'T12:00:00');
@@ -2310,78 +2312,79 @@ let liveInterval = null;
 
 async function fetchLiveScores() {
   const bar = document.getElementById('live-games-row');
+  const modelDate = DATA.date || todayStr(); // e.g. "2026-03-28"
 
-  // Use model date — stays stable all day
-  const modelDate = (DATA.date || todayStr()).replace(/-/g, '');
-
-  // Build today's team set for filtering (loose match on first 2-3 chars)
+  // Team set from today's picks
   const todayTeams = new Set();
-  DATA.games.forEach(g => {
-    todayTeams.add(g.home_abbr);
-    todayTeams.add(g.away_abbr);
-  });
+  DATA.games.forEach(g => { todayTeams.add(g.home_abbr); todayTeams.add(g.away_abbr); });
 
-  // MLB Stats API scoreboard — allows CORS, no ESPN dependency
-  const mlbUrl = `https://statsapi.mlb.com/api/v1/schedule?sportId=1&date=${DATA.date||todayStr()}&gameType=R&hydrate=linescore,team`;
-
+  // Try ESPN — filter events by their actual competition date
+  // This prevents tomorrow's games from showing even if ESPN auto-advances
   try {
-    const res  = await fetch(mlbUrl, { cache: 'no-store' });
-    if (!res.ok) throw new Error('HTTP ' + res.status);
-    const data  = await res.json();
-    const dates = data.dates || [];
-    const games = dates.length ? dates[0].games || [] : [];
+    const espnDate = modelDate.replace(/-/g, '');
+    const res = await fetch(
+      `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${espnDate}`,
+      { cache: 'no-store' }
+    );
+    if (!res.ok) throw new Error('ESPN HTTP ' + res.status);
+    const data = await res.json();
 
-    // Filter to only today's known matchups
-    const filtered = todayTeams.size > 0
-      ? games.filter(g => {
-          const h = g.teams?.home?.team?.abbreviation || '';
-          const a = g.teams?.away?.team?.abbreviation || '';
-          return todayTeams.has(h) || todayTeams.has(a);
-        })
-      : games;
+    const events = (data.events || []).filter(ev => {
+      // Each competition has a date field — only show if it matches our model date
+      const compDate = ev.competitions?.[0]?.date || ev.date || '';
+      const evDate   = compDate.slice(0, 10); // "2026-03-28"
+      return evDate === modelDate;
+    });
 
-    if (!filtered.length) {
-      bar.innerHTML = '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">No games today</span>';
+    if (!events.length) {
+      // ESPN returned no events for our date — show all-final placeholder
+      bar.innerHTML = DATA.games.map(g =>
+        `<div class="live-game live-final">
+          <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.away_abbr}</span><span class="lg-score">F</span></div></div>
+          <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.home_abbr}</span><span class="lg-score">F</span></div></div>
+          <div class="lg-status">Final</div>
+        </div>`
+      ).join('') || '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">Games complete</span>';
+      document.getElementById('live-updated').textContent =
+        new Date().toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
       if (liveInterval) clearInterval(liveInterval);
-      liveInterval = setInterval(fetchLiveScores, 300000);
+      liveInterval = setInterval(fetchLiveScores, 600000);
       return;
     }
 
     let hasLive = false;
-    const html = filtered.map(g => {
-      const state   = g.status?.abstractGameState || 'Preview'; // Preview, Live, Final
-      const detail  = g.status?.detailedState || '';
-      const inning  = g.linescore?.currentInning || '';
-      const topBot  = g.linescore?.isTopInning ? '▲' : '▼';
-      const hTeam   = g.teams?.home?.team?.abbreviation || '';
-      const aTeam   = g.teams?.away?.team?.abbreviation || '';
-      const hScore  = g.teams?.home?.score ?? '';
-      const aScore  = g.teams?.away?.score ?? '';
-      const isLive  = state === 'Live';
-      const isFinal = state === 'Final';
-      const hWin    = isFinal && parseInt(hScore) > parseInt(aScore);
-      const aWin    = isFinal && parseInt(aScore) > parseInt(hScore);
-      const hLead   = isLive  && parseInt(hScore) > parseInt(aScore);
-      const aLead   = isLive  && parseInt(aScore) > parseInt(hScore);
+    const html = events.map(ev => {
+      const comp   = ev.competitions?.[0];
+      const status = comp?.status?.type;
+      const state  = status?.state || 'pre';
+      const detail = status?.shortDetail || '';
+      const home   = comp?.competitors?.find(t => t.homeAway === 'home');
+      const away   = comp?.competitors?.find(t => t.homeAway === 'away');
+      if (!home || !away) return '';
 
-      if (isLive) hasLive = true;
+      const hA = home.team?.abbreviation || '';
+      const aA = away.team?.abbreviation || '';
+      const hS = home.score ?? '';
+      const aS = away.score ?? '';
+      const hW = state === 'post' && parseInt(hS) > parseInt(aS);
+      const aW = state === 'post' && parseInt(aS) > parseInt(hS);
+      const hL = state === 'in'   && parseInt(hS) > parseInt(aS);
+      const aL = state === 'in'   && parseInt(aS) > parseInt(hS);
+      if (state === 'in') hasLive = true;
 
-      const cls = isLive ? 'live-active' : isFinal ? 'live-final' : '';
-      const stc = isLive ? 'live' : '';
-      const stx = isFinal ? 'F' : isLive ? `${topBot}${inning}` : g.gameDate
-        ? new Date(g.gameDate).toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit',timeZone:'America/Chicago'})
-        : detail;
+      const cls = state === 'in' ? 'live-active' : state === 'post' ? 'live-final' : '';
+      const stx = state === 'post' ? 'F' : state === 'in' ? (detail||'Live') : detail;
 
       return `<div class="live-game ${cls}">
         <div class="lg-teams"><div class="lg-team">
-          <span class="lg-abbr">${aTeam}</span>
-          <span class="lg-score ${aWin||aLead?'winning':''}">${aScore!==''?aScore:'—'}</span>
+          <span class="lg-abbr">${aA}</span>
+          <span class="lg-score ${aW||aL?'winning':''}">${aS!==''?aS:'—'}</span>
         </div></div>
         <div class="lg-teams"><div class="lg-team">
-          <span class="lg-abbr">${hTeam}</span>
-          <span class="lg-score ${hWin||hLead?'winning':''}">${hScore!==''?hScore:'—'}</span>
+          <span class="lg-abbr">${hA}</span>
+          <span class="lg-score ${hW||hL?'winning':''}">${hS!==''?hS:'—'}</span>
         </div></div>
-        <div class="lg-status ${stc}">${stx}</div>
+        <div class="lg-status ${state==='in'?'live':''}">${stx}</div>
       </div>`;
     }).filter(Boolean).join('');
 
@@ -2390,13 +2393,73 @@ async function fetchLiveScores() {
       new Date().toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
 
     if (liveInterval) clearInterval(liveInterval);
-    liveInterval = setInterval(fetchLiveScores, hasLive ? 60000 : 300000);
+    liveInterval = setInterval(fetchLiveScores, hasLive ? 30000 : 120000);
+    return;
 
-  } catch(e) {
-    bar.innerHTML = '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">Scores unavailable</span>';
-    if (liveInterval) clearInterval(liveInterval);
-    liveInterval = setInterval(fetchLiveScores, 300000);
-  }
+  } catch(e) {}
+
+  // Fallback: live_scores.json written by model
+  try {
+    const res = await fetch('data/processed/live_scores.json?v=' + Date.now(), { cache: 'no-store' });
+    if (res.ok) {
+      const data  = await res.json();
+      const games = (data.games || []).filter(g =>
+        todayTeams.size === 0 || todayTeams.has(g.home_abbr) || todayTeams.has(g.away_abbr)
+      );
+      if (games.length) {
+        renderScoreBar(games);
+        if (liveInterval) clearInterval(liveInterval);
+        liveInterval = setInterval(fetchLiveScores, 120000);
+        return;
+      }
+    }
+  } catch(e) {}
+
+  // Last resort: show scheduled game times from picks
+  bar.innerHTML = DATA.games.map(g =>
+    `<div class="live-game">
+      <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.away_abbr}</span><span class="lg-score">—</span></div></div>
+      <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.home_abbr}</span><span class="lg-score">—</span></div></div>
+      <div class="lg-status dim" style="font-size:9px">${(g.game_time_ct||'').replace(' CT','')}</div>
+    </div>`
+  ).join('') || '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">Loading scores...</span>';
+  document.getElementById('live-updated').textContent =
+    new Date().toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
+  if (liveInterval) clearInterval(liveInterval);
+  liveInterval = setInterval(fetchLiveScores, 120000);
+}
+
+
+function renderScoreBar(games) {
+  const bar = document.getElementById('live-games-row');
+  let hasLive = false;
+  const html = games.map(g => {
+    const hS  = g.home_score ?? '';
+    const aS  = g.away_score ?? '';
+    const hW  = g.is_final && parseInt(hS) > parseInt(aS);
+    const aW  = g.is_final && parseInt(aS) > parseInt(hS);
+    const hL  = g.is_live  && parseInt(hS) > parseInt(aS);
+    const aL  = g.is_live  && parseInt(aS) > parseInt(hS);
+    if (g.is_live) hasLive = true;
+    const cls = g.is_live ? 'live-active' : g.is_final ? 'live-final' : '';
+    const stc = g.is_live ? 'live' : '';
+    const stx = g.is_final ? 'F' : g.is_live ? (g.detail||'Live') : (g.detail||'');
+    return `<div class="live-game ${cls}">
+      <div class="lg-teams"><div class="lg-team">
+        <span class="lg-abbr">${g.away_abbr}</span>
+        <span class="lg-score ${aW||aL?'winning':''}">${aS!==''?aS:'—'}</span>
+      </div></div>
+      <div class="lg-teams"><div class="lg-team">
+        <span class="lg-abbr">${g.home_abbr}</span>
+        <span class="lg-score ${hW||hL?'winning':''}">${hS!==''?hS:'—'}</span>
+      </div></div>
+      <div class="lg-status ${stc}">${stx}</div>
+    </div>`;
+  }).filter(Boolean).join('');
+
+  bar.innerHTML = html || '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">No games</span>';
+  document.getElementById('live-updated').textContent =
+    new Date().toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
 }
 
 
