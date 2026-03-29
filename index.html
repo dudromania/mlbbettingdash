@@ -2315,65 +2315,73 @@ async function fetchLiveScores() {
   const modelDate = DATA.date || todayStr();
   const espnDate  = modelDate.replace(/-/g, '');
 
-  // Build a lookup of today's exact matchups: "AWAY@HOME"
-  // This is the definitive filter — tomorrow's games will be different matchups
+  // Exact matchup pairs from today's picks — bulletproof filter
   const todayMatchups = new Set(
     DATA.games.map(g => g.away_abbr + '@' + g.home_abbr)
   );
 
-  const espnUrl = `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${espnDate}`;
-  const proxies = [
-    `https://corsproxy.io/?url=${encodeURIComponent(espnUrl)}`,
-    `https://api.allorigins.win/raw?url=${encodeURIComponent(espnUrl)}`,
-    espnUrl,
+  // Try multiple ESPN endpoints — cdn.espn.com is more CORS-permissive
+  const endpoints = [
+    `https://cdn.espn.com/core/mlb/scoreboard?xhr=1&dates=${espnDate}`,
+    `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${espnDate}&limit=100`,
+    `https://corsproxy.io/?url=${encodeURIComponent(`https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${espnDate}`)}`,
+    `https://api.allorigins.win/raw?url=${encodeURIComponent(`https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${espnDate}`)}`,
   ];
 
-  for (const url of proxies) {
+  for (const url of endpoints) {
     try {
-      const res = await fetch(url, { cache: 'no-store' });
+      const res = await fetch(url, {
+        cache: 'no-store',
+        headers: { 'Accept': 'application/json' }
+      });
       if (!res.ok) continue;
       const raw  = await res.json();
-      const data = raw.contents ? JSON.parse(raw.contents) : raw;
-      const all  = data.events || [];
-      if (!all.length) continue;
 
-      // Filter to ONLY matchups from DATA.games
-      // This is bulletproof — tomorrow's matchups won't match today's picks
-      const events = todayMatchups.size > 0
-        ? all.filter(ev => {
+      // Handle different response shapes
+      let events = [];
+      if (raw.events) {
+        events = raw.events; // standard API
+      } else if (raw.content?.sbData?.events) {
+        events = raw.content.sbData.events; // cdn.espn.com shape
+      } else if (raw.contents) {
+        const inner = JSON.parse(raw.contents);
+        events = inner.events || inner.content?.sbData?.events || [];
+      }
+
+      if (!events.length) continue;
+
+      // Filter to today's exact matchups
+      const matched = todayMatchups.size > 0
+        ? events.filter(ev => {
             const comp = ev.competitions?.[0];
             const h = comp?.competitors?.find(t => t.homeAway==='home')?.team?.abbreviation || '';
             const a = comp?.competitors?.find(t => t.homeAway==='away')?.team?.abbreviation || '';
             return todayMatchups.has(a + '@' + h);
           })
-        : all;
+        : events;
 
-      if (!events.length) {
-        // Matchups don't match — ESPN has advanced to tomorrow
-        // Show today's games as final since they must be done
+      if (!matched.length) {
+        // ESPN has advanced to tomorrow — today's games are all done
         bar.innerHTML = DATA.games.map(g =>
           `<div class="live-game live-final">
             <div class="lg-teams"><div class="lg-team">
-              <span class="lg-abbr">${g.away_abbr}</span>
-              <span class="lg-score">F</span>
+              <span class="lg-abbr">${g.away_abbr}</span><span class="lg-score">F</span>
             </div></div>
             <div class="lg-teams"><div class="lg-team">
-              <span class="lg-abbr">${g.home_abbr}</span>
-              <span class="lg-score">F</span>
+              <span class="lg-abbr">${g.home_abbr}</span><span class="lg-score">F</span>
             </div></div>
             <div class="lg-status">Final</div>
           </div>`
         ).join('');
         document.getElementById('live-updated').textContent =
-          new Date().toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}) + ' · Final';
+          new Date().toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}) + ' · all final';
         if (liveInterval) clearInterval(liveInterval);
         liveInterval = setInterval(fetchLiveScores, 600000);
         return;
       }
 
-      // Render matched games
       let hasLive = false;
-      const html  = events.map(ev => {
+      const html  = matched.map(ev => {
         const comp   = ev.competitions?.[0];
         const state  = comp?.status?.type?.state || 'pre';
         const detail = comp?.status?.type?.shortDetail || '';
@@ -2407,12 +2415,12 @@ async function fetchLiveScores() {
         new Date().toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
       if (liveInterval) clearInterval(liveInterval);
       liveInterval = setInterval(fetchLiveScores, hasLive ? 30000 : 120000);
-      return;
+      return; // success
 
     } catch(e) { continue; }
   }
 
-  // All failed — show scheduled times from picks
+  // All endpoints failed — show scheduled times
   bar.innerHTML = DATA.games.map(g =>
     `<div class="live-game">
       <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.away_abbr}</span><span class="lg-score">—</span></div></div>
