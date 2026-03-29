@@ -499,7 +499,7 @@ tbody td {
 
 .pitcher-header-row {
   display: grid;
-  grid-template-columns: 1fr repeat(7, 56px) 70px;
+  grid-template-columns: 1fr 52px 52px 52px 52px 52px 52px 70px 80px;
   gap: 0;
   padding: 7px 10px;
   background: var(--s2);
@@ -509,6 +509,25 @@ tbody td {
   user-select: none;
 }
 .pitcher-header-row:hover { background: #181818; }
+
+/* Add a column header row above the pitcher list */
+.pitcher-col-headers {
+  display: grid;
+  grid-template-columns: 1fr 52px 52px 52px 52px 52px 52px 70px 80px;
+  padding: 5px 10px;
+  background: var(--bg);
+  border-bottom: 1px solid var(--b1);
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--t3);
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  position: sticky;
+  top: 40px;
+  z-index: 10;
+}
+.pitcher-col-headers span { text-align: center; }
+.pitcher-col-headers span:first-child { text-align: left; }
 
 .pitcher-detail {
   display: none;
@@ -545,10 +564,16 @@ tbody td {
 .arsenal-primary { color: var(--t1) !important; font-weight: 500; }
 
 @media(max-width:700px){
-  .pitcher-header-row { grid-template-columns: 1fr repeat(3,56px) 70px; }
+  .pitcher-header-row { grid-template-columns: 1fr 52px 52px 70px; }
+  .pitcher-col-headers { grid-template-columns: 1fr 52px 52px 70px; }
   .pitcher-header-row .hide-sm { display: none; }
+  .pitcher-col-headers .hide-sm { display: none; }
   .pitcher-detail { grid-template-columns: 1fr; }
   .pitcher-col:first-child { border-right: none; border-bottom: 1px solid var(--b1); }
+}
+@media(max-width:500px){
+  .pitcher-header-row { grid-template-columns: 1fr 52px 70px; }
+  .pitcher-col-headers { grid-template-columns: 1fr 52px 70px; }
 }
 
 /* ── LIVE SCORES ── */
@@ -952,6 +977,17 @@ tbody td {
       <span class="pitcher-date-count" id="pitcher-date-count"></span>
     </div>
     <div class="sec">Starting Pitchers — click row to expand</div>
+    <div class="pitcher-col-headers">
+      <span>Pitcher</span>
+      <span class="hide-sm">ERA</span>
+      <span class="hide-sm">FIP</span>
+      <span class="hide-sm">K/9</span>
+      <span class="hide-sm">BB/9</span>
+      <span class="hide-sm">WHIP</span>
+      <span class="hide-sm">IP</span>
+      <span>K Proj</span>
+      <span>Time</span>
+    </div>
     <div id="pitcher-list" class="pitcher-list"></div>
   </div>
 
@@ -2262,109 +2298,93 @@ function calcStreak(hist) {
 let liveInterval = null;
 
 async function fetchLiveScores() {
-  // Build a set of today's matchups from DATA.games so we can filter
-  // ESPN results — ESPN sometimes returns tomorrow's slate early regardless
-  // of the date param, so we whitelist only our known today games.
-  const todayMatchups = new Set(
-    DATA.games.map(g => g.home_abbr + '|' + g.away_abbr)
-  );
+  const bar = document.getElementById('live-games-row');
 
-  // Try today's date first, fall back to yesterday if nothing matches
+  // Use model date — stays stable all day
   const modelDate = (DATA.date || todayStr()).replace(/-/g, '');
 
-  try {
-    const r = await fetch(
-      `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${modelDate}`
-    );
-    const data = await r.json();
-    const allEvents = data.events || [];
+  // Build today's team set for filtering (loose match on first 2-3 chars)
+  const todayTeams = new Set();
+  DATA.games.forEach(g => {
+    todayTeams.add(g.home_abbr);
+    todayTeams.add(g.away_abbr);
+  });
 
-    // Filter to only games we have picks on today
-    const events = allEvents.filter(ev => {
+  try {
+    const res  = await fetch(
+      `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${modelDate}&limit=20`,
+      { cache: 'no-store' }
+    );
+    if (!res.ok) throw new Error('HTTP ' + res.status);
+    const data   = await res.json();
+    const events = (data.events || []).filter(ev => {
+      // If we have today's games loaded, filter to just those teams
+      if (todayTeams.size === 0) return true;
       const comp = ev.competitions?.[0];
-      const home = comp?.competitors?.find(t => t.homeAway === 'home');
-      const away = comp?.competitors?.find(t => t.homeAway === 'away');
-      if (!home || !away) return false;
-      const hAbbr = home.team.abbreviation;
-      const aAbbr = away.team.abbreviation;
-      // Match either direction — some abbr mismatches (e.g. WSH vs WAS)
-      return todayMatchups.has(hAbbr+'|'+aAbbr) ||
-             todayMatchups.has(aAbbr+'|'+hAbbr) ||
-             [...todayMatchups].some(m => {
-               const [mh, ma] = m.split('|');
-               return (mh.startsWith(hAbbr.slice(0,2)) && ma.startsWith(aAbbr.slice(0,2))) ||
-                      (mh.startsWith(aAbbr.slice(0,2)) && ma.startsWith(hAbbr.slice(0,2)));
-             });
+      const home = comp?.competitors?.find(t => t.homeAway === 'home')?.team?.abbreviation || '';
+      const away = comp?.competitors?.find(t => t.homeAway === 'away')?.team?.abbreviation || '';
+      return todayTeams.has(home) || todayTeams.has(away);
     });
 
-    // If we got zero matches and have no games yet, show all (early morning)
-    const displayEvents = events.length > 0 ? events :
-                          todayMatchups.size === 0 ? allEvents : [];
-
-    if (!displayEvents.length) {
-      document.getElementById('live-games-row').innerHTML =
-        '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">No games today</span>';
+    if (!events.length) {
+      bar.innerHTML = '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">No games found</span>';
       if (liveInterval) clearInterval(liveInterval);
       liveInterval = setInterval(fetchLiveScores, 300000);
       return;
     }
 
     let hasLive = false;
-    const html = displayEvents.map(ev => {
-      const comp      = ev.competitions?.[0];
-      const status    = comp?.status?.type;
-      const state     = status?.state || 'pre';
-      const detail    = status?.shortDetail || '';
-      const home      = comp?.competitors?.find(t => t.homeAway === 'home');
-      const away      = comp?.competitors?.find(t => t.homeAway === 'away');
+    const html  = events.map(ev => {
+      const comp   = ev.competitions?.[0];
+      const status = comp?.status?.type;
+      const state  = status?.state  || 'pre';
+      const detail = status?.shortDetail || '';
+      const home   = comp?.competitors?.find(t => t.homeAway === 'home');
+      const away   = comp?.competitors?.find(t => t.homeAway === 'away');
       if (!home || !away) return '';
 
-      const hAbbr  = home.team.abbreviation;
-      const aAbbr  = away.team.abbreviation;
-      const hScore = home.score ?? '';
-      const aScore = away.score ?? '';
-      const hWin   = state === 'post' && parseInt(hScore) > parseInt(aScore);
-      const aWin   = state === 'post' && parseInt(aScore) > parseInt(hScore);
-      const hLive  = state === 'in'   && parseInt(hScore) > parseInt(aScore);
-      const aLive  = state === 'in'   && parseInt(aScore) > parseInt(hScore);
+      const hA = home.team?.abbreviation || '';
+      const aA = away.team?.abbreviation || '';
+      const hS = home.score ?? '';
+      const aS = away.score ?? '';
+      const hW = state === 'post' && parseInt(hS) > parseInt(aS);
+      const aW = state === 'post' && parseInt(aS) > parseInt(hS);
+      const hL = state === 'in'   && parseInt(hS) > parseInt(aS);
+      const aL = state === 'in'   && parseInt(aS) > parseInt(hS);
 
       if (state === 'in') hasLive = true;
 
-      const cls       = state === 'in' ? 'live-active' : state === 'post' ? 'live-final' : '';
-      const statusCls = state === 'in' ? 'live' : '';
-      const statusTxt = state === 'post' ? 'F' : detail;
+      const cls = state === 'in' ? 'live-active' : state === 'post' ? 'live-final' : '';
+      const stc = state === 'in' ? 'live' : '';
+      const stx = state === 'post' ? 'F' : detail;
 
       return `<div class="live-game ${cls}">
-        <div class="lg-teams">
-          <div class="lg-team">
-            <span class="lg-abbr">${aAbbr}</span>
-            <span class="lg-score ${aWin||aLive?'winning':''}">${aScore !== '' ? aScore : '—'}</span>
-          </div>
-        </div>
-        <div class="lg-teams">
-          <div class="lg-team">
-            <span class="lg-abbr">${hAbbr}</span>
-            <span class="lg-score ${hWin||hLive?'winning':''}">${hScore !== '' ? hScore : '—'}</span>
-          </div>
-        </div>
-        <div class="lg-status ${statusCls}">${statusTxt}</div>
+        <div class="lg-teams"><div class="lg-team">
+          <span class="lg-abbr">${aA}</span>
+          <span class="lg-score ${aW||aL?'winning':''}">${aS!==''?aS:'—'}</span>
+        </div></div>
+        <div class="lg-teams"><div class="lg-team">
+          <span class="lg-abbr">${hA}</span>
+          <span class="lg-score ${hW||hL?'winning':''}">${hS!==''?hS:'—'}</span>
+        </div></div>
+        <div class="lg-status ${stc}">${stx}</div>
       </div>`;
-    }).join('');
+    }).filter(Boolean).join('');
 
-    document.getElementById('live-games-row').innerHTML = html ||
-      '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">No games</span>';
-
-    const now = new Date().toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
-    document.getElementById('live-updated').textContent = now;
+    bar.innerHTML = html || '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">No games</span>';
+    document.getElementById('live-updated').textContent =
+      new Date().toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
 
     if (liveInterval) clearInterval(liveInterval);
     liveInterval = setInterval(fetchLiveScores, hasLive ? 60000 : 300000);
 
   } catch(e) {
-    document.getElementById('live-games-row').innerHTML =
-      '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">Scores unavailable</span>';
+    bar.innerHTML = '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">Scores unavailable — ' + e.message + '</span>';
+    if (liveInterval) clearInterval(liveInterval);
+    liveInterval = setInterval(fetchLiveScores, 300000);
   }
 }
+
 
 init();
 fetchLiveScores();
