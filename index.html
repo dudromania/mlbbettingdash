@@ -752,6 +752,45 @@ tbody td {
 .sg-date  { font-size: 9px; color: var(--t3); margin-top: 2px; }
 
 /* ── NRFI MATRIX ── */
+.f5-card {
+  background: var(--s1); border: 1px solid var(--b1);
+  border-left: 3px solid transparent; margin-bottom: 12px; overflow: hidden;
+}
+.f5-card.strong { border-left-color: #5aaa77; background: #080f0a; }
+.f5-card.lean   { border-left-color: #bbaa44; }
+.f5-card.none   { border-left-color: var(--b2); opacity: .75; }
+.f5-head {
+  display: grid;
+  grid-template-columns: 90px 150px 1fr 100px 90px 80px 80px;
+  gap: 0; padding: 8px 12px; align-items: center;
+  border-bottom: 1px solid var(--b1); font-family: var(--mono); font-size: 10px;
+}
+.f5-sp-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1px; background: var(--b1); border-top: 1px solid var(--b1);
+}
+.f5-sp-col  { background: var(--s1); padding: 8px 12px; }
+.f5-sp-label { font-family:var(--mono);font-size:9px;color:var(--t3);letter-spacing:1px;margin-bottom:4px; }
+.f5-sp-name  { font-size:12px;font-weight:500;margin-bottom:6px; }
+.f5-sp-row   { display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--t2);padding:1px 0; }
+.f5-sp-row span:first-child { color:var(--t3); }
+.f5-data-strip {
+  display: grid; grid-template-columns: repeat(5,1fr);
+  gap: 1px; background: var(--b1); border-top: 1px solid var(--b1);
+}
+.f5-data-cell { background: var(--s2); padding: 8px 12px; font-family: var(--mono); }
+.f5-data-cell .v { font-size:15px;font-weight:400;line-height:1; }
+.f5-data-cell .l { font-size:9px;color:var(--t3);margin-top:3px;letter-spacing:.5px; }
+@media(max-width:900px){
+  .f5-head { grid-template-columns: 80px 1fr 80px 80px; }
+  .f5-head .hide-sm { display:none; }
+  .f5-data-strip { grid-template-columns: repeat(3,1fr); }
+}
+@media(max-width:560px){
+  .f5-head { grid-template-columns: 1fr 70px 70px; }
+  .f5-sp-grid { grid-template-columns: 1fr; }
+  .f5-data-strip { grid-template-columns: repeat(2,1fr); }
+}
 .nrfi-card {
   background: var(--s1);
   border: 1px solid var(--b1);
@@ -942,6 +981,7 @@ tbody td {
     <div class="nav-direct active" data-tab="model">Model Output</div>
     <div class="nav-direct" data-tab="games">Today's Games</div>
     <div class="nav-direct" data-tab="nrfi">NRFI Matrix</div>
+    <div class="nav-direct" data-tab="f5">F5 Innings</div>
   </div>
   <div class="drawer-section">
     <div class="drawer-label">Analysis</div>
@@ -1120,7 +1160,7 @@ tbody td {
 
 <script>
 const DATA = { games:[], series:[], pitchers:[], history:[], nrfi:[], scores:[], date:'' };
-const LABELS = { model:'MODEL OUTPUT', games:"TODAY'S GAMES", pitchers:'PITCHER STATS', batters:'BATTER PROPS', standings:'STANDINGS', trends:'TRENDS', nrfi:'NRFI MATRIX', results:'MODEL PERFORMANCE' };
+const LABELS = { model:'MODEL OUTPUT', games:"TODAY'S GAMES", pitchers:'PITCHER STATS', batters:'BATTER PROPS', standings:'STANDINGS', trends:'TRENDS', nrfi:'NRFI MATRIX', f5:'F5 INNINGS', results:'MODEL PERFORMANCE' };
 
 async function loadJSON(path, fallback) {
   try {
@@ -1170,6 +1210,7 @@ function showTab(tab) {
   if (tab==='standings') renderStandings();
   if (tab==='results') renderResults();
   if (tab==='nrfi') renderNRFI();
+  if (tab==='f5')   renderF5();
   window.scrollTo(0,0);
 }
 
@@ -2063,15 +2104,28 @@ async function renderStandings() {
         const lid = div.league?.id || div.division?.parentOrganization?.id || 0;
         // leagueId 103 = AL, 104 = NL. Fall back to name matching
         const lg  = (lid === 103 || dn.includes('American') || dn.startsWith('AL')) ? 'AL' : 'NL';
-        const dv  = dn.replace('American League ','').replace('National League ','')
-                      .replace('AL ','').replace('NL ','');
+        // MLB API returns "American League East", "National League West" etc
+        // Strip league prefix to get just "East", "Central", "West"
+        let dv = dn
+          .replace(/^American League /i, '')
+          .replace(/^National League /i, '')
+          .replace(/^AL /i, '')
+          .replace(/^NL /i, '')
+          .trim();
+        // Normalize to title case East/Central/West
+        if (!dv || dv === dn) {
+          // Fallback: extract last word
+          const parts = dn.split(' ');
+          dv = parts[parts.length - 1] || 'Unknown';
+        }
+        const divKey = lg + ' ' + dv; // e.g. "AL East"
         div.teamRecords?.forEach(tr => {
           const rs = parseInt(tr.runsScored||0), ra = parseInt(tr.runsAllowed||0);
           const w = tr.wins, l = tr.losses, g = w + l;
           const L10 = tr.records?.splitRecords?.find(x => x.type === 'lastTen');
           stdCache.push({
             team: tr.team.abbreviation, lg, dv,
-            divKey: lg + ' ' + dv,   // e.g. "AL East"
+            divKey,   // e.g. "AL East"
             W:w, L:l, G:g,
             pct: (w / (g||1)).toFixed(3),
             GB:  tr.divisionGamesBack || '—',
@@ -2093,7 +2147,9 @@ async function renderStandings() {
   } else if (stdLeague === 'AL' || stdLeague === 'NL') {
     filtered = stdCache.filter(t => t.lg === stdLeague);
   } else {
-    filtered = stdCache.filter(t => t.divKey === stdLeague);
+    // Case-insensitive division match — handles any casing from API
+    const target = stdLeague.toLowerCase();
+    filtered = stdCache.filter(t => t.divKey.toLowerCase() === target);
   }
 
   // Group by division
@@ -2739,6 +2795,103 @@ function renderScoreBar(games) {
     new Date().toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
 }
 
+
+function renderF5() {
+  const games = DATA.games.filter(g => g.f5_margin != null);
+  const el = document.getElementById('f5-stats');
+  if (!el) return;
+  if (!games.length) {
+    el.innerHTML = sc('—','GAMES')+sc('—','RL EDGES')+sc('—','O/U EDGES')+sc('—','AVG F5 TOTAL')+sc('—','BEST EDGE');
+    document.getElementById('f5-best-bets').innerHTML = '<div class="empty">No F5 data — run model with updated main.py</div>';
+    document.getElementById('f5-tbody').innerHTML = '<tr><td colspan="10" class="empty">No F5 predictions yet</td></tr>';
+    return;
+  }
+  const rlE = games.filter(g=>['STRONG','LEAN'].includes(g.f5_spread_label)).length;
+  const ouE = games.filter(g=>['STRONG','LEAN'].includes(g.f5_total_label)).length;
+  const avg = (games.reduce((s,g)=>s+(g.f5_total||0),0)/games.length).toFixed(1);
+  const best= Math.max(...games.map(g=>Math.max(Math.abs((g.f5_spread_edge||0)*100),Math.abs((g.f5_total_edge||0)*10)))).toFixed(1);
+  el.innerHTML = sc(games.length,'GAMES')+sc(rlE,'RL EDGES','pos')+sc(ouE,'O/U EDGES','pos')+sc(avg,'AVG F5 TOTAL')+sc('+'+best+'%','BEST EDGE','warn');
+  const bets = [...games].filter(g=>['STRONG','LEAN'].includes(g.f5_spread_label)||['STRONG','LEAN'].includes(g.f5_total_label))
+    .sort((a,b)=>Math.max(Math.abs(b.f5_spread_edge||0),Math.abs(b.f5_total_edge||0))-Math.max(Math.abs(a.f5_spread_edge||0),Math.abs(a.f5_total_edge||0))).slice(0,6);
+  document.getElementById('f5-best-bets').innerHTML = bets.length ? bets.map(f5BetCard).join('') : '<div class="empty">No F5 edges today</div>';
+  document.getElementById('f5-tbody').innerHTML = [...games].sort((a,b)=>(a.game_time_ct||'').localeCompare(b.game_time_ct||'')).map(g=>{
+    const rlL=g.f5_spread_label||'—',ouL=g.f5_total_label||'—';
+    const rlC=rlL==='STRONG'?'pos':rlL==='LEAN'?'warn':'dim';
+    const ouC=ouL==='STRONG'?'pos':ouL==='LEAN'?'warn':'dim';
+    const rlEd=g.f5_spread_edge!=null?(g.f5_spread_edge*100).toFixed(1)+'%':'—';
+    const ouEd=g.f5_total_edge!=null?g.f5_total_edge.toFixed(2):'—';
+    const bet=g.f5_spread_bet==='home_cover'?`${g.home_abbr} F5 RL`:g.f5_spread_bet==='away_cover'?`${g.away_abbr} F5 +0.5`:'—';
+    const ouBt=g.f5_total_bet?`${(g.f5_total_bet).toUpperCase()} ${g.f5_vegas_total||''}`:'—';
+    const wp=g.f5_win_prob!=null?(g.f5_win_prob*100).toFixed(0)+'%':'—';
+    const mg=g.f5_margin!=null?(g.f5_margin>=0?'+':'')+g.f5_margin.toFixed(1):'—';
+    const tot=g.f5_total!=null?g.f5_total.toFixed(1):'—';
+    const t=(g.game_time_ct||'').replace(' CT','');
+    const hSP=(g.home_sp||'TBD').split(' ').pop(),aSP=(g.away_sp||'TBD').split(' ').pop();
+    return `<tr><td class="mono dim" style="font-size:10px">${t}</td><td>${g.away_abbr} @ ${g.home_abbr}</td><td class="mono dim" style="font-size:10px">${aSP}/${hSP}</td><td class="tc mono">${mg}</td><td class="tc mono">${tot}</td><td class="tc mono dim">${wp}</td><td class="mono dim" style="font-size:10px">${bet}</td><td class="mono dim" style="font-size:10px">${ouBt}</td><td class="tc mono ${rlC}">${rlEd}</td><td class="tc mono ${ouC}">${ouEd}</td></tr>`;
+  }).join('');
+}
+
+function f5BetCard(g) {
+  const isRL=['STRONG','LEAN'].includes(g.f5_spread_label)&&Math.abs(g.f5_spread_edge||0)>=Math.abs(g.f5_total_edge||0);
+  const label=isRL?g.f5_spread_label:g.f5_total_label;
+  const bet=isRL?(g.f5_spread_bet==='home_cover'?`${g.home_abbr} F5 RL`:`${g.away_abbr} F5 +0.5`):g.f5_total_bet?`${(g.f5_total_bet).toUpperCase()} ${g.f5_vegas_total||''}`:'—';
+  const edge=Math.abs(isRL?(g.f5_spread_edge||0)*100:(g.f5_total_edge||0)*10).toFixed(1);
+  const cls=label==='STRONG'?'strong':label==='LEAN'?'lean':'none';
+  const ecol=label==='STRONG'?'strong-col':'lean-col';
+  const time=(g.game_time_ct||'').replace(' CT','');
+  const hCard=findCard(g.home_sp,g.home_abbr,g.away_abbr);
+  const aCard=findCard(g.away_sp,g.away_abbr,g.home_abbr);
+  function f5SP(card,sp,side){
+    const name=card?card.name.split(' ').pop():(sp||'TBD').split(' ').pop();
+    const disp=name.length>12?name.slice(0,11)+'…':name;
+    const lbl=side==='away'?'AWAY SP (BATS 1ST)':'HOME SP (BATS 2ND)';
+    if(!card) return `<div class="f5-sp-col"><div class="f5-sp-label">${lbl}</div><div class="f5-sp-name">${disp}</div><div class="f5-sp-row"><span>era</span><span>—</span></div><div class="f5-sp-row"><span>k/9</span><span>—</span></div><div class="f5-sp-row"><span>whip</span><span>—</span></div><div class="f5-sp-row"><span>1st inn era</span><span>—</span></div><div class="f5-sp-row"><span>k proj</span><span>—</span></div></div>`;
+    const ss=card.season_stats||{};
+    const kp=card.k_prediction?.predicted_ks;
+    const sts=(card.last_starts||[]).slice(0,3);
+    const l3ip=sts.reduce((s,x)=>s+(x.IP||0),0);
+    const l3er=sts.reduce((s,x)=>s+(x.ER||0),0);
+    const l3e=l3ip>0?(l3er/l3ip*9).toFixed(2):null;
+    const ec=(ss.ERA||99)<3.5?'pos':(ss.ERA||99)>4.5?'neg':'';
+    const l3c=l3e&&ss.ERA?(parseFloat(l3e)<ss.ERA?'pos':parseFloat(l3e)>ss.ERA+0.5?'neg':''):'';
+    const tr=card.trend||'neutral';
+    const ti=tr==='improving'?'↑ hot':tr==='declining'?'↓ cold':'→ flat';
+    const tc=tr==='improving'?'pos':tr==='declining'?'neg':'dim';
+    const rest=card.days_rest!=null?card.days_rest+'d rest':'—';
+    const fi=card.first_inning||{};
+    const fiE=fi.era!=null?fi.era.toFixed(2):'—';
+    return `<div class="f5-sp-col"><div class="f5-sp-label">${lbl}</div><div class="f5-sp-name">${disp}</div><div class="f5-sp-row"><span>era</span><span class="val ${ec}">${ss.ERA??'—'}</span></div><div class="f5-sp-row"><span>k/9</span><span class="val">${ss.K9??'—'}</span></div><div class="f5-sp-row"><span>whip</span><span class="val">${ss.WHIP??'—'}</span></div><div class="f5-sp-row"><span>l3 era</span><span class="val ${l3c}">${l3e||'—'}</span></div><div class="f5-sp-row"><span>trend</span><span class="val ${tc}">${ti}</span></div><div class="f5-sp-row"><span>rest</span><span class="val dim">${rest}</span></div><div class="f5-sp-row"><span>1st inn era</span><span class="val">${fiE}</span></div><div class="f5-sp-row"><span>k proj</span><span class="val">${kp??'—'}</span></div></div>`;
+  }
+  const mg=g.f5_margin!=null?(g.f5_margin>=0?'+':'')+g.f5_margin.toFixed(1):'—';
+  const tot=g.f5_total!=null?g.f5_total.toFixed(1):'—';
+  const wp=g.f5_win_prob!=null?(g.f5_win_prob*100).toFixed(0)+'%':'—';
+  const vRL=g.f5_spread!=null?(g.f5_spread>0?'+':'')+g.f5_spread:'NO LINE';
+  const vOU=g.f5_vegas_total!=null?g.f5_vegas_total:'NO LINE';
+  const rlEd=g.f5_spread_edge!=null?(g.f5_spread_edge>=0?'+':'')+(g.f5_spread_edge*100).toFixed(1)+'%':'—';
+  const ouEd=g.f5_total_edge!=null?(g.f5_total_edge>=0?'+':'')+g.f5_total_edge.toFixed(2):'—';
+  const wpC=parseFloat(wp)>=55?'pos':parseFloat(wp)<=45?'neg':'';
+  const rlC=g.f5_spread_edge!=null?(g.f5_spread_edge>0?'pos':g.f5_spread_edge<0?'neg':''):'dim';
+  const ouC=g.f5_total_edge!=null?(g.f5_total_edge>0.3?'pos':g.f5_total_edge<-0.3?'neg':''):'dim';
+  return `<div class="f5-card ${cls}">
+    <div class="f5-head">
+      <span class="mono dim" style="font-size:10px">${time}</span>
+      <span style="font-size:12px;font-weight:500">${g.away_abbr} @ ${g.home_abbr}</span>
+      <span class="tag tag-${cls==='strong'?'lean':'none'} hide-sm" style="${cls==='strong'?'':'color:var(--t3);border-color:var(--b2)'}">${isRL?'F5 RL':'F5 O/U'} ${label}</span>
+      <div class="tc hide-sm"><div class="mono" style="font-size:11px">${bet}</div><div style="font-size:9px;color:var(--t3)">bet</div></div>
+      <div class="tc hide-sm"><div class="mono ${ecol}" style="font-size:13px">+${edge}%</div><div style="font-size:9px;color:var(--t3)">edge</div></div>
+      <div class="tc hide-sm"><div class="mono dim" style="font-size:11px">${vRL}</div><div style="font-size:9px;color:var(--t3)">F5 RL</div></div>
+      <div class="tc hide-sm"><div class="mono dim" style="font-size:11px">${vOU}</div><div style="font-size:9px;color:var(--t3)">F5 O/U</div></div>
+    </div>
+    <div class="f5-sp-grid">${f5SP(aCard,g.away_sp,'away')}${f5SP(hCard,g.home_sp,'home')}</div>
+    <div class="f5-data-strip">
+      <div class="f5-data-cell tc"><div class="v ${wpC}">${wp}</div><div class="l">F5 WIN%</div></div>
+      <div class="f5-data-cell tc"><div class="v">${mg}</div><div class="l">F5 MARGIN</div></div>
+      <div class="f5-data-cell tc"><div class="v">${tot}</div><div class="l">F5 TOTAL</div></div>
+      <div class="f5-data-cell tc"><div class="v ${rlC}">${rlEd}</div><div class="l">RL EDGE</div></div>
+      <div class="f5-data-cell tc"><div class="v ${ouC}">${ouEd}</div><div class="l">O/U EDGE</div></div>
+    </div>
+  </div>`;
+}
 
 init();
 fetchLiveScores();
