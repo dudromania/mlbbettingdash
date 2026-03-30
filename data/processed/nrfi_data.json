@@ -24,29 +24,6 @@
   },
   {
     "date": "2026-03-30",
-    "game_time": "3:10 PM CT",
-    "home_abbr": "KC",
-    "away_abbr": "MIN",
-    "home_sp": "Kris Bubic",
-    "away_sp": "Simeon Woods Richardson",
-    "nrfi_prob": 40.8,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Kris Bubic",
-      "first_inning": {},
-      "season_era": 2.55
-    },
-    "away_pitcher": {
-      "name": "Simeon Woods Richardson",
-      "first_inning": {},
-      "season_era": 4.04
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-03-30",
     "game_time": "9:10 PM CT",
     "home_abbr": "LAD",
     "away_abbr": "CLE",
