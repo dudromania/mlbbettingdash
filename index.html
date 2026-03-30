@@ -475,6 +475,14 @@ tbody td {
 }
 .game-expand-toggle:hover { background: var(--s2); }
 .ge-arrow { font-size: 9px; color: var(--t3); transition: transform .15s; }
+.series-badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--t3);
+  margin-left: 8px;
+  vertical-align: middle;
+}
 .ge-arrow.open { transform: rotate(90deg); }
 
 @media(max-width:700px){
@@ -752,6 +760,83 @@ tbody td {
 .sg-date  { font-size: 9px; color: var(--t3); margin-top: 2px; }
 
 /* ── NRFI MATRIX ── */
+.f5-card {
+  background: var(--s1); border: 1px solid var(--b1);
+  border-left: 3px solid transparent; margin-bottom: 12px; overflow: hidden;
+}
+.f5-card.strong { border-left-color: #5aaa77; background: #080f0a; }
+.f5-card.lean   { border-left-color: #bbaa44; }
+.f5-card.none   { border-left-color: var(--b2); opacity: .75; }
+.f5-head {
+  display: grid;
+  grid-template-columns: 90px 150px 1fr 100px 90px 80px 80px;
+  gap: 0; padding: 8px 12px; align-items: center;
+  border-bottom: 1px solid var(--b1); font-family: var(--mono); font-size: 10px;
+}
+.f5-sp-grid {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 1px; background: var(--b1); border-top: 1px solid var(--b1);
+}
+.f5-sp-col  { background: var(--s1); padding: 8px 12px; }
+.f5-sp-label { font-family:var(--mono);font-size:9px;color:var(--t3);letter-spacing:1px;margin-bottom:4px; }
+.f5-sp-name  { font-size:12px;font-weight:500;margin-bottom:6px; }
+.f5-sp-row   { display:flex;justify-content:space-between;font-family:var(--mono);font-size:10px;color:var(--t2);padding:1px 0; }
+.f5-sp-row span:first-child { color:var(--t3); }
+.f5-data-strip {
+  display: grid; grid-template-columns: repeat(5,1fr);
+  gap: 1px; background: var(--b1); border-top: 1px solid var(--b1);
+}
+.f5-data-cell { background: var(--s2); padding: 8px 12px; font-family: var(--mono); }
+.f5-data-cell .v { font-size:15px;font-weight:400;line-height:1; }
+.f5-data-cell .l { font-size:9px;color:var(--t3);margin-top:3px;letter-spacing:.5px; }
+@media(max-width:900px){
+  .f5-head { grid-template-columns: 80px 1fr 80px 80px; }
+  .f5-head .hide-sm { display:none; }
+  .f5-data-strip { grid-template-columns: repeat(3,1fr); }
+}
+@media(max-width:560px){
+  .f5-head { grid-template-columns: 1fr 70px 70px; }
+  .f5-sp-grid { grid-template-columns: 1fr; }
+  .f5-data-strip { grid-template-columns: repeat(2,1fr); }
+}
+.kprop-card {
+  background: var(--s1);
+  border: 1px solid var(--b1);
+  border-left: 3px solid transparent;
+  padding: 10px 12px;
+  font-size: 11px;
+}
+.kprop-card.strong { border-left-color: #5aaa77; background: #080f0a; }
+.kprop-card.lean   { border-left-color: #bbaa44; }
+.kprop-card .kp-head { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px; }
+.kprop-card .kp-name { font-size:13px; font-weight:500; }
+.kprop-card .kp-meta { font-family:var(--mono); font-size:9px; color:var(--t3); }
+.kprop-card .kp-proj { font-family:var(--mono); font-size:28px; font-weight:300; line-height:1; }
+.kprop-card .kp-proj-sub { font-family:var(--mono); font-size:9px; color:var(--t3); margin-top:2px; }
+.kprop-bar-wrap { height:5px; background:var(--b1); margin:8px 0 3px; display:flex; }
+.kprop-bar-under { background:#68a; }
+.kprop-bar-over  { background:#5aaa77; }
+.kprop-data { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--b1); margin-top:8px; }
+.kprop-cell { background:var(--s2); padding:5px 8px; text-align:center; font-family:var(--mono); }
+.kprop-cell .v { font-size:13px; line-height:1; }
+.kprop-cell .l { font-size:8px; color:var(--t3); margin-top:2px; text-transform:uppercase; letter-spacing:.3px; }
+
+.bp-matchup-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1px; background:var(--b1); margin-bottom:14px; }
+.bp-matchup-card { background:var(--s1); padding:10px 12px; }
+.bp-matchup-head { font-size:12px; font-weight:500; margin-bottom:8px; }
+.bp-team-row { display:flex; justify-content:space-between; align-items:center; padding:4px 0; border-bottom:1px solid #0a0a0a; font-family:var(--mono); font-size:10px; }
+.bp-team-row:last-child { border-bottom:none; }
+.bp-abbr { color:var(--t2); width:36px; }
+.bp-badge { font-size:9px; padding:1px 5px; border:1px solid; }
+.bp-badge.elite  { color:#5aaa77; border-color:#5aaa7744; }
+.bp-badge.good   { color:#68a;    border-color:#66888844; }
+.bp-badge.avg    { color:var(--t3); border-color:var(--b2); }
+.bp-badge.poor   { color:#a44;    border-color:#aa444444; }
+.bp-badge.heavy  { color:#cc8800; border-color:#cc880044; }
+.bp-badge.tired  { color:#996;    border-color:#99664444; }
+.bp-badge.fresh  { color:#5aaa77; border-color:#5aaa7744; }
+.bp-badge.normal { color:var(--t3); border-color:var(--b2); }
+
 .nrfi-card {
   background: var(--s1);
   border: 1px solid var(--b1);
@@ -938,28 +1023,35 @@ tbody td {
 <div class="drawer-overlay" id="overlay"></div>
 <nav class="drawer" id="drawer">
   <div class="drawer-section">
-    <div class="drawer-label">Output</div>
-    <div class="nav-direct active" data-tab="model">Model Output</div>
-    <div class="nav-direct" data-tab="games">Today's Games</div>
-    <div class="nav-direct" data-tab="nrfi">NRFI Matrix</div>
-  </div>
-  <div class="drawer-section">
-    <div class="drawer-label">Analysis</div>
-    <div class="nav-group-header" data-group="analysis">
-      Pitching &amp; Batting <span class="arr">›</span>
+    <div class="drawer-label">Model Output</div>
+    <div class="nav-group-header" data-group="model-output">
+      Predictions <span class="arr">›</span>
     </div>
-    <div class="nav-sub" id="group-analysis">
-      <div class="nav-item" data-tab="pitchers">Pitcher Stats</div>
-      <div class="nav-item" data-tab="batters">Batter Props</div>
+    <div class="nav-sub" id="group-model-output">
+      <div class="nav-item" data-tab="model">Full Game</div>
+      <div class="nav-item" data-tab="f5">First 5 Innings</div>
+      <div class="nav-item" data-tab="kprops">Pitcher K Props</div>
+      <div class="nav-item" data-tab="nrfi">NRFI Matrix</div>
     </div>
   </div>
   <div class="drawer-section">
-    <div class="drawer-label">League</div>
-    <div class="nav-group-header" data-group="league">
-      Standings &amp; Trends <span class="arr">›</span>
+    <div class="drawer-label">Today</div>
+    <div class="nav-group-header" data-group="today">
+      Schedule &amp; League <span class="arr">›</span>
     </div>
-    <div class="nav-sub" id="group-league">
+    <div class="nav-sub" id="group-today">
+      <div class="nav-item" data-tab="games">Today's Games</div>
       <div class="nav-item" data-tab="standings">Standings</div>
+    </div>
+  </div>
+  <div class="drawer-section">
+    <div class="drawer-label">Stats</div>
+    <div class="nav-group-header" data-group="stats">
+      Player &amp; Team Stats <span class="arr">›</span>
+    </div>
+    <div class="nav-sub" id="group-stats">
+      <div class="nav-item" data-tab="pitchers">Pitcher Stats</div>
+      <div class="nav-item" data-tab="bullpen">Bullpen Report</div>
       <div class="nav-item" data-tab="trends">Trends</div>
     </div>
   </div>
@@ -1002,8 +1094,8 @@ tbody td {
         <thead><tr>
           <th>TIME</th><th>MATCHUP</th><th>PITCHERS</th>
           <th class="tc">MARGIN</th><th class="tc">TOTAL</th>
-          <th class="tc">HOME%</th><th class="tc">RL EDGE</th>
-          <th class="tc">O/U EDGE</th><th>BET</th><th class="tc">CONF</th>
+          <th class="tc">HOME%</th><th class="tc">AWAY ML</th><th class="tc">HOME ML</th>
+          <th class="tc">RL EDGE</th><th class="tc">O/U EDGE</th><th>BET</th><th class="tc">CONF</th>
         </tr></thead>
         <tbody id="model-tbody"></tbody>
       </table>
@@ -1070,9 +1162,64 @@ tbody td {
     <div id="standings-wrap" class="standings-wrap"></div>
   </div>
 
+  <!-- F5 INNINGS -->
+  <div id="tab-f5" class="tab-panel">
+    <div id="f5-stats" class="stat-row"></div>
+    <div class="sec">F5 Best Bets</div>
+    <div id="f5-best-bets" class="bet-list"></div>
+    <div class="sec" style="margin-top:16px">All F5 Predictions</div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr>
+          <th>Time</th><th>Matchup</th><th>SP</th>
+          <th>F5 Margin</th><th>F5 Total</th><th>Win%</th>
+          <th>F5 RL</th><th>F5 O/U</th><th>RL Edge</th><th>O/U Edge</th>
+        </tr></thead>
+        <tbody id="f5-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
   <!-- NRFI -->
   <div id="tab-nrfi" class="tab-panel">
     <div id="nrfi-list"></div>
+  </div>
+
+  <!-- K STRIKEOUT PROPS -->
+  <div id="tab-kprops" class="tab-panel">
+    <div id="kprops-stats" class="stat-row"></div>
+    <div class="sec">Best K Edges</div>
+    <div id="kprops-best" class="bet-list"></div>
+    <div class="sec" style="margin-top:16px">All K Projections</div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr>
+          <th>TIME</th><th>PITCHER</th><th>VS</th>
+          <th class="tc">PROJ K</th><th class="tc">RANGE</th>
+          <th class="tc">LINE</th><th class="tc">OVER%</th><th class="tc">UNDER%</th>
+          <th class="tc">EDGE</th><th>BET</th><th>CONF</th>
+        </tr></thead>
+        <tbody id="kprops-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- BULLPEN REPORT -->
+  <div id="tab-bullpen" class="tab-panel">
+    <div id="bullpen-stats" class="stat-row"></div>
+    <div class="sec">Today's Matchup Differentials</div>
+    <div id="bullpen-matchups"></div>
+    <div class="sec" style="margin-top:16px">All Active Bullpens</div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr>
+          <th>TEAM</th><th class="tc">ERA</th><th class="tc">vs LG</th>
+          <th class="tc">WHIP</th><th class="tc">K/9</th>
+          <th class="tc">IP L3D</th><th class="tc">FATIGUE</th><th class="tc">QUALITY</th>
+        </tr></thead>
+        <tbody id="bullpen-tbody"></tbody>
+      </table>
+    </div>
   </div>
 
   <!-- RESULTS -->
@@ -1119,8 +1266,8 @@ tbody td {
 </main>
 
 <script>
-const DATA = { games:[], series:[], pitchers:[], history:[], nrfi:[], scores:[], date:'' };
-const LABELS = { model:'MODEL OUTPUT', games:"TODAY'S GAMES", pitchers:'PITCHER STATS', batters:'BATTER PROPS', standings:'STANDINGS', trends:'TRENDS', nrfi:'NRFI MATRIX', results:'MODEL PERFORMANCE' };
+const DATA = { games:[], series:[], pitchers:[], history:[], nrfi:[], scores:[], kprops:[], bullpen:[], date:'' };
+const LABELS = { model:'FULL GAME PREDICTIONS', games:"TODAY'S GAMES", pitchers:'PITCHER STATS', batters:'BATTER PROPS', standings:'STANDINGS', trends:'SERIES TRACKING', nrfi:'NRFI MATRIX', f5:'FIRST 5 INNINGS', kprops:'K STRIKEOUT PROPS', bullpen:'BULLPEN REPORT', results:'MODEL PERFORMANCE' };
 
 async function loadJSON(path, fallback) {
   try {
@@ -1131,13 +1278,15 @@ async function loadJSON(path, fallback) {
 }
 
 async function init() {
-  const [today, series, pitchers, history, nrfi, scores] = await Promise.all([
+  const [today, series, pitchers, history, nrfi, scores, kprops, bullpen] = await Promise.all([
     loadJSON('data/processed/picks_today.json',     { date:'', games: SAMPLE }),
     loadJSON('data/processed/series_schedule.json', []),
     loadJSON('data/processed/pitcher_cards.json',   []),
     loadJSON('data/processed/picks_history.json',   []),
     loadJSON('data/processed/nrfi_data.json',       []),
     loadJSON('data/processed/live_scores.json',     { games:[] }),
+    loadJSON('data/processed/strikeout_props.json', []),
+    loadJSON('data/processed/bullpen_report.json',  []),
   ]);
   DATA.games    = ((today?.games||today||[]).filter(g=>g?.home_abbr)).sort((a,b)=>(a.game_time_ct||'').localeCompare(b.game_time_ct||''));
   DATA.series   = Array.isArray(series)   ? series   : [];
@@ -1145,6 +1294,8 @@ async function init() {
   DATA.history  = Array.isArray(history)  ? history  : [];
   DATA.nrfi     = Array.isArray(nrfi)     ? nrfi     : [];
   DATA.scores   = scores?.games || [];
+  DATA.kprops   = Array.isArray(kprops)   ? kprops   : [];
+  DATA.bullpen  = Array.isArray(bullpen)  ? bullpen  : [];
   DATA.date     = today?.date || todayStr();
 
   const d = new Date(DATA.date + 'T12:00:00');
@@ -1170,6 +1321,9 @@ function showTab(tab) {
   if (tab==='standings') renderStandings();
   if (tab==='results') renderResults();
   if (tab==='nrfi') renderNRFI();
+  if (tab==='f5')      renderF5();
+  if (tab==='kprops')  renderKProps();
+  if (tab==='bullpen') renderBullpen();
   window.scrollTo(0,0);
 }
 
@@ -1194,6 +1348,9 @@ document.querySelectorAll('.nav-group-header').forEach(h => {
     h.classList.toggle('open');
   });
 });
+// Open model-output group by default
+document.getElementById('group-model-output')?.classList.add('open');
+document.querySelector('[data-group="model-output"]')?.classList.add('open');
 
 // ── RENDER ───────────────────────────────────────────────────────────────────
 function renderAll() {
@@ -1259,6 +1416,13 @@ function renderModelTable() {
     const bb  = g.spread_bet
       ? (g.spread_bet==='home_cover'?`${g.home_abbr} ${g.vegas_spread}`:`${g.away_abbr} +1.5`)
       : g.total_bet ? `${(g.total_bet||'').toUpperCase()} ${g.vegas_total}` : '—';
+    // Moneyline display
+    const aML = g.ml_away != null ? g.ml_away : null;
+    const hML = g.vegas_ml_home != null ? g.vegas_ml_home : null;
+    const aMLStr = aML != null ? (aML > 0 ? '+'+aML : ''+aML) : '—';
+    const hMLStr = hML != null ? (hML > 0 ? '+'+hML : ''+hML) : '—';
+    const aMLCol = aML != null ? (aML > 0 ? 'pos' : 'neg') : 'dim';
+    const hMLCol = hML != null ? (hML > 0 ? 'pos' : 'neg') : 'dim';
     return `<tr>
       <td class="mono dim">${g.game_time_ct||'—'}</td>
       <td>${g.away_abbr} <span class="dim">@</span> ${g.home_abbr}</td>
@@ -1266,6 +1430,8 @@ function renderModelTable() {
       <td class="tc mono">${fav} <span class="${m>=0?'pos':'neg'}">${Math.abs(m).toFixed(1)}</span></td>
       <td class="tc mono">${(g.predicted_total||0).toFixed(1)}</td>
       <td class="tc mono">${Math.round((g.home_win_prob||.5)*100)}%</td>
+      <td class="tc mono ${aMLCol}">${aMLStr}</td>
+      <td class="tc mono ${hMLCol}">${hMLStr}</td>
       <td class="tc">${tag(g.spread_edge_label)} <span class="mono ${parseFloat(re)>=0?'pos':'neg'}" style="font-size:10px">${parseFloat(re)>=0?'+':''}${re}%</span></td>
       <td class="tc">${tag(g.total_edge_label)} <span class="mono ${parseFloat(oe)>=0?'pos':'neg'}" style="font-size:10px">${parseFloat(oe)>=0?'+':''}${oe}%</span></td>
       <td class="mono" style="font-size:11px">${bb}</td>
@@ -1461,12 +1627,29 @@ function renderGames() {
       </div>`;
     }
 
+    // Series context for this game
+    const sm = DATA.series.find(s =>
+      (s.home_abbr===g.home_abbr && s.away_abbr===g.away_abbr) ||
+      (s.home_abbr===g.away_abbr && s.away_abbr===g.home_abbr)
+    );
+    let seriesBadge = '';
+    if (sm) {
+      const hw = sm.home_wins||0, aw = sm.away_wins||0;
+      const gn = (sm.games_played||0)+1;
+      const tot = sm.total_games||3;
+      const lead = hw > aw ? sm.home_abbr : aw > hw ? sm.away_abbr : null;
+      const leadStr = lead
+        ? `<span class="pos">${lead} leads ${Math.max(hw,aw)}-${Math.min(hw,aw)}</span>`
+        : `<span class="dim">tied ${hw}-${aw}</span>`;
+      seriesBadge = `<div class="series-badge">gm ${gn}/${tot} · ${leadStr}</div>`;
+    }
+
     return `<div class="game-block" id="gb-${i}">
       <div class="game-row game-expand-toggle ${strong?'has-strong':hasEdge?'has-edge':''}" onclick="toggleGame(${i}, '${g.home_abbr}', '${g.away_abbr}')">
         <span class="mono dim" style="font-size:10px">${g.game_time_ct||'TBD'}</span>
         <div class="matchup-cell">
           <div class="teams">${g.away_abbr} <span class="dim">@</span> ${g.home_abbr} <span class="ge-arrow" id="ga-${i}">›</span></div>
-          <div class="pitchers">${aCard?aCard.name.split(' ').pop():(g.away_sp||'TBD')} / ${hCard?hCard.name.split(' ').pop():(g.home_sp||'TBD')}</div>
+          <div class="pitchers">${aCard?aCard.name.split(' ').pop():(g.away_sp||'TBD')} / ${hCard?hCard.name.split(' ').pop():(g.home_sp||'TBD')} ${seriesBadge}</div>
         </div>
         <div class="hide-sm">
           <div class="prob-labels"><span>${g.away_abbr} ${ap}%</span><span>${g.home_abbr} ${hp}%</span></div>
@@ -2048,97 +2231,99 @@ function renderBatters() {
 let stdLeague = 'both', stdCache = null, stdListenersAdded = false;
 
 async function renderStandings() {
-  // Fetch once per session — don't wipe cache on filter change
+  const wrap = document.getElementById('standings-wrap');
+
+  // Fetch once per session
   if (!stdCache) {
-    document.getElementById('standings-wrap').innerHTML =
-      '<div class="empty"><div class="spinner"></div>loading standings...</div>';
+    wrap.innerHTML = '<div class="empty"><div class="spinner"></div>loading standings...</div>';
     try {
-      const r = await fetch(
-        'https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason&hydrate=team'
-      );
+      console.log('[standings] fetching...');
+      const r = await fetch('https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason&hydrate=team');
+      console.log('[standings] response status:', r.status);
       const data = await r.json();
+      console.log('[standings] records:', data.records?.length);
       stdCache = [];
-      data.records?.forEach(div => {
+      for (const div of (data.records || [])) {
         const dn  = div.division?.name || '';
-        const lid = div.league?.id || div.division?.parentOrganization?.id || 0;
-        // leagueId 103 = AL, 104 = NL. Fall back to name matching
-        const lg  = (lid === 103 || dn.includes('American') || dn.startsWith('AL')) ? 'AL' : 'NL';
-        const dv  = dn.replace('American League ','').replace('National League ','')
-                      .replace('AL ','').replace('NL ','');
-        div.teamRecords?.forEach(tr => {
+        const lid = div.league?.id || 0;
+        const lg  = (lid === 103 || dn.includes('American')) ? 'AL' : 'NL';
+        const dvMatch = dn.match(/(East|Central|West)$/i);
+        const dv = dvMatch ? dvMatch[1] : dn;
+        const divKey = lg + ' ' + dv;
+        for (const tr of (div.teamRecords || [])) {
           const rs = parseInt(tr.runsScored||0), ra = parseInt(tr.runsAllowed||0);
-          const w = tr.wins, l = tr.losses, g = w + l;
+          const w = tr.wins||0, l = tr.losses||0, g = w + l;
           const L10 = tr.records?.splitRecords?.find(x => x.type === 'lastTen');
           stdCache.push({
-            team: tr.team.abbreviation, lg, dv,
-            divKey: lg + ' ' + dv,   // e.g. "AL East"
+            team: tr.team?.abbreviation||'?', lg, dv, divKey,
             W:w, L:l, G:g,
-            pct: (w / (g||1)).toFixed(3),
-            GB:  tr.divisionGamesBack || '—',
-            rs, ra, rd: rs - ra,
-            pyth: (rs+ra > 0 ? (rs**1.83 / (rs**1.83 + ra**1.83)) : 0.5).toFixed(3),
-            L10: L10 ? (L10.wins + '-' + L10.losses) : '—'
+            pct: g > 0 ? (w/g).toFixed(3) : '.000',
+            GB: tr.divisionGamesBack||'—',
+            rs, ra, rd: rs-ra,
+            pyth: (rs+ra>0 ? (rs**1.83/(rs**1.83+ra**1.83)) : 0.5).toFixed(3),
+            L10: L10 ? L10.wins+'-'+L10.losses : '—',
           });
+        }
+      }
+      console.log('[standings] cached', stdCache.length, 'teams');
+      console.log('[standings] divKeys:', [...new Set(stdCache.map(t=>t.divKey))].sort());
+    } catch(e) {
+      console.error('[standings] fetch failed:', e.message);
+      wrap.innerHTML = '<div class="empty">Standings fetch failed: ' + e.message + '</div>';
+      stdCache = SAMPLE_STD;
+    }
+    // Register filter buttons once after first load
+    if (!stdListenersAdded) {
+      stdListenersAdded = true;
+      document.querySelectorAll('#standings-filters .fb').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('#standings-filters .fb').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          stdLeague = btn.dataset.league;
+          renderStandings();
         });
       });
-    } catch {
-      stdCache = SAMPLE_STD;
     }
   }
 
-  // Filter: 'both' = all, 'AL'/'NL' = full league, 'AL East' etc = single division
-  let filtered;
-  if (stdLeague === 'both') {
-    filtered = stdCache;
-  } else if (stdLeague === 'AL' || stdLeague === 'NL') {
-    filtered = stdCache.filter(t => t.lg === stdLeague);
-  } else {
-    filtered = stdCache.filter(t => t.divKey === stdLeague);
+  // Apply filter
+  let filtered = stdCache;
+  if (stdLeague !== 'both') {
+    if (stdLeague === 'AL' || stdLeague === 'NL') {
+      filtered = stdCache.filter(t => t.lg === stdLeague);
+    } else {
+      filtered = stdCache.filter(t => t.divKey === stdLeague);
+    }
   }
 
-  // Group by division
+  // ALL view — single table sorted by pct
+  if (stdLeague === 'both') {
+    const rows = [...filtered].sort((a,b)=>parseFloat(b.pct)-parseFloat(a.pct)).map(t=>{
+      const pc=parseFloat(t.pct)>=.550?'pos':parseFloat(t.pct)<=.450?'neg':'';
+      const rc=t.rd>20?'pos':t.rd<-20?'neg':'dim';
+      return `<tr><td>${t.team}</td><td class="mono dim" style="font-size:10px">${t.divKey}</td><td>${t.W}</td><td class="dim">${t.L}</td><td class="mono ${pc}">${t.pct}</td><td class="mono ${rc}">${t.rd>0?'+':''}${t.rd}</td><td class="mono dim">${t.pyth}</td><td class="mono">${t.L10}</td></tr>`;
+    }).join('');
+    wrap.innerHTML = `<div class="div-block" style="grid-column:1/-1"><div class="div-label">ALL TEAMS — BY WIN PCT</div><table class="std-tbl"><thead><tr><th>TEAM</th><th>DIV</th><th>W</th><th>L</th><th>PCT</th><th>+/-</th><th>PYTH</th><th>L10</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    return;
+  }
+
+  // Division grouped view
   const divs = {};
-  filtered.forEach(t => {
-    if (!divs[t.divKey]) divs[t.divKey] = [];
-    divs[t.divKey].push(t);
+  filtered.forEach(t => { if (!divs[t.divKey]) divs[t.divKey]=[]; divs[t.divKey].push(t); });
+  const order = ['AL East','AL Central','AL West','NL East','NL Central','NL West'];
+  const sorted = Object.entries(divs).sort(([a],[b])=>{
+    const ai=order.indexOf(a),bi=order.indexOf(b);
+    return ai===-1&&bi===-1?a.localeCompare(b):ai===-1?1:bi===-1?-1:ai-bi;
   });
 
-  // Sort divisions: AL before NL, then East/Central/West
-  const divOrder = ['AL East','AL Central','AL West','NL East','NL Central','NL West'];
-  const sortedDivs = Object.entries(divs).sort(([a],[b]) => divOrder.indexOf(a) - divOrder.indexOf(b));
-
-  document.getElementById('standings-wrap').innerHTML = sortedDivs.map(([divKey, teams]) => {
-    const rows = teams.sort((a,b) => parseFloat(b.pct) - parseFloat(a.pct)).map(t => {
-      const pc = parseFloat(t.pct) >= .550 ? 'pos' : parseFloat(t.pct) <= .450 ? 'neg' : '';
-      const rc = t.rd > 20 ? 'pos' : t.rd < -20 ? 'neg' : 'dim';
-      return `<tr>
-        <td>${t.team}</td><td>${t.W}</td><td class="dim">${t.L}</td>
-        <td class="mono ${pc}">${t.pct}</td><td class="dim">${t.GB}</td>
-        <td class="mono ${rc}">${t.rd > 0 ? '+' : ''}${t.rd}</td>
-        <td class="mono dim">${t.pyth}</td><td class="mono">${t.L10}</td>
-      </tr>`;
+  wrap.innerHTML = sorted.map(([divKey, teams])=>{
+    const rows = teams.sort((a,b)=>parseFloat(b.pct)-parseFloat(a.pct)).map(t=>{
+      const pc=parseFloat(t.pct)>=.550?'pos':parseFloat(t.pct)<=.450?'neg':'';
+      const rc=t.rd>20?'pos':t.rd<-20?'neg':'dim';
+      return `<tr><td>${t.team}</td><td>${t.W}</td><td class="dim">${t.L}</td><td class="mono ${pc}">${t.pct}</td><td class="dim">${t.GB}</td><td class="mono ${rc}">${t.rd>0?'+':''}${t.rd}</td><td class="mono dim">${t.pyth}</td><td class="mono">${t.L10}</td></tr>`;
     }).join('');
-    return `<div class="div-block">
-      <div class="div-label">${divKey.toUpperCase()}</div>
-      <table class="std-tbl">
-        <thead><tr><th>TEAM</th><th>W</th><th>L</th><th>PCT</th><th>GB</th><th>+/-</th><th>PYTH</th><th>L10</th></tr></thead>
-        <tbody>${rows}</tbody>
-      </table>
-    </div>`;
-  }).join('') || '<div class="empty">No standings data</div>';
-
-  // Add filter listeners once only
-  if (!stdListenersAdded) {
-    stdListenersAdded = true;
-    document.querySelectorAll('#standings-filters .fb').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('#standings-filters .fb').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        stdLeague = btn.dataset.league;
-        renderStandings();  // no cache wipe — just re-filter
-      });
-    });
-  }
+    return `<div class="div-block"><div class="div-label">${divKey}</div><table class="std-tbl"><thead><tr><th>TEAM</th><th>W</th><th>L</th><th>PCT</th><th>GB</th><th>+/-</th><th>PYTH</th><th>L10</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  }).join('') || '<div class="empty">No data for this filter</div>';
 }
 
 // ── TRENDS ───────────────────────────────────────────────────────────────────
@@ -2739,6 +2924,300 @@ function renderScoreBar(games) {
     new Date().toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit'});
 }
 
+
+function renderF5() {
+  const games = DATA.games.filter(g => g.f5_margin != null);
+  const el = document.getElementById('f5-stats');
+  if (!el) return;
+  if (!games.length) {
+    el.innerHTML = sc('—','GAMES')+sc('—','RL EDGES')+sc('—','O/U EDGES')+sc('—','AVG F5 TOTAL')+sc('—','BEST EDGE');
+    document.getElementById('f5-best-bets').innerHTML = '<div class="empty">No F5 data — run model with updated main.py</div>';
+    document.getElementById('f5-tbody').innerHTML = '<tr><td colspan="10" class="empty">No F5 predictions yet</td></tr>';
+    return;
+  }
+  const rlE = games.filter(g=>['STRONG','LEAN'].includes(g.f5_spread_label)).length;
+  const ouE = games.filter(g=>['STRONG','LEAN'].includes(g.f5_total_label)).length;
+  const avg = (games.reduce((s,g)=>s+(g.f5_total||0),0)/games.length).toFixed(1);
+  const best= Math.max(...games.map(g=>Math.max(Math.abs((g.f5_spread_edge||0)*100),Math.abs((g.f5_total_edge||0)*10)))).toFixed(1);
+  el.innerHTML = sc(games.length,'GAMES')+sc(rlE,'RL EDGES','pos')+sc(ouE,'O/U EDGES','pos')+sc(avg,'AVG F5 TOTAL')+sc('+'+best+'%','BEST EDGE','warn');
+  const bets = [...games].filter(g=>['STRONG','LEAN'].includes(g.f5_spread_label)||['STRONG','LEAN'].includes(g.f5_total_label))
+    .sort((a,b)=>Math.max(Math.abs(b.f5_spread_edge||0),Math.abs(b.f5_total_edge||0))-Math.max(Math.abs(a.f5_spread_edge||0),Math.abs(a.f5_total_edge||0))).slice(0,6);
+  document.getElementById('f5-best-bets').innerHTML = bets.length ? bets.map(f5BetCard).join('') : '<div class="empty">No F5 edges today</div>';
+  document.getElementById('f5-tbody').innerHTML = [...games].sort((a,b)=>(a.game_time_ct||'').localeCompare(b.game_time_ct||'')).map(g=>{
+    const rlL=g.f5_spread_label||'—',ouL=g.f5_total_label||'—';
+    const rlC=rlL==='STRONG'?'pos':rlL==='LEAN'?'warn':'dim';
+    const ouC=ouL==='STRONG'?'pos':ouL==='LEAN'?'warn':'dim';
+    const rlEd=g.f5_spread_edge!=null?(g.f5_spread_edge*100).toFixed(1)+'%':'—';
+    const ouEd=g.f5_total_edge!=null?g.f5_total_edge.toFixed(2):'—';
+    const bet=g.f5_spread_bet==='home_cover'?`${g.home_abbr} F5 RL`:g.f5_spread_bet==='away_cover'?`${g.away_abbr} F5 +0.5`:'—';
+    const ouBt=g.f5_total_bet?`${(g.f5_total_bet).toUpperCase()} ${g.f5_vegas_total||''}`:'—';
+    const wp=g.f5_win_prob!=null?(g.f5_win_prob*100).toFixed(0)+'%':'—';
+    const mg=g.f5_margin!=null?(g.f5_margin>=0?'+':'')+g.f5_margin.toFixed(1):'—';
+    const tot=g.f5_total!=null?g.f5_total.toFixed(1):'—';
+    const t=(g.game_time_ct||'').replace(' CT','');
+    const hSP=(g.home_sp||'TBD').split(' ').pop(),aSP=(g.away_sp||'TBD').split(' ').pop();
+    return `<tr><td class="mono dim" style="font-size:10px">${t}</td><td>${g.away_abbr} @ ${g.home_abbr}</td><td class="mono dim" style="font-size:10px">${aSP}/${hSP}</td><td class="tc mono">${mg}</td><td class="tc mono">${tot}</td><td class="tc mono dim">${wp}</td><td class="mono dim" style="font-size:10px">${bet}</td><td class="mono dim" style="font-size:10px">${ouBt}</td><td class="tc mono ${rlC}">${rlEd}</td><td class="tc mono ${ouC}">${ouEd}</td></tr>`;
+  }).join('');
+}
+
+function f5BetCard(g) {
+  const isRL=['STRONG','LEAN'].includes(g.f5_spread_label)&&Math.abs(g.f5_spread_edge||0)>=Math.abs(g.f5_total_edge||0);
+  const label=isRL?g.f5_spread_label:g.f5_total_label;
+  const bet=isRL?(g.f5_spread_bet==='home_cover'?`${g.home_abbr} F5 RL`:`${g.away_abbr} F5 +0.5`):g.f5_total_bet?`${(g.f5_total_bet).toUpperCase()} ${g.f5_vegas_total||''}`:'—';
+  const edge=Math.abs(isRL?(g.f5_spread_edge||0)*100:(g.f5_total_edge||0)*10).toFixed(1);
+  const cls=label==='STRONG'?'strong':label==='LEAN'?'lean':'none';
+  const ecol=label==='STRONG'?'strong-col':'lean-col';
+  const time=(g.game_time_ct||'').replace(' CT','');
+  const hCard=findCard(g.home_sp,g.home_abbr,g.away_abbr);
+  const aCard=findCard(g.away_sp,g.away_abbr,g.home_abbr);
+  function f5SP(card,sp,side){
+    const name=card?card.name.split(' ').pop():(sp||'TBD').split(' ').pop();
+    const disp=name.length>12?name.slice(0,11)+'…':name;
+    const lbl=side==='away'?'AWAY SP (BATS 1ST)':'HOME SP (BATS 2ND)';
+    if(!card) return `<div class="f5-sp-col"><div class="f5-sp-label">${lbl}</div><div class="f5-sp-name">${disp}</div><div class="f5-sp-row"><span>era</span><span>—</span></div><div class="f5-sp-row"><span>k/9</span><span>—</span></div><div class="f5-sp-row"><span>whip</span><span>—</span></div><div class="f5-sp-row"><span>1st inn era</span><span>—</span></div><div class="f5-sp-row"><span>k proj</span><span>—</span></div></div>`;
+    const ss=card.season_stats||{};
+    const kp=card.k_prediction?.predicted_ks;
+    const sts=(card.last_starts||[]).slice(0,3);
+    const l3ip=sts.reduce((s,x)=>s+(x.IP||0),0);
+    const l3er=sts.reduce((s,x)=>s+(x.ER||0),0);
+    const l3e=l3ip>0?(l3er/l3ip*9).toFixed(2):null;
+    const ec=(ss.ERA||99)<3.5?'pos':(ss.ERA||99)>4.5?'neg':'';
+    const l3c=l3e&&ss.ERA?(parseFloat(l3e)<ss.ERA?'pos':parseFloat(l3e)>ss.ERA+0.5?'neg':''):'';
+    const tr=card.trend||'neutral';
+    const ti=tr==='improving'?'↑ hot':tr==='declining'?'↓ cold':'→ flat';
+    const tc=tr==='improving'?'pos':tr==='declining'?'neg':'dim';
+    const rest=card.days_rest!=null?card.days_rest+'d rest':'—';
+    const fi=card.first_inning||{};
+    const fiE=fi.era!=null?fi.era.toFixed(2):'—';
+    return `<div class="f5-sp-col"><div class="f5-sp-label">${lbl}</div><div class="f5-sp-name">${disp}</div><div class="f5-sp-row"><span>era</span><span class="val ${ec}">${ss.ERA??'—'}</span></div><div class="f5-sp-row"><span>k/9</span><span class="val">${ss.K9??'—'}</span></div><div class="f5-sp-row"><span>whip</span><span class="val">${ss.WHIP??'—'}</span></div><div class="f5-sp-row"><span>l3 era</span><span class="val ${l3c}">${l3e||'—'}</span></div><div class="f5-sp-row"><span>trend</span><span class="val ${tc}">${ti}</span></div><div class="f5-sp-row"><span>rest</span><span class="val dim">${rest}</span></div><div class="f5-sp-row"><span>1st inn era</span><span class="val">${fiE}</span></div><div class="f5-sp-row"><span>k proj</span><span class="val">${kp??'—'}</span></div></div>`;
+  }
+  const mg=g.f5_margin!=null?(g.f5_margin>=0?'+':'')+g.f5_margin.toFixed(1):'—';
+  const tot=g.f5_total!=null?g.f5_total.toFixed(1):'—';
+  const wp=g.f5_win_prob!=null?(g.f5_win_prob*100).toFixed(0)+'%':'—';
+  const vRL=g.f5_spread!=null?(g.f5_spread>0?'+':'')+g.f5_spread:'NO LINE';
+  const vOU=g.f5_vegas_total!=null?g.f5_vegas_total:'NO LINE';
+  const rlEd=g.f5_spread_edge!=null?(g.f5_spread_edge>=0?'+':'')+(g.f5_spread_edge*100).toFixed(1)+'%':'—';
+  const ouEd=g.f5_total_edge!=null?(g.f5_total_edge>=0?'+':'')+g.f5_total_edge.toFixed(2):'—';
+  const wpC=parseFloat(wp)>=55?'pos':parseFloat(wp)<=45?'neg':'';
+  const rlC=g.f5_spread_edge!=null?(g.f5_spread_edge>0?'pos':g.f5_spread_edge<0?'neg':''):'dim';
+  const ouC=g.f5_total_edge!=null?(g.f5_total_edge>0.3?'pos':g.f5_total_edge<-0.3?'neg':''):'dim';
+  return `<div class="f5-card ${cls}">
+    <div class="f5-head">
+      <span class="mono dim" style="font-size:10px">${time}</span>
+      <span style="font-size:12px;font-weight:500">${g.away_abbr} @ ${g.home_abbr}</span>
+      <span class="tag tag-${cls==='strong'?'lean':'none'} hide-sm" style="${cls==='strong'?'':'color:var(--t3);border-color:var(--b2)'}">${isRL?'F5 RL':'F5 O/U'} ${label}</span>
+      <div class="tc hide-sm"><div class="mono" style="font-size:11px">${bet}</div><div style="font-size:9px;color:var(--t3)">bet</div></div>
+      <div class="tc hide-sm"><div class="mono ${ecol}" style="font-size:13px">+${edge}%</div><div style="font-size:9px;color:var(--t3)">edge</div></div>
+      <div class="tc hide-sm"><div class="mono dim" style="font-size:11px">${vRL}</div><div style="font-size:9px;color:var(--t3)">F5 RL</div></div>
+      <div class="tc hide-sm"><div class="mono dim" style="font-size:11px">${vOU}</div><div style="font-size:9px;color:var(--t3)">F5 O/U</div></div>
+    </div>
+    <div class="f5-sp-grid">${f5SP(aCard,g.away_sp,'away')}${f5SP(hCard,g.home_sp,'home')}</div>
+    <div class="f5-data-strip">
+      <div class="f5-data-cell tc"><div class="v ${wpC}">${wp}</div><div class="l">F5 WIN%</div></div>
+      <div class="f5-data-cell tc"><div class="v">${mg}</div><div class="l">F5 MARGIN</div></div>
+      <div class="f5-data-cell tc"><div class="v">${tot}</div><div class="l">F5 TOTAL</div></div>
+      <div class="f5-data-cell tc"><div class="v ${rlC}">${rlEd}</div><div class="l">RL EDGE</div></div>
+      <div class="f5-data-cell tc"><div class="v ${ouC}">${ouEd}</div><div class="l">O/U EDGE</div></div>
+    </div>
+  </div>`;
+}
+
+// ── K STRIKEOUT PROPS ────────────────────────────────────────────────────────
+function renderKProps() {
+  const el = document.getElementById('kprops-stats');
+  if (!el) return;
+  const props = DATA.kprops;
+
+  if (!props.length) {
+    el.innerHTML = sc('—','PITCHERS')+sc('—','EDGES')+sc('—','AVG PROJ')+sc('—','BEST EDGE');
+    document.getElementById('kprops-best').innerHTML = '<div class="empty">No K prop data — run model to generate strikeout_props.json</div>';
+    document.getElementById('kprops-tbody').innerHTML = '<tr><td colspan="11" class="empty">No data</td></tr>';
+    return;
+  }
+
+  const withLine  = props.filter(p => p.line != null);
+  const edges     = props.filter(p => ['STRONG','LEAN'].includes(p.label));
+  const avgProj   = props.length ? (props.reduce((s,p)=>s+(p.projected_ks||0),0)/props.length).toFixed(1) : '—';
+  const bestEdge  = edges.length ? Math.max(...edges.map(p=>p.best_edge||0)).toFixed(3) : '—';
+
+  el.innerHTML =
+    sc(props.length,'PITCHERS') +
+    sc(withLine.length,'W/ LINES') +
+    sc(edges.length,'EDGES','pos') +
+    sc(avgProj,'AVG PROJ K') +
+    sc(bestEdge!=='—'?'+'+(parseFloat(bestEdge)*100).toFixed(1)+'%':'—','BEST EDGE','warn');
+
+  // Best bet cards
+  const bestCards = [...edges].sort((a,b)=>(b.best_edge||0)-(a.best_edge||0)).slice(0,4);
+  document.getElementById('kprops-best').innerHTML = bestCards.length
+    ? bestCards.map(kpropCard).join('')
+    : '<div class="empty">No K edges today</div>';
+
+  // Full table
+  document.getElementById('kprops-tbody').innerHTML = [...props].map(p => {
+    const cls   = p.label==='STRONG'?'strong-col':p.label==='LEAN'?'lean-col':'dim';
+    const proj  = p.projected_ks != null ? p.projected_ks.toFixed(1) : '—';
+    const range = p.k_low_25 != null ? `${p.k_low_25}–${p.k_high_75}` : '—';
+    const line  = p.line != null ? p.line : '—';
+    const ovP   = p.over_prob  != null ? (p.over_prob*100).toFixed(0)+'%'  : '—';
+    const unP   = p.under_prob != null ? (p.under_prob*100).toFixed(0)+'%' : '—';
+    const edge  = p.best_edge  != null ? (p.best_edge>=0?'+':'')+(p.best_edge*100).toFixed(1)+'%' : '—';
+    const bet   = p.direction !== 'NONE' && p.direction !== 'NO LINE'
+      ? `${p.direction} ${p.line}` : '—';
+    const ovC   = p.edge_over  > 0.04 ? 'pos' : p.edge_over  < -0.02 ? 'neg' : '';
+    const unC   = p.edge_under > 0.04 ? 'pos' : p.edge_under < -0.02 ? 'neg' : '';
+    const k9str = p.blended_k9 ? p.blended_k9.toFixed(1)+' k/9' : '—';
+    return `<tr>
+      <td class="mono dim" style="font-size:10px">${(p.game_time||'').replace(' CT','')}</td>
+      <td><strong>${p.pitcher||'—'}</strong></td>
+      <td class="dim" style="font-size:10px">${p.team||''} vs ${p.opponent||''}</td>
+      <td class="tc mono hi">${proj}</td>
+      <td class="tc mono dim" style="font-size:10px">${range}</td>
+      <td class="tc mono">${line}</td>
+      <td class="tc mono ${ovC}">${ovP}</td>
+      <td class="tc mono ${unC}">${unP}</td>
+      <td class="tc mono ${cls}">${edge}</td>
+      <td class="mono" style="font-size:10px">${bet}</td>
+      <td class="mono dim" style="font-size:9px">${k9str}</td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="11" class="empty">No pitchers</td></tr>';
+}
+
+function kpropCard(p) {
+  const cls   = p.label==='STRONG' ? 'strong' : 'lean';
+  const ecol  = p.label==='STRONG' ? 'strong-col' : 'lean-col';
+  const isOver = p.direction === 'OVER';
+  const bet   = `${p.direction} ${p.line} K`;
+  const edge  = p.best_edge != null ? (p.best_edge>=0?'+':'')+(p.best_edge*100).toFixed(1)+'%' : '—';
+  const prob  = isOver ? p.over_prob : p.under_prob;
+  const impl  = isOver ? p.impl_over : p.impl_under;
+  const probPct  = prob  != null ? (prob*100).toFixed(0)+'%' : '—';
+  const implPct  = impl  != null ? (impl*100).toFixed(0)+'%' : '—';
+  const ovBarW   = Math.round((p.over_prob||0)*100);
+  const unBarW   = Math.round((p.under_prob||0)*100);
+  const range = p.k_low_25 != null ? `${p.k_low_25}–${p.k_high_75} (25/75 pct)` : '';
+  const opp_k = p.opp_k_pct ? `opp k% ${p.opp_k_pct}%` : '';
+  return `<div class="bet-card edge-${cls}" style="padding:0">
+    <div class="bc-top">
+      <div>
+        <span class="bc-matchup">${p.pitcher}</span>
+        <span class="bc-meta" style="margin-left:6px">${p.team} vs ${p.opponent} · ${(p.game_time||'').replace(' CT','')}</span>
+      </div>
+      <div class="bc-call">
+        <span class="bc-meta">K PROP</span>
+        <span class="bc-line ${ecol}">${bet}</span>
+        <span class="bc-edge ${ecol}">${edge}</span>
+        ${p.label==='STRONG'?'<span class="tag tag-strong">STRONG</span>':'<span class="tag tag-lean">LEAN</span>'}
+      </div>
+    </div>
+    <div style="padding:10px 12px">
+      <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:4px">
+        <div class="mono hi" style="font-size:28px;font-weight:300;line-height:1">${p.projected_ks!=null?p.projected_ks.toFixed(1):'—'}</div>
+        <div>
+          <div class="mono" style="font-size:10px">projected K</div>
+          <div class="mono dim" style="font-size:9px">${range}</div>
+        </div>
+      </div>
+      <div class="kprop-bar-wrap">
+        <div class="kprop-bar-under" style="width:${unBarW}%"></div>
+        <div class="kprop-bar-over"  style="width:${ovBarW}%"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-family:var(--mono);font-size:9px;color:var(--t3);margin-bottom:6px">
+        <span>UNDER ${(p.under_prob*100||0).toFixed(0)}%</span>
+        <span>OVER ${(p.over_prob*100||0).toFixed(0)}%</span>
+      </div>
+    </div>
+    <div class="kprop-data">
+      <div class="kprop-cell"><div class="v ${ecol}">${probPct}</div><div class="l">our prob</div></div>
+      <div class="kprop-cell"><div class="v dim">${implPct}</div><div class="l">implied</div></div>
+      <div class="kprop-cell"><div class="v ${ecol}">${edge}</div><div class="l">edge</div></div>
+      <div class="kprop-cell"><div class="v dim">${p.blended_k9!=null?p.blended_k9.toFixed(1):'—'}</div><div class="l">k/9 blend</div></div>
+    </div>
+  </div>`;
+}
+
+// ── BULLPEN REPORT ───────────────────────────────────────────────────────────
+function renderBullpen() {
+  const el = document.getElementById('bullpen-stats');
+  if (!el) return;
+  const bp = DATA.bullpen;
+
+  if (!bp.length) {
+    el.innerHTML = sc('—','TEAMS')+sc('—','ELITE')+sc('—','POOR')+sc('—','HEAVY USE')+sc('—','AVG ERA');
+    document.getElementById('bullpen-matchups').innerHTML = '<div class="empty">No bullpen data — run model to generate bullpen_report.json</div>';
+    document.getElementById('bullpen-tbody').innerHTML = '<tr><td colspan="8" class="empty">No data</td></tr>';
+    return;
+  }
+
+  const elite  = bp.filter(t=>t.quality==='ELITE').length;
+  const poor   = bp.filter(t=>t.quality==='POOR').length;
+  const heavy  = bp.filter(t=>t.fatigue==='HEAVY'||t.fatigue==='TIRED').length;
+  const avgERA = (bp.reduce((s,t)=>s+t.era,0)/bp.length).toFixed(2);
+
+  el.innerHTML =
+    sc(bp.length,'TEAMS') +
+    sc(elite,'ELITE','pos') +
+    sc(poor,'POOR','neg') +
+    sc(heavy,'TIRED/HEAVY','warn') +
+    sc(avgERA,'AVG BP ERA');
+
+  // Matchup differentials — pair today's games
+  const matchups = DATA.games.map(g => {
+    const hBP = bp.find(t=>t.team===g.home_abbr);
+    const aBP = bp.find(t=>t.team===g.away_abbr);
+    if (!hBP || !aBP) return null;
+    const eraDiff = (aBP.era - hBP.era).toFixed(2);
+    const adv = Math.abs(parseFloat(eraDiff)) >= 0.5
+      ? (parseFloat(eraDiff)>0 ? g.home_abbr : g.away_abbr) : null;
+    return { g, hBP, aBP, eraDiff, adv };
+  }).filter(Boolean);
+
+  document.getElementById('bullpen-matchups').innerHTML = matchups.length
+    ? `<div class="bp-matchup-grid">${matchups.map(m => {
+        const advStr = m.adv ? `<span class="pos" style="font-size:9px">▲ ${m.adv} pen advantage</span>` : '<span class="dim" style="font-size:9px">even matchup</span>';
+        function teamRow(bpd) {
+          const qcls  = bpd.quality.toLowerCase();
+          const fcls  = bpd.fatigue.toLowerCase();
+          const eraC  = bpd.era < 3.5 ? 'pos' : bpd.era > 4.8 ? 'neg' : '';
+          return `<div class="bp-team-row">
+            <span class="bp-abbr">${bpd.team}</span>
+            <span class="mono ${eraC}" style="min-width:36px">${bpd.era.toFixed(2)}</span>
+            <span class="mono dim" style="min-width:36px">${bpd.whip.toFixed(2)}</span>
+            <span class="bp-badge ${qcls}">${bpd.quality}</span>
+            <span class="bp-badge ${fcls}">${bpd.fatigue}</span>
+            <span class="mono dim" style="font-size:9px">${bpd.innings_3d}ip L3</span>
+          </div>`;
+        }
+        return `<div class="bp-matchup-card">
+          <div class="bp-matchup-head">${m.g.away_abbr} @ ${m.g.home_abbr} <span class="mono dim" style="font-size:10px">${(m.g.game_time_ct||'').replace(' CT','')}</span></div>
+          ${teamRow(m.aBP)}
+          ${teamRow(m.hBP)}
+          <div style="margin-top:6px;font-family:var(--mono);font-size:9px">${advStr} · ERA diff: <span class="${Math.abs(parseFloat(m.eraDiff))>=0.5?'warn':'dim'}">${parseFloat(m.eraDiff)>=0?'+':''}${m.eraDiff}</span></div>
+        </div>`;
+      }).join('')}</div>`
+    : '<div class="empty">No matchup data</div>';
+
+  // Full table — sorted by ERA
+  document.getElementById('bullpen-tbody').innerHTML = [...bp]
+    .sort((a,b)=>a.era-b.era)
+    .map(t => {
+      const eraC  = t.era < 3.5 ? 'pos' : t.era > 4.8 ? 'neg' : '';
+      const lgC   = t.era_vs_lg < -0.3 ? 'pos' : t.era_vs_lg > 0.3 ? 'neg' : 'dim';
+      const k9C   = t.k9_vs_lg  >  0.5 ? 'pos' : t.k9_vs_lg  < -0.5 ? 'neg' : '';
+      const fatC  = t.fatigue==='HEAVY'||t.fatigue==='TIRED'?'warn':t.fatigue==='FRESH'?'pos':'dim';
+      const qcls  = t.quality==='ELITE'?'pos':t.quality==='POOR'?'neg':t.quality==='GOOD'?'hi':'dim';
+      return `<tr>
+        <td><strong>${t.team}</strong></td>
+        <td class="tc mono ${eraC}">${t.era.toFixed(2)}</td>
+        <td class="tc mono ${lgC}">${t.era_vs_lg>=0?'+':''}${t.era_vs_lg.toFixed(2)}</td>
+        <td class="tc mono dim">${t.whip.toFixed(2)}</td>
+        <td class="tc mono ${k9C}">${t.k9.toFixed(1)}</td>
+        <td class="tc mono dim">${t.innings_3d}</td>
+        <td class="tc mono ${fatC}">${t.fatigue}</td>
+        <td class="tc mono ${qcls}">${t.quality}</td>
+      </tr>`;
+    }).join('') || '<tr><td colspan="8" class="empty">No bullpen data</td></tr>';
+}
 
 init();
 fetchLiveScores();
