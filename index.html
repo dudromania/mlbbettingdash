@@ -791,6 +791,44 @@ tbody td {
   .f5-sp-grid { grid-template-columns: 1fr; }
   .f5-data-strip { grid-template-columns: repeat(2,1fr); }
 }
+.kprop-card {
+  background: var(--s1);
+  border: 1px solid var(--b1);
+  border-left: 3px solid transparent;
+  padding: 10px 12px;
+  font-size: 11px;
+}
+.kprop-card.strong { border-left-color: #5aaa77; background: #080f0a; }
+.kprop-card.lean   { border-left-color: #bbaa44; }
+.kprop-card .kp-head { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px; }
+.kprop-card .kp-name { font-size:13px; font-weight:500; }
+.kprop-card .kp-meta { font-family:var(--mono); font-size:9px; color:var(--t3); }
+.kprop-card .kp-proj { font-family:var(--mono); font-size:28px; font-weight:300; line-height:1; }
+.kprop-card .kp-proj-sub { font-family:var(--mono); font-size:9px; color:var(--t3); margin-top:2px; }
+.kprop-bar-wrap { height:5px; background:var(--b1); margin:8px 0 3px; display:flex; }
+.kprop-bar-under { background:#68a; }
+.kprop-bar-over  { background:#5aaa77; }
+.kprop-data { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--b1); margin-top:8px; }
+.kprop-cell { background:var(--s2); padding:5px 8px; text-align:center; font-family:var(--mono); }
+.kprop-cell .v { font-size:13px; line-height:1; }
+.kprop-cell .l { font-size:8px; color:var(--t3); margin-top:2px; text-transform:uppercase; letter-spacing:.3px; }
+
+.bp-matchup-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(300px,1fr)); gap:1px; background:var(--b1); margin-bottom:14px; }
+.bp-matchup-card { background:var(--s1); padding:10px 12px; }
+.bp-matchup-head { font-size:12px; font-weight:500; margin-bottom:8px; }
+.bp-team-row { display:flex; justify-content:space-between; align-items:center; padding:4px 0; border-bottom:1px solid #0a0a0a; font-family:var(--mono); font-size:10px; }
+.bp-team-row:last-child { border-bottom:none; }
+.bp-abbr { color:var(--t2); width:36px; }
+.bp-badge { font-size:9px; padding:1px 5px; border:1px solid; }
+.bp-badge.elite  { color:#5aaa77; border-color:#5aaa7744; }
+.bp-badge.good   { color:#68a;    border-color:#66888844; }
+.bp-badge.avg    { color:var(--t3); border-color:var(--b2); }
+.bp-badge.poor   { color:#a44;    border-color:#aa444444; }
+.bp-badge.heavy  { color:#cc8800; border-color:#cc880044; }
+.bp-badge.tired  { color:#996;    border-color:#99664444; }
+.bp-badge.fresh  { color:#5aaa77; border-color:#5aaa7744; }
+.bp-badge.normal { color:var(--t3); border-color:var(--b2); }
+
 .nrfi-card {
   background: var(--s1);
   border: 1px solid var(--b1);
@@ -990,7 +1028,9 @@ tbody td {
     </div>
     <div class="nav-sub" id="group-analysis">
       <div class="nav-item" data-tab="pitchers">Pitcher Stats</div>
+      <div class="nav-item" data-tab="kprops">K Strikeout Props</div>
       <div class="nav-item" data-tab="batters">Batter Props</div>
+      <div class="nav-item" data-tab="bullpen">Bullpen Report</div>
     </div>
   </div>
   <div class="drawer-section">
@@ -1042,8 +1082,8 @@ tbody td {
         <thead><tr>
           <th>TIME</th><th>MATCHUP</th><th>PITCHERS</th>
           <th class="tc">MARGIN</th><th class="tc">TOTAL</th>
-          <th class="tc">HOME%</th><th class="tc">RL EDGE</th>
-          <th class="tc">O/U EDGE</th><th>BET</th><th class="tc">CONF</th>
+          <th class="tc">HOME%</th><th class="tc">AWAY ML</th><th class="tc">HOME ML</th>
+          <th class="tc">RL EDGE</th><th class="tc">O/U EDGE</th><th>BET</th><th class="tc">CONF</th>
         </tr></thead>
         <tbody id="model-tbody"></tbody>
       </table>
@@ -1133,6 +1173,43 @@ tbody td {
     <div id="nrfi-list"></div>
   </div>
 
+  <!-- K STRIKEOUT PROPS -->
+  <div id="tab-kprops" class="tab-panel">
+    <div id="kprops-stats" class="stat-row"></div>
+    <div class="sec">Best K Edges</div>
+    <div id="kprops-best" class="bet-list"></div>
+    <div class="sec" style="margin-top:16px">All K Projections</div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr>
+          <th>TIME</th><th>PITCHER</th><th>VS</th>
+          <th class="tc">PROJ K</th><th class="tc">RANGE</th>
+          <th class="tc">LINE</th><th class="tc">OVER%</th><th class="tc">UNDER%</th>
+          <th class="tc">EDGE</th><th>BET</th><th>CONF</th>
+        </tr></thead>
+        <tbody id="kprops-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- BULLPEN REPORT -->
+  <div id="tab-bullpen" class="tab-panel">
+    <div id="bullpen-stats" class="stat-row"></div>
+    <div class="sec">Today's Matchup Differentials</div>
+    <div id="bullpen-matchups"></div>
+    <div class="sec" style="margin-top:16px">All Active Bullpens</div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr>
+          <th>TEAM</th><th class="tc">ERA</th><th class="tc">vs LG</th>
+          <th class="tc">WHIP</th><th class="tc">K/9</th>
+          <th class="tc">IP L3D</th><th class="tc">FATIGUE</th><th class="tc">QUALITY</th>
+        </tr></thead>
+        <tbody id="bullpen-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
   <!-- RESULTS -->
   <div id="tab-results" class="tab-panel">
     <div id="results-stats" class="stat-row"></div>
@@ -1177,8 +1254,8 @@ tbody td {
 </main>
 
 <script>
-const DATA = { games:[], series:[], pitchers:[], history:[], nrfi:[], scores:[], date:'' };
-const LABELS = { model:'MODEL OUTPUT', games:"TODAY'S GAMES", pitchers:'PITCHER STATS', batters:'BATTER PROPS', standings:'STANDINGS', trends:'TRENDS', nrfi:'NRFI MATRIX', f5:'F5 INNINGS', results:'MODEL PERFORMANCE' };
+const DATA = { games:[], series:[], pitchers:[], history:[], nrfi:[], scores:[], kprops:[], bullpen:[], date:'' };
+const LABELS = { model:'MODEL OUTPUT', games:"TODAY'S GAMES", pitchers:'PITCHER STATS', batters:'BATTER PROPS', standings:'STANDINGS', trends:'TRENDS', nrfi:'NRFI MATRIX', f5:'F5 INNINGS', kprops:'K STRIKEOUT PROPS', bullpen:'BULLPEN REPORT', results:'MODEL PERFORMANCE' };
 
 async function loadJSON(path, fallback) {
   try {
@@ -1189,13 +1266,15 @@ async function loadJSON(path, fallback) {
 }
 
 async function init() {
-  const [today, series, pitchers, history, nrfi, scores] = await Promise.all([
+  const [today, series, pitchers, history, nrfi, scores, kprops, bullpen] = await Promise.all([
     loadJSON('data/processed/picks_today.json',     { date:'', games: SAMPLE }),
     loadJSON('data/processed/series_schedule.json', []),
     loadJSON('data/processed/pitcher_cards.json',   []),
     loadJSON('data/processed/picks_history.json',   []),
     loadJSON('data/processed/nrfi_data.json',       []),
     loadJSON('data/processed/live_scores.json',     { games:[] }),
+    loadJSON('data/processed/strikeout_props.json', []),
+    loadJSON('data/processed/bullpen_report.json',  []),
   ]);
   DATA.games    = ((today?.games||today||[]).filter(g=>g?.home_abbr)).sort((a,b)=>(a.game_time_ct||'').localeCompare(b.game_time_ct||''));
   DATA.series   = Array.isArray(series)   ? series   : [];
@@ -1203,6 +1282,8 @@ async function init() {
   DATA.history  = Array.isArray(history)  ? history  : [];
   DATA.nrfi     = Array.isArray(nrfi)     ? nrfi     : [];
   DATA.scores   = scores?.games || [];
+  DATA.kprops   = Array.isArray(kprops)   ? kprops   : [];
+  DATA.bullpen  = Array.isArray(bullpen)  ? bullpen  : [];
   DATA.date     = today?.date || todayStr();
 
   const d = new Date(DATA.date + 'T12:00:00');
@@ -1228,7 +1309,9 @@ function showTab(tab) {
   if (tab==='standings') renderStandings();
   if (tab==='results') renderResults();
   if (tab==='nrfi') renderNRFI();
-  if (tab==='f5')   renderF5();
+  if (tab==='f5')      renderF5();
+  if (tab==='kprops')  renderKProps();
+  if (tab==='bullpen') renderBullpen();
   window.scrollTo(0,0);
 }
 
@@ -1318,6 +1401,13 @@ function renderModelTable() {
     const bb  = g.spread_bet
       ? (g.spread_bet==='home_cover'?`${g.home_abbr} ${g.vegas_spread}`:`${g.away_abbr} +1.5`)
       : g.total_bet ? `${(g.total_bet||'').toUpperCase()} ${g.vegas_total}` : '—';
+    // Moneyline display
+    const aML = g.ml_away != null ? g.ml_away : null;
+    const hML = g.vegas_ml_home != null ? g.vegas_ml_home : null;
+    const aMLStr = aML != null ? (aML > 0 ? '+'+aML : ''+aML) : '—';
+    const hMLStr = hML != null ? (hML > 0 ? '+'+hML : ''+hML) : '—';
+    const aMLCol = aML != null ? (aML > 0 ? 'pos' : 'neg') : 'dim';
+    const hMLCol = hML != null ? (hML > 0 ? 'pos' : 'neg') : 'dim';
     return `<tr>
       <td class="mono dim">${g.game_time_ct||'—'}</td>
       <td>${g.away_abbr} <span class="dim">@</span> ${g.home_abbr}</td>
@@ -1325,6 +1415,8 @@ function renderModelTable() {
       <td class="tc mono">${fav} <span class="${m>=0?'pos':'neg'}">${Math.abs(m).toFixed(1)}</span></td>
       <td class="tc mono">${(g.predicted_total||0).toFixed(1)}</td>
       <td class="tc mono">${Math.round((g.home_win_prob||.5)*100)}%</td>
+      <td class="tc mono ${aMLCol}">${aMLStr}</td>
+      <td class="tc mono ${hMLCol}">${hMLStr}</td>
       <td class="tc">${tag(g.spread_edge_label)} <span class="mono ${parseFloat(re)>=0?'pos':'neg'}" style="font-size:10px">${parseFloat(re)>=0?'+':''}${re}%</span></td>
       <td class="tc">${tag(g.total_edge_label)} <span class="mono ${parseFloat(oe)>=0?'pos':'neg'}" style="font-size:10px">${parseFloat(oe)>=0?'+':''}${oe}%</span></td>
       <td class="mono" style="font-size:11px">${bb}</td>
@@ -2896,6 +2988,203 @@ function f5BetCard(g) {
       <div class="f5-data-cell tc"><div class="v ${ouC}">${ouEd}</div><div class="l">O/U EDGE</div></div>
     </div>
   </div>`;
+}
+
+// ── K STRIKEOUT PROPS ────────────────────────────────────────────────────────
+function renderKProps() {
+  const el = document.getElementById('kprops-stats');
+  if (!el) return;
+  const props = DATA.kprops;
+
+  if (!props.length) {
+    el.innerHTML = sc('—','PITCHERS')+sc('—','EDGES')+sc('—','AVG PROJ')+sc('—','BEST EDGE');
+    document.getElementById('kprops-best').innerHTML = '<div class="empty">No K prop data — run model to generate strikeout_props.json</div>';
+    document.getElementById('kprops-tbody').innerHTML = '<tr><td colspan="11" class="empty">No data</td></tr>';
+    return;
+  }
+
+  const withLine  = props.filter(p => p.line != null);
+  const edges     = props.filter(p => ['STRONG','LEAN'].includes(p.label));
+  const avgProj   = props.length ? (props.reduce((s,p)=>s+(p.projected_ks||0),0)/props.length).toFixed(1) : '—';
+  const bestEdge  = edges.length ? Math.max(...edges.map(p=>p.best_edge||0)).toFixed(3) : '—';
+
+  el.innerHTML =
+    sc(props.length,'PITCHERS') +
+    sc(withLine.length,'W/ LINES') +
+    sc(edges.length,'EDGES','pos') +
+    sc(avgProj,'AVG PROJ K') +
+    sc(bestEdge!=='—'?'+'+(parseFloat(bestEdge)*100).toFixed(1)+'%':'—','BEST EDGE','warn');
+
+  // Best bet cards
+  const bestCards = [...edges].sort((a,b)=>(b.best_edge||0)-(a.best_edge||0)).slice(0,4);
+  document.getElementById('kprops-best').innerHTML = bestCards.length
+    ? bestCards.map(kpropCard).join('')
+    : '<div class="empty">No K edges today</div>';
+
+  // Full table
+  document.getElementById('kprops-tbody').innerHTML = [...props].map(p => {
+    const cls   = p.label==='STRONG'?'strong-col':p.label==='LEAN'?'lean-col':'dim';
+    const proj  = p.projected_ks != null ? p.projected_ks.toFixed(1) : '—';
+    const range = p.k_low_25 != null ? `${p.k_low_25}–${p.k_high_75}` : '—';
+    const line  = p.line != null ? p.line : '—';
+    const ovP   = p.over_prob  != null ? (p.over_prob*100).toFixed(0)+'%'  : '—';
+    const unP   = p.under_prob != null ? (p.under_prob*100).toFixed(0)+'%' : '—';
+    const edge  = p.best_edge  != null ? (p.best_edge>=0?'+':'')+(p.best_edge*100).toFixed(1)+'%' : '—';
+    const bet   = p.direction !== 'NONE' && p.direction !== 'NO LINE'
+      ? `${p.direction} ${p.line}` : '—';
+    const ovC   = p.edge_over  > 0.04 ? 'pos' : p.edge_over  < -0.02 ? 'neg' : '';
+    const unC   = p.edge_under > 0.04 ? 'pos' : p.edge_under < -0.02 ? 'neg' : '';
+    const k9str = p.blended_k9 ? p.blended_k9.toFixed(1)+' k/9' : '—';
+    return `<tr>
+      <td class="mono dim" style="font-size:10px">${(p.game_time||'').replace(' CT','')}</td>
+      <td><strong>${p.pitcher||'—'}</strong></td>
+      <td class="dim" style="font-size:10px">${p.team||''} vs ${p.opponent||''}</td>
+      <td class="tc mono hi">${proj}</td>
+      <td class="tc mono dim" style="font-size:10px">${range}</td>
+      <td class="tc mono">${line}</td>
+      <td class="tc mono ${ovC}">${ovP}</td>
+      <td class="tc mono ${unC}">${unP}</td>
+      <td class="tc mono ${cls}">${edge}</td>
+      <td class="mono" style="font-size:10px">${bet}</td>
+      <td class="mono dim" style="font-size:9px">${k9str}</td>
+    </tr>`;
+  }).join('') || '<tr><td colspan="11" class="empty">No pitchers</td></tr>';
+}
+
+function kpropCard(p) {
+  const cls   = p.label==='STRONG' ? 'strong' : 'lean';
+  const ecol  = p.label==='STRONG' ? 'strong-col' : 'lean-col';
+  const isOver = p.direction === 'OVER';
+  const bet   = `${p.direction} ${p.line} K`;
+  const edge  = p.best_edge != null ? (p.best_edge>=0?'+':'')+(p.best_edge*100).toFixed(1)+'%' : '—';
+  const prob  = isOver ? p.over_prob : p.under_prob;
+  const impl  = isOver ? p.impl_over : p.impl_under;
+  const probPct  = prob  != null ? (prob*100).toFixed(0)+'%' : '—';
+  const implPct  = impl  != null ? (impl*100).toFixed(0)+'%' : '—';
+  const ovBarW   = Math.round((p.over_prob||0)*100);
+  const unBarW   = Math.round((p.under_prob||0)*100);
+  const range = p.k_low_25 != null ? `${p.k_low_25}–${p.k_high_75} (25/75 pct)` : '';
+  const opp_k = p.opp_k_pct ? `opp k% ${p.opp_k_pct}%` : '';
+  return `<div class="bet-card edge-${cls}" style="padding:0">
+    <div class="bc-top">
+      <div>
+        <span class="bc-matchup">${p.pitcher}</span>
+        <span class="bc-meta" style="margin-left:6px">${p.team} vs ${p.opponent} · ${(p.game_time||'').replace(' CT','')}</span>
+      </div>
+      <div class="bc-call">
+        <span class="bc-meta">K PROP</span>
+        <span class="bc-line ${ecol}">${bet}</span>
+        <span class="bc-edge ${ecol}">${edge}</span>
+        ${p.label==='STRONG'?'<span class="tag tag-strong">STRONG</span>':'<span class="tag tag-lean">LEAN</span>'}
+      </div>
+    </div>
+    <div style="padding:10px 12px">
+      <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:4px">
+        <div class="mono hi" style="font-size:28px;font-weight:300;line-height:1">${p.projected_ks!=null?p.projected_ks.toFixed(1):'—'}</div>
+        <div>
+          <div class="mono" style="font-size:10px">projected K</div>
+          <div class="mono dim" style="font-size:9px">${range}</div>
+        </div>
+      </div>
+      <div class="kprop-bar-wrap">
+        <div class="kprop-bar-under" style="width:${unBarW}%"></div>
+        <div class="kprop-bar-over"  style="width:${ovBarW}%"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-family:var(--mono);font-size:9px;color:var(--t3);margin-bottom:6px">
+        <span>UNDER ${(p.under_prob*100||0).toFixed(0)}%</span>
+        <span>OVER ${(p.over_prob*100||0).toFixed(0)}%</span>
+      </div>
+    </div>
+    <div class="kprop-data">
+      <div class="kprop-cell"><div class="v ${ecol}">${probPct}</div><div class="l">our prob</div></div>
+      <div class="kprop-cell"><div class="v dim">${implPct}</div><div class="l">implied</div></div>
+      <div class="kprop-cell"><div class="v ${ecol}">${edge}</div><div class="l">edge</div></div>
+      <div class="kprop-cell"><div class="v dim">${p.blended_k9!=null?p.blended_k9.toFixed(1):'—'}</div><div class="l">k/9 blend</div></div>
+    </div>
+  </div>`;
+}
+
+// ── BULLPEN REPORT ───────────────────────────────────────────────────────────
+function renderBullpen() {
+  const el = document.getElementById('bullpen-stats');
+  if (!el) return;
+  const bp = DATA.bullpen;
+
+  if (!bp.length) {
+    el.innerHTML = sc('—','TEAMS')+sc('—','ELITE')+sc('—','POOR')+sc('—','HEAVY USE')+sc('—','AVG ERA');
+    document.getElementById('bullpen-matchups').innerHTML = '<div class="empty">No bullpen data — run model to generate bullpen_report.json</div>';
+    document.getElementById('bullpen-tbody').innerHTML = '<tr><td colspan="8" class="empty">No data</td></tr>';
+    return;
+  }
+
+  const elite  = bp.filter(t=>t.quality==='ELITE').length;
+  const poor   = bp.filter(t=>t.quality==='POOR').length;
+  const heavy  = bp.filter(t=>t.fatigue==='HEAVY'||t.fatigue==='TIRED').length;
+  const avgERA = (bp.reduce((s,t)=>s+t.era,0)/bp.length).toFixed(2);
+
+  el.innerHTML =
+    sc(bp.length,'TEAMS') +
+    sc(elite,'ELITE','pos') +
+    sc(poor,'POOR','neg') +
+    sc(heavy,'TIRED/HEAVY','warn') +
+    sc(avgERA,'AVG BP ERA');
+
+  // Matchup differentials — pair today's games
+  const matchups = DATA.games.map(g => {
+    const hBP = bp.find(t=>t.team===g.home_abbr);
+    const aBP = bp.find(t=>t.team===g.away_abbr);
+    if (!hBP || !aBP) return null;
+    const eraDiff = (aBP.era - hBP.era).toFixed(2);
+    const adv = Math.abs(parseFloat(eraDiff)) >= 0.5
+      ? (parseFloat(eraDiff)>0 ? g.home_abbr : g.away_abbr) : null;
+    return { g, hBP, aBP, eraDiff, adv };
+  }).filter(Boolean);
+
+  document.getElementById('bullpen-matchups').innerHTML = matchups.length
+    ? `<div class="bp-matchup-grid">${matchups.map(m => {
+        const advStr = m.adv ? `<span class="pos" style="font-size:9px">▲ ${m.adv} pen advantage</span>` : '<span class="dim" style="font-size:9px">even matchup</span>';
+        function teamRow(bpd) {
+          const qcls  = bpd.quality.toLowerCase();
+          const fcls  = bpd.fatigue.toLowerCase();
+          const eraC  = bpd.era < 3.5 ? 'pos' : bpd.era > 4.8 ? 'neg' : '';
+          return `<div class="bp-team-row">
+            <span class="bp-abbr">${bpd.team}</span>
+            <span class="mono ${eraC}" style="min-width:36px">${bpd.era.toFixed(2)}</span>
+            <span class="mono dim" style="min-width:36px">${bpd.whip.toFixed(2)}</span>
+            <span class="bp-badge ${qcls}">${bpd.quality}</span>
+            <span class="bp-badge ${fcls}">${bpd.fatigue}</span>
+            <span class="mono dim" style="font-size:9px">${bpd.innings_3d}ip L3</span>
+          </div>`;
+        }
+        return `<div class="bp-matchup-card">
+          <div class="bp-matchup-head">${m.g.away_abbr} @ ${m.g.home_abbr} <span class="mono dim" style="font-size:10px">${(m.g.game_time_ct||'').replace(' CT','')}</span></div>
+          ${teamRow(m.aBP)}
+          ${teamRow(m.hBP)}
+          <div style="margin-top:6px;font-family:var(--mono);font-size:9px">${advStr} · ERA diff: <span class="${Math.abs(parseFloat(m.eraDiff))>=0.5?'warn':'dim'}">${parseFloat(m.eraDiff)>=0?'+':''}${m.eraDiff}</span></div>
+        </div>`;
+      }).join('')}</div>`
+    : '<div class="empty">No matchup data</div>';
+
+  // Full table — sorted by ERA
+  document.getElementById('bullpen-tbody').innerHTML = [...bp]
+    .sort((a,b)=>a.era-b.era)
+    .map(t => {
+      const eraC  = t.era < 3.5 ? 'pos' : t.era > 4.8 ? 'neg' : '';
+      const lgC   = t.era_vs_lg < -0.3 ? 'pos' : t.era_vs_lg > 0.3 ? 'neg' : 'dim';
+      const k9C   = t.k9_vs_lg  >  0.5 ? 'pos' : t.k9_vs_lg  < -0.5 ? 'neg' : '';
+      const fatC  = t.fatigue==='HEAVY'||t.fatigue==='TIRED'?'warn':t.fatigue==='FRESH'?'pos':'dim';
+      const qcls  = t.quality==='ELITE'?'pos':t.quality==='POOR'?'neg':t.quality==='GOOD'?'hi':'dim';
+      return `<tr>
+        <td><strong>${t.team}</strong></td>
+        <td class="tc mono ${eraC}">${t.era.toFixed(2)}</td>
+        <td class="tc mono ${lgC}">${t.era_vs_lg>=0?'+':''}${t.era_vs_lg.toFixed(2)}</td>
+        <td class="tc mono dim">${t.whip.toFixed(2)}</td>
+        <td class="tc mono ${k9C}">${t.k9.toFixed(1)}</td>
+        <td class="tc mono dim">${t.innings_3d}</td>
+        <td class="tc mono ${fatC}">${t.fatigue}</td>
+        <td class="tc mono ${qcls}">${t.quality}</td>
+      </tr>`;
+    }).join('') || '<tr><td colspan="8" class="empty">No bullpen data</td></tr>';
 }
 
 init();
