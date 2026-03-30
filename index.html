@@ -2168,7 +2168,33 @@ async function renderStandings() {
     console.log('[standings] available divKeys:', [...new Set(stdCache.map(t => JSON.stringify(t.divKey)))].join(', '));
   }
 
-  // Group by division
+  // For ALL view — single sorted table by pct, no division grouping
+  if (stdLeague === 'both') {
+    const allRows = [...filtered].sort((a,b) => parseFloat(b.pct) - parseFloat(a.pct)).map(t => {
+      const pc = parseFloat(t.pct) >= .550 ? 'pos' : parseFloat(t.pct) <= .450 ? 'neg' : '';
+      const rc = t.rd > 20 ? 'pos' : t.rd < -20 ? 'neg' : 'dim';
+      return `<tr>
+        <td>${t.team}</td>
+        <td class="mono dim" style="font-size:10px">${t.divKey}</td>
+        <td>${t.W}</td><td class="dim">${t.L}</td>
+        <td class="mono ${pc}">${t.pct}</td>
+        <td class="mono ${rc}">${t.rd > 0 ? '+' : ''}${t.rd}</td>
+        <td class="mono dim">${t.pyth}</td><td class="mono">${t.L10}</td>
+      </tr>`;
+    }).join('');
+    document.getElementById('standings-wrap').innerHTML = `
+      <div class="div-block" style="grid-column:1/-1">
+        <div class="div-label">ALL TEAMS — BY WIN PCT</div>
+        <table class="std-tbl">
+          <thead><tr><th>TEAM</th><th>DIV</th><th>W</th><th>L</th><th>PCT</th><th>+/-</th><th>PYTH</th><th>L10</th></tr></thead>
+          <tbody>${allRows}</tbody>
+        </table>
+      </div>`;
+    if (!stdListenersAdded) { stdListenersAdded = true; addStdListeners(); }
+    return;
+  }
+
+  // For AL/NL/division views — group by division
   const divs = {};
   filtered.forEach(t => {
     if (!divs[t.divKey]) divs[t.divKey] = [];
@@ -2179,7 +2205,6 @@ async function renderStandings() {
   const divOrder = ['AL East','AL Central','AL West','NL East','NL Central','NL West'];
   const sortedDivs = Object.entries(divs).sort(([a],[b]) => {
     const ai = divOrder.indexOf(a), bi = divOrder.indexOf(b);
-    // Unknown keys go to end; known keys sort by position
     if (ai === -1 && bi === -1) return a.localeCompare(b);
     if (ai === -1) return 1;
     if (bi === -1) return -1;
@@ -2198,26 +2223,27 @@ async function renderStandings() {
       </tr>`;
     }).join('');
     return `<div class="div-block">
-      <div class="div-label">${divKey.toUpperCase()}</div>
+      <div class="div-label">${divKey}</div>
       <table class="std-tbl">
         <thead><tr><th>TEAM</th><th>W</th><th>L</th><th>PCT</th><th>GB</th><th>+/-</th><th>PYTH</th><th>L10</th></tr></thead>
         <tbody>${rows}</tbody>
       </table>
     </div>`;
-  }).join('') || '<div class="empty">No standings data</div>';
+  }).join('') || '<div class="empty">No standings data — check console for divKeys</div>';
 
   // Add filter listeners once only
-  if (!stdListenersAdded) {
-    stdListenersAdded = true;
-    document.querySelectorAll('#standings-filters .fb').forEach(btn => {
-      btn.addEventListener('click', () => {
-        document.querySelectorAll('#standings-filters .fb').forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        stdLeague = btn.dataset.league;
-        renderStandings();  // no cache wipe — just re-filter
-      });
+  if (!stdListenersAdded) { stdListenersAdded = true; addStdListeners(); }
+}
+
+function addStdListeners() {
+  document.querySelectorAll('#standings-filters .fb').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#standings-filters .fb').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      stdLeague = btn.dataset.league;
+      renderStandings();
     });
-  }
+  });
 }
 
 // ── TRENDS ───────────────────────────────────────────────────────────────────
