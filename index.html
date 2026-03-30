@@ -3026,7 +3026,10 @@ function f5BetCard(g) {
 function renderKProps() {
   const el = document.getElementById('kprops-stats');
   if (!el) return;
-  const props = DATA.kprops;
+  // Filter to today's date only, fall back to all if nothing matches
+  const today = DATA.date || todayStr();
+  let props = DATA.kprops.filter(p => p.game_date === today);
+  if (!props.length) props = DATA.kprops; // fallback to all
 
   if (!props.length) {
     el.innerHTML = sc('—','PITCHERS')+sc('—','EDGES')+sc('—','AVG PROJ')+sc('—','BEST EDGE');
