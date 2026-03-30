@@ -2113,14 +2113,16 @@ async function renderStandings() {
   if (!stdCache) {
     wrap.innerHTML = '<div class="empty"><div class="spinner"></div>loading standings...</div>';
     try {
+      console.log('[standings] fetching...');
       const r = await fetch('https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason&hydrate=team');
+      console.log('[standings] response status:', r.status);
       const data = await r.json();
+      console.log('[standings] records:', data.records?.length);
       stdCache = [];
       for (const div of (data.records || [])) {
         const dn  = div.division?.name || '';
         const lid = div.league?.id || 0;
         const lg  = (lid === 103 || dn.includes('American')) ? 'AL' : 'NL';
-        // Extract just East/Central/West from full name like "American League East"
         const dvMatch = dn.match(/(East|Central|West)$/i);
         const dv = dvMatch ? dvMatch[1] : dn;
         const divKey = lg + ' ' + dv;
@@ -2139,7 +2141,11 @@ async function renderStandings() {
           });
         }
       }
+      console.log('[standings] cached', stdCache.length, 'teams');
+      console.log('[standings] divKeys:', [...new Set(stdCache.map(t=>t.divKey))].sort());
     } catch(e) {
+      console.error('[standings] fetch failed:', e.message);
+      wrap.innerHTML = '<div class="empty">Standings fetch failed: ' + e.message + '</div>';
       stdCache = SAMPLE_STD;
     }
     // Register filter buttons once after first load
