@@ -1195,9 +1195,9 @@ tbody td {
       <table>
         <thead><tr>
           <th>TIME</th><th>PITCHER</th><th>VS</th>
-          <th class="tc">PROJ K</th><th class="tc">RANGE</th>
+          <th class="tc">PROJ K</th><th class="tc">RANGE</th><th class="tc">EXP IP</th>
           <th class="tc">LINE</th><th class="tc">OVER%</th><th class="tc">UNDER%</th>
-          <th class="tc">EDGE</th><th>BET</th><th>CONF</th>
+          <th class="tc">EDGE</th><th>BET</th><th>UMP</th>
         </tr></thead>
         <tbody id="kprops-tbody"></tbody>
       </table>
@@ -3061,6 +3061,7 @@ function renderKProps() {
     const cls   = p.label==='STRONG'?'strong-col':p.label==='LEAN'?'lean-col':'dim';
     const proj  = p.projected_ks != null ? p.projected_ks.toFixed(1) : '—';
     const range = p.k_low_25 != null ? `${p.k_low_25}–${p.k_high_75}` : '—';
+    const expIp = p.expected_ip != null ? p.expected_ip.toFixed(1) : '—';
     const line  = p.line != null ? p.line : '—';
     const ovP   = p.over_prob  != null ? (p.over_prob*100).toFixed(0)+'%'  : '—';
     const unP   = p.under_prob != null ? (p.under_prob*100).toFixed(0)+'%' : '—';
@@ -3069,19 +3070,24 @@ function renderKProps() {
       ? `${p.direction} ${p.line}` : '—';
     const ovC   = p.edge_over  > 0.04 ? 'pos' : p.edge_over  < -0.02 ? 'neg' : '';
     const unC   = p.edge_under > 0.04 ? 'pos' : p.edge_under < -0.02 ? 'neg' : '';
-    const k9str = p.blended_k9 ? p.blended_k9.toFixed(1)+' k/9' : '—';
+    const umpStr = p.umpire ? p.umpire.split(' ').pop() : '—';
+    const umpAdj = p.ump_adj != null && p.ump_adj !== 1.0
+      ? (p.ump_adj > 1 ? '<span class="pos">↑</span>' : '<span class="neg">↓</span>') + ' ' + umpStr
+      : `<span class="dim">${umpStr}</span>`;
+    const pkAdj  = p.park_adj != null ? (p.park_adj > 1.02 ? '↑' : p.park_adj < 0.98 ? '↓' : '') : '';
     return `<tr>
       <td class="mono dim" style="font-size:10px">${(p.game_time||'').replace(' CT','')}</td>
       <td><strong>${p.pitcher||'—'}</strong></td>
-      <td class="dim" style="font-size:10px">${p.team||''} vs ${p.opponent||''}</td>
+      <td class="dim" style="font-size:10px">${p.team||''} vs ${p.opponent||''} ${pkAdj?`<span class="warn">${pkAdj}park</span>`:''}</td>
       <td class="tc mono hi">${proj}</td>
       <td class="tc mono dim" style="font-size:10px">${range}</td>
+      <td class="tc mono dim">${expIp}</td>
       <td class="tc mono">${line}</td>
       <td class="tc mono ${ovC}">${ovP}</td>
       <td class="tc mono ${unC}">${unP}</td>
       <td class="tc mono ${cls}">${edge}</td>
       <td class="mono" style="font-size:10px">${bet}</td>
-      <td class="mono dim" style="font-size:9px">${k9str}</td>
+      <td class="mono dim" style="font-size:9px">${umpAdj}</td>
     </tr>`;
   }).join('') || '<tr><td colspan="11" class="empty">No pitchers</td></tr>';
 }
