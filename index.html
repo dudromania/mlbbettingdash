@@ -1110,6 +1110,24 @@ tbody td {
     <div id="standings-wrap" class="standings-wrap"></div>
   </div>
 
+  <!-- F5 INNINGS -->
+  <div id="tab-f5" class="tab-panel">
+    <div id="f5-stats" class="stat-row"></div>
+    <div class="sec">F5 Best Bets</div>
+    <div id="f5-best-bets" class="bet-list"></div>
+    <div class="sec" style="margin-top:16px">All F5 Predictions</div>
+    <div class="tbl-wrap">
+      <table class="tbl">
+        <thead><tr>
+          <th>Time</th><th>Matchup</th><th>SP</th>
+          <th>F5 Margin</th><th>F5 Total</th><th>Win%</th>
+          <th>F5 RL</th><th>F5 O/U</th><th>RL Edge</th><th>O/U Edge</th>
+        </tr></thead>
+        <tbody id="f5-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
   <!-- NRFI -->
   <div id="tab-nrfi" class="tab-panel">
     <div id="nrfi-list"></div>
@@ -2103,8 +2121,15 @@ async function renderStandings() {
         const dn  = div.division?.name || '';
         const lid = div.league?.id || div.division?.parentOrganization?.id || 0;
         const lg  = (lid === 103 || dn.includes('American') || dn.startsWith('AL')) ? 'AL' : 'NL';
-        const dv  = dn.replace('American League ','').replace('National League ','')
-                      .replace('AL ','').replace('NL ','').trim();
+        // MLB API returns e.g. "American League East" — strip prefix
+        let dv = dn.replace('American League ','').replace('National League ','')
+                   .replace('AL ','').replace('NL ','').trim();
+        // If stripping didn't work, grab the last word
+        if (!dv || dv === dn || !['East','Central','West'].includes(dv)) {
+          const words = dn.trim().split(' ');
+          const last = words[words.length - 1];
+          if (['East','Central','West'].includes(last)) dv = last;
+        }
         div.teamRecords?.forEach(tr => {
           const rs = parseInt(tr.runsScored||0), ra = parseInt(tr.runsAllowed||0);
           const w = tr.wins, l = tr.losses, g = w + l;
@@ -2136,11 +2161,11 @@ async function renderStandings() {
   } else if (stdLeague === 'AL' || stdLeague === 'NL') {
     filtered = stdCache.filter(t => t.lg === stdLeague);
   } else {
-    filtered = stdCache.filter(t =>
-      t.divKey === stdLeague ||
-      t.divKey.toLowerCase() === stdLeague.toLowerCase()
-    );
-    console.log('[standings] filter:', stdLeague, '→', filtered.length, 'teams');
+    // Normalize both sides — trim whitespace, case-insensitive
+    const target = stdLeague.trim().toLowerCase();
+    filtered = stdCache.filter(t => t.divKey.trim().toLowerCase() === target);
+    console.log('[standings] filter:', JSON.stringify(stdLeague), '→', filtered.length, 'teams');
+    console.log('[standings] available divKeys:', [...new Set(stdCache.map(t => JSON.stringify(t.divKey)))].join(', '));
   }
 
   // Group by division
@@ -2152,7 +2177,14 @@ async function renderStandings() {
 
   // Sort divisions: AL before NL, then East/Central/West
   const divOrder = ['AL East','AL Central','AL West','NL East','NL Central','NL West'];
-  const sortedDivs = Object.entries(divs).sort(([a],[b]) => divOrder.indexOf(a) - divOrder.indexOf(b));
+  const sortedDivs = Object.entries(divs).sort(([a],[b]) => {
+    const ai = divOrder.indexOf(a), bi = divOrder.indexOf(b);
+    // Unknown keys go to end; known keys sort by position
+    if (ai === -1 && bi === -1) return a.localeCompare(b);
+    if (ai === -1) return 1;
+    if (bi === -1) return -1;
+    return ai - bi;
+  });
 
   document.getElementById('standings-wrap').innerHTML = sortedDivs.map(([divKey, teams]) => {
     const rows = teams.sort((a,b) => parseFloat(b.pct) - parseFloat(a.pct)).map(t => {
