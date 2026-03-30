@@ -2102,30 +2102,16 @@ async function renderStandings() {
       data.records?.forEach(div => {
         const dn  = div.division?.name || '';
         const lid = div.league?.id || div.division?.parentOrganization?.id || 0;
-        // leagueId 103 = AL, 104 = NL. Fall back to name matching
         const lg  = (lid === 103 || dn.includes('American') || dn.startsWith('AL')) ? 'AL' : 'NL';
-        // MLB API returns "American League East", "National League West" etc
-        // Strip league prefix to get just "East", "Central", "West"
-        let dv = dn
-          .replace(/^American League /i, '')
-          .replace(/^National League /i, '')
-          .replace(/^AL /i, '')
-          .replace(/^NL /i, '')
-          .trim();
-        // Normalize to title case East/Central/West
-        if (!dv || dv === dn) {
-          // Fallback: extract last word
-          const parts = dn.split(' ');
-          dv = parts[parts.length - 1] || 'Unknown';
-        }
-        const divKey = lg + ' ' + dv; // e.g. "AL East"
+        const dv  = dn.replace('American League ','').replace('National League ','')
+                      .replace('AL ','').replace('NL ','').trim();
         div.teamRecords?.forEach(tr => {
           const rs = parseInt(tr.runsScored||0), ra = parseInt(tr.runsAllowed||0);
           const w = tr.wins, l = tr.losses, g = w + l;
           const L10 = tr.records?.splitRecords?.find(x => x.type === 'lastTen');
           stdCache.push({
             team: tr.team.abbreviation, lg, dv,
-            divKey,   // e.g. "AL East"
+            divKey: lg + ' ' + dv,   // e.g. "AL East"
             W:w, L:l, G:g,
             pct: (w / (g||1)).toFixed(3),
             GB:  tr.divisionGamesBack || '—',
@@ -2138,6 +2124,9 @@ async function renderStandings() {
     } catch {
       stdCache = SAMPLE_STD;
     }
+    // Debug: log what divKeys were produced
+    const keys = [...new Set(stdCache.map(t => t.divKey))].sort();
+    console.log('[standings] divKeys:', keys);
   }
 
   // Filter: 'both' = all, 'AL'/'NL' = full league, 'AL East' etc = single division
@@ -2147,9 +2136,11 @@ async function renderStandings() {
   } else if (stdLeague === 'AL' || stdLeague === 'NL') {
     filtered = stdCache.filter(t => t.lg === stdLeague);
   } else {
-    // Case-insensitive division match — handles any casing from API
-    const target = stdLeague.toLowerCase();
-    filtered = stdCache.filter(t => t.divKey.toLowerCase() === target);
+    filtered = stdCache.filter(t =>
+      t.divKey === stdLeague ||
+      t.divKey.toLowerCase() === stdLeague.toLowerCase()
+    );
+    console.log('[standings] filter:', stdLeague, '→', filtered.length, 'teams');
   }
 
   // Group by division
