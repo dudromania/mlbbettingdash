@@ -2107,143 +2107,93 @@ function renderBatters() {
 let stdLeague = 'both', stdCache = null, stdListenersAdded = false;
 
 async function renderStandings() {
-  // Fetch once per session — don't wipe cache on filter change
+  const wrap = document.getElementById('standings-wrap');
+
+  // Fetch once per session
   if (!stdCache) {
-    document.getElementById('standings-wrap').innerHTML =
-      '<div class="empty"><div class="spinner"></div>loading standings...</div>';
+    wrap.innerHTML = '<div class="empty"><div class="spinner"></div>loading standings...</div>';
     try {
-      const r = await fetch(
-        'https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason&hydrate=team'
-      );
+      const r = await fetch('https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason&hydrate=team');
       const data = await r.json();
       stdCache = [];
-      data.records?.forEach(div => {
+      for (const div of (data.records || [])) {
         const dn  = div.division?.name || '';
-        const lid = div.league?.id || div.division?.parentOrganization?.id || 0;
-        const lg  = (lid === 103 || dn.includes('American') || dn.startsWith('AL')) ? 'AL' : 'NL';
-        // MLB API returns e.g. "American League East" — strip prefix
-        let dv = dn.replace('American League ','').replace('National League ','')
-                   .replace('AL ','').replace('NL ','').trim();
-        // If stripping didn't work, grab the last word
-        if (!dv || dv === dn || !['East','Central','West'].includes(dv)) {
-          const words = dn.trim().split(' ');
-          const last = words[words.length - 1];
-          if (['East','Central','West'].includes(last)) dv = last;
-        }
-        div.teamRecords?.forEach(tr => {
+        const lid = div.league?.id || 0;
+        const lg  = (lid === 103 || dn.includes('American')) ? 'AL' : 'NL';
+        // Extract just East/Central/West from full name like "American League East"
+        const dvMatch = dn.match(/(East|Central|West)$/i);
+        const dv = dvMatch ? dvMatch[1] : dn;
+        const divKey = lg + ' ' + dv;
+        for (const tr of (div.teamRecords || [])) {
           const rs = parseInt(tr.runsScored||0), ra = parseInt(tr.runsAllowed||0);
-          const w = tr.wins, l = tr.losses, g = w + l;
+          const w = tr.wins||0, l = tr.losses||0, g = w + l;
           const L10 = tr.records?.splitRecords?.find(x => x.type === 'lastTen');
           stdCache.push({
-            team: tr.team.abbreviation, lg, dv,
-            divKey: lg + ' ' + dv,   // e.g. "AL East"
+            team: tr.team?.abbreviation||'?', lg, dv, divKey,
             W:w, L:l, G:g,
-            pct: (w / (g||1)).toFixed(3),
-            GB:  tr.divisionGamesBack || '—',
-            rs, ra, rd: rs - ra,
-            pyth: (rs+ra > 0 ? (rs**1.83 / (rs**1.83 + ra**1.83)) : 0.5).toFixed(3),
-            L10: L10 ? (L10.wins + '-' + L10.losses) : '—'
+            pct: g > 0 ? (w/g).toFixed(3) : '.000',
+            GB: tr.divisionGamesBack||'—',
+            rs, ra, rd: rs-ra,
+            pyth: (rs+ra>0 ? (rs**1.83/(rs**1.83+ra**1.83)) : 0.5).toFixed(3),
+            L10: L10 ? L10.wins+'-'+L10.losses : '—',
           });
-        });
-      });
-    } catch {
+        }
+      }
+    } catch(e) {
       stdCache = SAMPLE_STD;
     }
-    // Debug: log what divKeys were produced
-    const keys = [...new Set(stdCache.map(t => t.divKey))].sort();
-    console.log('[standings] divKeys:', keys);
+    // Register filter buttons once after first load
+    if (!stdListenersAdded) {
+      stdListenersAdded = true;
+      document.querySelectorAll('#standings-filters .fb').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('#standings-filters .fb').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          stdLeague = btn.dataset.league;
+          renderStandings();
+        });
+      });
+    }
   }
 
-  // Filter: 'both' = all, 'AL'/'NL' = full league, 'AL East' etc = single division
-  let filtered;
-  if (stdLeague === 'both') {
-    filtered = stdCache;
-  } else if (stdLeague === 'AL' || stdLeague === 'NL') {
-    filtered = stdCache.filter(t => t.lg === stdLeague);
-  } else {
-    // Normalize both sides — trim whitespace, case-insensitive
-    const target = stdLeague.trim().toLowerCase();
-    filtered = stdCache.filter(t => t.divKey.trim().toLowerCase() === target);
-    console.log('[standings] filter:', JSON.stringify(stdLeague), '→', filtered.length, 'teams');
-    console.log('[standings] available divKeys:', [...new Set(stdCache.map(t => JSON.stringify(t.divKey)))].join(', '));
+  // Apply filter
+  let filtered = stdCache;
+  if (stdLeague !== 'both') {
+    if (stdLeague === 'AL' || stdLeague === 'NL') {
+      filtered = stdCache.filter(t => t.lg === stdLeague);
+    } else {
+      filtered = stdCache.filter(t => t.divKey === stdLeague);
+    }
   }
 
-  // For ALL view — single sorted table by pct, no division grouping
+  // ALL view — single table sorted by pct
   if (stdLeague === 'both') {
-    const allRows = [...filtered].sort((a,b) => parseFloat(b.pct) - parseFloat(a.pct)).map(t => {
-      const pc = parseFloat(t.pct) >= .550 ? 'pos' : parseFloat(t.pct) <= .450 ? 'neg' : '';
-      const rc = t.rd > 20 ? 'pos' : t.rd < -20 ? 'neg' : 'dim';
-      return `<tr>
-        <td>${t.team}</td>
-        <td class="mono dim" style="font-size:10px">${t.divKey}</td>
-        <td>${t.W}</td><td class="dim">${t.L}</td>
-        <td class="mono ${pc}">${t.pct}</td>
-        <td class="mono ${rc}">${t.rd > 0 ? '+' : ''}${t.rd}</td>
-        <td class="mono dim">${t.pyth}</td><td class="mono">${t.L10}</td>
-      </tr>`;
+    const rows = [...filtered].sort((a,b)=>parseFloat(b.pct)-parseFloat(a.pct)).map(t=>{
+      const pc=parseFloat(t.pct)>=.550?'pos':parseFloat(t.pct)<=.450?'neg':'';
+      const rc=t.rd>20?'pos':t.rd<-20?'neg':'dim';
+      return `<tr><td>${t.team}</td><td class="mono dim" style="font-size:10px">${t.divKey}</td><td>${t.W}</td><td class="dim">${t.L}</td><td class="mono ${pc}">${t.pct}</td><td class="mono ${rc}">${t.rd>0?'+':''}${t.rd}</td><td class="mono dim">${t.pyth}</td><td class="mono">${t.L10}</td></tr>`;
     }).join('');
-    document.getElementById('standings-wrap').innerHTML = `
-      <div class="div-block" style="grid-column:1/-1">
-        <div class="div-label">ALL TEAMS — BY WIN PCT</div>
-        <table class="std-tbl">
-          <thead><tr><th>TEAM</th><th>DIV</th><th>W</th><th>L</th><th>PCT</th><th>+/-</th><th>PYTH</th><th>L10</th></tr></thead>
-          <tbody>${allRows}</tbody>
-        </table>
-      </div>`;
-    if (!stdListenersAdded) { stdListenersAdded = true; addStdListeners(); }
+    wrap.innerHTML = `<div class="div-block" style="grid-column:1/-1"><div class="div-label">ALL TEAMS — BY WIN PCT</div><table class="std-tbl"><thead><tr><th>TEAM</th><th>DIV</th><th>W</th><th>L</th><th>PCT</th><th>+/-</th><th>PYTH</th><th>L10</th></tr></thead><tbody>${rows}</tbody></table></div>`;
     return;
   }
 
-  // For AL/NL/division views — group by division
+  // Division grouped view
   const divs = {};
-  filtered.forEach(t => {
-    if (!divs[t.divKey]) divs[t.divKey] = [];
-    divs[t.divKey].push(t);
+  filtered.forEach(t => { if (!divs[t.divKey]) divs[t.divKey]=[]; divs[t.divKey].push(t); });
+  const order = ['AL East','AL Central','AL West','NL East','NL Central','NL West'];
+  const sorted = Object.entries(divs).sort(([a],[b])=>{
+    const ai=order.indexOf(a),bi=order.indexOf(b);
+    return ai===-1&&bi===-1?a.localeCompare(b):ai===-1?1:bi===-1?-1:ai-bi;
   });
 
-  // Sort divisions: AL before NL, then East/Central/West
-  const divOrder = ['AL East','AL Central','AL West','NL East','NL Central','NL West'];
-  const sortedDivs = Object.entries(divs).sort(([a],[b]) => {
-    const ai = divOrder.indexOf(a), bi = divOrder.indexOf(b);
-    if (ai === -1 && bi === -1) return a.localeCompare(b);
-    if (ai === -1) return 1;
-    if (bi === -1) return -1;
-    return ai - bi;
-  });
-
-  document.getElementById('standings-wrap').innerHTML = sortedDivs.map(([divKey, teams]) => {
-    const rows = teams.sort((a,b) => parseFloat(b.pct) - parseFloat(a.pct)).map(t => {
-      const pc = parseFloat(t.pct) >= .550 ? 'pos' : parseFloat(t.pct) <= .450 ? 'neg' : '';
-      const rc = t.rd > 20 ? 'pos' : t.rd < -20 ? 'neg' : 'dim';
-      return `<tr>
-        <td>${t.team}</td><td>${t.W}</td><td class="dim">${t.L}</td>
-        <td class="mono ${pc}">${t.pct}</td><td class="dim">${t.GB}</td>
-        <td class="mono ${rc}">${t.rd > 0 ? '+' : ''}${t.rd}</td>
-        <td class="mono dim">${t.pyth}</td><td class="mono">${t.L10}</td>
-      </tr>`;
+  wrap.innerHTML = sorted.map(([divKey, teams])=>{
+    const rows = teams.sort((a,b)=>parseFloat(b.pct)-parseFloat(a.pct)).map(t=>{
+      const pc=parseFloat(t.pct)>=.550?'pos':parseFloat(t.pct)<=.450?'neg':'';
+      const rc=t.rd>20?'pos':t.rd<-20?'neg':'dim';
+      return `<tr><td>${t.team}</td><td>${t.W}</td><td class="dim">${t.L}</td><td class="mono ${pc}">${t.pct}</td><td class="dim">${t.GB}</td><td class="mono ${rc}">${t.rd>0?'+':''}${t.rd}</td><td class="mono dim">${t.pyth}</td><td class="mono">${t.L10}</td></tr>`;
     }).join('');
-    return `<div class="div-block">
-      <div class="div-label">${divKey}</div>
-      <table class="std-tbl">
-        <thead><tr><th>TEAM</th><th>W</th><th>L</th><th>PCT</th><th>GB</th><th>+/-</th><th>PYTH</th><th>L10</th></tr></thead>
-        <tbody>${rows}</tbody>
-      </table>
-    </div>`;
-  }).join('') || '<div class="empty">No standings data — check console for divKeys</div>';
-
-  // Add filter listeners once only
-  if (!stdListenersAdded) { stdListenersAdded = true; addStdListeners(); }
-}
-
-function addStdListeners() {
-  document.querySelectorAll('#standings-filters .fb').forEach(btn => {
-    btn.addEventListener('click', () => {
-      document.querySelectorAll('#standings-filters .fb').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      stdLeague = btn.dataset.league;
-      renderStandings();
-    });
-  });
+    return `<div class="div-block"><div class="div-label">${divKey}</div><table class="std-tbl"><thead><tr><th>TEAM</th><th>W</th><th>L</th><th>PCT</th><th>GB</th><th>+/-</th><th>PYTH</th><th>L10</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+  }).join('') || '<div class="empty">No data for this filter</div>';
 }
 
 // ── TRENDS ───────────────────────────────────────────────────────────────────
