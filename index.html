@@ -475,6 +475,14 @@ tbody td {
 }
 .game-expand-toggle:hover { background: var(--s2); }
 .ge-arrow { font-size: 9px; color: var(--t3); transition: transform .15s; }
+.series-badge {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--t3);
+  margin-left: 8px;
+  vertical-align: middle;
+}
 .ge-arrow.open { transform: rotate(90deg); }
 
 @media(max-width:700px){
@@ -1015,31 +1023,35 @@ tbody td {
 <div class="drawer-overlay" id="overlay"></div>
 <nav class="drawer" id="drawer">
   <div class="drawer-section">
-    <div class="drawer-label">Output</div>
-    <div class="nav-direct active" data-tab="model">Model Output</div>
-    <div class="nav-direct" data-tab="games">Today's Games</div>
-    <div class="nav-direct" data-tab="nrfi">NRFI Matrix</div>
-    <div class="nav-direct" data-tab="f5">F5 Innings</div>
-  </div>
-  <div class="drawer-section">
-    <div class="drawer-label">Analysis</div>
-    <div class="nav-group-header" data-group="analysis">
-      Pitching &amp; Batting <span class="arr">›</span>
+    <div class="drawer-label">Model Output</div>
+    <div class="nav-group-header" data-group="model-output">
+      Predictions <span class="arr">›</span>
     </div>
-    <div class="nav-sub" id="group-analysis">
-      <div class="nav-item" data-tab="pitchers">Pitcher Stats</div>
-      <div class="nav-item" data-tab="kprops">K Strikeout Props</div>
-      <div class="nav-item" data-tab="batters">Batter Props</div>
-      <div class="nav-item" data-tab="bullpen">Bullpen Report</div>
+    <div class="nav-sub" id="group-model-output">
+      <div class="nav-item" data-tab="model">Full Game</div>
+      <div class="nav-item" data-tab="f5">First 5 Innings</div>
+      <div class="nav-item" data-tab="kprops">Pitcher K Props</div>
+      <div class="nav-item" data-tab="nrfi">NRFI Matrix</div>
     </div>
   </div>
   <div class="drawer-section">
-    <div class="drawer-label">League</div>
-    <div class="nav-group-header" data-group="league">
-      Standings &amp; Trends <span class="arr">›</span>
+    <div class="drawer-label">Today</div>
+    <div class="nav-group-header" data-group="today">
+      Schedule &amp; League <span class="arr">›</span>
     </div>
-    <div class="nav-sub" id="group-league">
+    <div class="nav-sub" id="group-today">
+      <div class="nav-item" data-tab="games">Today's Games</div>
       <div class="nav-item" data-tab="standings">Standings</div>
+    </div>
+  </div>
+  <div class="drawer-section">
+    <div class="drawer-label">Stats</div>
+    <div class="nav-group-header" data-group="stats">
+      Player &amp; Team Stats <span class="arr">›</span>
+    </div>
+    <div class="nav-sub" id="group-stats">
+      <div class="nav-item" data-tab="pitchers">Pitcher Stats</div>
+      <div class="nav-item" data-tab="bullpen">Bullpen Report</div>
       <div class="nav-item" data-tab="trends">Trends</div>
     </div>
   </div>
@@ -1255,7 +1267,7 @@ tbody td {
 
 <script>
 const DATA = { games:[], series:[], pitchers:[], history:[], nrfi:[], scores:[], kprops:[], bullpen:[], date:'' };
-const LABELS = { model:'MODEL OUTPUT', games:"TODAY'S GAMES", pitchers:'PITCHER STATS', batters:'BATTER PROPS', standings:'STANDINGS', trends:'TRENDS', nrfi:'NRFI MATRIX', f5:'F5 INNINGS', kprops:'K STRIKEOUT PROPS', bullpen:'BULLPEN REPORT', results:'MODEL PERFORMANCE' };
+const LABELS = { model:'FULL GAME PREDICTIONS', games:"TODAY'S GAMES", pitchers:'PITCHER STATS', batters:'BATTER PROPS', standings:'STANDINGS', trends:'SERIES TRACKING', nrfi:'NRFI MATRIX', f5:'FIRST 5 INNINGS', kprops:'K STRIKEOUT PROPS', bullpen:'BULLPEN REPORT', results:'MODEL PERFORMANCE' };
 
 async function loadJSON(path, fallback) {
   try {
@@ -1336,6 +1348,9 @@ document.querySelectorAll('.nav-group-header').forEach(h => {
     h.classList.toggle('open');
   });
 });
+// Open model-output group by default
+document.getElementById('group-model-output')?.classList.add('open');
+document.querySelector('[data-group="model-output"]')?.classList.add('open');
 
 // ── RENDER ───────────────────────────────────────────────────────────────────
 function renderAll() {
@@ -1612,12 +1627,29 @@ function renderGames() {
       </div>`;
     }
 
+    // Series context for this game
+    const sm = DATA.series.find(s =>
+      (s.home_abbr===g.home_abbr && s.away_abbr===g.away_abbr) ||
+      (s.home_abbr===g.away_abbr && s.away_abbr===g.home_abbr)
+    );
+    let seriesBadge = '';
+    if (sm) {
+      const hw = sm.home_wins||0, aw = sm.away_wins||0;
+      const gn = (sm.games_played||0)+1;
+      const tot = sm.total_games||3;
+      const lead = hw > aw ? sm.home_abbr : aw > hw ? sm.away_abbr : null;
+      const leadStr = lead
+        ? `<span class="pos">${lead} leads ${Math.max(hw,aw)}-${Math.min(hw,aw)}</span>`
+        : `<span class="dim">tied ${hw}-${aw}</span>`;
+      seriesBadge = `<div class="series-badge">gm ${gn}/${tot} · ${leadStr}</div>`;
+    }
+
     return `<div class="game-block" id="gb-${i}">
       <div class="game-row game-expand-toggle ${strong?'has-strong':hasEdge?'has-edge':''}" onclick="toggleGame(${i}, '${g.home_abbr}', '${g.away_abbr}')">
         <span class="mono dim" style="font-size:10px">${g.game_time_ct||'TBD'}</span>
         <div class="matchup-cell">
           <div class="teams">${g.away_abbr} <span class="dim">@</span> ${g.home_abbr} <span class="ge-arrow" id="ga-${i}">›</span></div>
-          <div class="pitchers">${aCard?aCard.name.split(' ').pop():(g.away_sp||'TBD')} / ${hCard?hCard.name.split(' ').pop():(g.home_sp||'TBD')}</div>
+          <div class="pitchers">${aCard?aCard.name.split(' ').pop():(g.away_sp||'TBD')} / ${hCard?hCard.name.split(' ').pop():(g.home_sp||'TBD')} ${seriesBadge}</div>
         </div>
         <div class="hide-sm">
           <div class="prob-labels"><span>${g.away_abbr} ${ap}%</span><span>${g.home_abbr} ${hp}%</span></div>
