@@ -3126,7 +3126,7 @@ function kpropCard(p) {
       <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:4px">
         <div class="mono hi" style="font-size:28px;font-weight:300;line-height:1">${p.projected_ks!=null?p.projected_ks.toFixed(1):'—'}</div>
         <div>
-          <div class="mono" style="font-size:10px">projected K</div>
+          <div class="mono" style="font-size:10px">projected K <span class="dim">· Vegas line: <span style="color:var(--t1)">${p.line!=null?p.line:'no line'}</span></span></div>
           <div class="mono dim" style="font-size:9px">${range}</div>
         </div>
       </div>
@@ -3236,4 +3236,3 @@ fetchLiveScores();
 </script>
 </body>
 </html>
-
