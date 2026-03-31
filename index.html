@@ -3026,10 +3026,16 @@ function f5BetCard(g) {
 function renderKProps() {
   const el = document.getElementById('kprops-stats');
   if (!el) return;
-  // Filter to today's date only, fall back to all if nothing matches
+  // Filter to today's date only
   const today = DATA.date || todayStr();
   let props = DATA.kprops.filter(p => p.game_date === today);
-  if (!props.length) props = DATA.kprops; // fallback to all
+  // If no date match, try matching against today's game matchups
+  if (!props.length && DATA.games.length) {
+    const todayTeams = new Set(DATA.games.flatMap(g => [g.home_abbr, g.away_abbr]));
+    props = DATA.kprops.filter(p => todayTeams.has(p.team));
+  }
+  // Last resort fallback — show all but cap at reasonable number
+  if (!props.length) props = DATA.kprops.slice(0, 30);
 
   if (!props.length) {
     el.innerHTML = sc('—','PITCHERS')+sc('—','EDGES')+sc('—','AVG PROJ')+sc('—','BEST EDGE');
@@ -3113,9 +3119,6 @@ function kpropCard(p) {
         <span class="bc-meta" style="margin-left:6px">${p.team} vs ${p.opponent} · ${(p.game_time||'').replace(' CT','')}</span>
       </div>
       <div class="bc-call">
-        <span class="bc-meta">K PROP</span>
-        <span class="bc-line ${ecol}">${bet}</span>
-        <span class="bc-edge ${ecol}">${edge}</span>
         ${p.label==='STRONG'?'<span class="tag tag-strong">STRONG</span>':'<span class="tag tag-lean">LEAN</span>'}
       </div>
     </div>
