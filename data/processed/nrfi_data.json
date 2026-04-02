@@ -67,28 +67,5 @@
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-02",
-    "game_time": "1:10 PM CT",
-    "home_abbr": "KC",
-    "away_abbr": "MIN",
-    "home_sp": "Cole Ragans",
-    "away_sp": "Taj Bradley",
-    "nrfi_prob": 28.7,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Cole Ragans",
-      "first_inning": {},
-      "season_era": 4.67
-    },
-    "away_pitcher": {
-      "name": "Taj Bradley",
-      "first_inning": {},
-      "season_era": 5.05
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
   }
 ]
