@@ -1,1 +1,48 @@
-[]
+[
+  {
+    "date": "2026-04-01",
+    "game_time": "7:20 PM CT",
+    "home_abbr": "LAD",
+    "away_abbr": "CLE",
+    "home_sp": "Yoshinobu Yamamoto",
+    "away_sp": "Gavin Williams",
+    "nrfi_prob": 46.9,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Yoshinobu Yamamoto",
+      "first_inning": {},
+      "season_era": 3.0
+    },
+    "away_pitcher": {
+      "name": "Gavin Williams",
+      "first_inning": {},
+      "season_era": 2.25
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-01",
+    "game_time": "6:40 PM CT",
+    "home_abbr": "KC",
+    "away_abbr": "MIN",
+    "home_sp": "Noah Cameron",
+    "away_sp": "Joe Ryan",
+    "nrfi_prob": 41.8,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Noah Cameron",
+      "first_inning": {},
+      "season_era": 2.99
+    },
+    "away_pitcher": {
+      "name": "Joe Ryan",
+      "first_inning": {},
+      "season_era": 3.42
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  }
+]
