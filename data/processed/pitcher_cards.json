@@ -151,9 +151,9 @@
     ],
     "splits": {},
     "k_prediction": {
-      "predicted_ks": 5.6,
-      "k_low_25": 4,
-      "k_high_75": 7,
+      "predicted_ks": 4.6,
+      "k_low_25": 3,
+      "k_high_75": 6,
       "expected_ip": 6.1,
       "season_k9": 7.42,
       "last3_k9": 8.8,
@@ -167,7 +167,7 @@
       "pitch_mix_adj": 1.0,
       "combined_adj": 1.0,
       "lambda_k": 5.621,
-      "model_used": "poisson_analytical",
+      "model_used": "xgboost_poisson",
       "umpire": null,
       "lineup_confirmed": false
     },
@@ -314,9 +314,9 @@
       }
     },
     "k_prediction": {
-      "predicted_ks": 5.2,
-      "k_low_25": 4,
-      "k_high_75": 7,
+      "predicted_ks": 4.9,
+      "k_low_25": 3,
+      "k_high_75": 6,
       "expected_ip": 4.7,
       "season_k9": 10.21,
       "last3_k9": 9.68,
@@ -330,7 +330,7 @@
       "pitch_mix_adj": 1.0,
       "combined_adj": 1.0,
       "lambda_k": 5.166,
-      "model_used": "poisson_analytical",
+      "model_used": "xgboost_poisson",
       "umpire": null,
       "lineup_confirmed": false
     },
@@ -510,9 +510,9 @@
       }
     },
     "k_prediction": {
-      "predicted_ks": 7.2,
-      "k_low_25": 5,
-      "k_high_75": 9,
+      "predicted_ks": 6.1,
+      "k_low_25": 4,
+      "k_high_75": 8,
       "expected_ip": 4.3,
       "season_k9": 14.3,
       "last3_k9": 15.23,
@@ -526,7 +526,7 @@
       "pitch_mix_adj": 1.0,
       "combined_adj": 1.0,
       "lambda_k": 7.154,
-      "model_used": "poisson_analytical",
+      "model_used": "xgboost_poisson",
       "umpire": null,
       "lineup_confirmed": false
     },
@@ -706,9 +706,9 @@
       }
     },
     "k_prediction": {
-      "predicted_ks": 5.5,
-      "k_low_25": 4,
-      "k_high_75": 7,
+      "predicted_ks": 4.8,
+      "k_low_25": 3,
+      "k_high_75": 6,
       "expected_ip": 5.4,
       "season_k9": 8.01,
       "last3_k9": 9.94,
@@ -722,7 +722,7 @@
       "pitch_mix_adj": 1.0,
       "combined_adj": 1.0,
       "lambda_k": 5.535,
-      "model_used": "poisson_analytical",
+      "model_used": "xgboost_poisson",
       "umpire": null,
       "lineup_confirmed": false
     },
@@ -868,9 +868,9 @@
       }
     },
     "k_prediction": {
-      "predicted_ks": 4.0,
+      "predicted_ks": 4.4,
       "k_low_25": 3,
-      "k_high_75": 5,
+      "k_high_75": 6,
       "expected_ip": 6.0,
       "season_k9": 6.0,
       "last3_k9": 6.0,
@@ -884,7 +884,7 @@
       "pitch_mix_adj": 1.0,
       "combined_adj": 1.0,
       "lambda_k": 4.0,
-      "model_used": "poisson_analytical",
+      "model_used": "xgboost_poisson",
       "umpire": null,
       "lineup_confirmed": false
     },
@@ -1021,9 +1021,9 @@
       }
     },
     "k_prediction": {
-      "predicted_ks": 7.8,
-      "k_low_25": 6,
-      "k_high_75": 10,
+      "predicted_ks": 5.4,
+      "k_low_25": 4,
+      "k_high_75": 7,
       "expected_ip": 5.5,
       "season_k9": 12.75,
       "last3_k9": 12.75,
@@ -1037,7 +1037,7 @@
       "pitch_mix_adj": 1.0,
       "combined_adj": 1.0,
       "lambda_k": 7.792,
-      "model_used": "poisson_analytical",
+      "model_used": "xgboost_poisson",
       "umpire": null,
       "lineup_confirmed": false
     },
@@ -1208,7 +1208,7 @@
       }
     },
     "k_prediction": {
-      "predicted_ks": 4.7,
+      "predicted_ks": 4.6,
       "k_low_25": 3,
       "k_high_75": 6,
       "expected_ip": 5.7,
@@ -1224,7 +1224,7 @@
       "pitch_mix_adj": 1.0,
       "combined_adj": 1.0,
       "lambda_k": 4.741,
-      "model_used": "poisson_analytical",
+      "model_used": "xgboost_poisson",
       "umpire": null,
       "lineup_confirmed": false
     },
@@ -1317,9 +1317,9 @@
       }
     },
     "k_prediction": {
-      "predicted_ks": 3.2,
-      "k_low_25": 2,
-      "k_high_75": 4,
+      "predicted_ks": 4.9,
+      "k_low_25": 3,
+      "k_high_75": 6,
       "expected_ip": 5.0,
       "season_k9": 8.5,
       "last3_k9": 1.8,
@@ -1333,7 +1333,7 @@
       "pitch_mix_adj": 1.0,
       "combined_adj": 1.0,
       "lambda_k": 3.233,
-      "model_used": "poisson_analytical",
+      "model_used": "xgboost_poisson",
       "umpire": null,
       "lineup_confirmed": false
     },
@@ -1513,9 +1513,9 @@
       }
     },
     "k_prediction": {
-      "predicted_ks": 4.0,
+      "predicted_ks": 4.6,
       "k_low_25": 3,
-      "k_high_75": 5,
+      "k_high_75": 6,
       "expected_ip": 4.0,
       "season_k9": 8.91,
       "last3_k9": 9.0,
@@ -1529,7 +1529,7 @@
       "pitch_mix_adj": 1.0,
       "combined_adj": 1.0,
       "lambda_k": 3.984,
-      "model_used": "poisson_analytical",
+      "model_used": "xgboost_poisson",
       "umpire": null,
       "lineup_confirmed": false
     },
@@ -1718,9 +1718,9 @@
       }
     },
     "k_prediction": {
-      "predicted_ks": 6.9,
-      "k_low_25": 5,
-      "k_high_75": 9,
+      "predicted_ks": 6.0,
+      "k_low_25": 4,
+      "k_high_75": 8,
       "expected_ip": 5.7,
       "season_k9": 11.52,
       "last3_k9": 10.59,
@@ -1734,7 +1734,7 @@
       "pitch_mix_adj": 1.0,
       "combined_adj": 1.0,
       "lambda_k": 6.902,
-      "model_used": "poisson_analytical",
+      "model_used": "xgboost_poisson",
       "umpire": null,
       "lineup_confirmed": false
     },
@@ -1921,7 +1921,7 @@
       "pitch_mix_adj": 1.0,
       "combined_adj": 1.0,
       "lambda_k": 4.862,
-      "model_used": "poisson_analytical",
+      "model_used": "xgboost_poisson",
       "umpire": null,
       "lineup_confirmed": false
     },
@@ -2101,9 +2101,9 @@
       }
     },
     "k_prediction": {
-      "predicted_ks": 3.5,
-      "k_low_25": 2,
-      "k_high_75": 5,
+      "predicted_ks": 4.4,
+      "k_low_25": 3,
+      "k_high_75": 6,
       "expected_ip": 4.0,
       "season_k9": 8.0,
       "last3_k9": 7.96,
@@ -2117,7 +2117,7 @@
       "pitch_mix_adj": 1.0,
       "combined_adj": 1.0,
       "lambda_k": 3.545,
-      "model_used": "poisson_analytical",
+      "model_used": "xgboost_poisson",
       "umpire": null,
       "lineup_confirmed": false
     },

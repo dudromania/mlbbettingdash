@@ -135,20 +135,20 @@
     {
       "home_abbr": "KC",
       "away_abbr": "MIN",
-      "home_score": "12",
-      "away_score": "2",
+      "home_score": "13",
+      "away_score": "6",
       "state": "in",
-      "detail": "Top 7th",
+      "detail": "Top 8th",
       "is_live": true,
       "is_final": false
     },
     {
       "home_abbr": "LAD",
       "away_abbr": "CLE",
-      "home_score": "0",
-      "away_score": "2",
+      "home_score": "1",
+      "away_score": "4",
       "state": "in",
-      "detail": "Top 8th",
+      "detail": "End 9th",
       "is_live": true,
       "is_final": false
     }
