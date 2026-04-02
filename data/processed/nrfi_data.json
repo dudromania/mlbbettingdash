@@ -1,46 +1,92 @@
 [
   {
-    "date": "2026-04-01",
-    "game_time": "7:20 PM CT",
-    "home_abbr": "LAD",
-    "away_abbr": "CLE",
-    "home_sp": "Yoshinobu Yamamoto",
-    "away_sp": "Gavin Williams",
-    "nrfi_prob": 46.9,
-    "label": "NEUTRAL",
+    "date": "2026-04-02",
+    "game_time": "8:40 PM CT",
+    "home_abbr": "AZ",
+    "away_abbr": "ATL",
+    "home_sp": "Ryne Nelson",
+    "away_sp": "Reynaldo L\u00f3pez",
+    "nrfi_prob": 36.8,
+    "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Yoshinobu Yamamoto",
+      "name": "Ryne Nelson",
       "first_inning": {},
-      "season_era": 3.0
+      "season_era": 3.39
     },
     "away_pitcher": {
-      "name": "Gavin Williams",
+      "name": "Reynaldo L\u00f3pez",
       "first_inning": {},
-      "season_era": 2.25
+      "season_era": null
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
   },
   {
-    "date": "2026-04-01",
-    "game_time": "6:40 PM CT",
-    "home_abbr": "KC",
-    "away_abbr": "MIN",
-    "home_sp": "Noah Cameron",
-    "away_sp": "Joe Ryan",
-    "nrfi_prob": 41.8,
-    "label": "NEUTRAL",
+    "date": "2026-04-02",
+    "game_time": "8:45 PM CT",
+    "home_abbr": "SF",
+    "away_abbr": "NYM",
+    "home_sp": "Robbie Ray",
+    "away_sp": "David Peterson",
+    "nrfi_prob": 35.7,
+    "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Noah Cameron",
+      "name": "Robbie Ray",
       "first_inning": {},
-      "season_era": 2.99
+      "season_era": 3.65
     },
     "away_pitcher": {
-      "name": "Joe Ryan",
+      "name": "David Peterson",
       "first_inning": {},
-      "season_era": 3.42
+      "season_era": 4.22
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-02",
+    "game_time": "3:10 PM CT",
+    "home_abbr": "CWS",
+    "away_abbr": "TOR",
+    "home_sp": "Sean Burke",
+    "away_sp": "Dylan Cease",
+    "nrfi_prob": 32.2,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Sean Burke",
+      "first_inning": {},
+      "season_era": 4.22
+    },
+    "away_pitcher": {
+      "name": "Dylan Cease",
+      "first_inning": {},
+      "season_era": 4.55
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-02",
+    "game_time": "1:10 PM CT",
+    "home_abbr": "KC",
+    "away_abbr": "MIN",
+    "home_sp": "Cole Ragans",
+    "away_sp": "Taj Bradley",
+    "nrfi_prob": 28.7,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Cole Ragans",
+      "first_inning": {},
+      "season_era": 4.67
+    },
+    "away_pitcher": {
+      "name": "Taj Bradley",
+      "first_inning": {},
+      "season_era": 5.05
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
