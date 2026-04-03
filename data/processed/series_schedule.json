@@ -1405,7 +1405,7 @@
         "game_id": 824299,
         "date": "2026-04-03",
         "game_time_ct": "12:10 PM CT",
-        "status": "I",
+        "status": "F",
         "home_name": "Detroit Tigers",
         "away_name": "St. Louis Cardinals",
         "home_abbr": "DET",
@@ -1416,20 +1416,10 @@
         "home_sp_id": 664285,
         "away_sp": "Michael McGreevy",
         "away_sp_id": 700241,
-        "home_score": null,
-        "away_score": null,
+        "home_score": 4,
+        "away_score": 0,
         "venue": "Comerica Park",
-        "prediction": {
-          "predicted_margin": 0.37,
-          "predicted_total": 8.2,
-          "home_win_prob": 0.523,
-          "away_win_prob": 0.477,
-          "spread_confidence": 30,
-          "margin_p25": -2.29,
-          "margin_p75": 3.03,
-          "margin_std": 3.95,
-          "method": "trained_xgboost"
-        }
+        "prediction": null
       },
       {
         "game_id": 824295,
@@ -1492,13 +1482,13 @@
         }
       }
     ],
-    "home_wins": 0,
+    "home_wins": 1,
     "away_wins": 0,
     "series_start": "2026-04-03",
     "series_end": "2026-04-05",
     "total_games": 3,
-    "games_played": 0,
-    "games_remaining": 3
+    "games_played": 1,
+    "games_remaining": 2
   },
   {
     "series_id": "MIL@KC",
@@ -1512,7 +1502,7 @@
         "game_id": 824134,
         "date": "2026-04-03",
         "game_time_ct": "6:45 PM CT",
-        "status": "S",
+        "status": "P",
         "home_name": "Kansas City Royals",
         "away_name": "Milwaukee Brewers",
         "home_abbr": "KC",
@@ -2154,7 +2144,7 @@
         "game_id": 822758,
         "date": "2026-04-03",
         "game_time_ct": "12:05 PM CT",
-        "status": "I",
+        "status": "O",
         "home_name": "Washington Nationals",
         "away_name": "Los Angeles Dodgers",
         "home_abbr": "WSH",

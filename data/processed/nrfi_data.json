@@ -1,29 +1,6 @@
 [
   {
     "date": "2026-04-03",
-    "game_time": "12:10 PM CT",
-    "home_abbr": "DET",
-    "away_abbr": "STL",
-    "home_sp": "Framber Valdez",
-    "away_sp": "Michael McGreevy",
-    "nrfi_prob": 58.7,
-    "label": "SLIGHT NRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Framber Valdez",
-      "first_inning": {},
-      "season_era": 0.82
-    },
-    "away_pitcher": {
-      "name": "Michael McGreevy",
-      "first_inning": {},
-      "season_era": 1.69
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-03",
     "game_time": "9:15 PM CT",
     "home_abbr": "SF",
     "away_abbr": "NYM",
@@ -144,18 +121,18 @@
     "away_abbr": "SD",
     "home_sp": "Sonny Gray",
     "away_sp": "Michael King",
-    "nrfi_prob": 36.2,
-    "label": "LEAN YRFI",
+    "nrfi_prob": 38.7,
+    "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Sonny Gray",
       "first_inning": {},
-      "season_era": 4.28
+      "season_era": 4.5
     },
     "away_pitcher": {
       "name": "Michael King",
       "first_inning": {},
-      "season_era": 3.44
+      "season_era": 2.53
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -179,6 +156,29 @@
       "name": "Emmet Sheehan",
       "first_inning": {},
       "season_era": 2.82
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-03",
+    "game_time": "12:35 PM CT",
+    "home_abbr": "NYY",
+    "away_abbr": "MIA",
+    "home_sp": "Will Warren",
+    "away_sp": "Eury P\u00e9rez",
+    "nrfi_prob": 34.7,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Will Warren",
+      "first_inning": {},
+      "season_era": 2.7
+    },
+    "away_pitcher": {
+      "name": "Eury P\u00e9rez",
+      "first_inning": {},
+      "season_era": 5.73
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -271,29 +271,6 @@
       "name": "Dylan Cease",
       "first_inning": {},
       "season_era": 4.55
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-03",
-    "game_time": "12:35 PM CT",
-    "home_abbr": "NYY",
-    "away_abbr": "MIA",
-    "home_sp": "Will Warren",
-    "away_sp": "Eury P\u00e9rez",
-    "nrfi_prob": 28.8,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Will Warren",
-      "first_inning": {},
-      "season_era": 4.44
-    },
-    "away_pitcher": {
-      "name": "Eury P\u00e9rez",
-      "first_inning": {},
-      "season_era": 6.3
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
