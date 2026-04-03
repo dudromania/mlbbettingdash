@@ -4599,26 +4599,7 @@
         "put_away_pct": 0.0
       }
     ],
-    "splits": {
-      "vs_lhb": {
-        "avg": 0.167,
-        "ops": 0.334,
-        "k_pct": 16.7,
-        "bb_pct": 0.0,
-        "hr9": 0.0,
-        "whip": 0.6,
-        "bf": 6
-      },
-      "vs_rhb": {
-        "avg": 0.3,
-        "ops": 0.964,
-        "k_pct": 0.0,
-        "bb_pct": 9.1,
-        "hr9": 3.86,
-        "whip": 1.71,
-        "bf": 11
-      }
-    },
+    "splits": {},
     "k_prediction": {
       "predicted_ks": 4.5,
       "k_low_25": 3,
