@@ -960,6 +960,91 @@ tbody td {
   .nrfi-body { grid-template-columns: 1fr; }
 }
 
+/* ── RESULTS CALENDAR ── */
+.cal-wrap {
+  margin-bottom: 16px;
+}
+.cal-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+.cal-nav-btn {
+  background: var(--s2);
+  border: 1px solid var(--b2);
+  color: var(--t2);
+  font-family: var(--mono);
+  font-size: 11px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+.cal-nav-btn:hover { color: var(--t1); border-color: var(--t3); }
+.cal-month-label {
+  font-family: var(--mono);
+  font-size: 12px;
+  color: var(--t1);
+  letter-spacing: 1px;
+}
+.cal-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 2px;
+  background: var(--b1);
+  border: 1px solid var(--b1);
+}
+.cal-dow {
+  background: var(--s2);
+  padding: 4px;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--t3);
+  letter-spacing: 1px;
+}
+.cal-day {
+  background: var(--s1);
+  padding: 6px 4px;
+  text-align: center;
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--t3);
+  min-height: 44px;
+  cursor: default;
+  position: relative;
+}
+.cal-day.has-picks {
+  cursor: pointer;
+  color: var(--t2);
+}
+.cal-day.has-picks:hover { background: var(--s2); }
+.cal-day.selected { background: var(--b2) !important; color: var(--t1) !important; outline: 1px solid var(--hi); }
+.cal-day.win-day  { border-top: 2px solid var(--pos); }
+.cal-day.loss-day { border-top: 2px solid var(--neg); }
+.cal-day.even-day { border-top: 2px solid var(--warn); }
+.cal-day.empty    { background: var(--bg); }
+.cal-record {
+  font-size: 9px;
+  margin-top: 2px;
+  line-height: 1;
+}
+.cal-record.pos { color: var(--pos); }
+.cal-record.neg { color: var(--neg); }
+.cal-record.warn { color: var(--warn); }
+.cal-day-detail {
+  margin-top: 12px;
+  border: 1px solid var(--b1);
+  border-left: 3px solid var(--hi);
+}
+.cal-detail-header {
+  padding: 6px 10px;
+  background: var(--s2);
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--t2);
+  border-bottom: 1px solid var(--b1);
+}
+
 /* ── BATTER PROPS ── */
 .prop-list { border: 1px solid var(--b1); }
 .prop-row {
@@ -1232,6 +1317,16 @@ tbody td {
     <div id="results-stats" class="stat-row"></div>
     <div class="sec">Performance by Bet Type</div>
     <div id="results-by-type" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1px;background:var(--b1);margin-bottom:14px"></div>
+    <div class="sec">Results Calendar</div>
+    <div class="cal-wrap">
+      <div class="cal-nav">
+        <button class="cal-nav-btn" id="cal-prev">&#8249; Prev</button>
+        <span class="cal-month-label" id="cal-month-label"></span>
+        <button class="cal-nav-btn" id="cal-next">Next &#8250;</button>
+      </div>
+      <div class="cal-grid" id="cal-grid"></div>
+      <div id="cal-day-detail"></div>
+    </div>
     <div class="sec">Recent Results</div>
     <div class="filters" id="results-filters">
       <button class="fb active" data-rf="all">ALL</button>
@@ -2628,6 +2723,168 @@ function nrfiCard(g) {
 let resultsFilter = 'all';
 let resultsRendered = false;
 
+// ── RESULTS CALENDAR ─────────────────────────────────────────────────────────
+let calYear  = new Date().getFullYear();
+let calMonth = new Date().getMonth(); // 0-indexed
+let calSelectedDate = null;
+
+function buildCalendarData() {
+  // Build map: date_str -> {w, l, p (push), picks[]}
+  const map = {};
+  const hist = DATA.history.map(h => {
+    const betType = h.spread_bet ? 'spread' : h.total_bet ? 'total' : null;
+    let rawResult = betType === 'spread' ? h.spread_result :
+                    betType === 'total'  ? h.total_result  : null;
+    if (!rawResult && h.actual_margin != null && h.spread_edge_label && h.spread_edge_label !== 'NO LINE') {
+      rawResult = (h.predicted_margin >= 0) === (h.actual_margin > 0) ? 'W' : 'L';
+    }
+    const result = rawResult === 'W' || rawResult === 'win'  ? 'win'  :
+                   rawResult === 'L' || rawResult === 'loss' ? 'loss' :
+                   rawResult === 'P' || rawResult === 'push' ? 'push' : null;
+    return {...h, bet_type: betType, result};
+  }).filter(h => h.result && h.date);
+
+  hist.forEach(h => {
+    const d = h.date.slice(0,10);
+    if (!map[d]) map[d] = { w:0, l:0, p:0, picks:[] };
+    if (h.result === 'win')  map[d].w++;
+    else if (h.result === 'loss') map[d].l++;
+    else map[d].p++;
+    map[d].picks.push(h);
+  });
+  return map;
+}
+
+function renderCalendar() {
+  const calData = buildCalendarData();
+  const MONTHS  = ['January','February','March','April','May','June',
+                   'July','August','September','October','November','December'];
+  const DOWS    = ['SUN','MON','TUE','WED','THU','FRI','SAT'];
+
+  document.getElementById('cal-month-label').textContent = `${MONTHS[calMonth]} ${calYear}`;
+
+  const grid = document.getElementById('cal-grid');
+  let html = DOWS.map(d => `<div class="cal-dow">${d}</div>`).join('');
+
+  // First day of month
+  const firstDay = new Date(calYear, calMonth, 1).getDay();
+  const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+
+  // Empty cells before first day
+  for (let i = 0; i < firstDay; i++) {
+    html += '<div class="cal-day empty"></div>';
+  }
+
+  // Day cells
+  for (let day = 1; day <= daysInMonth; day++) {
+    const dateStr = `${calYear}-${String(calMonth+1).padStart(2,'0')}-${String(day).padStart(2,'0')}`;
+    const d = calData[dateStr];
+    const isSelected = calSelectedDate === dateStr;
+    const isToday = dateStr === (DATA.date || todayStr());
+
+    let cls = 'cal-day';
+    let record = '';
+
+    if (d && (d.w + d.l + d.p) > 0) {
+      cls += ' has-picks';
+      const t = d.w + d.l;
+      if (d.w > d.l)       { cls += ' win-day';  record = `<div class="cal-record pos">${d.w}-${d.l}</div>`; }
+      else if (d.l > d.w)  { cls += ' loss-day'; record = `<div class="cal-record neg">${d.w}-${d.l}</div>`; }
+      else if (t > 0)      { cls += ' even-day'; record = `<div class="cal-record warn">${d.w}-${d.l}</div>`; }
+    }
+    if (isSelected) cls += ' selected';
+
+    const todayDot = isToday ? '<div style="width:4px;height:4px;border-radius:50%;background:var(--hi);margin:2px auto 0"></div>' : '';
+    const clickAttr = d ? `onclick="selectCalDay('${dateStr}')"` : '';
+
+    html += `<div class="${cls}" ${clickAttr}>
+      ${day}
+      ${record}
+      ${todayDot}
+    </div>`;
+  }
+
+  grid.innerHTML = html;
+
+  // Render selected day detail
+  if (calSelectedDate && calData[calSelectedDate]) {
+    renderCalDayDetail(calSelectedDate, calData[calSelectedDate]);
+  } else {
+    document.getElementById('cal-day-detail').innerHTML = '';
+  }
+}
+
+function selectCalDay(dateStr) {
+  calSelectedDate = calSelectedDate === dateStr ? null : dateStr;
+  renderCalendar();
+}
+
+function renderCalDayDetail(dateStr, d) {
+  const dt = new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US',
+    {weekday:'long', month:'long', day:'numeric', year:'numeric'});
+  const t = d.w + d.l;
+  const pct = t > 0 ? (d.w/t*100).toFixed(0)+'%' : '—';
+  const wc = d.w > d.l ? 'pos' : d.w < d.l ? 'neg' : 'warn';
+
+  const rows = d.picks.map(h => {
+    const bet = h.spread_bet === 'home_cover'
+      ? `${h.home_abbr} ${h.vegas_spread}`
+      : h.spread_bet
+      ? `${h.away_abbr} +1.5`
+      : h.total_bet ? `${(h.total_bet||'').toUpperCase()} ${h.vegas_total}` : '—';
+    const resTag = h.result === 'win'
+      ? '<span class="tag tag-lean">WIN</span>'
+      : h.result === 'loss'
+      ? '<span class="tag" style="background:#44111122;color:var(--neg);border:1px solid #44111144">LOSS</span>'
+      : '<span class="tag-none dim">PUSH</span>';
+    const edge = h.edge_spread != null
+      ? (h.edge_spread >= 0 ? '+' : '') + (h.edge_spread*100).toFixed(1) + '%'
+      : '—';
+    const actual = h.actual_away_score != null
+      ? `${h.away_abbr} ${h.actual_away_score} – ${h.actual_home_score} ${h.home_abbr}`
+      : '—';
+    return `<tr>
+      <td>${h.away_abbr} @ ${h.home_abbr}</td>
+      <td class="mono" style="font-size:10px">${bet}</td>
+      <td class="mono dim" style="font-size:10px">${edge}</td>
+      <td class="mono dim" style="font-size:10px">${actual}</td>
+      <td>${resTag}</td>
+    </tr>`;
+  }).join('');
+
+  document.getElementById('cal-day-detail').innerHTML = `
+    <div class="cal-day-detail">
+      <div class="cal-detail-header">
+        ${dt} &nbsp;·&nbsp;
+        <span class="${wc}">${d.w}–${d.l}</span>
+        ${d.p > 0 ? ` · ${d.p} push` : ''}
+        &nbsp;·&nbsp; ${pct} win rate
+      </div>
+      <div class="tbl-wrap" style="border:none;margin:0">
+        <table>
+          <thead><tr>
+            <th>MATCHUP</th><th>BET</th><th>EDGE</th><th>RESULT</th><th>OUTCOME</th>
+          </tr></thead>
+          <tbody>${rows}</tbody>
+        </table>
+      </div>
+    </div>`;
+}
+
+// Calendar nav listeners — set up once
+document.getElementById('cal-prev').addEventListener('click', () => {
+  calMonth--;
+  if (calMonth < 0) { calMonth = 11; calYear--; }
+  calSelectedDate = null;
+  renderCalendar();
+});
+document.getElementById('cal-next').addEventListener('click', () => {
+  calMonth++;
+  if (calMonth > 11) { calMonth = 0; calYear++; }
+  calSelectedDate = null;
+  renderCalendar();
+});
+
 function renderResults() {
   // picks_history.json uses spread_result/total_result fields and spread_bet/total_bet
   // Normalize to a flat "result" and "bet_type" for display
@@ -2698,6 +2955,7 @@ function renderResults() {
 
   renderResultsTable(hist);
   renderResultsListeners(hist);
+  renderCalendar();
 }
 
 function renderResultsTable(histIn) {
