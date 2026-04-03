@@ -398,7 +398,53 @@
         "game_id": 776448
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 27.8,
+        "avg_velo": 86.6,
+        "avg_spin": 1858,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 26.6,
+        "avg_velo": 89.5,
+        "avg_spin": 2256,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 22.8,
+        "avg_velo": 92.5,
+        "avg_spin": 2226,
+        "whiff_pct": 20.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 13.9,
+        "avg_velo": 91.7,
+        "avg_spin": 2222,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 8.9,
+        "avg_velo": 79.4,
+        "avg_spin": 2317,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {
       "vs_lhb": {
         "avg": 0.333,
