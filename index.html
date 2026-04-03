@@ -1224,6 +1224,11 @@ tbody td {
 
   <!-- RESULTS -->
   <div id="tab-results" class="tab-panel">
+    <div class="filters" id="results-sub-filters" style="margin-bottom:14px">
+      <button class="fb active" data-rsub="games">Game Picks</button>
+      <button class="fb" data-rsub="kprops">K Prop Picks</button>
+    </div>
+    <div id="results-games-panel">
     <div id="results-stats" class="stat-row"></div>
     <div class="sec">Performance by Bet Type</div>
     <div id="results-by-type" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1px;background:var(--b1);margin-bottom:14px"></div>
@@ -1244,6 +1249,33 @@ tbody td {
         </tr></thead>
         <tbody id="results-tbody"></tbody>
       </table>
+    </div>
+    </div><!-- end results-games-panel -->
+
+    <!-- K PROP RESULTS PANEL -->
+    <div id="results-kprops-panel" style="display:none">
+      <div id="kprop-results-stats" class="stat-row"></div>
+      <div class="sec">K Prop Performance by Pitcher</div>
+      <div id="kprop-results-by-pitcher" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1px;background:var(--b1);margin-bottom:14px"></div>
+      <div class="sec">K Prop Pick History</div>
+      <div class="filters" id="kprop-results-filters">
+        <button class="fb active" data-krf="all">ALL</button>
+        <button class="fb" data-krf="over">OVER</button>
+        <button class="fb" data-krf="under">UNDER</button>
+        <button class="fb" data-krf="w">WINS</button>
+        <button class="fb" data-krf="l">LOSSES</button>
+      </div>
+      <div class="tbl-wrap">
+        <table>
+          <thead><tr>
+            <th>DATE</th><th>PITCHER</th><th>TEAM</th>
+            <th class="tc">LINE</th><th class="tc">BET</th>
+            <th class="tc">PROJ K</th><th class="tc">ACTUAL K</th>
+            <th class="tc">EDGE</th><th class="tc">RESULT</th>
+          </tr></thead>
+          <tbody id="kprop-results-tbody"></tbody>
+        </table>
+      </div>
     </div>
   </div>
 
@@ -1266,7 +1298,7 @@ tbody td {
 </main>
 
 <script>
-const DATA = { games:[], series:[], pitchers:[], history:[], nrfi:[], scores:[], kprops:[], bullpen:[], date:'' };
+const DATA = { games:[], series:[], pitchers:[], history:[], nrfi:[], scores:[], kprops:[], bullpen:[], kpropHistory:[], date:'' };
 const LABELS = { model:'FULL GAME PREDICTIONS', games:"TODAY'S GAMES", pitchers:'PITCHER STATS', batters:'BATTER PROPS', standings:'STANDINGS', trends:'SERIES TRACKING', nrfi:'NRFI MATRIX', f5:'FIRST 5 INNINGS', kprops:'K STRIKEOUT PROPS', bullpen:'BULLPEN REPORT', results:'MODEL PERFORMANCE' };
 
 async function loadJSON(path, fallback) {
@@ -1278,7 +1310,7 @@ async function loadJSON(path, fallback) {
 }
 
 async function init() {
-  const [today, series, pitchers, history, nrfi, scores, kprops, bullpen] = await Promise.all([
+  const [today, series, pitchers, history, nrfi, scores, kprops, bullpen, kpropHistory] = await Promise.all([
     loadJSON('data/processed/picks_today.json',     { date:'', games: SAMPLE }),
     loadJSON('data/processed/series_schedule.json', []),
     loadJSON('data/processed/pitcher_cards.json',   []),
@@ -1287,6 +1319,7 @@ async function init() {
     loadJSON('data/processed/live_scores.json',     { games:[] }),
     loadJSON('data/processed/strikeout_props.json', []),
     loadJSON('data/processed/bullpen_report.json',  []),
+    loadJSON('data/processed/prop_picks_history.json', []),
   ]);
   DATA.games    = ((today?.games||today||[]).filter(g=>g?.home_abbr)).sort((a,b)=>(a.game_time_ct||'').localeCompare(b.game_time_ct||''));
   DATA.series   = Array.isArray(series)   ? series   : [];
@@ -1295,6 +1328,7 @@ async function init() {
   DATA.nrfi     = Array.isArray(nrfi)     ? nrfi     : [];
   DATA.scores   = scores?.games || [];
   DATA.kprops   = Array.isArray(kprops)   ? kprops   : [];
+  DATA.kpropHistory = Array.isArray(kpropHistory) ? kpropHistory : [];
   DATA.bullpen  = Array.isArray(bullpen)  ? bullpen  : [];
   DATA.date     = today?.date || todayStr();
 
@@ -3230,6 +3264,136 @@ function renderBullpen() {
       </tr>`;
     }).join('') || '<tr><td colspan="8" class="empty">No bullpen data</td></tr>';
 }
+
+// ── K PROP RESULTS ───────────────────────────────────────────────────────────
+let kpropResultsFilter = 'all';
+let kpropResultsRendered = false;
+
+function renderKPropResults() {
+  const el = document.getElementById('kprop-results-stats');
+  if (!el) return;
+
+  const props = DATA.kpropHistory || [];
+
+  if (!props.length) {
+    el.innerHTML = sc('0','PICKS') + sc('—','RECORD') + sc('—','WIN RATE') + sc('—','P&L') + sc('—','AVG EDGE');
+    document.getElementById('kprop-results-tbody').innerHTML =
+      '<tr><td colspan="9" class="empty">No K prop history yet — picks are logged after each graded game</td></tr>';
+    setupKPropResultsListeners();
+    return;
+  }
+
+  const graded  = props.filter(p => p.result);
+  const wins    = graded.filter(p => p.result === 'W').length;
+  const losses  = graded.filter(p => p.result === 'L').length;
+  const total   = wins + losses;
+  const winPct  = total > 0 ? (wins/total*100).toFixed(1)+'%' : '—';
+  const pnl     = graded.reduce((s,p) => s + (p.pnl||0), 0).toFixed(2);
+  const pnlCol  = parseFloat(pnl) > 0 ? 'pos' : parseFloat(pnl) < 0 ? 'neg' : '';
+  const edges   = props.filter(p => p.edge != null).map(p => p.edge);
+  const avgEdge = edges.length ? (edges.reduce((a,b)=>a+b,0)/edges.length*100).toFixed(1)+'%' : '—';
+
+  // By pitcher breakdown
+  const pitcherMap = {};
+  graded.forEach(p => {
+    const name = p.player_name || '—';
+    if (!pitcherMap[name]) pitcherMap[name] = {w:0, l:0, pnl:0};
+    if (p.result === 'W') pitcherMap[name].w++;
+    else pitcherMap[name].l++;
+    pitcherMap[name].pnl += (p.pnl||0);
+  });
+
+  el.innerHTML =
+    sc(props.length, 'TOTAL PICKS') +
+    sc(wins+'-'+losses, 'RECORD') +
+    sc(winPct, 'WIN RATE', parseFloat(winPct)>55?'pos':parseFloat(winPct)<48&&total>5?'neg':'') +
+    sc((parseFloat(pnl)>=0?'+':'')+pnl+'u', 'P&L UNITS', pnlCol) +
+    sc(avgEdge, 'AVG EDGE');
+
+  // By pitcher grid
+  const pitcherEntries = Object.entries(pitcherMap)
+    .sort((a,b) => (b[1].w+b[1].l) - (a[1].w+a[1].l))
+    .slice(0, 12);
+
+  document.getElementById('kprop-results-by-pitcher').innerHTML = pitcherEntries.map(([name, rec]) => {
+    const t = rec.w + rec.l;
+    const pct = t > 0 ? (rec.w/t*100).toFixed(0)+'%' : '—';
+    const pc = rec.w/Math.max(t,1) >= 0.6 ? 'pos' : rec.w/Math.max(t,1) <= 0.4 && t>2 ? 'neg' : '';
+    const pnlc = rec.pnl > 0 ? 'pos' : rec.pnl < 0 ? 'neg' : '';
+    return `<div class="stat-cell">
+      <div class="v ${pc}">${rec.w}-${rec.l}</div>
+      <div class="l">${name.split(' ').pop()}</div>
+      <div style="font-family:var(--mono);font-size:9px;color:var(--t3);margin-top:2px">${pct} · <span class="${pnlc}">${rec.pnl>=0?'+':''}${rec.pnl.toFixed(1)}u</span></div>
+    </div>`;
+  }).join('') || '<div class="stat-cell"><div class="v dim">—</div><div class="l">No graded props</div></div>';
+
+  renderKPropResultsTable(props);
+  setupKPropResultsListeners(props);
+}
+
+function renderKPropResultsTable(propsIn) {
+  const props = propsIn || DATA.kpropHistory || [];
+  let rows = [...props].sort((a,b) => (b.game_date||'').localeCompare(a.game_date||''));
+
+  if (kpropResultsFilter === 'over')  rows = rows.filter(p => (p.prop_market||'').includes('OVER'));
+  if (kpropResultsFilter === 'under') rows = rows.filter(p => (p.prop_market||'').includes('UNDER'));
+  if (kpropResultsFilter === 'w')     rows = rows.filter(p => p.result === 'W');
+  if (kpropResultsFilter === 'l')     rows = rows.filter(p => p.result === 'L');
+
+  document.getElementById('kprop-results-tbody').innerHTML = rows.length
+    ? rows.map(p => {
+        const dt    = p.game_date ? new Date(p.game_date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}) : '—';
+        const line  = p.prop_line != null ? p.prop_line : '—';
+        const bet   = p.prop_market || '—';
+        const proj  = p.predicted_value != null ? parseFloat(p.predicted_value).toFixed(1) : '—';
+        const actual= p.actual_value != null ? p.actual_value : '—';
+        const edge  = p.edge != null ? (p.edge>=0?'+':'')+(p.edge*100).toFixed(1)+'%' : '—';
+        const edgeC = p.edge > 0.04 ? 'pos' : p.edge < -0.02 ? 'neg' : 'dim';
+        const res   = p.result === 'W'
+          ? '<span class="tag tag-lean">WIN</span>'
+          : p.result === 'L'
+          ? '<span class="tag" style="background:#44111122;color:var(--neg);border:1px solid #44111144">LOSS</span>'
+          : '<span class="tag-none dim">—</span>';
+        const actC  = p.result === 'W' ? 'pos' : p.result === 'L' ? 'neg' : '';
+        return `<tr>
+          <td class="mono dim" style="font-size:10px">${dt}</td>
+          <td><strong>${p.player_name||'—'}</strong></td>
+          <td class="dim">${p.player_team||'—'}</td>
+          <td class="tc mono">${line}</td>
+          <td class="mono" style="font-size:10px">${bet}</td>
+          <td class="tc mono hi">${proj}</td>
+          <td class="tc mono ${actC}">${actual}</td>
+          <td class="tc mono ${edgeC}">${edge}</td>
+          <td class="tc">${res}</td>
+        </tr>`;
+      }).join('')
+    : '<tr><td colspan="9" class="empty">No results match filter</td></tr>';
+}
+
+function setupKPropResultsListeners(props) {
+  if (kpropResultsRendered) return;
+  kpropResultsRendered = true;
+  document.querySelectorAll('#kprop-results-filters .fb').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#kprop-results-filters .fb').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      kpropResultsFilter = btn.dataset.krf;
+      renderKPropResultsTable();
+    });
+  });
+}
+
+// Sub-tab switching for results panel
+document.querySelectorAll('#results-sub-filters .fb').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#results-sub-filters .fb').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const sub = btn.dataset.rsub;
+    document.getElementById('results-games-panel').style.display = sub === 'games' ? '' : 'none';
+    document.getElementById('results-kprops-panel').style.display = sub === 'kprops' ? '' : 'none';
+    if (sub === 'kprops') renderKPropResults();
+  });
+});
 
 init();
 fetchLiveScores();
