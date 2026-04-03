@@ -5,11 +5,11 @@
     {
       "home_abbr": "WSH",
       "away_abbr": "LAD",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "4/3 - 1:05 PM EDT",
-      "is_live": false,
+      "home_score": "4",
+      "away_score": "5",
+      "state": "in",
+      "detail": "Top 4th",
+      "is_live": true,
       "is_final": false
     },
     {
@@ -17,19 +17,19 @@
       "away_abbr": "STL",
       "home_score": "0",
       "away_score": "0",
-      "state": "pre",
-      "detail": "4/3 - 1:10 PM EDT",
-      "is_live": false,
+      "state": "in",
+      "detail": "Top 4th",
+      "is_live": true,
       "is_final": false
     },
     {
       "home_abbr": "NYY",
       "away_abbr": "MIA",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "4/3 - 1:35 PM EDT",
-      "is_live": false,
+      "home_score": "2",
+      "away_score": "1",
+      "state": "in",
+      "detail": "Top 2nd",
+      "is_live": true,
       "is_final": false
     },
     {
