@@ -1052,7 +1052,7 @@
       {
         "game_id": 824457,
         "date": "2026-04-07",
-        "game_time_ct": "5:10 PM CT",
+        "game_time_ct": "12:10 PM CT",
         "status": "S",
         "home_name": "Cleveland Guardians",
         "away_name": "Kansas City Royals",
@@ -2382,13 +2382,13 @@
         "away_score": null,
         "venue": "Citi Field",
         "prediction": {
-          "predicted_margin": 0.57,
+          "predicted_margin": 0.54,
           "predicted_total": 7.8,
-          "home_win_prob": 0.536,
-          "away_win_prob": 0.464,
+          "home_win_prob": 0.534,
+          "away_win_prob": 0.466,
           "spread_confidence": 31,
-          "margin_p25": -2.05,
-          "margin_p75": 3.19,
+          "margin_p25": -2.08,
+          "margin_p75": 3.16,
           "margin_std": 3.88,
           "method": "trained_xgboost"
         }
@@ -2412,13 +2412,13 @@
         "away_score": null,
         "venue": "Citi Field",
         "prediction": {
-          "predicted_margin": 0.53,
+          "predicted_margin": 0.5,
           "predicted_total": 8.6,
-          "home_win_prob": 0.533,
-          "away_win_prob": 0.467,
+          "home_win_prob": 0.531,
+          "away_win_prob": 0.469,
           "spread_confidence": 27,
-          "margin_p25": -2.08,
-          "margin_p75": 3.14,
+          "margin_p25": -2.11,
+          "margin_p75": 3.11,
           "margin_std": 3.87,
           "method": "trained_xgboost"
         }
@@ -2442,13 +2442,13 @@
         "away_score": null,
         "venue": "Citi Field",
         "prediction": {
-          "predicted_margin": 0.76,
+          "predicted_margin": 0.78,
           "predicted_total": 8.4,
-          "home_win_prob": 0.547,
-          "away_win_prob": 0.453,
+          "home_win_prob": 0.548,
+          "away_win_prob": 0.452,
           "spread_confidence": 43,
-          "margin_p25": -1.82,
-          "margin_p75": 3.34,
+          "margin_p25": -1.8,
+          "margin_p75": 3.36,
           "margin_std": 3.83,
           "method": "trained_xgboost"
         }
@@ -3126,13 +3126,13 @@
         "away_score": null,
         "venue": "Citizens Bank Park",
         "prediction": {
-          "predicted_margin": -0.52,
+          "predicted_margin": -0.5,
           "predicted_total": 9.8,
-          "home_win_prob": 0.468,
-          "away_win_prob": 0.532,
+          "home_win_prob": 0.469,
+          "away_win_prob": 0.531,
           "spread_confidence": 17,
-          "margin_p25": -3.26,
-          "margin_p75": 2.22,
+          "margin_p25": -3.24,
+          "margin_p75": 2.24,
           "margin_std": 4.06,
           "method": "trained_xgboost"
         }
