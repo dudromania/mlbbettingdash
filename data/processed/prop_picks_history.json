@@ -1,6 +1,6 @@
 [
   {
-    "id": 141,
+    "id": 157,
     "game_date": "2026-04-06",
     "game_pick_id": null,
     "player_name": "Tanner Bibee",
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-06 15:24:43",
+    "created_at": "2026-04-06 16:11:36",
     "graded_at": null
   },
   {
-    "id": 131,
+    "id": 147,
     "game_date": "2026-04-06",
     "game_pick_id": null,
     "player_name": "Shane McClanahan",
@@ -50,11 +50,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-06 15:24:43",
+    "created_at": "2026-04-06 16:11:36",
     "graded_at": null
   },
   {
-    "id": 127,
+    "id": 143,
     "game_date": "2026-04-06",
     "game_pick_id": null,
     "player_name": "Ryan Feltner",
@@ -77,11 +77,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-06 15:24:43",
+    "created_at": "2026-04-06 16:11:36",
     "graded_at": null
   },
   {
-    "id": 133,
+    "id": 149,
     "game_date": "2026-04-06",
     "game_pick_id": null,
     "player_name": "Michael Wacha",
@@ -104,11 +104,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-06 15:24:43",
+    "created_at": "2026-04-06 16:11:36",
     "graded_at": null
   },
   {
-    "id": 130,
+    "id": 146,
     "game_date": "2026-04-06",
     "game_pick_id": null,
     "player_name": "Max Scherzer",
@@ -117,11 +117,11 @@
     "prop_type": "strikeouts",
     "prop_market": "UNDER 4.5 K",
     "prop_line": 4.5,
-    "prop_odds": 104,
+    "prop_odds": 102,
     "prop_book": "fanduel",
     "predicted_value": 3.9,
     "predicted_prob_over": 0.352,
-    "edge": 0.158,
+    "edge": 0.153,
     "confidence": null,
     "player_season_avg": 7.48,
     "player_last7_avg": null,
@@ -131,11 +131,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-06 15:24:43",
+    "created_at": "2026-04-06 16:11:36",
     "graded_at": null
   },
   {
-    "id": 135,
+    "id": 150,
     "game_date": "2026-04-06",
     "game_pick_id": null,
     "player_name": "Logan Gilbert",
@@ -158,11 +158,38 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-06 15:24:43",
+    "created_at": "2026-04-06 16:11:36",
     "graded_at": null
   },
   {
-    "id": 129,
+    "id": 151,
+    "game_date": "2026-04-06",
+    "game_pick_id": null,
+    "player_name": "Justin Wrobleski",
+    "player_id": null,
+    "player_team": "LAD",
+    "prop_type": "strikeouts",
+    "prop_market": "OVER 3.5 K",
+    "prop_line": 3.5,
+    "prop_odds": -106,
+    "prop_book": "fanduel",
+    "predicted_value": 4.2,
+    "predicted_prob_over": 0.605,
+    "edge": 0.09,
+    "confidence": null,
+    "player_season_avg": 5.64,
+    "player_last7_avg": null,
+    "player_last30_avg": null,
+    "matchup_factor": null,
+    "park_factor": null,
+    "actual_value": null,
+    "result": null,
+    "pnl": null,
+    "created_at": "2026-04-06 16:11:36",
+    "graded_at": null
+  },
+  {
+    "id": 145,
     "game_date": "2026-04-06",
     "game_pick_id": null,
     "player_name": "Joe Ryan",
@@ -185,11 +212,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-06 15:24:43",
+    "created_at": "2026-04-06 16:11:36",
     "graded_at": null
   },
   {
-    "id": 137,
+    "id": 153,
     "game_date": "2026-04-06",
     "game_pick_id": null,
     "player_name": "Janson Junk",
@@ -212,11 +239,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-06 15:24:43",
+    "created_at": "2026-04-06 16:11:36",
     "graded_at": null
   },
   {
-    "id": 132,
+    "id": 148,
     "game_date": "2026-04-06",
     "game_pick_id": null,
     "player_name": "Jacob deGrom",
@@ -239,7 +266,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-06 15:24:43",
+    "created_at": "2026-04-06 16:11:36",
     "graded_at": null
   },
   {
@@ -270,7 +297,7 @@
     "graded_at": null
   },
   {
-    "id": 126,
+    "id": 142,
     "game_date": "2026-04-06",
     "game_pick_id": null,
     "player_name": "Chris Sale",
@@ -293,11 +320,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-06 15:24:43",
+    "created_at": "2026-04-06 16:11:36",
     "graded_at": null
   },
   {
-    "id": 128,
+    "id": 144,
     "game_date": "2026-04-06",
     "game_pick_id": null,
     "player_name": "Casey Mize",
@@ -320,11 +347,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-06 15:24:43",
+    "created_at": "2026-04-06 16:11:36",
     "graded_at": null
   },
   {
-    "id": 139,
+    "id": 156,
     "game_date": "2026-04-06",
     "game_pick_id": null,
     "player_name": "Bubba Chandler",
@@ -347,11 +374,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-06 15:24:43",
+    "created_at": "2026-04-06 16:11:36",
     "graded_at": null
   },
   {
-    "id": 136,
+    "id": 152,
     "game_date": "2026-04-06",
     "game_pick_id": null,
     "player_name": "Brayan Bello",
@@ -374,11 +401,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-06 15:24:43",
+    "created_at": "2026-04-06 16:11:36",
     "graded_at": null
   },
   {
-    "id": 134,
+    "id": 154,
     "game_date": "2026-04-06",
     "game_pick_id": null,
     "player_name": "Brandon Woodruff",
@@ -387,11 +414,11 @@
     "prop_type": "strikeouts",
     "prop_market": "UNDER 6.5 K",
     "prop_line": 6.5,
-    "prop_odds": -144,
+    "prop_odds": -152,
     "prop_book": "fanduel",
     "predicted_value": 5.5,
     "predicted_prob_over": 0.314,
-    "edge": 0.096,
+    "edge": 0.083,
     "confidence": null,
     "player_season_avg": 12.08,
     "player_last7_avg": null,
@@ -401,11 +428,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-06 15:24:43",
+    "created_at": "2026-04-06 16:11:36",
     "graded_at": null
   },
   {
-    "id": 138,
+    "id": 155,
     "game_date": "2026-04-06",
     "game_pick_id": null,
     "player_name": "Andrew Painter",
@@ -428,7 +455,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-06 15:24:43",
+    "created_at": "2026-04-06 16:11:36",
     "graded_at": null
   },
   {

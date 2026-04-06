@@ -47,29 +47,6 @@
   },
   {
     "date": "2026-04-06",
-    "game_time": "6:40 PM CT",
-    "home_abbr": "CWS",
-    "away_abbr": "BAL",
-    "home_sp": "Grant Taylor",
-    "away_sp": "TBD",
-    "nrfi_prob": 54.5,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Grant Taylor",
-      "first_inning": {},
-      "season_era": 2.25
-    },
-    "away_pitcher": {
-      "name": "Trevor Rogers",
-      "first_inning": {},
-      "season_era": 1.38
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-06",
     "game_time": "7:40 PM CT",
     "home_abbr": "COL",
     "away_abbr": "HOU",
@@ -225,6 +202,29 @@
       "name": "Justin Wrobleski",
       "first_inning": {},
       "season_era": 6.75
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-06",
+    "game_time": "6:40 PM CT",
+    "home_abbr": "CWS",
+    "away_abbr": "BAL",
+    "home_sp": "Grant Taylor",
+    "away_sp": "Brandon Young",
+    "nrfi_prob": 36.2,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Grant Taylor",
+      "first_inning": {},
+      "season_era": 2.25
+    },
+    "away_pitcher": {
+      "name": "Brandon Young",
+      "first_inning": {},
+      "season_era": 6.24
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
