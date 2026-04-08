@@ -1093,6 +1093,150 @@ tbody td {
   .stat-row { grid-template-columns: repeat(2,1fr); }
   .trends-cols { grid-template-columns: 1fr; }
 }
+
+/* ═══════════════════════════════════════════════════════
+   MOBILE OPTIMISATION  (≤ 480px)
+   ═══════════════════════════════════════════════════════ */
+@media (max-width: 480px) {
+
+  /* ── Layout ── */
+  body { font-size: 11px; }
+  .shell { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr; }
+  .sidebar {
+    grid-column: 1; grid-row: 2;
+    display: flex; flex-direction: row; flex-wrap: wrap;
+    gap: 0; border-right: none; border-bottom: 1px solid var(--b1);
+    padding: 4px 6px; overflow-x: auto;
+  }
+  .content { grid-column: 1; grid-row: 3; padding: 8px; }
+  .sidebar-logo { display: none; }
+
+  /* ── Nav pills on mobile ── */
+  .nav-item {
+    padding: 5px 10px; font-size: 10px;
+    border-left: none; border-bottom: 2px solid transparent;
+    white-space: nowrap;
+  }
+  .nav-item.active { border-bottom-color: var(--hi); border-left-color: transparent; }
+  .nav-section { display: none; }
+
+  /* ── Header ── */
+  .topbar { padding: 6px 8px; }
+  #header-date { font-size: 10px; }
+
+  /* ── Stat cells ── */
+  .stat-row { gap: 1px; }
+  .stat-cell { padding: 7px 8px; }
+  .stat-cell .v { font-size: 16px; }
+  .stat-cell .l { font-size: 8px; }
+
+  /* ── Game rows (collapsed) ── */
+  .game-row {
+    grid-template-columns: 54px 1fr 70px;
+    padding: 8px 8px;
+    gap: 6px;
+  }
+  .game-row .hide-sm { display: none !important; }
+  .matchup-cell .teams { font-size: 12px; font-weight: 600; }
+  .matchup-cell .pitchers { font-size: 9px; }
+
+  /* ── Game expand (mobile: single column) ── */
+  .game-expand { grid-template-columns: 1fr !important; gap: 0; }
+  .ge-col { padding: 8px; border-bottom: 1px solid var(--b1); }
+  .ge-col:last-child { border-bottom: none; }
+  .ge-col-title { font-size: 9px; margin-bottom: 6px; }
+
+  /* SP blocks side by side on mobile */
+  .ge-col:first-child { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+  .ge-col:first-child .ge-col-title { grid-column: 1 / -1; }
+  .ge-sp-block { border: 1px solid var(--b1); padding: 6px; }
+  .ge-sp-name { margin-bottom: 4px; }
+  .ge-sp-row { font-size: 9px; padding: 1px 0; }
+  .ge-sp-row .val { font-size: 10px; }
+
+  /* Prediction column — 2-col grid */
+  .ge-prediction { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
+  .ge-prediction .ge-sp-row:first-child { grid-column: 1 / -1; }
+
+  /* ── Best bet cards ── */
+  .bet-card { padding: 10px; }
+  .bc-head { font-size: 11px; }
+  .bc-matchup { font-size: 13px; }
+  .bc-sp-grid { grid-template-columns: 1fr 1fr !important; gap: 6px; }
+  .bc-sp { padding: 6px; }
+  .bc-sp-stat { font-size: 9px; }
+  .bc-footer { flex-wrap: wrap; gap: 4px; }
+  .bc-stat { padding: 5px 8px; }
+  .bc-stat .bv { font-size: 13px; }
+  .bc-stat .bl { font-size: 8px; }
+
+  /* ── Predictions table ── */
+  .tbl-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { min-width: 480px; }
+  th, td { padding: 6px 6px; font-size: 9px; }
+
+  /* ── Pitcher cards ── */
+  .pitcher-block { padding: 8px; }
+  .pitcher-header-row { grid-template-columns: 1fr 52px 70px !important; }
+  .pitcher-col-headers { grid-template-columns: 1fr 52px 70px !important; }
+
+  /* ── K props table ── */
+  .kprop-row { font-size: 10px; }
+
+  /* ── Calendar ── */
+  .cal-grid { gap: 1px; }
+  .cal-day { min-height: 36px; font-size: 10px; padding: 4px 2px; }
+  .cal-record { font-size: 8px; }
+  .cal-month-label { font-size: 11px; }
+
+  /* ── Filters / tabs ── */
+  .filters { gap: 3px; flex-wrap: wrap; }
+  .fb { padding: 4px 8px; font-size: 9px; }
+
+  /* ── Section headers ── */
+  .sec { font-size: 9px; padding: 5px 0; margin-bottom: 6px; }
+
+  /* ── Live scorebug ── */
+  .live-game { min-width: 80px; padding: 4px 6px; }
+  .lg-teams { font-size: 10px; }
+  .lg-score { font-size: 11px; }
+  .lg-status { font-size: 8px; }
+
+  /* ── NRFI cards ── */
+  .nrfi-grid { grid-template-columns: 1fr 1fr !important; gap: 4px; }
+  .nrfi-card { padding: 8px; }
+
+  /* ── Standings ── */
+  .standings-wrap { gap: 8px; }
+  .standing-row { font-size: 10px; padding: 4px 6px; }
+
+  /* ── Trends ── */
+  .trends-cols { grid-template-columns: 1fr !important; }
+
+  /* ── Bullpen table ── */
+  .bullpen-row { font-size: 10px; }
+
+  /* ── Model performance calendar ── */
+  .cal-day-detail { margin-top: 8px; }
+  .cal-detail-header { font-size: 10px; padding: 5px 8px; }
+}
+
+/* Slightly larger phones (481-600px) */
+@media (min-width: 481px) and (max-width: 600px) {
+  .shell { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr; }
+  .sidebar {
+    grid-column: 1; grid-row: 2;
+    display: flex; flex-direction: row; flex-wrap: wrap;
+    gap: 0; border-right: none; border-bottom: 1px solid var(--b1);
+    padding: 4px 8px;
+  }
+  .content { grid-column: 1; grid-row: 3; padding: 10px; }
+  .sidebar-logo { display: none; }
+  .nav-item { padding: 5px 10px; font-size: 10px; border-left: none; white-space: nowrap; }
+  .nav-section { display: none; }
+  .game-expand { grid-template-columns: 1fr 1fr !important; }
+}
+
 </style>
 </head>
 <body>
@@ -1732,25 +1876,43 @@ function renderGames() {
     const hCard = findCard(g.home_sp, g.home_abbr, g.away_abbr);
     const aCard = findCard(g.away_sp, g.away_abbr, g.home_abbr);
 
-    function miniSP(card, sp, abbr) {
-      const name = card ? card.name : (sp||'TBD');
-      const ss   = card?.season_stats || {};
-      const ec   = (ss.ERA||99)<3.5?'pos':(ss.ERA||99)>4.5?'neg':'';
-      const tr   = card?.trend||'neutral';
-      const ti   = tr==='improving'?'↑':tr==='declining'?'↓':'→';
-      const tc   = tr==='improving'?'pos':tr==='declining'?'neg':'dim';
-      const sts  = (card?.last_starts||[]).slice(0,3);
-      const l3ip = sts.reduce((s,x)=>s+(x.IP||0),0);
-      const l3er = sts.reduce((s,x)=>s+(x.ER||0),0);
-      const l3era= l3ip>0?(l3er/l3ip*9).toFixed(2):null;
-      const kp   = card?.k_prediction?.predicted_ks;
+    // Bullpen data
+    const hBP = DATA.bullpen.find(t => t.team === g.home_abbr);
+    const aBP = DATA.bullpen.find(t => t.team === g.away_abbr);
+
+    function miniSP(card, sp, abbr, isAway) {
+      const name  = card ? card.name : (sp||'TBD');
+      const ss    = card?.season_stats || {};
+      const ec    = (ss.ERA||99)<3.5?'pos':(ss.ERA||99)>4.5?'neg':'';
+      const fc    = (ss.FIP||99)<3.5?'pos':(ss.FIP||99)>4.5?'neg':'';
+      const tr    = card?.trend||'neutral';
+      const ti    = tr==='improving'?'↑':tr==='declining'?'↓':'→';
+      const tc    = tr==='improving'?'pos':tr==='declining'?'neg':'dim';
+      const sts   = (card?.last_starts||[]).slice(0,3);
+      const l3ip  = sts.reduce((s,x)=>s+(x.IP||0),0);
+      const l3er  = sts.reduce((s,x)=>s+(x.ER||0),0);
+      const l3era = l3ip>0?(l3er/l3ip*9).toFixed(2):null;
+      const l3iavg= sts.length>0?(l3ip/sts.length).toFixed(1):null;
+      const kp    = card?.k_prediction?.predicted_ks;
+      const rest  = card?.days_rest;
+      const restC = rest!=null&&rest<=3?'warn':rest!=null&&rest>=6?'pos':'';
+      const restLbl = rest!=null ? `${rest}d` : '—';
+      const hand  = ss.throws || card?.throws || '';
+      const handLbl = hand ? `(${hand})` : '';
       return `<div class="ge-sp-block">
-        <div class="ge-sp-name"><span class="dim" style="font-size:9px">${abbr} —</span> ${name}</div>
+        <div class="ge-sp-name">
+          <span class="dim" style="font-size:9px">${isAway?'AWAY':'HOME'} SP</span>
+          <div style="font-weight:600;margin-top:1px">${name} <span class="dim" style="font-size:9px">${handLbl}</span></div>
+          <div class="dim" style="font-size:9px">${abbr}</div>
+        </div>
         <div class="ge-sp-row"><span>era</span><span class="val ${ec}">${ss.ERA??'—'}</span></div>
+        <div class="ge-sp-row"><span>fip</span><span class="val ${fc}">${ss.FIP??'—'}</span></div>
         <div class="ge-sp-row"><span>k/9</span><span class="val">${ss.K9??'—'}</span></div>
+        <div class="ge-sp-row"><span>bb/9</span><span class="val">${ss.BB9??'—'}</span></div>
         <div class="ge-sp-row"><span>whip</span><span class="val">${ss.WHIP??'—'}</span></div>
-        <div class="ge-sp-row"><span>fip</span><span class="val">${ss.FIP??'—'}</span></div>
-        ${l3era?`<div class="ge-sp-row"><span>l3 era</span><span class="val ${l3era&&ss.ERA&&parseFloat(l3era)<ss.ERA?'pos':parseFloat(l3era)>ss.ERA+0.5?'neg':''}">${l3era}</span></div>`:''}
+        ${l3era!=null?`<div class="ge-sp-row"><span>l3 era</span><span class="val ${parseFloat(l3era)<(ss.ERA||5)?'pos':parseFloat(l3era)>(ss.ERA||5)+0.5?'neg':''}">${l3era}</span></div>`:''}
+        ${l3iavg!=null?`<div class="ge-sp-row"><span>l3 ip/g</span><span class="val">${l3iavg}</span></div>`:''}
+        <div class="ge-sp-row"><span>rest</span><span class="val ${restC}">${restLbl}</span></div>
         <div class="ge-sp-row"><span>trend</span><span class="val ${tc}">${ti} ${tr}</span></div>
         ${kp!=null?`<div class="ge-sp-row"><span>k proj</span><span class="val hi">${kp}</span></div>`:''}
       </div>`;
@@ -1794,16 +1956,36 @@ function renderGames() {
       <div class="game-expand" id="ge-${i}">
         <div class="ge-col">
           <div class="ge-col-title">Starting Pitchers</div>
-          ${miniSP(aCard, g.away_sp, g.away_abbr)}
-          ${miniSP(hCard, g.home_sp, g.home_abbr)}
+          ${miniSP(aCard, g.away_sp, g.away_abbr, true)}
+          ${miniSP(hCard, g.home_sp, g.home_abbr, false)}
         </div>
         <div class="ge-col">
-          <div class="ge-col-title">Projected Lineups</div>
+          <div class="ge-col-title">Model Prediction</div>
+          <div class="ge-prediction">
+            <div class="ge-sp-row" style="margin-bottom:6px">
+              <span>winner</span>
+              <span class="val hi" style="font-size:12px;font-weight:700">${fav} ${Math.abs(m).toFixed(1)}</span>
+            </div>
+            <div class="ge-sp-row"><span>total proj</span><span class="val">${(g.predicted_total||0).toFixed(1)}</span></div>
+            <div class="ge-sp-row"><span>home win%</span><span class="val">${hp}%</span></div>
+            <div class="ge-sp-row"><span>conf</span><span class="val">${g.spread_confidence||'—'}</span></div>
+            ${g.vegas_spread!=null?`<div class="ge-sp-row" style="margin-top:6px;border-top:1px solid var(--b1);padding-top:6px"><span>vegas rl</span><span class="val">${g.vegas_spread>0?'+':''}${g.vegas_spread}</span></div>`:''}
+            ${g.vegas_total!=null?`<div class="ge-sp-row"><span>vegas o/u</span><span class="val">${g.vegas_total}</span></div>`:''}
+            ${g.spread_edge_label&&g.spread_edge_label!=='NO LINE'?`<div class="ge-sp-row"><span>rl edge</span><span class="val ${g.spread_edge_label==='STRONG'?'pos':g.spread_edge_label==='LEAN'?'hi':''}">${g.spread_edge_label} ${g.spread_edge_pct!=null?(g.spread_edge_pct>0?'+':'')+(g.spread_edge_pct*100).toFixed(1)+'%':''}</span></div>`:''}
+            ${g.total_edge_label&&g.total_edge_label!=='NO LINE'?`<div class="ge-sp-row"><span>o/u edge</span><span class="val ${g.total_edge_label==='STRONG'?'pos':g.total_edge_label==='LEAN'?'hi':''}">${g.total_edge_label} ${g.total_edge_pct!=null?(g.total_edge_pct>0?'+':'')+(g.total_edge_pct*100).toFixed(1)+'%':''}</span></div>`:''}
+            <div style="margin-top:8px;border-top:1px solid var(--b1);padding-top:8px">
+              <div class="dim" style="font-size:9px;letter-spacing:.5px;margin-bottom:4px">BULLPEN</div>
+              ${hBP?`<div class="ge-sp-row"><span>${g.home_abbr} bp era</span><span class="val ${hBP.quality==='ELITE'?'pos':hBP.quality==='POOR'?'neg':''}">${hBP.era?.toFixed(2)||'—'} <span class="dim" style="font-size:9px">${hBP.quality||''}</span></span></div>`:''}
+              ${aBP?`<div class="ge-sp-row"><span>${g.away_abbr} bp era</span><span class="val ${aBP.quality==='ELITE'?'pos':aBP.quality==='POOR'?'neg':''}">${aBP.era?.toFixed(2)||'—'} <span class="dim" style="font-size:9px">${aBP.quality||''}</span></span></div>`:''}
+              ${hBP?.fatigue?`<div class="ge-sp-row"><span>${g.home_abbr} fatigue</span><span class="val ${hBP.fatigue==='HEAVY'||hBP.fatigue==='TIRED'?'warn':'dim'}">${hBP.fatigue}</span></div>`:''}
+              ${aBP?.fatigue?`<div class="ge-sp-row"><span>${g.away_abbr} fatigue</span><span class="val ${aBP.fatigue==='HEAVY'||aBP.fatigue==='TIRED'?'warn':'dim'}">${aBP.fatigue}</span></div>`:''}
+            </div>
+          </div>
+        </div>
+        <div class="ge-col">
+          <div class="ge-col-title">Lineups & Weather</div>
           <div id="lineup-${i}" class="ge-lineup"><span class="dim" style="font-size:10px">Click to load...</span></div>
-        </div>
-        <div class="ge-col">
-          <div class="ge-col-title">Weather</div>
-          <div id="weather-${i}" class="ge-weather"><span class="dim" style="font-size:10px">Click to load...</span></div>
+          <div id="weather-${i}" class="ge-weather" style="margin-top:8px"><span class="dim" style="font-size:10px">Click to load...</span></div>
         </div>
       </div>
     </div>`;
