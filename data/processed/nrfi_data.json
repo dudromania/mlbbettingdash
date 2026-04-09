@@ -1,69 +1,138 @@
 [
   {
-    "date": "2026-04-08",
-    "game_time": "6:05 PM CT",
-    "home_abbr": "NYY",
-    "away_abbr": "ATH",
-    "home_sp": "Will Warren",
-    "away_sp": "Luis Severino",
-    "nrfi_prob": 33.4,
-    "label": "LEAN YRFI",
+    "date": "2026-04-09",
+    "game_time": "8:40 PM CT",
+    "home_abbr": "SD",
+    "away_abbr": "COL",
+    "home_sp": "Randy V\u00e1squez",
+    "away_sp": "TBD",
+    "nrfi_prob": 58.7,
+    "label": "SLIGHT NRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Will Warren",
+      "name": "Randy V\u00e1squez",
       "first_inning": {},
-      "season_era": 3.07
+      "season_era": 0.75
     },
     "away_pitcher": {
-      "name": "Luis Severino",
+      "name": "Tomoyuki Sugano",
       "first_inning": {},
-      "season_era": 5.4
+      "season_era": 1.69
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
   },
   {
-    "date": "2026-04-08",
+    "date": "2026-04-09",
+    "game_time": "6:10 PM CT",
+    "home_abbr": "NYM",
+    "away_abbr": "AZ",
+    "home_sp": "Nolan McLean",
+    "away_sp": "Eduardo Rodriguez",
+    "nrfi_prob": 53.9,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Nolan McLean",
+      "first_inning": {},
+      "season_era": 2.61
+    },
+    "away_pitcher": {
+      "name": "Eduardo Rodriguez",
+      "first_inning": {},
+      "season_era": 0.0
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-09",
     "game_time": "6:40 PM CT",
-    "home_abbr": "MIN",
-    "away_abbr": "DET",
-    "home_sp": "Bailey Ober",
-    "away_sp": "Framber Valdez",
-    "nrfi_prob": 29.4,
-    "label": "LEAN YRFI",
+    "home_abbr": "KC",
+    "away_abbr": "CWS",
+    "home_sp": "Seth Lugo",
+    "away_sp": "Anthony Kay",
+    "nrfi_prob": 44.7,
+    "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Bailey Ober",
+      "name": "Seth Lugo",
       "first_inning": {},
-      "season_era": 5.27
+      "season_era": 1.59
     },
     "away_pitcher": {
-      "name": "Framber Valdez",
+      "name": "Anthony Kay",
       "first_inning": {},
-      "season_era": 4.24
+      "season_era": 4.0
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
   },
   {
-    "date": "2026-04-08",
-    "game_time": "5:40 PM CT",
+    "date": "2026-04-09",
+    "game_time": "11:10 AM CT",
     "home_abbr": "MIA",
     "away_abbr": "CIN",
-    "home_sp": "Eury P\u00e9rez",
-    "away_sp": "Brady Singer",
-    "nrfi_prob": 26.7,
+    "home_sp": "Max Meyer",
+    "away_sp": "Rhett Lowder",
+    "nrfi_prob": 41.2,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Max Meyer",
+      "first_inning": {},
+      "season_era": 4.66
+    },
+    "away_pitcher": {
+      "name": "Rhett Lowder",
+      "first_inning": {},
+      "season_era": 1.64
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-09",
+    "game_time": "12:35 PM CT",
+    "home_abbr": "NYY",
+    "away_abbr": "ATH",
+    "home_sp": "Ryan Weathers",
+    "away_sp": "Jeffrey Springs",
+    "nrfi_prob": 39.3,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Ryan Weathers",
+      "first_inning": {},
+      "season_era": 4.5
+    },
+    "away_pitcher": {
+      "name": "Jeffrey Springs",
+      "first_inning": {},
+      "season_era": 2.38
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-09",
+    "game_time": "12:40 PM CT",
+    "home_abbr": "MIN",
+    "away_abbr": "DET",
+    "home_sp": "Mick Abel",
+    "away_sp": "Jack Flaherty",
+    "nrfi_prob": 26.0,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Eury P\u00e9rez",
+      "name": "Mick Abel",
       "first_inning": {},
-      "season_era": 5.06
+      "season_era": 11.05
     },
     "away_pitcher": {
-      "name": "Brady Singer",
+      "name": "Jack Flaherty",
       "first_inning": {},
-      "season_era": 7.71
+      "season_era": 7.56
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
