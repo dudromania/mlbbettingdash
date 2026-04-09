@@ -1,6 +1,6 @@
 [
   {
-    "id": 245,
+    "id": 266,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Will Warren",
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 237,
+    "id": 258,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Sonny Gray",
@@ -50,11 +50,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 243,
+    "id": 264,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Shohei Ohtani",
@@ -77,11 +77,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 250,
+    "id": 271,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Sean Burke",
@@ -104,11 +104,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 251,
+    "id": 272,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Ryne Nelson",
@@ -131,11 +131,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 254,
+    "id": 275,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Mitch Keller",
@@ -158,11 +158,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 255,
+    "id": 276,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Michael McGreevy",
@@ -185,11 +185,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 246,
+    "id": 267,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Michael King",
@@ -212,11 +212,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 252,
+    "id": 273,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "MacKenzie Gore",
@@ -239,11 +239,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 253,
+    "id": 274,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Luis Severino",
@@ -266,11 +266,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 249,
+    "id": 270,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Kyle Bradish",
@@ -293,11 +293,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 236,
+    "id": 257,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Grant Holmes",
@@ -320,11 +320,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 240,
+    "id": 261,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Framber Valdez",
@@ -347,11 +347,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 244,
+    "id": 265,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Eury P\u00e9rez",
@@ -374,11 +374,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 241,
+    "id": 262,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Dylan Cease",
@@ -401,11 +401,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 248,
+    "id": 269,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Cristian Javier",
@@ -428,11 +428,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 235,
+    "id": 256,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Colin Rea",
@@ -455,11 +455,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 238,
+    "id": 259,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Cole Ragans",
@@ -482,11 +482,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 242,
+    "id": 263,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Bryan Woo",
@@ -509,11 +509,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 247,
+    "id": 268,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Bailey Ober",
@@ -536,11 +536,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
-    "id": 239,
+    "id": 260,
     "game_date": "2026-04-08",
     "game_pick_id": null,
     "player_name": "Aaron Nola",
@@ -563,7 +563,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-08 11:59:40",
+    "created_at": "2026-04-08 13:09:37",
     "graded_at": null
   },
   {
