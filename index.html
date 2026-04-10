@@ -1247,6 +1247,7 @@ tbody td {
   </button>
   <div class="logo">MLB<span class="logo-sep">/</span>EDGE</div>
   <div id="header-date"></div>
+  <div id="header-updated" style="font-family:var(--mono);font-size:10px;color:var(--t3);margin-left:12px"></div>
 </header>
 
 <div class="drawer-overlay" id="overlay"></div>
@@ -1576,6 +1577,12 @@ async function init() {
     d.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
   document.getElementById('status-date').textContent =
     d.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
+  // Last updated timestamp from picks_today.json fetch time
+  const updatedEl = document.getElementById('header-updated');
+  if (updatedEl) {
+    const now = new Date();
+    updatedEl.textContent = 'updated ' + now.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
+  }
 
   renderAll();
 }
@@ -2924,7 +2931,7 @@ function buildCalendarData() {
                    rawResult === 'L' || rawResult === 'loss' ? 'loss' :
                    rawResult === 'P' || rawResult === 'push' ? 'push' : null;
     return {...h, bet_type: betType, result};
-}).filter(h => h.date && h.actual_margin != null);
+  }).filter(h => h.date && h.actual_margin != null);
 
   hist.forEach(h => {
     const d = h.date.slice(0,10);
@@ -3092,7 +3099,8 @@ function renderResults() {
                    rawResult === 'P' || rawResult === 'push' ? 'push' : null;
     const pnl = (h.pnl_spread||0) + (h.pnl_total||0) + (h.pnl_ml||0);
     return {...h, bet_type: betType || 'spread', result, pnl};
-}).filter(h => h.result && h.actual_margin != null && h.spread_edge_label !== 'NO LINE');
+  }).filter(h => h.result && h.actual_margin != null && h.bet_type !== null && h.spread_edge_label !== "NO LINE");
+
   if (!hist.length) {
     document.getElementById('results-stats').innerHTML =
       `<div class="stat-cell"><div class="v dim">0–0</div><div class="l">RECORD</div></div>
