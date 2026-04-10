@@ -1,6 +1,6 @@
 [
   {
-    "id": 303,
+    "id": 322,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Tyler Glasnow",
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 310,
+    "id": 329,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Tomoyuki Sugano",
@@ -50,11 +50,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 317,
+    "id": 336,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Slade Cecconi",
@@ -77,11 +77,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 314,
+    "id": 331,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Shota Imanaga",
@@ -90,11 +90,11 @@
     "prop_type": "strikeouts",
     "prop_market": "UNDER 5.5 K",
     "prop_line": 5.5,
-    "prop_odds": 110,
+    "prop_odds": 118,
     "prop_book": "fanduel",
     "predicted_value": 5.2,
     "predicted_prob_over": 0.419,
-    "edge": 0.105,
+    "edge": 0.122,
     "confidence": null,
     "player_season_avg": 8.78,
     "player_last7_avg": null,
@@ -104,11 +104,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 306,
+    "id": 325,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Shane Baz",
@@ -131,11 +131,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 319,
+    "id": 338,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Kumar Rocker",
@@ -158,11 +158,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 313,
+    "id": 333,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Kris Bubic",
@@ -185,11 +185,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 318,
+    "id": 337,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Keider Montero",
@@ -198,11 +198,11 @@
     "prop_type": "strikeouts",
     "prop_market": "OVER 3.5 K",
     "prop_line": 3.5,
-    "prop_odds": 106,
+    "prop_odds": 108,
     "prop_book": "fanduel",
     "predicted_value": 3.9,
     "predicted_prob_over": 0.547,
-    "edge": 0.061,
+    "edge": 0.066,
     "confidence": null,
     "player_season_avg": 8.08,
     "player_last7_avg": null,
@@ -212,11 +212,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 315,
+    "id": 334,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Jes\u00fas Luzardo",
@@ -239,11 +239,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 305,
+    "id": 324,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Jake Irvin",
@@ -266,11 +266,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 307,
+    "id": 326,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Jack Kochanowicz",
@@ -293,11 +293,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 312,
+    "id": 332,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Emerson Hancock",
@@ -320,11 +320,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 304,
+    "id": 323,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Davis Martin",
@@ -347,11 +347,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 308,
+    "id": 327,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Clay Holmes",
@@ -374,11 +374,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 311,
+    "id": 330,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Chris Paddack",
@@ -401,11 +401,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 302,
+    "id": 320,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Chase Burns",
@@ -414,11 +414,11 @@
     "prop_type": "strikeouts",
     "prop_market": "UNDER 7.5 K",
     "prop_line": 7.5,
-    "prop_odds": 118,
+    "prop_odds": 126,
     "prop_book": "fanduel",
     "predicted_value": 6.3,
     "predicted_prob_over": 0.298,
-    "edge": 0.243,
+    "edge": 0.259,
     "confidence": null,
     "player_season_avg": 13.49,
     "player_last7_avg": null,
@@ -428,11 +428,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 309,
+    "id": 328,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Chad Patrick",
@@ -455,11 +455,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 301,
+    "id": 321,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Carmen Mlodzinski",
@@ -482,11 +482,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {
-    "id": 316,
+    "id": 335,
     "game_date": "2026-04-10",
     "game_pick_id": null,
     "player_name": "Bryce Elder",
@@ -509,7 +509,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-10 16:15:07",
+    "created_at": "2026-04-10 18:15:11",
     "graded_at": null
   },
   {

@@ -1,6 +1,29 @@
 [
   {
     "date": "2026-04-10",
+    "game_time": "1:20 PM CT",
+    "home_abbr": "CHC",
+    "away_abbr": "PIT",
+    "home_sp": "Shota Imanaga",
+    "away_sp": "Carmen Mlodzinski",
+    "nrfi_prob": 46.6,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Shota Imanaga",
+      "first_inning": {},
+      "season_era": 2.81
+    },
+    "away_pitcher": {
+      "name": "Carmen Mlodzinski",
+      "first_inning": {},
+      "season_era": 2.51
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-10",
     "game_time": "8:40 PM CT",
     "home_abbr": "SEA",
     "away_abbr": "HOU",
@@ -139,29 +162,6 @@
   },
   {
     "date": "2026-04-10",
-    "game_time": "6:40 PM CT",
-    "home_abbr": "MIL",
-    "away_abbr": "WSH",
-    "home_sp": "Chad Patrick",
-    "away_sp": "Jake Irvin",
-    "nrfi_prob": 40.0,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Chad Patrick",
-      "first_inning": {},
-      "season_era": 0.96
-    },
-    "away_pitcher": {
-      "name": "Jake Irvin",
-      "first_inning": {},
-      "season_era": 8.0
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-10",
     "game_time": "6:07 PM CT",
     "home_abbr": "TOR",
     "away_abbr": "MIN",
@@ -254,6 +254,29 @@
   },
   {
     "date": "2026-04-10",
+    "game_time": "6:40 PM CT",
+    "home_abbr": "MIL",
+    "away_abbr": "WSH",
+    "home_sp": "Aaron Ashby",
+    "away_sp": "Jake Irvin",
+    "nrfi_prob": 34.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Aaron Ashby",
+      "first_inning": {},
+      "season_era": 2.79
+    },
+    "away_pitcher": {
+      "name": "Jake Irvin",
+      "first_inning": {},
+      "season_era": 8.0
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-10",
     "game_time": "6:15 PM CT",
     "home_abbr": "BAL",
     "away_abbr": "SF",
@@ -294,29 +317,6 @@
       "name": "Connelly Early",
       "first_inning": {},
       "season_era": 2.89
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-10",
-    "game_time": "1:20 PM CT",
-    "home_abbr": "CHC",
-    "away_abbr": "PIT",
-    "home_sp": "Shota Imanaga",
-    "away_sp": "Carmen Mlodzinski",
-    "nrfi_prob": 33.2,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Shota Imanaga",
-      "first_inning": {},
-      "season_era": 4.5
-    },
-    "away_pitcher": {
-      "name": "Carmen Mlodzinski",
-      "first_inning": {},
-      "season_era": 4.0
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
