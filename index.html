@@ -2924,7 +2924,7 @@ function buildCalendarData() {
                    rawResult === 'L' || rawResult === 'loss' ? 'loss' :
                    rawResult === 'P' || rawResult === 'push' ? 'push' : null;
     return {...h, bet_type: betType, result};
-  }).filter(h => h.result && h.date);
+}).filter(h => h.date && h.actual_margin != null);
 
   hist.forEach(h => {
     const d = h.date.slice(0,10);
@@ -3092,8 +3092,7 @@ function renderResults() {
                    rawResult === 'P' || rawResult === 'push' ? 'push' : null;
     const pnl = (h.pnl_spread||0) + (h.pnl_total||0) + (h.pnl_ml||0);
     return {...h, bet_type: betType || 'spread', result, pnl};
-  }).filter(h => h.result && h.actual_margin != null);
-
+}).filter(h => h.result && h.actual_margin != null && h.spread_edge_label !== 'NO LINE');
   if (!hist.length) {
     document.getElementById('results-stats').innerHTML =
       `<div class="stat-cell"><div class="v dim">0–0</div><div class="l">RECORD</div></div>
