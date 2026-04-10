@@ -4551,7 +4551,53 @@
         "game_id": 824053
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 35.4,
+        "avg_velo": 97.5,
+        "avg_spin": 2304,
+        "whiff_pct": 20.6,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 26.9,
+        "avg_velo": 87.5,
+        "avg_spin": 1485,
+        "whiff_pct": 32.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 17.5,
+        "avg_velo": 90.3,
+        "avg_spin": 2261,
+        "whiff_pct": 42.9,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 13.1,
+        "avg_velo": 97.4,
+        "avg_spin": 2277,
+        "whiff_pct": 12.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 7.1,
+        "avg_velo": 84.8,
+        "avg_spin": 2314,
+        "whiff_pct": 33.3,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {
       "vs_lhb": {
         "avg": 0.333,
@@ -4895,7 +4941,62 @@
         "game_id": 776700
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 29.5,
+        "avg_velo": 93.2,
+        "avg_spin": 2189,
+        "whiff_pct": 25.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 22.0,
+        "avg_velo": 85.0,
+        "avg_spin": 1709,
+        "whiff_pct": 34.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 17.1,
+        "avg_velo": 87.1,
+        "avg_spin": 1978,
+        "whiff_pct": 34.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 11.3,
+        "avg_velo": 77.5,
+        "avg_spin": 2118,
+        "whiff_pct": 26.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 9.8,
+        "avg_velo": 80.6,
+        "avg_spin": 2297,
+        "whiff_pct": 35.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 9.5,
+        "avg_velo": 93.2,
+        "avg_spin": 2077,
+        "whiff_pct": 4.3,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {
       "vs_lhb": {
         "avg": 0.222,
@@ -10432,7 +10533,62 @@
         "game_id": 776740
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 26.5,
+        "avg_velo": 78.3,
+        "avg_spin": 1743,
+        "whiff_pct": 28.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 22.1,
+        "avg_velo": 89.0,
+        "avg_spin": 2309,
+        "whiff_pct": 11.1,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 20.8,
+        "avg_velo": 92.1,
+        "avg_spin": 2209,
+        "whiff_pct": 2.8,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 16.5,
+        "avg_velo": 92.6,
+        "avg_spin": 2222,
+        "whiff_pct": 11.4,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 8.0,
+        "avg_velo": 85.6,
+        "avg_spin": 2331,
+        "whiff_pct": 6.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 6.2,
+        "avg_velo": 79.4,
+        "avg_spin": 2487,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {
       "vs_lhb": {
         "avg": 0.138,
@@ -11352,7 +11508,62 @@
         "game_id": 777839
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 45.8,
+        "avg_velo": 92.6,
+        "avg_spin": 2268,
+        "whiff_pct": 18.4,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FS",
+        "pitch_name": "Splitter",
+        "usage_pct": 13.0,
+        "avg_velo": 86.6,
+        "avg_spin": 2002,
+        "whiff_pct": 42.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "KC",
+        "pitch_name": "Knuckle Curve",
+        "usage_pct": 11.9,
+        "avg_velo": 78.0,
+        "avg_spin": 2727,
+        "whiff_pct": 34.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 11.9,
+        "avg_velo": 92.1,
+        "avg_spin": 2079,
+        "whiff_pct": 8.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 9.4,
+        "avg_velo": 78.8,
+        "avg_spin": 2744,
+        "whiff_pct": 31.2,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 8.0,
+        "avg_velo": 85.8,
+        "avg_spin": 2281,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {
       "vs_lhb": {
         "avg": 0.333,
