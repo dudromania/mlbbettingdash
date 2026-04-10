@@ -1,69 +1,345 @@
 [
   {
-    "date": "2026-04-09",
+    "date": "2026-04-10",
     "game_time": "8:40 PM CT",
-    "home_abbr": "SD",
-    "away_abbr": "COL",
-    "home_sp": "Randy V\u00e1squez",
-    "away_sp": "Jimmy Herget",
-    "nrfi_prob": 59.7,
-    "label": "SLIGHT NRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Randy V\u00e1squez",
-      "first_inning": {},
-      "season_era": 0.75
-    },
-    "away_pitcher": {
-      "name": "Jimmy Herget",
-      "first_inning": {},
-      "season_era": 1.5
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-09",
-    "game_time": "6:10 PM CT",
-    "home_abbr": "NYM",
-    "away_abbr": "AZ",
-    "home_sp": "Nolan McLean",
-    "away_sp": "Eduardo Rodriguez",
-    "nrfi_prob": 53.4,
+    "home_abbr": "SEA",
+    "away_abbr": "HOU",
+    "home_sp": "Emerson Hancock",
+    "away_sp": "Tatsuya Imai",
+    "nrfi_prob": 44.9,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Nolan McLean",
+      "name": "Emerson Hancock",
       "first_inning": {},
-      "season_era": 2.7
+      "season_era": 0.71
     },
     "away_pitcher": {
-      "name": "Eduardo Rodriguez",
+      "name": "Tatsuya Imai",
       "first_inning": {},
-      "season_era": 0.5
+      "season_era": 4.32
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
   },
   {
-    "date": "2026-04-09",
+    "date": "2026-04-10",
+    "game_time": "5:45 PM CT",
+    "home_abbr": "CIN",
+    "away_abbr": "LAA",
+    "home_sp": "Chase Burns",
+    "away_sp": "Jack Kochanowicz",
+    "nrfi_prob": 43.1,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Chase Burns",
+      "first_inning": {},
+      "season_era": 0.82
+    },
+    "away_pitcher": {
+      "name": "Jack Kochanowicz",
+      "first_inning": {},
+      "season_era": 4.66
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-10",
+    "game_time": "5:40 PM CT",
+    "home_abbr": "PHI",
+    "away_abbr": "AZ",
+    "home_sp": "Jes\u00fas Luzardo",
+    "away_sp": "Michael Soroka",
+    "nrfi_prob": 41.5,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jes\u00fas Luzardo",
+      "first_inning": {},
+      "season_era": 4.97
+    },
+    "away_pitcher": {
+      "name": "Michael Soroka",
+      "first_inning": {},
+      "season_era": 0.9
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-10",
     "game_time": "6:40 PM CT",
     "home_abbr": "KC",
     "away_abbr": "CWS",
-    "home_sp": "Seth Lugo",
-    "away_sp": "Anthony Kay",
-    "nrfi_prob": 52.8,
+    "home_sp": "Kris Bubic",
+    "away_sp": "Davis Martin",
+    "nrfi_prob": 40.9,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Seth Lugo",
+      "name": "Kris Bubic",
       "first_inning": {},
-      "season_era": 1.53
+      "season_era": 4.09
     },
     "away_pitcher": {
-      "name": "Anthony Kay",
+      "name": "Davis Martin",
       "first_inning": {},
       "season_era": 2.45
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-10",
+    "game_time": "9:10 PM CT",
+    "home_abbr": "LAD",
+    "away_abbr": "TEX",
+    "home_sp": "Tyler Glasnow",
+    "away_sp": "Kumar Rocker",
+    "nrfi_prob": 40.9,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Tyler Glasnow",
+      "first_inning": {},
+      "season_era": 3.0
+    },
+    "away_pitcher": {
+      "name": "Kumar Rocker",
+      "first_inning": {},
+      "season_era": 3.6
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-10",
+    "game_time": "6:15 PM CT",
+    "home_abbr": "ATL",
+    "away_abbr": "CLE",
+    "home_sp": "Bryce Elder",
+    "away_sp": "Slade Cecconi",
+    "nrfi_prob": 40.1,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Bryce Elder",
+      "first_inning": {},
+      "season_era": 0.0
+    },
+    "away_pitcher": {
+      "name": "Slade Cecconi",
+      "first_inning": {},
+      "season_era": 5.23
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-10",
+    "game_time": "6:40 PM CT",
+    "home_abbr": "MIL",
+    "away_abbr": "WSH",
+    "home_sp": "Chad Patrick",
+    "away_sp": "Jake Irvin",
+    "nrfi_prob": 40.0,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Chad Patrick",
+      "first_inning": {},
+      "season_era": 0.96
+    },
+    "away_pitcher": {
+      "name": "Jake Irvin",
+      "first_inning": {},
+      "season_era": 8.0
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-10",
+    "game_time": "6:07 PM CT",
+    "home_abbr": "TOR",
+    "away_abbr": "MIN",
+    "home_sp": "Patrick Corbin",
+    "away_sp": "Simeon Woods Richardson",
+    "nrfi_prob": 40.0,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Patrick Corbin",
+      "first_inning": {},
+      "season_era": 4.4
+    },
+    "away_pitcher": {
+      "name": "Simeon Woods Richardson",
+      "first_inning": {},
+      "season_era": 2.31
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-10",
+    "game_time": "6:10 PM CT",
+    "home_abbr": "NYM",
+    "away_abbr": "ATH",
+    "home_sp": "Clay Holmes",
+    "away_sp": "J.T. Ginn",
+    "nrfi_prob": 39.6,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Clay Holmes",
+      "first_inning": {},
+      "season_era": 1.42
+    },
+    "away_pitcher": {
+      "name": "J.T. Ginn",
+      "first_inning": {},
+      "season_era": 5.14
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-10",
+    "game_time": "8:40 PM CT",
+    "home_abbr": "SD",
+    "away_abbr": "COL",
+    "home_sp": "Walker Buehler",
+    "away_sp": "Tomoyuki Sugano",
+    "nrfi_prob": 38.1,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Walker Buehler",
+      "first_inning": {},
+      "season_era": 9.45
+    },
+    "away_pitcher": {
+      "name": "Tomoyuki Sugano",
+      "first_inning": {},
+      "season_era": 1.69
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-10",
+    "game_time": "6:10 PM CT",
+    "home_abbr": "TB",
+    "away_abbr": "NYY",
+    "home_sp": "Steven Matz",
+    "away_sp": "Luis Gil",
+    "nrfi_prob": 37.5,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Steven Matz",
+      "first_inning": {},
+      "season_era": 4.09
+    },
+    "away_pitcher": {
+      "name": "Luis Gil",
+      "first_inning": {},
+      "season_era": 3.32
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-10",
+    "game_time": "6:15 PM CT",
+    "home_abbr": "BAL",
+    "away_abbr": "SF",
+    "home_sp": "Shane Baz",
+    "away_sp": "Landen Roupp",
+    "nrfi_prob": 34.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Shane Baz",
+      "first_inning": {},
+      "season_era": 4.09
+    },
+    "away_pitcher": {
+      "name": "Landen Roupp",
+      "first_inning": {},
+      "season_era": 4.22
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-10",
+    "game_time": "7:15 PM CT",
+    "home_abbr": "STL",
+    "away_abbr": "BOS",
+    "home_sp": "Dustin May",
+    "away_sp": "Connelly Early",
+    "nrfi_prob": 34.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Dustin May",
+      "first_inning": {},
+      "season_era": 15.95
+    },
+    "away_pitcher": {
+      "name": "Connelly Early",
+      "first_inning": {},
+      "season_era": 2.89
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-10",
+    "game_time": "1:20 PM CT",
+    "home_abbr": "CHC",
+    "away_abbr": "PIT",
+    "home_sp": "Shota Imanaga",
+    "away_sp": "Carmen Mlodzinski",
+    "nrfi_prob": 33.2,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Shota Imanaga",
+      "first_inning": {},
+      "season_era": 4.5
+    },
+    "away_pitcher": {
+      "name": "Carmen Mlodzinski",
+      "first_inning": {},
+      "season_era": 4.0
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-10",
+    "game_time": "5:40 PM CT",
+    "home_abbr": "DET",
+    "away_abbr": "MIA",
+    "home_sp": "Keider Montero",
+    "away_sp": "Chris Paddack",
+    "nrfi_prob": 29.8,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Keider Montero",
+      "first_inning": {},
+      "season_era": 4.15
+    },
+    "away_pitcher": {
+      "name": "Chris Paddack",
+      "first_inning": {},
+      "season_era": 8.31
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
