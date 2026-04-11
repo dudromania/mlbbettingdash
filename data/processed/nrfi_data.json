@@ -1,29 +1,6 @@
 [
   {
     "date": "2026-04-11",
-    "game_time": "1:20 PM CT",
-    "home_abbr": "CHC",
-    "away_abbr": "PIT",
-    "home_sp": "Edward Cabrera",
-    "away_sp": "Braxton Ashcraft",
-    "nrfi_prob": 55.7,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Edward Cabrera",
-      "first_inning": {},
-      "season_era": 0.0
-    },
-    "away_pitcher": {
-      "name": "Braxton Ashcraft",
-      "first_inning": {},
-      "season_era": 2.25
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-11",
     "game_time": "5:10 PM CT",
     "home_abbr": "TB",
     "away_abbr": "NYY",
@@ -41,6 +18,52 @@
       "name": "Max Fried",
       "first_inning": {},
       "season_era": 1.35
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-11",
+    "game_time": "1:20 PM CT",
+    "home_abbr": "CHC",
+    "away_abbr": "PIT",
+    "home_sp": "Edward Cabrera",
+    "away_sp": "Braxton Ashcraft",
+    "nrfi_prob": 54.0,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Edward Cabrera",
+      "first_inning": {},
+      "season_era": 1.62
+    },
+    "away_pitcher": {
+      "name": "Braxton Ashcraft",
+      "first_inning": {},
+      "season_era": 2.12
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-11",
+    "game_time": "3:10 PM CT",
+    "home_abbr": "KC",
+    "away_abbr": "CWS",
+    "home_sp": "Michael Wacha",
+    "away_sp": "Erick Fedde",
+    "nrfi_prob": 49.8,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Michael Wacha",
+      "first_inning": {},
+      "season_era": 0.47
+    },
+    "away_pitcher": {
+      "name": "Erick Fedde",
+      "first_inning": {},
+      "season_era": 3.38
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -93,29 +116,6 @@
   },
   {
     "date": "2026-04-11",
-    "game_time": "3:10 PM CT",
-    "home_abbr": "KC",
-    "away_abbr": "CWS",
-    "home_sp": "Michael Wacha",
-    "away_sp": "Erick Fedde",
-    "nrfi_prob": 46.1,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Michael Wacha",
-      "first_inning": {},
-      "season_era": 0.69
-    },
-    "away_pitcher": {
-      "name": "Erick Fedde",
-      "first_inning": {},
-      "season_era": 4.09
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-11",
     "game_time": "8:40 PM CT",
     "home_abbr": "SEA",
     "away_abbr": "HOU",
@@ -162,52 +162,6 @@
   },
   {
     "date": "2026-04-11",
-    "game_time": "12:10 PM CT",
-    "home_abbr": "DET",
-    "away_abbr": "MIA",
-    "home_sp": "Casey Mize",
-    "away_sp": "Janson Junk",
-    "nrfi_prob": 33.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Casey Mize",
-      "first_inning": {},
-      "season_era": 5.23
-    },
-    "away_pitcher": {
-      "name": "Janson Junk",
-      "first_inning": {},
-      "season_era": 3.09
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-11",
-    "game_time": "3:10 PM CT",
-    "home_abbr": "NYM",
-    "away_abbr": "ATH",
-    "home_sp": "Kodai Senga",
-    "away_sp": "Jacob Lopez",
-    "nrfi_prob": 33.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Kodai Senga",
-      "first_inning": {},
-      "season_era": 3.09
-    },
-    "away_pitcher": {
-      "name": "Jacob Lopez",
-      "first_inning": {},
-      "season_era": 6.48
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-11",
     "game_time": "7:40 PM CT",
     "home_abbr": "SD",
     "away_abbr": "COL",
@@ -225,52 +179,6 @@
       "name": "Ryan Feltner",
       "first_inning": {},
       "season_era": 4.32
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-11",
-    "game_time": "2:07 PM CT",
-    "home_abbr": "TOR",
-    "away_abbr": "MIN",
-    "home_sp": "Eric Lauer",
-    "away_sp": "Joe Ryan",
-    "nrfi_prob": 30.2,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Eric Lauer",
-      "first_inning": {},
-      "season_era": 4.91
-    },
-    "away_pitcher": {
-      "name": "Joe Ryan",
-      "first_inning": {},
-      "season_era": 4.4
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-11",
-    "game_time": "3:10 PM CT",
-    "home_abbr": "CIN",
-    "away_abbr": "LAA",
-    "home_sp": "Brandon Williamson",
-    "away_sp": "George Klassen",
-    "nrfi_prob": 27.7,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Brandon Williamson",
-      "first_inning": {},
-      "season_era": 4.76
-    },
-    "away_pitcher": {
-      "name": "George Klassen",
-      "first_inning": {},
-      "season_era": 6.75
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -300,23 +208,46 @@
   },
   {
     "date": "2026-04-11",
-    "game_time": "12:05 PM CT",
-    "home_abbr": "PHI",
-    "away_abbr": "AZ",
-    "home_sp": "Taijuan Walker",
-    "away_sp": "Brandon Pfaadt",
+    "game_time": "3:10 PM CT",
+    "home_abbr": "CIN",
+    "away_abbr": "LAA",
+    "home_sp": "Brandon Williamson",
+    "away_sp": "George Klassen",
     "nrfi_prob": 26.0,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Taijuan Walker",
+      "name": "Brandon Williamson",
       "first_inning": {},
-      "season_era": 9.31
+      "season_era": 5.28
     },
     "away_pitcher": {
-      "name": "Brandon Pfaadt",
+      "name": "George Klassen",
       "first_inning": {},
-      "season_era": 6.75
+      "season_era": 13.5
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-11",
+    "game_time": "3:10 PM CT",
+    "home_abbr": "NYM",
+    "away_abbr": "ATH",
+    "home_sp": "Kodai Senga",
+    "away_sp": "Jacob Lopez",
+    "nrfi_prob": 26.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Kodai Senga",
+      "first_inning": {},
+      "season_era": 7.07
+    },
+    "away_pitcher": {
+      "name": "Jacob Lopez",
+      "first_inning": {},
+      "season_era": 6.08
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
