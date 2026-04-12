@@ -1,104 +1,14 @@
 {
-  "date": "2026-04-11",
-  "fetched_at": "2026-04-11",
+  "date": "2026-04-12",
+  "fetched_at": "2026-04-12",
   "games": [
     {
       "home_abbr": "PHI",
       "away_abbr": "ARI",
-      "home_score": "4",
-      "away_score": "3",
-      "state": "post",
-      "detail": "Final",
-      "is_live": false,
-      "is_final": true
-    },
-    {
-      "home_abbr": "DET",
-      "away_abbr": "MIA",
-      "home_score": "6",
-      "away_score": "1",
-      "state": "post",
-      "detail": "Final",
-      "is_live": false,
-      "is_final": true
-    },
-    {
-      "home_abbr": "CHC",
-      "away_abbr": "PIT",
-      "home_score": "3",
-      "away_score": "4",
-      "state": "post",
-      "detail": "Final/11",
-      "is_live": false,
-      "is_final": true
-    },
-    {
-      "home_abbr": "TOR",
-      "away_abbr": "MIN",
-      "home_score": "4",
-      "away_score": "7",
-      "state": "post",
-      "detail": "Final",
-      "is_live": false,
-      "is_final": true
-    },
-    {
-      "home_abbr": "CIN",
-      "away_abbr": "LAA",
-      "home_score": "5",
-      "away_score": "3",
-      "state": "in",
-      "detail": "Top 6th",
-      "is_live": true,
-      "is_final": false
-    },
-    {
-      "home_abbr": "NYM",
-      "away_abbr": "ATH",
-      "home_score": "4",
-      "away_score": "7",
-      "state": "in",
-      "detail": "Bot 6th",
-      "is_live": true,
-      "is_final": false
-    },
-    {
-      "home_abbr": "KC",
-      "away_abbr": "CHW",
-      "home_score": "1",
-      "away_score": "0",
-      "state": "in",
-      "detail": "End 7th",
-      "is_live": true,
-      "is_final": false
-    },
-    {
-      "home_abbr": "TB",
-      "away_abbr": "NYY",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "in",
-      "detail": "Top 1st",
-      "is_live": true,
-      "is_final": false
-    },
-    {
-      "home_abbr": "MIL",
-      "away_abbr": "WSH",
       "home_score": "0",
       "away_score": "0",
       "state": "pre",
-      "detail": "4/11 - 7:10 PM EDT",
-      "is_live": false,
-      "is_final": false
-    },
-    {
-      "home_abbr": "ATL",
-      "away_abbr": "CLE",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "4/11 - 7:15 PM EDT",
+      "detail": "4/12 - 1:35 PM EDT",
       "is_live": false,
       "is_final": false
     },
@@ -108,7 +18,77 @@
       "home_score": "0",
       "away_score": "0",
       "state": "pre",
-      "detail": "4/11 - 7:15 PM EDT",
+      "detail": "4/12 - 1:35 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "TOR",
+      "away_abbr": "MIN",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "4/12 - 1:37 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "CIN",
+      "away_abbr": "LAA",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "4/12 - 1:40 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "NYM",
+      "away_abbr": "ATH",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "4/12 - 1:40 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "DET",
+      "away_abbr": "MIA",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "4/12 - 1:40 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "TB",
+      "away_abbr": "NYY",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "4/12 - 1:40 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "KC",
+      "away_abbr": "CHW",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "4/12 - 2:10 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "MIL",
+      "away_abbr": "WSH",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "4/12 - 2:10 PM EDT",
       "is_live": false,
       "is_final": false
     },
@@ -118,7 +98,17 @@
       "home_score": "0",
       "away_score": "0",
       "state": "pre",
-      "detail": "4/11 - 7:15 PM EDT",
+      "detail": "4/12 - 2:15 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "CHC",
+      "away_abbr": "PIT",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "4/12 - 2:20 PM EDT",
       "is_live": false,
       "is_final": false
     },
@@ -128,17 +118,7 @@
       "home_score": "0",
       "away_score": "0",
       "state": "pre",
-      "detail": "4/11 - 8:40 PM EDT",
-      "is_live": false,
-      "is_final": false
-    },
-    {
-      "home_abbr": "LAD",
-      "away_abbr": "TEX",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "4/11 - 9:10 PM EDT",
+      "detail": "4/12 - 4:10 PM EDT",
       "is_live": false,
       "is_final": false
     },
@@ -148,7 +128,27 @@
       "home_score": "0",
       "away_score": "0",
       "state": "pre",
-      "detail": "4/11 - 9:40 PM EDT",
+      "detail": "4/12 - 4:10 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "LAD",
+      "away_abbr": "TEX",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "4/12 - 4:10 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "ATL",
+      "away_abbr": "CLE",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "4/12 - 7:20 PM EDT",
       "is_live": false,
       "is_final": false
     }
