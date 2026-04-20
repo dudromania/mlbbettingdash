@@ -6,11 +6,11 @@
       "home_abbr": "BOS",
       "away_abbr": "DET",
       "home_score": "8",
-      "away_score": "3",
-      "state": "in",
-      "detail": "Top 9th",
-      "is_live": true,
-      "is_final": false
+      "away_score": "6",
+      "state": "post",
+      "detail": "Final",
+      "is_live": false,
+      "is_final": true
     },
     {
       "home_abbr": "CLE",

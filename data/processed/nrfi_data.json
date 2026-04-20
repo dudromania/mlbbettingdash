@@ -1,6 +1,29 @@
 [
   {
     "date": "2026-04-20",
+    "game_time": "5:40 PM CT",
+    "home_abbr": "TB",
+    "away_abbr": "CIN",
+    "home_sp": "Jesse Scholtens",
+    "away_sp": "Rhett Lowder",
+    "nrfi_prob": 49.1,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jesse Scholtens",
+      "first_inning": {},
+      "season_era": 0.0
+    },
+    "away_pitcher": {
+      "name": "Rhett Lowder",
+      "first_inning": {},
+      "season_era": 3.52
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-20",
     "game_time": "8:38 PM CT",
     "home_abbr": "LAA",
     "away_abbr": "TOR",
@@ -139,29 +162,6 @@
   },
   {
     "date": "2026-04-20",
-    "game_time": "5:40 PM CT",
-    "home_abbr": "TB",
-    "away_abbr": "CIN",
-    "home_sp": "TBD",
-    "away_sp": "Rhett Lowder",
-    "nrfi_prob": 37.9,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Steven Matz",
-      "first_inning": {},
-      "season_era": 3.8
-    },
-    "away_pitcher": {
-      "name": "Rhett Lowder",
-      "first_inning": {},
-      "season_era": 3.52
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-20",
     "game_time": "7:40 PM CT",
     "home_abbr": "COL",
     "away_abbr": "LAD",
@@ -202,29 +202,6 @@
       "name": "Aaron Nola",
       "first_inning": {},
       "season_era": 4.03
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-20",
-    "game_time": "10:10 AM CT",
-    "home_abbr": "BOS",
-    "away_abbr": "DET",
-    "home_sp": "Sonny Gray",
-    "away_sp": "Jack Flaherty",
-    "nrfi_prob": 36.0,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Sonny Gray",
-      "first_inning": {},
-      "season_era": 4.3
-    },
-    "away_pitcher": {
-      "name": "Jack Flaherty",
-      "first_inning": {},
-      "season_era": 3.47
     },
     "away_batting_1st": {},
     "home_batting_1st": {}

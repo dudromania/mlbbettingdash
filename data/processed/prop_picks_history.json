@@ -1,6 +1,6 @@
 [
   {
-    "id": 507,
+    "id": 518,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Spencer Arrighetti",
@@ -23,7 +23,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 16:10:18",
+    "created_at": "2026-04-20 18:11:25",
     "graded_at": null
   },
   {
@@ -54,7 +54,7 @@
     "graded_at": null
   },
   {
-    "id": 516,
+    "id": 528,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Slade Cecconi",
@@ -63,11 +63,11 @@
     "prop_type": "strikeouts",
     "prop_market": "OVER 3.5 K",
     "prop_line": 3.5,
-    "prop_odds": -166,
+    "prop_odds": -172,
     "prop_book": "fanduel",
     "predicted_value": 4.6,
     "predicted_prob_over": 0.674,
-    "edge": 0.05,
+    "edge": 0.042,
     "confidence": null,
     "player_season_avg": 7.89,
     "player_last7_avg": null,
@@ -77,11 +77,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 16:10:18",
+    "created_at": "2026-04-20 18:11:25",
     "graded_at": null
   },
   {
-    "id": 511,
+    "id": 522,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Seth Lugo",
@@ -104,11 +104,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 16:10:18",
+    "created_at": "2026-04-20 18:11:25",
     "graded_at": null
   },
   {
-    "id": 512,
+    "id": 523,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Rhett Lowder",
@@ -131,11 +131,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 16:10:18",
+    "created_at": "2026-04-20 18:11:25",
     "graded_at": null
   },
   {
-    "id": 515,
+    "id": 526,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Michael McGreevy",
@@ -158,11 +158,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 16:10:18",
+    "created_at": "2026-04-20 18:11:25",
     "graded_at": null
   },
   {
-    "id": 513,
+    "id": 524,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Justin Wrobleski",
@@ -185,11 +185,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 16:10:18",
+    "created_at": "2026-04-20 18:11:25",
     "graded_at": null
   },
   {
-    "id": 508,
+    "id": 519,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Jake Irvin",
@@ -212,7 +212,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 16:10:18",
+    "created_at": "2026-04-20 18:11:25",
     "graded_at": null
   },
   {
@@ -243,7 +243,7 @@
     "graded_at": null
   },
   {
-    "id": 514,
+    "id": 525,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "J.T. Ginn",
@@ -266,11 +266,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 16:10:18",
+    "created_at": "2026-04-20 18:11:25",
     "graded_at": null
   },
   {
-    "id": 509,
+    "id": 520,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Dylan Cease",
@@ -279,11 +279,11 @@
     "prop_type": "strikeouts",
     "prop_market": "UNDER 7.5 K",
     "prop_line": 7.5,
-    "prop_odds": -118,
+    "prop_odds": -120,
     "prop_book": "fanduel",
     "predicted_value": 6.3,
     "predicted_prob_over": 0.298,
-    "edge": 0.16,
+    "edge": 0.156,
     "confidence": null,
     "player_season_avg": 12.63,
     "player_last7_avg": null,
@@ -293,11 +293,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 16:10:18",
+    "created_at": "2026-04-20 18:11:25",
     "graded_at": null
   },
   {
-    "id": 517,
+    "id": 527,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Colin Rea",
@@ -320,11 +320,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 16:10:18",
+    "created_at": "2026-04-20 18:11:25",
     "graded_at": null
   },
   {
-    "id": 510,
+    "id": 521,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Bryce Elder",
@@ -347,7 +347,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 16:10:18",
+    "created_at": "2026-04-20 18:11:25",
     "graded_at": null
   },
   {
