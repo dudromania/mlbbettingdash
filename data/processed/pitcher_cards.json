@@ -5450,7 +5450,44 @@
         "game_id": 824538
       }
     ],
-    "arsenal": [],
+    "arsenal": [
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 30.9,
+        "avg_velo": 92.7,
+        "avg_spin": 2280,
+        "whiff_pct": 5.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 23.6,
+        "avg_velo": 93.4,
+        "avg_spin": 2259,
+        "whiff_pct": 17.9,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 23.0,
+        "avg_velo": 85.1,
+        "avg_spin": 2776,
+        "whiff_pct": 33.9,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 22.5,
+        "avg_velo": 86.5,
+        "avg_spin": 2003,
+        "whiff_pct": 30.4,
+        "put_away_pct": 0.0
+      }
+    ],
     "splits": {
       "vs_lhb": {
         "avg": 0.196,
