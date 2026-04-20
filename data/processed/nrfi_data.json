@@ -213,18 +213,18 @@
     "away_abbr": "DET",
     "home_sp": "Sonny Gray",
     "away_sp": "Jack Flaherty",
-    "nrfi_prob": 33.3,
+    "nrfi_prob": 35.2,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Sonny Gray",
       "first_inning": {},
-      "season_era": 4.43
+      "season_era": 4.3
     },
     "away_pitcher": {
       "name": "Jack Flaherty",
       "first_inning": {},
-      "season_era": 4.05
+      "season_era": 3.68
     },
     "away_batting_1st": {},
     "home_batting_1st": {}

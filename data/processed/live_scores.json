@@ -5,11 +5,11 @@
     {
       "home_abbr": "BOS",
       "away_abbr": "DET",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "4/20 - 11:10 AM EDT",
-      "is_live": false,
+      "home_score": "2",
+      "away_score": "1",
+      "state": "in",
+      "detail": "Bot 3rd",
+      "is_live": true,
       "is_final": false
     },
     {
