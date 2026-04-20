@@ -5450,44 +5450,7 @@
         "game_id": 824538
       }
     ],
-    "arsenal": [
-      {
-        "pitch_type": "SI",
-        "pitch_name": "Sinker",
-        "usage_pct": 30.9,
-        "avg_velo": 92.7,
-        "avg_spin": 2280,
-        "whiff_pct": 5.3,
-        "put_away_pct": 0.0
-      },
-      {
-        "pitch_type": "FF",
-        "pitch_name": "4-Seam FB",
-        "usage_pct": 23.6,
-        "avg_velo": 93.4,
-        "avg_spin": 2259,
-        "whiff_pct": 17.9,
-        "put_away_pct": 0.0
-      },
-      {
-        "pitch_type": "SL",
-        "pitch_name": "Slider",
-        "usage_pct": 23.0,
-        "avg_velo": 85.1,
-        "avg_spin": 2776,
-        "whiff_pct": 33.9,
-        "put_away_pct": 0.0
-      },
-      {
-        "pitch_type": "CH",
-        "pitch_name": "Changeup",
-        "usage_pct": 22.5,
-        "avg_velo": 86.5,
-        "avg_spin": 2003,
-        "whiff_pct": 30.4,
-        "put_away_pct": 0.0
-      }
-    ],
+    "arsenal": [],
     "splits": {
       "vs_lhb": {
         "avg": 0.196,
@@ -7691,6 +7654,201 @@
     "game_id": 824369,
     "game_date": "2026-04-21",
     "game_time_ct": "7:40 PM CT"
+  },
+  {
+    "player_id": 672456,
+    "name": "Keider Montero",
+    "team_abbr": "DET",
+    "opponent": "MIL",
+    "throws": "R",
+    "days_rest": 4,
+    "trend": "neutral",
+    "season_stats": {
+      "season": 2026,
+      "W": 1,
+      "L": 1,
+      "ERA": 3.31,
+      "FIP": 1.63,
+      "WHIP": 0.86,
+      "IP": 16.3,
+      "GS": 3,
+      "G": 3,
+      "K": 15,
+      "BB": 2,
+      "HR": 0,
+      "H": 12,
+      "ER": 6,
+      "K9": 8.27,
+      "BB9": 1.1,
+      "HR9": 0.0,
+      "K_pct": 23.8,
+      "BB_pct": 3.2,
+      "K_BB": 7.5
+    },
+    "last_starts": [
+      {
+        "date": "2026-04-16",
+        "opponent": "",
+        "decision": "ND",
+        "IP": 6.0,
+        "H": 7,
+        "ER": 4,
+        "BB": 0,
+        "K": 5,
+        "HR": 0,
+        "pitches": 83,
+        "era_start": 6.0,
+        "game_id": 824289
+      },
+      {
+        "date": "2026-04-10",
+        "opponent": "",
+        "decision": "W",
+        "IP": 6.0,
+        "H": 2,
+        "ER": 0,
+        "BB": 1,
+        "K": 7,
+        "HR": 0,
+        "pitches": 80,
+        "era_start": 0.0,
+        "game_id": 824297
+      },
+      {
+        "date": "2026-04-05",
+        "opponent": "",
+        "decision": "L",
+        "IP": 4.3,
+        "H": 3,
+        "ER": 2,
+        "BB": 1,
+        "K": 3,
+        "HR": 0,
+        "pitches": 63,
+        "era_start": 4.15,
+        "game_id": 824296
+      },
+      {
+        "date": "2025-09-27",
+        "opponent": "",
+        "decision": "ND",
+        "IP": 4.3,
+        "H": 5,
+        "ER": 1,
+        "BB": 0,
+        "K": 7,
+        "HR": 0,
+        "pitches": 76,
+        "era_start": 2.08,
+        "game_id": 776157
+      },
+      {
+        "date": "2025-09-20",
+        "opponent": "",
+        "decision": "ND",
+        "IP": 3.0,
+        "H": 2,
+        "ER": 3,
+        "BB": 4,
+        "K": 2,
+        "HR": 2,
+        "pitches": 69,
+        "era_start": 9.0,
+        "game_id": 776258
+      }
+    ],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 33.2,
+        "avg_velo": 94.1,
+        "avg_spin": 2250,
+        "whiff_pct": 7.9,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 25.7,
+        "avg_velo": 94.2,
+        "avg_spin": 2238,
+        "whiff_pct": 11.5,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 17.3,
+        "avg_velo": 87.3,
+        "avg_spin": 2097,
+        "whiff_pct": 35.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "KC",
+        "pitch_name": "Knuckle Curve",
+        "usage_pct": 12.8,
+        "avg_velo": 80.2,
+        "avg_spin": 2874,
+        "whiff_pct": 10.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 11.1,
+        "avg_velo": 85.2,
+        "avg_spin": 2642,
+        "whiff_pct": 33.3,
+        "put_away_pct": 0.0
+      }
+    ],
+    "splits": {
+      "vs_lhb": {
+        "avg": 0.152,
+        "ops": 0.388,
+        "k_pct": 20.6,
+        "bb_pct": 2.9,
+        "hr9": 0.0,
+        "whip": 0.64,
+        "bf": 34
+      },
+      "vs_rhb": {
+        "avg": 0.259,
+        "ops": 0.683,
+        "k_pct": 27.6,
+        "bb_pct": 3.4,
+        "hr9": 0.0,
+        "whip": 1.14,
+        "bf": 29
+      }
+    },
+    "k_prediction": {
+      "predicted_ks": 4.6,
+      "k_low_25": 3,
+      "k_high_75": 6,
+      "expected_ip": 4.5,
+      "season_k9": 8.27,
+      "last3_k9": 8.28,
+      "blended_k9": 8.28,
+      "opp_k_pct": 22.5,
+      "opp_k_pct_vs_lg": 0.0,
+      "opp_adj": 1.0,
+      "park_adj": 1.0,
+      "ump_adj": 1.0,
+      "hand_adj": 1.0,
+      "pitch_mix_adj": 1.0,
+      "combined_adj": 1.0,
+      "lambda_k": 4.138,
+      "model_used": "xgboost_poisson",
+      "umpire": null,
+      "lineup_confirmed": false
+    },
+    "first_inning": {},
+    "game_id": 824290,
+    "game_date": "2026-04-21",
+    "game_time_ct": "5:40 PM CT"
   },
   {
     "player_id": 690986,
