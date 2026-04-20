@@ -1,6 +1,6 @@
 [
   {
-    "id": 494,
+    "id": 507,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Spencer Arrighetti",
@@ -23,7 +23,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 15:07:15",
+    "created_at": "2026-04-20 16:10:18",
     "graded_at": null
   },
   {
@@ -54,7 +54,7 @@
     "graded_at": null
   },
   {
-    "id": 505,
+    "id": 516,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Slade Cecconi",
@@ -63,11 +63,11 @@
     "prop_type": "strikeouts",
     "prop_market": "OVER 3.5 K",
     "prop_line": 3.5,
-    "prop_odds": -162,
+    "prop_odds": -166,
     "prop_book": "fanduel",
     "predicted_value": 4.6,
     "predicted_prob_over": 0.674,
-    "edge": 0.056,
+    "edge": 0.05,
     "confidence": null,
     "player_season_avg": 7.89,
     "player_last7_avg": null,
@@ -77,11 +77,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 15:07:15",
+    "created_at": "2026-04-20 16:10:18",
     "graded_at": null
   },
   {
-    "id": 499,
+    "id": 511,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Seth Lugo",
@@ -90,11 +90,11 @@
     "prop_type": "strikeouts",
     "prop_market": "UNDER 5.5 K",
     "prop_line": 5.5,
-    "prop_odds": -136,
+    "prop_odds": -132,
     "prop_book": "fanduel",
     "predicted_value": 4.7,
     "predicted_prob_over": 0.332,
-    "edge": 0.092,
+    "edge": 0.099,
     "confidence": null,
     "player_season_avg": 8.51,
     "player_last7_avg": null,
@@ -104,11 +104,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 15:07:15",
+    "created_at": "2026-04-20 16:10:18",
     "graded_at": null
   },
   {
-    "id": 503,
+    "id": 512,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Rhett Lowder",
@@ -117,11 +117,11 @@
     "prop_type": "strikeouts",
     "prop_market": "OVER 3.5 K",
     "prop_line": 3.5,
-    "prop_odds": -110,
+    "prop_odds": -106,
     "prop_book": "fanduel",
     "predicted_value": 4.1,
     "predicted_prob_over": 0.586,
-    "edge": 0.062,
+    "edge": 0.071,
     "confidence": null,
     "player_season_avg": 5.35,
     "player_last7_avg": null,
@@ -131,11 +131,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 15:07:15",
+    "created_at": "2026-04-20 16:10:18",
     "graded_at": null
   },
   {
-    "id": 504,
+    "id": 515,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Michael McGreevy",
@@ -158,11 +158,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 15:07:15",
+    "created_at": "2026-04-20 16:10:18",
     "graded_at": null
   },
   {
-    "id": 501,
+    "id": 513,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Justin Wrobleski",
@@ -185,11 +185,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 15:07:15",
+    "created_at": "2026-04-20 16:10:18",
     "graded_at": null
   },
   {
-    "id": 496,
+    "id": 508,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Jake Irvin",
@@ -198,11 +198,11 @@
     "prop_type": "strikeouts",
     "prop_market": "OVER 3.5 K",
     "prop_line": 3.5,
-    "prop_odds": -130,
+    "prop_odds": -132,
     "prop_book": "fanduel",
     "predicted_value": 5.1,
     "predicted_prob_over": 0.749,
-    "edge": 0.184,
+    "edge": 0.18,
     "confidence": null,
     "player_season_avg": 9.38,
     "player_last7_avg": null,
@@ -212,7 +212,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 15:07:15",
+    "created_at": "2026-04-20 16:10:18",
     "graded_at": null
   },
   {
@@ -243,7 +243,7 @@
     "graded_at": null
   },
   {
-    "id": 502,
+    "id": 514,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "J.T. Ginn",
@@ -266,11 +266,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 15:07:15",
+    "created_at": "2026-04-20 16:10:18",
     "graded_at": null
   },
   {
-    "id": 497,
+    "id": 509,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Dylan Cease",
@@ -293,11 +293,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 15:07:15",
+    "created_at": "2026-04-20 16:10:18",
     "graded_at": null
   },
   {
-    "id": 506,
+    "id": 517,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Colin Rea",
@@ -320,11 +320,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 15:07:15",
+    "created_at": "2026-04-20 16:10:18",
     "graded_at": null
   },
   {
-    "id": 498,
+    "id": 510,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Bryce Elder",
@@ -347,7 +347,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-04-20 15:07:15",
+    "created_at": "2026-04-20 16:10:18",
     "graded_at": null
   },
   {
