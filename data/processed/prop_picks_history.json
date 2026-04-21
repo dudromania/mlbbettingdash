@@ -1,6 +1,6 @@
 [
   {
-    "id": 540,
+    "id": 550,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Spencer Arrighetti",
@@ -20,11 +20,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-04-20 20:10:06",
-    "graded_at": null
+    "actual_value": 3.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-04-20 21:58:32",
+    "graded_at": "2026-04-21 11:44:40"
   },
   {
     "id": 495,
@@ -47,11 +47,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 2.0,
+    "result": "W",
+    "pnl": 68.4931506849315,
     "created_at": "2026-04-20 15:07:15",
-    "graded_at": null
+    "graded_at": "2026-04-21 11:44:40"
   },
   {
     "id": 539,
@@ -74,14 +74,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 2.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-04-20 19:25:46",
-    "graded_at": null
+    "graded_at": "2026-04-21 11:44:40"
   },
   {
-    "id": 544,
+    "id": 554,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Seth Lugo",
@@ -101,14 +101,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-04-20 20:10:06",
-    "graded_at": null
+    "actual_value": 7.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-04-20 21:58:32",
+    "graded_at": "2026-04-21 11:44:40"
   },
   {
-    "id": 545,
+    "id": 555,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Rhett Lowder",
@@ -128,14 +128,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-04-20 20:10:06",
-    "graded_at": null
+    "actual_value": 3.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-04-20 21:58:32",
+    "graded_at": "2026-04-21 11:44:40"
   },
   {
-    "id": 548,
+    "id": 558,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Michael McGreevy",
@@ -155,14 +155,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-04-20 20:10:06",
-    "graded_at": null
+    "actual_value": 3.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-04-20 21:58:32",
+    "graded_at": "2026-04-21 11:44:40"
   },
   {
-    "id": 546,
+    "id": 556,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Justin Wrobleski",
@@ -182,14 +182,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-04-20 20:10:06",
-    "graded_at": null
+    "actual_value": 3.0,
+    "result": "W",
+    "pnl": 72.46376811594203,
+    "created_at": "2026-04-20 21:58:32",
+    "graded_at": "2026-04-21 11:44:40"
   },
   {
-    "id": 541,
+    "id": 551,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Jake Irvin",
@@ -209,11 +209,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-04-20 20:10:06",
-    "graded_at": null
+    "actual_value": 4.0,
+    "result": "W",
+    "pnl": 75.75757575757575,
+    "created_at": "2026-04-20 21:58:32",
+    "graded_at": "2026-04-21 11:44:40"
   },
   {
     "id": 500,
@@ -236,14 +236,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 3.0,
+    "result": "W",
+    "pnl": 104.0,
     "created_at": "2026-04-20 15:07:15",
-    "graded_at": null
+    "graded_at": "2026-04-21 11:44:40"
   },
   {
-    "id": 547,
+    "id": 557,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "J.T. Ginn",
@@ -263,14 +263,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-04-20 20:10:06",
-    "graded_at": null
+    "actual_value": 6.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-04-20 21:58:32",
+    "graded_at": "2026-04-21 11:44:40"
   },
   {
-    "id": 542,
+    "id": 552,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Dylan Cease",
@@ -290,14 +290,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-04-20 20:10:06",
-    "graded_at": null
+    "actual_value": 12.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-04-20 21:58:32",
+    "graded_at": "2026-04-21 11:44:40"
   },
   {
-    "id": 549,
+    "id": 559,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Colin Rea",
@@ -317,14 +317,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-04-20 20:10:06",
-    "graded_at": null
+    "actual_value": 5.0,
+    "result": "W",
+    "pnl": 116.0,
+    "created_at": "2026-04-20 21:58:32",
+    "graded_at": "2026-04-21 11:44:40"
   },
   {
-    "id": 543,
+    "id": 553,
     "game_date": "2026-04-20",
     "game_pick_id": null,
     "player_name": "Bryce Elder",
@@ -344,11 +344,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-04-20 20:10:06",
-    "graded_at": null
+    "actual_value": 6.0,
+    "result": "W",
+    "pnl": 132.0,
+    "created_at": "2026-04-20 21:58:32",
+    "graded_at": "2026-04-21 11:44:40"
   },
   {
     "id": 491,
