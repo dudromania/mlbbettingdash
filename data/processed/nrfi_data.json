@@ -24,6 +24,29 @@
   },
   {
     "date": "2026-04-21",
+    "game_time": "7:05 PM CT",
+    "home_abbr": "TEX",
+    "away_abbr": "PIT",
+    "home_sp": "TBD",
+    "away_sp": "Carmen Mlodzinski",
+    "nrfi_prob": 47.1,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "TBD",
+      "first_inning": {},
+      "season_era": null
+    },
+    "away_pitcher": {
+      "name": "Carmen Mlodzinski",
+      "first_inning": {},
+      "season_era": 1.77
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-21",
     "game_time": "5:45 PM CT",
     "home_abbr": "WSH",
     "away_abbr": "ATL",
@@ -110,29 +133,6 @@
       "name": "Kyle Harrison",
       "first_inning": {},
       "season_era": 3.07
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-21",
-    "game_time": "7:05 PM CT",
-    "home_abbr": "TEX",
-    "away_abbr": "PIT",
-    "home_sp": "TBD",
-    "away_sp": "TBD",
-    "nrfi_prob": 40.3,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
