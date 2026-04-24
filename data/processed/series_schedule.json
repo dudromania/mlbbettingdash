@@ -8,26 +8,6 @@
     "venue": "Chase Field",
     "games": [
       {
-        "game_id": 825099,
-        "date": "2026-04-21",
-        "game_time_ct": "8:40 PM CT",
-        "status": "F",
-        "home_name": "Arizona Diamondbacks",
-        "away_name": "Chicago White Sox",
-        "home_abbr": "AZ",
-        "away_abbr": "CWS",
-        "home_id": 109,
-        "away_id": 145,
-        "home_sp": "Merrill Kelly",
-        "home_sp_id": 518876,
-        "away_sp": "Sean Burke",
-        "away_sp_id": 680732,
-        "home_score": 5,
-        "away_score": 11,
-        "venue": "Chase Field",
-        "prediction": null
-      },
-      {
         "game_id": 825097,
         "date": "2026-04-22",
         "game_time_ct": "8:40 PM CT",
@@ -69,11 +49,11 @@
       }
     ],
     "home_wins": 1,
-    "away_wins": 2,
-    "series_start": "2026-04-21",
+    "away_wins": 1,
+    "series_start": "2026-04-22",
     "series_end": "2026-04-23",
-    "total_games": 3,
-    "games_played": 3,
+    "total_games": 2,
+    "games_played": 2,
     "games_remaining": 0
   },
   {
@@ -84,26 +64,6 @@
     "away_name": "New York Yankees",
     "venue": "Fenway Park",
     "games": [
-      {
-        "game_id": 824773,
-        "date": "2026-04-21",
-        "game_time_ct": "5:45 PM CT",
-        "status": "F",
-        "home_name": "Boston Red Sox",
-        "away_name": "New York Yankees",
-        "home_abbr": "BOS",
-        "away_abbr": "NYY",
-        "home_id": 111,
-        "away_id": 147,
-        "home_sp": "Connelly Early",
-        "home_sp_id": 813349,
-        "away_sp": "Luis Gil",
-        "away_sp_id": 661563,
-        "home_score": 0,
-        "away_score": 4,
-        "venue": "Fenway Park",
-        "prediction": null
-      },
       {
         "game_id": 824774,
         "date": "2026-04-22",
@@ -128,7 +88,7 @@
         "game_id": 824770,
         "date": "2026-04-23",
         "game_time_ct": "5:10 PM CT",
-        "status": "I",
+        "status": "F",
         "home_name": "Boston Red Sox",
         "away_name": "New York Yankees",
         "home_abbr": "BOS",
@@ -139,29 +99,19 @@
         "home_sp_id": 801139,
         "away_sp": "Cam Schlittler",
         "away_sp_id": 693645,
-        "home_score": null,
-        "away_score": null,
+        "home_score": 2,
+        "away_score": 4,
         "venue": "Fenway Park",
-        "prediction": {
-          "predicted_margin": -0.84,
-          "predicted_total": 9.5,
-          "home_win_prob": 0.448,
-          "away_win_prob": 0.552,
-          "spread_confidence": 26,
-          "margin_p25": -3.56,
-          "margin_p75": 1.88,
-          "margin_std": 4.03,
-          "method": "trained_xgboost"
-        }
+        "prediction": null
       }
     ],
     "home_wins": 0,
     "away_wins": 2,
-    "series_start": "2026-04-21",
+    "series_start": "2026-04-22",
     "series_end": "2026-04-23",
-    "total_games": 3,
+    "total_games": 2,
     "games_played": 2,
-    "games_remaining": 1
+    "games_remaining": 0
   },
   {
     "series_id": "PHI@CHC",
@@ -171,26 +121,6 @@
     "away_name": "Philadelphia Phillies",
     "venue": "Wrigley Field",
     "games": [
-      {
-        "game_id": 824690,
-        "date": "2026-04-21",
-        "game_time_ct": "6:40 PM CT",
-        "status": "F",
-        "home_name": "Chicago Cubs",
-        "away_name": "Philadelphia Phillies",
-        "home_abbr": "CHC",
-        "away_abbr": "PHI",
-        "home_id": 112,
-        "away_id": 143,
-        "home_sp": "Shota Imanaga",
-        "home_sp_id": 684007,
-        "away_sp": "Jes\u00fas Luzardo",
-        "away_sp_id": 666200,
-        "home_score": 7,
-        "away_score": 4,
-        "venue": "Wrigley Field",
-        "prediction": null
-      },
       {
         "game_id": 824688,
         "date": "2026-04-22",
@@ -232,12 +162,12 @@
         "prediction": null
       }
     ],
-    "home_wins": 3,
+    "home_wins": 2,
     "away_wins": 0,
-    "series_start": "2026-04-21",
+    "series_start": "2026-04-22",
     "series_end": "2026-04-23",
-    "total_games": 3,
-    "games_played": 3,
+    "total_games": 2,
+    "games_played": 2,
     "games_remaining": 0
   },
   {
@@ -248,26 +178,6 @@
     "away_name": "Houston Astros",
     "venue": "Progressive Field",
     "games": [
-      {
-        "game_id": 824448,
-        "date": "2026-04-21",
-        "game_time_ct": "5:10 PM CT",
-        "status": "F",
-        "home_name": "Cleveland Guardians",
-        "away_name": "Houston Astros",
-        "home_abbr": "CLE",
-        "away_abbr": "HOU",
-        "home_id": 114,
-        "away_id": 117,
-        "home_sp": "Parker Messick",
-        "home_sp_id": 800048,
-        "away_sp": "Ryan Weiss",
-        "away_sp_id": 680802,
-        "home_score": 8,
-        "away_score": 5,
-        "venue": "Progressive Field",
-        "prediction": null
-      },
       {
         "game_id": 824449,
         "date": "2026-04-22",
@@ -289,12 +199,12 @@
         "prediction": null
       }
     ],
-    "home_wins": 1,
+    "home_wins": 0,
     "away_wins": 1,
-    "series_start": "2026-04-21",
+    "series_start": "2026-04-22",
     "series_end": "2026-04-22",
-    "total_games": 2,
-    "games_played": 2,
+    "total_games": 1,
+    "games_played": 1,
     "games_remaining": 0
   },
   {
@@ -305,26 +215,6 @@
     "away_name": "San Diego Padres",
     "venue": "Coors Field",
     "games": [
-      {
-        "game_id": 824369,
-        "date": "2026-04-21",
-        "game_time_ct": "7:40 PM CT",
-        "status": "F",
-        "home_name": "Colorado Rockies",
-        "away_name": "San Diego Padres",
-        "home_abbr": "COL",
-        "away_abbr": "SD",
-        "home_id": 115,
-        "away_id": 135,
-        "home_sp": "Jimmy Herget",
-        "home_sp_id": 623474,
-        "away_sp": "Randy V\u00e1squez",
-        "away_sp_id": 681190,
-        "home_score": 0,
-        "away_score": 1,
-        "venue": "Coors Field",
-        "prediction": null
-      },
       {
         "game_id": 824367,
         "date": "2026-04-22",
@@ -367,11 +257,11 @@
       }
     ],
     "home_wins": 1,
-    "away_wins": 2,
-    "series_start": "2026-04-21",
+    "away_wins": 1,
+    "series_start": "2026-04-22",
     "series_end": "2026-04-23",
-    "total_games": 3,
-    "games_played": 3,
+    "total_games": 2,
+    "games_played": 2,
     "games_remaining": 0
   },
   {
@@ -382,26 +272,6 @@
     "away_name": "Milwaukee Brewers",
     "venue": "Comerica Park",
     "games": [
-      {
-        "game_id": 824290,
-        "date": "2026-04-21",
-        "game_time_ct": "5:40 PM CT",
-        "status": "F",
-        "home_name": "Detroit Tigers",
-        "away_name": "Milwaukee Brewers",
-        "home_abbr": "DET",
-        "away_abbr": "MIL",
-        "home_id": 116,
-        "away_id": 158,
-        "home_sp": "Keider Montero",
-        "home_sp_id": 672456,
-        "away_sp": "Kyle Harrison",
-        "away_sp_id": 690986,
-        "home_score": 4,
-        "away_score": 12,
-        "venue": "Comerica Park",
-        "prediction": null
-      },
       {
         "game_id": 824286,
         "date": "2026-04-22",
@@ -444,11 +314,11 @@
       }
     ],
     "home_wins": 2,
-    "away_wins": 1,
-    "series_start": "2026-04-21",
+    "away_wins": 0,
+    "series_start": "2026-04-22",
     "series_end": "2026-04-23",
-    "total_games": 3,
-    "games_played": 3,
+    "total_games": 2,
+    "games_played": 2,
     "games_remaining": 0
   },
   {
@@ -459,26 +329,6 @@
     "away_name": "Baltimore Orioles",
     "venue": "Kauffman Stadium",
     "games": [
-      {
-        "game_id": 824127,
-        "date": "2026-04-21",
-        "game_time_ct": "6:40 PM CT",
-        "status": "F",
-        "home_name": "Kansas City Royals",
-        "away_name": "Baltimore Orioles",
-        "home_abbr": "KC",
-        "away_abbr": "BAL",
-        "home_id": 118,
-        "away_id": 110,
-        "home_sp": "Kris Bubic",
-        "home_sp_id": 663460,
-        "away_sp": "Shane Baz",
-        "away_sp_id": 669358,
-        "home_score": 6,
-        "away_score": 5,
-        "venue": "Kauffman Stadium",
-        "prediction": null
-      },
       {
         "game_id": 824123,
         "date": "2026-04-22",
@@ -500,12 +350,12 @@
         "prediction": null
       }
     ],
-    "home_wins": 1,
+    "home_wins": 0,
     "away_wins": 1,
-    "series_start": "2026-04-21",
+    "series_start": "2026-04-22",
     "series_end": "2026-04-22",
-    "total_games": 2,
-    "games_played": 2,
+    "total_games": 1,
+    "games_played": 1,
     "games_remaining": 0
   },
   {
@@ -516,26 +366,6 @@
     "away_name": "Toronto Blue Jays",
     "venue": "Angel Stadium",
     "games": [
-      {
-        "game_id": 824045,
-        "date": "2026-04-21",
-        "game_time_ct": "8:38 PM CT",
-        "status": "F",
-        "home_name": "Los Angeles Angels",
-        "away_name": "Toronto Blue Jays",
-        "home_abbr": "LAA",
-        "away_abbr": "TOR",
-        "home_id": 108,
-        "away_id": 141,
-        "home_sp": "Jack Kochanowicz",
-        "home_sp_id": 686799,
-        "away_sp": "Patrick Corbin",
-        "away_sp_id": 571578,
-        "home_score": 2,
-        "away_score": 4,
-        "venue": "Angel Stadium",
-        "prediction": null
-      },
       {
         "game_id": 824044,
         "date": "2026-04-22",
@@ -558,11 +388,11 @@
       }
     ],
     "home_wins": 1,
-    "away_wins": 1,
-    "series_start": "2026-04-21",
+    "away_wins": 0,
+    "series_start": "2026-04-22",
     "series_end": "2026-04-22",
-    "total_games": 2,
-    "games_played": 2,
+    "total_games": 1,
+    "games_played": 1,
     "games_remaining": 0
   },
   {
@@ -573,26 +403,6 @@
     "away_name": "St. Louis Cardinals",
     "venue": "loanDepot park",
     "games": [
-      {
-        "game_id": 823880,
-        "date": "2026-04-21",
-        "game_time_ct": "5:40 PM CT",
-        "status": "F",
-        "home_name": "Miami Marlins",
-        "away_name": "St. Louis Cardinals",
-        "home_abbr": "MIA",
-        "away_abbr": "STL",
-        "home_id": 146,
-        "away_id": 138,
-        "home_sp": "Chris Paddack",
-        "home_sp_id": 663978,
-        "away_sp": "Dustin May",
-        "away_sp_id": 669160,
-        "home_score": 3,
-        "away_score": 5,
-        "venue": "loanDepot park",
-        "prediction": null
-      },
       {
         "game_id": 823878,
         "date": "2026-04-22",
@@ -615,11 +425,11 @@
       }
     ],
     "home_wins": 1,
-    "away_wins": 1,
-    "series_start": "2026-04-21",
+    "away_wins": 0,
+    "series_start": "2026-04-22",
     "series_end": "2026-04-22",
-    "total_games": 2,
-    "games_played": 2,
+    "total_games": 1,
+    "games_played": 1,
     "games_remaining": 0
   },
   {
@@ -630,26 +440,6 @@
     "away_name": "Minnesota Twins",
     "venue": "Citi Field",
     "games": [
-      {
-        "game_id": 823640,
-        "date": "2026-04-21",
-        "game_time_ct": "6:10 PM CT",
-        "status": "F",
-        "home_name": "New York Mets",
-        "away_name": "Minnesota Twins",
-        "home_abbr": "NYM",
-        "away_abbr": "MIN",
-        "home_id": 121,
-        "away_id": 142,
-        "home_sp": "Nolan McLean",
-        "home_sp_id": 690997,
-        "away_sp": "Simeon Woods Richardson",
-        "away_sp_id": 680573,
-        "home_score": 3,
-        "away_score": 5,
-        "venue": "Citi Field",
-        "prediction": null
-      },
       {
         "game_id": 823641,
         "date": "2026-04-22",
@@ -674,7 +464,7 @@
         "game_id": 823639,
         "date": "2026-04-23",
         "game_time_ct": "6:10 PM CT",
-        "status": "I",
+        "status": "F",
         "home_name": "New York Mets",
         "away_name": "Minnesota Twins",
         "home_abbr": "NYM",
@@ -685,29 +475,19 @@
         "home_sp_id": 681035,
         "away_sp": "Joe Ryan",
         "away_sp_id": 657746,
-        "home_score": null,
-        "away_score": null,
+        "home_score": 10,
+        "away_score": 8,
         "venue": "Citi Field",
-        "prediction": {
-          "predicted_margin": -1.34,
-          "predicted_total": 8.9,
-          "home_win_prob": 0.417,
-          "away_win_prob": 0.583,
-          "spread_confidence": 28,
-          "margin_p25": -3.94,
-          "margin_p75": 1.26,
-          "margin_std": 3.85,
-          "method": "trained_xgboost"
-        }
+        "prediction": null
       }
     ],
-    "home_wins": 1,
-    "away_wins": 1,
-    "series_start": "2026-04-21",
+    "home_wins": 2,
+    "away_wins": 0,
+    "series_start": "2026-04-22",
     "series_end": "2026-04-23",
-    "total_games": 3,
+    "total_games": 2,
     "games_played": 2,
-    "games_remaining": 1
+    "games_remaining": 0
   },
   {
     "series_id": "ATH@SEA",
@@ -717,26 +497,6 @@
     "away_name": "Athletics",
     "venue": "T-Mobile Park",
     "games": [
-      {
-        "game_id": 823148,
-        "date": "2026-04-21",
-        "game_time_ct": "8:40 PM CT",
-        "status": "F",
-        "home_name": "Seattle Mariners",
-        "away_name": "Athletics",
-        "home_abbr": "SEA",
-        "away_abbr": "ATH",
-        "home_id": 136,
-        "away_id": 133,
-        "home_sp": "Luis Castillo",
-        "home_sp_id": 622491,
-        "away_sp": "Jacob Lopez",
-        "away_sp_id": 682052,
-        "home_score": 2,
-        "away_score": 5,
-        "venue": "T-Mobile Park",
-        "prediction": null
-      },
       {
         "game_id": 823147,
         "date": "2026-04-22",
@@ -759,11 +519,11 @@
       }
     ],
     "home_wins": 1,
-    "away_wins": 1,
-    "series_start": "2026-04-21",
+    "away_wins": 0,
+    "series_start": "2026-04-22",
     "series_end": "2026-04-22",
-    "total_games": 2,
-    "games_played": 2,
+    "total_games": 1,
+    "games_played": 1,
     "games_remaining": 0
   },
   {
@@ -774,26 +534,6 @@
     "away_name": "Los Angeles Dodgers",
     "venue": "Oracle Park",
     "games": [
-      {
-        "game_id": 823236,
-        "date": "2026-04-21",
-        "game_time_ct": "8:45 PM CT",
-        "status": "F",
-        "home_name": "San Francisco Giants",
-        "away_name": "Los Angeles Dodgers",
-        "home_abbr": "SF",
-        "away_abbr": "LAD",
-        "home_id": 137,
-        "away_id": 119,
-        "home_sp": "Landen Roupp",
-        "home_sp_id": 694738,
-        "away_sp": "Yoshinobu Yamamoto",
-        "away_sp_id": 808967,
-        "home_score": 3,
-        "away_score": 1,
-        "venue": "Oracle Park",
-        "prediction": null
-      },
       {
         "game_id": 823231,
         "date": "2026-04-22",
@@ -835,12 +575,12 @@
         "prediction": null
       }
     ],
-    "home_wins": 2,
+    "home_wins": 1,
     "away_wins": 1,
-    "series_start": "2026-04-21",
+    "series_start": "2026-04-22",
     "series_end": "2026-04-23",
-    "total_games": 3,
-    "games_played": 3,
+    "total_games": 2,
+    "games_played": 2,
     "games_remaining": 0
   },
   {
@@ -851,26 +591,6 @@
     "away_name": "Cincinnati Reds",
     "venue": "Tropicana Field",
     "games": [
-      {
-        "game_id": 822995,
-        "date": "2026-04-21",
-        "game_time_ct": "5:40 PM CT",
-        "status": "F",
-        "home_name": "Tampa Bay Rays",
-        "away_name": "Cincinnati Reds",
-        "home_abbr": "TB",
-        "away_abbr": "CIN",
-        "home_id": 139,
-        "away_id": 113,
-        "home_sp": "Steven Matz",
-        "home_sp_id": 571927,
-        "away_sp": "Chase Burns",
-        "away_sp_id": 695505,
-        "home_score": 6,
-        "away_score": 12,
-        "venue": "Tropicana Field",
-        "prediction": null
-      },
       {
         "game_id": 822993,
         "date": "2026-04-22",
@@ -893,11 +613,11 @@
       }
     ],
     "home_wins": 1,
-    "away_wins": 1,
-    "series_start": "2026-04-21",
+    "away_wins": 0,
+    "series_start": "2026-04-22",
     "series_end": "2026-04-22",
-    "total_games": 2,
-    "games_played": 2,
+    "total_games": 1,
+    "games_played": 1,
     "games_remaining": 0
   },
   {
@@ -908,26 +628,6 @@
     "away_name": "Pittsburgh Pirates",
     "venue": "Globe Life Field",
     "games": [
-      {
-        "game_id": 822914,
-        "date": "2026-04-21",
-        "game_time_ct": "7:05 PM CT",
-        "status": "F",
-        "home_name": "Texas Rangers",
-        "away_name": "Pittsburgh Pirates",
-        "home_abbr": "TEX",
-        "away_abbr": "PIT",
-        "home_id": 140,
-        "away_id": 134,
-        "home_sp": "Kumar Rocker",
-        "home_sp_id": 677958,
-        "away_sp": "Carmen Mlodzinski",
-        "away_sp_id": 669387,
-        "home_score": 5,
-        "away_score": 1,
-        "venue": "Globe Life Field",
-        "prediction": null
-      },
       {
         "game_id": 822913,
         "date": "2026-04-22",
@@ -952,7 +652,7 @@
         "game_id": 822912,
         "date": "2026-04-23",
         "game_time_ct": "7:05 PM CT",
-        "status": "P",
+        "status": "F",
         "home_name": "Texas Rangers",
         "away_name": "Pittsburgh Pirates",
         "home_abbr": "TEX",
@@ -963,29 +663,19 @@
         "home_sp_id": 594798,
         "away_sp": "Bubba Chandler",
         "away_sp_id": 696149,
-        "home_score": null,
-        "away_score": null,
+        "home_score": 6,
+        "away_score": 1,
         "venue": "Globe Life Field",
-        "prediction": {
-          "predicted_margin": 0.4,
-          "predicted_total": 8.1,
-          "home_win_prob": 0.525,
-          "away_win_prob": 0.475,
-          "spread_confidence": 24,
-          "margin_p25": -2.31,
-          "margin_p75": 3.11,
-          "margin_std": 4.02,
-          "method": "trained_xgboost"
-        }
+        "prediction": null
       }
     ],
     "home_wins": 1,
     "away_wins": 1,
-    "series_start": "2026-04-21",
+    "series_start": "2026-04-22",
     "series_end": "2026-04-23",
-    "total_games": 3,
+    "total_games": 2,
     "games_played": 2,
-    "games_remaining": 1
+    "games_remaining": 0
   },
   {
     "series_id": "ATL@WSH",
@@ -995,26 +685,6 @@
     "away_name": "Atlanta Braves",
     "venue": "Nationals Park",
     "games": [
-      {
-        "game_id": 822747,
-        "date": "2026-04-21",
-        "game_time_ct": "5:45 PM CT",
-        "status": "F",
-        "home_name": "Washington Nationals",
-        "away_name": "Atlanta Braves",
-        "home_abbr": "WSH",
-        "away_abbr": "ATL",
-        "home_id": 120,
-        "away_id": 144,
-        "home_sp": "Foster Griffin",
-        "home_sp_id": 656492,
-        "away_sp": "Reynaldo L\u00f3pez",
-        "away_sp_id": 625643,
-        "home_score": 11,
-        "away_score": 4,
-        "venue": "Nationals Park",
-        "prediction": null
-      },
       {
         "game_id": 822748,
         "date": "2026-04-22",
@@ -1056,12 +726,12 @@
         "prediction": null
       }
     ],
-    "home_wins": 1,
+    "home_wins": 0,
     "away_wins": 2,
-    "series_start": "2026-04-21",
+    "series_start": "2026-04-22",
     "series_end": "2026-04-23",
-    "total_games": 3,
-    "games_played": 3,
+    "total_games": 2,
+    "games_played": 2,
     "games_remaining": 0
   },
   {
@@ -1198,13 +868,13 @@
         "away_score": null,
         "venue": "Oriole Park at Camden Yards",
         "prediction": {
-          "predicted_margin": -0.99,
+          "predicted_margin": -0.98,
           "predicted_total": 10.4,
-          "home_win_prob": 0.438,
-          "away_win_prob": 0.562,
+          "home_win_prob": 0.439,
+          "away_win_prob": 0.561,
           "spread_confidence": 39,
-          "margin_p25": -3.78,
-          "margin_p75": 1.8,
+          "margin_p25": -3.77,
+          "margin_p75": 1.81,
           "margin_std": 4.13,
           "method": "trained_xgboost"
         }
@@ -1404,22 +1074,22 @@
         "away_abbr": "WSH",
         "home_id": 145,
         "away_id": 120,
-        "home_sp": "Erick Fedde",
-        "home_sp_id": 607200,
+        "home_sp": "Bryan Hudson",
+        "home_sp_id": 663542,
         "away_sp": "Miles Mikolas",
         "away_sp_id": 571945,
         "home_score": null,
         "away_score": null,
         "venue": "Rate Field",
         "prediction": {
-          "predicted_margin": -0.08,
-          "predicted_total": 10.4,
-          "home_win_prob": 0.495,
-          "away_win_prob": 0.505,
-          "spread_confidence": 18,
-          "margin_p25": -2.88,
-          "margin_p75": 2.72,
-          "margin_std": 4.15,
+          "predicted_margin": -0.89,
+          "predicted_total": 9.7,
+          "home_win_prob": 0.445,
+          "away_win_prob": 0.555,
+          "spread_confidence": 31,
+          "margin_p25": -3.64,
+          "margin_p75": 1.86,
+          "margin_std": 4.07,
           "method": "trained_xgboost"
         }
       },
@@ -1519,13 +1189,13 @@
         "away_score": null,
         "venue": "Daikin Park",
         "prediction": {
-          "predicted_margin": -1.82,
+          "predicted_margin": -1.81,
           "predicted_total": 11.9,
-          "home_win_prob": 0.388,
-          "away_win_prob": 0.612,
+          "home_win_prob": 0.389,
+          "away_win_prob": 0.611,
           "spread_confidence": 42,
-          "margin_p25": -4.53,
-          "margin_p75": 0.89,
+          "margin_p25": -4.52,
+          "margin_p75": 0.9,
           "margin_std": 4.02,
           "method": "trained_xgboost"
         }
@@ -1549,13 +1219,13 @@
         "away_score": null,
         "venue": "Daikin Park",
         "prediction": {
-          "predicted_margin": 0.18,
+          "predicted_margin": 0.04,
           "predicted_total": 8.7,
-          "home_win_prob": 0.511,
-          "away_win_prob": 0.489,
+          "home_win_prob": 0.503,
+          "away_win_prob": 0.497,
           "spread_confidence": 19,
-          "margin_p25": -2.47,
-          "margin_p75": 2.83,
+          "margin_p25": -2.61,
+          "margin_p75": 2.69,
           "margin_std": 3.93,
           "method": "trained_xgboost"
         }
@@ -1579,13 +1249,13 @@
         "away_score": null,
         "venue": "Daikin Park",
         "prediction": {
-          "predicted_margin": -0.44,
+          "predicted_margin": -0.58,
           "predicted_total": 9.1,
-          "home_win_prob": 0.472,
-          "away_win_prob": 0.528,
+          "home_win_prob": 0.464,
+          "away_win_prob": 0.536,
           "spread_confidence": 24,
-          "margin_p25": -3.14,
-          "margin_p75": 2.26,
+          "margin_p25": -3.28,
+          "margin_p75": 2.12,
           "margin_std": 4.0,
           "method": "trained_xgboost"
         }
@@ -1626,13 +1296,13 @@
         "away_score": null,
         "venue": "Kauffman Stadium",
         "prediction": {
-          "predicted_margin": 0.43,
+          "predicted_margin": 0.48,
           "predicted_total": 8.8,
-          "home_win_prob": 0.527,
-          "away_win_prob": 0.473,
+          "home_win_prob": 0.53,
+          "away_win_prob": 0.47,
           "spread_confidence": 17,
-          "margin_p25": -2.26,
-          "margin_p75": 3.12,
+          "margin_p25": -2.21,
+          "margin_p75": 3.17,
           "margin_std": 3.99,
           "method": "trained_xgboost"
         }
@@ -1656,13 +1326,13 @@
         "away_score": null,
         "venue": "Kauffman Stadium",
         "prediction": {
-          "predicted_margin": 1.19,
+          "predicted_margin": 1.25,
           "predicted_total": 7.9,
-          "home_win_prob": 0.574,
-          "away_win_prob": 0.426,
+          "home_win_prob": 0.577,
+          "away_win_prob": 0.423,
           "spread_confidence": 44,
-          "margin_p25": -1.35,
-          "margin_p75": 3.73,
+          "margin_p25": -1.29,
+          "margin_p75": 3.79,
           "margin_std": 3.77,
           "method": "trained_xgboost"
         }
@@ -1686,13 +1356,13 @@
         "away_score": null,
         "venue": "Kauffman Stadium",
         "prediction": {
-          "predicted_margin": -0.51,
+          "predicted_margin": -0.46,
           "predicted_total": 9.0,
-          "home_win_prob": 0.468,
-          "away_win_prob": 0.532,
+          "home_win_prob": 0.472,
+          "away_win_prob": 0.528,
           "spread_confidence": 46,
-          "margin_p25": -3.17,
-          "margin_p75": 2.15,
+          "margin_p25": -3.12,
+          "margin_p75": 2.2,
           "margin_std": 3.94,
           "method": "trained_xgboost"
         }
@@ -1947,13 +1617,13 @@
         "away_score": null,
         "venue": "Citi Field",
         "prediction": {
-          "predicted_margin": 0.24,
+          "predicted_margin": 0.21,
           "predicted_total": 7.9,
-          "home_win_prob": 0.515,
-          "away_win_prob": 0.485,
+          "home_win_prob": 0.513,
+          "away_win_prob": 0.487,
           "spread_confidence": 30,
-          "margin_p25": -2.38,
-          "margin_p75": 2.86,
+          "margin_p25": -2.41,
+          "margin_p75": 2.83,
           "margin_std": 3.88,
           "method": "trained_xgboost"
         }
@@ -1977,13 +1647,13 @@
         "away_score": null,
         "venue": "Citi Field",
         "prediction": {
-          "predicted_margin": 0.01,
+          "predicted_margin": -0.02,
           "predicted_total": 8.9,
-          "home_win_prob": 0.501,
-          "away_win_prob": 0.499,
+          "home_win_prob": 0.499,
+          "away_win_prob": 0.501,
           "spread_confidence": 25,
-          "margin_p25": -2.66,
-          "margin_p75": 2.68,
+          "margin_p25": -2.69,
+          "margin_p75": 2.65,
           "margin_std": 3.96,
           "method": "trained_xgboost"
         }
@@ -2007,13 +1677,13 @@
         "away_score": null,
         "venue": "Citi Field",
         "prediction": {
-          "predicted_margin": 0.97,
+          "predicted_margin": 0.93,
           "predicted_total": 8.1,
-          "home_win_prob": 0.56,
-          "away_win_prob": 0.44,
-          "spread_confidence": 37,
-          "margin_p25": -1.59,
-          "margin_p75": 3.53,
+          "home_win_prob": 0.558,
+          "away_win_prob": 0.442,
+          "spread_confidence": 36,
+          "margin_p25": -1.63,
+          "margin_p75": 3.49,
           "margin_std": 3.79,
           "method": "trained_xgboost"
         }
@@ -2268,13 +1938,13 @@
         "away_score": null,
         "venue": "Tropicana Field",
         "prediction": {
-          "predicted_margin": 0.09,
+          "predicted_margin": 0.4,
           "predicted_total": 7.4,
-          "home_win_prob": 0.506,
-          "away_win_prob": 0.494,
-          "spread_confidence": 23,
-          "margin_p25": -2.53,
-          "margin_p75": 2.71,
+          "home_win_prob": 0.525,
+          "away_win_prob": 0.475,
+          "spread_confidence": 24,
+          "margin_p25": -2.22,
+          "margin_p75": 3.02,
           "margin_std": 3.89,
           "method": "trained_xgboost"
         }
@@ -2298,13 +1968,13 @@
         "away_score": null,
         "venue": "Tropicana Field",
         "prediction": {
-          "predicted_margin": -1.15,
+          "predicted_margin": -0.9,
           "predicted_total": 9.2,
-          "home_win_prob": 0.429,
-          "away_win_prob": 0.571,
-          "spread_confidence": 29,
-          "margin_p25": -3.81,
-          "margin_p75": 1.51,
+          "home_win_prob": 0.444,
+          "away_win_prob": 0.556,
+          "spread_confidence": 28,
+          "margin_p25": -3.56,
+          "margin_p75": 1.76,
           "margin_std": 3.95,
           "method": "trained_xgboost"
         }
@@ -2328,13 +1998,13 @@
         "away_score": null,
         "venue": "Tropicana Field",
         "prediction": {
-          "predicted_margin": -0.72,
+          "predicted_margin": -0.45,
           "predicted_total": 9.1,
-          "home_win_prob": 0.455,
-          "away_win_prob": 0.545,
-          "spread_confidence": 23,
-          "margin_p25": -3.36,
-          "margin_p75": 1.92,
+          "home_win_prob": 0.472,
+          "away_win_prob": 0.528,
+          "spread_confidence": 22,
+          "margin_p25": -3.09,
+          "margin_p75": 2.19,
           "margin_std": 3.92,
           "method": "trained_xgboost"
         }
@@ -2589,13 +2259,13 @@
         "away_score": null,
         "venue": "Estadio Alfredo Harp Helu",
         "prediction": {
-          "predicted_margin": 0.31,
+          "predicted_margin": 0.37,
           "predicted_total": 10.8,
-          "home_win_prob": 0.52,
-          "away_win_prob": 0.48,
+          "home_win_prob": 0.523,
+          "away_win_prob": 0.477,
           "spread_confidence": 29,
-          "margin_p25": -2.47,
-          "margin_p75": 3.09,
+          "margin_p25": -2.41,
+          "margin_p75": 3.15,
           "margin_std": 4.12,
           "method": "trained_xgboost"
         }
@@ -2619,13 +2289,13 @@
         "away_score": null,
         "venue": "Estadio Alfredo Harp Helu",
         "prediction": {
-          "predicted_margin": 0.24,
+          "predicted_margin": 0.51,
           "predicted_total": 8.3,
-          "home_win_prob": 0.515,
-          "away_win_prob": 0.485,
-          "spread_confidence": 25,
-          "margin_p25": -2.44,
-          "margin_p75": 2.92,
+          "home_win_prob": 0.532,
+          "away_win_prob": 0.468,
+          "spread_confidence": 26,
+          "margin_p25": -2.17,
+          "margin_p75": 3.19,
           "margin_std": 3.98,
           "method": "trained_xgboost"
         }
@@ -2676,15 +2346,45 @@
           "margin_std": 3.94,
           "method": "trained_xgboost"
         }
+      },
+      {
+        "game_id": 824447,
+        "date": "2026-04-28",
+        "game_time_ct": "5:10 PM CT",
+        "status": "S",
+        "home_name": "Cleveland Guardians",
+        "away_name": "Tampa Bay Rays",
+        "home_abbr": "CLE",
+        "away_abbr": "TB",
+        "home_id": 114,
+        "away_id": 139,
+        "home_sp": "TBD",
+        "home_sp_id": null,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "Progressive Field",
+        "prediction": {
+          "predicted_margin": -0.51,
+          "predicted_total": 9.7,
+          "home_win_prob": 0.468,
+          "away_win_prob": 0.532,
+          "spread_confidence": 17,
+          "margin_p25": -3.17,
+          "margin_p75": 2.15,
+          "margin_std": 3.94,
+          "method": "trained_xgboost"
+        }
       }
     ],
     "home_wins": 0,
     "away_wins": 0,
     "series_start": "2026-04-27",
-    "series_end": "2026-04-27",
-    "total_games": 1,
+    "series_end": "2026-04-28",
+    "total_games": 2,
     "games_played": 0,
-    "games_remaining": 1
+    "games_remaining": 2
   },
   {
     "series_id": "LAA@CWS",
@@ -2713,13 +2413,43 @@
         "away_score": null,
         "venue": "Rate Field",
         "prediction": {
-          "predicted_margin": -0.7,
+          "predicted_margin": -0.63,
           "predicted_total": 10.0,
-          "home_win_prob": 0.457,
-          "away_win_prob": 0.543,
+          "home_win_prob": 0.461,
+          "away_win_prob": 0.539,
           "spread_confidence": 17,
-          "margin_p25": -3.4,
-          "margin_p75": 2.0,
+          "margin_p25": -3.33,
+          "margin_p75": 2.07,
+          "margin_std": 4.0,
+          "method": "trained_xgboost"
+        }
+      },
+      {
+        "game_id": 824610,
+        "date": "2026-04-28",
+        "game_time_ct": "6:40 PM CT",
+        "status": "S",
+        "home_name": "Chicago White Sox",
+        "away_name": "Los Angeles Angels",
+        "home_abbr": "CWS",
+        "away_abbr": "LAA",
+        "home_id": 145,
+        "away_id": 108,
+        "home_sp": "TBD",
+        "home_sp_id": null,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "Rate Field",
+        "prediction": {
+          "predicted_margin": -0.63,
+          "predicted_total": 10.0,
+          "home_win_prob": 0.461,
+          "away_win_prob": 0.539,
+          "spread_confidence": 17,
+          "margin_p25": -3.33,
+          "margin_p75": 2.07,
           "margin_std": 4.0,
           "method": "trained_xgboost"
         }
@@ -2728,10 +2458,10 @@
     "home_wins": 0,
     "away_wins": 0,
     "series_start": "2026-04-27",
-    "series_end": "2026-04-27",
-    "total_games": 1,
+    "series_end": "2026-04-28",
+    "total_games": 2,
     "games_played": 0,
-    "games_remaining": 1
+    "games_remaining": 2
   },
   {
     "series_id": "MIA@LAD",
@@ -2770,15 +2500,45 @@
           "margin_std": 3.97,
           "method": "trained_xgboost"
         }
+      },
+      {
+        "game_id": 823956,
+        "date": "2026-04-28",
+        "game_time_ct": "9:10 PM CT",
+        "status": "S",
+        "home_name": "Los Angeles Dodgers",
+        "away_name": "Miami Marlins",
+        "home_abbr": "LAD",
+        "away_abbr": "MIA",
+        "home_id": 119,
+        "away_id": 146,
+        "home_sp": "TBD",
+        "home_sp_id": null,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "UNIQLO Field at Dodger Stadium",
+        "prediction": {
+          "predicted_margin": -0.57,
+          "predicted_total": 9.5,
+          "home_win_prob": 0.464,
+          "away_win_prob": 0.536,
+          "spread_confidence": 17,
+          "margin_p25": -3.2,
+          "margin_p75": 2.06,
+          "margin_std": 3.9,
+          "method": "trained_xgboost"
+        }
       }
     ],
     "home_wins": 0,
     "away_wins": 0,
     "series_start": "2026-04-27",
-    "series_end": "2026-04-27",
-    "total_games": 1,
+    "series_end": "2026-04-28",
+    "total_games": 2,
     "games_played": 0,
-    "games_remaining": 1
+    "games_remaining": 2
   },
   {
     "series_id": "SEA@MIN",
@@ -2817,15 +2577,45 @@
           "margin_std": 4.02,
           "method": "trained_xgboost"
         }
+      },
+      {
+        "game_id": 823716,
+        "date": "2026-04-28",
+        "game_time_ct": "6:40 PM CT",
+        "status": "S",
+        "home_name": "Minnesota Twins",
+        "away_name": "Seattle Mariners",
+        "home_abbr": "MIN",
+        "away_abbr": "SEA",
+        "home_id": 142,
+        "away_id": 136,
+        "home_sp": "TBD",
+        "home_sp_id": null,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "Target Field",
+        "prediction": {
+          "predicted_margin": -0.65,
+          "predicted_total": 10.0,
+          "home_win_prob": 0.459,
+          "away_win_prob": 0.541,
+          "spread_confidence": 17,
+          "margin_p25": -3.36,
+          "margin_p75": 2.06,
+          "margin_std": 4.02,
+          "method": "trained_xgboost"
+        }
       }
     ],
     "home_wins": 0,
     "away_wins": 0,
     "series_start": "2026-04-27",
-    "series_end": "2026-04-27",
-    "total_games": 1,
+    "series_end": "2026-04-28",
+    "total_games": 2,
     "games_played": 0,
-    "games_remaining": 1
+    "games_remaining": 2
   },
   {
     "series_id": "STL@PIT",
@@ -2864,15 +2654,45 @@
           "margin_std": 3.94,
           "method": "trained_xgboost"
         }
+      },
+      {
+        "game_id": 823390,
+        "date": "2026-04-28",
+        "game_time_ct": "5:40 PM CT",
+        "status": "S",
+        "home_name": "Pittsburgh Pirates",
+        "away_name": "St. Louis Cardinals",
+        "home_abbr": "PIT",
+        "away_abbr": "STL",
+        "home_id": 134,
+        "away_id": 138,
+        "home_sp": "TBD",
+        "home_sp_id": null,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "PNC Park",
+        "prediction": {
+          "predicted_margin": -1.12,
+          "predicted_total": 9.7,
+          "home_win_prob": 0.431,
+          "away_win_prob": 0.569,
+          "spread_confidence": 18,
+          "margin_p25": -3.78,
+          "margin_p75": 1.54,
+          "margin_std": 3.94,
+          "method": "trained_xgboost"
+        }
       }
     ],
     "home_wins": 0,
     "away_wins": 0,
     "series_start": "2026-04-27",
-    "series_end": "2026-04-27",
-    "total_games": 1,
+    "series_end": "2026-04-28",
+    "total_games": 2,
     "games_played": 0,
-    "games_remaining": 1
+    "games_remaining": 2
   },
   {
     "series_id": "CHC@SD",
@@ -2901,13 +2721,43 @@
         "away_score": null,
         "venue": "Petco Park",
         "prediction": {
-          "predicted_margin": -0.99,
+          "predicted_margin": -1.09,
           "predicted_total": 9.5,
-          "home_win_prob": 0.438,
-          "away_win_prob": 0.562,
+          "home_win_prob": 0.432,
+          "away_win_prob": 0.568,
           "spread_confidence": 18,
-          "margin_p25": -3.63,
-          "margin_p75": 1.65,
+          "margin_p25": -3.73,
+          "margin_p75": 1.55,
+          "margin_std": 3.92,
+          "method": "trained_xgboost"
+        }
+      },
+      {
+        "game_id": 823310,
+        "date": "2026-04-28",
+        "game_time_ct": "8:40 PM CT",
+        "status": "S",
+        "home_name": "San Diego Padres",
+        "away_name": "Chicago Cubs",
+        "home_abbr": "SD",
+        "away_abbr": "CHC",
+        "home_id": 135,
+        "away_id": 112,
+        "home_sp": "TBD",
+        "home_sp_id": null,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "Petco Park",
+        "prediction": {
+          "predicted_margin": -1.09,
+          "predicted_total": 9.5,
+          "home_win_prob": 0.432,
+          "away_win_prob": 0.568,
+          "spread_confidence": 18,
+          "margin_p25": -3.73,
+          "margin_p75": 1.55,
           "margin_std": 3.92,
           "method": "trained_xgboost"
         }
@@ -2916,10 +2766,10 @@
     "home_wins": 0,
     "away_wins": 0,
     "series_start": "2026-04-27",
-    "series_end": "2026-04-27",
-    "total_games": 1,
+    "series_end": "2026-04-28",
+    "total_games": 2,
     "games_played": 0,
-    "games_remaining": 1
+    "games_remaining": 2
   },
   {
     "series_id": "NYY@TEX",
@@ -2948,13 +2798,43 @@
         "away_score": null,
         "venue": "Globe Life Field",
         "prediction": {
-          "predicted_margin": -0.59,
+          "predicted_margin": -0.83,
           "predicted_total": 9.9,
-          "home_win_prob": 0.463,
-          "away_win_prob": 0.537,
-          "spread_confidence": 17,
-          "margin_p25": -3.34,
-          "margin_p75": 2.16,
+          "home_win_prob": 0.448,
+          "away_win_prob": 0.552,
+          "spread_confidence": 18,
+          "margin_p25": -3.58,
+          "margin_p75": 1.92,
+          "margin_std": 4.08,
+          "method": "trained_xgboost"
+        }
+      },
+      {
+        "game_id": 822908,
+        "date": "2026-04-28",
+        "game_time_ct": "7:05 PM CT",
+        "status": "S",
+        "home_name": "Texas Rangers",
+        "away_name": "New York Yankees",
+        "home_abbr": "TEX",
+        "away_abbr": "NYY",
+        "home_id": 140,
+        "away_id": 147,
+        "home_sp": "TBD",
+        "home_sp_id": null,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "Globe Life Field",
+        "prediction": {
+          "predicted_margin": -0.83,
+          "predicted_total": 9.9,
+          "home_win_prob": 0.448,
+          "away_win_prob": 0.552,
+          "spread_confidence": 18,
+          "margin_p25": -3.58,
+          "margin_p75": 1.92,
           "margin_std": 4.08,
           "method": "trained_xgboost"
         }
@@ -2963,10 +2843,10 @@
     "home_wins": 0,
     "away_wins": 0,
     "series_start": "2026-04-27",
-    "series_end": "2026-04-27",
-    "total_games": 1,
+    "series_end": "2026-04-28",
+    "total_games": 2,
     "games_played": 0,
-    "games_remaining": 1
+    "games_remaining": 2
   },
   {
     "series_id": "BOS@TOR",
@@ -2995,13 +2875,43 @@
         "away_score": null,
         "venue": "Rogers Centre",
         "prediction": {
-          "predicted_margin": -1.0,
+          "predicted_margin": -0.97,
           "predicted_total": 9.7,
-          "home_win_prob": 0.438,
-          "away_win_prob": 0.562,
+          "home_win_prob": 0.44,
+          "away_win_prob": 0.56,
           "spread_confidence": 18,
-          "margin_p25": -3.68,
-          "margin_p75": 1.68,
+          "margin_p25": -3.65,
+          "margin_p75": 1.71,
+          "margin_std": 3.98,
+          "method": "trained_xgboost"
+        }
+      },
+      {
+        "game_id": 822823,
+        "date": "2026-04-28",
+        "game_time_ct": "6:07 PM CT",
+        "status": "S",
+        "home_name": "Toronto Blue Jays",
+        "away_name": "Boston Red Sox",
+        "home_abbr": "TOR",
+        "away_abbr": "BOS",
+        "home_id": 141,
+        "away_id": 111,
+        "home_sp": "TBD",
+        "home_sp_id": null,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "Rogers Centre",
+        "prediction": {
+          "predicted_margin": -0.97,
+          "predicted_total": 9.7,
+          "home_win_prob": 0.44,
+          "away_win_prob": 0.56,
+          "spread_confidence": 18,
+          "margin_p25": -3.65,
+          "margin_p75": 1.71,
           "margin_std": 3.98,
           "method": "trained_xgboost"
         }
@@ -3010,7 +2920,336 @@
     "home_wins": 0,
     "away_wins": 0,
     "series_start": "2026-04-27",
-    "series_end": "2026-04-27",
+    "series_end": "2026-04-28",
+    "total_games": 2,
+    "games_played": 0,
+    "games_remaining": 2
+  },
+  {
+    "series_id": "KC@ATH",
+    "home_abbr": "ATH",
+    "away_abbr": "KC",
+    "home_name": "Athletics",
+    "away_name": "Kansas City Royals",
+    "venue": "Sutter Health Park",
+    "games": [
+      {
+        "game_id": 825017,
+        "date": "2026-04-28",
+        "game_time_ct": "8:40 PM CT",
+        "status": "S",
+        "home_name": "Athletics",
+        "away_name": "Kansas City Royals",
+        "home_abbr": "ATH",
+        "away_abbr": "KC",
+        "home_id": 133,
+        "away_id": 118,
+        "home_sp": "TBD",
+        "home_sp_id": null,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "Sutter Health Park",
+        "prediction": {
+          "predicted_margin": -0.91,
+          "predicted_total": 9.6,
+          "home_win_prob": 0.443,
+          "away_win_prob": 0.557,
+          "spread_confidence": 18,
+          "margin_p25": -3.53,
+          "margin_p75": 1.71,
+          "margin_std": 3.88,
+          "method": "trained_xgboost"
+        }
+      }
+    ],
+    "home_wins": 0,
+    "away_wins": 0,
+    "series_start": "2026-04-28",
+    "series_end": "2026-04-28",
+    "total_games": 1,
+    "games_played": 0,
+    "games_remaining": 1
+  },
+  {
+    "series_id": "DET@ATL",
+    "home_abbr": "ATL",
+    "away_abbr": "DET",
+    "home_name": "Atlanta Braves",
+    "away_name": "Detroit Tigers",
+    "venue": "Truist Park",
+    "games": [
+      {
+        "game_id": 824931,
+        "date": "2026-04-28",
+        "game_time_ct": "6:15 PM CT",
+        "status": "S",
+        "home_name": "Atlanta Braves",
+        "away_name": "Detroit Tigers",
+        "home_abbr": "ATL",
+        "away_abbr": "DET",
+        "home_id": 144,
+        "away_id": 116,
+        "home_sp": "TBD",
+        "home_sp_id": null,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "Truist Park",
+        "prediction": {
+          "predicted_margin": -0.52,
+          "predicted_total": 9.9,
+          "home_win_prob": 0.468,
+          "away_win_prob": 0.532,
+          "spread_confidence": 17,
+          "margin_p25": -3.24,
+          "margin_p75": 2.2,
+          "margin_std": 4.04,
+          "method": "trained_xgboost"
+        }
+      }
+    ],
+    "home_wins": 0,
+    "away_wins": 0,
+    "series_start": "2026-04-28",
+    "series_end": "2026-04-28",
+    "total_games": 1,
+    "games_played": 0,
+    "games_remaining": 1
+  },
+  {
+    "series_id": "HOU@BAL",
+    "home_abbr": "BAL",
+    "away_abbr": "HOU",
+    "home_name": "Baltimore Orioles",
+    "away_name": "Houston Astros",
+    "venue": "Oriole Park at Camden Yards",
+    "games": [
+      {
+        "game_id": 824849,
+        "date": "2026-04-28",
+        "game_time_ct": "5:35 PM CT",
+        "status": "S",
+        "home_name": "Baltimore Orioles",
+        "away_name": "Houston Astros",
+        "home_abbr": "BAL",
+        "away_abbr": "HOU",
+        "home_id": 110,
+        "away_id": 117,
+        "home_sp": "TBD",
+        "home_sp_id": null,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "Oriole Park at Camden Yards",
+        "prediction": {
+          "predicted_margin": -0.82,
+          "predicted_total": 9.9,
+          "home_win_prob": 0.449,
+          "away_win_prob": 0.551,
+          "spread_confidence": 18,
+          "margin_p25": -3.54,
+          "margin_p75": 1.9,
+          "margin_std": 4.04,
+          "method": "trained_xgboost"
+        }
+      }
+    ],
+    "home_wins": 0,
+    "away_wins": 0,
+    "series_start": "2026-04-28",
+    "series_end": "2026-04-28",
+    "total_games": 1,
+    "games_played": 0,
+    "games_remaining": 1
+  },
+  {
+    "series_id": "COL@CIN",
+    "home_abbr": "CIN",
+    "away_abbr": "COL",
+    "home_name": "Cincinnati Reds",
+    "away_name": "Colorado Rockies",
+    "venue": "Great American Ball Park",
+    "games": [
+      {
+        "game_id": 824526,
+        "date": "2026-04-28",
+        "game_time_ct": "5:40 PM CT",
+        "status": "S",
+        "home_name": "Cincinnati Reds",
+        "away_name": "Colorado Rockies",
+        "home_abbr": "CIN",
+        "away_abbr": "COL",
+        "home_id": 113,
+        "away_id": 115,
+        "home_sp": "TBD",
+        "home_sp_id": null,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "Great American Ball Park",
+        "prediction": {
+          "predicted_margin": -0.55,
+          "predicted_total": 10.0,
+          "home_win_prob": 0.466,
+          "away_win_prob": 0.534,
+          "spread_confidence": 17,
+          "margin_p25": -3.33,
+          "margin_p75": 2.23,
+          "margin_std": 4.12,
+          "method": "trained_xgboost"
+        }
+      }
+    ],
+    "home_wins": 0,
+    "away_wins": 0,
+    "series_start": "2026-04-28",
+    "series_end": "2026-04-28",
+    "total_games": 1,
+    "games_played": 0,
+    "games_remaining": 1
+  },
+  {
+    "series_id": "AZ@MIL",
+    "home_abbr": "MIL",
+    "away_abbr": "AZ",
+    "home_name": "Milwaukee Brewers",
+    "away_name": "Arizona Diamondbacks",
+    "venue": "American Family Field",
+    "games": [
+      {
+        "game_id": 823798,
+        "date": "2026-04-28",
+        "game_time_ct": "6:40 PM CT",
+        "status": "S",
+        "home_name": "Milwaukee Brewers",
+        "away_name": "Arizona Diamondbacks",
+        "home_abbr": "MIL",
+        "away_abbr": "AZ",
+        "home_id": 158,
+        "away_id": 109,
+        "home_sp": "TBD",
+        "home_sp_id": null,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "American Family Field",
+        "prediction": {
+          "predicted_margin": -0.94,
+          "predicted_total": 9.6,
+          "home_win_prob": 0.441,
+          "away_win_prob": 0.559,
+          "spread_confidence": 18,
+          "margin_p25": -3.62,
+          "margin_p75": 1.74,
+          "margin_std": 3.98,
+          "method": "trained_xgboost"
+        }
+      }
+    ],
+    "home_wins": 0,
+    "away_wins": 0,
+    "series_start": "2026-04-28",
+    "series_end": "2026-04-28",
+    "total_games": 1,
+    "games_played": 0,
+    "games_remaining": 1
+  },
+  {
+    "series_id": "WSH@NYM",
+    "home_abbr": "NYM",
+    "away_abbr": "WSH",
+    "home_name": "New York Mets",
+    "away_name": "Washington Nationals",
+    "venue": "Citi Field",
+    "games": [
+      {
+        "game_id": 823636,
+        "date": "2026-04-28",
+        "game_time_ct": "6:10 PM CT",
+        "status": "S",
+        "home_name": "New York Mets",
+        "away_name": "Washington Nationals",
+        "home_abbr": "NYM",
+        "away_abbr": "WSH",
+        "home_id": 121,
+        "away_id": 120,
+        "home_sp": "Clay Holmes",
+        "home_sp_id": 605280,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "Citi Field",
+        "prediction": {
+          "predicted_margin": 0.44,
+          "predicted_total": 8.7,
+          "home_win_prob": 0.528,
+          "away_win_prob": 0.472,
+          "spread_confidence": 20,
+          "margin_p25": -2.19,
+          "margin_p75": 3.07,
+          "margin_std": 3.9,
+          "method": "trained_xgboost"
+        }
+      }
+    ],
+    "home_wins": 0,
+    "away_wins": 0,
+    "series_start": "2026-04-28",
+    "series_end": "2026-04-28",
+    "total_games": 1,
+    "games_played": 0,
+    "games_remaining": 1
+  },
+  {
+    "series_id": "SF@PHI",
+    "home_abbr": "PHI",
+    "away_abbr": "SF",
+    "home_name": "Philadelphia Phillies",
+    "away_name": "San Francisco Giants",
+    "venue": "Citizens Bank Park",
+    "games": [
+      {
+        "game_id": 823473,
+        "date": "2026-04-28",
+        "game_time_ct": "5:40 PM CT",
+        "status": "S",
+        "home_name": "Philadelphia Phillies",
+        "away_name": "San Francisco Giants",
+        "home_abbr": "PHI",
+        "away_abbr": "SF",
+        "home_id": 143,
+        "away_id": 137,
+        "home_sp": "TBD",
+        "home_sp_id": null,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "Citizens Bank Park",
+        "prediction": {
+          "predicted_margin": -0.82,
+          "predicted_total": 9.9,
+          "home_win_prob": 0.449,
+          "away_win_prob": 0.551,
+          "spread_confidence": 18,
+          "margin_p25": -3.56,
+          "margin_p75": 1.92,
+          "margin_std": 4.06,
+          "method": "trained_xgboost"
+        }
+      }
+    ],
+    "home_wins": 0,
+    "away_wins": 0,
+    "series_start": "2026-04-28",
+    "series_end": "2026-04-28",
     "total_games": 1,
     "games_played": 0,
     "games_remaining": 1

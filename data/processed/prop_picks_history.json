@@ -20,11 +20,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 9.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-04-23 13:07:14",
-    "graded_at": null
+    "graded_at": "2026-04-24 13:59:54"
   },
   {
     "id": 724,
@@ -47,11 +47,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 5.0,
+    "result": "W",
+    "pnl": 64.93506493506493,
     "created_at": "2026-04-23 16:09:38",
-    "graded_at": null
+    "graded_at": "2026-04-24 13:59:54"
   },
   {
     "id": 726,
@@ -74,11 +74,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 3.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-04-23 16:09:38",
-    "graded_at": null
+    "graded_at": "2026-04-24 13:59:54"
   },
   {
     "id": 728,
@@ -101,41 +101,41 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 5.0,
+    "result": "W",
+    "pnl": 104.0,
     "created_at": "2026-04-23 16:09:38",
-    "graded_at": null
+    "graded_at": "2026-04-24 13:59:53"
   },
   {
-    "id": 731,
+    "id": 741,
     "game_date": "2026-04-23",
     "game_pick_id": null,
     "player_name": "Joe Ryan",
     "player_id": null,
     "player_team": "MIN",
     "prop_type": "strikeouts",
-    "prop_market": "UNDER 6.5 K",
-    "prop_line": 6.5,
-    "prop_odds": -172,
-    "prop_book": "fanduel",
+    "prop_market": "UNDER 5.5 K",
+    "prop_line": 5.5,
+    "prop_odds": 120,
+    "prop_book": "fanatics",
     "predicted_value": 5.3,
-    "predicted_prob_over": 0.283,
-    "edge": 0.085,
+    "predicted_prob_over": 0.437,
+    "edge": 0.109,
     "confidence": null,
     "player_season_avg": 9.09,
     "player_last7_avg": null,
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-04-23 16:09:38",
-    "graded_at": null
+    "actual_value": 5.0,
+    "result": "W",
+    "pnl": 120.0,
+    "created_at": "2026-04-23 23:33:28",
+    "graded_at": "2026-04-24 13:59:53"
   },
   {
-    "id": 725,
+    "id": 740,
     "game_date": "2026-04-23",
     "game_pick_id": null,
     "player_name": "Jacob deGrom",
@@ -144,22 +144,22 @@
     "prop_type": "strikeouts",
     "prop_market": "UNDER 6.5 K",
     "prop_line": 6.5,
-    "prop_odds": 102,
+    "prop_odds": -120,
     "prop_book": "fanduel",
     "predicted_value": 5.5,
     "predicted_prob_over": 0.314,
-    "edge": 0.191,
+    "edge": 0.141,
     "confidence": null,
     "player_season_avg": 11.06,
     "player_last7_avg": null,
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-04-23 16:09:38",
-    "graded_at": null
+    "actual_value": 10.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-04-23 23:33:28",
+    "graded_at": "2026-04-24 13:59:53"
   },
   {
     "id": 727,
@@ -182,11 +182,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 7.0,
+    "result": "W",
+    "pnl": 76.92307692307692,
     "created_at": "2026-04-23 16:09:38",
-    "graded_at": null
+    "graded_at": "2026-04-24 13:59:53"
   },
   {
     "id": 729,
@@ -209,11 +209,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 5.0,
+    "result": "W",
+    "pnl": 55.55555555555556,
     "created_at": "2026-04-23 16:09:38",
-    "graded_at": null
+    "graded_at": "2026-04-24 13:59:53"
   },
   {
     "id": 733,
@@ -236,11 +236,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 7.0,
+    "result": "W",
+    "pnl": 81.9672131147541,
     "created_at": "2026-04-23 16:09:38",
-    "graded_at": null
+    "graded_at": "2026-04-24 13:59:53"
   },
   {
     "id": 736,
@@ -263,11 +263,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 4.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-04-23 16:09:38",
-    "graded_at": null
+    "graded_at": "2026-04-24 13:59:53"
   },
   {
     "id": 734,
@@ -290,11 +290,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 1.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-04-23 16:09:38",
-    "graded_at": null
+    "graded_at": "2026-04-24 13:59:53"
   },
   {
     "id": 721,
@@ -317,11 +317,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 5.0,
+    "result": "W",
+    "pnl": 75.75757575757575,
     "created_at": "2026-04-23 13:07:14",
-    "graded_at": null
+    "graded_at": "2026-04-24 13:59:53"
   },
   {
     "id": 730,
@@ -344,14 +344,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 10.0,
+    "result": "W",
+    "pnl": 76.92307692307692,
     "created_at": "2026-04-23 16:09:38",
-    "graded_at": null
+    "graded_at": "2026-04-24 13:59:53"
   },
   {
-    "id": 732,
+    "id": 742,
     "game_date": "2026-04-23",
     "game_pick_id": null,
     "player_name": "Bubba Chandler",
@@ -360,22 +360,22 @@
     "prop_type": "strikeouts",
     "prop_market": "UNDER 4.5 K",
     "prop_line": 4.5,
-    "prop_odds": 106,
+    "prop_odds": 104,
     "prop_book": "fanduel",
     "predicted_value": 4.3,
     "predicted_prob_over": 0.43,
-    "edge": 0.085,
+    "edge": 0.08,
     "confidence": null,
     "player_season_avg": 6.87,
     "player_last7_avg": null,
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-04-23 16:09:38",
-    "graded_at": null
+    "actual_value": 4.0,
+    "result": "W",
+    "pnl": 104.0,
+    "created_at": "2026-04-23 23:33:28",
+    "graded_at": "2026-04-24 13:59:53"
   },
   {
     "id": 735,
@@ -398,11 +398,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 4.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-04-23 16:09:38",
-    "graded_at": null
+    "graded_at": "2026-04-24 13:59:53"
   },
   {
     "id": 683,
