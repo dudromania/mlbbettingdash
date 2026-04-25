@@ -305,18 +305,18 @@
     "away_abbr": "BOS",
     "home_sp": "Trevor Rogers",
     "away_sp": "Garrett Crochet",
-    "nrfi_prob": 30.0,
+    "nrfi_prob": 27.7,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Trevor Rogers",
       "first_inning": {},
-      "season_era": 4.08
+      "season_era": 4.75
     },
     "away_pitcher": {
       "name": "Garrett Crochet",
       "first_inning": {},
-      "season_era": 7.88
+      "season_era": 6.3
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
