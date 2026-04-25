@@ -47,10 +47,10 @@
       "away_abbr": "COL",
       "home_score": "0",
       "away_score": "0",
-      "state": "pre",
-      "detail": "4/25 - 4:10 PM EDT",
+      "state": "post",
+      "detail": "Postponed",
       "is_live": false,
-      "is_final": false
+      "is_final": true
     },
     {
       "home_abbr": "TB",

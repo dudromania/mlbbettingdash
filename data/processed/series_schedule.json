@@ -461,7 +461,7 @@
         "game_id": 824851,
         "date": "2026-04-25",
         "game_time_ct": "11:05 AM CT",
-        "status": "S",
+        "status": "P",
         "home_name": "Baltimore Orioles",
         "away_name": "Boston Red Sox",
         "home_abbr": "BAL",
@@ -767,13 +767,13 @@
         "away_score": null,
         "venue": "Daikin Park",
         "prediction": {
-          "predicted_margin": 0.04,
+          "predicted_margin": -0.07,
           "predicted_total": 8.7,
-          "home_win_prob": 0.503,
-          "away_win_prob": 0.497,
+          "home_win_prob": 0.496,
+          "away_win_prob": 0.504,
           "spread_confidence": 19,
-          "margin_p25": -2.61,
-          "margin_p75": 2.69,
+          "margin_p25": -2.72,
+          "margin_p75": 2.58,
           "margin_std": 3.93,
           "method": "trained_xgboost"
         }
@@ -797,13 +797,13 @@
         "away_score": null,
         "venue": "Daikin Park",
         "prediction": {
-          "predicted_margin": -0.58,
+          "predicted_margin": -0.74,
           "predicted_total": 9.1,
-          "home_win_prob": 0.464,
-          "away_win_prob": 0.536,
-          "spread_confidence": 24,
-          "margin_p25": -3.28,
-          "margin_p75": 2.12,
+          "home_win_prob": 0.454,
+          "away_win_prob": 0.546,
+          "spread_confidence": 25,
+          "margin_p25": -3.44,
+          "margin_p75": 1.96,
           "margin_std": 4.0,
           "method": "trained_xgboost"
         }
@@ -961,13 +961,13 @@
         "away_score": null,
         "venue": "UNIQLO Field at Dodger Stadium",
         "prediction": {
-          "predicted_margin": -0.95,
+          "predicted_margin": -0.98,
           "predicted_total": 9.2,
-          "home_win_prob": 0.441,
-          "away_win_prob": 0.559,
+          "home_win_prob": 0.439,
+          "away_win_prob": 0.561,
           "spread_confidence": 19,
-          "margin_p25": -3.57,
-          "margin_p75": 1.67,
+          "margin_p25": -3.6,
+          "margin_p75": 1.64,
           "margin_std": 3.89,
           "method": "trained_xgboost"
         }
@@ -991,13 +991,13 @@
         "away_score": null,
         "venue": "UNIQLO Field at Dodger Stadium",
         "prediction": {
-          "predicted_margin": 1.11,
+          "predicted_margin": 1.09,
           "predicted_total": 7.3,
-          "home_win_prob": 0.569,
-          "away_win_prob": 0.431,
+          "home_win_prob": 0.568,
+          "away_win_prob": 0.432,
           "spread_confidence": 48,
-          "margin_p25": -1.49,
-          "margin_p75": 3.71,
+          "margin_p25": -1.51,
+          "margin_p75": 3.69,
           "margin_std": 3.85,
           "method": "trained_xgboost"
         }
@@ -1058,13 +1058,13 @@
         "away_score": null,
         "venue": "American Family Field",
         "prediction": {
-          "predicted_margin": -0.31,
+          "predicted_margin": -0.28,
           "predicted_total": 8.7,
-          "home_win_prob": 0.48,
-          "away_win_prob": 0.52,
+          "home_win_prob": 0.482,
+          "away_win_prob": 0.518,
           "spread_confidence": 21,
-          "margin_p25": -2.93,
-          "margin_p75": 2.31,
+          "margin_p25": -2.9,
+          "margin_p75": 2.34,
           "margin_std": 3.88,
           "method": "trained_xgboost"
         }
@@ -1140,7 +1140,7 @@
         "game_id": 823637,
         "date": "2026-04-25",
         "game_time_ct": "3:10 PM CT",
-        "status": "S",
+        "status": "D",
         "home_name": "New York Mets",
         "away_name": "Colorado Rockies",
         "home_abbr": "NYM",
@@ -1155,13 +1155,13 @@
         "away_score": null,
         "venue": "Citi Field",
         "prediction": {
-          "predicted_margin": -0.02,
+          "predicted_margin": 0.01,
           "predicted_total": 8.9,
-          "home_win_prob": 0.499,
-          "away_win_prob": 0.501,
+          "home_win_prob": 0.501,
+          "away_win_prob": 0.499,
           "spread_confidence": 25,
-          "margin_p25": -2.69,
-          "margin_p75": 2.65,
+          "margin_p25": -2.66,
+          "margin_p75": 2.68,
           "margin_std": 3.96,
           "method": "trained_xgboost"
         }
@@ -1185,14 +1185,44 @@
         "away_score": null,
         "venue": "Citi Field",
         "prediction": {
-          "predicted_margin": 0.93,
+          "predicted_margin": 0.97,
           "predicted_total": 8.1,
-          "home_win_prob": 0.558,
-          "away_win_prob": 0.442,
-          "spread_confidence": 36,
-          "margin_p25": -1.63,
-          "margin_p75": 3.49,
+          "home_win_prob": 0.56,
+          "away_win_prob": 0.44,
+          "spread_confidence": 37,
+          "margin_p25": -1.59,
+          "margin_p75": 3.53,
           "margin_std": 3.79,
+          "method": "trained_xgboost"
+        }
+      },
+      {
+        "game_id": 823637,
+        "date": "2026-04-26",
+        "game_time_ct": "12:45 PM CT",
+        "status": "S",
+        "home_name": "New York Mets",
+        "away_name": "Colorado Rockies",
+        "home_abbr": "NYM",
+        "away_abbr": "COL",
+        "home_id": 121,
+        "away_id": 115,
+        "home_sp": "TBD",
+        "home_sp_id": null,
+        "away_sp": "TBD",
+        "away_sp_id": null,
+        "home_score": null,
+        "away_score": null,
+        "venue": "Citi Field",
+        "prediction": {
+          "predicted_margin": -0.57,
+          "predicted_total": 9.5,
+          "home_win_prob": 0.464,
+          "away_win_prob": 0.536,
+          "spread_confidence": 17,
+          "margin_p25": -3.21,
+          "margin_p75": 2.07,
+          "margin_std": 3.92,
           "method": "trained_xgboost"
         }
       }
@@ -1201,9 +1231,9 @@
     "away_wins": 1,
     "series_start": "2026-04-24",
     "series_end": "2026-04-26",
-    "total_games": 3,
+    "total_games": 4,
     "games_played": 1,
-    "games_remaining": 2
+    "games_remaining": 3
   },
   {
     "series_id": "MIA@SF",
@@ -1334,7 +1364,7 @@
         "game_id": 823070,
         "date": "2026-04-25",
         "game_time_ct": "1:15 PM CT",
-        "status": "S",
+        "status": "P",
         "home_name": "St. Louis Cardinals",
         "away_name": "Seattle Mariners",
         "home_abbr": "STL",
@@ -1446,13 +1476,13 @@
         "away_score": null,
         "venue": "Tropicana Field",
         "prediction": {
-          "predicted_margin": -0.9,
+          "predicted_margin": -1.1,
           "predicted_total": 9.2,
-          "home_win_prob": 0.444,
-          "away_win_prob": 0.556,
-          "spread_confidence": 28,
-          "margin_p25": -3.56,
-          "margin_p75": 1.76,
+          "home_win_prob": 0.431,
+          "away_win_prob": 0.569,
+          "spread_confidence": 29,
+          "margin_p25": -3.76,
+          "margin_p75": 1.56,
           "margin_std": 3.95,
           "method": "trained_xgboost"
         }
@@ -1476,13 +1506,13 @@
         "away_score": null,
         "venue": "Tropicana Field",
         "prediction": {
-          "predicted_margin": -0.45,
+          "predicted_margin": -0.67,
           "predicted_total": 9.1,
-          "home_win_prob": 0.472,
-          "away_win_prob": 0.528,
+          "home_win_prob": 0.458,
+          "away_win_prob": 0.542,
           "spread_confidence": 22,
-          "margin_p25": -3.09,
-          "margin_p75": 2.19,
+          "margin_p25": -3.31,
+          "margin_p75": 1.97,
           "margin_std": 3.92,
           "method": "trained_xgboost"
         }
@@ -1625,7 +1655,7 @@
         "game_id": 822826,
         "date": "2026-04-25",
         "game_time_ct": "2:07 PM CT",
-        "status": "S",
+        "status": "P",
         "home_name": "Toronto Blue Jays",
         "away_name": "Cleveland Guardians",
         "home_abbr": "TOR",
@@ -1717,13 +1747,13 @@
         "away_score": null,
         "venue": "Estadio Alfredo Harp Helu",
         "prediction": {
-          "predicted_margin": 0.37,
+          "predicted_margin": 0.32,
           "predicted_total": 10.8,
-          "home_win_prob": 0.523,
-          "away_win_prob": 0.477,
+          "home_win_prob": 0.52,
+          "away_win_prob": 0.48,
           "spread_confidence": 29,
-          "margin_p25": -2.41,
-          "margin_p75": 3.15,
+          "margin_p25": -2.46,
+          "margin_p75": 3.1,
           "margin_std": 4.12,
           "method": "trained_xgboost"
         }
@@ -1747,13 +1777,13 @@
         "away_score": null,
         "venue": "Estadio Alfredo Harp Helu",
         "prediction": {
-          "predicted_margin": 0.51,
+          "predicted_margin": 0.29,
           "predicted_total": 8.3,
-          "home_win_prob": 0.532,
-          "away_win_prob": 0.468,
-          "spread_confidence": 26,
-          "margin_p25": -2.17,
-          "margin_p75": 3.19,
+          "home_win_prob": 0.518,
+          "away_win_prob": 0.482,
+          "spread_confidence": 25,
+          "margin_p25": -2.39,
+          "margin_p75": 2.97,
           "margin_std": 3.98,
           "method": "trained_xgboost"
         }
@@ -2252,13 +2282,13 @@
         "away_score": null,
         "venue": "PNC Park",
         "prediction": {
-          "predicted_margin": -2.0,
+          "predicted_margin": -1.93,
           "predicted_total": 9.1,
-          "home_win_prob": 0.377,
-          "away_win_prob": 0.623,
+          "home_win_prob": 0.382,
+          "away_win_prob": 0.618,
           "spread_confidence": 37,
-          "margin_p25": -4.6,
-          "margin_p75": 0.6,
+          "margin_p25": -4.53,
+          "margin_p75": 0.67,
           "margin_std": 3.86,
           "method": "trained_xgboost"
         }
@@ -2329,13 +2359,13 @@
         "away_score": null,
         "venue": "Petco Park",
         "prediction": {
-          "predicted_margin": -1.09,
+          "predicted_margin": -1.12,
           "predicted_total": 9.5,
-          "home_win_prob": 0.432,
-          "away_win_prob": 0.568,
+          "home_win_prob": 0.431,
+          "away_win_prob": 0.569,
           "spread_confidence": 18,
-          "margin_p25": -3.73,
-          "margin_p75": 1.55,
+          "margin_p25": -3.76,
+          "margin_p75": 1.52,
           "margin_std": 3.92,
           "method": "trained_xgboost"
         }
@@ -2359,13 +2389,13 @@
         "away_score": null,
         "venue": "Petco Park",
         "prediction": {
-          "predicted_margin": -1.09,
+          "predicted_margin": -1.12,
           "predicted_total": 9.5,
-          "home_win_prob": 0.432,
-          "away_win_prob": 0.568,
+          "home_win_prob": 0.431,
+          "away_win_prob": 0.569,
           "spread_confidence": 18,
-          "margin_p25": -3.73,
-          "margin_p75": 1.55,
+          "margin_p25": -3.76,
+          "margin_p75": 1.52,
           "margin_std": 3.92,
           "method": "trained_xgboost"
         }
@@ -2389,13 +2419,13 @@
         "away_score": null,
         "venue": "Petco Park",
         "prediction": {
-          "predicted_margin": -1.09,
+          "predicted_margin": -1.12,
           "predicted_total": 9.5,
-          "home_win_prob": 0.432,
-          "away_win_prob": 0.568,
+          "home_win_prob": 0.431,
+          "away_win_prob": 0.569,
           "spread_confidence": 18,
-          "margin_p25": -3.73,
-          "margin_p75": 1.55,
+          "margin_p25": -3.76,
+          "margin_p75": 1.52,
           "margin_std": 3.92,
           "method": "trained_xgboost"
         }
@@ -2727,13 +2757,13 @@
         "away_score": null,
         "venue": "Truist Park",
         "prediction": {
-          "predicted_margin": -0.52,
+          "predicted_margin": -0.74,
           "predicted_total": 9.9,
-          "home_win_prob": 0.468,
-          "away_win_prob": 0.532,
+          "home_win_prob": 0.454,
+          "away_win_prob": 0.546,
           "spread_confidence": 17,
-          "margin_p25": -3.24,
-          "margin_p75": 2.2,
+          "margin_p25": -3.46,
+          "margin_p75": 1.98,
           "margin_std": 4.04,
           "method": "trained_xgboost"
         }
@@ -2757,13 +2787,13 @@
         "away_score": null,
         "venue": "Truist Park",
         "prediction": {
-          "predicted_margin": -0.52,
+          "predicted_margin": -0.74,
           "predicted_total": 9.9,
-          "home_win_prob": 0.468,
-          "away_win_prob": 0.532,
+          "home_win_prob": 0.454,
+          "away_win_prob": 0.546,
           "spread_confidence": 17,
-          "margin_p25": -3.24,
-          "margin_p75": 2.2,
+          "margin_p25": -3.46,
+          "margin_p75": 1.98,
           "margin_std": 4.04,
           "method": "trained_xgboost"
         }
@@ -2804,13 +2834,13 @@
         "away_score": null,
         "venue": "Oriole Park at Camden Yards",
         "prediction": {
-          "predicted_margin": -0.82,
+          "predicted_margin": -0.8,
           "predicted_total": 9.9,
-          "home_win_prob": 0.449,
-          "away_win_prob": 0.551,
+          "home_win_prob": 0.45,
+          "away_win_prob": 0.55,
           "spread_confidence": 18,
-          "margin_p25": -3.54,
-          "margin_p75": 1.9,
+          "margin_p25": -3.52,
+          "margin_p75": 1.92,
           "margin_std": 4.04,
           "method": "trained_xgboost"
         }
@@ -2834,13 +2864,13 @@
         "away_score": null,
         "venue": "Oriole Park at Camden Yards",
         "prediction": {
-          "predicted_margin": -0.82,
+          "predicted_margin": -0.8,
           "predicted_total": 9.9,
-          "home_win_prob": 0.449,
-          "away_win_prob": 0.551,
+          "home_win_prob": 0.45,
+          "away_win_prob": 0.55,
           "spread_confidence": 18,
-          "margin_p25": -3.54,
-          "margin_p75": 1.9,
+          "margin_p25": -3.52,
+          "margin_p75": 1.92,
           "margin_std": 4.04,
           "method": "trained_xgboost"
         }
@@ -2881,13 +2911,13 @@
         "away_score": null,
         "venue": "Great American Ball Park",
         "prediction": {
-          "predicted_margin": 0.96,
+          "predicted_margin": 1.02,
           "predicted_total": 8.8,
-          "home_win_prob": 0.559,
-          "away_win_prob": 0.441,
-          "spread_confidence": 39,
-          "margin_p25": -1.69,
-          "margin_p75": 3.61,
+          "home_win_prob": 0.564,
+          "away_win_prob": 0.436,
+          "spread_confidence": 40,
+          "margin_p25": -1.63,
+          "margin_p75": 3.67,
           "margin_std": 3.93,
           "method": "trained_xgboost"
         }
@@ -2911,13 +2941,13 @@
         "away_score": null,
         "venue": "Great American Ball Park",
         "prediction": {
-          "predicted_margin": -0.55,
+          "predicted_margin": -0.51,
           "predicted_total": 10.0,
-          "home_win_prob": 0.466,
-          "away_win_prob": 0.534,
+          "home_win_prob": 0.468,
+          "away_win_prob": 0.532,
           "spread_confidence": 17,
-          "margin_p25": -3.33,
-          "margin_p75": 2.23,
+          "margin_p25": -3.29,
+          "margin_p75": 2.27,
           "margin_std": 4.12,
           "method": "trained_xgboost"
         }
@@ -2958,13 +2988,13 @@
         "away_score": null,
         "venue": "American Family Field",
         "prediction": {
-          "predicted_margin": -0.94,
+          "predicted_margin": -0.83,
           "predicted_total": 9.6,
-          "home_win_prob": 0.441,
-          "away_win_prob": 0.559,
+          "home_win_prob": 0.448,
+          "away_win_prob": 0.552,
           "spread_confidence": 18,
-          "margin_p25": -3.62,
-          "margin_p75": 1.74,
+          "margin_p25": -3.51,
+          "margin_p75": 1.85,
           "margin_std": 3.98,
           "method": "trained_xgboost"
         }
@@ -2988,13 +3018,13 @@
         "away_score": null,
         "venue": "American Family Field",
         "prediction": {
-          "predicted_margin": -0.94,
+          "predicted_margin": -0.83,
           "predicted_total": 9.6,
-          "home_win_prob": 0.441,
-          "away_win_prob": 0.559,
+          "home_win_prob": 0.448,
+          "away_win_prob": 0.552,
           "spread_confidence": 18,
-          "margin_p25": -3.62,
-          "margin_p75": 1.74,
+          "margin_p25": -3.51,
+          "margin_p75": 1.85,
           "margin_std": 3.98,
           "method": "trained_xgboost"
         }
