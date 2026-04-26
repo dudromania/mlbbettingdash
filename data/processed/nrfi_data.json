@@ -300,29 +300,6 @@
   },
   {
     "date": "2026-04-26",
-    "game_time": "12:40 PM CT",
-    "home_abbr": "TB",
-    "away_abbr": "MIN",
-    "home_sp": "Jesse Scholtens",
-    "away_sp": "Simeon Woods Richardson",
-    "nrfi_prob": 33.9,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Jesse Scholtens",
-      "first_inning": {},
-      "season_era": 2.93
-    },
-    "away_pitcher": {
-      "name": "Simeon Woods Richardson",
-      "first_inning": {},
-      "season_era": 5.96
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-04-26",
     "game_time": "12:37 PM CT",
     "home_abbr": "TOR",
     "away_abbr": "CLE",
@@ -340,6 +317,29 @@
       "name": "Slade Cecconi",
       "first_inning": {},
       "season_era": 6.2
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-26",
+    "game_time": "12:40 PM CT",
+    "home_abbr": "TB",
+    "away_abbr": "MIN",
+    "home_sp": "Griffin Jax",
+    "away_sp": "Simeon Woods Richardson",
+    "nrfi_prob": 26.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Griffin Jax",
+      "first_inning": {},
+      "season_era": 8.0
+    },
+    "away_pitcher": {
+      "name": "Simeon Woods Richardson",
+      "first_inning": {},
+      "season_era": 5.96
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
