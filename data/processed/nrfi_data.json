@@ -1,1 +1,186 @@
-[]
+[
+  {
+    "date": "2026-04-27",
+    "game_time": "6:07 PM CT",
+    "home_abbr": "TOR",
+    "away_abbr": "BOS",
+    "home_sp": "Dylan Cease",
+    "away_sp": "Ranger Suarez",
+    "nrfi_prob": 42.7,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Dylan Cease",
+      "first_inning": {},
+      "season_era": 2.1
+    },
+    "away_pitcher": {
+      "name": "Ranger Suarez",
+      "first_inning": {},
+      "season_era": 4.0
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-27",
+    "game_time": "5:10 PM CT",
+    "home_abbr": "CLE",
+    "away_abbr": "TB",
+    "home_sp": "Parker Messick",
+    "away_sp": "Steven Matz",
+    "nrfi_prob": 40.1,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Parker Messick",
+      "first_inning": {},
+      "season_era": 1.76
+    },
+    "away_pitcher": {
+      "name": "Steven Matz",
+      "first_inning": {},
+      "season_era": 4.81
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-27",
+    "game_time": "8:40 PM CT",
+    "home_abbr": "SD",
+    "away_abbr": "CHC",
+    "home_sp": "Randy V\u00e1squez",
+    "away_sp": "Matthew Boyd",
+    "nrfi_prob": 37.5,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Randy V\u00e1squez",
+      "first_inning": {},
+      "season_era": 1.88
+    },
+    "away_pitcher": {
+      "name": "Matthew Boyd",
+      "first_inning": {},
+      "season_era": 5.79
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-27",
+    "game_time": "7:05 PM CT",
+    "home_abbr": "TEX",
+    "away_abbr": "NYY",
+    "home_sp": "Jack Leiter",
+    "away_sp": "Max Fried",
+    "nrfi_prob": 37.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jack Leiter",
+      "first_inning": {},
+      "season_era": 4.97
+    },
+    "away_pitcher": {
+      "name": "Max Fried",
+      "first_inning": {},
+      "season_era": 2.4
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-27",
+    "game_time": "9:10 PM CT",
+    "home_abbr": "LAD",
+    "away_abbr": "MIA",
+    "home_sp": "Yoshinobu Yamamoto",
+    "away_sp": "Chris Paddack",
+    "nrfi_prob": 35.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Yoshinobu Yamamoto",
+      "first_inning": {},
+      "season_era": 2.48
+    },
+    "away_pitcher": {
+      "name": "Chris Paddack",
+      "first_inning": {},
+      "season_era": 6.38
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-27",
+    "game_time": "6:40 PM CT",
+    "home_abbr": "CWS",
+    "away_abbr": "LAA",
+    "home_sp": "Anthony Kay",
+    "away_sp": "Jack Kochanowicz",
+    "nrfi_prob": 33.3,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Anthony Kay",
+      "first_inning": {},
+      "season_era": 5.57
+    },
+    "away_pitcher": {
+      "name": "Jack Kochanowicz",
+      "first_inning": {},
+      "season_era": 3.1
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-27",
+    "game_time": "5:40 PM CT",
+    "home_abbr": "PIT",
+    "away_abbr": "STL",
+    "home_sp": "Mason Montgomery",
+    "away_sp": "Dustin May",
+    "nrfi_prob": 30.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Mason Montgomery",
+      "first_inning": {},
+      "season_era": 3.97
+    },
+    "away_pitcher": {
+      "name": "Dustin May",
+      "first_inning": {},
+      "season_era": 5.84
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-04-27",
+    "game_time": "6:40 PM CT",
+    "home_abbr": "MIN",
+    "away_abbr": "SEA",
+    "home_sp": "Connor Prielipp",
+    "away_sp": "Luis Castillo",
+    "nrfi_prob": 29.5,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Connor Prielipp",
+      "first_inning": {},
+      "season_era": 4.5
+    },
+    "away_pitcher": {
+      "name": "Luis Castillo",
+      "first_inning": {},
+      "season_era": 5.01
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  }
+]
