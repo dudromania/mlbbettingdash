@@ -220,13 +220,13 @@
         "away_score": null,
         "venue": "Oriole Park at Camden Yards",
         "prediction": {
-          "predicted_margin": 0.96,
+          "predicted_margin": 0.9,
           "predicted_total": 9.2,
-          "home_win_prob": 0.56,
-          "away_win_prob": 0.44,
+          "home_win_prob": 0.556,
+          "away_win_prob": 0.444,
           "spread_confidence": 22,
-          "margin_p25": -1.74,
-          "margin_p75": 3.66,
+          "margin_p25": -1.8,
+          "margin_p75": 3.6,
           "margin_std": 4.01,
           "method": "trained_xgboost"
         }
@@ -250,13 +250,13 @@
         "away_score": null,
         "venue": "Oriole Park at Camden Yards",
         "prediction": {
-          "predicted_margin": 1.69,
+          "predicted_margin": 1.66,
           "predicted_total": 10.3,
-          "home_win_prob": 0.604,
-          "away_win_prob": 0.396,
+          "home_win_prob": 0.602,
+          "away_win_prob": 0.398,
           "spread_confidence": 44,
-          "margin_p25": -1.07,
-          "margin_p75": 4.45,
+          "margin_p25": -1.1,
+          "margin_p75": 4.42,
           "margin_std": 4.09,
           "method": "trained_xgboost"
         }
@@ -280,13 +280,13 @@
         "away_score": null,
         "venue": "Oriole Park at Camden Yards",
         "prediction": {
-          "predicted_margin": -0.31,
+          "predicted_margin": -0.43,
           "predicted_total": 10.9,
-          "home_win_prob": 0.481,
-          "away_win_prob": 0.519,
+          "home_win_prob": 0.473,
+          "away_win_prob": 0.527,
           "spread_confidence": 35,
-          "margin_p25": -3.1,
-          "margin_p75": 2.48,
+          "margin_p25": -3.22,
+          "margin_p75": 2.36,
           "margin_std": 4.14,
           "method": "trained_xgboost"
         }
@@ -625,13 +625,13 @@
         "away_score": null,
         "venue": "American Family Field",
         "prediction": {
-          "predicted_margin": -0.06,
+          "predicted_margin": -0.02,
           "predicted_total": 6.8,
-          "home_win_prob": 0.496,
-          "away_win_prob": 0.504,
+          "home_win_prob": 0.498,
+          "away_win_prob": 0.502,
           "spread_confidence": 26,
-          "margin_p25": -2.63,
-          "margin_p75": 2.51,
+          "margin_p25": -2.59,
+          "margin_p75": 2.55,
           "margin_std": 3.81,
           "method": "trained_xgboost"
         }
@@ -836,13 +836,13 @@
         "away_score": null,
         "venue": "Citizens Bank Park",
         "prediction": {
-          "predicted_margin": 0.71,
+          "predicted_margin": 0.67,
           "predicted_total": 7.6,
-          "home_win_prob": 0.544,
-          "away_win_prob": 0.456,
+          "home_win_prob": 0.542,
+          "away_win_prob": 0.458,
           "spread_confidence": 18,
-          "margin_p25": -1.85,
-          "margin_p75": 3.27,
+          "margin_p25": -1.89,
+          "margin_p75": 3.23,
           "margin_std": 3.79,
           "method": "trained_xgboost"
         }
@@ -866,13 +866,13 @@
         "away_score": null,
         "venue": "Citizens Bank Park",
         "prediction": {
-          "predicted_margin": 0.71,
+          "predicted_margin": 0.67,
           "predicted_total": 7.6,
-          "home_win_prob": 0.544,
-          "away_win_prob": 0.456,
+          "home_win_prob": 0.542,
+          "away_win_prob": 0.458,
           "spread_confidence": 18,
-          "margin_p25": -1.85,
-          "margin_p75": 3.27,
+          "margin_p25": -1.89,
+          "margin_p75": 3.23,
           "margin_std": 3.79,
           "method": "trained_xgboost"
         }
@@ -896,13 +896,13 @@
         "away_score": null,
         "venue": "Citizens Bank Park",
         "prediction": {
-          "predicted_margin": -0.32,
+          "predicted_margin": -0.36,
           "predicted_total": 9.9,
-          "home_win_prob": 0.48,
-          "away_win_prob": 0.52,
+          "home_win_prob": 0.478,
+          "away_win_prob": 0.522,
           "spread_confidence": 16,
-          "margin_p25": -3.06,
-          "margin_p75": 2.42,
+          "margin_p25": -3.1,
+          "margin_p75": 2.38,
           "margin_std": 4.06,
           "method": "trained_xgboost"
         }
@@ -983,13 +983,13 @@
         "away_score": null,
         "venue": "PNC Park",
         "prediction": {
-          "predicted_margin": 1.28,
+          "predicted_margin": 1.36,
           "predicted_total": 7.3,
-          "home_win_prob": 0.579,
-          "away_win_prob": 0.421,
+          "home_win_prob": 0.584,
+          "away_win_prob": 0.416,
           "spread_confidence": 42,
-          "margin_p25": -1.27,
-          "margin_p75": 3.83,
+          "margin_p25": -1.19,
+          "margin_p75": 3.91,
           "margin_std": 3.78,
           "method": "trained_xgboost"
         }
@@ -1659,13 +1659,13 @@
         "away_score": null,
         "venue": "Coors Field",
         "prediction": {
-          "predicted_margin": -0.46,
+          "predicted_margin": -0.69,
           "predicted_total": 11.7,
-          "home_win_prob": 0.472,
-          "away_win_prob": 0.528,
-          "spread_confidence": 16,
-          "margin_p25": -3.36,
-          "margin_p75": 2.44,
+          "home_win_prob": 0.457,
+          "away_win_prob": 0.543,
+          "spread_confidence": 17,
+          "margin_p25": -3.59,
+          "margin_p75": 2.21,
           "margin_std": 4.3,
           "method": "trained_xgboost"
         }
@@ -1689,13 +1689,13 @@
         "away_score": null,
         "venue": "Coors Field",
         "prediction": {
-          "predicted_margin": -0.46,
+          "predicted_margin": -0.69,
           "predicted_total": 11.7,
-          "home_win_prob": 0.472,
-          "away_win_prob": 0.528,
-          "spread_confidence": 16,
-          "margin_p25": -3.36,
-          "margin_p75": 2.44,
+          "home_win_prob": 0.457,
+          "away_win_prob": 0.543,
+          "spread_confidence": 17,
+          "margin_p25": -3.59,
+          "margin_p75": 2.21,
           "margin_std": 4.3,
           "method": "trained_xgboost"
         }
@@ -1719,13 +1719,13 @@
         "away_score": null,
         "venue": "Coors Field",
         "prediction": {
-          "predicted_margin": -0.46,
+          "predicted_margin": -0.69,
           "predicted_total": 11.7,
-          "home_win_prob": 0.472,
-          "away_win_prob": 0.528,
-          "spread_confidence": 16,
-          "margin_p25": -3.36,
-          "margin_p75": 2.44,
+          "home_win_prob": 0.457,
+          "away_win_prob": 0.543,
+          "spread_confidence": 17,
+          "margin_p25": -3.59,
+          "margin_p75": 2.21,
           "margin_std": 4.3,
           "method": "trained_xgboost"
         }
@@ -1873,13 +1873,13 @@
         "away_score": null,
         "venue": "Angel Stadium",
         "prediction": {
-          "predicted_margin": -1.16,
+          "predicted_margin": -1.04,
           "predicted_total": 9.6,
-          "home_win_prob": 0.428,
-          "away_win_prob": 0.572,
-          "spread_confidence": 19,
-          "margin_p25": -3.83,
-          "margin_p75": 1.51,
+          "home_win_prob": 0.435,
+          "away_win_prob": 0.565,
+          "spread_confidence": 18,
+          "margin_p25": -3.71,
+          "margin_p75": 1.63,
           "margin_std": 3.96,
           "method": "trained_xgboost"
         }
@@ -1903,13 +1903,13 @@
         "away_score": null,
         "venue": "Angel Stadium",
         "prediction": {
-          "predicted_margin": -0.74,
+          "predicted_margin": -0.57,
           "predicted_total": 8.0,
-          "home_win_prob": 0.454,
-          "away_win_prob": 0.546,
+          "home_win_prob": 0.464,
+          "away_win_prob": 0.536,
           "spread_confidence": 20,
-          "margin_p25": -3.24,
-          "margin_p75": 1.76,
+          "margin_p25": -3.07,
+          "margin_p75": 1.93,
           "margin_std": 3.71,
           "method": "trained_xgboost"
         }
@@ -1933,13 +1933,13 @@
         "away_score": null,
         "venue": "Angel Stadium",
         "prediction": {
-          "predicted_margin": -1.77,
+          "predicted_margin": -1.63,
           "predicted_total": 10.1,
-          "home_win_prob": 0.391,
-          "away_win_prob": 0.609,
+          "home_win_prob": 0.399,
+          "away_win_prob": 0.601,
           "spread_confidence": 50,
-          "margin_p25": -4.52,
-          "margin_p75": 0.98,
+          "margin_p25": -4.38,
+          "margin_p75": 1.12,
           "margin_std": 4.08,
           "method": "trained_xgboost"
         }
@@ -2117,13 +2117,13 @@
         "away_score": null,
         "venue": "Yankee Stadium",
         "prediction": {
-          "predicted_margin": 0.85,
+          "predicted_margin": 0.83,
           "predicted_total": 9.6,
-          "home_win_prob": 0.553,
-          "away_win_prob": 0.447,
+          "home_win_prob": 0.552,
+          "away_win_prob": 0.448,
           "spread_confidence": 19,
-          "margin_p25": -1.85,
-          "margin_p75": 3.55,
+          "margin_p25": -1.87,
+          "margin_p75": 3.53,
           "margin_std": 4.0,
           "method": "trained_xgboost"
         }
@@ -2147,13 +2147,13 @@
         "away_score": null,
         "venue": "Yankee Stadium",
         "prediction": {
-          "predicted_margin": -0.15,
+          "predicted_margin": -0.21,
           "predicted_total": 10.0,
-          "home_win_prob": 0.491,
-          "away_win_prob": 0.509,
-          "spread_confidence": 15,
-          "margin_p25": -2.86,
-          "margin_p75": 2.56,
+          "home_win_prob": 0.487,
+          "away_win_prob": 0.513,
+          "spread_confidence": 16,
+          "margin_p25": -2.92,
+          "margin_p75": 2.5,
           "margin_std": 4.02,
           "method": "trained_xgboost"
         }
@@ -2177,13 +2177,13 @@
         "away_score": null,
         "venue": "Yankee Stadium",
         "prediction": {
-          "predicted_margin": 1.54,
+          "predicted_margin": 1.45,
           "predicted_total": 8.5,
-          "home_win_prob": 0.595,
-          "away_win_prob": 0.405,
+          "home_win_prob": 0.59,
+          "away_win_prob": 0.41,
           "spread_confidence": 37,
-          "margin_p25": -1.11,
-          "margin_p75": 4.19,
+          "margin_p25": -1.2,
+          "margin_p75": 4.1,
           "margin_std": 3.93,
           "method": "trained_xgboost"
         }
@@ -2207,13 +2207,13 @@
         "away_score": null,
         "venue": "Yankee Stadium",
         "prediction": {
-          "predicted_margin": 0.76,
+          "predicted_margin": 0.7,
           "predicted_total": 9.1,
-          "home_win_prob": 0.547,
-          "away_win_prob": 0.453,
-          "spread_confidence": 26,
-          "margin_p25": -1.9,
-          "margin_p75": 3.42,
+          "home_win_prob": 0.544,
+          "away_win_prob": 0.456,
+          "spread_confidence": 25,
+          "margin_p25": -1.96,
+          "margin_p75": 3.36,
           "margin_std": 3.95,
           "method": "trained_xgboost"
         }
@@ -2361,13 +2361,13 @@
         "away_score": null,
         "venue": "Petco Park",
         "prediction": {
-          "predicted_margin": -0.27,
+          "predicted_margin": -0.24,
           "predicted_total": 10.2,
-          "home_win_prob": 0.483,
-          "away_win_prob": 0.517,
+          "home_win_prob": 0.485,
+          "away_win_prob": 0.515,
           "spread_confidence": 34,
-          "margin_p25": -2.97,
-          "margin_p75": 2.43,
+          "margin_p25": -2.94,
+          "margin_p75": 2.46,
           "margin_std": 4.01,
           "method": "trained_xgboost"
         }
@@ -2391,13 +2391,13 @@
         "away_score": null,
         "venue": "Petco Park",
         "prediction": {
-          "predicted_margin": 1.1,
+          "predicted_margin": 1.17,
           "predicted_total": 8.6,
-          "home_win_prob": 0.569,
-          "away_win_prob": 0.431,
-          "spread_confidence": 26,
-          "margin_p25": -1.58,
-          "margin_p75": 3.78,
+          "home_win_prob": 0.572,
+          "away_win_prob": 0.428,
+          "spread_confidence": 27,
+          "margin_p25": -1.51,
+          "margin_p75": 3.85,
           "margin_std": 3.97,
           "method": "trained_xgboost"
         }
@@ -2468,13 +2468,13 @@
         "away_score": null,
         "venue": "T-Mobile Park",
         "prediction": {
-          "predicted_margin": 0.23,
+          "predicted_margin": 0.3,
           "predicted_total": 7.8,
-          "home_win_prob": 0.514,
-          "away_win_prob": 0.486,
+          "home_win_prob": 0.519,
+          "away_win_prob": 0.481,
           "spread_confidence": 26,
-          "margin_p25": -2.35,
-          "margin_p75": 2.81,
+          "margin_p25": -2.28,
+          "margin_p75": 2.88,
           "margin_std": 3.83,
           "method": "trained_xgboost"
         }
@@ -2528,13 +2528,13 @@
         "away_score": null,
         "venue": "T-Mobile Park",
         "prediction": {
-          "predicted_margin": 0.46,
+          "predicted_margin": 0.54,
           "predicted_total": 8.3,
-          "home_win_prob": 0.529,
-          "away_win_prob": 0.471,
-          "spread_confidence": 21,
-          "margin_p25": -2.16,
-          "margin_p75": 3.08,
+          "home_win_prob": 0.534,
+          "away_win_prob": 0.466,
+          "spread_confidence": 22,
+          "margin_p25": -2.08,
+          "margin_p75": 3.16,
           "margin_std": 3.88,
           "method": "trained_xgboost"
         }
@@ -2682,13 +2682,13 @@
         "away_score": null,
         "venue": "Tropicana Field",
         "prediction": {
-          "predicted_margin": -0.64,
+          "predicted_margin": -0.72,
           "predicted_total": 9.4,
-          "home_win_prob": 0.46,
-          "away_win_prob": 0.54,
+          "home_win_prob": 0.455,
+          "away_win_prob": 0.545,
           "spread_confidence": 17,
-          "margin_p25": -3.27,
-          "margin_p75": 1.99,
+          "margin_p25": -3.35,
+          "margin_p75": 1.91,
           "margin_std": 3.9,
           "method": "trained_xgboost"
         }
@@ -2712,13 +2712,13 @@
         "away_score": null,
         "venue": "Tropicana Field",
         "prediction": {
-          "predicted_margin": -0.64,
+          "predicted_margin": -0.72,
           "predicted_total": 9.4,
-          "home_win_prob": 0.46,
-          "away_win_prob": 0.54,
+          "home_win_prob": 0.455,
+          "away_win_prob": 0.545,
           "spread_confidence": 17,
-          "margin_p25": -3.27,
-          "margin_p75": 1.99,
+          "margin_p25": -3.35,
+          "margin_p75": 1.91,
           "margin_std": 3.9,
           "method": "trained_xgboost"
         }
@@ -2742,13 +2742,13 @@
         "away_score": null,
         "venue": "Tropicana Field",
         "prediction": {
-          "predicted_margin": 0.27,
+          "predicted_margin": 0.12,
           "predicted_total": 7.9,
-          "home_win_prob": 0.517,
-          "away_win_prob": 0.483,
+          "home_win_prob": 0.508,
+          "away_win_prob": 0.492,
           "spread_confidence": 26,
-          "margin_p25": -2.33,
-          "margin_p75": 2.87,
+          "margin_p25": -2.48,
+          "margin_p75": 2.72,
           "margin_std": 3.85,
           "method": "trained_xgboost"
         }
@@ -2789,13 +2789,13 @@
         "away_score": null,
         "venue": "Nationals Park",
         "prediction": {
-          "predicted_margin": -1.18,
+          "predicted_margin": -1.34,
           "predicted_total": 9.1,
-          "home_win_prob": 0.426,
-          "away_win_prob": 0.574,
+          "home_win_prob": 0.417,
+          "away_win_prob": 0.583,
           "spread_confidence": 28,
-          "margin_p25": -3.77,
-          "margin_p75": 1.41,
+          "margin_p25": -3.93,
+          "margin_p75": 1.25,
           "margin_std": 3.84,
           "method": "trained_xgboost"
         }
@@ -2819,13 +2819,13 @@
         "away_score": null,
         "venue": "Nationals Park",
         "prediction": {
-          "predicted_margin": -1.0,
+          "predicted_margin": -1.11,
           "predicted_total": 9.7,
-          "home_win_prob": 0.438,
-          "away_win_prob": 0.562,
+          "home_win_prob": 0.431,
+          "away_win_prob": 0.569,
           "spread_confidence": 18,
-          "margin_p25": -3.66,
-          "margin_p75": 1.66,
+          "margin_p25": -3.77,
+          "margin_p75": 1.55,
           "margin_std": 3.94,
           "method": "trained_xgboost"
         }
@@ -2849,13 +2849,13 @@
         "away_score": null,
         "venue": "Nationals Park",
         "prediction": {
-          "predicted_margin": -1.47,
+          "predicted_margin": -1.59,
           "predicted_total": 9.4,
-          "home_win_prob": 0.409,
-          "away_win_prob": 0.591,
-          "spread_confidence": 29,
-          "margin_p25": -4.08,
-          "margin_p75": 1.14,
+          "home_win_prob": 0.402,
+          "away_win_prob": 0.598,
+          "spread_confidence": 30,
+          "margin_p25": -4.2,
+          "margin_p75": 1.02,
           "margin_std": 3.87,
           "method": "trained_xgboost"
         }
@@ -3131,13 +3131,13 @@
         "away_score": null,
         "venue": "Angel Stadium",
         "prediction": {
-          "predicted_margin": -0.3,
+          "predicted_margin": -0.2,
           "predicted_total": 9.6,
-          "home_win_prob": 0.481,
-          "away_win_prob": 0.519,
+          "home_win_prob": 0.488,
+          "away_win_prob": 0.512,
           "spread_confidence": 16,
-          "margin_p25": -2.97,
-          "margin_p75": 2.37,
+          "margin_p25": -2.87,
+          "margin_p75": 2.47,
           "margin_std": 3.96,
           "method": "trained_xgboost"
         }
@@ -3319,13 +3319,13 @@
         "away_score": null,
         "venue": "Tropicana Field",
         "prediction": {
-          "predicted_margin": -0.85,
+          "predicted_margin": -0.87,
           "predicted_total": 9.4,
-          "home_win_prob": 0.447,
-          "away_win_prob": 0.553,
+          "home_win_prob": 0.446,
+          "away_win_prob": 0.554,
           "spread_confidence": 18,
-          "margin_p25": -3.48,
-          "margin_p75": 1.78,
+          "margin_p25": -3.5,
+          "margin_p75": 1.76,
           "margin_std": 3.9,
           "method": "trained_xgboost"
         }
