@@ -3592,8 +3592,21 @@ function kpropCard(p) {
   const ovBarW   = Math.round((p.over_prob||0)*100);
   const unBarW   = Math.round((p.under_prob||0)*100);
   const range = p.k_low_25 != null ? `${p.k_low_25}–${p.k_high_75} (25/75 pct)` : '';
-  const opp_k = p.opp_k_pct ? `opp k% ${p.opp_k_pct}%` : '';
-  return `<div class="bet-card edge-${cls}" style="padding:0">
+  
+  // Direction-based colors (green for OVER, orange for UNDER)
+  const dirColor = isOver ? '#5aaa77' : '#d4a574';
+  const barColor = isOver ? '#5aaa77' : '#d4a574';
+  
+  // Format historical record
+  const record = p.pitcher_record;
+  const recordStr = record && record.total > 0 
+    ? `${record.wins}-${record.losses}${record.pushes > 0 ? '-'+record.pushes : ''}`
+    : 'No history';
+  const recordPct = record && record.total > 0
+    ? ((record.wins / record.total) * 100).toFixed(0) + '%'
+    : '—';
+  
+  return `<div class="bet-card edge-${cls}" style="padding:0;border-left-color:${dirColor}">
     <div class="bc-top">
       <div>
         <span class="bc-matchup">${p.pitcher}</span>
@@ -3604,16 +3617,31 @@ function kpropCard(p) {
       </div>
     </div>
     <div style="padding:10px 12px">
-      <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:4px">
-        <div class="mono hi" style="font-size:28px;font-weight:300;line-height:1">${p.projected_ks!=null?p.projected_ks.toFixed(1):'—'}</div>
+      <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px">
+        <div class="mono" style="font-size:28px;font-weight:300;line-height:1;color:${dirColor}">${p.projected_ks!=null?p.projected_ks.toFixed(1):'—'}</div>
         <div>
           <div class="mono" style="font-size:10px">projected K <span class="dim">· Vegas line: <span style="color:var(--t1)">${p.line!=null?p.line:'no line'}</span></span></div>
           <div class="mono dim" style="font-size:9px">${range}</div>
         </div>
       </div>
+      
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:8px;padding:6px;background:var(--s1);border-radius:3px">
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.season_era!=null?p.season_era.toFixed(2):'—'}</div><div style="font-size:8px;color:var(--t3)">ERA</div></div>
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.season_fip!=null?p.season_fip.toFixed(2):'—'}</div><div style="font-size:8px;color:var(--t3)">FIP</div></div>
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.season_whip!=null?p.season_whip.toFixed(2):'—'}</div><div style="font-size:8px;color:var(--t3)">WHIP</div></div>
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.season_k_pct!=null?p.season_k_pct.toFixed(1)+'%':'—'}</div><div style="font-size:8px;color:var(--t3)">K%</div></div>
+      </div>
+      
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:8px;padding:6px;background:var(--s1);border-radius:3px">
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.l5_avg_k!=null?p.l5_avg_k.toFixed(1):'—'}</div><div style="font-size:8px;color:var(--t3)">L5 Avg K</div></div>
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.l5_avg_ip!=null?p.l5_avg_ip.toFixed(1):'—'}</div><div style="font-size:8px;color:var(--t3)">L5 Avg IP</div></div>
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.last_start_k!=null?p.last_start_k:'—'}</div><div style="font-size:8px;color:var(--t3)">Last K</div></div>
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.whiff_rate!=null?p.whiff_rate.toFixed(1)+'%':'—'}</div><div style="font-size:8px;color:var(--t3)">Whiff%</div></div>
+      </div>
+      
       <div class="kprop-bar-wrap">
-        <div class="kprop-bar-under" style="width:${unBarW}%"></div>
-        <div class="kprop-bar-over"  style="width:${ovBarW}%"></div>
+        <div class="kprop-bar-under" style="width:${unBarW}%;background:${isOver?'#999':'#d4a574'}"></div>
+        <div class="kprop-bar-over"  style="width:${ovBarW}%;background:${isOver?'#5aaa77':'#999'}"></div>
       </div>
       <div style="display:flex;justify-content:space-between;font-family:var(--mono);font-size:9px;color:var(--t3);margin-bottom:6px">
         <span>UNDER ${(p.under_prob*100||0).toFixed(0)}%</span>
@@ -3624,7 +3652,7 @@ function kpropCard(p) {
       <div class="kprop-cell"><div class="v ${ecol}">${probPct}</div><div class="l">our prob</div></div>
       <div class="kprop-cell"><div class="v dim">${implPct}</div><div class="l">implied</div></div>
       <div class="kprop-cell"><div class="v ${ecol}">${edge}</div><div class="l">edge</div></div>
-      <div class="kprop-cell"><div class="v dim">${p.blended_k9!=null?p.blended_k9.toFixed(1):'—'}</div><div class="l">k/9 blend</div></div>
+      <div class="kprop-cell"><div class="v dim">${recordStr}</div><div class="l">record ${recordPct}</div></div>
     </div>
   </div>`;
 }
