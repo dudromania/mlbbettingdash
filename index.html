@@ -279,11 +279,11 @@ tbody td {
   padding: 1px 5px;
   letter-spacing: .5px;
 }
-.tag-strong { background: #2d6e4422; color: #5aaa77; border: 1px solid #2d6e4466; }
+.tag-strong { background: #2d6e4422; color: #4db380; border: 1px solid #2d6e4466; }
 .tag-lean   { background: #6e5a0022; color: #bbaa44; border: 1px solid #6e5a0066; }
 .tag-slight { background: #33557722; color: #6688aa; border: 1px solid #33557744; }
 .tag-none   { color: var(--t3); }
-.strong-col { color: #5aaa77; }
+.strong-col { color: #4db380; }
 .lean-col   { color: #bbaa44; }
 
 /* ── BEST BETS — COMPACT ROWS ── */
@@ -300,7 +300,7 @@ tbody td {
   font-size: 11px;
 }
 .bet-card:hover { background: var(--s2); }
-.bet-card.edge-strong { border-left-color: #5aaa77; }
+.bet-card.edge-strong { border-left-color: #4db380; }
 .bet-card.edge-lean   { border-left-color: #bbaa44; }
 
 /* top strip: matchup left, bet call right — single compact line */
@@ -400,7 +400,7 @@ tbody td {
 .game-row:last-child { border-bottom: none; }
 .game-row:hover { background: var(--s2); }
 .game-row.has-edge { border-left: 2px solid #bbaa44; }
-.game-row.has-strong { border-left: 2px solid #5aaa77; }
+.game-row.has-strong { border-left: 2px solid #4db380; }
 @media(max-width:900px){
   .game-row { grid-template-columns: 70px 1fr 90px; }
   .game-row .hide-sm { display: none; }
@@ -668,7 +668,7 @@ tbody td {
 .lg-team  { display: flex; justify-content: space-between; gap: 6px; width: 100%; }
 .lg-abbr  { color: var(--t2); }
 .lg-score { color: var(--t1); font-weight: 500; min-width: 14px; text-align: right; }
-.lg-score.winning { color: #5aaa77; }
+.lg-score.winning { color: #4db380; }
 .lg-status { font-size: 9px; color: var(--t3); letter-spacing: .3px; margin-top: 1px; }
 .lg-status.live { color: #bbaa44; }
 .live-label {
@@ -764,7 +764,7 @@ tbody td {
   background: var(--s1); border: 1px solid var(--b1);
   border-left: 3px solid transparent; margin-bottom: 12px; overflow: hidden;
 }
-.f5-card.strong { border-left-color: #5aaa77; background: #080f0a; }
+.f5-card.strong { border-left-color: #4db380; background: #080f0a; }
 .f5-card.lean   { border-left-color: #bbaa44; }
 .f5-card.none   { border-left-color: var(--b2); opacity: .75; }
 .f5-head {
@@ -806,7 +806,7 @@ tbody td {
   padding: 10px 12px;
   font-size: 11px;
 }
-.kprop-card.strong { border-left-color: #5aaa77; background: #080f0a; }
+.kprop-card.strong { border-left-color: #4db380; background: #080f0a; }
 .kprop-card.lean   { border-left-color: #bbaa44; }
 .kprop-card .kp-head { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:6px; }
 .kprop-card .kp-name { font-size:13px; font-weight:500; }
@@ -815,7 +815,7 @@ tbody td {
 .kprop-card .kp-proj-sub { font-family:var(--mono); font-size:9px; color:var(--t3); margin-top:2px; }
 .kprop-bar-wrap { height:5px; background:var(--b1); margin:8px 0 3px; display:flex; }
 .kprop-bar-under { background:#68a; }
-.kprop-bar-over  { background:#5aaa77; }
+.kprop-bar-over  { background:#4db380; }
 .kprop-data { display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--b1); margin-top:8px; }
 .kprop-cell { background:var(--s2); padding:5px 8px; text-align:center; font-family:var(--mono); }
 .kprop-cell .v { font-size:13px; line-height:1; }
@@ -828,13 +828,13 @@ tbody td {
 .bp-team-row:last-child { border-bottom:none; }
 .bp-abbr { color:var(--t2); width:36px; }
 .bp-badge { font-size:9px; padding:1px 5px; border:1px solid; }
-.bp-badge.elite  { color:#5aaa77; border-color:#5aaa7744; }
+.bp-badge.elite  { color:#4db380; border-color:#4db38044; }
 .bp-badge.good   { color:#68a;    border-color:#66888844; }
 .bp-badge.avg    { color:var(--t3); border-color:var(--b2); }
 .bp-badge.poor   { color:#a44;    border-color:#aa444444; }
 .bp-badge.heavy  { color:#cc8800; border-color:#cc880044; }
 .bp-badge.tired  { color:#996;    border-color:#99664444; }
-.bp-badge.fresh  { color:#5aaa77; border-color:#5aaa7744; }
+.bp-badge.fresh  { color:#4db380; border-color:#4db38044; }
 .bp-badge.normal { color:var(--t3); border-color:var(--b2); }
 
 .nrfi-card {
@@ -844,7 +844,7 @@ tbody td {
   margin-bottom: 12px;
   overflow: hidden;
 }
-.nrfi-card.strong-nrfi { border-left-color: #5aaa77; background: #080f0a; }
+.nrfi-card.strong-nrfi { border-left-color: #4db380; background: #080f0a; }
 .nrfi-card.lean-nrfi   { border-left-color: #bbaa44; }
 .nrfi-card.lean-yrfi   { border-left-color: #cc3333; }
 .nrfi-card.neutral     { border-left-color: var(--b2); opacity: .8; }
@@ -859,7 +859,7 @@ tbody td {
   border-bottom: 1px solid var(--b1);
   margin-bottom: 12px;
 }
-.nrfi-group-label.grp-strong { color: #5aaa77; border-bottom-color: #5aaa7733; }
+.nrfi-group-label.grp-strong { color: #4db380; border-bottom-color: #4db38033; }
 .nrfi-group-label.grp-lean-n { color: #bbaa44; border-bottom-color: #bbaa4433; }
 .nrfi-group-label.grp-lean-y { color: #cc3333; border-bottom-color: #cc333333; }
 .nrfi-group-label.grp-neutral { color: var(--t3); }
@@ -879,7 +879,7 @@ tbody td {
   margin-top: 3px;
   letter-spacing: .3px;
 }
-.nrfi-edge-pill.pos  { background: transparent; color: #5aaa77; border: 1px solid #5aaa7744; }
+.nrfi-edge-pill.pos  { background: transparent; color: #4db380; border: 1px solid #4db38044; }
 .nrfi-edge-pill.warn { background: transparent; color: #bbaa44; border: 1px solid #bbaa4444; }
 .nrfi-edge-pill.neg  { background: transparent; color: #a44444; border: 1px solid #a4444444; }
 .nrfi-edge-pill.dim  { background: transparent; color: var(--t3); border: 1px solid var(--b2); }
@@ -2832,7 +2832,7 @@ function nrfiCard(g) {
   const cls    = label === 'STRONG NRFI' ? 'strong-nrfi' :
                  label === 'LEAN NRFI'   ? 'lean-nrfi'   :
                  label === 'LEAN YRFI'   ? 'lean-yrfi'   : 'neutral';
-  const probCol = prob >= 65 ? '#5aaa77' : prob >= 58 ? '#bbaa44' : prob <= 40 ? '#cc3333' : 'var(--t2)';
+  const probCol = prob >= 65 ? '#4db380' : prob >= 58 ? '#bbaa44' : prob <= 40 ? '#cc3333' : 'var(--t2)';
   const confCol = g.confidence === 'high' ? 'pos' : g.confidence === 'medium' ? '' : 'dim';
 
   function pitcherBlock(p, label) {
@@ -3594,8 +3594,8 @@ function kpropCard(p) {
   const range = p.k_low_25 != null ? `${p.k_low_25}–${p.k_high_75} (25/75 pct)` : '';
   
   // Direction-based colors (green for OVER, orange for UNDER)
-  const dirColor = isOver ? '#5aaa77' : '#d4a574';
-  const barColor = isOver ? '#5aaa77' : '#d4a574';
+  const dirColor = isOver ? '#4db380' : '#c85a5a';
+  const barColor = isOver ? '#4db380' : '#c85a5a';
   
   // Format historical record
   const record = p.pitcher_record;
@@ -3640,8 +3640,8 @@ function kpropCard(p) {
       </div>
       
       <div class="kprop-bar-wrap">
-        <div class="kprop-bar-under" style="width:${unBarW}%;background:${isOver?'#999':'#d4a574'}"></div>
-        <div class="kprop-bar-over"  style="width:${ovBarW}%;background:${isOver?'#5aaa77':'#999'}"></div>
+        <div class="kprop-bar-under" style="width:${unBarW}%;background:${isOver?'#999':'#c85a5a'}"></div>
+        <div class="kprop-bar-over"  style="width:${ovBarW}%;background:${isOver?'#4db380':'#999'}"></div>
       </div>
       <div style="display:flex;justify-content:space-between;font-family:var(--mono);font-size:9px;color:var(--t3);margin-bottom:6px">
         <span>UNDER ${(p.under_prob*100||0).toFixed(0)}%</span>
