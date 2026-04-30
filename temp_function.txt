@@ -1,0 +1,50 @@
+function kpropCard(p) {
+  const cls   = p.label==='STRONG' ? 'strong' : 'lean';
+  const ecol  = p.label==='STRONG' ? 'strong-col' : 'lean-col';
+  const isOver = p.direction === 'OVER';
+  const bet   = `${p.direction} ${p.line} K`;
+  const edge  = p.best_edge != null ? (p.best_edge>=0?'+':'')+(p.best_edge*100).toFixed(1)+'%' : '—';
+  const prob  = isOver ? p.over_prob : p.under_prob;
+  const impl  = isOver ? p.impl_over : p.impl_under;
+  const probPct  = prob  != null ? (prob*100).toFixed(0)+'%' : '—';
+  const implPct  = impl  != null ? (impl*100).toFixed(0)+'%' : '—';
+  const ovBarW   = Math.round((p.over_prob||0)*100);
+  const unBarW   = Math.round((p.under_prob||0)*100);
+  const range = p.k_low_25 != null ? `${p.k_low_25}–${p.k_high_75} (25/75 pct)` : '';
+  const opp_k = p.opp_k_pct ? `opp k% ${p.opp_k_pct}%` : '';
+  return `<div class="bet-card edge-${cls}" style="padding:0">
+    <div class="bc-top">
+      <div>
+        <span class="bc-matchup">${p.pitcher}</span>
+        <span class="bc-meta" style="margin-left:6px">${p.team} vs ${p.opponent} · ${(p.game_time||'').replace(' CT','')}</span>
+      </div>
+      <div class="bc-call">
+        ${p.label==='STRONG'?'<span class="tag tag-strong">STRONG</span>':'<span class="tag tag-lean">LEAN</span>'}
+      </div>
+    </div>
+    <div style="padding:10px 12px">
+      <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:4px">
+        <div class="mono hi" style="font-size:28px;font-weight:300;line-height:1">${p.projected_ks!=null?p.projected_ks.toFixed(1):'—'}</div>
+        <div>
+          <div class="mono" style="font-size:10px">projected K <span class="dim">· Vegas line: <span style="color:var(--t1)">${p.line!=null?p.line:'no line'}</span></span></div>
+          <div class="mono dim" style="font-size:9px">${range}</div>
+        </div>
+      </div>
+      <div class="kprop-bar-wrap">
+        <div class="kprop-bar-under" style="width:${unBarW}%"></div>
+        <div class="kprop-bar-over"  style="width:${ovBarW}%"></div>
+      </div>
+      <div style="display:flex;justify-content:space-between;font-family:var(--mono);font-size:9px;color:var(--t3);margin-bottom:6px">
+        <span>UNDER ${(p.under_prob*100||0).toFixed(0)}%</span>
+        <span>OVER ${(p.over_prob*100||0).toFixed(0)}%</span>
+      </div>
+    </div>
+    <div class="kprop-data">
+      <div class="kprop-cell"><div class="v ${ecol}">${probPct}</div><div class="l">our prob</div></div>
+      <div class="kprop-cell"><div class="v dim">${implPct}</div><div class="l">implied</div></div>
+      <div class="kprop-cell"><div class="v ${ecol}">${edge}</div><div class="l">edge</div></div>
+      <div class="kprop-cell"><div class="v dim">${p.blended_k9!=null?p.blended_k9.toFixed(1):'—'}</div><div class="l">k/9 blend</div></div>
+    </div>
+  </div>`;
+}
+
