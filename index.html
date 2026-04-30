@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -3538,7 +3538,7 @@ function renderKProps() {
     sc(bestEdge!=='—'?'+'+(parseFloat(bestEdge)*100).toFixed(1)+'%':'—','BEST EDGE','warn');
 
   // Best bet cards
-  const bestCards = [...edges].sort((a,b)=>(b.best_edge||0)-(a.best_edge||0)).slice(0,4);
+  const bestCards = [...props].filter(p => (p.best_edge || 0) >= 0.10).sort((a,b)=>(b.best_edge||0)-(a.best_edge||0)).slice(0,8);
   document.getElementById('kprops-best').innerHTML = bestCards.length
     ? bestCards.map(kpropCard).join('')
     : '<div class="empty">No K edges today</div>';
