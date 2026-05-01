@@ -3571,8 +3571,12 @@ function renderKProps() {
       ? (p.ump_adj > 1 ? '<span class="pos">↑</span>' : '<span class="neg">↓</span>') + ' ' + umpStr
       : `<span class="dim">${umpStr}</span>`;
     const pkAdj  = p.park_adj != null ? (p.park_adj > 1.02 ? '↑' : p.park_adj < 0.98 ? '↓' : '') : '';
-    return `<tr>
-      <td class="mono dim" style="font-size:10px">${(p.game_time||'').replace(' CT','')}</td>
+    const rowId = `kprop-row-${p.pitcher?.replace(/[^a-z0-9]/gi, '-') || Math.random()}`;
+
+    return `<tr class="kprop-main-row" onclick="toggleKPropDetail('${rowId}')" style="cursor:pointer">
+      <td class="mono dim" style="font-size:10px">
+        <span id="${rowId}-icon" style="display:inline-block;width:12px;transition:transform 0.2s">▼</span>
+        ${(p.game_time||'').replace(' CT','')}</td>
       <td><strong>${p.pitcher||'—'}</strong></td>
       <td class="dim" style="font-size:10px">${p.team||''} vs ${p.opponent||''} ${pkAdj?`<span class="warn">${pkAdj}park</span>`:''}</td>
       <td class="tc mono hi">${proj}</td>
@@ -3584,7 +3588,43 @@ function renderKProps() {
       <td class="tc mono ${cls}">${edge}</td>
       <td class="mono" style="font-size:10px">${bet}</td>
       <td class="mono dim" style="font-size:9px">${umpAdj}</td>
-    </tr>`;
+    </tr>
+    <tr id="${rowId}" class="kprop-detail-row" style="display:none">
+      <td colspan="12" style="padding:0;background:var(--b1)">
+        <div style="padding:12px;border-top:1px solid var(--b2)">
+          <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:16px">
+            <div>
+              <div style="font-size:10px;color:var(--t3);margin-bottom:8px;font-weight:500">L5 STARTS</div>
+              <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;font-size:11px">
+                <div><span class="dim">Avg K:</span> <span class="mono">${p.l5_avg_k != null ? p.l5_avg_k.toFixed(1) : '—'}</span></div>
+                <div><span class="dim">Avg IP:</span> <span class="mono">${p.l5_avg_ip != null ? p.l5_avg_ip.toFixed(1) : '—'}</span></div>
+                <div><span class="dim">K%:</span> <span class="mono">${p.l5_k_pct != null ? (p.l5_k_pct*100).toFixed(1)+'%' : '—'}</span></div>
+                <div><span class="dim">Last:</span> <span class="mono">${p.last_start_k != null ? p.last_start_k : '—'}</span></div>
+              </div>
+            </div>
+            <div>
+              <div style="font-size:10px;color:var(--t3);margin-bottom:8px;font-weight:500">SEASON</div>
+              <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;font-size:11px">
+                <div><span class="dim">ERA:</span> <span class="mono">${p.season_era != null ? p.season_era.toFixed(2) : '—'}</span></div>
+                <div><span class="dim">WHIP:</span> <span class="mono">${p.season_whip != null ? p.season_whip.toFixed(2) : '—'}</span></div>
+                <div><span class="dim">K%:</span> <span class="mono">${p.season_k_pct != null ? (p.season_k_pct*100).toFixed(1)+'%' : '—'}</span></div>
+                <div><span class="dim">Whiff%:</span> <span class="mono">${p.whiff_rate != null ? p.whiff_rate.toFixed(1)+'%' : '—'}</span></div>
+              </div>
+            </div>
+            <div>
+              <div style="font-size:10px;color:var(--t3);margin-bottom:8px;font-weight:500">RECORD</div>
+              ${(() => {
+                const r = p.pitcher_record;
+                if (!r || r.total === 0) return '<div class="dim">No history</div>';
+                const rec = r.wins + '-' + r.losses + (r.pushes > 0 ? '-' + r.pushes : '');
+                const pct = ((r.wins / r.total) * 100).toFixed(0);
+                const units = r.wins - r.losses;
+                return '<div style="font-size:14px;font-weight:500">' + rec + ' <span class="dim">(' + pct + '%)</span></div><div style="font-size:11px;margin-top:4px"><span class="dim">Units:</span> <span class="mono ' + (units >= 0 ? 'pos' : 'neg') + '">' + (units >= 0 ? '+' : '') + units.toFixed(1) + '</span></div>';
+              })()}
+            </div>
+          </div>
+        </div>
+      </td>
   }).join('') || '<tr><td colspan="12" class="empty">No pitchers</td></tr>';
 }
 
