@@ -47,29 +47,6 @@
   },
   {
     "date": "2026-05-01",
-    "game_time": "1:20 PM CT",
-    "home_abbr": "CHC",
-    "away_abbr": "AZ",
-    "home_sp": "Colin Rea",
-    "away_sp": "Zac Gallen",
-    "nrfi_prob": 36.0,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Colin Rea",
-      "first_inning": {},
-      "season_era": 4.61
-    },
-    "away_pitcher": {
-      "name": "Zac Gallen",
-      "first_inning": {},
-      "season_era": 3.14
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-05-01",
     "game_time": "8:40 PM CT",
     "home_abbr": "SD",
     "away_abbr": "CWS",
@@ -202,6 +179,29 @@
       "name": "Grant Holmes",
       "first_inning": {},
       "season_era": 3.62
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-01",
+    "game_time": "1:20 PM CT",
+    "home_abbr": "CHC",
+    "away_abbr": "AZ",
+    "home_sp": "Colin Rea",
+    "away_sp": "Zac Gallen",
+    "nrfi_prob": 32.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Colin Rea",
+      "first_inning": {},
+      "season_era": 4.26
+    },
+    "away_pitcher": {
+      "name": "Zac Gallen",
+      "first_inning": {},
+      "season_era": 4.45
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
