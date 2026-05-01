@@ -2055,7 +2055,7 @@ async function loadBatting(i, homeAbbr, awayAbbr) {
           obp:  parseFloat(s.obp || 0).toFixed(3),
           slg:  parseFloat(s.slg || 0).toFixed(3),
           ops:  parseFloat(s.ops || 0).toFixed(3),
-          kpct: ab > 0 ? (k/pa*100).toFixed(1) : '—',
+          kpct: pa > 0 ? (k/pa*100).toFixed(1) : '—',
           hr,
           ab,
           rbi: parseInt(s.rbi || 0),
@@ -2243,6 +2243,13 @@ async function buildTeamBattingSummary(awayAbbr, awayStats, homeAbbr, homeStats)
 
 async function getGameId(homeAbbr, awayAbbr) {
   try {
+    // ESPN uses different abbreviations for some teams
+    const toESPN = (abbr) => {
+      if (abbr === 'ATH') return 'OAK';
+      if (abbr === 'CHW') return 'CWS';
+      return abbr;
+    };
+    
     const today = DATA.date || todayStr();
     const espnDate = today.replace(/-/g,'');
     const r = await fetch(`https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${espnDate}`);
@@ -2250,7 +2257,7 @@ async function getGameId(homeAbbr, awayAbbr) {
     const ev = (data.events||[]).find(e => {
       const comps = e.competitions?.[0]?.competitors||[];
       const abbrs = comps.map(c=>c.team?.abbreviation);
-      return abbrs.includes(homeAbbr) && abbrs.includes(awayAbbr);
+      return abbrs.includes(toESPN(homeAbbr)) && abbrs.includes(toESPN(awayAbbr));
     });
     return ev?.id || '';
   } catch { return ''; }
@@ -2508,20 +2515,44 @@ function renderBatters() {
   DATA.games.forEach(g => {
     ['home','away'].forEach(side => {
       const bTeam = side==='home'?g.home_abbr:g.away_abbr;
+      const oppTeam = side==='home'?g.away_abbr:g.home_abbr;
       const oppSP = side==='home'?g.away_sp:g.home_sp;
+      
+      // Try to find pitcher card by name first, then fallback to team/opponent match
       const card  = DATA.pitchers.find(c=>c.name===oppSP) ||
-                   DATA.pitchers.find(c=>c.team_abbr===(side==='home'?g.away_abbr:g.home_abbr)&&c.opponent===(side==='home'?g.home_abbr:g.away_abbr)) ||
-                   DATA.pitchers.find(c=>c.team_abbr===(side==='home'?g.away_abbr:g.home_abbr));
+                   (oppSP === 'TBD' ? DATA.pitchers.find(c=>c.team_abbr===oppTeam && c.opponent===bTeam) : null) ||
+                   DATA.pitchers.find(c=>c.team_abbr===oppTeam);
+      
+      if (!card) return; // Skip if no pitcher card found
+      
       const k9    = card?.season_stats?.K9??8.5;
       const era   = card?.season_stats?.ERA??4.1;
       const whip  = card?.season_stats?.WHIP??1.28;
       const trend = card?.trend??'neutral';
       const hEdge = ((8.5-k9)*0.12)+((1.28-whip)*0.5);
+      
       if (Math.abs(hEdge)>0.03||trend==='declining') {
         const pType = trend==='declining'||era>4.5?'hits over':k9>9.5?'ks under':'hits over';
         const edge  = Math.abs(pType==='hits over'?hEdge:-hEdge*0.8);
         const label = edge>=0.08?'strong':'lean';
-        props.push({game:`${g.away_abbr}@${g.home_abbr}`,time:g.game_time_ct,bTeam,oppSP:oppSP||'TBD',k9:parseFloat(k9).toFixed(1),era:parseFloat(era).toFixed(2),whip:parseFloat(whip).toFixed(2),trend,pType,edge:(edge*100).toFixed(1),label,ti:trend==='improving'?'↑':trend==='declining'?'↓':'→'});
+        
+        // Use actual pitcher name from card if SP was TBD
+        const displaySP = oppSP === 'TBD' ? card.name : oppSP;
+        
+        props.push({
+          game:`${g.away_abbr}@${g.home_abbr}`,
+          time:g.game_time_ct,
+          bTeam,
+          oppSP:displaySP||'TBD',
+          k9:parseFloat(k9).toFixed(1),
+          era:parseFloat(era).toFixed(2),
+          whip:parseFloat(whip).toFixed(2),
+          trend,
+          pType,
+          edge:(edge*100).toFixed(1),
+          label,
+          ti:trend==='improving'?'↑':trend==='declining'?'↓':'→'
+        });
       }
     });
   });
