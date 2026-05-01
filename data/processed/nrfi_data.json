@@ -185,29 +185,6 @@
   },
   {
     "date": "2026-05-01",
-    "game_time": "6:10 PM CT",
-    "home_abbr": "BOS",
-    "away_abbr": "HOU",
-    "home_sp": "TBD",
-    "away_sp": "Mike Burrows",
-    "nrfi_prob": 34.2,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Connelly Early",
-      "first_inning": {},
-      "season_era": 2.84
-    },
-    "away_pitcher": {
-      "name": "Mike Burrows",
-      "first_inning": {},
-      "season_era": 6.25
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-05-01",
     "game_time": "7:40 PM CT",
     "home_abbr": "COL",
     "away_abbr": "ATL",
@@ -271,6 +248,29 @@
       "name": "Patrick Corbin",
       "first_inning": {},
       "season_era": 3.72
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-01",
+    "game_time": "6:10 PM CT",
+    "home_abbr": "BOS",
+    "away_abbr": "HOU",
+    "home_sp": "Jake Bennett",
+    "away_sp": "Mike Burrows",
+    "nrfi_prob": 29.6,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jake Bennett",
+      "first_inning": {},
+      "season_era": null
+    },
+    "away_pitcher": {
+      "name": "Mike Burrows",
+      "first_inning": {},
+      "season_era": 6.25
     },
     "away_batting_1st": {},
     "home_batting_1st": {}

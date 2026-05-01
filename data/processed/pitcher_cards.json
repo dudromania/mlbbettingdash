@@ -2261,6 +2261,90 @@
     "game_time_ct": "3:05 PM CT"
   },
   {
+    "player_id": 687562,
+    "name": "Jake Bennett",
+    "team_abbr": "BOS",
+    "opponent": "HOU",
+    "throws": "R",
+    "days_rest": null,
+    "trend": "neutral",
+    "season_stats": {},
+    "last_starts": [],
+    "arsenal": [
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 43.9,
+        "avg_velo": 93.6,
+        "avg_spin": 2142,
+        "whiff_pct": 11.1,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 22.0,
+        "avg_velo": 85.4,
+        "avg_spin": 2074,
+        "whiff_pct": 16.7,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 19.5,
+        "avg_velo": 79.4,
+        "avg_spin": 2214,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 9.8,
+        "avg_velo": 84.0,
+        "avg_spin": 1880,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 4.9,
+        "avg_velo": 93.2,
+        "avg_spin": 1996,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      }
+    ],
+    "splits": {},
+    "k_prediction": {
+      "predicted_ks": 5.0,
+      "k_low_25": 3,
+      "k_high_75": 6,
+      "expected_ip": 5.5,
+      "season_k9": 8.5,
+      "last3_k9": 8.5,
+      "blended_k9": 8.5,
+      "opp_k_pct": 22.5,
+      "opp_k_pct_vs_lg": 0.0,
+      "opp_adj": 1.0,
+      "park_adj": 1.0,
+      "ump_adj": 1.0,
+      "hand_adj": 1.0,
+      "pitch_mix_adj": 1.0,
+      "combined_adj": 1.0,
+      "lambda_k": 5.194,
+      "model_used": "xgboost_poisson",
+      "umpire": null,
+      "lineup_confirmed": false
+    },
+    "first_inning": {},
+    "game_id": 824772,
+    "game_date": "2026-05-01",
+    "game_time_ct": "6:10 PM CT"
+  },
+  {
     "player_id": 681347,
     "name": "Mike Burrows",
     "team_abbr": "HOU",
