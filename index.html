@@ -3504,6 +3504,15 @@ function f5BetCard(g) {
 }
 
 // ── K STRIKEOUT PROPS ────────────────────────────────────────────────────────
+function toggleKPropDetail(rowId) {
+  const detailRow = document.getElementById(rowId);
+  const icon = document.getElementById(rowId + '-icon');
+  if (!detailRow) return;
+  
+  const isHidden = detailRow.style.display === 'none';
+  detailRow.style.display = isHidden ? 'table-row' : 'none';
+  icon.style.transform = isHidden ? 'rotate(-90deg)' : 'rotate(0deg)';
+}
 function renderKProps() {
   const el = document.getElementById('kprops-stats');
   if (!el) return;
