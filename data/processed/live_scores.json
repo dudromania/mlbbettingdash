@@ -5,11 +5,11 @@
     {
       "home_abbr": "NYY",
       "away_abbr": "BAL",
-      "home_score": "0",
+      "home_score": "1",
       "away_score": "0",
-      "state": "pre",
-      "detail": "5/2 - 1:35 PM EDT",
-      "is_live": false,
+      "state": "in",
+      "detail": "Bot 2nd",
+      "is_live": true,
       "is_final": false
     },
     {

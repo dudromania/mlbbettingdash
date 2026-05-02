@@ -1,6 +1,29 @@
 [
   {
     "date": "2026-05-02",
+    "game_time": "7:10 PM CT",
+    "home_abbr": "COL",
+    "away_abbr": "ATL",
+    "home_sp": "Brennan Bernardino",
+    "away_sp": "Chris Sale",
+    "nrfi_prob": 55.4,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Brennan Bernardino",
+      "first_inning": {},
+      "season_era": 0.71
+    },
+    "away_pitcher": {
+      "name": "Chris Sale",
+      "first_inning": {},
+      "season_era": 2.31
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-02",
     "game_time": "3:10 PM CT",
     "home_abbr": "BOS",
     "away_abbr": "HOU",
@@ -93,29 +116,6 @@
   },
   {
     "date": "2026-05-02",
-    "game_time": "7:10 PM CT",
-    "home_abbr": "COL",
-    "away_abbr": "ATL",
-    "home_sp": "TBD",
-    "away_sp": "Chris Sale",
-    "nrfi_prob": 44.3,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Kyle Freeland",
-      "first_inning": {},
-      "season_era": 3.48
-    },
-    "away_pitcher": {
-      "name": "Chris Sale",
-      "first_inning": {},
-      "season_era": 2.31
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-05-02",
     "game_time": "1:10 PM CT",
     "home_abbr": "MIN",
     "away_abbr": "TOR",
@@ -162,6 +162,29 @@
   },
   {
     "date": "2026-05-02",
+    "game_time": "12:35 PM CT",
+    "home_abbr": "NYY",
+    "away_abbr": "BAL",
+    "home_sp": "Ryan Weathers",
+    "away_sp": "Kyle Bradish",
+    "nrfi_prob": 38.4,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Ryan Weathers",
+      "first_inning": {},
+      "season_era": 3.12
+    },
+    "away_pitcher": {
+      "name": "Kyle Bradish",
+      "first_inning": {},
+      "season_era": 4.06
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-02",
     "game_time": "3:05 PM CT",
     "home_abbr": "PIT",
     "away_abbr": "CIN",
@@ -202,29 +225,6 @@
       "name": "Kumar Rocker",
       "first_inning": {},
       "season_era": 3.38
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-05-02",
-    "game_time": "12:35 PM CT",
-    "home_abbr": "NYY",
-    "away_abbr": "BAL",
-    "home_sp": "Ryan Weathers",
-    "away_sp": "Kyle Bradish",
-    "nrfi_prob": 37.5,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Ryan Weathers",
-      "first_inning": {},
-      "season_era": 3.21
-    },
-    "away_pitcher": {
-      "name": "Kyle Bradish",
-      "first_inning": {},
-      "season_era": 4.2
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
