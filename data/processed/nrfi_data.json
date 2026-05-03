@@ -63,7 +63,7 @@
     "away_pitcher": {
       "name": "Trey Yesavage",
       "first_inning": {},
-      "season_era": 1.13
+      "season_era": 1.08
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -75,41 +75,18 @@
     "away_abbr": "CIN",
     "home_sp": "Braxton Ashcraft",
     "away_sp": "Chase Burns",
-    "nrfi_prob": 42.7,
+    "nrfi_prob": 43.4,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Braxton Ashcraft",
       "first_inning": {},
-      "season_era": 3.6
+      "season_era": 3.5
     },
     "away_pitcher": {
       "name": "Chase Burns",
       "first_inning": {},
-      "season_era": 2.57
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-05-03",
-    "game_time": "12:35 PM CT",
-    "home_abbr": "NYY",
-    "away_abbr": "BAL",
-    "home_sp": "Max Fried",
-    "away_sp": "Trey Gibson",
-    "nrfi_prob": 42.0,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Max Fried",
-      "first_inning": {},
-      "season_era": 2.05
-    },
-    "away_pitcher": {
-      "name": "Trey Gibson",
-      "first_inning": {},
-      "season_era": null
+      "season_era": 2.52
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -133,6 +110,29 @@
       "name": "Justin Wrobleski",
       "first_inning": {},
       "season_era": 1.5
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-03",
+    "game_time": "12:35 PM CT",
+    "home_abbr": "NYY",
+    "away_abbr": "BAL",
+    "home_sp": "Max Fried",
+    "away_sp": "Trey Gibson",
+    "nrfi_prob": 36.9,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Max Fried",
+      "first_inning": {},
+      "season_era": 2.05
+    },
+    "away_pitcher": {
+      "name": "Trey Gibson",
+      "first_inning": {},
+      "season_era": 9.0
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -163,6 +163,29 @@
   {
     "date": "2026-05-03",
     "game_time": "12:35 PM CT",
+    "home_abbr": "WSH",
+    "away_abbr": "MIL",
+    "home_sp": "PJ Poulin",
+    "away_sp": "Logan Henderson",
+    "nrfi_prob": 34.6,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "PJ Poulin",
+      "first_inning": {},
+      "season_era": 3.63
+    },
+    "away_pitcher": {
+      "name": "Logan Henderson",
+      "first_inning": {},
+      "season_era": 4.5
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-03",
+    "game_time": "12:35 PM CT",
     "home_abbr": "BOS",
     "away_abbr": "HOU",
     "home_sp": "Ranger Suarez",
@@ -178,7 +201,7 @@
     "away_pitcher": {
       "name": "Cody Bolton",
       "first_inning": {},
-      "season_era": 5.79
+      "season_era": 5.23
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -231,46 +254,23 @@
   },
   {
     "date": "2026-05-03",
-    "game_time": "12:35 PM CT",
-    "home_abbr": "WSH",
-    "away_abbr": "MIL",
-    "home_sp": "PJ Poulin",
-    "away_sp": "Logan Henderson",
-    "nrfi_prob": 31.0,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "PJ Poulin",
-      "first_inning": {},
-      "season_era": 3.78
-    },
-    "away_pitcher": {
-      "name": "Logan Henderson",
-      "first_inning": {},
-      "season_era": 6.0
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-05-03",
     "game_time": "12:40 PM CT",
     "home_abbr": "TB",
     "away_abbr": "SF",
     "home_sp": "Steven Matz",
     "away_sp": "Tyler Mahle",
-    "nrfi_prob": 28.7,
+    "nrfi_prob": 29.2,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Steven Matz",
       "first_inning": {},
-      "season_era": 4.45
+      "season_era": 4.32
     },
     "away_pitcher": {
       "name": "Tyler Mahle",
       "first_inning": {},
-      "season_era": 5.81
+      "season_era": 5.63
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -334,7 +334,7 @@
     "home_pitcher": {
       "name": "Chris Paddack",
       "first_inning": {},
-      "season_era": 6.43
+      "season_era": 7.76
     },
     "away_pitcher": {
       "name": "Jes\u00fas Luzardo",
