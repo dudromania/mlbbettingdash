@@ -75,7 +75,7 @@
     "away_abbr": "CIN",
     "home_sp": "Braxton Ashcraft",
     "away_sp": "Chase Burns",
-    "nrfi_prob": 42.4,
+    "nrfi_prob": 42.7,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
@@ -86,7 +86,7 @@
     "away_pitcher": {
       "name": "Chase Burns",
       "first_inning": {},
-      "season_era": 2.65
+      "season_era": 2.57
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -98,13 +98,13 @@
     "away_abbr": "BAL",
     "home_sp": "Max Fried",
     "away_sp": "Trey Gibson",
-    "nrfi_prob": 41.8,
+    "nrfi_prob": 42.0,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Max Fried",
       "first_inning": {},
-      "season_era": 2.09
+      "season_era": 2.05
     },
     "away_pitcher": {
       "name": "Trey Gibson",
@@ -167,13 +167,13 @@
     "away_abbr": "HOU",
     "home_sp": "Ranger Suarez",
     "away_sp": "Cody Bolton",
-    "nrfi_prob": 33.6,
+    "nrfi_prob": 33.7,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Ranger Suarez",
       "first_inning": {},
-      "season_era": 3.03
+      "season_era": 3.0
     },
     "away_pitcher": {
       "name": "Cody Bolton",
@@ -236,13 +236,13 @@
     "away_abbr": "MIL",
     "home_sp": "PJ Poulin",
     "away_sp": "Logan Henderson",
-    "nrfi_prob": 30.7,
+    "nrfi_prob": 31.0,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "PJ Poulin",
       "first_inning": {},
-      "season_era": 3.86
+      "season_era": 3.78
     },
     "away_pitcher": {
       "name": "Logan Henderson",
@@ -334,7 +334,7 @@
     "home_pitcher": {
       "name": "Chris Paddack",
       "first_inning": {},
-      "season_era": 6.11
+      "season_era": 6.43
     },
     "away_pitcher": {
       "name": "Jes\u00fas Luzardo",
