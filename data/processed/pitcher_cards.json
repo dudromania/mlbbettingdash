@@ -981,7 +981,7 @@
     "first_inning": {},
     "game_id": 824684,
     "game_date": "2026-05-04",
-    "game_time_ct": "6:40 PM CT"
+    "game_time_ct": "6:10 PM CT"
   },
   {
     "player_id": 695534,
@@ -1116,7 +1116,7 @@
     "first_inning": {},
     "game_id": 824684,
     "game_date": "2026-05-04",
-    "game_time_ct": "6:40 PM CT"
+    "game_time_ct": "6:10 PM CT"
   },
   {
     "player_id": 592791,
@@ -1731,6 +1731,173 @@
     "game_time_ct": "4:40 PM CT"
   },
   {
+    "player_id": 623211,
+    "name": "Huascar Brazob\u00e1n",
+    "team_abbr": "NYM",
+    "opponent": "COL",
+    "throws": "R",
+    "days_rest": 5,
+    "trend": "improving",
+    "season_stats": {
+      "season": 2026,
+      "W": 2,
+      "L": 0,
+      "ERA": 1.15,
+      "FIP": 2.84,
+      "WHIP": 0.89,
+      "IP": 15.7,
+      "GS": 0,
+      "G": 14,
+      "K": 13,
+      "BB": 3,
+      "HR": 1,
+      "H": 11,
+      "ER": 2,
+      "K9": 7.47,
+      "BB9": 1.72,
+      "HR9": 0.57,
+      "K_pct": 22.0,
+      "BB_pct": 5.1,
+      "K_BB": 4.33
+    },
+    "last_starts": [
+      {
+        "date": "2025-07-02",
+        "opponent": "",
+        "decision": "ND",
+        "IP": 1.0,
+        "H": 0,
+        "ER": 0,
+        "BB": 1,
+        "K": 1,
+        "HR": 0,
+        "pitches": 19,
+        "era_start": 0.0,
+        "game_id": 777276
+      },
+      {
+        "date": "2025-04-30",
+        "opponent": "",
+        "decision": "ND",
+        "IP": 2.0,
+        "H": 0,
+        "ER": 0,
+        "BB": 1,
+        "K": 3,
+        "HR": 0,
+        "pitches": 26,
+        "era_start": 0.0,
+        "game_id": 778117
+      },
+      {
+        "date": "2025-04-16",
+        "opponent": "",
+        "decision": "ND",
+        "IP": 1.0,
+        "H": 0,
+        "ER": 0,
+        "BB": 1,
+        "K": 1,
+        "HR": 0,
+        "pitches": 18,
+        "era_start": 0.0,
+        "game_id": 778299
+      }
+    ],
+    "arsenal": [
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 47.6,
+        "avg_velo": 95.7,
+        "avg_spin": 2269,
+        "whiff_pct": 25.9,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 40.3,
+        "avg_velo": 90.3,
+        "avg_spin": 2022,
+        "whiff_pct": 30.2,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 6.5,
+        "avg_velo": 96.5,
+        "avg_spin": 2187,
+        "whiff_pct": 14.3,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FC",
+        "pitch_name": "Cutter",
+        "usage_pct": 3.0,
+        "avg_velo": 90.1,
+        "avg_spin": 2255,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SL",
+        "pitch_name": "Slider",
+        "usage_pct": 2.6,
+        "avg_velo": 85.9,
+        "avg_spin": 2320,
+        "whiff_pct": 40.0,
+        "put_away_pct": 0.0
+      }
+    ],
+    "splits": {
+      "vs_lhb": {
+        "avg": 0.25,
+        "ops": 0.572,
+        "k_pct": 16.0,
+        "bb_pct": 4.0,
+        "hr9": 0.0,
+        "whip": 1.11,
+        "bf": 25
+      },
+      "vs_rhb": {
+        "avg": 0.156,
+        "ops": 0.487,
+        "k_pct": 26.5,
+        "bb_pct": 5.9,
+        "hr9": 1.0,
+        "whip": 0.78,
+        "bf": 34
+      }
+    },
+    "k_prediction": {
+      "predicted_ks": 4.2,
+      "k_low_25": 3,
+      "k_high_75": 5,
+      "expected_ip": 4.0,
+      "season_k9": 7.47,
+      "last3_k9": 11.25,
+      "blended_k9": 9.74,
+      "opp_k_pct": 22.5,
+      "opp_k_pct_vs_lg": 0.0,
+      "opp_adj": 1.0,
+      "park_adj": 1.0,
+      "ump_adj": 1.0,
+      "hand_adj": 1.0,
+      "pitch_mix_adj": 1.0,
+      "combined_adj": 1.0,
+      "lambda_k": 4.328,
+      "model_used": "xgboost_poisson",
+      "umpire": null,
+      "lineup_confirmed": false
+    },
+    "first_inning": {},
+    "game_id": 824363,
+    "game_date": "2026-05-04",
+    "game_time_ct": "4:40 PM CT"
+  },
+  {
     "player_id": 547179,
     "name": "Michael Lorenzen",
     "team_abbr": "COL",
@@ -2331,7 +2498,7 @@
     "first_inning": {},
     "game_id": 824283,
     "game_date": "2026-05-04",
-    "game_time_ct": "5:40 PM CT"
+    "game_time_ct": "5:10 PM CT"
   },
   {
     "player_id": 801139,
@@ -2526,7 +2693,7 @@
     "first_inning": {},
     "game_id": 824283,
     "game_date": "2026-05-04",
-    "game_time_ct": "5:40 PM CT"
+    "game_time_ct": "5:10 PM CT"
   },
   {
     "player_id": 664285,

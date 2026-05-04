@@ -24,6 +24,29 @@
   },
   {
     "date": "2026-05-04",
+    "game_time": "4:40 PM CT",
+    "home_abbr": "COL",
+    "away_abbr": "NYM",
+    "home_sp": "Tomoyuki Sugano",
+    "away_sp": "Huascar Brazob\u00e1n",
+    "nrfi_prob": 52.5,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Tomoyuki Sugano",
+      "first_inning": {},
+      "season_era": 2.84
+    },
+    "away_pitcher": {
+      "name": "Huascar Brazob\u00e1n",
+      "first_inning": {},
+      "season_era": 1.15
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-04",
     "game_time": "8:45 PM CT",
     "home_abbr": "SF",
     "away_abbr": "SD",
@@ -70,7 +93,7 @@
   },
   {
     "date": "2026-05-04",
-    "game_time": "5:40 PM CT",
+    "game_time": "5:10 PM CT",
     "home_abbr": "DET",
     "away_abbr": "BOS",
     "home_sp": "Tarik Skubal",
@@ -110,29 +133,6 @@
       "name": "Shane Baz",
       "first_inning": {},
       "season_era": 4.5
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-05-04",
-    "game_time": "4:40 PM CT",
-    "home_abbr": "COL",
-    "away_abbr": "NYM",
-    "home_sp": "Tomoyuki Sugano",
-    "away_sp": "TBD",
-    "nrfi_prob": 41.9,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Tomoyuki Sugano",
-      "first_inning": {},
-      "season_era": 2.84
-    },
-    "away_pitcher": {
-      "name": "Freddy Peralta",
-      "first_inning": {},
-      "season_era": 3.52
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -254,7 +254,7 @@
   },
   {
     "date": "2026-05-04",
-    "game_time": "6:40 PM CT",
+    "game_time": "6:10 PM CT",
     "home_abbr": "CHC",
     "away_abbr": "CIN",
     "home_sp": "Edward Cabrera",
