@@ -210,21 +210,6 @@
     "fatigue": "FRESH"
   },
   {
-    "team": "BOS",
-    "era": 4.24,
-    "whip": 1.34,
-    "k9": 8.06,
-    "bb9": 3.43,
-    "era_vs_lg": 0.14,
-    "whip_vs_lg": 0.06,
-    "k9_vs_lg": -0.54,
-    "quality": "AVG",
-    "innings_3d": 0.0,
-    "pitchers_3d": 0,
-    "heavy": 0,
-    "fatigue": "FRESH"
-  },
-  {
     "team": "TOR",
     "era": 4.24,
     "whip": 1.3,
@@ -233,6 +218,21 @@
     "era_vs_lg": 0.14,
     "whip_vs_lg": 0.02,
     "k9_vs_lg": 0.96,
+    "quality": "AVG",
+    "innings_3d": 0.0,
+    "pitchers_3d": 0,
+    "heavy": 0,
+    "fatigue": "FRESH"
+  },
+  {
+    "team": "BOS",
+    "era": 4.21,
+    "whip": 1.34,
+    "k9": 8.06,
+    "bb9": 3.43,
+    "era_vs_lg": 0.11,
+    "whip_vs_lg": 0.06,
+    "k9_vs_lg": -0.54,
     "quality": "AVG",
     "innings_3d": 0.0,
     "pitchers_3d": 0,
