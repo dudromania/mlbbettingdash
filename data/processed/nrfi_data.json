@@ -70,52 +70,6 @@
   },
   {
     "date": "2026-05-04",
-    "game_time": "5:40 PM CT",
-    "home_abbr": "TB",
-    "away_abbr": "TOR",
-    "home_sp": "Nick Martinez",
-    "away_sp": "TBD",
-    "nrfi_prob": 48.8,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Nick Martinez",
-      "first_inning": {},
-      "season_era": 1.7
-    },
-    "away_pitcher": {
-      "name": "Kevin Gausman",
-      "first_inning": {},
-      "season_era": 3.1
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-05-04",
-    "game_time": "5:10 PM CT",
-    "home_abbr": "DET",
-    "away_abbr": "BOS",
-    "home_sp": "Tarik Skubal",
-    "away_sp": "Payton Tolle",
-    "nrfi_prob": 43.2,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Tarik Skubal",
-      "first_inning": {},
-      "season_era": 2.7
-    },
-    "away_pitcher": {
-      "name": "Payton Tolle",
-      "first_inning": {},
-      "season_era": 3.38
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-05-04",
     "game_time": "6:05 PM CT",
     "home_abbr": "NYY",
     "away_abbr": "BAL",
@@ -208,6 +162,29 @@
   },
   {
     "date": "2026-05-04",
+    "game_time": "5:40 PM CT",
+    "home_abbr": "TB",
+    "away_abbr": "TOR",
+    "home_sp": "Nick Martinez",
+    "away_sp": "Eric Lauer",
+    "nrfi_prob": 38.1,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Nick Martinez",
+      "first_inning": {},
+      "season_era": 1.7
+    },
+    "away_pitcher": {
+      "name": "Eric Lauer",
+      "first_inning": {},
+      "season_era": 6.0
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-04",
     "game_time": "6:45 PM CT",
     "home_abbr": "STL",
     "away_abbr": "MIL",
@@ -271,6 +248,29 @@
       "name": "Chase Petty",
       "first_inning": {},
       "season_era": 19.5
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-04",
+    "game_time": "5:10 PM CT",
+    "home_abbr": "DET",
+    "away_abbr": "BOS",
+    "home_sp": "Tyler Holton",
+    "away_sp": "Payton Tolle",
+    "nrfi_prob": 32.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Tyler Holton",
+      "first_inning": {},
+      "season_era": 5.27
+    },
+    "away_pitcher": {
+      "name": "Payton Tolle",
+      "first_inning": {},
+      "season_era": 3.38
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
