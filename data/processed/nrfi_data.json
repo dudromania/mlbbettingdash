@@ -1,46 +1,230 @@
 [
   {
-    "date": "2026-05-06",
-    "game_time": "8:40 PM CT",
-    "home_abbr": "AZ",
-    "away_abbr": "PIT",
-    "home_sp": "Michael Soroka",
-    "away_sp": "Paul Skenes",
-    "nrfi_prob": 41.0,
+    "date": "2026-05-07",
+    "game_time": "5:40 PM CT",
+    "home_abbr": "MIA",
+    "away_abbr": "BAL",
+    "home_sp": "Max Meyer",
+    "away_sp": "Cade Povich",
+    "nrfi_prob": 38.6,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Michael Soroka",
+      "name": "Max Meyer",
       "first_inning": {},
-      "season_era": 4.14
+      "season_era": 2.68
     },
     "away_pitcher": {
-      "name": "Paul Skenes",
+      "name": "Cade Povich",
       "first_inning": {},
-      "season_era": 2.36
+      "season_era": 4.41
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
   },
   {
-    "date": "2026-05-06",
-    "game_time": "8:20 PM CT",
-    "home_abbr": "COL",
-    "away_abbr": "NYM",
-    "home_sp": "Michael Lorenzen",
-    "away_sp": "Freddy Peralta",
-    "nrfi_prob": 33.3,
+    "date": "2026-05-07",
+    "game_time": "6:10 PM CT",
+    "home_abbr": "BOS",
+    "away_abbr": "TB",
+    "home_sp": "Jake Bennett",
+    "away_sp": "Griffin Jax",
+    "nrfi_prob": 38.3,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jake Bennett",
+      "first_inning": {},
+      "season_era": 1.8
+    },
+    "away_pitcher": {
+      "name": "Griffin Jax",
+      "first_inning": {},
+      "season_era": 5.14
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-07",
+    "game_time": "2:40 PM CT",
+    "home_abbr": "AZ",
+    "away_abbr": "PIT",
+    "home_sp": "Zac Gallen",
+    "away_sp": "Mitch Keller",
+    "nrfi_prob": 37.7,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Michael Lorenzen",
+      "name": "Zac Gallen",
       "first_inning": {},
-      "season_era": 6.92
+      "season_era": 4.45
     },
     "away_pitcher": {
-      "name": "Freddy Peralta",
+      "name": "Mitch Keller",
       "first_inning": {},
-      "season_era": 3.12
+      "season_era": 2.85
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-07",
+    "game_time": "11:35 AM CT",
+    "home_abbr": "NYY",
+    "away_abbr": "TEX",
+    "home_sp": "Paul Blackburn",
+    "away_sp": "MacKenzie Gore",
+    "nrfi_prob": 37.5,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Paul Blackburn",
+      "first_inning": {},
+      "season_era": 3.0
+    },
+    "away_pitcher": {
+      "name": "MacKenzie Gore",
+      "first_inning": {},
+      "season_era": 4.38
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-07",
+    "game_time": "9:10 PM CT",
+    "home_abbr": "SD",
+    "away_abbr": "STL",
+    "home_sp": "Michael King",
+    "away_sp": "Matthew Liberatore",
+    "nrfi_prob": 37.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Michael King",
+      "first_inning": {},
+      "season_era": 2.95
+    },
+    "away_pitcher": {
+      "name": "Matthew Liberatore",
+      "first_inning": {},
+      "season_era": 4.5
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-07",
+    "game_time": "1:20 PM CT",
+    "home_abbr": "CHC",
+    "away_abbr": "CIN",
+    "home_sp": "Shota Imanaga",
+    "away_sp": "Rhett Lowder",
+    "nrfi_prob": 36.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Shota Imanaga",
+      "first_inning": {},
+      "season_era": 2.4
+    },
+    "away_pitcher": {
+      "name": "Rhett Lowder",
+      "first_inning": {},
+      "season_era": 5.09
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-07",
+    "game_time": "1:10 PM CT",
+    "home_abbr": "KC",
+    "away_abbr": "CLE",
+    "home_sp": "Seth Lugo",
+    "away_sp": "Slade Cecconi",
+    "nrfi_prob": 34.7,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Seth Lugo",
+      "first_inning": {},
+      "season_era": 2.68
+    },
+    "away_pitcher": {
+      "name": "Slade Cecconi",
+      "first_inning": {},
+      "season_era": 6.56
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-07",
+    "game_time": "2:10 PM CT",
+    "home_abbr": "COL",
+    "away_abbr": "NYM",
+    "home_sp": "Jose Quintana",
+    "away_sp": "Christian Scott",
+    "nrfi_prob": 33.9,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jose Quintana",
+      "first_inning": {},
+      "season_era": 4.07
+    },
+    "away_pitcher": {
+      "name": "Christian Scott",
+      "first_inning": {},
+      "season_era": 4.26
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-07",
+    "game_time": "5:40 PM CT",
+    "home_abbr": "PHI",
+    "away_abbr": "ATH",
+    "home_sp": "Andrew Painter",
+    "away_sp": "J.T. Ginn",
+    "nrfi_prob": 29.2,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Andrew Painter",
+      "first_inning": {},
+      "season_era": 5.28
+    },
+    "away_pitcher": {
+      "name": "J.T. Ginn",
+      "first_inning": {},
+      "season_era": 4.3
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-05-07",
+    "game_time": "12:05 PM CT",
+    "home_abbr": "WSH",
+    "away_abbr": "MIN",
+    "home_sp": "Jake Irvin",
+    "away_sp": "Simeon Woods Richardson",
+    "nrfi_prob": 27.2,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jake Irvin",
+      "first_inning": {},
+      "season_era": 4.89
+    },
+    "away_pitcher": {
+      "name": "Simeon Woods Richardson",
+      "first_inning": {},
+      "season_era": 6.28
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
