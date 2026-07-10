@@ -1,5 +1,156 @@
 {
-  "date": "2026-07-09",
-  "games": [],
-  "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+  "date": "2026-07-10",
+  "fetched_at": "2026-07-10",
+  "games": [
+    {
+      "home_abbr": "PIT",
+      "away_abbr": "MIL",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "7/10 - 6:40 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "DET",
+      "away_abbr": "PHI",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "7/10 - 6:40 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "WSH",
+      "away_abbr": "NYY",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "7/10 - 6:45 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "BAL",
+      "away_abbr": "KC",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "7/10 - 7:05 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "CIN",
+      "away_abbr": "CHC",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "7/10 - 7:10 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "MIA",
+      "away_abbr": "CLE",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "7/10 - 7:10 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "TB",
+      "away_abbr": "SEA",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "7/10 - 7:10 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "NYM",
+      "away_abbr": "BOS",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "7/10 - 7:15 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "CHW",
+      "away_abbr": "ATH",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "7/10 - 7:40 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "TEX",
+      "away_abbr": "HOU",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "7/10 - 8:05 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "MIN",
+      "away_abbr": "LAA",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "7/10 - 8:10 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "STL",
+      "away_abbr": "ATL",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "7/10 - 8:15 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "SD",
+      "away_abbr": "TOR",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "7/10 - 9:40 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "LAD",
+      "away_abbr": "ARI",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "7/10 - 10:10 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "SF",
+      "away_abbr": "COL",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "7/10 - 10:15 PM EDT",
+      "is_live": false,
+      "is_final": false
+    }
+  ]
 }
