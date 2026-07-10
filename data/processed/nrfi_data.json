@@ -1,58 +1,12 @@
 [
   {
     "date": "2026-07-09",
-    "game_time": "6:45 PM CT",
-    "home_abbr": "STL",
-    "away_abbr": "MIL",
-    "home_sp": "Andre Pallante",
-    "away_sp": "Logan Henderson",
-    "nrfi_prob": 42.0,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Andre Pallante",
-      "first_inning": {},
-      "season_era": 3.8
-    },
-    "away_pitcher": {
-      "name": "Logan Henderson",
-      "first_inning": {},
-      "season_era": 2.52
-    },
-    "away_batting_1st": null,
-    "home_batting_1st": null
-  },
-  {
-    "date": "2026-07-09",
-    "game_time": "5:40 PM CT",
-    "home_abbr": "MIA",
-    "away_abbr": "SEA",
-    "home_sp": "Janson Junk",
-    "away_sp": "Bryce Miller",
-    "nrfi_prob": 39.7,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Janson Junk",
-      "first_inning": {},
-      "season_era": 4.57
-    },
-    "away_pitcher": {
-      "name": "Bryce Miller",
-      "first_inning": {},
-      "season_era": 2.18
-    },
-    "away_batting_1st": null,
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-09",
     "game_time": "8:45 PM CT",
     "home_abbr": "SF",
     "away_abbr": "COL",
     "home_sp": "Carson Whisenhunt",
     "away_sp": "Ryan Feltner",
-    "nrfi_prob": 35.7,
+    "nrfi_prob": 35.6,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
@@ -63,10 +17,10 @@
     "away_pitcher": {
       "name": "Ryan Feltner",
       "first_inning": {},
-      "season_era": 4.27
+      "season_era": 4.29
     },
-    "away_batting_1st": null,
-    "home_batting_1st": null
+    "away_batting_1st": {},
+    "home_batting_1st": {}
   },
   {
     "date": "2026-07-09",
@@ -75,67 +29,21 @@
     "away_abbr": "LAA",
     "home_sp": "Nathan Eovaldi",
     "away_sp": "Reid Detmers",
-    "nrfi_prob": 34.3,
+    "nrfi_prob": 33.5,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Nathan Eovaldi",
       "first_inning": {},
-      "season_era": 3.98
+      "season_era": 4.04
     },
     "away_pitcher": {
       "name": "Reid Detmers",
       "first_inning": {},
-      "season_era": 4.26
+      "season_era": 4.39
     },
-    "away_batting_1st": null,
-    "home_batting_1st": null
-  },
-  {
-    "date": "2026-07-09",
-    "game_time": "6:10 PM CT",
-    "home_abbr": "CIN",
-    "away_abbr": "PHI",
-    "home_sp": "Brady Singer",
-    "away_sp": "Jes\u00fas Luzardo",
-    "nrfi_prob": 34.1,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Brady Singer",
-      "first_inning": {},
-      "season_era": 4.69
-    },
-    "away_pitcher": {
-      "name": "Jes\u00fas Luzardo",
-      "first_inning": {},
-      "season_era": 3.55
-    },
-    "away_batting_1st": null,
-    "home_batting_1st": null
-  },
-  {
-    "date": "2026-07-09",
-    "game_time": "5:40 PM CT",
-    "home_abbr": "DET",
-    "away_abbr": "ATH",
-    "home_sp": "Framber Valdez",
-    "away_sp": "Jos\u00e9 Suarez",
-    "nrfi_prob": 33.0,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Framber Valdez",
-      "first_inning": {},
-      "season_era": 4.13
-    },
-    "away_pitcher": {
-      "name": "Jos\u00e9 Suarez",
-      "first_inning": {},
-      "season_era": 4.44
-    },
-    "away_batting_1st": null,
-    "home_batting_1st": null
+    "away_batting_1st": {},
+    "home_batting_1st": {}
   },
   {
     "date": "2026-07-09",
@@ -150,14 +58,14 @@
     "home_pitcher": {
       "name": "Griffin Canning",
       "first_inning": {},
-      "season_era": 6.71
+      "season_era": 6.47
     },
     "away_pitcher": {
       "name": "Merrill Kelly",
       "first_inning": {},
-      "season_era": 5.71
+      "season_era": 5.56
     },
-    "away_batting_1st": null,
-    "home_batting_1st": null
+    "away_batting_1st": {},
+    "home_batting_1st": {}
   }
 ]
