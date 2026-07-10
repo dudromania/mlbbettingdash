@@ -6,41 +6,18 @@
     "away_abbr": "COL",
     "home_sp": "Carson Whisenhunt",
     "away_sp": "Ryan Feltner",
-    "nrfi_prob": 35.6,
+    "nrfi_prob": 35.3,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Carson Whisenhunt",
       "first_inning": {},
-      "season_era": 3.6
+      "season_era": 3.38
     },
     "away_pitcher": {
       "name": "Ryan Feltner",
       "first_inning": {},
-      "season_era": 4.29
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-09",
-    "game_time": "7:05 PM CT",
-    "home_abbr": "TEX",
-    "away_abbr": "LAA",
-    "home_sp": "Nathan Eovaldi",
-    "away_sp": "Reid Detmers",
-    "nrfi_prob": 33.5,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Nathan Eovaldi",
-      "first_inning": {},
-      "season_era": 4.04
-    },
-    "away_pitcher": {
-      "name": "Reid Detmers",
-      "first_inning": {},
-      "season_era": 4.39
+      "season_era": 4.55
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -63,7 +40,7 @@
     "away_pitcher": {
       "name": "Merrill Kelly",
       "first_inning": {},
-      "season_era": 5.56
+      "season_era": 5.5
     },
     "away_batting_1st": {},
     "home_batting_1st": {}

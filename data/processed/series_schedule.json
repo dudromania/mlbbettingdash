@@ -1042,7 +1042,7 @@
         "game_id": 822877,
         "date": "2026-07-09",
         "game_time_ct": "7:05 PM CT",
-        "status": "I",
+        "status": "F",
         "home_name": "Texas Rangers",
         "away_name": "Los Angeles Angels",
         "home_abbr": "TEX",
@@ -1053,29 +1053,19 @@
         "home_sp_id": 543135,
         "away_sp": "Reid Detmers",
         "away_sp_id": 672282,
-        "home_score": null,
-        "away_score": null,
+        "home_score": 7,
+        "away_score": 6,
         "venue": "Globe Life Field",
-        "prediction": {
-          "predicted_margin": 1.72,
-          "predicted_total": 6.8,
-          "home_win_prob": 0.606,
-          "away_win_prob": 0.394,
-          "spread_confidence": 26,
-          "margin_p25": -0.87,
-          "margin_p75": 4.31,
-          "margin_std": 3.84,
-          "method": "trained_xgboost"
-        }
+        "prediction": null
       }
     ],
-    "home_wins": 1,
+    "home_wins": 2,
     "away_wins": 1,
     "series_start": "2026-07-07",
     "series_end": "2026-07-09",
     "total_games": 3,
-    "games_played": 2,
-    "games_remaining": 1
+    "games_played": 3,
+    "games_remaining": 0
   },
   {
     "series_id": "HOU@WSH",
