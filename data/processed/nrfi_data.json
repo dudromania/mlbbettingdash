@@ -24,6 +24,29 @@
   },
   {
     "date": "2026-07-11",
+    "game_time": "1:10 PM CT",
+    "home_abbr": "CWS",
+    "away_abbr": "ATH",
+    "home_sp": "Bryan Hudson",
+    "away_sp": "Gage Jump",
+    "nrfi_prob": 43.2,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Bryan Hudson",
+      "first_inning": {},
+      "season_era": 2.25
+    },
+    "away_pitcher": {
+      "name": "Gage Jump",
+      "first_inning": {},
+      "season_era": 3.77
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-11",
     "game_time": "3:10 PM CT",
     "home_abbr": "TB",
     "away_abbr": "SEA",
@@ -64,29 +87,6 @@
       "name": "Peter Lambert",
       "first_inning": {},
       "season_era": 3.26
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-11",
-    "game_time": "3:10 PM CT",
-    "home_abbr": "NYM",
-    "away_abbr": "BOS",
-    "home_sp": "Freddy Peralta",
-    "away_sp": "TBD",
-    "nrfi_prob": 37.8,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Freddy Peralta",
-      "first_inning": {},
-      "season_era": 4.68
-    },
-    "away_pitcher": {
-      "name": "Sonny Gray",
-      "first_inning": {},
-      "season_era": 2.54
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -140,6 +140,29 @@
   {
     "date": "2026-07-11",
     "game_time": "3:10 PM CT",
+    "home_abbr": "NYM",
+    "away_abbr": "BOS",
+    "home_sp": "Freddy Peralta",
+    "away_sp": "TBD",
+    "nrfi_prob": 35.7,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Freddy Peralta",
+      "first_inning": {},
+      "season_era": 4.68
+    },
+    "away_pitcher": {
+      "name": "Payton Tolle",
+      "first_inning": {},
+      "season_era": 3.14
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-11",
+    "game_time": "3:10 PM CT",
     "home_abbr": "MIA",
     "away_abbr": "CLE",
     "home_sp": "Eury P\u00e9rez",
@@ -156,29 +179,6 @@
       "name": "Tanner Bibee",
       "first_inning": {},
       "season_era": 4.06
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-11",
-    "game_time": "1:10 PM CT",
-    "home_abbr": "CWS",
-    "away_abbr": "ATH",
-    "home_sp": "Erick Fedde",
-    "away_sp": "Gage Jump",
-    "nrfi_prob": 34.7,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Erick Fedde",
-      "first_inning": {},
-      "season_era": 4.34
-    },
-    "away_pitcher": {
-      "name": "Gage Jump",
-      "first_inning": {},
-      "season_era": 3.77
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -211,8 +211,8 @@
     "game_time": "11:05 AM CT",
     "home_abbr": "PIT",
     "away_abbr": "MIL",
-    "home_sp": "TBD",
-    "away_sp": "TBD",
+    "home_sp": "Braxton Ashcraft",
+    "away_sp": "Brandon Sproat",
     "nrfi_prob": 33.4,
     "label": "LEAN YRFI",
     "confidence": "low",
