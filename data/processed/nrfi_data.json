@@ -1,6 +1,29 @@
 [
   {
     "date": "2026-07-11",
+    "game_time": "3:05 PM CT",
+    "home_abbr": "WSH",
+    "away_abbr": "NYY",
+    "home_sp": "PJ Poulin",
+    "away_sp": "Cam Schlittler",
+    "nrfi_prob": 48.7,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "PJ Poulin",
+      "first_inning": {},
+      "season_era": 2.83
+    },
+    "away_pitcher": {
+      "name": "Cam Schlittler",
+      "first_inning": {},
+      "season_era": 2.01
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-11",
     "game_time": "5:10 PM CT",
     "home_abbr": "DET",
     "away_abbr": "PHI",
@@ -41,6 +64,29 @@
       "name": "Gage Jump",
       "first_inning": {},
       "season_era": 3.77
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-11",
+    "game_time": "3:10 PM CT",
+    "home_abbr": "NYM",
+    "away_abbr": "BOS",
+    "home_sp": "Freddy Peralta",
+    "away_sp": "Eduardo Rivera",
+    "nrfi_prob": 43.0,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Freddy Peralta",
+      "first_inning": {},
+      "season_era": 4.68
+    },
+    "away_pitcher": {
+      "name": "Eduardo Rivera",
+      "first_inning": {},
+      "season_era": 0.0
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -110,52 +156,6 @@
       "name": "Brandon Pfaadt",
       "first_inning": {},
       "season_era": 4.84
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-11",
-    "game_time": "3:05 PM CT",
-    "home_abbr": "WSH",
-    "away_abbr": "NYY",
-    "home_sp": "Miles Mikolas",
-    "away_sp": "Cam Schlittler",
-    "nrfi_prob": 37.0,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Miles Mikolas",
-      "first_inning": {},
-      "season_era": 5.78
-    },
-    "away_pitcher": {
-      "name": "Cam Schlittler",
-      "first_inning": {},
-      "season_era": 2.01
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-11",
-    "game_time": "3:10 PM CT",
-    "home_abbr": "NYM",
-    "away_abbr": "BOS",
-    "home_sp": "Freddy Peralta",
-    "away_sp": "TBD",
-    "nrfi_prob": 35.7,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Freddy Peralta",
-      "first_inning": {},
-      "season_era": 4.68
-    },
-    "away_pitcher": {
-      "name": "Payton Tolle",
-      "first_inning": {},
-      "season_era": 3.14
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
