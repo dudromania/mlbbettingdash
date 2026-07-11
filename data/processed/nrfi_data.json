@@ -52,18 +52,18 @@
     "away_abbr": "ATH",
     "home_sp": "Bryan Hudson",
     "away_sp": "Gage Jump",
-    "nrfi_prob": 43.2,
+    "nrfi_prob": 45.3,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Bryan Hudson",
       "first_inning": {},
-      "season_era": 2.25
+      "season_era": 2.2
     },
     "away_pitcher": {
       "name": "Gage Jump",
       "first_inning": {},
-      "season_era": 3.77
+      "season_era": 3.38
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -162,6 +162,29 @@
   },
   {
     "date": "2026-07-11",
+    "game_time": "3:05 PM CT",
+    "home_abbr": "PIT",
+    "away_abbr": "MIL",
+    "home_sp": "Bubba Chandler",
+    "away_sp": "Shane Drohan",
+    "nrfi_prob": 35.7,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Bubba Chandler",
+      "first_inning": {},
+      "season_era": 4.82
+    },
+    "away_pitcher": {
+      "name": "Shane Drohan",
+      "first_inning": {},
+      "season_era": 2.97
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-11",
     "game_time": "3:10 PM CT",
     "home_abbr": "MIA",
     "away_abbr": "CLE",
@@ -190,18 +213,18 @@
     "away_abbr": "LAA",
     "home_sp": "Joe Ryan",
     "away_sp": "Ryan Johnson",
-    "nrfi_prob": 34.2,
+    "nrfi_prob": 33.9,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Joe Ryan",
       "first_inning": {},
-      "season_era": 2.85
+      "season_era": 2.93
     },
     "away_pitcher": {
       "name": "Ryan Johnson",
       "first_inning": {},
-      "season_era": 6.99
+      "season_era": 7.42
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -271,29 +294,6 @@
       "name": "Reynaldo L\u00f3pez",
       "first_inning": {},
       "season_era": 3.18
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-11",
-    "game_time": "11:05 AM CT",
-    "home_abbr": "PIT",
-    "away_abbr": "MIL",
-    "home_sp": "Braxton Ashcraft",
-    "away_sp": "Brandon Sproat",
-    "nrfi_prob": 32.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Braxton Ashcraft",
-      "first_inning": {},
-      "season_era": 3.49
-    },
-    "away_pitcher": {
-      "name": "Brandon Sproat",
-      "first_inning": {},
-      "season_era": 5.16
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
