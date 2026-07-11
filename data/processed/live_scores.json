@@ -5,10 +5,10 @@
     {
       "home_abbr": "PIT",
       "away_abbr": "MIL",
-      "home_score": "0",
-      "away_score": "0",
+      "home_score": "3",
+      "away_score": "6",
       "state": "in",
-      "detail": "Top 1st",
+      "detail": "Top 7th",
       "is_live": true,
       "is_final": false
     },
@@ -17,9 +17,9 @@
       "away_abbr": "LAA",
       "home_score": "0",
       "away_score": "0",
-      "state": "pre",
-      "detail": "7/11 - 2:10 PM EDT",
-      "is_live": false,
+      "state": "in",
+      "detail": "Delayed, Top 1st",
+      "is_live": true,
       "is_final": false
     },
     {
@@ -27,9 +27,9 @@
       "away_abbr": "ATH",
       "home_score": "0",
       "away_score": "0",
-      "state": "pre",
-      "detail": "7/11 - 2:10 PM EDT",
-      "is_live": false,
+      "state": "in",
+      "detail": "Mid 1st",
+      "is_live": true,
       "is_final": false
     },
     {

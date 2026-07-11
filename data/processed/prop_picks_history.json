@@ -1,6 +1,6 @@
 [
   {
-    "id": 1318,
+    "id": 1328,
     "game_date": "2026-07-11",
     "game_pick_id": null,
     "player_name": "Tyler Mahle",
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-11 13:41:51",
+    "created_at": "2026-07-11 16:11:40",
     "graded_at": null
   },
   {
-    "id": 1313,
+    "id": 1323,
     "game_date": "2026-07-11",
     "game_pick_id": null,
     "player_name": "Reynaldo L\u00f3pez",
@@ -50,11 +50,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-11 13:41:51",
+    "created_at": "2026-07-11 16:11:40",
     "graded_at": null
   },
   {
-    "id": 1317,
+    "id": 1327,
     "game_date": "2026-07-11",
     "game_pick_id": null,
     "player_name": "Noah Cameron",
@@ -77,11 +77,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-11 13:41:51",
+    "created_at": "2026-07-11 16:11:40",
     "graded_at": null
   },
   {
-    "id": 1312,
+    "id": 1322,
     "game_date": "2026-07-11",
     "game_pick_id": null,
     "player_name": "Nick Lodolo",
@@ -104,11 +104,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-11 13:41:51",
+    "created_at": "2026-07-11 16:11:40",
     "graded_at": null
   },
   {
-    "id": 1309,
+    "id": 1319,
     "game_date": "2026-07-11",
     "game_pick_id": null,
     "player_name": "Joe Ryan",
@@ -131,11 +131,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-11 13:41:51",
+    "created_at": "2026-07-11 16:11:40",
     "graded_at": null
   },
   {
-    "id": 1316,
+    "id": 1326,
     "game_date": "2026-07-11",
     "game_pick_id": null,
     "player_name": "Griffin Jax",
@@ -158,11 +158,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-11 13:41:51",
+    "created_at": "2026-07-11 16:11:40",
     "graded_at": null
   },
   {
-    "id": 1315,
+    "id": 1325,
     "game_date": "2026-07-11",
     "game_pick_id": null,
     "player_name": "Gage Jump",
@@ -185,11 +185,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-11 13:41:51",
+    "created_at": "2026-07-11 16:11:40",
     "graded_at": null
   },
   {
-    "id": 1311,
+    "id": 1321,
     "game_date": "2026-07-11",
     "game_pick_id": null,
     "player_name": "Freddy Peralta",
@@ -212,11 +212,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-11 13:41:51",
+    "created_at": "2026-07-11 16:11:40",
     "graded_at": null
   },
   {
-    "id": 1314,
+    "id": 1324,
     "game_date": "2026-07-11",
     "game_pick_id": null,
     "player_name": "Eury P\u00e9rez",
@@ -239,11 +239,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-11 13:41:51",
+    "created_at": "2026-07-11 16:11:40",
     "graded_at": null
   },
   {
-    "id": 1310,
+    "id": 1320,
     "game_date": "2026-07-11",
     "game_pick_id": null,
     "player_name": "Cristopher S\u00e1nchez",
@@ -266,7 +266,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-11 13:41:51",
+    "created_at": "2026-07-11 16:11:40",
     "graded_at": null
   },
   {

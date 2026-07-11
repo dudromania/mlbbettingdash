@@ -208,29 +208,6 @@
   },
   {
     "date": "2026-07-11",
-    "game_time": "11:05 AM CT",
-    "home_abbr": "PIT",
-    "away_abbr": "MIL",
-    "home_sp": "Braxton Ashcraft",
-    "away_sp": "Brandon Sproat",
-    "nrfi_prob": 33.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Braxton Ashcraft",
-      "first_inning": {},
-      "season_era": 3.24
-    },
-    "away_pitcher": {
-      "name": "Brandon Sproat",
-      "first_inning": {},
-      "season_era": 5.13
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-11",
     "game_time": "7:40 PM CT",
     "home_abbr": "SD",
     "away_abbr": "TOR",
@@ -294,6 +271,29 @@
       "name": "Reynaldo L\u00f3pez",
       "first_inning": {},
       "season_era": 3.18
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-11",
+    "game_time": "11:05 AM CT",
+    "home_abbr": "PIT",
+    "away_abbr": "MIL",
+    "home_sp": "Braxton Ashcraft",
+    "away_sp": "Brandon Sproat",
+    "nrfi_prob": 32.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Braxton Ashcraft",
+      "first_inning": {},
+      "season_era": 3.49
+    },
+    "away_pitcher": {
+      "name": "Brandon Sproat",
+      "first_inning": {},
+      "season_era": 5.16
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
