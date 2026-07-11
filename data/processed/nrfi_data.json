@@ -52,7 +52,7 @@
     "away_abbr": "ATH",
     "home_sp": "Bryan Hudson",
     "away_sp": "Gage Jump",
-    "nrfi_prob": 45.3,
+    "nrfi_prob": 44.7,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
@@ -63,7 +63,7 @@
     "away_pitcher": {
       "name": "Gage Jump",
       "first_inning": {},
-      "season_era": 3.38
+      "season_era": 3.51
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -213,18 +213,18 @@
     "away_abbr": "LAA",
     "home_sp": "Joe Ryan",
     "away_sp": "Ryan Johnson",
-    "nrfi_prob": 33.9,
+    "nrfi_prob": 34.1,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Joe Ryan",
       "first_inning": {},
-      "season_era": 2.93
+      "season_era": 2.87
     },
     "away_pitcher": {
       "name": "Ryan Johnson",
       "first_inning": {},
-      "season_era": 7.42
+      "season_era": 6.75
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
