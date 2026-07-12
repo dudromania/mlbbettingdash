@@ -70,6 +70,29 @@
   },
   {
     "date": "2026-07-12",
+    "game_time": "1:15 PM CT",
+    "home_abbr": "STL",
+    "away_abbr": "ATL",
+    "home_sp": "Dustin May",
+    "away_sp": "Danny Young",
+    "nrfi_prob": 37.9,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Dustin May",
+      "first_inning": {},
+      "season_era": 4.55
+    },
+    "away_pitcher": {
+      "name": "Danny Young",
+      "first_inning": {},
+      "season_era": 2.7
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-12",
     "game_time": "12:40 PM CT",
     "home_abbr": "TB",
     "away_abbr": "SEA",
@@ -248,29 +271,6 @@
       "name": "Seth Lugo",
       "first_inning": {},
       "season_era": 4.56
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-12",
-    "game_time": "1:15 PM CT",
-    "home_abbr": "STL",
-    "away_abbr": "ATL",
-    "home_sp": "Dustin May",
-    "away_sp": "JR Ritchie",
-    "nrfi_prob": 30.8,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Dustin May",
-      "first_inning": {},
-      "season_era": 4.55
-    },
-    "away_pitcher": {
-      "name": "JR Ritchie",
-      "first_inning": {},
-      "season_era": 4.6
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
