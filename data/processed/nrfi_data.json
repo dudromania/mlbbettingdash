@@ -6,41 +6,18 @@
     "away_abbr": "PHI",
     "home_sp": "Tarik Skubal",
     "away_sp": "Zack Wheeler",
-    "nrfi_prob": 46.4,
+    "nrfi_prob": 47.0,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Tarik Skubal",
       "first_inning": {},
-      "season_era": 3.06
+      "season_era": 2.97
     },
     "away_pitcher": {
       "name": "Zack Wheeler",
       "first_inning": {},
-      "season_era": 2.28
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-12",
-    "game_time": "12:40 PM CT",
-    "home_abbr": "MIA",
-    "away_abbr": "CLE",
-    "home_sp": "Tyler Phillips",
-    "away_sp": "Joey Cantillo",
-    "nrfi_prob": 39.5,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Tyler Phillips",
-      "first_inning": {},
-      "season_era": 3.28
-    },
-    "away_pitcher": {
-      "name": "Joey Cantillo",
-      "first_inning": {},
-      "season_era": 3.66
+      "season_era": 2.25
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -70,6 +47,75 @@
   },
   {
     "date": "2026-07-12",
+    "game_time": "12:40 PM CT",
+    "home_abbr": "MIA",
+    "away_abbr": "CLE",
+    "home_sp": "Tyler Phillips",
+    "away_sp": "Joey Cantillo",
+    "nrfi_prob": 38.9,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Tyler Phillips",
+      "first_inning": {},
+      "season_era": 3.48
+    },
+    "away_pitcher": {
+      "name": "Joey Cantillo",
+      "first_inning": {},
+      "season_era": 3.62
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-12",
+    "game_time": "12:40 PM CT",
+    "home_abbr": "NYM",
+    "away_abbr": "BOS",
+    "home_sp": "Zach Thornton",
+    "away_sp": "Payton Tolle",
+    "nrfi_prob": 38.5,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Zach Thornton",
+      "first_inning": {},
+      "season_era": 3.97
+    },
+    "away_pitcher": {
+      "name": "Payton Tolle",
+      "first_inning": {},
+      "season_era": 3.21
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-12",
+    "game_time": "12:40 PM CT",
+    "home_abbr": "TB",
+    "away_abbr": "SEA",
+    "home_sp": "Ian Seymour",
+    "away_sp": "Emerson Hancock",
+    "nrfi_prob": 38.2,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Ian Seymour",
+      "first_inning": {},
+      "season_era": 4.04
+    },
+    "away_pitcher": {
+      "name": "Emerson Hancock",
+      "first_inning": {},
+      "season_era": 3.19
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-12",
     "game_time": "1:15 PM CT",
     "home_abbr": "STL",
     "away_abbr": "ATL",
@@ -93,69 +139,23 @@
   },
   {
     "date": "2026-07-12",
-    "game_time": "12:40 PM CT",
-    "home_abbr": "TB",
-    "away_abbr": "SEA",
-    "home_sp": "Ian Seymour",
-    "away_sp": "Emerson Hancock",
-    "nrfi_prob": 37.8,
+    "game_time": "12:35 PM CT",
+    "home_abbr": "WSH",
+    "away_abbr": "NYY",
+    "home_sp": "Cade Cavalli",
+    "away_sp": "Will Warren",
+    "nrfi_prob": 35.3,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Ian Seymour",
+      "name": "Cade Cavalli",
       "first_inning": {},
-      "season_era": 4.11
+      "season_era": 3.8
     },
     "away_pitcher": {
-      "name": "Emerson Hancock",
+      "name": "Will Warren",
       "first_inning": {},
-      "season_era": 3.23
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-12",
-    "game_time": "12:40 PM CT",
-    "home_abbr": "NYM",
-    "away_abbr": "BOS",
-    "home_sp": "Zach Thornton",
-    "away_sp": "Payton Tolle",
-    "nrfi_prob": 37.1,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Zach Thornton",
-      "first_inning": {},
-      "season_era": 4.35
-    },
-    "away_pitcher": {
-      "name": "Payton Tolle",
-      "first_inning": {},
-      "season_era": 3.14
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-12",
-    "game_time": "11:15 AM CT",
-    "home_abbr": "PIT",
-    "away_abbr": "MIL",
-    "home_sp": "Paul Skenes",
-    "away_sp": "Robert Gasser",
-    "nrfi_prob": 36.2,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Paul Skenes",
-      "first_inning": {},
-      "season_era": 3.58
-    },
-    "away_pitcher": {
-      "name": "Robert Gasser",
-      "first_inning": {},
-      "season_era": 4.15
+      "season_era": 4.17
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -185,46 +185,23 @@
   },
   {
     "date": "2026-07-12",
-    "game_time": "12:35 PM CT",
-    "home_abbr": "WSH",
-    "away_abbr": "NYY",
-    "home_sp": "Cade Cavalli",
-    "away_sp": "Will Warren",
-    "nrfi_prob": 35.1,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Cade Cavalli",
-      "first_inning": {},
-      "season_era": 3.88
-    },
-    "away_pitcher": {
-      "name": "Will Warren",
-      "first_inning": {},
-      "season_era": 4.15
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-12",
     "game_time": "12:40 PM CT",
     "home_abbr": "CIN",
     "away_abbr": "CHC",
     "home_sp": "Andrew Abbott",
     "away_sp": "Matthew Boyd",
-    "nrfi_prob": 34.3,
+    "nrfi_prob": 33.9,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Andrew Abbott",
       "first_inning": {},
-      "season_era": 3.92
+      "season_era": 4.06
     },
     "away_pitcher": {
       "name": "Matthew Boyd",
       "first_inning": {},
-      "season_era": 4.31
+      "season_era": 4.28
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -259,18 +236,41 @@
     "away_abbr": "KC",
     "home_sp": "Shane Baz",
     "away_sp": "Seth Lugo",
-    "nrfi_prob": 32.2,
+    "nrfi_prob": 32.5,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Shane Baz",
       "first_inning": {},
-      "season_era": 4.21
+      "season_era": 4.17
     },
     "away_pitcher": {
       "name": "Seth Lugo",
       "first_inning": {},
-      "season_era": 4.56
+      "season_era": 4.53
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-12",
+    "game_time": "11:15 AM CT",
+    "home_abbr": "PIT",
+    "away_abbr": "MIL",
+    "home_sp": "Paul Skenes",
+    "away_sp": "Robert Gasser",
+    "nrfi_prob": 31.6,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Paul Skenes",
+      "first_inning": {},
+      "season_era": 3.61
+    },
+    "away_pitcher": {
+      "name": "Robert Gasser",
+      "first_inning": {},
+      "season_era": 5.24
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
