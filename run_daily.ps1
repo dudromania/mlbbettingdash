@@ -1,4 +1,4 @@
-﻿# run_daily.ps1 - FIXED VERSION
+# run_daily.ps1 - FIXED VERSION
 $MODEL = "C:\Users\austi\OneDrive\Desktop\mlb_complete_package\mlb_betting_model"
 $DASH  = "C:\Users\austi\OneDrive\Desktop\mlb_complete_package\mlb_dashboard"
 $DATE  = Get-Date -Format "yyyy-MM-dd"
@@ -10,8 +10,15 @@ Write-Host "  MLB Edge - $DATE" -ForegroundColor Cyan
 Write-Host "============================================" -ForegroundColor Cyan
 Write-Host ""
 
-Write-Host "[1/3] Running model..." -ForegroundColor Yellow
+Write-Host "[1/3] Refreshing 2026 team stats (offense/pitching)..." -ForegroundColor Yellow
 Set-Location $MODEL
+$yr = (Get-Date).Year
+python mlbapi_team_stats.py --season $yr
+if ($LASTEXITCODE -ne 0) {
+    Write-Host "WARNING: team stats refresh failed - model will use last cached file" -ForegroundColor DarkYellow
+}
+
+Write-Host "[1/3] Running model..." -ForegroundColor Yellow
 python main.py --mode today
 
 if ($LASTEXITCODE -ne 0) {
@@ -28,6 +35,9 @@ Copy-Item "$MODEL\data\processed\series_schedule.json" "$DASH\data\processed\ser
 Copy-Item "$MODEL\data\processed\pitcher_cards.json"   "$DASH\data\processed\pitcher_cards.json"   -Force
 Copy-Item "$MODEL\data\processed\picks_history.json"   "$DASH\data\processed\picks_history.json"   -Force
 Copy-Item "$MODEL\data\processed\nrfi_data.json"       "$DASH\data\processed\nrfi_data.json"       -Force
+Copy-Item "$MODEL\data\processed\prop_picks_history.json" "$DASH\data\processed\prop_picks_history.json" -Force
+Copy-Item "$MODEL\data\processed\strikeout_props.json"   "$DASH\data\processed\strikeout_props.json"   -Force -ErrorAction SilentlyContinue
+Copy-Item "$MODEL\data\processed\bullpen_report.json"    "$DASH\data\processed\bullpen_report.json"    -Force -ErrorAction SilentlyContinue
 
 Write-Host "Files copied." -ForegroundColor Green
 Write-Host ""
