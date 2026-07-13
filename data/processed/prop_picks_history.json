@@ -20,11 +20,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 10.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-07-12 20:06:48",
-    "graded_at": null
+    "graded_at": "2026-07-13 12:31:26"
   },
   {
     "id": 1382,
@@ -47,11 +47,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 1.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-07-12 13:40:36",
-    "graded_at": null
+    "graded_at": "2026-07-13 12:31:26"
   },
   {
     "id": 1423,
@@ -74,11 +74,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 5.0,
+    "result": "W",
+    "pnl": 88.49557522123895,
     "created_at": "2026-07-12 20:06:48",
-    "graded_at": null
+    "graded_at": "2026-07-13 12:31:26"
   },
   {
     "id": 1427,
@@ -101,11 +101,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 6.0,
+    "result": "W",
+    "pnl": 105.0,
     "created_at": "2026-07-12 20:06:48",
-    "graded_at": null
+    "graded_at": "2026-07-13 12:31:26"
   },
   {
     "id": 1419,
@@ -128,11 +128,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 9.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-07-12 18:07:13",
-    "graded_at": null
+    "graded_at": "2026-07-13 12:31:26"
   },
   {
     "id": 1426,
@@ -155,11 +155,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 6.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-07-12 20:06:48",
-    "graded_at": null
+    "graded_at": "2026-07-13 12:31:26"
   },
   {
     "id": 1416,
@@ -182,11 +182,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 7.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-07-12 18:07:13",
-    "graded_at": null
+    "graded_at": "2026-07-13 12:31:26"
   },
   {
     "id": 1380,
@@ -209,11 +209,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 0.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-07-12 13:40:36",
-    "graded_at": null
+    "graded_at": "2026-07-13 12:31:26"
   },
   {
     "id": 1425,
@@ -236,11 +236,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 3.0,
+    "result": "W",
+    "pnl": 110.0,
     "created_at": "2026-07-12 20:06:48",
-    "graded_at": null
+    "graded_at": "2026-07-13 12:31:26"
   },
   {
     "id": 1422,
@@ -263,11 +263,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 9.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-07-12 18:07:13",
-    "graded_at": null
+    "graded_at": "2026-07-13 12:31:26"
   },
   {
     "id": 1378,
@@ -290,11 +290,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 2.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-07-12 13:40:36",
-    "graded_at": null
+    "graded_at": "2026-07-13 12:31:26"
   },
   {
     "id": 1428,
@@ -317,11 +317,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 3.0,
+    "result": "W",
+    "pnl": 126.0,
     "created_at": "2026-07-12 20:06:48",
-    "graded_at": null
+    "graded_at": "2026-07-13 12:31:26"
   },
   {
     "id": 1384,
@@ -344,11 +344,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 4.0,
+    "result": "W",
+    "pnl": 56.497175141242934,
     "created_at": "2026-07-12 13:40:36",
-    "graded_at": null
+    "graded_at": "2026-07-13 12:31:26"
   },
   {
     "id": 1381,
@@ -371,11 +371,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 2.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-07-12 13:40:36",
-    "graded_at": null
+    "graded_at": "2026-07-13 12:31:26"
   },
   {
     "id": 1388,
@@ -398,11 +398,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 4.0,
+    "result": "W",
+    "pnl": 113.0,
     "created_at": "2026-07-12 13:40:36",
-    "graded_at": null
+    "graded_at": "2026-07-13 12:31:26"
   },
   {
     "id": 1361,
