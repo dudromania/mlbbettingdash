@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -1599,7 +1599,7 @@ function showTab(tab) {
   document.getElementById('status-page').textContent = LABELS[tab]||tab;
   closeDrawer();
   if (tab==='standings') renderStandings();
-  if (tab==='results') renderResults();
+  if (tab==='results') { renderResults(); renderKPropResults(); }
   if (tab==='nrfi') renderNRFI();
   if (tab==='f5')      renderF5();
   if (tab==='kprops')  renderKProps();
