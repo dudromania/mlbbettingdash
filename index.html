@@ -37,7 +37,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ HEADER ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- HEADER -- */
 header {
   background: var(--bg);
   border-bottom: 1px solid var(--b1);
@@ -69,7 +69,7 @@ header {
   color: var(--t3);
 }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ HAMBURGER ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- HAMBURGER -- */
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -92,7 +92,7 @@ header {
 .hamburger.open span:nth-child(2) { opacity: 0; }
 .hamburger.open span:nth-child(3) { transform: translateY(-5px) rotate(-45deg); }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ DRAWER ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- DRAWER -- */
 .drawer-overlay {
   display: none;
   position: fixed;
@@ -175,7 +175,7 @@ header {
 .nav-direct:hover { color: var(--t1); background: var(--s2); }
 .nav-direct.active { color: var(--t1); border-left-color: var(--hi); }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ STATUS BAR ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- STATUS BAR -- */
 .statusbar {
   padding: 4px 16px;
   font-family: var(--mono);
@@ -190,13 +190,13 @@ header {
 .statusbar span { white-space: nowrap; }
 .statusbar .active-page { color: var(--t2); }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ LAYOUT ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- LAYOUT -- */
 main { padding: 14px 16px; max-width: 1400px; margin: 0 auto; }
 
 .tab-panel { display: none; }
 .tab-panel.active { display: block; }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ SECTION LABEL ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- SECTION LABEL -- */
 .sec {
   font-family: var(--mono);
   font-size: 10px;
@@ -209,7 +209,7 @@ main { padding: 14px 16px; max-width: 1400px; margin: 0 auto; }
 }
 .sec:first-child { margin-top: 0; }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ STAT ROW ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- STAT ROW -- */
 .stat-row {
   display: flex;
   gap: 1px;
@@ -235,7 +235,7 @@ main { padding: 14px 16px; max-width: 1400px; margin: 0 auto; }
   text-transform: uppercase;
 }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ TABLE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â PRIMARY OUTPUT ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- TABLE - PRIMARY OUTPUT -- */
 .tbl-wrap { overflow-x: auto; border: 1px solid var(--b1); margin-bottom: 14px; }
 table { width: 100%; border-collapse: collapse; min-width: 600px; }
 thead th {
@@ -271,7 +271,7 @@ tbody td {
 .hi  { color: var(--hi); }
 .warn { color: var(--warn); }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ EDGE TAGS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- EDGE TAGS -- */
 .tag {
   display: inline-block;
   font-family: var(--mono);
@@ -286,7 +286,7 @@ tbody td {
 .strong-col { color: #4db380; }
 .lean-col   { color: #bbaa44; }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ BEST BETS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â COMPACT ROWS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- BEST BETS - COMPACT ROWS -- */
 .bet-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -303,7 +303,7 @@ tbody td {
 .bet-card.edge-strong { border-left-color: #4db380; }
 .bet-card.edge-lean   { border-left-color: #bbaa44; }
 
-/* top strip: matchup left, bet call right ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â single compact line */
+/* top strip: matchup left, bet call right - single compact line */
 .bc-top {
   display: flex;
   justify-content: space-between;
@@ -386,7 +386,7 @@ tbody td {
 
 @media(max-width:500px) { .bet-list { grid-template-columns: 1fr; } }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ GAME ROWS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- GAME ROWS -- */
 .game-list { border: 1px solid var(--b1); }
 .game-row {
   display: grid;
@@ -422,7 +422,7 @@ tbody td {
 .prob-home { background: #449966; }
 .prob-labels { display: flex; justify-content: space-between; font-family: var(--mono); font-size: 10px; color: var(--t3); margin-top: 2px; }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ GAME EXPAND ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- GAME EXPAND -- */
 .game-block { border-bottom: 1px solid #0f0f0f; }
 .game-block:last-child { border-bottom: none; }
 
@@ -492,7 +492,7 @@ tbody td {
   .game-expand { grid-template-columns: 1fr; }
 }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ PITCHER DATE DROPDOWN ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- PITCHER DATE DROPDOWN -- */
 .pitcher-date-wrap { margin-bottom: 10px; display: flex; align-items: center; gap: 10px; }
 .pitcher-date-select {
   background: var(--s2);
@@ -513,7 +513,7 @@ tbody td {
 .pitcher-date-select:hover { border-color: var(--t3); }
 .pitcher-date-count { font-family: var(--mono); font-size: 10px; color: var(--t3); }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ PITCHER LAYOUT ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- PITCHER LAYOUT -- */
 .pitcher-list { display: flex; flex-direction: column; gap: 1px; background: var(--b1); }
 .pitcher-block { background: var(--s1); }
 
@@ -596,7 +596,7 @@ tbody td {
   .pitcher-col-headers { grid-template-columns: 1fr 52px 70px; }
 }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ LIVE SCORES ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- LIVE SCORES -- */
 .live-bar {
   background: var(--s1);
   border-bottom: 1px solid var(--b1);
@@ -686,7 +686,7 @@ tbody td {
 }
 #live-updated { font-size: 9px; color: var(--t3); padding: 4px 8px; display: inline-flex; align-items: center; background: var(--s1); }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ STANDINGS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- STANDINGS -- */
 .standings-wrap {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -711,7 +711,7 @@ tbody td {
 .std-tbl tr:hover td { background: var(--s2); }
 @media(max-width:400px){ .standings-wrap { grid-template-columns: 1fr; } }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ TRENDS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- TRENDS -- */
 .trends-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 @media(max-width:700px){ .trends-cols { grid-template-columns: 1fr; } }
 
@@ -734,7 +734,7 @@ tbody td {
 .trend-val  { font-family: var(--mono); font-size: 14px; text-align: right; }
 .trend-val-sub { font-size: 9px; color: var(--t3); text-align: right; letter-spacing: .3px; }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ SERIES ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- SERIES -- */
 .series-wrap {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
@@ -759,7 +759,7 @@ tbody td {
 .sg-score { font-weight: 500; }
 .sg-date  { font-size: 9px; color: var(--t3); margin-top: 2px; }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ NRFI MATRIX ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- NRFI MATRIX -- */
 .f5-card {
   background: var(--s1); border: 1px solid var(--b1);
   border-left: 3px solid transparent; margin-bottom: 12px; overflow: hidden;
@@ -960,7 +960,7 @@ tbody td {
   .nrfi-body { grid-template-columns: 1fr; }
 }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ RESULTS CALENDAR ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- RESULTS CALENDAR -- */
 .cal-wrap {
   margin-bottom: 16px;
 }
@@ -1045,7 +1045,7 @@ tbody td {
   border-bottom: 1px solid var(--b1);
 }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ BATTER PROPS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- BATTER PROPS -- */
 .prop-list { border: 1px solid var(--b1); }
 .prop-row {
   display: grid;
@@ -1066,7 +1066,7 @@ tbody td {
   .prop-row .hide-sm { display: none; }
 }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ FILTERS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â MINIMAL ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- FILTERS - MINIMAL -- */
 .filters { display: flex; gap: 1px; background: var(--b1); margin-bottom: 10px; width: fit-content; }
 .fb {
   padding: 5px 10px;
@@ -1082,24 +1082,24 @@ tbody td {
 .fb:hover { color: var(--t2); background: var(--s2); }
 .fb.active { background: var(--b2); color: var(--t1); }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ EMPTY ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- EMPTY -- */
 .empty { padding: 40px; text-align: center; color: var(--t3); font-family: var(--mono); font-size: 11px; }
 .spinner { width: 20px; height: 20px; border: 1px solid var(--b2); border-top-color: var(--t3); animation: spin .8s linear infinite; margin: 0 auto 8px; }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ MOBILE ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+/* -- MOBILE -- */
 @media(max-width:500px){
   main { padding: 10px 12px; }
   .stat-row { grid-template-columns: repeat(2,1fr); }
   .trends-cols { grid-template-columns: 1fr; }
 }
 
-/* ÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚Â
-   MOBILE OPTIMISATION  (ÃƒÂ¢Ã¢â‚¬Â°Ã‚Â¤ 480px)
-   ÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚ÂÃƒÂ¢Ã¢â‚¬Â¢Ã‚Â */
+/* =======================================================
+   MOBILE OPTIMISATION  (<= 480px)
+   ======================================================= */
 @media (max-width: 480px) {
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Layout ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Layout -- */
   body { font-size: 11px; }
   .shell { grid-template-columns: 1fr; grid-template-rows: auto auto 1fr; }
   .sidebar {
@@ -1111,7 +1111,7 @@ tbody td {
   .content { grid-column: 1; grid-row: 3; padding: 8px; }
   .sidebar-logo { display: none; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Nav pills on mobile ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Nav pills on mobile -- */
   .nav-item {
     padding: 5px 10px; font-size: 10px;
     border-left: none; border-bottom: 2px solid transparent;
@@ -1120,17 +1120,17 @@ tbody td {
   .nav-item.active { border-bottom-color: var(--hi); border-left-color: transparent; }
   .nav-section { display: none; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Header ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Header -- */
   .topbar { padding: 6px 8px; }
   #header-date { font-size: 10px; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Stat cells ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Stat cells -- */
   .stat-row { gap: 1px; }
   .stat-cell { padding: 7px 8px; }
   .stat-cell .v { font-size: 16px; }
   .stat-cell .l { font-size: 8px; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Game rows (collapsed) ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Game rows (collapsed) -- */
   .game-row {
     grid-template-columns: 54px 1fr 70px;
     padding: 8px 8px;
@@ -1140,7 +1140,7 @@ tbody td {
   .matchup-cell .teams { font-size: 12px; font-weight: 600; }
   .matchup-cell .pitchers { font-size: 9px; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Game expand (mobile: single column) ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Game expand (mobile: single column) -- */
   .game-expand { grid-template-columns: 1fr !important; gap: 0; }
   .ge-col { padding: 8px; border-bottom: 1px solid var(--b1); }
   .ge-col:last-child { border-bottom: none; }
@@ -1154,11 +1154,11 @@ tbody td {
   .ge-sp-row { font-size: 9px; padding: 1px 0; }
   .ge-sp-row .val { font-size: 10px; }
 
-  /* Prediction column ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â 2-col grid */
+  /* Prediction column - 2-col grid */
   .ge-prediction { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
   .ge-prediction .ge-sp-row:first-child { grid-column: 1 / -1; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Best bet cards ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Best bet cards -- */
   .bet-card { padding: 10px; }
   .bc-head { font-size: 11px; }
   .bc-matchup { font-size: 13px; }
@@ -1170,53 +1170,53 @@ tbody td {
   .bc-stat .bv { font-size: 13px; }
   .bc-stat .bl { font-size: 8px; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Predictions table ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Predictions table -- */
   .tbl-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; }
   table { min-width: 480px; }
   th, td { padding: 6px 6px; font-size: 9px; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Pitcher cards ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Pitcher cards -- */
   .pitcher-block { padding: 8px; }
   .pitcher-header-row { grid-template-columns: 1fr 52px 70px !important; }
   .pitcher-col-headers { grid-template-columns: 1fr 52px 70px !important; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ K props table ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- K props table -- */
   .kprop-row { font-size: 10px; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Calendar ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Calendar -- */
   .cal-grid { gap: 1px; }
   .cal-day { min-height: 36px; font-size: 10px; padding: 4px 2px; }
   .cal-record { font-size: 8px; }
   .cal-month-label { font-size: 11px; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Filters / tabs ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Filters / tabs -- */
   .filters { gap: 3px; flex-wrap: wrap; }
   .fb { padding: 4px 8px; font-size: 9px; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Section headers ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Section headers -- */
   .sec { font-size: 9px; padding: 5px 0; margin-bottom: 6px; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Live scorebug ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Live scorebug -- */
   .live-game { min-width: 80px; padding: 4px 6px; }
   .lg-teams { font-size: 10px; }
   .lg-score { font-size: 11px; }
   .lg-status { font-size: 8px; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ NRFI cards ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- NRFI cards -- */
   .nrfi-grid { grid-template-columns: 1fr 1fr !important; gap: 4px; }
   .nrfi-card { padding: 8px; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Standings ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Standings -- */
   .standings-wrap { gap: 8px; }
   .standing-row { font-size: 10px; padding: 4px 6px; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Trends ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Trends -- */
   .trends-cols { grid-template-columns: 1fr !important; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Bullpen table ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Bullpen table -- */
   .bullpen-row { font-size: 10px; }
 
-  /* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Model performance calendar ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
+  /* -- Model performance calendar -- */
   .cal-day-detail { margin-top: 8px; }
   .cal-detail-header { font-size: 10px; padding: 5px 8px; }
 }
@@ -1255,7 +1255,7 @@ tbody td {
   <div class="drawer-section">
     <div class="drawer-label">Model Output</div>
     <div class="nav-group-header" data-group="model-output">
-      Predictions <span class="arr">ÃƒÂ¢Ã¢â€šÂ¬Ã‚Âº</span>
+      Predictions <span class="arr">></span>
     </div>
     <div class="nav-sub" id="group-model-output">
       <div class="nav-item" data-tab="model">Full Game</div>
@@ -1267,7 +1267,7 @@ tbody td {
   <div class="drawer-section">
     <div class="drawer-label">Today</div>
     <div class="nav-group-header" data-group="today">
-      Schedule &amp; League <span class="arr">ÃƒÂ¢Ã¢â€šÂ¬Ã‚Âº</span>
+      Schedule &amp; League <span class="arr">></span>
     </div>
     <div class="nav-sub" id="group-today">
       <div class="nav-item" data-tab="games">Today's Games</div>
@@ -1277,7 +1277,7 @@ tbody td {
   <div class="drawer-section">
     <div class="drawer-label">Stats</div>
     <div class="nav-group-header" data-group="stats">
-      Player &amp; Team Stats <span class="arr">ÃƒÂ¢Ã¢â€šÂ¬Ã‚Âº</span>
+      Player &amp; Team Stats <span class="arr">></span>
     </div>
     <div class="nav-sub" id="group-stats">
       <div class="nav-item" data-tab="pitchers">Pitcher Stats</div>
@@ -1298,7 +1298,7 @@ tbody td {
 </div>
 
 <div class="live-bar" id="live-bar">
-  <span class="live-label">ÃƒÂ¢Ã‚Â¬Ã‚Â¤ LIVE</span>
+  <span class="live-label">* LIVE</span>
   <div class="live-games-row" id="live-games-row">
     <span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">Loading scores...</span>
   </div>
@@ -1334,7 +1334,7 @@ tbody td {
 
   <!-- TODAY'S GAMES -->
   <div id="tab-games" class="tab-panel">
-    <div class="sec">Schedule ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â <span id="games-count"></span></div>
+    <div class="sec">Schedule - <span id="games-count"></span></div>
     <div id="games-list" class="game-list"></div>
   </div>
 
@@ -1346,7 +1346,7 @@ tbody td {
       </select>
       <span class="pitcher-date-count" id="pitcher-date-count"></span>
     </div>
-    <div class="sec">Starting Pitchers ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â click row to expand</div>
+    <div class="sec">Starting Pitchers - click row to expand</div>
     <div class="pitcher-col-headers">
       <span>Pitcher</span>
       <span class="hide-sm">ERA</span>
@@ -1533,11 +1533,11 @@ tbody td {
   <div id="tab-trends" class="tab-panel">
     <div class="trends-cols">
       <div>
-        <div class="sec">Pitcher Trends ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Last 3 Starts vs Season</div>
+        <div class="sec">Pitcher Trends - Last 3 Starts vs Season</div>
         <div id="trend-pitchers" class="trend-list"></div>
       </div>
       <div>
-        <div class="sec">Team Form ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â Last 5 Games</div>
+        <div class="sec">Team Form - Last 5 Games</div>
         <div id="trend-teams" class="trend-list"></div>
       </div>
     </div>
@@ -1557,6 +1557,15 @@ async function loadJSON(path, fallback) {
     if (!r.ok) throw 0;
     return await r.json();
   } catch { return fallback; }
+}
+
+function formatGeneratedAt(iso) {
+  if (!iso) return '--';
+  const d = new Date(iso);
+  if (isNaN(d)) return '--';
+  const datePart = d.toLocaleDateString('en-US', {month:'short', day:'numeric', year:'numeric', timeZone:'America/Chicago'});
+  const timePart = d.toLocaleTimeString('en-US', {hour:'numeric', minute:'2-digit', timeZone:'America/Chicago'});
+  return `${datePart} ${timePart} CT`;
 }
 
 async function init() {
@@ -1581,23 +1590,24 @@ async function init() {
   DATA.kpropHistory = Array.isArray(kpropHistory) ? kpropHistory : [];
   DATA.bullpen  = Array.isArray(bullpen)  ? bullpen  : [];
   DATA.date     = today?.date || todayStr();
+  DATA.generatedAt = today?.generated_at || null;
 
   const d = new Date(DATA.date + 'T12:00:00');
   document.getElementById('header-date').textContent =
     d.toLocaleDateString('en-US',{weekday:'short',month:'short',day:'numeric'});
   document.getElementById('status-date').textContent =
     d.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
-  // Last updated timestamp from picks_today.json fetch time
+  // Last updated timestamp: when the model actually generated picks_today.json,
+  // not when the browser loaded the page
   const updatedEl = document.getElementById('header-updated');
   if (updatedEl) {
-    const now = new Date();
-    updatedEl.textContent = 'updated ' + now.toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'});
+    updatedEl.textContent = 'updated ' + formatGeneratedAt(DATA.generatedAt);
   }
 
   renderAll();
 }
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ NAV ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- NAV ----------------------------------------------------------------------
 let activeTab = 'model';
 
 function showTab(tab) {
@@ -1642,7 +1652,7 @@ document.querySelectorAll('.nav-group-header').forEach(h => {
 document.getElementById('group-model-output')?.classList.add('open');
 document.querySelector('[data-group="model-output"]')?.classList.add('open');
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ RENDER ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- RENDER -------------------------------------------------------------------
 function renderAll() {
   const g = DATA.games;
   const rl = g.filter(x=>['STRONG','LEAN'].includes(x.spread_edge_label)).length;
@@ -1659,7 +1669,7 @@ function renderAll() {
   renderTrends();
 }
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ MODEL ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- MODEL --------------------------------------------------------------------
 let mFilter = 'all';
 
 function renderModel() {
@@ -1705,16 +1715,16 @@ function renderModelTable() {
     const oe  = ((g.edge_total||0)*100).toFixed(1);
     const bb  = g.spread_bet
       ? (g.spread_bet==='home_cover'?`${g.home_abbr} ${g.vegas_spread}`:`${g.away_abbr} +1.5`)
-      : g.total_bet ? `${(g.total_bet||'').toUpperCase()} ${g.vegas_total}` : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+      : g.total_bet ? `${(g.total_bet||'').toUpperCase()} ${g.vegas_total}` : '-';
     // Moneyline display
     const aML = g.ml_away != null ? g.ml_away : null;
     const hML = g.vegas_ml_home != null ? g.vegas_ml_home : null;
-    const aMLStr = aML != null ? (aML > 0 ? '+'+aML : ''+aML) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const hMLStr = hML != null ? (hML > 0 ? '+'+hML : ''+hML) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+    const aMLStr = aML != null ? (aML > 0 ? '+'+aML : ''+aML) : '-';
+    const hMLStr = hML != null ? (hML > 0 ? '+'+hML : ''+hML) : '-';
     const aMLCol = aML != null ? (aML > 0 ? 'pos' : 'neg') : 'dim';
     const hMLCol = hML != null ? (hML > 0 ? 'pos' : 'neg') : 'dim';
     return `<tr>
-      <td class="mono dim">${g.game_time_ct||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
+      <td class="mono dim">${g.game_time_ct||'-'}</td>
       <td>${g.away_abbr} <span class="dim">@</span> ${g.home_abbr}</td>
       <td class="dim" style="font-size:10px">${(g.away_sp||'TBD').split(' ').pop()} / ${(g.home_sp||'TBD').split(' ').pop()}</td>
       <td class="tc mono">${fav} <span class="${m>=0?'pos':'neg'}">${Math.abs(m).toFixed(1)}</span></td>
@@ -1730,7 +1740,7 @@ function renderModelTable() {
   }).join('') || '<tr><td colspan="10" class="empty">No games match filter</td></tr>';
 }
 
-// SP card lookup ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â used by betRow and renderGames
+// SP card lookup - used by betRow and renderGames
 function findCard(sp_name, team_abbr, opp_abbr) {
   if (sp_name && sp_name !== 'TBD') {
     const exact = DATA.pitchers.find(c => c.name === sp_name);
@@ -1767,17 +1777,17 @@ function betRow(g) {
       return `<div class="bc-sp ${side}">
         <div class="bc-sp-label">${sideLabel}</div>
         <div class="bc-sp-name">${name}</div>
-        <div class="bc-sp-row"><span>era</span><span class="val">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</span></div>
-        <div class="bc-sp-row"><span>k/9</span><span class="val">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</span></div>
-        <div class="bc-sp-row"><span>whip</span><span class="val">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</span></div>
-        <div class="bc-sp-row"><span>trend</span><span class="val">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</span></div>
+        <div class="bc-sp-row"><span>era</span><span class="val">-</span></div>
+        <div class="bc-sp-row"><span>k/9</span><span class="val">-</span></div>
+        <div class="bc-sp-row"><span>whip</span><span class="val">-</span></div>
+        <div class="bc-sp-row"><span>trend</span><span class="val">-</span></div>
       </div>`;
     }
     // cap name at 10 chars to prevent overflow
-    const displayName = name.length > 12 ? name.slice(0,11)+'ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦' : name;
+    const displayName = name.length > 12 ? name.slice(0,11)+'...' : name;
     const ss  = card.season_stats || {};
     const tr  = card.trend || 'neutral';
-    const ti  = tr==='improving' ? 'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Ëœ hot' : tr==='declining' ? 'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Å“ cold' : 'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ flat';
+    const ti  = tr==='improving' ? '^ hot' : tr==='declining' ? 'v cold' : '-> flat';
     const tc  = tr==='improving' ? 'pos' : tr==='declining' ? 'neg' : 'dim';
     const ec  = (ss.ERA||99)<3.5 ? 'pos' : (ss.ERA||99)>4.5 ? 'neg' : '';
     // last 3 ERA
@@ -1786,15 +1796,15 @@ function betRow(g) {
     const l3er = sts.reduce((s,x)=>s+(x.ER||0),0);
     const l3era = l3ip > 0 ? (l3er/l3ip*9).toFixed(2) : null;
     const l3col = l3era && ss.ERA ? (parseFloat(l3era) < ss.ERA ? 'pos' : parseFloat(l3era) > ss.ERA+0.5 ? 'neg' : '') : '';
-    const rest  = card.days_rest != null ? card.days_rest+'d rest' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+    const rest  = card.days_rest != null ? card.days_rest+'d rest' : '-';
     const kpred = card.k_prediction?.predicted_ks;
     return `<div class="bc-sp ${side}">
       <div class="bc-sp-label">${sideLabel}</div>
       <div class="bc-sp-name">${displayName}</div>
-      <div class="bc-sp-row"><span>era</span><span class="val ${ec}">${ss.ERA??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-      <div class="bc-sp-row"><span>k/9</span><span class="val">${ss.K9??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-      <div class="bc-sp-row"><span>whip</span><span class="val">${ss.WHIP??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-      <div class="bc-sp-row"><span>l3 era</span><span class="val ${l3col}">${l3era||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
+      <div class="bc-sp-row"><span>era</span><span class="val ${ec}">${ss.ERA??'-'}</span></div>
+      <div class="bc-sp-row"><span>k/9</span><span class="val">${ss.K9??'-'}</span></div>
+      <div class="bc-sp-row"><span>whip</span><span class="val">${ss.WHIP??'-'}</span></div>
+      <div class="bc-sp-row"><span>l3 era</span><span class="val ${l3col}">${l3era||'-'}</span></div>
       <div class="bc-sp-row"><span>trend</span><span class="val ${tc}">${ti}</span></div>
       <div class="bc-sp-row"><span>rest</span><span class="val">${rest}</span></div>
       ${kpred!=null ? `<div class="bc-sp-row"><span>k proj</span><span class="val hi">${kpred}</span></div>` : ''}
@@ -1806,17 +1816,17 @@ function betRow(g) {
     (s.home_abbr===g.home_abbr && s.away_abbr===g.away_abbr) ||
     (s.home_abbr===g.away_abbr && s.away_abbr===g.home_abbr)
   );
-  let seriesStr = 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+  let seriesStr = '-';
   if (sm) {
     const hw = sm.home_wins||0, aw = sm.away_wins||0;
     const gn = (sm.games_played||0)+1;
     const rec = hw===aw ? 'tied' : hw>aw ? `${sm.home_abbr} leads ${hw}-${aw}` : `${sm.away_abbr} leads ${aw}-${hw}`;
-    seriesStr = `gm ${gn}/${sm.total_games||3} Ãƒâ€šÃ‚Â· ${rec}`;
+    seriesStr = `gm ${gn}/${sm.total_games||3} - ${rec}`;
   }
 
   // Probabilities
-  const cvProb = g.cover_prob ? Math.round(g.cover_prob*100)+'%' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-  const ovProb = g.over_prob  ? Math.round(g.over_prob*100)+'%'  : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+  const cvProb = g.cover_prob ? Math.round(g.cover_prob*100)+'%' : '-';
+  const ovProb = g.over_prob  ? Math.round(g.over_prob*100)+'%'  : '-';
   const vegaP  = g.vegas_ml_home ? (g.vegas_ml_home<0
     ? Math.abs(g.vegas_ml_home)/(Math.abs(g.vegas_ml_home)+100)
     : 100/(g.vegas_ml_home+100)) : null;
@@ -1854,7 +1864,7 @@ function betRow(g) {
         <div class="l">${isRL ? 'cover' : 'over'} prob</div>
       </div>
       <div class="bc-cell">
-        <div class="v ${mldCol}">${mlDelta ? (parseFloat(mlDelta)>0?'+':'')+mlDelta+'%' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div>
+        <div class="v ${mldCol}">${mlDelta ? (parseFloat(mlDelta)>0?'+':'')+mlDelta+'%' : '-'}</div>
         <div class="l">vs mkt ml</div>
       </div>
       <div class="bc-cell">
@@ -1871,7 +1881,7 @@ function betRow(g) {
 }
 
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ GAMES ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- GAMES --------------------------------------------------------------------
 let openGame = null;
 
 function renderGames() {
@@ -1903,7 +1913,7 @@ function renderGames() {
       const ec    = (ss.ERA||99)<3.5?'pos':(ss.ERA||99)>4.5?'neg':'';
       const fc    = (ss.FIP||99)<3.5?'pos':(ss.FIP||99)>4.5?'neg':'';
       const tr    = card?.trend||'neutral';
-      const ti    = tr==='improving'?'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Ëœ':tr==='declining'?'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Å“':'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢';
+      const ti    = tr==='improving'?'^':tr==='declining'?'v':'->';
       const tc    = tr==='improving'?'pos':tr==='declining'?'neg':'dim';
       const sts   = (card?.last_starts||[]).slice(0,3);
       const l3ip  = sts.reduce((s,x)=>s+(x.IP||0),0);
@@ -1913,7 +1923,7 @@ function renderGames() {
       const kp    = card?.k_prediction?.predicted_ks;
       const rest  = card?.days_rest;
       const restC = rest!=null&&rest<=3?'warn':rest!=null&&rest>=6?'pos':'';
-      const restLbl = rest!=null ? `${rest}d` : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+      const restLbl = rest!=null ? `${rest}d` : '-';
       const hand  = ss.throws || card?.throws || '';
       const handLbl = hand ? `(${hand})` : '';
       return `<div class="ge-sp-block">
@@ -1922,11 +1932,11 @@ function renderGames() {
           <div style="font-weight:600;margin-top:1px">${name} <span class="dim" style="font-size:9px">${handLbl}</span></div>
           <div class="dim" style="font-size:9px">${abbr}</div>
         </div>
-        <div class="ge-sp-row"><span>era</span><span class="val ${ec}">${ss.ERA??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-        <div class="ge-sp-row"><span>fip</span><span class="val ${fc}">${ss.FIP??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-        <div class="ge-sp-row"><span>k/9</span><span class="val">${ss.K9??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-        <div class="ge-sp-row"><span>bb/9</span><span class="val">${ss.BB9??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-        <div class="ge-sp-row"><span>whip</span><span class="val">${ss.WHIP??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
+        <div class="ge-sp-row"><span>era</span><span class="val ${ec}">${ss.ERA??'-'}</span></div>
+        <div class="ge-sp-row"><span>fip</span><span class="val ${fc}">${ss.FIP??'-'}</span></div>
+        <div class="ge-sp-row"><span>k/9</span><span class="val">${ss.K9??'-'}</span></div>
+        <div class="ge-sp-row"><span>bb/9</span><span class="val">${ss.BB9??'-'}</span></div>
+        <div class="ge-sp-row"><span>whip</span><span class="val">${ss.WHIP??'-'}</span></div>
         ${l3era!=null?`<div class="ge-sp-row"><span>l3 era</span><span class="val ${parseFloat(l3era)<(ss.ERA||5)?'pos':parseFloat(l3era)>(ss.ERA||5)+0.5?'neg':''}">${l3era}</span></div>`:''}
         ${l3iavg!=null?`<div class="ge-sp-row"><span>l3 ip/g</span><span class="val">${l3iavg}</span></div>`:''}
         <div class="ge-sp-row"><span>rest</span><span class="val ${restC}">${restLbl}</span></div>
@@ -1949,14 +1959,14 @@ function renderGames() {
       const leadStr = lead
         ? `<span class="pos">${lead} leads ${Math.max(hw,aw)}-${Math.min(hw,aw)}</span>`
         : `<span class="dim">tied ${hw}-${aw}</span>`;
-      seriesBadge = `<div class="series-badge">gm ${gn}/${tot} Ãƒâ€šÃ‚Â· ${leadStr}</div>`;
+      seriesBadge = `<div class="series-badge">gm ${gn}/${tot} - ${leadStr}</div>`;
     }
 
     return `<div class="game-block" id="gb-${i}">
       <div class="game-row game-expand-toggle ${strong?'has-strong':hasEdge?'has-edge':''}" onclick="toggleGame(${i}, '${g.home_abbr}', '${g.away_abbr}')">
         <span class="mono dim" style="font-size:10px">${g.game_time_ct||'TBD'}</span>
         <div class="matchup-cell">
-          <div class="teams">${g.away_abbr} <span class="dim">@</span> ${g.home_abbr} <span class="ge-arrow" id="ga-${i}">ÃƒÂ¢Ã¢â€šÂ¬Ã‚Âº</span></div>
+          <div class="teams">${g.away_abbr} <span class="dim">@</span> ${g.home_abbr} <span class="ge-arrow" id="ga-${i}">></span></div>
           <div class="pitchers">${aCard?aCard.name.split(' ').pop():(g.away_sp||'TBD')} / ${hCard?hCard.name.split(' ').pop():(g.home_sp||'TBD')} ${seriesBadge}</div>
         </div>
         <div class="hide-sm">
@@ -1985,15 +1995,15 @@ function renderGames() {
             </div>
             <div class="ge-sp-row"><span>total proj</span><span class="val">${(g.predicted_total||0).toFixed(1)}</span></div>
             <div class="ge-sp-row"><span>home win%</span><span class="val">${hp}%</span></div>
-            <div class="ge-sp-row"><span>conf</span><span class="val">${g.spread_confidence||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
+            <div class="ge-sp-row"><span>conf</span><span class="val">${g.spread_confidence||'-'}</span></div>
             ${g.vegas_spread!=null?`<div class="ge-sp-row" style="margin-top:6px;border-top:1px solid var(--b1);padding-top:6px"><span>vegas rl</span><span class="val">${g.vegas_spread>0?'+':''}${g.vegas_spread}</span></div>`:''}
             ${g.vegas_total!=null?`<div class="ge-sp-row"><span>vegas o/u</span><span class="val">${g.vegas_total}</span></div>`:''}
             ${g.spread_edge_label&&g.spread_edge_label!=='NO LINE'?`<div class="ge-sp-row"><span>rl edge</span><span class="val ${g.spread_edge_label==='STRONG'?'pos':g.spread_edge_label==='LEAN'?'hi':''}">${g.spread_edge_label} ${g.spread_edge_pct!=null?(g.spread_edge_pct>0?'+':'')+(g.spread_edge_pct*100).toFixed(1)+'%':''}</span></div>`:''}
             ${g.total_edge_label&&g.total_edge_label!=='NO LINE'?`<div class="ge-sp-row"><span>o/u edge</span><span class="val ${g.total_edge_label==='STRONG'?'pos':g.total_edge_label==='LEAN'?'hi':''}">${g.total_edge_label} ${g.total_edge_pct!=null?(g.total_edge_pct>0?'+':'')+(g.total_edge_pct*100).toFixed(1)+'%':''}</span></div>`:''}
             <div style="margin-top:8px;border-top:1px solid var(--b1);padding-top:8px">
               <div class="dim" style="font-size:9px;letter-spacing:.5px;margin-bottom:4px">BULLPEN</div>
-              ${hBP?`<div class="ge-sp-row"><span>${g.home_abbr} bp era</span><span class="val ${hBP.quality==='ELITE'?'pos':hBP.quality==='POOR'?'neg':''}">${hBP.era?.toFixed(2)||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'} <span class="dim" style="font-size:9px">${hBP.quality||''}</span></span></div>`:''}
-              ${aBP?`<div class="ge-sp-row"><span>${g.away_abbr} bp era</span><span class="val ${aBP.quality==='ELITE'?'pos':aBP.quality==='POOR'?'neg':''}">${aBP.era?.toFixed(2)||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'} <span class="dim" style="font-size:9px">${aBP.quality||''}</span></span></div>`:''}
+              ${hBP?`<div class="ge-sp-row"><span>${g.home_abbr} bp era</span><span class="val ${hBP.quality==='ELITE'?'pos':hBP.quality==='POOR'?'neg':''}">${hBP.era?.toFixed(2)||'-'} <span class="dim" style="font-size:9px">${hBP.quality||''}</span></span></div>`:''}
+              ${aBP?`<div class="ge-sp-row"><span>${g.away_abbr} bp era</span><span class="val ${aBP.quality==='ELITE'?'pos':aBP.quality==='POOR'?'neg':''}">${aBP.era?.toFixed(2)||'-'} <span class="dim" style="font-size:9px">${aBP.quality||''}</span></span></div>`:''}
               ${hBP?.fatigue?`<div class="ge-sp-row"><span>${g.home_abbr} fatigue</span><span class="val ${hBP.fatigue==='HEAVY'||hBP.fatigue==='TIRED'?'warn':'dim'}">${hBP.fatigue}</span></div>`:''}
               ${aBP?.fatigue?`<div class="ge-sp-row"><span>${g.away_abbr} fatigue</span><span class="val ${aBP.fatigue==='HEAVY'||aBP.fatigue==='TIRED'?'warn':'dim'}">${aBP.fatigue}</span></div>`:''}
             </div>
@@ -2065,7 +2075,7 @@ async function loadBatting(i, homeAbbr, awayAbbr) {
           obp:  parseFloat(s.obp || 0).toFixed(3),
           slg:  parseFloat(s.slg || 0).toFixed(3),
           ops:  parseFloat(s.ops || 0).toFixed(3),
-          kpct: pa > 0 ? (k/pa*100).toFixed(1) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â',
+          kpct: pa > 0 ? (k/pa*100).toFixed(1) : '-',
           hr,
           ab,
           rbi: parseInt(s.rbi || 0),
@@ -2087,9 +2097,9 @@ async function loadBatting(i, homeAbbr, awayAbbr) {
     const ac = isNaN(an)||isNaN(hn) ? '' : (posIfHigh ? (an>hn?'pos':an<hn?'neg':'') : (an<hn?'pos':an>hn?'neg':''));
     const hc = isNaN(an)||isNaN(hn) ? '' : (posIfHigh ? (hn>an?'pos':hn<an?'neg':'') : (hn<an?'pos':hn>an?'neg':''));
     return `<div class="ge-sp-row">
-      <span class="val ${ac}" style="min-width:42px;text-align:left">${av??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
+      <span class="val ${ac}" style="min-width:42px;text-align:left">${av??'-'}</span>
       <span style="flex:1;text-align:center;color:var(--t3)">${lbl}</span>
-      <span class="val ${hc}" style="min-width:42px;text-align:right">${hv??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
+      <span class="val ${hc}" style="min-width:42px;text-align:right">${hv??'-'}</span>
     </div>`;
   }
 
@@ -2108,8 +2118,8 @@ async function loadBatting(i, homeAbbr, awayAbbr) {
     ${statRow('OPS', away?.ops, home?.ops)}
     ${statRow('K%',  away?.kpct+'%', home?.kpct+'%', false)}
     ${statRow('HR',  away?.hr,  home?.hr)}
-    ${statRow('R/G', away?.g>0?(away.r/away.g).toFixed(1):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â', home?.g>0?(home.r/home.g).toFixed(1):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â')}
-    <div style="font-family:var(--mono);font-size:9px;color:var(--t3);margin-top:4px">${away?.g||0} games tracked Ãƒâ€šÃ‚Â· 2026</div>
+    ${statRow('R/G', away?.g>0?(away.r/away.g).toFixed(1):'-', home?.g>0?(home.r/home.g).toFixed(1):'-')}
+    <div style="font-family:var(--mono);font-size:9px;color:var(--t3);margin-top:4px">${away?.g||0} games tracked - 2026</div>
   `;
 }
 
@@ -2134,7 +2144,7 @@ async function loadLineup(i, homeAbbr, awayAbbr) {
       const teamId = await getTeamId(abbr);
       if (!teamId) return {};
 
-      // Use team stats/leaders endpoint ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â more reliable than roster hydration
+      // Use team stats/leaders endpoint - more reliable than roster hydration
       const r = await fetch(
         `https://statsapi.mlb.com/api/v1/teams/${teamId}/stats?stats=season&season=2026&group=hitting`
       );
@@ -2193,7 +2203,7 @@ async function loadLineup(i, homeAbbr, awayAbbr) {
 
     const rosters = espnRes.rosters || [];
     if (!rosters.length) {
-      // No ESPN lineup ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â show team batting summary instead
+      // No ESPN lineup - show team batting summary instead
       el.innerHTML = await buildTeamBattingSummary(awayAbbr, awayStats, homeAbbr, homeStats);
       return;
     }
@@ -2211,8 +2221,8 @@ async function loadLineup(i, homeAbbr, awayAbbr) {
       </div>`;
 
       starters.slice(0,9).forEach((p, n) => {
-        const name   = p.athlete?.shortName || p.athlete?.displayName || 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-        const pos    = p.position?.abbreviation || 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+        const name   = p.athlete?.shortName || p.athlete?.displayName || '-';
+        const pos    = p.position?.abbreviation || '-';
         const pid    = p.athlete?.id;
         // Try MLB ID, then ESPN ID, then name matching
         const espnName   = (p.athlete?.displayName||'').toLowerCase();
@@ -2230,9 +2240,9 @@ async function loadLineup(i, homeAbbr, awayAbbr) {
           <span style="color:var(--t3)">${n+1}</span>
           <span style="color:var(--t3);font-size:9px">${pos}</span>
           <span style="color:var(--t1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${name}</span>
-          <span class="tr ${baCol}">${st.ba||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
-          <span class="tr ${obpCol}">${st.obp||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
-          <span class="tr dim">${st.hr!==undefined?st.hr:'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
+          <span class="tr ${baCol}">${st.ba||'-'}</span>
+          <span class="tr ${obpCol}">${st.obp||'-'}</span>
+          <span class="tr dim">${st.hr!==undefined?st.hr:'-'}</span>
         </div>`;
       });
     }
@@ -2243,10 +2253,10 @@ async function loadLineup(i, homeAbbr, awayAbbr) {
 }
 
 async function buildTeamBattingSummary(awayAbbr, awayStats, homeAbbr, homeStats) {
-  // Fallback when no lineup ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â show team-level stats
+  // Fallback when no lineup - show team-level stats
   function avg(map, field) {
     const vals = Object.values(map).map(s=>parseFloat(s[field]||0)).filter(v=>v>0);
-    return vals.length ? (vals.reduce((a,b)=>a+b,0)/vals.length).toFixed(3) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+    return vals.length ? (vals.reduce((a,b)=>a+b,0)/vals.length).toFixed(3) : '-';
   }
   return `<div style="font-family:var(--mono);font-size:10px;color:var(--t3)">Lineups not yet posted</div>`;
 }
@@ -2328,10 +2338,10 @@ async function loadWeather(i, homeAbbr) {
     const data = await r.json();
     const c = data.current || {};
 
-    const temp  = c.temperature_2m != null ? Math.round(c.temperature_2m)+'Ãƒâ€šÃ‚Â°F' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const wind  = c.wind_speed_10m != null ? Math.round(c.wind_speed_10m)+' mph' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const wdir  = c.wind_direction_10m != null ? degToCompass(c.wind_direction_10m) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const precip= c.precipitation != null ? c.precipitation+'mm' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+    const temp  = c.temperature_2m != null ? Math.round(c.temperature_2m)+'°F' : '-';
+    const wind  = c.wind_speed_10m != null ? Math.round(c.wind_speed_10m)+' mph' : '-';
+    const wdir  = c.wind_direction_10m != null ? degToCompass(c.wind_direction_10m) : '-';
+    const precip= c.precipitation != null ? c.precipitation+'mm' : '-';
     const desc  = weatherDesc(c.weather_code||0);
     const windCol = c.wind_speed_10m > 15 ? 'warn' : c.wind_speed_10m > 10 ? '' : 'pos';
     const tempCol = c.temperature_2m < 45 ? 'neg' : c.temperature_2m > 85 ? 'neg' : '';
@@ -2364,7 +2374,7 @@ function weatherDesc(code) {
   return 'Unknown';
 }
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ PITCHERS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- PITCHERS -----------------------------------------------------------------
 let openPitcher = null;
 let pitcherDateFilter = 'all';
 
@@ -2396,7 +2406,7 @@ function initPitcherDateDropdown() {
 
 function renderPitchers() {
   let cards = [...DATA.pitchers];
-  if (!cards.length) { document.getElementById('pitcher-list').innerHTML='<div class="empty">No pitcher data ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â run model</div>'; return; }
+  if (!cards.length) { document.getElementById('pitcher-list').innerHTML='<div class="empty">No pitcher data - run model</div>'; return; }
 
   // Filter by date
   if (pitcherDateFilter !== 'all') {
@@ -2413,7 +2423,7 @@ function renderPitchers() {
     const kp  = c.k_prediction||{};
     const ec  = (ss.ERA||99)<3.5?'pos':(ss.ERA||99)>4.5?'neg':'';
     const tr  = c.trend||'neutral';
-    const ti  = tr==='improving'?'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Ëœ':tr==='declining'?'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Å“':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+    const ti  = tr==='improving'?'^':tr==='declining'?'v':'-';
     const tc  = tr==='improving'?'pos':tr==='declining'?'neg':'dim';
 
     const starts = (c.last_starts||[]).slice(0,5);
@@ -2421,13 +2431,13 @@ function renderPitchers() {
     const kpred  = kp.predicted_ks;
 
     const startRows = starts.map(s => {
-      const dt  = s.date?new Date(s.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+      const dt  = s.date?new Date(s.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}):'-';
       const erc = (s.ER||0)===0?'pos':(s.ER||0)>=4?'neg':'';
       return `<tr>
-        <td class="dim">${dt}</td><td>${s.opponent||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
-        <td>${s.IP||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td><td class="hi">${s.K??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
-        <td class="${erc}">${s.ER??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td><td>${s.BB??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
-        <td class="dim">${s.pitches||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
+        <td class="dim">${dt}</td><td>${s.opponent||'-'}</td>
+        <td>${s.IP||'-'}</td><td class="hi">${s.K??'-'}</td>
+        <td class="${erc}">${s.ER??'-'}</td><td>${s.BB??'-'}</td>
+        <td class="dim">${s.pitches||'-'}</td>
       </tr>`;
     }).join('');
 
@@ -2444,12 +2454,12 @@ function renderPitchers() {
         </tr></thead>
         <tbody>
           ${ar.map((p,i) => `<tr>
-            <td class="${i===0?'arsenal-primary':''}">${p.pitch_name||p.pitch_type||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
-            <td class="tr ${i===0?'arsenal-primary':''}">${p.usage_pct?p.usage_pct+'%':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
-            <td class="tr">${p.avg_velo||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
-            <td class="tr ${p.avg_spin>2400?'pos':p.avg_spin&&p.avg_spin<2000?'dim':''}">${p.avg_spin||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
-            <td class="tr ${p.whiff_pct>=30?'pos':p.whiff_pct&&p.whiff_pct<15?'neg':''}">${p.whiff_pct?p.whiff_pct+'%':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
-            <td class="tr ${p.put_away_pct>=30?'pos':''}">${p.put_away_pct?p.put_away_pct+'%':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
+            <td class="${i===0?'arsenal-primary':''}">${p.pitch_name||p.pitch_type||'-'}</td>
+            <td class="tr ${i===0?'arsenal-primary':''}">${p.usage_pct?p.usage_pct+'%':'-'}</td>
+            <td class="tr">${p.avg_velo||'-'}</td>
+            <td class="tr ${p.avg_spin>2400?'pos':p.avg_spin&&p.avg_spin<2000?'dim':''}">${p.avg_spin||'-'}</td>
+            <td class="tr ${p.whiff_pct>=30?'pos':p.whiff_pct&&p.whiff_pct<15?'neg':''}">${p.whiff_pct?p.whiff_pct+'%':'-'}</td>
+            <td class="tr ${p.put_away_pct>=30?'pos':''}">${p.put_away_pct?p.put_away_pct+'%':'-'}</td>
           </tr>`).join('')}
         </tbody>
       </table>` : '';
@@ -2457,13 +2467,13 @@ function renderPitchers() {
     return `<div class="pitcher-block" id="pb-${i}">
       <div class="pitcher-header-row" onclick="togglePitcher(${i})">
         <span><span class="mono ${tc}" style="font-size:10px">${ti}</span> <strong>${c.name||'?'}</strong> <span class="dim" style="font-size:10px">${c.team_abbr||''} vs ${c.opponent||''}</span></span>
-        <span class="mono ${ec} tc">${ss.ERA??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
-        <span class="mono dim tc hide-sm">${ss.FIP??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
-        <span class="mono tc hide-sm">${ss.K9??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
-        <span class="mono dim tc hide-sm">${ss.BB9??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
-        <span class="mono dim tc hide-sm">${ss.WHIP??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
-        <span class="mono dim tc hide-sm">${ss.IP??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
-        <span class="mono hi tc">${kpred!=null?kpred+' K':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
+        <span class="mono ${ec} tc">${ss.ERA??'-'}</span>
+        <span class="mono dim tc hide-sm">${ss.FIP??'-'}</span>
+        <span class="mono tc hide-sm">${ss.K9??'-'}</span>
+        <span class="mono dim tc hide-sm">${ss.BB9??'-'}</span>
+        <span class="mono dim tc hide-sm">${ss.WHIP??'-'}</span>
+        <span class="mono dim tc hide-sm">${ss.IP??'-'}</span>
+        <span class="mono hi tc">${kpred!=null?kpred+' K':'-'}</span>
         <span class="dim" style="font-size:10px">${c.game_time_ct||''}</span>
       </div>
       <div class="pitcher-detail" id="pd-${i}">
@@ -2475,13 +2485,13 @@ function renderPitchers() {
           <div class="pitcher-col-title">K Projection vs ${c.opponent||'opp'}</div>
           ${kpred!=null?`
             <div class="k-proj">${kpred}</div>
-            <div class="k-range">${kp.k_low_25||'?'} ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ${kp.k_high_75||'?'} (25ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“75th pct)</div>
+            <div class="k-range">${kp.k_low_25||'?'} - ${kp.k_high_75||'?'} (25-75th pct)</div>
             <div class="k-detail">
-              blended k/9: ${kp.blended_k9||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}<br>
-              opp k%: ${kp.opp_k_pct||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}% (${(kp.opp_k_pct_vs_lg||0)>=0?'+':''}${kp.opp_k_pct_vs_lg||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}% vs lg)<br>
-              exp ip: ${kp.expected_ip||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}
+              blended k/9: ${kp.blended_k9||'-'}<br>
+              opp k%: ${kp.opp_k_pct||'-'}% (${(kp.opp_k_pct_vs_lg||0)>=0?'+':''}${kp.opp_k_pct_vs_lg||'-'}% vs lg)<br>
+              exp ip: ${kp.expected_ip||'-'}
             </div>
-          `:'<span class="dim" style="font-size:11px">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</span>'}
+          `:'<span class="dim" style="font-size:11px">-</span>'}
           ${(()=>{
             const fi = c.first_inning||{};
             if (!fi.games) return '';
@@ -2490,16 +2500,16 @@ function renderPitchers() {
             return `<div class="pitcher-col-title" style="margin-top:14px">1st Inning (NRFI)</div>
               <div style="display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--b1);margin-bottom:6px">
                 <div style="background:var(--s1);padding:5px 8px;text-align:center">
-                  <div class="mono ${fec}" style="font-size:14px">${fi.era_1st??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div>
+                  <div class="mono ${fec}" style="font-size:14px">${fi.era_1st??'-'}</div>
                   <div style="font-size:9px;color:var(--t3);text-transform:uppercase">1st ERA</div>
                 </div>
                 <div style="background:var(--s1);padding:5px 8px;text-align:center">
-                  <div class="mono ${cpc}" style="font-size:14px">${fi.clean_innings_pct??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}%</div>
+                  <div class="mono ${cpc}" style="font-size:14px">${fi.clean_innings_pct??'-'}%</div>
                   <div style="font-size:9px;color:var(--t3);text-transform:uppercase">0-run starts</div>
                 </div>
               </div>
               <div style="font-family:var(--mono);font-size:10px;color:var(--t3)">
-                ${fi.games} starts Ãƒâ€šÃ‚Â· ${fi.h_1st??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}H ${fi.bb_1st??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}BB ${fi.k_1st??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}K in 1st
+                ${fi.games} starts - ${fi.h_1st??'-'}H ${fi.bb_1st??'-'}BB ${fi.k_1st??'-'}K in 1st
               </div>`;
           })()}
           ${arsenalHtml}
@@ -2519,7 +2529,7 @@ function togglePitcher(i) {
   if (!isOpen) el.classList.add('open');
 }
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ BATTERS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- BATTERS ------------------------------------------------------------------
 function renderBatters() {
   const props = [];
   DATA.games.forEach(g => {
@@ -2561,7 +2571,7 @@ function renderBatters() {
           pType,
           edge:(edge*100).toFixed(1),
           label,
-          ti:trend==='improving'?'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Ëœ':trend==='declining'?'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Å“':'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢'
+          ti:trend==='improving'?'^':trend==='declining'?'v':'->'
         });
       }
     });
@@ -2572,7 +2582,7 @@ function renderBatters() {
     ? props.slice(0,16).map(p => {
         const tc = p.trend==='declining'?'neg':p.trend==='improving'?'pos':'dim';
         return `<tr class="${p.label}">
-          <td class="mono dim" style="font-size:10px">${p.time||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
+          <td class="mono dim" style="font-size:10px">${p.time||'-'}</td>
           <td>${p.bTeam}</td>
           <td class="dim">${p.oppSP.split(' ').pop()}</td>
           <td class="mono ${tc}">${p.ti} ${p.trend}</td>
@@ -2586,7 +2596,7 @@ function renderBatters() {
     : '<tr><td colspan="9" class="empty">No prop matchups identified</td></tr>';
 }
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ STANDINGS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- STANDINGS ----------------------------------------------------------------
 let stdLeague = 'both', stdCache = null, stdListenersAdded = false;
 
 async function renderStandings() {
@@ -2617,10 +2627,10 @@ async function renderStandings() {
             team: tr.team?.abbreviation||'?', lg, dv, divKey,
             W:w, L:l, G:g,
             pct: g > 0 ? (w/g).toFixed(3) : '.000',
-            GB: tr.divisionGamesBack||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â',
+            GB: tr.divisionGamesBack||'-',
             rs, ra, rd: rs-ra,
             pyth: (rs+ra>0 ? (rs**1.83/(rs**1.83+ra**1.83)) : 0.5).toFixed(3),
-            L10: L10 ? L10.wins+'-'+L10.losses : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â',
+            L10: L10 ? L10.wins+'-'+L10.losses : '-',
           });
         }
       }
@@ -2655,14 +2665,14 @@ async function renderStandings() {
     }
   }
 
-  // ALL view ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â single table sorted by pct
+  // ALL view - single table sorted by pct
   if (stdLeague === 'both') {
     const rows = [...filtered].sort((a,b)=>parseFloat(b.pct)-parseFloat(a.pct)).map(t=>{
       const pc=parseFloat(t.pct)>=.550?'pos':parseFloat(t.pct)<=.450?'neg':'';
       const rc=t.rd>20?'pos':t.rd<-20?'neg':'dim';
       return `<tr><td>${t.team}</td><td class="mono dim" style="font-size:10px">${t.divKey}</td><td>${t.W}</td><td class="dim">${t.L}</td><td class="mono ${pc}">${t.pct}</td><td class="mono ${rc}">${t.rd>0?'+':''}${t.rd}</td><td class="mono dim">${t.pyth}</td><td class="mono">${t.L10}</td></tr>`;
     }).join('');
-    wrap.innerHTML = `<div class="div-block" style="grid-column:1/-1"><div class="div-label">ALL TEAMS ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â BY WIN PCT</div><table class="std-tbl"><thead><tr><th>TEAM</th><th>DIV</th><th>W</th><th>L</th><th>PCT</th><th>+/-</th><th>PYTH</th><th>L10</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    wrap.innerHTML = `<div class="div-block" style="grid-column:1/-1"><div class="div-label">ALL TEAMS - BY WIN PCT</div><table class="std-tbl"><thead><tr><th>TEAM</th><th>DIV</th><th>W</th><th>L</th><th>PCT</th><th>+/-</th><th>PYTH</th><th>L10</th></tr></thead><tbody>${rows}</tbody></table></div>`;
     return;
   }
 
@@ -2685,7 +2695,7 @@ async function renderStandings() {
   }).join('') || '<div class="empty">No data for this filter</div>';
 }
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ TRENDS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- TRENDS -------------------------------------------------------------------
 function renderTrends() {
   // Pitcher trends
   const pt = DATA.pitchers.filter(c=>c.last_starts?.length>=2).map(c => {
@@ -2704,10 +2714,10 @@ function renderTrends() {
         return `<div class="trend-row ${p.dir}">
           <div>
             <div class="trend-name">${p.name} <span class="dim" style="font-size:10px">${p.team}</span></div>
-            <div class="trend-sub">${ds} Ãƒâ€šÃ‚Â· k/9 last 3: ${p.k93||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div>
+            <div class="trend-sub">${ds} - k/9 last 3: ${p.k93||'-'}</div>
           </div>
           <div>
-            <div class="trend-val ${col}">${p.k93||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div>
+            <div class="trend-val ${col}">${p.k93||'-'}</div>
             <div class="trend-val-sub">k/9 l3</div>
           </div>
         </div>`;
@@ -2738,15 +2748,15 @@ function renderTrends() {
         return `<div class="trend-row ${t.dir}">
           <div>
             <div class="trend-name">${t.abbr}</div>
-            <div class="trend-sub">avg margin ${t.am>0?'+':''}${t.am} Ãƒâ€šÃ‚Â· last 5</div>
+            <div class="trend-sub">avg margin ${t.am>0?'+':''}${t.am} - last 5</div>
           </div>
           <div>
-            <div class="trend-val ${col}">${t.w}ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“${t.l}</div>
+            <div class="trend-val ${col}">${t.w}-${t.l}</div>
             <div class="trend-val-sub">l5 record</div>
           </div>
         </div>`;
       }).join('')
-    : '<div class="empty">No team trend data ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â needs graded history</div>';
+    : '<div class="empty">No team trend data - needs graded history</div>';
 
   // Series
   document.getElementById('series-wrap').innerHTML = DATA.series.length
@@ -2760,7 +2770,7 @@ function renderTrends() {
             const dt=g.date?new Date(g.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}):'';
             return `<div class="sg ${hw2?'hw':'aw'}"><div class="sg-score">${g.away_score}-${g.home_score}</div><div class="sg-date">${dt}</div></div>`;
           }
-          const dt=g.date?new Date(g.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+          const dt=g.date?new Date(g.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}):'-';
           return `<div class="sg"><div class="sg-date">${dt}</div><div style="font-size:9px;color:var(--t3)">${g.home_sp||'tbd'}</div></div>`;
         }).join('');
         return `<div class="series-block">
@@ -2774,19 +2784,19 @@ function renderTrends() {
     : '<div class="empty" style="grid-column:1/-1">No series data</div>';
 }
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ HELPERS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- HELPERS ------------------------------------------------------------------
 function sc(val,lbl,cls='') {
   return `<div class="stat-cell"><div class="v ${cls}">${val}</div><div class="l">${lbl}</div></div>`;
 }
 function tag(label) {
   const m={STRONG:'strong',LEAN:'lean',SLIGHT:'slight'};
   const c=m[label];
-  if(!c) return `<span class="tag-none dim">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</span>`;
+  if(!c) return `<span class="tag-none dim">-</span>`;
   return `<span class="tag tag-${c}">${label}</span>`;
 }
 function todayStr() { return new Date().toISOString().slice(0,10); }
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ SAMPLE DATA ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- SAMPLE DATA ---------------------------------------------------------------
 const SAMPLE = [
   {home_name:"New York Yankees",away_name:"Boston Red Sox",home_abbr:"NYY",away_abbr:"BOS",home_sp:"G. Cole",away_sp:"N. Pivetta",game_time_ct:"6:35 PM CT",predicted_margin:1.2,predicted_total:8.4,home_win_prob:.58,spread_confidence:72,vegas_spread:-1.5,vegas_total:8.5,vegas_ml_home:-145,edge_spread:.07,edge_total:.04,spread_edge_label:"LEAN",total_edge_label:"SLIGHT",spread_bet:"home_cover",total_bet:"over",edge_score:7},
   {home_name:"Los Angeles Dodgers",away_name:"San Francisco Giants",home_abbr:"LAD",away_abbr:"SF",home_sp:"T. Glasnow",away_sp:"L. Webb",game_time_ct:"9:10 PM CT",predicted_margin:0.8,predicted_total:9.1,home_win_prob:.55,spread_confidence:61,vegas_spread:-1.5,vegas_total:9.0,vegas_ml_home:-130,edge_spread:.05,edge_total:-.03,spread_edge_label:"SLIGHT",total_edge_label:"NONE",spread_bet:"home_cover",total_bet:"",edge_score:5},
@@ -2794,14 +2804,14 @@ const SAMPLE = [
   {home_name:"Houston Astros",away_name:"Los Angeles Angels",home_abbr:"HOU",away_abbr:"LAA",home_sp:"F. Valdez",away_sp:"R. Detmers",game_time_ct:"7:10 PM CT",predicted_margin:-0.3,predicted_total:7.9,home_win_prob:.47,spread_confidence:48,vegas_spread:1.5,vegas_total:8.0,vegas_ml_home:110,edge_spread:-.02,edge_total:.06,spread_edge_label:"NONE",total_edge_label:"LEAN",spread_bet:"",total_bet:"over",edge_score:4},
 ];
 const SAMPLE_STD = [
-  {team:"NYY",lg:"AL",dv:"East",W:58,L:42,G:100,pct:".580",GB:"ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â",rs:512,ra:431,rd:81,pyth:".583",L10:"7-3"},
+  {team:"NYY",lg:"AL",dv:"East",W:58,L:42,G:100,pct:".580",GB:"-",rs:512,ra:431,rd:81,pyth:".583",L10:"7-3"},
   {team:"BAL",lg:"AL",dv:"East",W:54,L:46,G:100,pct:".540",GB:"4.0",rs:489,ra:451,rd:38,pyth:".538",L10:"6-4"},
   {team:"BOS",lg:"AL",dv:"East",W:49,L:51,G:100,pct:".490",GB:"9.0",rs:471,ra:468,rd:3,pyth:".501",L10:"5-5"},
-  {team:"LAD",lg:"NL",dv:"West",W:65,L:35,G:100,pct:".650",GB:"ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â",rs:558,ra:421,rd:137,pyth:".635",L10:"9-1"},
-  {team:"ATL",lg:"NL",dv:"East",W:62,L:38,G:100,pct:".620",GB:"ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â",rs:539,ra:432,rd:107,pyth:".613",L10:"8-2"},
+  {team:"LAD",lg:"NL",dv:"West",W:65,L:35,G:100,pct:".650",GB:"-",rs:558,ra:421,rd:137,pyth:".635",L10:"9-1"},
+  {team:"ATL",lg:"NL",dv:"East",W:62,L:38,G:100,pct:".620",GB:"-",rs:539,ra:432,rd:107,pyth:".613",L10:"8-2"},
 ];
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ NRFI MATRIX ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- NRFI MATRIX --------------------------------------------------------------
 function renderNRFI() {
   const el = document.getElementById('nrfi-list');
 
@@ -2847,12 +2857,12 @@ function renderNRFI() {
 
   function grpBlock(label, cls, games) {
     if (!games.length) return '';
-    return `<div class="nrfi-group-label ${cls}">${label} ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ${games.length} game${games.length>1?'s':''}</div>
+    return `<div class="nrfi-group-label ${cls}">${label} - ${games.length} game${games.length>1?'s':''}</div>
       ${games.map(g => nrfiCard(g)).join('')}`;
   }
 
   el.innerHTML = `
-    <div class="sec">NRFI Matrix ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â ${DATA.date||'Today'} <span class="dim" style="font-size:9px;margin-left:8px;letter-spacing:.5px">2026 STATS ONLY Ãƒâ€šÃ‚Â· BREAK-EVEN ~55%</span></div>
+    <div class="sec">NRFI Matrix - ${DATA.date||'Today'} <span class="dim" style="font-size:9px;margin-left:8px;letter-spacing:.5px">2026 STATS ONLY - BREAK-EVEN ~55%</span></div>
     <div class="stat-row" style="margin-bottom:20px">
       ${sc(DATA.nrfi.length,'GAMES')}
       ${sc(strong,'STRONG NRFI','strong-col')}
@@ -2877,7 +2887,7 @@ function nrfiCard(g) {
   const confCol = g.confidence === 'high' ? 'pos' : g.confidence === 'medium' ? '' : 'dim';
 
   function pitcherBlock(p, label) {
-    if (!p) return `<div class="nrfi-col"><div class="nrfi-col-title">${label}</div><div class="dim" style="font-size:10px">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</div></div>`;
+    if (!p) return `<div class="nrfi-col"><div class="nrfi-col-title">${label}</div><div class="dim" style="font-size:10px">-</div></div>`;
     const fi  = p.first_inning || {};
     const era = p.season_era;
     const eraCol = era && era < 3.5 ? 'pos' : era && era > 4.5 ? 'neg' : '';
@@ -2886,13 +2896,13 @@ function nrfiCard(g) {
       <div class="nrfi-col-title">${label}</div>
       <div style="font-size:11px;font-weight:500;margin-bottom:4px">${(p.name||'TBD').split(' ').pop()}</div>
       ${fi.games >= 1 ? `
-        <div class="nrfi-stat-row"><span>1st ERA</span><span class="val ${(fi.era_1st||99)<3?'pos':(fi.era_1st||99)>4.5?'neg':''}">${fi.era_1st??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-        <div class="nrfi-stat-row"><span>0-run%</span><span class="val ${cleanCol}">${fi.clean_innings_pct??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}%</span></div>
-        <div class="nrfi-stat-row"><span>runs/gm</span><span class="val">${fi.er_per_start??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-        <div class="nrfi-stat-row"><span>k (1st)</span><span class="val">${fi.k_1st??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
+        <div class="nrfi-stat-row"><span>1st ERA</span><span class="val ${(fi.era_1st||99)<3?'pos':(fi.era_1st||99)>4.5?'neg':''}">${fi.era_1st??'-'}</span></div>
+        <div class="nrfi-stat-row"><span>0-run%</span><span class="val ${cleanCol}">${fi.clean_innings_pct??'-'}%</span></div>
+        <div class="nrfi-stat-row"><span>runs/gm</span><span class="val">${fi.er_per_start??'-'}</span></div>
+        <div class="nrfi-stat-row"><span>k (1st)</span><span class="val">${fi.k_1st??'-'}</span></div>
         <div class="nrfi-stat-row dim" style="font-size:9px">${fi.games} starts tracked</div>
       ` : `
-        <div class="nrfi-stat-row"><span>season ERA</span><span class="val ${eraCol}">${era??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
+        <div class="nrfi-stat-row"><span>season ERA</span><span class="val ${eraCol}">${era??'-'}</span></div>
         <div class="nrfi-stat-row dim" style="font-size:9px">no 1st inn data yet</div>
       `}
     </div>`;
@@ -2904,11 +2914,11 @@ function nrfiCard(g) {
     const baCol = (b.ba_1st||0) >= .280 ? 'neg' : (b.ba_1st||0) <= .220 ? 'pos' : '';
     return `<div class="nrfi-col">
       <div class="nrfi-col-title">${label}</div>
-      <div class="nrfi-stat-row"><span>scores%</span><span class="val ${spCol}">${b.scored_pct??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}%</span></div>
-      <div class="nrfi-stat-row"><span>runs/gm</span><span class="val ${spCol}">${b.runs_per_game??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-      <div class="nrfi-stat-row"><span>BA (1st)</span><span class="val ${baCol}">${b.ba_1st??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-      <div class="nrfi-stat-row"><span>OBP (1st)</span><span class="val">${b.obp_1st??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-      <div class="nrfi-stat-row"><span>K% (1st)</span><span class="val ${(b.k_pct_1st||0)>=27?'pos':(b.k_pct_1st||0)<=18?'neg':''}">${b.k_pct_1st??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}%</span></div>
+      <div class="nrfi-stat-row"><span>scores%</span><span class="val ${spCol}">${b.scored_pct??'-'}%</span></div>
+      <div class="nrfi-stat-row"><span>runs/gm</span><span class="val ${spCol}">${b.runs_per_game??'-'}</span></div>
+      <div class="nrfi-stat-row"><span>BA (1st)</span><span class="val ${baCol}">${b.ba_1st??'-'}</span></div>
+      <div class="nrfi-stat-row"><span>OBP (1st)</span><span class="val">${b.obp_1st??'-'}</span></div>
+      <div class="nrfi-stat-row"><span>K% (1st)</span><span class="val ${(b.k_pct_1st||0)>=27?'pos':(b.k_pct_1st||0)<=18?'neg':''}">${b.k_pct_1st??'-'}%</span></div>
       <div class="nrfi-stat-row dim" style="font-size:9px">${b.games} games tracked</div>
     </div>`;
   }
@@ -2923,7 +2933,7 @@ function nrfiCard(g) {
 
   return `<div class="nrfi-card ${cls}">
     <div class="nrfi-head">
-      <span class="mono dim" style="font-size:10px">${g.game_time||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
+      <span class="mono dim" style="font-size:10px">${g.game_time||'-'}</span>
       <span style="font-size:12px;font-weight:500">${g.away_abbr} @ ${g.home_abbr}</span>
       <div>
         <div class="nrfi-meter">
@@ -2936,7 +2946,7 @@ function nrfiCard(g) {
         <div class="nrfi-edge-pill ${edgeCls}">${edgeTxt}</div>
       </div>
       <div class="hide-sm" style="text-align:right">
-        <div class="mono ${confCol}" style="font-size:10px">${g.confidence||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div>
+        <div class="mono ${confCol}" style="font-size:10px">${g.confidence||'-'}</div>
         <div style="font-size:9px;color:var(--t3);margin-top:2px">confidence</div>
       </div>
     </div>
@@ -2949,11 +2959,11 @@ function nrfiCard(g) {
   </div>`;
 }
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ MODEL PERFORMANCE ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- MODEL PERFORMANCE --------------------------------------------------------
 let resultsFilter = 'all';
 let resultsRendered = false;
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ RESULTS CALENDAR ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- RESULTS CALENDAR ---------------------------------------------------------
 let calYear  = new Date().getFullYear();
 let calMonth = new Date().getMonth(); // 0-indexed
 let calSelectedDate = null;
@@ -3053,7 +3063,7 @@ function renderCalDayDetail(dateStr, d) {
   const dt = new Date(dateStr + 'T12:00:00').toLocaleDateString('en-US',
     {weekday:'long', month:'long', day:'numeric', year:'numeric'});
   const t = d.w + d.l;
-  const pct = t > 0 ? (d.w/t*100).toFixed(0)+'%' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+  const pct = t > 0 ? (d.w/t*100).toFixed(0)+'%' : '-';
   const wc = d.w > d.l ? 'pos' : d.w < d.l ? 'neg' : 'warn';
 
   const rows = d.picks.map(h => {
@@ -3061,7 +3071,7 @@ function renderCalDayDetail(dateStr, d) {
       ? `${h.home_abbr} ${h.vegas_spread}`
       : h.spread_bet
       ? `${h.away_abbr} +1.5`
-      : h.total_bet ? `${(h.total_bet||'').toUpperCase()} ${h.vegas_total}` : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+      : h.total_bet ? `${(h.total_bet||'').toUpperCase()} ${h.vegas_total}` : '-';
     const resTag = h.result === 'win'
       ? '<span class="tag tag-lean">WIN</span>'
       : h.result === 'loss'
@@ -3069,10 +3079,10 @@ function renderCalDayDetail(dateStr, d) {
       : '<span class="tag-none dim">PUSH</span>';
     const edge = h.edge_spread != null
       ? (h.edge_spread >= 0 ? '+' : '') + (h.edge_spread*100).toFixed(1) + '%'
-      : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+      : '-';
     const actual = h.actual_away_score != null
-      ? `${h.away_abbr} ${h.actual_away_score} ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ ${h.actual_home_score} ${h.home_abbr}`
-      : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+      ? `${h.away_abbr} ${h.actual_away_score} - ${h.actual_home_score} ${h.home_abbr}`
+      : '-';
     return `<tr>
       <td>${h.away_abbr} @ ${h.home_abbr}</td>
       <td class="mono" style="font-size:10px">${bet}</td>
@@ -3085,10 +3095,10 @@ function renderCalDayDetail(dateStr, d) {
   document.getElementById('cal-day-detail').innerHTML = `
     <div class="cal-day-detail">
       <div class="cal-detail-header">
-        ${dt} &nbsp;Ãƒâ€šÃ‚Â·&nbsp;
-        <span class="${wc}">${d.w}ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“${d.l}</span>
-        ${d.p > 0 ? ` Ãƒâ€šÃ‚Â· ${d.p} push` : ''}
-        &nbsp;Ãƒâ€šÃ‚Â·&nbsp; ${pct} win rate
+        ${dt} &nbsp;-&nbsp;
+        <span class="${wc}">${d.w}-${d.l}</span>
+        ${d.p > 0 ? ` - ${d.p} push` : ''}
+        &nbsp;-&nbsp; ${pct} win rate
       </div>
       <div class="tbl-wrap" style="border:none;margin:0">
         <table>
@@ -3101,7 +3111,7 @@ function renderCalDayDetail(dateStr, d) {
     </div>`;
 }
 
-// Calendar nav listeners ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â set up once
+// Calendar nav listeners - set up once
 document.getElementById('cal-prev').addEventListener('click', () => {
   calMonth--;
   if (calMonth < 0) { calMonth = 11; calYear--; }
@@ -3119,7 +3129,7 @@ function renderResults() {
   // picks_history.json uses spread_result/total_result fields and spread_bet/total_bet
   // Normalize to a flat "result" and "bet_type" for display
   const hist = DATA.history.map(h => {
-    // Determine bet type ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â prefer spread, fall back to total, then ML
+    // Determine bet type - prefer spread, fall back to total, then ML
     const betType = h.spread_bet ? 'spread' : h.total_bet ? 'total' : h.ml_bet ? 'ml' : null;
 
     // Get raw result from whichever bet type applies
@@ -3144,13 +3154,13 @@ function renderResults() {
 
   if (!hist.length) {
     document.getElementById('results-stats').innerHTML =
-      `<div class="stat-cell"><div class="v dim">0ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“0</div><div class="l">RECORD</div></div>
-       <div class="stat-cell"><div class="v dim">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</div><div class="l">WIN RATE</div></div>
+      `<div class="stat-cell"><div class="v dim">0-0</div><div class="l">RECORD</div></div>
+       <div class="stat-cell"><div class="v dim">-</div><div class="l">WIN RATE</div></div>
        <div class="stat-cell"><div class="v dim">0.0u</div><div class="l">P&L UNITS</div></div>
        <div class="stat-cell"><div class="v dim">0</div><div class="l">PUSHES</div></div>
-       <div class="stat-cell"><div class="v dim">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</div><div class="l">STREAK</div></div>`;
+       <div class="stat-cell"><div class="v dim">-</div><div class="l">STREAK</div></div>`;
     document.getElementById('results-tbody').innerHTML =
-      '<tr><td colspan="8" class="empty">No graded results yet ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â results populate automatically after games finish each day</td></tr>';
+      '<tr><td colspan="8" class="empty">No graded results yet - results populate automatically after games finish each day</td></tr>';
     renderResultsListeners();
     return;
   }
@@ -3160,7 +3170,7 @@ function renderResults() {
   const losses  = bets.filter(h => h.result === 'loss').length;
   const pushes  = hist.filter(h => h.result === 'push').length;
   const total   = wins + losses;
-  const pct     = total > 0 ? (wins/total*100).toFixed(1) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+  const pct     = total > 0 ? (wins/total*100).toFixed(1) : '-';
   const pnl     = bets.reduce((s,h) => s + (h.pnl||0), 0).toFixed(2);
   const pnlCol  = parseFloat(pnl) > 0 ? 'pos' : parseFloat(pnl) < 0 ? 'neg' : '';
   const streak  = calcStreak(hist);
@@ -3178,10 +3188,10 @@ function renderResults() {
     sc(streak, 'STREAK');
 
   document.getElementById('results-by-type').innerHTML =
-    `<div class="stat-cell"><div class="v">${rlW}ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“${rlBets.length-rlW}</div><div class="l">Run Line</div></div>` +
-    `<div class="stat-cell"><div class="v">${ouW}ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“${ouBets.length-ouW}</div><div class="l">Over/Under</div></div>` +
-    `<div class="stat-cell"><div class="v ${rlBets.length>0?(rlW/rlBets.length>=.55?'pos':rlW/rlBets.length<=.45&&rlBets.length>5?'neg':''):''}">${rlBets.length>0?(rlW/rlBets.length*100).toFixed(1)+'%':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div><div class="l">RL Win%</div></div>` +
-    `<div class="stat-cell"><div class="v ${ouBets.length>0?(ouW/ouBets.length>=.55?'pos':ouW/ouBets.length<=.45&&ouBets.length>5?'neg':''):''}">${ouBets.length>0?(ouW/ouBets.length*100).toFixed(1)+'%':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div><div class="l">O/U Win%</div></div>`;
+    `<div class="stat-cell"><div class="v">${rlW}-${rlBets.length-rlW}</div><div class="l">Run Line</div></div>` +
+    `<div class="stat-cell"><div class="v">${ouW}-${ouBets.length-ouW}</div><div class="l">Over/Under</div></div>` +
+    `<div class="stat-cell"><div class="v ${rlBets.length>0?(rlW/rlBets.length>=.55?'pos':rlW/rlBets.length<=.45&&rlBets.length>5?'neg':''):''}">${rlBets.length>0?(rlW/rlBets.length*100).toFixed(1)+'%':'-'}</div><div class="l">RL Win%</div></div>` +
+    `<div class="stat-cell"><div class="v ${ouBets.length>0?(ouW/ouBets.length>=.55?'pos':ouW/ouBets.length<=.45&&ouBets.length>5?'neg':''):''}">${ouBets.length>0?(ouW/ouBets.length*100).toFixed(1)+'%':'-'}</div><div class="l">O/U Win%</div></div>`;
 
   renderResultsTable(hist);
   renderResultsListeners(hist);
@@ -3212,11 +3222,11 @@ function renderResultsTable(histIn) {
         const edge   = Math.abs(h.edge_spread||h.edge_total||0);
         const bet    = h.bet_type === 'spread'
           ? (h.spread_bet==='home_cover' ? `${h.home_abbr||''} RL` : `${h.away_abbr||''} +1.5`)
-          : h.total_bet ? `${(h.total_bet).toUpperCase()} ${h.vegas_total||''}` : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+          : h.total_bet ? `${(h.total_bet).toUpperCase()} ${h.vegas_total||''}` : '-';
         const actual = h.actual_away_score!=null
-          ? `${h.away_abbr||''} ${h.actual_away_score} ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“ ${h.actual_home_score} ${h.home_abbr||''}`
-          : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-        const dt     = h.date ? new Date(h.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+          ? `${h.away_abbr||''} ${h.actual_away_score} - ${h.actual_home_score} ${h.home_abbr||''}`
+          : '-';
+        const dt     = h.date ? new Date(h.date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}) : '-';
         const resTag = res==='win'
           ? `<span class="tag tag-lean">WIN</span>`
           : res==='loss'
@@ -3224,13 +3234,13 @@ function renderResultsTable(histIn) {
           : `<span class="tag tag-none">PUSH</span>`;
         return `<tr>
           <td class="mono dim" style="font-size:10px">${dt}</td>
-          <td>${h.away_abbr||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'} @ ${h.home_abbr||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
+          <td>${h.away_abbr||'-'} @ ${h.home_abbr||'-'}</td>
           <td class="mono" style="font-size:11px">${bet}</td>
-          <td>${h.spread_edge_label!=='NONE'&&h.spread_edge_label!=='NO LINE'?h.spread_edge_label||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â':h.total_edge_label||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
-          <td class="tc mono ${edge>0?'pos':'dim'}">${edge?(edge*100).toFixed(1)+'%':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
+          <td>${h.spread_edge_label!=='NONE'&&h.spread_edge_label!=='NO LINE'?h.spread_edge_label||'-':h.total_edge_label||'-'}</td>
+          <td class="tc mono ${edge>0?'pos':'dim'}">${edge?(edge*100).toFixed(1)+'%':'-'}</td>
           <td class="tc">${resTag}</td>
           <td class="mono dim" style="font-size:10px">${actual}</td>
-          <td class="tc mono dim">${h.spread_confidence||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
+          <td class="tc mono dim">${h.spread_confidence||'-'}</td>
         </tr>`;
       }).join('')
     : '<tr><td colspan="8" class="empty">No results match filter</td></tr>';
@@ -3252,7 +3262,7 @@ function renderResultsListeners() {
 function calcStreak(hist) {
   const sorted = [...hist].filter(h=>h.result&&h.result!=='push')
     .sort((a,b)=>(b.date||'').localeCompare(a.date||''));
-  if (!sorted.length) return 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+  if (!sorted.length) return '-';
   const last = sorted[0].result;
   let count = 0;
   for (const h of sorted) {
@@ -3262,7 +3272,7 @@ function calcStreak(hist) {
   return (last==='win'?'W':'L')+count;
 }
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ LIVE SCORES ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- LIVE SCORES --------------------------------------------------------------
 let liveInterval = null;
 
 async function fetchLiveScores() {
@@ -3270,12 +3280,12 @@ async function fetchLiveScores() {
   const modelDate = DATA.date || todayStr();
   const espnDate  = modelDate.replace(/-/g, '');
 
-  // Exact matchup pairs from today's picks ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â bulletproof filter
+  // Exact matchup pairs from today's picks - bulletproof filter
   const todayMatchups = new Set(
     DATA.games.map(g => g.away_abbr + '@' + g.home_abbr)
   );
 
-  // Try multiple ESPN endpoints ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â cdn.espn.com is more CORS-permissive
+  // Try multiple ESPN endpoints - cdn.espn.com is more CORS-permissive
   const endpoints = [
     `https://cdn.espn.com/core/mlb/scoreboard?xhr=1&dates=${espnDate}`,
     `https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/scoreboard?dates=${espnDate}&limit=100`,
@@ -3316,7 +3326,7 @@ async function fetchLiveScores() {
         : events;
 
       if (!matched.length) {
-        // ESPN has advanced to tomorrow ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â today's games are all done
+        // ESPN has advanced to tomorrow - today's games are all done
         bar.innerHTML = DATA.games.map(g =>
           `<div class="live-game live-final">
             <div class="lg-teams"><div class="lg-team">
@@ -3329,7 +3339,7 @@ async function fetchLiveScores() {
           </div>`
         ).join('');
         document.getElementById('live-updated').textContent =
-          new Date().toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}) + ' Ãƒâ€šÃ‚Â· all final';
+          new Date().toLocaleTimeString('en-US',{hour:'numeric',minute:'2-digit'}) + ' - all final';
         if (liveInterval) clearInterval(liveInterval);
         liveInterval = setInterval(fetchLiveScores, 600000);
         return;
@@ -3378,11 +3388,11 @@ async function fetchLiveScores() {
         return `<div class="live-game ${state==='in'?'live-active':state==='post'?'live-final':''}">
           <div class="lg-teams"><div class="lg-team">
             <span class="lg-abbr">${aA}</span>
-            <span class="lg-score ${aW||aL?'winning':''}">${aS!==''?aS:'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
+            <span class="lg-score ${aW||aL?'winning':''}">${aS!==''?aS:'-'}</span>
           </div></div>
           <div class="lg-teams"><div class="lg-team">
             <span class="lg-abbr">${hA}</span>
-            <span class="lg-score ${hW||hL?'winning':''}">${hS!==''?hS:'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
+            <span class="lg-score ${hW||hL?'winning':''}">${hS!==''?hS:'-'}</span>
           </div></div>
           <div class="lg-status ${state==='in'?'live':''}">${state==='post'?'F':detail}</div>
           ${situationHtml}
@@ -3399,11 +3409,11 @@ async function fetchLiveScores() {
     } catch(e) { continue; }
   }
 
-  // All endpoints failed ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â show scheduled times
+  // All endpoints failed - show scheduled times
   bar.innerHTML = DATA.games.map(g =>
     `<div class="live-game">
-      <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.away_abbr}</span><span class="lg-score">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</span></div></div>
-      <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.home_abbr}</span><span class="lg-score">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</span></div></div>
+      <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.away_abbr}</span><span class="lg-score">-</span></div></div>
+      <div class="lg-teams"><div class="lg-team"><span class="lg-abbr">${g.home_abbr}</span><span class="lg-score">-</span></div></div>
       <div class="lg-status" style="font-size:9px">${(g.game_time_ct||'').replace(' CT','')}</div>
     </div>`
   ).join('') || '<span style="padding:5px 12px;color:var(--t3);font-family:var(--mono);font-size:10px">Scores unavailable</span>';
@@ -3431,11 +3441,11 @@ function renderScoreBar(games) {
     return `<div class="live-game ${cls}">
       <div class="lg-teams"><div class="lg-team">
         <span class="lg-abbr">${g.away_abbr}</span>
-        <span class="lg-score ${aW||aL?'winning':''}">${aS!==''?aS:'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
+        <span class="lg-score ${aW||aL?'winning':''}">${aS!==''?aS:'-'}</span>
       </div></div>
       <div class="lg-teams"><div class="lg-team">
         <span class="lg-abbr">${g.home_abbr}</span>
-        <span class="lg-score ${hW||hL?'winning':''}">${hS!==''?hS:'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span>
+        <span class="lg-score ${hW||hL?'winning':''}">${hS!==''?hS:'-'}</span>
       </div></div>
       <div class="lg-status ${stc}">${stx}</div>
     </div>`;
@@ -3452,8 +3462,8 @@ function renderF5() {
   const el = document.getElementById('f5-stats');
   if (!el) return;
   if (!games.length) {
-    el.innerHTML = sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','GAMES')+sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','RL EDGES')+sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','O/U EDGES')+sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','AVG F5 TOTAL')+sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','BEST EDGE');
-    document.getElementById('f5-best-bets').innerHTML = '<div class="empty">No F5 data ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â run model with updated main.py</div>';
+    el.innerHTML = sc('-','GAMES')+sc('-','RL EDGES')+sc('-','O/U EDGES')+sc('-','AVG F5 TOTAL')+sc('-','BEST EDGE');
+    document.getElementById('f5-best-bets').innerHTML = '<div class="empty">No F5 data - run model with updated main.py</div>';
     document.getElementById('f5-tbody').innerHTML = '<tr><td colspan="10" class="empty">No F5 predictions yet</td></tr>';
     return;
   }
@@ -3466,16 +3476,16 @@ function renderF5() {
     .sort((a,b)=>Math.max(Math.abs(b.f5_spread_edge||0),Math.abs(b.f5_total_edge||0))-Math.max(Math.abs(a.f5_spread_edge||0),Math.abs(a.f5_total_edge||0))).slice(0,6);
   document.getElementById('f5-best-bets').innerHTML = bets.length ? bets.map(f5BetCard).join('') : '<div class="empty">No F5 edges today</div>';
   document.getElementById('f5-tbody').innerHTML = [...games].sort((a,b)=>(a.game_time_ct||'').localeCompare(b.game_time_ct||'')).map(g=>{
-    const rlL=g.f5_spread_label||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â',ouL=g.f5_total_label||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+    const rlL=g.f5_spread_label||'-',ouL=g.f5_total_label||'-';
     const rlC=rlL==='STRONG'?'pos':rlL==='LEAN'?'warn':'dim';
     const ouC=ouL==='STRONG'?'pos':ouL==='LEAN'?'warn':'dim';
-    const rlEd=g.f5_spread_edge!=null?(g.f5_spread_edge*100).toFixed(1)+'%':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const ouEd=g.f5_total_edge!=null?g.f5_total_edge.toFixed(2):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const bet=g.f5_spread_bet==='home_cover'?`${g.home_abbr} F5 RL`:g.f5_spread_bet==='away_cover'?`${g.away_abbr} F5 +0.5`:'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const ouBt=g.f5_total_bet?`${(g.f5_total_bet).toUpperCase()} ${g.f5_vegas_total||''}`:'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const wp=g.f5_win_prob!=null?(g.f5_win_prob*100).toFixed(0)+'%':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const mg=g.f5_margin!=null?(g.f5_margin>=0?'+':'')+g.f5_margin.toFixed(1):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const tot=g.f5_total!=null?g.f5_total.toFixed(1):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+    const rlEd=g.f5_spread_edge!=null?(g.f5_spread_edge*100).toFixed(1)+'%':'-';
+    const ouEd=g.f5_total_edge!=null?g.f5_total_edge.toFixed(2):'-';
+    const bet=g.f5_spread_bet==='home_cover'?`${g.home_abbr} F5 RL`:g.f5_spread_bet==='away_cover'?`${g.away_abbr} F5 +0.5`:'-';
+    const ouBt=g.f5_total_bet?`${(g.f5_total_bet).toUpperCase()} ${g.f5_vegas_total||''}`:'-';
+    const wp=g.f5_win_prob!=null?(g.f5_win_prob*100).toFixed(0)+'%':'-';
+    const mg=g.f5_margin!=null?(g.f5_margin>=0?'+':'')+g.f5_margin.toFixed(1):'-';
+    const tot=g.f5_total!=null?g.f5_total.toFixed(1):'-';
     const t=(g.game_time_ct||'').replace(' CT','');
     const hSP=(g.home_sp||'TBD').split(' ').pop(),aSP=(g.away_sp||'TBD').split(' ').pop();
     return `<tr><td class="mono dim" style="font-size:10px">${t}</td><td>${g.away_abbr} @ ${g.home_abbr}</td><td class="mono dim" style="font-size:10px">${aSP}/${hSP}</td><td class="tc mono">${mg}</td><td class="tc mono">${tot}</td><td class="tc mono dim">${wp}</td><td class="mono dim" style="font-size:10px">${bet}</td><td class="mono dim" style="font-size:10px">${ouBt}</td><td class="tc mono ${rlC}">${rlEd}</td><td class="tc mono ${ouC}">${ouEd}</td></tr>`;
@@ -3485,7 +3495,7 @@ function renderF5() {
 function f5BetCard(g) {
   const isRL=['STRONG','LEAN'].includes(g.f5_spread_label)&&Math.abs(g.f5_spread_edge||0)>=Math.abs(g.f5_total_edge||0);
   const label=isRL?g.f5_spread_label:g.f5_total_label;
-  const bet=isRL?(g.f5_spread_bet==='home_cover'?`${g.home_abbr} F5 RL`:`${g.away_abbr} F5 +0.5`):g.f5_total_bet?`${(g.f5_total_bet).toUpperCase()} ${g.f5_vegas_total||''}`:'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+  const bet=isRL?(g.f5_spread_bet==='home_cover'?`${g.home_abbr} F5 RL`:`${g.away_abbr} F5 +0.5`):g.f5_total_bet?`${(g.f5_total_bet).toUpperCase()} ${g.f5_vegas_total||''}`:'-';
   const edge=Math.abs(isRL?(g.f5_spread_edge||0)*100:(g.f5_total_edge||0)*10).toFixed(1);
   const cls=label==='STRONG'?'strong':label==='LEAN'?'lean':'none';
   const ecol=label==='STRONG'?'strong-col':'lean-col';
@@ -3494,9 +3504,9 @@ function f5BetCard(g) {
   const aCard=findCard(g.away_sp,g.away_abbr,g.home_abbr);
   function f5SP(card,sp,side){
     const name=card?card.name.split(' ').pop():(sp||'TBD').split(' ').pop();
-    const disp=name.length>12?name.slice(0,11)+'ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦':name;
+    const disp=name.length>12?name.slice(0,11)+'...':name;
     const lbl=side==='away'?'AWAY SP (BATS 1ST)':'HOME SP (BATS 2ND)';
-    if(!card) return `<div class="f5-sp-col"><div class="f5-sp-label">${lbl}</div><div class="f5-sp-name">${disp}</div><div class="f5-sp-row"><span>era</span><span>ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</span></div><div class="f5-sp-row"><span>k/9</span><span>ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</span></div><div class="f5-sp-row"><span>whip</span><span>ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</span></div><div class="f5-sp-row"><span>1st inn era</span><span>ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</span></div><div class="f5-sp-row"><span>k proj</span><span>ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</span></div></div>`;
+    if(!card) return `<div class="f5-sp-col"><div class="f5-sp-label">${lbl}</div><div class="f5-sp-name">${disp}</div><div class="f5-sp-row"><span>era</span><span>-</span></div><div class="f5-sp-row"><span>k/9</span><span>-</span></div><div class="f5-sp-row"><span>whip</span><span>-</span></div><div class="f5-sp-row"><span>1st inn era</span><span>-</span></div><div class="f5-sp-row"><span>k proj</span><span>-</span></div></div>`;
     const ss=card.season_stats||{};
     const kp=card.k_prediction?.predicted_ks;
     const sts=(card.last_starts||[]).slice(0,3);
@@ -3506,20 +3516,20 @@ function f5BetCard(g) {
     const ec=(ss.ERA||99)<3.5?'pos':(ss.ERA||99)>4.5?'neg':'';
     const l3c=l3e&&ss.ERA?(parseFloat(l3e)<ss.ERA?'pos':parseFloat(l3e)>ss.ERA+0.5?'neg':''):'';
     const tr=card.trend||'neutral';
-    const ti=tr==='improving'?'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Ëœ hot':tr==='declining'?'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Å“ cold':'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬â„¢ flat';
+    const ti=tr==='improving'?'^ hot':tr==='declining'?'v cold':'-> flat';
     const tc=tr==='improving'?'pos':tr==='declining'?'neg':'dim';
-    const rest=card.days_rest!=null?card.days_rest+'d rest':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+    const rest=card.days_rest!=null?card.days_rest+'d rest':'-';
     const fi=card.first_inning||{};
-    const fiE=fi.era!=null?fi.era.toFixed(2):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    return `<div class="f5-sp-col"><div class="f5-sp-label">${lbl}</div><div class="f5-sp-name">${disp}</div><div class="f5-sp-row"><span>era</span><span class="val ${ec}">${ss.ERA??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div><div class="f5-sp-row"><span>k/9</span><span class="val">${ss.K9??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div><div class="f5-sp-row"><span>whip</span><span class="val">${ss.WHIP??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div><div class="f5-sp-row"><span>l3 era</span><span class="val ${l3c}">${l3e||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div><div class="f5-sp-row"><span>trend</span><span class="val ${tc}">${ti}</span></div><div class="f5-sp-row"><span>rest</span><span class="val dim">${rest}</span></div><div class="f5-sp-row"><span>1st inn era</span><span class="val">${fiE}</span></div><div class="f5-sp-row"><span>k proj</span><span class="val">${kp??'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div></div>`;
+    const fiE=fi.era!=null?fi.era.toFixed(2):'-';
+    return `<div class="f5-sp-col"><div class="f5-sp-label">${lbl}</div><div class="f5-sp-name">${disp}</div><div class="f5-sp-row"><span>era</span><span class="val ${ec}">${ss.ERA??'-'}</span></div><div class="f5-sp-row"><span>k/9</span><span class="val">${ss.K9??'-'}</span></div><div class="f5-sp-row"><span>whip</span><span class="val">${ss.WHIP??'-'}</span></div><div class="f5-sp-row"><span>l3 era</span><span class="val ${l3c}">${l3e||'-'}</span></div><div class="f5-sp-row"><span>trend</span><span class="val ${tc}">${ti}</span></div><div class="f5-sp-row"><span>rest</span><span class="val dim">${rest}</span></div><div class="f5-sp-row"><span>1st inn era</span><span class="val">${fiE}</span></div><div class="f5-sp-row"><span>k proj</span><span class="val">${kp??'-'}</span></div></div>`;
   }
-  const mg=g.f5_margin!=null?(g.f5_margin>=0?'+':'')+g.f5_margin.toFixed(1):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-  const tot=g.f5_total!=null?g.f5_total.toFixed(1):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-  const wp=g.f5_win_prob!=null?(g.f5_win_prob*100).toFixed(0)+'%':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+  const mg=g.f5_margin!=null?(g.f5_margin>=0?'+':'')+g.f5_margin.toFixed(1):'-';
+  const tot=g.f5_total!=null?g.f5_total.toFixed(1):'-';
+  const wp=g.f5_win_prob!=null?(g.f5_win_prob*100).toFixed(0)+'%':'-';
   const vRL=g.f5_spread!=null?(g.f5_spread>0?'+':'')+g.f5_spread:'NO LINE';
   const vOU=g.f5_vegas_total!=null?g.f5_vegas_total:'NO LINE';
-  const rlEd=g.f5_spread_edge!=null?(g.f5_spread_edge>=0?'+':'')+(g.f5_spread_edge*100).toFixed(1)+'%':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-  const ouEd=g.f5_total_edge!=null?(g.f5_total_edge>=0?'+':'')+g.f5_total_edge.toFixed(2):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+  const rlEd=g.f5_spread_edge!=null?(g.f5_spread_edge>=0?'+':'')+(g.f5_spread_edge*100).toFixed(1)+'%':'-';
+  const ouEd=g.f5_total_edge!=null?(g.f5_total_edge>=0?'+':'')+g.f5_total_edge.toFixed(2):'-';
   const wpC=parseFloat(wp)>=55?'pos':parseFloat(wp)<=45?'neg':'';
   const rlC=g.f5_spread_edge!=null?(g.f5_spread_edge>0?'pos':g.f5_spread_edge<0?'neg':''):'dim';
   const ouC=g.f5_total_edge!=null?(g.f5_total_edge>0.3?'pos':g.f5_total_edge<-0.3?'neg':''):'dim';
@@ -3544,7 +3554,7 @@ function f5BetCard(g) {
   </div>`;
 }
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ K STRIKEOUT PROPS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- K STRIKEOUT PROPS --------------------------------------------------------
 function toggleKPropDetail(rowId) {
   const detailRow = document.getElementById(rowId);
   const icon = document.getElementById(rowId + '-icon');
@@ -3565,27 +3575,27 @@ function renderKProps() {
     const todayTeams = new Set(DATA.games.flatMap(g => [g.home_abbr, g.away_abbr]));
     props = DATA.kprops.filter(p => todayTeams.has(p.team));
   }
-  // Last resort fallback ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â show all but cap at reasonable number
+  // Last resort fallback - show all but cap at reasonable number
   if (!props.length) props = DATA.kprops.slice(0, 30);
 
   if (!props.length) {
-    el.innerHTML = sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','PITCHERS')+sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','EDGES')+sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','AVG PROJ')+sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','BEST EDGE');
-    document.getElementById('kprops-best').innerHTML = '<div class="empty">No K prop data ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â run model to generate strikeout_props.json</div>';
+    el.innerHTML = sc('-','PITCHERS')+sc('-','EDGES')+sc('-','AVG PROJ')+sc('-','BEST EDGE');
+    document.getElementById('kprops-best').innerHTML = '<div class="empty">No K prop data - run model to generate strikeout_props.json</div>';
     document.getElementById('kprops-tbody').innerHTML = '<tr><td colspan="12" class="empty">No data</td></tr>';
     return;
   }
 
   const withLine  = props.filter(p => p.line != null);
   const edges     = props.filter(p => ['STRONG','LEAN'].includes(p.label));
-  const avgProj   = props.length ? (props.reduce((s,p)=>s+(p.projected_ks||0),0)/props.length).toFixed(1) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-  const bestEdge  = edges.length ? Math.max(...edges.map(p=>p.best_edge||0)).toFixed(3) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+  const avgProj   = props.length ? (props.reduce((s,p)=>s+(p.projected_ks||0),0)/props.length).toFixed(1) : '-';
+  const bestEdge  = edges.length ? Math.max(...edges.map(p=>p.best_edge||0)).toFixed(3) : '-';
 
   el.innerHTML =
     sc(props.length,'PITCHERS') +
     sc(withLine.length,'W/ LINES') +
     sc(edges.length,'EDGES','pos') +
     sc(avgProj,'AVG PROJ K') +
-    sc(bestEdge!=='ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'?'+'+(parseFloat(bestEdge)*100).toFixed(1)+'%':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','BEST EDGE','warn');
+    sc(bestEdge!=='-'?'+'+(parseFloat(bestEdge)*100).toFixed(1)+'%':'-','BEST EDGE','warn');
 
   // Best bet cards
   const bestCards = [...props].filter(p => (p.best_edge || 0) >= 0.10).sort((a,b)=>(b.best_edge||0)-(a.best_edge||0)).slice(0,8);
@@ -3596,29 +3606,29 @@ function renderKProps() {
   // Full table
   document.getElementById('kprops-tbody').innerHTML = [...props].map(p => {
     const cls   = p.label==='STRONG'?'strong-col':p.label==='LEAN'?'lean-col':'dim';
-    const proj  = p.projected_ks != null ? p.projected_ks.toFixed(1) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const range = p.k_low_25 != null ? `${p.k_low_25}ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“${p.k_high_75}` : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const expIp = p.expected_ip != null ? p.expected_ip.toFixed(1) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const line  = p.line != null ? p.line : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const ovP   = p.over_prob  != null ? (p.over_prob*100).toFixed(0)+'%'  : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const unP   = p.under_prob != null ? (p.under_prob*100).toFixed(0)+'%' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-    const edge  = p.best_edge  != null ? (p.best_edge>=0?'+':'')+(p.best_edge*100).toFixed(1)+'%' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+    const proj  = p.projected_ks != null ? p.projected_ks.toFixed(1) : '-';
+    const range = p.k_low_25 != null ? `${p.k_low_25}-${p.k_high_75}` : '-';
+    const expIp = p.expected_ip != null ? p.expected_ip.toFixed(1) : '-';
+    const line  = p.line != null ? p.line : '-';
+    const ovP   = p.over_prob  != null ? (p.over_prob*100).toFixed(0)+'%'  : '-';
+    const unP   = p.under_prob != null ? (p.under_prob*100).toFixed(0)+'%' : '-';
+    const edge  = p.best_edge  != null ? (p.best_edge>=0?'+':'')+(p.best_edge*100).toFixed(1)+'%' : '-';
     const bet   = p.direction !== 'NONE' && p.direction !== 'NO LINE'
-      ? `${p.direction} ${p.line}` : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+      ? `${p.direction} ${p.line}` : '-';
     const ovC   = p.edge_over  > 0.04 ? 'pos' : p.edge_over  < -0.02 ? 'neg' : '';
     const unC   = p.edge_under > 0.04 ? 'pos' : p.edge_under < -0.02 ? 'neg' : '';
-    const umpStr = p.umpire ? p.umpire.split(' ').pop() : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+    const umpStr = p.umpire ? p.umpire.split(' ').pop() : '-';
     const umpAdj = p.ump_adj != null && p.ump_adj !== 1.0
-      ? (p.ump_adj > 1 ? '<span class="pos">ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Ëœ</span>' : '<span class="neg">ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Å“</span>') + ' ' + umpStr
+      ? (p.ump_adj > 1 ? '<span class="pos">^</span>' : '<span class="neg">v</span>') + ' ' + umpStr
       : `<span class="dim">${umpStr}</span>`;
-    const pkAdj  = p.park_adj != null ? (p.park_adj > 1.02 ? 'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Ëœ' : p.park_adj < 0.98 ? 'ÃƒÂ¢Ã¢â‚¬Â Ã¢â‚¬Å“' : '') : '';
+    const pkAdj  = p.park_adj != null ? (p.park_adj > 1.02 ? '^' : p.park_adj < 0.98 ? 'v' : '') : '';
     const rowId = `kprop-row-${p.pitcher?.replace(/[^a-z0-9]/gi, '-') || Math.random()}`;
 
     return `<tr class="kprop-main-row" onclick="toggleKPropDetail('${rowId}')" style="cursor:pointer">
       <td class="mono dim" style="font-size:10px">
-        <span id="${rowId}-icon" style="display:inline-block;width:12px;transition:transform 0.2s">ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â¼</span>
+        <span id="${rowId}-icon" style="display:inline-block;width:12px;transition:transform 0.2s">v</span>
         ${(p.game_time||'').replace(' CT','')}</td>
-      <td><strong>${p.pitcher||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</strong></td>
+      <td><strong>${p.pitcher||'-'}</strong></td>
       <td class="dim" style="font-size:10px">${p.team||''} vs ${p.opponent||''} ${pkAdj?`<span class="warn">${pkAdj}park</span>`:''}</td>
       <td class="tc mono hi">${proj}</td>
       <td class="tc mono dim" style="font-size:10px">${range}</td>
@@ -3637,19 +3647,19 @@ function renderKProps() {
             <div>
               <div style="font-size:10px;color:var(--t3);margin-bottom:8px;font-weight:500">L5 STARTS</div>
               <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;font-size:11px">
-                <div><span class="dim">Avg K:</span> <span class="mono">${p.l5_avg_k != null ? p.l5_avg_k.toFixed(1) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-                <div><span class="dim">Avg IP:</span> <span class="mono">${p.l5_avg_ip != null ? p.l5_avg_ip.toFixed(1) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-                <div><span class="dim">K%:</span> <span class="mono">${p.l5_k_pct != null ? (p.l5_k_pct*100).toFixed(1)+'%' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-                <div><span class="dim">Last:</span> <span class="mono">${p.last_start_k != null ? p.last_start_k : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
+                <div><span class="dim">Avg K:</span> <span class="mono">${p.l5_avg_k != null ? p.l5_avg_k.toFixed(1) : '-'}</span></div>
+                <div><span class="dim">Avg IP:</span> <span class="mono">${p.l5_avg_ip != null ? p.l5_avg_ip.toFixed(1) : '-'}</span></div>
+                <div><span class="dim">K%:</span> <span class="mono">${p.l5_k_pct != null ? (p.l5_k_pct*100).toFixed(1)+'%' : '-'}</span></div>
+                <div><span class="dim">Last:</span> <span class="mono">${p.last_start_k != null ? p.last_start_k : '-'}</span></div>
               </div>
             </div>
             <div>
               <div style="font-size:10px;color:var(--t3);margin-bottom:8px;font-weight:500">SEASON</div>
               <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:8px;font-size:11px">
-                <div><span class="dim">ERA:</span> <span class="mono">${p.season_era != null ? p.season_era.toFixed(2) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-                <div><span class="dim">WHIP:</span> <span class="mono">${p.season_whip != null ? p.season_whip.toFixed(2) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-                <div><span class="dim">K%:</span> <span class="mono">${p.season_k_pct != null ? (p.season_k_pct*100).toFixed(1)+'%' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
-                <div><span class="dim">Whiff%:</span> <span class="mono">${p.whiff_rate != null ? p.whiff_rate.toFixed(1)+'%' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</span></div>
+                <div><span class="dim">ERA:</span> <span class="mono">${p.season_era != null ? p.season_era.toFixed(2) : '-'}</span></div>
+                <div><span class="dim">WHIP:</span> <span class="mono">${p.season_whip != null ? p.season_whip.toFixed(2) : '-'}</span></div>
+                <div><span class="dim">K%:</span> <span class="mono">${p.season_k_pct != null ? (p.season_k_pct*100).toFixed(1)+'%' : '-'}</span></div>
+                <div><span class="dim">Whiff%:</span> <span class="mono">${p.whiff_rate != null ? p.whiff_rate.toFixed(1)+'%' : '-'}</span></div>
               </div>
             </div>
             <div>
@@ -3675,14 +3685,14 @@ function kpropCard(p) {
   const ecol  = p.label==='STRONG' ? 'strong-col' : 'lean-col';
   const isOver = p.direction === 'OVER';
   const bet   = `${p.direction} ${p.line} K`;
-  const edge  = p.best_edge != null ? (p.best_edge>=0?'+':'')+(p.best_edge*100).toFixed(1)+'%' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+  const edge  = p.best_edge != null ? (p.best_edge>=0?'+':'')+(p.best_edge*100).toFixed(1)+'%' : '-';
   const prob  = isOver ? p.over_prob : p.under_prob;
   const impl  = isOver ? p.impl_over : p.impl_under;
-  const probPct  = prob  != null ? (prob*100).toFixed(0)+'%' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-  const implPct  = impl  != null ? (impl*100).toFixed(0)+'%' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+  const probPct  = prob  != null ? (prob*100).toFixed(0)+'%' : '-';
+  const implPct  = impl  != null ? (impl*100).toFixed(0)+'%' : '-';
   const ovBarW   = Math.round((p.over_prob||0)*100);
   const unBarW   = Math.round((p.under_prob||0)*100);
-  const range = p.k_low_25 != null ? `${p.k_low_25}ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“${p.k_high_75} (25/75 pct)` : '';
+  const range = p.k_low_25 != null ? `${p.k_low_25}-${p.k_high_75} (25/75 pct)` : '';
   
   // Direction-based colors (green for OVER, orange for UNDER)
   const dirColor = isOver ? '#4db380' : '#c85a5a';
@@ -3695,13 +3705,13 @@ function kpropCard(p) {
     : 'No history';
   const recordPct = record && record.total > 0
     ? ((record.wins / record.total) * 100).toFixed(0) + '%'
-    : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+    : '-';
   
   return `<div class="bet-card edge-${cls}" style="padding:0;border-left-color:${dirColor}">
     <div class="bc-top">
       <div>
         <span class="bc-matchup">${p.pitcher}</span>
-        <span class="bc-meta" style="margin-left:6px">${p.team} vs ${p.opponent} Ãƒâ€šÃ‚Â· ${(p.game_time||'').replace(' CT','')}</span>
+        <span class="bc-meta" style="margin-left:6px">${p.team} vs ${p.opponent} - ${(p.game_time||'').replace(' CT','')}</span>
       </div>
       <div class="bc-call">
         ${p.label==='STRONG'?'<span class="tag tag-strong">STRONG</span>':'<span class="tag tag-lean">LEAN</span>'}
@@ -3709,25 +3719,25 @@ function kpropCard(p) {
     </div>
     <div style="padding:10px 12px">
       <div style="display:flex;align-items:baseline;gap:12px;margin-bottom:8px">
-        <div class="mono" style="font-size:28px;font-weight:300;line-height:1;color:${dirColor}">${p.projected_ks!=null?p.projected_ks.toFixed(1):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div>
+        <div class="mono" style="font-size:28px;font-weight:300;line-height:1;color:${dirColor}">${p.projected_ks!=null?p.projected_ks.toFixed(1):'-'}</div>
         <div>
-          <div class="mono" style="font-size:10px">projected K <span class="dim">Ãƒâ€šÃ‚Â· Vegas line: <span style="color:var(--t1)">${p.line!=null?p.line:'no line'}</span></span></div>
+          <div class="mono" style="font-size:10px">projected K <span class="dim">- Vegas line: <span style="color:var(--t1)">${p.line!=null?p.line:'no line'}</span></span></div>
           <div class="mono dim" style="font-size:9px">${range}</div>
         </div>
       </div>
       
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:8px;padding:6px;background:var(--s1);border-radius:3px">
-        <div><div class="mono" style="font-size:11px;font-weight:500">${p.season_era!=null?p.season_era.toFixed(2):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div><div style="font-size:8px;color:var(--t3)">ERA</div></div>
-        <div><div class="mono" style="font-size:11px;font-weight:500">${p.season_fip!=null?p.season_fip.toFixed(2):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div><div style="font-size:8px;color:var(--t3)">FIP</div></div>
-        <div><div class="mono" style="font-size:11px;font-weight:500">${p.season_whip!=null?p.season_whip.toFixed(2):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div><div style="font-size:8px;color:var(--t3)">WHIP</div></div>
-        <div><div class="mono" style="font-size:11px;font-weight:500">${p.season_k_pct!=null?p.season_k_pct.toFixed(1)+'%':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div><div style="font-size:8px;color:var(--t3)">K%</div></div>
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.season_era!=null?p.season_era.toFixed(2):'-'}</div><div style="font-size:8px;color:var(--t3)">ERA</div></div>
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.season_fip!=null?p.season_fip.toFixed(2):'-'}</div><div style="font-size:8px;color:var(--t3)">FIP</div></div>
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.season_whip!=null?p.season_whip.toFixed(2):'-'}</div><div style="font-size:8px;color:var(--t3)">WHIP</div></div>
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.season_k_pct!=null?p.season_k_pct.toFixed(1)+'%':'-'}</div><div style="font-size:8px;color:var(--t3)">K%</div></div>
       </div>
       
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:8px;padding:6px;background:var(--s1);border-radius:3px">
-        <div><div class="mono" style="font-size:11px;font-weight:500">${p.l5_avg_k!=null?p.l5_avg_k.toFixed(1):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div><div style="font-size:8px;color:var(--t3)">L5 Avg K</div></div>
-        <div><div class="mono" style="font-size:11px;font-weight:500">${p.l5_avg_ip!=null?p.l5_avg_ip.toFixed(1):'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div><div style="font-size:8px;color:var(--t3)">L5 Avg IP</div></div>
-        <div><div class="mono" style="font-size:11px;font-weight:500">${p.last_start_k!=null?p.last_start_k:'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div><div style="font-size:8px;color:var(--t3)">Last K</div></div>
-        <div><div class="mono" style="font-size:11px;font-weight:500">${p.whiff_rate!=null?p.whiff_rate.toFixed(1)+'%':'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</div><div style="font-size:8px;color:var(--t3)">Whiff%</div></div>
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.l5_avg_k!=null?p.l5_avg_k.toFixed(1):'-'}</div><div style="font-size:8px;color:var(--t3)">L5 Avg K</div></div>
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.l5_avg_ip!=null?p.l5_avg_ip.toFixed(1):'-'}</div><div style="font-size:8px;color:var(--t3)">L5 Avg IP</div></div>
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.last_start_k!=null?p.last_start_k:'-'}</div><div style="font-size:8px;color:var(--t3)">Last K</div></div>
+        <div><div class="mono" style="font-size:11px;font-weight:500">${p.whiff_rate!=null?p.whiff_rate.toFixed(1)+'%':'-'}</div><div style="font-size:8px;color:var(--t3)">Whiff%</div></div>
       </div>
       
       <div class="kprop-bar-wrap">
@@ -3748,15 +3758,15 @@ function kpropCard(p) {
   </div>`;
 }
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ BULLPEN REPORT ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- BULLPEN REPORT -----------------------------------------------------------
 function renderBullpen() {
   const el = document.getElementById('bullpen-stats');
   if (!el) return;
   const bp = DATA.bullpen;
 
   if (!bp.length) {
-    el.innerHTML = sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','TEAMS')+sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','ELITE')+sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','POOR')+sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','HEAVY USE')+sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','AVG ERA');
-    document.getElementById('bullpen-matchups').innerHTML = '<div class="empty">No bullpen data ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â run model to generate bullpen_report.json</div>';
+    el.innerHTML = sc('-','TEAMS')+sc('-','ELITE')+sc('-','POOR')+sc('-','HEAVY USE')+sc('-','AVG ERA');
+    document.getElementById('bullpen-matchups').innerHTML = '<div class="empty">No bullpen data - run model to generate bullpen_report.json</div>';
     document.getElementById('bullpen-tbody').innerHTML = '<tr><td colspan="8" class="empty">No data</td></tr>';
     return;
   }
@@ -3773,7 +3783,7 @@ function renderBullpen() {
     sc(heavy,'TIRED/HEAVY','warn') +
     sc(avgERA,'AVG BP ERA');
 
-  // Matchup differentials ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â pair today's games
+  // Matchup differentials - pair today's games
   const matchups = DATA.games.map(g => {
     const hBP = bp.find(t=>t.team===g.home_abbr);
     const aBP = bp.find(t=>t.team===g.away_abbr);
@@ -3786,7 +3796,7 @@ function renderBullpen() {
 
   document.getElementById('bullpen-matchups').innerHTML = matchups.length
     ? `<div class="bp-matchup-grid">${matchups.map(m => {
-        const advStr = m.adv ? `<span class="pos" style="font-size:9px">ÃƒÂ¢Ã¢â‚¬â€œÃ‚Â² ${m.adv} pen advantage</span>` : '<span class="dim" style="font-size:9px">even matchup</span>';
+        const advStr = m.adv ? `<span class="pos" style="font-size:9px">^ ${m.adv} pen advantage</span>` : '<span class="dim" style="font-size:9px">even matchup</span>';
         function teamRow(bpd) {
           const qcls  = bpd.quality.toLowerCase();
           const fcls  = bpd.fatigue.toLowerCase();
@@ -3804,12 +3814,12 @@ function renderBullpen() {
           <div class="bp-matchup-head">${m.g.away_abbr} @ ${m.g.home_abbr} <span class="mono dim" style="font-size:10px">${(m.g.game_time_ct||'').replace(' CT','')}</span></div>
           ${teamRow(m.aBP)}
           ${teamRow(m.hBP)}
-          <div style="margin-top:6px;font-family:var(--mono);font-size:9px">${advStr} Ãƒâ€šÃ‚Â· ERA diff: <span class="${Math.abs(parseFloat(m.eraDiff))>=0.5?'warn':'dim'}">${parseFloat(m.eraDiff)>=0?'+':''}${m.eraDiff}</span></div>
+          <div style="margin-top:6px;font-family:var(--mono);font-size:9px">${advStr} - ERA diff: <span class="${Math.abs(parseFloat(m.eraDiff))>=0.5?'warn':'dim'}">${parseFloat(m.eraDiff)>=0?'+':''}${m.eraDiff}</span></div>
         </div>`;
       }).join('')}</div>`
     : '<div class="empty">No matchup data</div>';
 
-  // Full table ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â sorted by ERA
+  // Full table - sorted by ERA
   document.getElementById('bullpen-tbody').innerHTML = [...bp]
     .sort((a,b)=>a.era-b.era)
     .map(t => {
@@ -3831,7 +3841,7 @@ function renderBullpen() {
     }).join('') || '<tr><td colspan="8" class="empty">No bullpen data</td></tr>';
 }
 
-// ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ K PROP RESULTS ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬
+// -- K PROP RESULTS -----------------------------------------------------------
 let kpropResultsFilter = 'all';
 let kpropResultsRendered = false;
 
@@ -3842,9 +3852,9 @@ function renderKPropResults() {
   const props = DATA.kpropHistory || [];
 
   if (!props.length) {
-    el.innerHTML = sc('0','PICKS') + sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','RECORD') + sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','WIN RATE') + sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','P&L') + sc('ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â','AVG EDGE');
+    el.innerHTML = sc('0','PICKS') + sc('-','RECORD') + sc('-','WIN RATE') + sc('-','P&L') + sc('-','AVG EDGE');
     document.getElementById('kprop-results-tbody').innerHTML =
-      '<tr><td colspan="9" class="empty">No K prop history yet ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â picks are logged after each graded game</td></tr>';
+      '<tr><td colspan="9" class="empty">No K prop history yet - picks are logged after each graded game</td></tr>';
     setupKPropResultsListeners();
     return;
   }
@@ -3853,16 +3863,16 @@ function renderKPropResults() {
   const wins    = graded.filter(p => p.result === 'W').length;
   const losses  = graded.filter(p => p.result === 'L').length;
   const total   = wins + losses;
-  const winPct  = total > 0 ? (wins/total*100).toFixed(1)+'%' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+  const winPct  = total > 0 ? (wins/total*100).toFixed(1)+'%' : '-';
   const pnl     = graded.reduce((s,p) => s + (p.pnl||0), 0).toFixed(2);
   const pnlCol  = parseFloat(pnl) > 0 ? 'pos' : parseFloat(pnl) < 0 ? 'neg' : '';
   const edges   = props.filter(p => p.edge != null).map(p => p.edge);
-  const avgEdge = edges.length ? (edges.reduce((a,b)=>a+b,0)/edges.length*100).toFixed(1)+'%' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+  const avgEdge = edges.length ? (edges.reduce((a,b)=>a+b,0)/edges.length*100).toFixed(1)+'%' : '-';
 
   // By pitcher breakdown
   const pitcherMap = {};
   graded.forEach(p => {
-    const name = p.player_name || 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+    const name = p.player_name || '-';
     if (!pitcherMap[name]) pitcherMap[name] = {w:0, l:0, pnl:0};
     if (p.result === 'W') pitcherMap[name].w++;
     else pitcherMap[name].l++;
@@ -3883,21 +3893,21 @@ function renderKPropResults() {
 
   document.getElementById('kprop-results-by-pitcher').innerHTML = pitcherEntries.map(([name, rec]) => {
     const t = rec.w + rec.l;
-    const pct = t > 0 ? (rec.w/t*100).toFixed(0)+'%' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+    const pct = t > 0 ? (rec.w/t*100).toFixed(0)+'%' : '-';
     const pc = rec.w/Math.max(t,1) >= 0.6 ? 'pos' : rec.w/Math.max(t,1) <= 0.4 && t>2 ? 'neg' : '';
     const pnlc = rec.pnl > 0 ? 'pos' : rec.pnl < 0 ? 'neg' : '';
     return `<div class="stat-cell">
       <div class="v ${pc}">${rec.w}-${rec.l}</div>
       <div class="l">${name.split(' ').pop()}</div>
-      <div style="font-family:var(--mono);font-size:9px;color:var(--t3);margin-top:2px">${pct} Ãƒâ€šÃ‚Â· <span class="${pnlc}">${rec.pnl>=0?'+':''}${rec.pnl.toFixed(1)}u</span></div>
+      <div style="font-family:var(--mono);font-size:9px;color:var(--t3);margin-top:2px">${pct} - <span class="${pnlc}">${rec.pnl>=0?'+':''}${rec.pnl.toFixed(1)}u</span></div>
     </div>`;
-  }).join('') || '<div class="stat-cell"><div class="v dim">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</div><div class="l">No graded props</div></div>';
+  }).join('') || '<div class="stat-cell"><div class="v dim">-</div><div class="l">No graded props</div></div>';
 
   renderKPropResultsTable(props);
   setupKPropResultsListeners(props);
 }
 
-// ── K PROP RESULTS CALENDAR ──────────────────────────────────────────────────
+// -- K PROP RESULTS CALENDAR --------------------------------------------------
 let kcalYear  = new Date().getFullYear();
 let kcalMonth = new Date().getMonth();
 let kcalSelectedDate = null;
@@ -3987,8 +3997,8 @@ function selectKCalDay(dateStr, keep) {
   }).join('');
   detail.innerHTML = `
     <div style="padding:10px 0 4px;font-family:var(--mono);font-size:11px;color:var(--t2)">
-      ${dateStr} &nbsp;·&nbsp; <span class="${d.w>d.l?'pos':d.l>d.w?'neg':''}">${d.w}-${d.l}</span>
-      &nbsp;·&nbsp; <span class="${pnlCls}">${d.pnl>=0?'+':''}${d.pnl.toFixed(1)}u</span>
+      ${dateStr} &nbsp;-&nbsp; <span class="${d.w>d.l?'pos':d.l>d.w?'neg':''}">${d.w}-${d.l}</span>
+      &nbsp;-&nbsp; <span class="${pnlCls}">${d.pnl>=0?'+':''}${d.pnl.toFixed(1)}u</span>
     </div>
     <div class="tbl-wrap"><table>
       <thead><tr><th>PITCHER</th><th>BET</th><th class="tc">PROJ</th><th class="tc">ACTUAL</th><th class="tc">RESULT</th></tr></thead>
@@ -4008,23 +4018,23 @@ function renderKPropResultsTable(propsIn) {
 
   document.getElementById('kprop-results-tbody').innerHTML = rows.length
     ? rows.map(p => {
-        const dt    = p.game_date ? new Date(p.game_date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-        const line  = p.prop_line != null ? p.prop_line : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-        const bet   = p.prop_market || 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-        const proj  = p.predicted_value != null ? parseFloat(p.predicted_value).toFixed(1) : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-        const actual= p.actual_value != null ? p.actual_value : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
-        const edge  = p.edge != null ? (p.edge>=0?'+':'')+(p.edge*100).toFixed(1)+'%' : 'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â';
+        const dt    = p.game_date ? new Date(p.game_date+'T12:00:00').toLocaleDateString('en-US',{month:'numeric',day:'numeric'}) : '-';
+        const line  = p.prop_line != null ? p.prop_line : '-';
+        const bet   = p.prop_market || '-';
+        const proj  = p.predicted_value != null ? parseFloat(p.predicted_value).toFixed(1) : '-';
+        const actual= p.actual_value != null ? p.actual_value : '-';
+        const edge  = p.edge != null ? (p.edge>=0?'+':'')+(p.edge*100).toFixed(1)+'%' : '-';
         const edgeC = p.edge > 0.04 ? 'pos' : p.edge < -0.02 ? 'neg' : 'dim';
         const res   = p.result === 'W'
           ? '<span class="tag tag-lean">WIN</span>'
           : p.result === 'L'
           ? '<span class="tag" style="background:#44111122;color:var(--neg);border:1px solid #44111144">LOSS</span>'
-          : '<span class="tag-none dim">ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â</span>';
+          : '<span class="tag-none dim">-</span>';
         const actC  = p.result === 'W' ? 'pos' : p.result === 'L' ? 'neg' : '';
         return `<tr>
           <td class="mono dim" style="font-size:10px">${dt}</td>
-          <td><strong>${p.player_name||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</strong></td>
-          <td class="dim">${p.player_team||'ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â'}</td>
+          <td><strong>${p.player_name||'-'}</strong></td>
+          <td class="dim">${p.player_team||'-'}</td>
           <td class="tc mono">${line}</td>
           <td class="mono" style="font-size:10px">${bet}</td>
           <td class="tc mono hi">${proj}</td>
