@@ -1,6 +1,6 @@
 [
   {
-    "id": 1415,
+    "id": 1424,
     "game_date": "2026-07-12",
     "game_pick_id": null,
     "player_name": "Zack Wheeler",
@@ -11,11 +11,11 @@
     "prop_line": 7.5,
     "prop_odds": -135,
     "prop_book": "betmgm",
-    "predicted_value": 5.2,
-    "predicted_prob_over": 0.155,
-    "edge": 0.27,
+    "predicted_value": 5.9,
+    "predicted_prob_over": 0.242,
+    "edge": 0.183,
     "confidence": null,
-    "player_season_avg": 14.68,
+    "player_season_avg": 14.55,
     "player_last7_avg": null,
     "player_last30_avg": null,
     "matchup_factor": null,
@@ -23,7 +23,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-12 18:07:13",
+    "created_at": "2026-07-12 20:06:48",
     "graded_at": null
   },
   {
@@ -54,7 +54,7 @@
     "graded_at": null
   },
   {
-    "id": 1414,
+    "id": 1423,
     "game_date": "2026-07-12",
     "game_pick_id": null,
     "player_name": "Tarik Skubal",
@@ -65,11 +65,11 @@
     "prop_line": 7.5,
     "prop_odds": -113,
     "prop_book": "betrivers",
-    "predicted_value": 5.4,
-    "predicted_prob_over": 0.178,
-    "edge": 0.291,
+    "predicted_value": 5.7,
+    "predicted_prob_over": 0.216,
+    "edge": 0.254,
     "confidence": null,
-    "player_season_avg": 12.57,
+    "player_season_avg": 12.0,
     "player_last7_avg": null,
     "player_last30_avg": null,
     "matchup_factor": null,
@@ -77,11 +77,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-12 18:07:13",
+    "created_at": "2026-07-12 20:06:48",
     "graded_at": null
   },
   {
-    "id": 1421,
+    "id": 1427,
     "game_date": "2026-07-12",
     "game_pick_id": null,
     "player_name": "Taj Bradley",
@@ -96,7 +96,7 @@
     "predicted_prob_over": 0.426,
     "edge": 0.086,
     "confidence": null,
-    "player_season_avg": 12.17,
+    "player_season_avg": 11.81,
     "player_last7_avg": null,
     "player_last30_avg": null,
     "matchup_factor": null,
@@ -104,7 +104,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-12 18:07:13",
+    "created_at": "2026-07-12 20:06:48",
     "graded_at": null
   },
   {
@@ -135,7 +135,7 @@
     "graded_at": null
   },
   {
-    "id": 1418,
+    "id": 1426,
     "game_date": "2026-07-12",
     "game_pick_id": null,
     "player_name": "Seth Lugo",
@@ -146,11 +146,11 @@
     "prop_line": 4.5,
     "prop_odds": 110,
     "prop_book": "draftkings",
-    "predicted_value": 4.1,
-    "predicted_prob_over": 0.391,
-    "edge": 0.133,
+    "predicted_value": 4.3,
+    "predicted_prob_over": 0.43,
+    "edge": 0.094,
     "confidence": null,
-    "player_season_avg": 8.61,
+    "player_season_avg": 9.38,
     "player_last7_avg": null,
     "player_last30_avg": null,
     "matchup_factor": null,
@@ -158,7 +158,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-12 18:07:13",
+    "created_at": "2026-07-12 20:06:48",
     "graded_at": null
   },
   {
@@ -216,7 +216,7 @@
     "graded_at": null
   },
   {
-    "id": 1417,
+    "id": 1425,
     "game_date": "2026-07-12",
     "game_pick_id": null,
     "player_name": "Matthew Boyd",
@@ -227,11 +227,11 @@
     "prop_line": 5.5,
     "prop_odds": 110,
     "prop_book": "betmgm",
-    "predicted_value": 4.8,
-    "predicted_prob_over": 0.349,
-    "edge": 0.175,
+    "predicted_value": 5.0,
+    "predicted_prob_over": 0.384,
+    "edge": 0.14,
     "confidence": null,
-    "player_season_avg": 8.26,
+    "player_season_avg": 7.42,
     "player_last7_avg": null,
     "player_last30_avg": null,
     "matchup_factor": null,
@@ -239,7 +239,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-12 18:07:13",
+    "created_at": "2026-07-12 20:06:48",
     "graded_at": null
   },
   {
@@ -297,7 +297,7 @@
     "graded_at": null
   },
   {
-    "id": 1420,
+    "id": 1428,
     "game_date": "2026-07-12",
     "game_pick_id": null,
     "player_name": "Ian Seymour",
@@ -308,11 +308,11 @@
     "prop_line": 5.5,
     "prop_odds": 126,
     "prop_book": "betonlineag",
-    "predicted_value": 5.4,
-    "predicted_prob_over": 0.454,
-    "edge": 0.104,
+    "predicted_value": 5.5,
+    "predicted_prob_over": 0.471,
+    "edge": 0.086,
     "confidence": null,
-    "player_season_avg": 13.22,
+    "player_season_avg": 12.68,
     "player_last7_avg": null,
     "player_last30_avg": null,
     "matchup_factor": null,
@@ -320,7 +320,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-12 18:07:13",
+    "created_at": "2026-07-12 20:06:48",
     "graded_at": null
   },
   {
