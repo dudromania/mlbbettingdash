@@ -1,1 +1,25 @@
-[]
+[
+  {
+    "date": "2026-07-16",
+    "game_time": "6:10 PM CT",
+    "home_abbr": "PHI",
+    "away_abbr": "NYM",
+    "home_sp": "Aaron Nola",
+    "away_sp": "Christian Scott",
+    "nrfi_prob": 33.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Aaron Nola",
+      "first_inning": {},
+      "season_era": 5.75
+    },
+    "away_pitcher": {
+      "name": "Christian Scott",
+      "first_inning": {},
+      "season_era": 3.17
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  }
+]
