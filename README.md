@@ -5,7 +5,7 @@ Live MLB betting model output. Updates daily.
 ## Setup (one time)
 
 ### 1. Create GitHub repo
-- Go to github.com → New repository
+- Go to github.com -> New repository
 - Name it `mlb-dashboard`
 - Set to **Public** (required for free GitHub Pages)
 - Don't initialize with anything
@@ -23,8 +23,8 @@ git push -u origin main
 
 ### 3. Enable GitHub Pages
 - Go to your repo on GitHub
-- Settings → Pages
-- Source: Deploy from branch → main → / (root)
+- Settings -> Pages
+- Source: Deploy from branch -> main -> / (root)
 - Save
 
 Your dashboard will be live at:
@@ -34,9 +34,9 @@ Takes about 2 minutes the first time.
 
 ### 4. Schedule daily updates
 - Edit `morning_run.bat` to point to your model and dashboard folders
-- Open Task Scheduler → Create Basic Task
+- Open Task Scheduler -> Create Basic Task
 - Set trigger: Daily at 8:30 AM
-- Action: Start a program → browse to `morning_run.bat`
+- Action: Start a program -> browse to `morning_run.bat`
 
 ## Daily workflow (automated)
 ```
