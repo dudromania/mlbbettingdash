@@ -5,11 +5,11 @@
     {
       "home_abbr": "BOS",
       "away_abbr": "TB",
-      "home_score": "0",
+      "home_score": "2",
       "away_score": "0",
-      "state": "pre",
-      "detail": "7/17 - 1:35 PM EDT",
-      "is_live": false,
+      "state": "in",
+      "detail": "Mid 3rd",
+      "is_live": true,
       "is_final": false
     },
     {

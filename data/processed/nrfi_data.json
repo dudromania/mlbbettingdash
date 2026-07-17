@@ -29,18 +29,18 @@
     "away_abbr": "TB",
     "home_sp": "Jake Bennett",
     "away_sp": "Griffin Jax",
-    "nrfi_prob": 43.0,
+    "nrfi_prob": 43.2,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Jake Bennett",
       "first_inning": {},
-      "season_era": 2.64
+      "season_era": 2.54
     },
     "away_pitcher": {
       "name": "Griffin Jax",
       "first_inning": {},
-      "season_era": 3.47
+      "season_era": 3.52
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
