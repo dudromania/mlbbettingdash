@@ -258,8 +258,8 @@
     "home_abbr": "AZ",
     "away_abbr": "STL",
     "home_sp": "Merrill Kelly",
-    "away_sp": "TBD",
-    "nrfi_prob": 32.4,
+    "away_sp": "Michael McGreevy",
+    "nrfi_prob": 33.6,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
@@ -268,9 +268,9 @@
       "season_era": 5.38
     },
     "away_pitcher": {
-      "name": "TBD",
+      "name": "Michael McGreevy",
       "first_inning": {},
-      "season_era": null
+      "season_era": 3.01
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
