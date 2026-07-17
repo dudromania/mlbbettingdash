@@ -24,29 +24,6 @@
   },
   {
     "date": "2026-07-17",
-    "game_time": "12:35 PM CT",
-    "home_abbr": "BOS",
-    "away_abbr": "TB",
-    "home_sp": "Jake Bennett",
-    "away_sp": "Griffin Jax",
-    "nrfi_prob": 43.2,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Jake Bennett",
-      "first_inning": {},
-      "season_era": 2.54
-    },
-    "away_pitcher": {
-      "name": "Griffin Jax",
-      "first_inning": {},
-      "season_era": 3.52
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-17",
     "game_time": "8:38 PM CT",
     "home_abbr": "LAA",
     "away_abbr": "DET",
@@ -64,6 +41,29 @@
       "name": "Troy Melton",
       "first_inning": {},
       "season_era": 1.82
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-17",
+    "game_time": "12:35 PM CT",
+    "home_abbr": "BOS",
+    "away_abbr": "TB",
+    "home_sp": "Jake Bennett",
+    "away_sp": "Griffin Jax",
+    "nrfi_prob": 41.4,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jake Bennett",
+      "first_inning": {},
+      "season_era": 2.35
+    },
+    "away_pitcher": {
+      "name": "Griffin Jax",
+      "first_inning": {},
+      "season_era": 4.08
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
