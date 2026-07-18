@@ -1,6 +1,6 @@
 [
   {
-    "id": 1440,
+    "id": 1444,
     "game_date": "2026-07-18",
     "game_pick_id": null,
     "player_name": "Spencer Arrighetti",
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-18 13:15:05",
+    "created_at": "2026-07-18 14:35:13",
     "graded_at": null
   },
   {
-    "id": 1441,
+    "id": 1445,
     "game_date": "2026-07-18",
     "game_pick_id": null,
     "player_name": "Shane Bieber",
@@ -50,11 +50,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-18 13:15:05",
+    "created_at": "2026-07-18 14:35:13",
     "graded_at": null
   },
   {
-    "id": 1442,
+    "id": 1446,
     "game_date": "2026-07-18",
     "game_pick_id": null,
     "player_name": "Max Meyer",
@@ -77,11 +77,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-18 13:15:05",
+    "created_at": "2026-07-18 14:35:13",
     "graded_at": null
   },
   {
-    "id": 1439,
+    "id": 1443,
     "game_date": "2026-07-18",
     "game_pick_id": null,
     "player_name": "Gavin Williams",
@@ -104,7 +104,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-18 13:15:05",
+    "created_at": "2026-07-18 14:35:13",
     "graded_at": null
   },
   {
