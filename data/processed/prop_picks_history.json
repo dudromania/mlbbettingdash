@@ -1,6 +1,6 @@
 [
   {
-    "id": 1436,
+    "id": 1438,
     "game_date": "2026-07-17",
     "game_pick_id": null,
     "player_name": "Gavin Williams",
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-17 18:11:08",
+    "created_at": "2026-07-17 20:11:28",
     "graded_at": null
   },
   {
-    "id": 1435,
+    "id": 1437,
     "game_date": "2026-07-17",
     "game_pick_id": null,
     "player_name": "Chris Sale",
@@ -47,11 +47,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-07-17 18:11:08",
-    "graded_at": null
+    "actual_value": 6.0,
+    "result": "W",
+    "pnl": 115.0,
+    "created_at": "2026-07-17 20:11:28",
+    "graded_at": "2026-07-18 13:00:19"
   },
   {
     "id": 1424,
