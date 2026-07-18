@@ -93,6 +93,29 @@
   },
   {
     "date": "2026-07-18",
+    "game_time": "12:10 PM CT",
+    "home_abbr": "CLE",
+    "away_abbr": "PIT",
+    "home_sp": "Gavin Williams",
+    "away_sp": "Jared Jones",
+    "nrfi_prob": 34.9,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Gavin Williams",
+      "first_inning": {},
+      "season_era": 3.84
+    },
+    "away_pitcher": {
+      "name": "Jared Jones",
+      "first_inning": {},
+      "season_era": 4.23
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-18",
     "game_time": "2:05 PM CT",
     "home_abbr": "PHI",
     "away_abbr": "NYM",
@@ -156,29 +179,6 @@
       "name": "Logan Webb",
       "first_inning": {},
       "season_era": 3.86
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-18",
-    "game_time": "12:10 PM CT",
-    "home_abbr": "CLE",
-    "away_abbr": "PIT",
-    "home_sp": "Gavin Williams",
-    "away_sp": "Jared Jones",
-    "nrfi_prob": 34.5,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Gavin Williams",
-      "first_inning": {},
-      "season_era": 3.81
-    },
-    "away_pitcher": {
-      "name": "Jared Jones",
-      "first_inning": {},
-      "season_era": 4.37
     },
     "away_batting_1st": {},
     "home_batting_1st": {}

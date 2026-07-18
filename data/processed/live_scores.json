@@ -5,11 +5,11 @@
     {
       "home_abbr": "CLE",
       "away_abbr": "PIT",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "7/18 - 1:10 PM EDT",
-      "is_live": false,
+      "home_score": "1",
+      "away_score": "2",
+      "state": "in",
+      "detail": "Top 5th",
+      "is_live": true,
       "is_final": false
     },
     {
