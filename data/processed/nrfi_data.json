@@ -1,6 +1,29 @@
 [
   {
     "date": "2026-07-18",
+    "game_time": "6:10 PM CT",
+    "home_abbr": "CLE",
+    "away_abbr": "PIT",
+    "home_sp": "Logan Allen",
+    "away_sp": "TBD",
+    "nrfi_prob": 46.3,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Logan Allen",
+      "first_inning": {},
+      "season_era": 0.0
+    },
+    "away_pitcher": {
+      "name": "Jared Jones",
+      "first_inning": {},
+      "season_era": 4.05
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-18",
     "game_time": "3:10 PM CT",
     "home_abbr": "MIL",
     "away_abbr": "MIA",
@@ -93,69 +116,23 @@
   },
   {
     "date": "2026-07-18",
-    "game_time": "12:10 PM CT",
-    "home_abbr": "CLE",
-    "away_abbr": "PIT",
-    "home_sp": "Gavin Williams",
-    "away_sp": "Jared Jones",
-    "nrfi_prob": 34.9,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Gavin Williams",
-      "first_inning": {},
-      "season_era": 3.84
-    },
-    "away_pitcher": {
-      "name": "Jared Jones",
-      "first_inning": {},
-      "season_era": 4.23
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-18",
-    "game_time": "2:05 PM CT",
-    "home_abbr": "PHI",
-    "away_abbr": "NYM",
-    "home_sp": "Jes\u00fas Luzardo",
-    "away_sp": "Sean Manaea",
-    "nrfi_prob": 34.8,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Jes\u00fas Luzardo",
-      "first_inning": {},
-      "season_era": 3.51
-    },
-    "away_pitcher": {
-      "name": "Sean Manaea",
-      "first_inning": {},
-      "season_era": 4.56
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-18",
     "game_time": "1:20 PM CT",
     "home_abbr": "CHC",
     "away_abbr": "MIN",
     "home_sp": "Matthew Boyd",
     "away_sp": "Taj Bradley",
-    "nrfi_prob": 34.8,
+    "nrfi_prob": 35.2,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Matthew Boyd",
       "first_inning": {},
-      "season_era": 4.5
+      "season_era": 4.15
     },
     "away_pitcher": {
       "name": "Taj Bradley",
       "first_inning": {},
-      "season_era": 3.59
+      "season_era": 3.85
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -179,6 +156,29 @@
       "name": "Logan Webb",
       "first_inning": {},
       "season_era": 3.86
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-18",
+    "game_time": "2:05 PM CT",
+    "home_abbr": "PHI",
+    "away_abbr": "NYM",
+    "home_sp": "Jes\u00fas Luzardo",
+    "away_sp": "Sean Manaea",
+    "nrfi_prob": 34.5,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jes\u00fas Luzardo",
+      "first_inning": {},
+      "season_era": 3.49
+    },
+    "away_pitcher": {
+      "name": "Sean Manaea",
+      "first_inning": {},
+      "season_era": 4.66
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -236,18 +236,18 @@
     "away_abbr": "CWS",
     "home_sp": "Shane Bieber",
     "away_sp": "Davis Martin",
-    "nrfi_prob": 32.3,
+    "nrfi_prob": 32.4,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Shane Bieber",
       "first_inning": {},
-      "season_era": 7.64
+      "season_era": 7.23
     },
     "away_pitcher": {
       "name": "Davis Martin",
       "first_inning": {},
-      "season_era": 3.41
+      "season_era": 3.38
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -328,18 +328,18 @@
     "away_abbr": "CIN",
     "home_sp": "Tomoyuki Sugano",
     "away_sp": "Rhett Lowder",
-    "nrfi_prob": 28.8,
+    "nrfi_prob": 27.7,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Tomoyuki Sugano",
       "first_inning": {},
-      "season_era": 4.8
+      "season_era": 4.74
     },
     "away_pitcher": {
       "name": "Rhett Lowder",
       "first_inning": {},
-      "season_era": 4.91
+      "season_era": 5.5
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
