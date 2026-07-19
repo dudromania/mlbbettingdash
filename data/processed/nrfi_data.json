@@ -6,18 +6,18 @@
     "away_abbr": "LAD",
     "home_sp": "Cam Schlittler",
     "away_sp": "Yoshinobu Yamamoto",
-    "nrfi_prob": 48.5,
+    "nrfi_prob": 47.9,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Cam Schlittler",
       "first_inning": {},
-      "season_era": 2.05
+      "season_era": 2.2
     },
     "away_pitcher": {
       "name": "Yoshinobu Yamamoto",
       "first_inning": {},
-      "season_era": 2.85
+      "season_era": 2.83
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -29,18 +29,18 @@
     "away_abbr": "TB",
     "home_sp": "Sonny Gray",
     "away_sp": "Shane McClanahan",
-    "nrfi_prob": 46.4,
+    "nrfi_prob": 46.3,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Sonny Gray",
       "first_inning": {},
-      "season_era": 2.54
+      "season_era": 2.6
     },
     "away_pitcher": {
       "name": "Shane McClanahan",
       "first_inning": {},
-      "season_era": 2.83
+      "season_era": 2.79
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -116,46 +116,46 @@
   },
   {
     "date": "2026-07-19",
-    "game_time": "12:40 PM CT",
-    "home_abbr": "CLE",
-    "away_abbr": "PIT",
-    "home_sp": "Joey Cantillo",
-    "away_sp": "Paul Skenes",
-    "nrfi_prob": 38.7,
+    "game_time": "11:15 AM CT",
+    "home_abbr": "TOR",
+    "away_abbr": "CWS",
+    "home_sp": "Trey Yesavage",
+    "away_sp": "Sean Burke",
+    "nrfi_prob": 39.3,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Joey Cantillo",
+      "name": "Trey Yesavage",
       "first_inning": {},
-      "season_era": 3.56
+      "season_era": 3.78
     },
     "away_pitcher": {
-      "name": "Paul Skenes",
+      "name": "Sean Burke",
       "first_inning": {},
-      "season_era": 3.57
+      "season_era": 3.2
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
   },
   {
     "date": "2026-07-19",
-    "game_time": "11:15 AM CT",
-    "home_abbr": "TOR",
-    "away_abbr": "CWS",
-    "home_sp": "Trey Yesavage",
-    "away_sp": "Sean Burke",
-    "nrfi_prob": 38.7,
+    "game_time": "12:40 PM CT",
+    "home_abbr": "CLE",
+    "away_abbr": "PIT",
+    "home_sp": "Joey Cantillo",
+    "away_sp": "Paul Skenes",
+    "nrfi_prob": 39.0,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Trey Yesavage",
+      "name": "Joey Cantillo",
       "first_inning": {},
-      "season_era": 3.72
+      "season_era": 3.53
     },
     "away_pitcher": {
-      "name": "Sean Burke",
+      "name": "Paul Skenes",
       "first_inning": {},
-      "season_era": 3.41
+      "season_era": 3.54
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -167,41 +167,18 @@
     "away_abbr": "TEX",
     "home_sp": "Grant Holmes",
     "away_sp": "Nathan Eovaldi",
-    "nrfi_prob": 36.6,
+    "nrfi_prob": 36.8,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Grant Holmes",
       "first_inning": {},
-      "season_era": 3.61
+      "season_era": 3.53
     },
     "away_pitcher": {
       "name": "Nathan Eovaldi",
       "first_inning": {},
-      "season_era": 4.04
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-19",
-    "game_time": "12:35 PM CT",
-    "home_abbr": "PHI",
-    "away_abbr": "NYM",
-    "home_sp": "Alan Rangel",
-    "away_sp": "Nolan McLean",
-    "nrfi_prob": 36.3,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Alan Rangel",
-      "first_inning": {},
-      "season_era": 4.19
-    },
-    "away_pitcher": {
-      "name": "Nolan McLean",
-      "first_inning": {},
-      "season_era": 3.52
+      "season_era": 4.07
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -271,6 +248,29 @@
       "name": "Zebby Matthews",
       "first_inning": {},
       "season_era": 4.57
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-19",
+    "game_time": "12:35 PM CT",
+    "home_abbr": "PHI",
+    "away_abbr": "NYM",
+    "home_sp": "Alan Rangel",
+    "away_sp": "Nolan McLean",
+    "nrfi_prob": 32.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Alan Rangel",
+      "first_inning": {},
+      "season_era": 5.23
+    },
+    "away_pitcher": {
+      "name": "Nolan McLean",
+      "first_inning": {},
+      "season_era": 3.49
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
