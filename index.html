@@ -1706,7 +1706,8 @@ function renderModelTable() {
   if (mFilter==='spread') games=games.filter(g=>g.spread_bet);
   if (mFilter==='total')  games=games.filter(g=>g.total_bet);
 
-  document.getElementById('model-tbody').innerHTML = games.map(g => {
+  document.getElementById('model-tbody').innerHTML = games.map((g,i) => {
+    const rowId = 'model-row-'+i;
     const m   = g.predicted_margin||0;
     const fav = m>=0?g.home_abbr:g.away_abbr;
     const c   = g.spread_confidence||50;
@@ -1723,8 +1724,10 @@ function renderModelTable() {
     const hMLStr = hML != null ? (hML > 0 ? '+'+hML : ''+hML) : '-';
     const aMLCol = aML != null ? (aML > 0 ? 'pos' : 'neg') : 'dim';
     const hMLCol = hML != null ? (hML > 0 ? 'pos' : 'neg') : 'dim';
-    return `<tr>
-      <td class="mono dim">${g.game_time_ct||'-'}</td>
+    return `<tr onclick="toggleModelRow('${rowId}')" style="cursor:pointer">
+      <td class="mono dim">
+        <span id="${rowId}-icon" style="display:inline-block;width:10px;transition:transform 0.2s">v</span>
+        ${g.game_time_ct||'-'}</td>
       <td>${g.away_abbr} <span class="dim">@</span> ${g.home_abbr}</td>
       <td class="dim" style="font-size:10px">${(g.away_sp||'TBD').split(' ').pop()} / ${(g.home_sp||'TBD').split(' ').pop()}</td>
       <td class="tc mono">${fav} <span class="${m>=0?'pos':'neg'}">${Math.abs(m).toFixed(1)}</span></td>
@@ -1736,8 +1739,22 @@ function renderModelTable() {
       <td class="tc">${tag(g.total_edge_label)} <span class="mono ${parseFloat(oe)>=0?'pos':'neg'}" style="font-size:10px">${parseFloat(oe)>=0?'+':''}${oe}%</span></td>
       <td class="mono" style="font-size:11px">${bb}</td>
       <td class="tc mono ${cc}">${c}</td>
+    </tr>
+    <tr id="${rowId}" style="display:none">
+      <td colspan="12" style="padding:0;background:var(--b1)">
+        <div style="padding:12px;border-top:1px solid var(--b2)">${betRow(g)}</div>
+      </td>
     </tr>`;
   }).join('') || '<tr><td colspan="10" class="empty">No games match filter</td></tr>';
+}
+
+function toggleModelRow(rowId) {
+  const detailRow = document.getElementById(rowId);
+  const icon = document.getElementById(rowId + '-icon');
+  if (!detailRow) return;
+  const isHidden = detailRow.style.display === 'none';
+  detailRow.style.display = isHidden ? 'table-row' : 'none';
+  if (icon) icon.style.transform = isHidden ? 'rotate(-90deg)' : 'rotate(0deg)';
 }
 
 // SP card lookup - used by betRow and renderGames
