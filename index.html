@@ -1273,38 +1273,42 @@ tbody td {
    375px). Today's Games avoids this because .game-row/.game-expand are
    plain block/grid <div>s, never a <table>. Below 500px this table is
    restructured the same way: table, thead, tbody, tr, td become normal
-   block boxes (thead hidden entirely) and every field stays visible —
-   TIME + MATCHUP form the card header (row 1), the remaining 10 fields
-   auto-place into a 2-column x 5-row grid of label/value pairs (label
-   injected via data-label + ::before, same dim/mono tokens as the desktop
-   header). Desktop (>500px) is untouched — none of these rules exist
-   above this breakpoint. */
+   block boxes (thead hidden entirely). The collapsed row shows only
+   TIME/MATCHUP/MARGIN/HOME ML/TOTAL/BET as a dense two-line row (PITCHERS,
+   HOME%, AWAY ML, RL EDGE, O/U EDGE, CONF stay hidden on mobile — still on
+   desktop and in the expanded dropdown via betRow()). Desktop (>500px) is
+   untouched — none of these rules exist above this breakpoint. */
 @media(max-width:500px) {
   #tab-model table { display: block; width: 100%; min-width: 0; }
   #tab-model thead { display: none; }
   #tab-model tbody { display: block; }
 
-  /* Collapsed (main) row -> 2-col grid. Row 1 = TIME + MATCHUP (header);
-     the remaining 10 <td>s auto-place 2-per-row beneath it. Detail rows
-     (id="model-row-N") are excluded here, handled separately below. */
+  /* Collapsed (main) row -> explicit 2-row grid (not flex — flex-wrap only
+     breaks lines based on available space, which content of varying length
+     can't guarantee; grid places each field on an exact row/column).
+     Detail rows (id="model-row-N") are excluded here, handled separately. */
   #tab-model tbody tr:not([id^="model-row-"]) {
-    display: grid; grid-template-columns: 1fr 1fr;
-    column-gap: 12px; row-gap: 6px;
-    padding: 8px 10px;
+    display: grid; grid-template-columns: repeat(4, auto);
+    column-gap: 10px; row-gap: 6px; align-items: baseline;
+    padding: 10px 10px;
   }
   #tab-model tbody tr:not([id^="model-row-"]) td { display: block; padding: 0; border: none; }
 
-  /* Label/value pairs: PITCHERS through CONF (all td after TIME/MATCHUP) */
-  #tab-model tbody tr:not([id^="model-row-"]) td[data-label]::before {
-    content: attr(data-label);
-    display: block;
-    font-family: var(--mono);
-    font-size: 9px;
-    color: var(--t3);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin-bottom: 2px;
-  }
+  /* Hide: PITCHERS, HOME%, AWAY ML, RL EDGE, O/U EDGE, CONF */
+  #tab-model tbody tr td:nth-child(3), #tab-model tbody tr td:nth-child(6),
+  #tab-model tbody tr td:nth-child(7), #tab-model tbody tr td:nth-child(9),
+  #tab-model tbody tr td:nth-child(10), #tab-model tbody tr td:nth-child(12)
+  { display: none; }
+
+  /* Row 1: TIME (col 1) + MATCHUP (spans remaining columns) */
+  #tab-model tbody tr td:nth-child(1) { grid-row: 1; grid-column: 1; }
+  #tab-model tbody tr td:nth-child(2) { grid-row: 1; grid-column: 2 / -1; }
+
+  /* Row 2: MARGIN, HOME ML, TOTAL, BET — tight inline row, no labels */
+  #tab-model tbody tr td:nth-child(4)  { grid-row: 2; grid-column: 1; font-size: 10px; }
+  #tab-model tbody tr td:nth-child(8)  { grid-row: 2; grid-column: 2; font-size: 10px; }
+  #tab-model tbody tr td:nth-child(5)  { grid-row: 2; grid-column: 3; font-size: 10px; }
+  #tab-model tbody tr td:nth-child(11) { grid-row: 2; grid-column: 4; font-size: 10px; }
 
   /* Expanded detail row -> full-width block flow, not a table cell, so its
      content (bet-card, lineup, L5) is never constrained by table width.
@@ -1806,16 +1810,16 @@ function renderModelTable() {
         <span id="${rowId}-icon" style="display:inline-block;width:10px;transition:transform 0.2s">v</span>
         ${g.game_time_ct||'-'}</td>
       <td>${g.away_abbr} <span class="dim">@</span> ${g.home_abbr}</td>
-      <td class="dim" data-label="PITCHERS" style="font-size:10px">${(g.away_sp||'TBD').split(' ').pop()} / ${(g.home_sp||'TBD').split(' ').pop()}</td>
-      <td class="tc mono" data-label="MARGIN">${fav} <span class="${m>=0?'pos':'neg'}">${Math.abs(m).toFixed(1)}</span></td>
-      <td class="tc mono" data-label="TOTAL">${(g.predicted_total||0).toFixed(1)}</td>
-      <td class="tc mono" data-label="HOME%">${Math.round((g.home_win_prob||.5)*100)}%</td>
-      <td class="tc mono ${aMLCol}" data-label="AWAY ML">${aMLStr}</td>
-      <td class="tc mono ${hMLCol}" data-label="HOME ML">${hMLStr}</td>
-      <td class="tc" data-label="RL EDGE">${tag(g.spread_edge_label)} <span class="mono ${parseFloat(re)>=0?'pos':'neg'}" style="font-size:10px">${parseFloat(re)>=0?'+':''}${re}%</span></td>
-      <td class="tc" data-label="O/U EDGE">${tag(g.total_edge_label)} <span class="mono ${parseFloat(oe)>=0?'pos':'neg'}" style="font-size:10px">${parseFloat(oe)>=0?'+':''}${oe}%</span></td>
-      <td class="mono" data-label="BET" style="font-size:11px">${bb}</td>
-      <td class="tc mono ${cc}" data-label="CONF">${c}</td>
+      <td class="dim" style="font-size:10px">${(g.away_sp||'TBD').split(' ').pop()} / ${(g.home_sp||'TBD').split(' ').pop()}</td>
+      <td class="tc mono">${fav} <span class="${m>=0?'pos':'neg'}">${Math.abs(m).toFixed(1)}</span></td>
+      <td class="tc mono">${(g.predicted_total||0).toFixed(1)}</td>
+      <td class="tc mono">${Math.round((g.home_win_prob||.5)*100)}%</td>
+      <td class="tc mono ${aMLCol}">${aMLStr}</td>
+      <td class="tc mono ${hMLCol}">${hMLStr}</td>
+      <td class="tc">${tag(g.spread_edge_label)} <span class="mono ${parseFloat(re)>=0?'pos':'neg'}" style="font-size:10px">${parseFloat(re)>=0?'+':''}${re}%</span></td>
+      <td class="tc">${tag(g.total_edge_label)} <span class="mono ${parseFloat(oe)>=0?'pos':'neg'}" style="font-size:10px">${parseFloat(oe)>=0?'+':''}${oe}%</span></td>
+      <td class="mono" style="font-size:11px">${bb}</td>
+      <td class="tc mono ${cc}">${c}</td>
     </tr>
     <tr id="${rowId}">
       <td colspan="12" style="padding:0;background:var(--b1)">
