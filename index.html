@@ -386,6 +386,34 @@ tbody td {
 
 @media(max-width:500px) { .bet-list { grid-template-columns: 1fr; } }
 
+/* L5 block — appended below betRow() output in expanded table rows only */
+.l5-block { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--b1); margin-top: 8px; }
+.l5-col { padding: 5px 8px; min-width: 0; overflow: hidden; }
+.l5-col.home { border-left: 1px solid var(--b1); }
+.l5-row { display: flex; align-items: baseline; gap: 6px; padding: 1px 0; white-space: nowrap; }
+.l5-row .l5-res   { width: 10px; flex-shrink: 0; }
+.l5-row .l5-score { width: 34px; flex-shrink: 0; }
+.l5-row .l5-opp   { overflow: hidden; text-overflow: ellipsis; }
+@media(max-width:500px) {
+  .l5-block { grid-template-columns: 1fr; }
+  .l5-col.home { border-left: none; border-top: 1px solid var(--b1); }
+}
+
+/* Lineup toggle + block — away/home batting orders in expanded table rows
+   only. Toggle stays hidden until loadModelLineup() confirms a posted
+   lineup; the grid itself is collapsed by default behind it (two 9-man
+   tables nearly double the expanded row's height on mobile). */
+.ml-lineup-toggle { padding: 6px 0; cursor: pointer; border-top: 1px solid var(--b1); margin-top: 8px; }
+.ml-lineup-toggle:hover { color: var(--t1); }
+.ml-lineup-toggle .chev { display: inline-block; margin-right: 4px; transition: transform .15s; }
+.ml-lineup-block { display: grid; grid-template-columns: 1fr 1fr; margin-top: 6px; }
+.ml-lineup-col { padding: 8px; min-width: 0; overflow: hidden; }
+.ml-lineup-col.home { border-left: 1px solid var(--b1); }
+@media(max-width:500px) {
+  .ml-lineup-block { grid-template-columns: 1fr; }
+  .ml-lineup-col.home { border-left: none; border-top: 1px solid var(--b1); }
+}
+
 /* -- GAME ROWS -- */
 .game-list { border: 1px solid var(--b1); }
 .game-row {
@@ -1724,7 +1752,7 @@ function renderModelTable() {
     const hMLStr = hML != null ? (hML > 0 ? '+'+hML : ''+hML) : '-';
     const aMLCol = aML != null ? (aML > 0 ? 'pos' : 'neg') : 'dim';
     const hMLCol = hML != null ? (hML > 0 ? 'pos' : 'neg') : 'dim';
-    return `<tr onclick="toggleModelRow('${rowId}')" style="cursor:pointer">
+    return `<tr onclick="toggleModelRow('${rowId}','${g.home_abbr}','${g.away_abbr}')" style="cursor:pointer">
       <td class="mono dim">
         <span id="${rowId}-icon" style="display:inline-block;width:10px;transition:transform 0.2s">v</span>
         ${g.game_time_ct||'-'}</td>
@@ -1742,19 +1770,79 @@ function renderModelTable() {
     </tr>
     <tr id="${rowId}" style="display:none">
       <td colspan="12" style="padding:0;background:var(--b1)">
-        <div style="padding:12px;border-top:1px solid var(--b2)">${betRow(g)}</div>
+        <div style="padding:12px;border-top:1px solid var(--b2)">${betRow(g)}${lineupBlock(rowId)}${l5Block(g)}</div>
       </td>
     </tr>`;
   }).join('') || '<tr><td colspan="10" class="empty">No games match filter</td></tr>';
 }
 
-function toggleModelRow(rowId) {
+function toggleModelRow(rowId, homeAbbr, awayAbbr) {
   const detailRow = document.getElementById(rowId);
   const icon = document.getElementById(rowId + '-icon');
   if (!detailRow) return;
   const isHidden = detailRow.style.display === 'none';
   detailRow.style.display = isHidden ? 'table-row' : 'none';
   if (icon) icon.style.transform = isHidden ? 'rotate(-90deg)' : 'rotate(0deg)';
+  if (isHidden && homeAbbr && awayAbbr) loadModelLineup(rowId, homeAbbr, awayAbbr);
+}
+
+// Lineup toggle + block markup for an expanded table row. Both start
+// hidden; loadModelLineup() reveals only the toggle once it confirms a
+// posted lineup exists. The grid itself stays collapsed until tapped —
+// two 9-man tables nearly double the row's height on mobile otherwise.
+function lineupBlock(rowId) {
+  return `<div class="ml-lineup-toggle mono dim" id="ml-lineup-toggle-${rowId}" style="display:none" onclick="toggleModelLineupVisibility('${rowId}')">
+    <span class="chev" id="ml-lineup-chev-${rowId}">&#9656;</span>LINEUPS
+  </div>
+  <div class="ml-lineup-block" id="ml-lineup-${rowId}" style="display:none">
+    <div class="ml-lineup-col away" id="ml-lineup-away-${rowId}"></div>
+    <div class="ml-lineup-col home" id="ml-lineup-home-${rowId}"></div>
+  </div>`;
+}
+
+function toggleModelLineupVisibility(rowId) {
+  const block = document.getElementById(`ml-lineup-${rowId}`);
+  const chev  = document.getElementById(`ml-lineup-chev-${rowId}`);
+  if (!block) return;
+  const isHidden = block.style.display === 'none';
+  block.style.display = isHidden ? 'grid' : 'none';
+  if (chev) chev.style.transform = isHidden ? 'rotate(90deg)' : 'rotate(0deg)';
+}
+
+// Fetches lineups via the same pipeline loadLineup() uses (fetchLineupRosters
+// + lineupTeamHTML), but splits the result into away/home columns instead of
+// one stacked block, and leaves the whole section hidden if not yet posted.
+async function loadModelLineup(rowId, homeAbbr, awayAbbr) {
+  const wrap = document.getElementById(`ml-lineup-${rowId}`);
+  if (!wrap || wrap.dataset.loaded) return;
+  wrap.dataset.loaded = '1';
+
+  // ESPN uses different abbreviations for some teams (same mapping getGameId() uses)
+  const toESPN = (abbr) => abbr === 'ATH' ? 'OAK' : abbr === 'CHW' ? 'CWS' : abbr;
+
+  try {
+    const { rosters, awayStats, homeStats } = await fetchLineupRosters(homeAbbr, awayAbbr);
+    if (!rosters.length) return;
+
+    let awayHtml = '', homeHtml = '';
+    for (const team of rosters) {
+      const abbr    = team.team?.abbreviation || '';
+      const starters = (team.roster||[]).filter(p => p.starter);
+      if (!starters.length) continue;
+      const isAway  = abbr === awayAbbr || abbr === toESPN(awayAbbr);
+      const statMap = isAway ? awayStats : homeStats;
+      const teamHtml = lineupTeamHTML(abbr, starters, statMap, true);
+      if (isAway) awayHtml = teamHtml; else homeHtml = teamHtml;
+    }
+    if (!awayHtml && !homeHtml) return;
+
+    document.getElementById(`ml-lineup-away-${rowId}`).innerHTML = awayHtml;
+    document.getElementById(`ml-lineup-home-${rowId}`).innerHTML = homeHtml;
+    const toggleEl = document.getElementById(`ml-lineup-toggle-${rowId}`);
+    if (toggleEl) toggleEl.style.display = '';
+  } catch {
+    // stays hidden — matches "hide entirely rather than show placeholders"
+  }
 }
 
 // SP card lookup - used by betRow and renderGames
@@ -1770,6 +1858,42 @@ function findCard(sp_name, team_abbr, opp_abbr) {
   }
   return DATA.pitchers.find(c => c.team_abbr === team_abbr && c.opponent === opp_abbr) ||
          DATA.pitchers.find(c => c.team_abbr === team_abbr) || null;
+}
+
+// L5 (last 5 graded games) — reuses DATA.history, already loaded for the
+// Results/Trends tabs. Used only by the expanded table rows, not betRow().
+function teamLastFive(abbr) {
+  return DATA.history
+    .filter(h => h.actual_home_score != null && h.actual_away_score != null &&
+                 (h.home_abbr === abbr || h.away_abbr === abbr))
+    .sort((a,b) => (b.date||'').localeCompare(a.date||''))
+    .slice(0, 5)
+    .map(h => {
+      const isHome = h.home_abbr === abbr;
+      const gf  = isHome ? h.actual_home_score : h.actual_away_score;
+      const ga  = isHome ? h.actual_away_score : h.actual_home_score;
+      const opp = isHome ? h.away_abbr : h.home_abbr;
+      return { win: gf > ga, gf, ga, opp: isHome ? opp : '@'+opp };
+    });
+}
+
+function l5Col(abbr, side) {
+  const games = teamLastFive(abbr);
+  const rows = games.length
+    ? games.map(g => `<div class="l5-row mono">
+        <span class="l5-res ${g.win?'pos':'neg'}">${g.win?'W':'L'}</span>
+        <span class="l5-score">${g.gf}-${g.ga}</span>
+        <span class="l5-opp dim">${g.opp}</span>
+      </div>`).join('')
+    : `<div class="l5-row mono dim">no graded games</div>`;
+  return `<div class="l5-col ${side}">
+    <div class="bc-sp-label">${side==='away'?'AWAY':'HOME'} L5</div>
+    ${rows}
+  </div>`;
+}
+
+function l5Block(g) {
+  return `<div class="l5-block">${l5Col(g.away_abbr,'away')}${l5Col(g.home_abbr,'home')}</div>`;
 }
 
 function betRow(g) {
@@ -2140,85 +2264,126 @@ async function loadBatting(i, homeAbbr, awayAbbr) {
   `;
 }
 
+// Cache of team IDs to avoid repeated lookups
+async function getMLBTeamId(abbr) {
+  if (!window._mlbTeamIds) window._mlbTeamIds = {};
+  if (window._mlbTeamIds[abbr]) return window._mlbTeamIds[abbr];
+  const r = await fetch(`https://statsapi.mlb.com/api/v1/teams?sportId=1&season=2026`);
+  const d = await r.json();
+  for (const t of d.teams||[]) window._mlbTeamIds[t.abbreviation] = t.id;
+  return window._mlbTeamIds[abbr] || null;
+}
+
+async function getTeamBatterStats(abbr) {
+  try {
+    const teamId = await getMLBTeamId(abbr);
+    if (!teamId) return {};
+
+    // Use team stats/leaders endpoint - more reliable than roster hydration
+    const r = await fetch(
+      `https://statsapi.mlb.com/api/v1/teams/${teamId}/stats?stats=season&season=2026&group=hitting`
+    );
+    const d = await r.json();
+
+    // Also get individual player stats via team roster
+    const r2 = await fetch(
+      `https://statsapi.mlb.com/api/v1/teams/${teamId}/roster?rosterType=active&season=2026`
+    );
+    const d2 = await r2.json();
+    const playerIds = (d2.roster||[]).map(p => p.person.id).slice(0,25).join(',');
+
+    if (!playerIds) return {};
+
+    // Batch fetch stats for all roster players
+    const r3 = await fetch(
+      `https://statsapi.mlb.com/api/v1/people?personIds=${playerIds}&hydrate=stats(type=season,season=2026,group=hitting)`
+    );
+    const d3 = await r3.json();
+
+    const map = {};
+    for (const person of d3.people||[]) {
+      const splits = person.stats?.[0]?.splits || [];
+      if (!splits.length) continue;
+      const s = splits[0].stat || {};
+      const pa = parseInt(s.plateAppearances||0);
+      if (pa < 1) continue;
+      const stat = {
+        ba:   parseFloat(s.avg||0).toFixed(3),
+        obp:  parseFloat(s.obp||0).toFixed(3),
+        slg:  parseFloat(s.slg||0).toFixed(3),
+        hr:   parseInt(s.homeRuns||0),
+        rbi:  parseInt(s.rbi||0),
+        pa,
+        kpct: (parseInt(s.strikeOuts||0)/pa*100).toFixed(0)+'%',
+      };
+      // Key by MLB player ID AND by full name AND last name for flexible matching
+      map[person.id] = stat;
+      const fullName = (person.fullName||'').toLowerCase();
+      const lastName = fullName.split(' ').pop();
+      map[fullName] = stat;
+      map[lastName] = stat;
+    }
+    return map;
+  } catch(e) { return {}; }
+}
+
+// Builds one team's lineup block. isFirst controls the top gap so multiple
+// teams can be stacked in one container (Today's Games tab) or each start
+// their own container (ALL PREDICTIONS expanded rows) without a stray gap.
+function lineupTeamHTML(abbr, starters, statMap, isFirst) {
+  let html = `<div style="font-family:var(--mono);font-size:9px;color:var(--t3);letter-spacing:1px;margin-bottom:4px;margin-top:${isFirst?'0':'10px'};padding-bottom:2px;border-bottom:1px solid var(--b1)">${abbr} LINEUP</div>`;
+  html += `<div style="display:grid;grid-template-columns:14px 20px 1fr 32px 32px 26px;gap:0 4px;font-family:var(--mono);font-size:9px;color:var(--t3);padding:2px 0;margin-bottom:2px">
+    <span></span><span></span><span></span><span class="tr">BA</span><span class="tr">OBP</span><span class="tr">HR</span>
+  </div>`;
+
+  starters.slice(0,9).forEach((p, n) => {
+    const name   = p.athlete?.shortName || p.athlete?.displayName || '-';
+    const pos    = p.position?.abbreviation || '-';
+    const pid    = p.athlete?.id;
+    // Try MLB ID, then ESPN ID, then name matching
+    const espnName   = (p.athlete?.displayName||'').toLowerCase();
+    const espnLast   = espnName.split(' ').pop();
+    const espnShort  = (p.athlete?.shortName||'').toLowerCase();
+    const espnShortL = espnShort.split('. ').pop();
+    const st = statMap[pid]
+            || statMap[espnName]
+            || statMap[espnLast]
+            || statMap[espnShortL]
+            || {};
+    const baCol  = st.ba  ? (parseFloat(st.ba) >=.280?'pos':parseFloat(st.ba)<=.220?'neg':'') : 'dim';
+    const obpCol = st.obp ? (parseFloat(st.obp)>=.350?'pos':parseFloat(st.obp)<=.290?'neg':'') : 'dim';
+    html += `<div style="display:grid;grid-template-columns:14px 20px 1fr 32px 32px 26px;gap:0 4px;padding:2px 0;border-bottom:1px solid #0a0a0a;font-family:var(--mono);font-size:10px;align-items:center">
+      <span style="color:var(--t3)">${n+1}</span>
+      <span style="color:var(--t3);font-size:9px">${pos}</span>
+      <span style="color:var(--t1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${name}</span>
+      <span class="tr ${baCol}">${st.ba||'-'}</span>
+      <span class="tr ${obpCol}">${st.obp||'-'}</span>
+      <span class="tr dim">${st.hr!==undefined?st.hr:'-'}</span>
+    </div>`;
+  });
+  return html;
+}
+
+// Fetches ESPN's posted rosters + MLB batting stats for a game. Pure data,
+// no DOM access — shared by loadLineup() (Today's Games tab) and
+// loadModelLineup() (ALL PREDICTIONS expanded rows).
+async function fetchLineupRosters(homeAbbr, awayAbbr) {
+  const gameId = await getGameId(homeAbbr, awayAbbr);
+  const [espnRes, awayStats, homeStats] = await Promise.all([
+    fetch(`https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/summary?event=${gameId}`).then(r=>r.json()).catch(()=>({})),
+    getTeamBatterStats(awayAbbr),
+    getTeamBatterStats(homeAbbr),
+  ]);
+  return { rosters: espnRes.rosters || [], awayStats, homeStats };
+}
+
 async function loadLineup(i, homeAbbr, awayAbbr) {
   const el = document.getElementById(`lineup-${i}`);
   if (el.dataset.loaded) return;
   el.dataset.loaded = '1';
 
-  // Cache of team IDs to avoid repeated lookups
-  if (!window._mlbTeamIds) window._mlbTeamIds = {};
-
-  async function getTeamId(abbr) {
-    if (window._mlbTeamIds[abbr]) return window._mlbTeamIds[abbr];
-    const r = await fetch(`https://statsapi.mlb.com/api/v1/teams?sportId=1&season=2026`);
-    const d = await r.json();
-    for (const t of d.teams||[]) window._mlbTeamIds[t.abbreviation] = t.id;
-    return window._mlbTeamIds[abbr] || null;
-  }
-
-  async function getTeamBatterStats(abbr) {
-    try {
-      const teamId = await getTeamId(abbr);
-      if (!teamId) return {};
-
-      // Use team stats/leaders endpoint - more reliable than roster hydration
-      const r = await fetch(
-        `https://statsapi.mlb.com/api/v1/teams/${teamId}/stats?stats=season&season=2026&group=hitting`
-      );
-      const d = await r.json();
-
-      // Also get individual player stats via team roster
-      const r2 = await fetch(
-        `https://statsapi.mlb.com/api/v1/teams/${teamId}/roster?rosterType=active&season=2026`
-      );
-      const d2 = await r2.json();
-      const playerIds = (d2.roster||[]).map(p => p.person.id).slice(0,25).join(',');
-
-      if (!playerIds) return {};
-
-      // Batch fetch stats for all roster players
-      const r3 = await fetch(
-        `https://statsapi.mlb.com/api/v1/people?personIds=${playerIds}&hydrate=stats(type=season,season=2026,group=hitting)`
-      );
-      const d3 = await r3.json();
-
-      const map = {};
-      for (const person of d3.people||[]) {
-        const splits = person.stats?.[0]?.splits || [];
-        if (!splits.length) continue;
-        const s = splits[0].stat || {};
-        const pa = parseInt(s.plateAppearances||0);
-        if (pa < 1) continue;
-        const stat = {
-          ba:   parseFloat(s.avg||0).toFixed(3),
-          obp:  parseFloat(s.obp||0).toFixed(3),
-          slg:  parseFloat(s.slg||0).toFixed(3),
-          hr:   parseInt(s.homeRuns||0),
-          rbi:  parseInt(s.rbi||0),
-          pa,
-          kpct: (parseInt(s.strikeOuts||0)/pa*100).toFixed(0)+'%',
-        };
-        // Key by MLB player ID AND by full name AND last name for flexible matching
-        map[person.id] = stat;
-        const fullName = (person.fullName||'').toLowerCase();
-        const lastName = fullName.split(' ').pop();
-        map[fullName] = stat;
-        map[lastName] = stat;
-      }
-      return map;
-    } catch(e) { return {}; }
-  }
-
-  // Fetch lineups from ESPN + stats from MLB API in parallel
   try {
-    const gameId = await getGameId(homeAbbr, awayAbbr);
-    const [espnRes, awayStats, homeStats] = await Promise.all([
-      fetch(`https://site.api.espn.com/apis/site/v2/sports/baseball/mlb/summary?event=${gameId}`).then(r=>r.json()).catch(()=>({})),
-      getTeamBatterStats(awayAbbr),
-      getTeamBatterStats(homeAbbr),
-    ]);
-
-    const rosters = espnRes.rosters || [];
+    const { rosters, awayStats, homeStats } = await fetchLineupRosters(homeAbbr, awayAbbr);
     if (!rosters.length) {
       // No ESPN lineup - show team batting summary instead
       el.innerHTML = await buildTeamBattingSummary(awayAbbr, awayStats, homeAbbr, homeStats);
@@ -2231,37 +2396,7 @@ async function loadLineup(i, homeAbbr, awayAbbr) {
       const starters = (team.roster||[]).filter(p => p.starter);
       if (!starters.length) continue;
       const statMap = abbr === awayAbbr ? awayStats : homeStats;
-
-      html += `<div style="font-family:var(--mono);font-size:9px;color:var(--t3);letter-spacing:1px;margin-bottom:4px;margin-top:${html?'10px':'0'};padding-bottom:2px;border-bottom:1px solid var(--b1)">${abbr} LINEUP</div>`;
-      html += `<div style="display:grid;grid-template-columns:14px 20px 1fr 32px 32px 26px;gap:0 4px;font-family:var(--mono);font-size:9px;color:var(--t3);padding:2px 0;margin-bottom:2px">
-        <span></span><span></span><span></span><span class="tr">BA</span><span class="tr">OBP</span><span class="tr">HR</span>
-      </div>`;
-
-      starters.slice(0,9).forEach((p, n) => {
-        const name   = p.athlete?.shortName || p.athlete?.displayName || '-';
-        const pos    = p.position?.abbreviation || '-';
-        const pid    = p.athlete?.id;
-        // Try MLB ID, then ESPN ID, then name matching
-        const espnName   = (p.athlete?.displayName||'').toLowerCase();
-        const espnLast   = espnName.split(' ').pop();
-        const espnShort  = (p.athlete?.shortName||'').toLowerCase();
-        const espnShortL = espnShort.split('. ').pop();
-        const st = statMap[pid]
-                || statMap[espnName]
-                || statMap[espnLast]
-                || statMap[espnShortL]
-                || {};
-        const baCol  = st.ba  ? (parseFloat(st.ba) >=.280?'pos':parseFloat(st.ba)<=.220?'neg':'') : 'dim';
-        const obpCol = st.obp ? (parseFloat(st.obp)>=.350?'pos':parseFloat(st.obp)<=.290?'neg':'') : 'dim';
-        html += `<div style="display:grid;grid-template-columns:14px 20px 1fr 32px 32px 26px;gap:0 4px;padding:2px 0;border-bottom:1px solid #0a0a0a;font-family:var(--mono);font-size:10px;align-items:center">
-          <span style="color:var(--t3)">${n+1}</span>
-          <span style="color:var(--t3);font-size:9px">${pos}</span>
-          <span style="color:var(--t1);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${name}</span>
-          <span class="tr ${baCol}">${st.ba||'-'}</span>
-          <span class="tr ${obpCol}">${st.obp||'-'}</span>
-          <span class="tr dim">${st.hr!==undefined?st.hr:'-'}</span>
-        </div>`;
-      });
+      html += lineupTeamHTML(abbr, starters, statMap, !html);
     }
     el.innerHTML = html || '<span class="dim" style="font-size:10px">Lineups not yet posted</span>';
   } catch {
