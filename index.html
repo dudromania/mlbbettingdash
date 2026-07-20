@@ -405,14 +405,10 @@ tbody td {
   .l5-col.home { border-left: none; border-top: 1px solid var(--b1); }
 }
 
-/* Lineup toggle + block — away/home batting orders in expanded table rows
-   only. Toggle stays hidden until loadModelLineup() confirms a posted
-   lineup; the grid itself is collapsed by default behind it (two 9-man
-   tables nearly double the expanded row's height on mobile). */
-.ml-lineup-toggle { padding: 6px 0; cursor: pointer; border-top: 1px solid var(--b1); margin-top: 8px; }
-.ml-lineup-toggle:hover { color: var(--t1); }
-.ml-lineup-toggle .chev { display: inline-block; margin-right: 4px; transition: transform .15s; }
-.ml-lineup-block { display: grid; grid-template-columns: 1fr 1fr; margin-top: 6px; }
+/* Lineup block — away/home batting orders in expanded table rows only.
+   Hidden until loadModelLineup() confirms a posted lineup, then shown
+   immediately (no toggle). */
+.ml-lineup-block { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--b1); margin-top: 8px; }
 .ml-lineup-col { padding: 8px; min-width: 0; overflow: hidden; }
 .ml-lineup-col.home { border-left: 1px solid var(--b1); }
 @media(max-width:500px) {
@@ -1274,44 +1270,41 @@ tbody td {
 /* -- ALL PREDICTIONS: mobile card layout (reuses existing 500px breakpoint) --
    <table> layout has a hard min-width floor no column-hiding can escape
    (measured: table.scrollWidth 888px vs .tbl-wrap clientWidth 350px at
-   375px, even hiding every non-essential column). Today's Games avoids this
-   because .game-row/.game-expand are plain block/grid <div>s, never a
-   <table>. Below 500px this table is restructured the same way: table,
-   thead, tbody, tr, td become normal block boxes (thead hidden entirely),
-   low-value columns are dropped, and the remaining fields on the collapsed
-   row are grouped into a compact card via flexbox. Desktop (>500px) is
-   untouched — none of these rules exist above this breakpoint. */
+   375px). Today's Games avoids this because .game-row/.game-expand are
+   plain block/grid <div>s, never a <table>. Below 500px this table is
+   restructured the same way: table, thead, tbody, tr, td become normal
+   block boxes (thead hidden entirely) and every field stays visible —
+   TIME + MATCHUP form the card header (row 1), the remaining 10 fields
+   auto-place into a 2-column x 5-row grid of label/value pairs (label
+   injected via data-label + ::before, same dim/mono tokens as the desktop
+   header). Desktop (>500px) is untouched — none of these rules exist
+   above this breakpoint. */
 @media(max-width:500px) {
   #tab-model table { display: block; width: 100%; min-width: 0; }
   #tab-model thead { display: none; }
   #tab-model tbody { display: block; }
 
-  /* Collapsed (main) row -> flex card. Detail rows (id="model-row-N") are
-     excluded here and handled separately below. */
+  /* Collapsed (main) row -> 2-col grid. Row 1 = TIME + MATCHUP (header);
+     the remaining 10 <td>s auto-place 2-per-row beneath it. Detail rows
+     (id="model-row-N") are excluded here, handled separately below. */
   #tab-model tbody tr:not([id^="model-row-"]) {
-    display: flex; flex-wrap: wrap; column-gap: 8px; row-gap: 4px;
+    display: grid; grid-template-columns: 1fr 1fr;
+    column-gap: 12px; row-gap: 6px;
     padding: 8px 10px;
   }
   #tab-model tbody tr:not([id^="model-row-"]) td { display: block; padding: 0; border: none; }
 
-  /* Hide low-value columns: PITCHERS, MARGIN, TOTAL, HOME%, AWAY ML, HOME ML */
-  #tab-model tbody tr td:nth-child(3), #tab-model tbody tr td:nth-child(4),
-  #tab-model tbody tr td:nth-child(5), #tab-model tbody tr td:nth-child(6),
-  #tab-model tbody tr td:nth-child(7), #tab-model tbody tr td:nth-child(8)
-  { display: none; }
-
-  /* Line 1: TIME + MATCHUP */
-  #tab-model tbody tr td:nth-child(1) { flex: 0 0 auto; }
-  #tab-model tbody tr td:nth-child(2) { flex: 1 1 auto; }
-
-  /* Line 2: RL EDGE + O/U EDGE */
-  #tab-model tbody tr td:nth-child(9),  #tab-model tbody tr td:nth-child(10) { flex: 1 1 auto; }
-
-  /* Line 3: BET */
-  #tab-model tbody tr td:nth-child(11) { flex: 1 1 100%; }
-
-  /* Line 4: CONF */
-  #tab-model tbody tr td:nth-child(12) { flex: 0 0 auto; }
+  /* Label/value pairs: PITCHERS through CONF (all td after TIME/MATCHUP) */
+  #tab-model tbody tr:not([id^="model-row-"]) td[data-label]::before {
+    content: attr(data-label);
+    display: block;
+    font-family: var(--mono);
+    font-size: 9px;
+    color: var(--t3);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+  }
 
   /* Expanded detail row -> full-width block flow, not a table cell, so its
      content (bet-card, lineup, L5) is never constrained by table width.
@@ -1813,16 +1806,16 @@ function renderModelTable() {
         <span id="${rowId}-icon" style="display:inline-block;width:10px;transition:transform 0.2s">v</span>
         ${g.game_time_ct||'-'}</td>
       <td>${g.away_abbr} <span class="dim">@</span> ${g.home_abbr}</td>
-      <td class="dim" style="font-size:10px">${(g.away_sp||'TBD').split(' ').pop()} / ${(g.home_sp||'TBD').split(' ').pop()}</td>
-      <td class="tc mono">${fav} <span class="${m>=0?'pos':'neg'}">${Math.abs(m).toFixed(1)}</span></td>
-      <td class="tc mono">${(g.predicted_total||0).toFixed(1)}</td>
-      <td class="tc mono">${Math.round((g.home_win_prob||.5)*100)}%</td>
-      <td class="tc mono ${aMLCol}">${aMLStr}</td>
-      <td class="tc mono ${hMLCol}">${hMLStr}</td>
-      <td class="tc">${tag(g.spread_edge_label)} <span class="mono ${parseFloat(re)>=0?'pos':'neg'}" style="font-size:10px">${parseFloat(re)>=0?'+':''}${re}%</span></td>
-      <td class="tc">${tag(g.total_edge_label)} <span class="mono ${parseFloat(oe)>=0?'pos':'neg'}" style="font-size:10px">${parseFloat(oe)>=0?'+':''}${oe}%</span></td>
-      <td class="mono" style="font-size:11px">${bb}</td>
-      <td class="tc mono ${cc}">${c}</td>
+      <td class="dim" data-label="PITCHERS" style="font-size:10px">${(g.away_sp||'TBD').split(' ').pop()} / ${(g.home_sp||'TBD').split(' ').pop()}</td>
+      <td class="tc mono" data-label="MARGIN">${fav} <span class="${m>=0?'pos':'neg'}">${Math.abs(m).toFixed(1)}</span></td>
+      <td class="tc mono" data-label="TOTAL">${(g.predicted_total||0).toFixed(1)}</td>
+      <td class="tc mono" data-label="HOME%">${Math.round((g.home_win_prob||.5)*100)}%</td>
+      <td class="tc mono ${aMLCol}" data-label="AWAY ML">${aMLStr}</td>
+      <td class="tc mono ${hMLCol}" data-label="HOME ML">${hMLStr}</td>
+      <td class="tc" data-label="RL EDGE">${tag(g.spread_edge_label)} <span class="mono ${parseFloat(re)>=0?'pos':'neg'}" style="font-size:10px">${parseFloat(re)>=0?'+':''}${re}%</span></td>
+      <td class="tc" data-label="O/U EDGE">${tag(g.total_edge_label)} <span class="mono ${parseFloat(oe)>=0?'pos':'neg'}" style="font-size:10px">${parseFloat(oe)>=0?'+':''}${oe}%</span></td>
+      <td class="mono" data-label="BET" style="font-size:11px">${bb}</td>
+      <td class="tc mono ${cc}" data-label="CONF">${c}</td>
     </tr>
     <tr id="${rowId}">
       <td colspan="12" style="padding:0;background:var(--b1)">
@@ -1842,27 +1835,13 @@ function toggleModelRow(rowId, homeAbbr, awayAbbr) {
   if (isHidden && homeAbbr && awayAbbr) loadModelLineup(rowId, homeAbbr, awayAbbr);
 }
 
-// Lineup toggle + block markup for an expanded table row. Both start
-// hidden; loadModelLineup() reveals only the toggle once it confirms a
-// posted lineup exists. The grid itself stays collapsed until tapped —
-// two 9-man tables nearly double the row's height on mobile otherwise.
+// Lineup block markup for an expanded table row — hidden until
+// loadModelLineup() confirms a posted lineup exists, then shown immediately.
 function lineupBlock(rowId) {
-  return `<div class="ml-lineup-toggle mono dim" id="ml-lineup-toggle-${rowId}" style="display:none" onclick="toggleModelLineupVisibility('${rowId}')">
-    <span class="chev" id="ml-lineup-chev-${rowId}">&#9656;</span>LINEUPS
-  </div>
-  <div class="ml-lineup-block" id="ml-lineup-${rowId}" style="display:none">
+  return `<div class="ml-lineup-block" id="ml-lineup-${rowId}" style="display:none">
     <div class="ml-lineup-col away" id="ml-lineup-away-${rowId}"></div>
     <div class="ml-lineup-col home" id="ml-lineup-home-${rowId}"></div>
   </div>`;
-}
-
-function toggleModelLineupVisibility(rowId) {
-  const block = document.getElementById(`ml-lineup-${rowId}`);
-  const chev  = document.getElementById(`ml-lineup-chev-${rowId}`);
-  if (!block) return;
-  const isHidden = block.style.display === 'none';
-  block.style.display = isHidden ? 'grid' : 'none';
-  if (chev) chev.style.transform = isHidden ? 'rotate(90deg)' : 'rotate(0deg)';
 }
 
 // Fetches lineups via the same pipeline loadLineup() uses (fetchLineupRosters
@@ -1894,8 +1873,7 @@ async function loadModelLineup(rowId, homeAbbr, awayAbbr) {
 
     document.getElementById(`ml-lineup-away-${rowId}`).innerHTML = awayHtml;
     document.getElementById(`ml-lineup-home-${rowId}`).innerHTML = homeHtml;
-    const toggleEl = document.getElementById(`ml-lineup-toggle-${rowId}`);
-    if (toggleEl) toggleEl.style.display = '';
+    wrap.style.display = '';
   } catch {
     // stays hidden — matches "hide entirely rather than show placeholders"
   }
