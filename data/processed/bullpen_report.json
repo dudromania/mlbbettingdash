@@ -361,11 +361,11 @@
   },
   {
     "team": "TB",
-    "era": 3.9,
+    "era": 3.91,
     "whip": 1.18,
     "k9": 8.15,
     "bb9": 2.73,
-    "era_vs_lg": -0.2,
+    "era_vs_lg": -0.19,
     "whip_vs_lg": -0.1,
     "k9_vs_lg": -0.45,
     "quality": "AVG",
