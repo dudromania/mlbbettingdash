@@ -386,6 +386,12 @@ tbody td {
 
 @media(max-width:500px) { .bet-list { grid-template-columns: 1fr; } }
 
+/* ALL PREDICTIONS expanded row — hidden by default, shown as a table row on
+   desktop. The >500px display value stays table-row; only the mobile media
+   query below (~line 1230) overrides it to block for the stacked layout. */
+#tab-model tbody tr[id^="model-row-"] { display: none; }
+#tab-model tbody tr[id^="model-row-"].open { display: table-row; }
+
 /* L5 block — appended below betRow() output in expanded table rows only */
 .l5-block { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--b1); margin-top: 8px; }
 .l5-col { padding: 5px 8px; min-width: 0; overflow: hidden; }
@@ -1265,6 +1271,56 @@ tbody td {
   .game-expand { grid-template-columns: 1fr 1fr !important; }
 }
 
+/* -- ALL PREDICTIONS: mobile card layout (reuses existing 500px breakpoint) --
+   <table> layout has a hard min-width floor no column-hiding can escape
+   (measured: table.scrollWidth 888px vs .tbl-wrap clientWidth 350px at
+   375px, even hiding every non-essential column). Today's Games avoids this
+   because .game-row/.game-expand are plain block/grid <div>s, never a
+   <table>. Below 500px this table is restructured the same way: table,
+   thead, tbody, tr, td become normal block boxes (thead hidden entirely),
+   low-value columns are dropped, and the remaining fields on the collapsed
+   row are grouped into a compact card via flexbox. Desktop (>500px) is
+   untouched — none of these rules exist above this breakpoint. */
+@media(max-width:500px) {
+  #tab-model table { display: block; width: 100%; min-width: 0; }
+  #tab-model thead { display: none; }
+  #tab-model tbody { display: block; }
+
+  /* Collapsed (main) row -> flex card. Detail rows (id="model-row-N") are
+     excluded here and handled separately below. */
+  #tab-model tbody tr:not([id^="model-row-"]) {
+    display: flex; flex-wrap: wrap; column-gap: 8px; row-gap: 4px;
+    padding: 8px 10px;
+  }
+  #tab-model tbody tr:not([id^="model-row-"]) td { display: block; padding: 0; border: none; }
+
+  /* Hide low-value columns: PITCHERS, MARGIN, TOTAL, HOME%, AWAY ML, HOME ML */
+  #tab-model tbody tr td:nth-child(3), #tab-model tbody tr td:nth-child(4),
+  #tab-model tbody tr td:nth-child(5), #tab-model tbody tr td:nth-child(6),
+  #tab-model tbody tr td:nth-child(7), #tab-model tbody tr td:nth-child(8)
+  { display: none; }
+
+  /* Line 1: TIME + MATCHUP */
+  #tab-model tbody tr td:nth-child(1) { flex: 0 0 auto; }
+  #tab-model tbody tr td:nth-child(2) { flex: 1 1 auto; }
+
+  /* Line 2: RL EDGE + O/U EDGE */
+  #tab-model tbody tr td:nth-child(9),  #tab-model tbody tr td:nth-child(10) { flex: 1 1 auto; }
+
+  /* Line 3: BET */
+  #tab-model tbody tr td:nth-child(11) { flex: 1 1 100%; }
+
+  /* Line 4: CONF */
+  #tab-model tbody tr td:nth-child(12) { flex: 0 0 auto; }
+
+  /* Expanded detail row -> full-width block flow, not a table cell, so its
+     content (bet-card, lineup, L5) is never constrained by table width.
+     (display:none default comes from the base rule near .l5-block above —
+     only the .open value changes here, table-row -> block.) */
+  #tab-model tbody tr[id^="model-row-"].open { display: block; }
+  #tab-model tbody tr[id^="model-row-"] td { display: block; width: 100%; }
+}
+
 </style>
 </head>
 <body>
@@ -1768,7 +1824,7 @@ function renderModelTable() {
       <td class="mono" style="font-size:11px">${bb}</td>
       <td class="tc mono ${cc}">${c}</td>
     </tr>
-    <tr id="${rowId}" style="display:none">
+    <tr id="${rowId}">
       <td colspan="12" style="padding:0;background:var(--b1)">
         <div style="padding:12px;border-top:1px solid var(--b2)">${betRow(g)}${lineupBlock(rowId)}${l5Block(g)}</div>
       </td>
@@ -1780,8 +1836,8 @@ function toggleModelRow(rowId, homeAbbr, awayAbbr) {
   const detailRow = document.getElementById(rowId);
   const icon = document.getElementById(rowId + '-icon');
   if (!detailRow) return;
-  const isHidden = detailRow.style.display === 'none';
-  detailRow.style.display = isHidden ? 'table-row' : 'none';
+  const isHidden = !detailRow.classList.contains('open');
+  detailRow.classList.toggle('open', isHidden);
   if (icon) icon.style.transform = isHidden ? 'rotate(-90deg)' : 'rotate(0deg)';
   if (isHidden && homeAbbr && awayAbbr) loadModelLineup(rowId, homeAbbr, awayAbbr);
 }
