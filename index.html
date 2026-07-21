@@ -1273,30 +1273,42 @@ tbody td {
    375px). Today's Games avoids this because .game-row/.game-expand are
    plain block/grid <div>s, never a <table>. Below 500px this table is
    restructured the same way: table, thead, tbody, tr, td become normal
-   block boxes (thead hidden entirely). The collapsed row is ONE dense line
-   per game — TIME/MATCHUP/MARGIN/HOME ML/TOTAL/BET in fixed-width ch
-   columns so values align down the list (PITCHERS, HOME%, AWAY ML, RL EDGE,
-   O/U EDGE, CONF stay hidden on mobile — still on desktop and in the
-   expanded dropdown via betRow()). TIME/MATCHUP are compacted via ::before
-   (data-compact attribute, real text hidden with font-size:0) so desktop's
-   actual DOM text is untouched. Column widths sized off real data: time<=5,
-   match<=7 (hard ceiling — abbrs are always <=3 chars), margin<=7 (+1
-   buffer), hml<=4 (+2 for "H " prefix), total<=4 (+1 buffer), bet<=10.
-   Desktop (>500px) is untouched — none of these rules exist above this
-   breakpoint. */
+   block boxes (thead hidden entirely). The collapsed row is ONE monospace
+   line per game — TIME/MATCHUP/MARGIN/HOME ML/TOTAL/BET in fixed px columns
+   so values align down the list (PITCHERS, HOME%, AWAY ML, RL EDGE, O/U EDGE,
+   CONF stay hidden on mobile — still on desktop and in the expanded dropdown
+   via betRow()). TIME/MATCHUP are compacted via ::before (data-compact attr,
+   real text hidden at font-size:0) so desktop's actual DOM text is untouched.
+
+   Two things that must hold or the row breaks (both were bugs before):
+   (1) The row MUST be monospace. Column widths and the ::before compact text
+       have to resolve in the same fixed-width font; otherwise the matchup
+       ("MIN@CLE") renders proportional, overflows its track, and clips.
+   (2) Every cell MUST be pinned to grid-row 1. The visible cells' DOM order
+       is TIME, MATCHUP, MARGIN, TOTAL(nth-child 5), HOME ML(nth-child 8), BET
+       — but HOME ML's column (4) sits before TOTAL's (5), so sparse grid
+       auto-placement (which never backtracks) bumps HOME ML to a 2nd row.
+       Explicit grid-row:1 forces the single line.
+
+   Column px widths sized from measured content at mono 9px (max across the
+   real slate + headroom): time 54 (chevron + up to "12:40p"), matchup 44
+   ("XXX@YYY", 7-char hard ceiling), margin 54 ("XXX 12.5"), home ML 40
+   ("H -155"), total 28 ("12.9"); BET is 1fr so it absorbs the rest and can
+   never clip. Desktop (>500px) is untouched — none of these rules exist
+   above this breakpoint. */
 @media(max-width:500px) {
   #tab-model table { display: block; width: 100%; min-width: 0; }
   #tab-model thead { display: none; }
   #tab-model tbody { display: block; }
 
-  /* Collapsed (main) row -> one-line grid, fixed ch-based column widths so
-     every game's fields align vertically. Detail rows (id="model-row-N")
-     are excluded here, handled separately below. */
+  /* Collapsed (main) row -> one monospace line, fixed px columns + 1fr BET.
+     Detail rows (id="model-row-N") are excluded here, handled separately. */
   #tab-model tbody tr:not([id^="model-row-"]) {
-    display: grid; grid-template-columns: 8ch 7ch 8ch 7ch 5ch 1fr;
+    display: grid;
+    grid-template-columns: 54px 44px 54px 40px 28px 1fr;
     column-gap: 6px; align-items: baseline;
     padding: 8px 10px; margin-bottom: 6px;
-    font-size: 10px;
+    font-family: var(--mono); font-size: 9px;
   }
   #tab-model tbody tr:not([id^="model-row-"]) td {
     display: block; padding: 0; border: none;
@@ -1309,22 +1321,22 @@ tbody td {
   #tab-model tbody tr td:nth-child(10), #tab-model tbody tr td:nth-child(12)
   { display: none; }
 
-  /* One line, explicit column order: TIME, MATCHUP, MARGIN, HOME ML, TOTAL, BET */
-  #tab-model tbody tr td:nth-child(1)  { grid-column: 1; }
-  #tab-model tbody tr td:nth-child(2)  { grid-column: 2; }
-  #tab-model tbody tr td:nth-child(4)  { grid-column: 3; text-align: right; }
-  #tab-model tbody tr td:nth-child(8)  { grid-column: 4; text-align: right; }
-  #tab-model tbody tr td:nth-child(5)  { grid-column: 5; text-align: right; }
-  #tab-model tbody tr td:nth-child(11) { grid-column: 6; }
+  /* One line: TIME, MATCHUP, MARGIN, HOME ML, TOTAL, BET — all pinned row 1 */
+  #tab-model tbody tr td:nth-child(1)  { grid-row: 1; grid-column: 1; }
+  #tab-model tbody tr td:nth-child(2)  { grid-row: 1; grid-column: 2; }
+  #tab-model tbody tr td:nth-child(4)  { grid-row: 1; grid-column: 3; text-align: right; }
+  #tab-model tbody tr td:nth-child(8)  { grid-row: 1; grid-column: 4; text-align: right; }
+  #tab-model tbody tr td:nth-child(5)  { grid-row: 1; grid-column: 5; text-align: right; }
+  #tab-model tbody tr td:nth-child(11) { grid-row: 1; grid-column: 6; }
 
-  /* Compact TIME/MATCHUP: hide the real (desktop) text with font-size:0,
-     show the compact data-compact string via ::before instead. */
+  /* Compact TIME/MATCHUP: hide the real (desktop) text at font-size:0, show
+     the compact data-compact string via ::before (inherits the row's mono). */
   #tab-model tbody tr:not([id^="model-row-"]) .mm-time,
   #tab-model tbody tr:not([id^="model-row-"]) .mm-match { font-size: 0; }
   #tab-model tbody tr:not([id^="model-row-"]) .mm-time::before,
   #tab-model tbody tr:not([id^="model-row-"]) .mm-match::before {
     content: attr(data-compact);
-    font-size: 10px;
+    font-size: 9px;
   }
 
   /* HOME ML has no column header on mobile, so prefix it for clarity */
