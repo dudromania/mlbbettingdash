@@ -1,6 +1,6 @@
 [
   {
-    "id": 1628,
+    "id": 1637,
     "game_date": "2026-07-20",
     "game_pick_id": null,
     "player_name": "Tanner Bibee",
@@ -20,14 +20,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-07-20 20:12:02",
-    "graded_at": null
+    "actual_value": 5.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-07-20 22:54:37",
+    "graded_at": "2026-07-21 12:05:31"
   },
   {
-    "id": 1624,
+    "id": 1633,
     "game_date": "2026-07-20",
     "game_pick_id": null,
     "player_name": "Ryan Weathers",
@@ -47,14 +47,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-07-20 20:12:02",
-    "graded_at": null
+    "actual_value": 5.0,
+    "result": "W",
+    "pnl": 68.96551724137932,
+    "created_at": "2026-07-20 22:54:37",
+    "graded_at": "2026-07-21 12:05:31"
   },
   {
-    "id": 1626,
+    "id": 1635,
     "game_date": "2026-07-20",
     "game_pick_id": null,
     "player_name": "Payton Tolle",
@@ -74,14 +74,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-07-20 20:12:02",
-    "graded_at": null
+    "actual_value": 9.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-07-20 22:54:37",
+    "graded_at": "2026-07-21 12:05:31"
   },
   {
-    "id": 1623,
+    "id": 1632,
     "game_date": "2026-07-20",
     "game_pick_id": null,
     "player_name": "Joe Ryan",
@@ -101,14 +101,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-07-20 20:12:02",
-    "graded_at": null
+    "actual_value": 3.0,
+    "result": "W",
+    "pnl": 110.0,
+    "created_at": "2026-07-20 22:54:37",
+    "graded_at": "2026-07-21 12:05:31"
   },
   {
-    "id": 1622,
+    "id": 1631,
     "game_date": "2026-07-20",
     "game_pick_id": null,
     "player_name": "Jacob Misiorowski",
@@ -128,14 +128,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-07-20 20:12:02",
-    "graded_at": null
+    "actual_value": 6.0,
+    "result": "W",
+    "pnl": 110.0,
+    "created_at": "2026-07-20 22:54:37",
+    "graded_at": "2026-07-21 12:05:31"
   },
   {
-    "id": 1630,
+    "id": 1639,
     "game_date": "2026-07-20",
     "game_pick_id": null,
     "player_name": "Freddy Peralta",
@@ -155,14 +155,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-07-20 20:12:02",
-    "graded_at": null
+    "actual_value": 6.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-07-20 22:54:37",
+    "graded_at": "2026-07-21 12:05:31"
   },
   {
-    "id": 1629,
+    "id": 1638,
     "game_date": "2026-07-20",
     "game_pick_id": null,
     "player_name": "Emmet Sheehan",
@@ -182,14 +182,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-07-20 20:12:02",
-    "graded_at": null
+    "actual_value": 6.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-07-20 22:54:37",
+    "graded_at": "2026-07-21 12:05:31"
   },
   {
-    "id": 1627,
+    "id": 1636,
     "game_date": "2026-07-20",
     "game_pick_id": null,
     "player_name": "Cristopher S\u00e1nchez",
@@ -209,14 +209,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-07-20 20:12:02",
-    "graded_at": null
+    "actual_value": 7.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-07-20 22:54:37",
+    "graded_at": "2026-07-21 12:05:31"
   },
   {
-    "id": 1625,
+    "id": 1634,
     "game_date": "2026-07-20",
     "game_pick_id": null,
     "player_name": "Braxton Ashcraft",
@@ -236,11 +236,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-07-20 20:12:02",
-    "graded_at": null
+    "actual_value": 2.0,
+    "result": "W",
+    "pnl": 88.49557522123895,
+    "created_at": "2026-07-20 22:54:37",
+    "graded_at": "2026-07-21 12:05:31"
   },
   {
     "id": 1565,
