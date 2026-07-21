@@ -50,15 +50,15 @@
     "game_time": "6:10 PM CT",
     "home_abbr": "BOS",
     "away_abbr": "BAL",
-    "home_sp": "Ranger Suarez",
+    "home_sp": "Eduardo Rivera",
     "away_sp": "Kyle Bradish",
-    "nrfi_prob": 40.3,
+    "nrfi_prob": 41.3,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Ranger Suarez",
+      "name": "Eduardo Rivera",
       "first_inning": {},
-      "season_era": 3.15
+      "season_era": 2.89
     },
     "away_pitcher": {
       "name": "Kyle Bradish",
