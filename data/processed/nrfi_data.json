@@ -327,7 +327,7 @@
     "home_abbr": "COL",
     "away_abbr": "WSH",
     "home_sp": "Michael Lorenzen",
-    "away_sp": "Miles Mikolas",
+    "away_sp": "Carson Palmquist",
     "nrfi_prob": 26.0,
     "label": "LEAN YRFI",
     "confidence": "low",
@@ -337,9 +337,9 @@
       "season_era": 6.22
     },
     "away_pitcher": {
-      "name": "Miles Mikolas",
+      "name": "Carson Palmquist",
       "first_inning": {},
-      "season_era": 5.53
+      "season_era": 6.52
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
