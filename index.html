@@ -1273,26 +1273,35 @@ tbody td {
    375px). Today's Games avoids this because .game-row/.game-expand are
    plain block/grid <div>s, never a <table>. Below 500px this table is
    restructured the same way: table, thead, tbody, tr, td become normal
-   block boxes (thead hidden entirely). The collapsed row shows only
-   TIME/MATCHUP/MARGIN/HOME ML/TOTAL/BET as a dense two-line row (PITCHERS,
-   HOME%, AWAY ML, RL EDGE, O/U EDGE, CONF stay hidden on mobile — still on
-   desktop and in the expanded dropdown via betRow()). Desktop (>500px) is
-   untouched — none of these rules exist above this breakpoint. */
+   block boxes (thead hidden entirely). The collapsed row is ONE dense line
+   per game — TIME/MATCHUP/MARGIN/HOME ML/TOTAL/BET in fixed-width ch
+   columns so values align down the list (PITCHERS, HOME%, AWAY ML, RL EDGE,
+   O/U EDGE, CONF stay hidden on mobile — still on desktop and in the
+   expanded dropdown via betRow()). TIME/MATCHUP are compacted via ::before
+   (data-compact attribute, real text hidden with font-size:0) so desktop's
+   actual DOM text is untouched. Column widths sized off real data: time<=5,
+   match<=7 (hard ceiling — abbrs are always <=3 chars), margin<=7 (+1
+   buffer), hml<=4 (+2 for "H " prefix), total<=4 (+1 buffer), bet<=10.
+   Desktop (>500px) is untouched — none of these rules exist above this
+   breakpoint. */
 @media(max-width:500px) {
   #tab-model table { display: block; width: 100%; min-width: 0; }
   #tab-model thead { display: none; }
   #tab-model tbody { display: block; }
 
-  /* Collapsed (main) row -> explicit 2-row grid (not flex — flex-wrap only
-     breaks lines based on available space, which content of varying length
-     can't guarantee; grid places each field on an exact row/column).
-     Detail rows (id="model-row-N") are excluded here, handled separately. */
+  /* Collapsed (main) row -> one-line grid, fixed ch-based column widths so
+     every game's fields align vertically. Detail rows (id="model-row-N")
+     are excluded here, handled separately below. */
   #tab-model tbody tr:not([id^="model-row-"]) {
-    display: grid; grid-template-columns: repeat(4, auto);
-    column-gap: 10px; row-gap: 6px; align-items: baseline;
-    padding: 10px 10px;
+    display: grid; grid-template-columns: 8ch 7ch 8ch 7ch 5ch 1fr;
+    column-gap: 6px; align-items: baseline;
+    padding: 8px 10px; margin-bottom: 6px;
+    font-size: 10px;
   }
-  #tab-model tbody tr:not([id^="model-row-"]) td { display: block; padding: 0; border: none; }
+  #tab-model tbody tr:not([id^="model-row-"]) td {
+    display: block; padding: 0; border: none;
+    white-space: nowrap; overflow: hidden;
+  }
 
   /* Hide: PITCHERS, HOME%, AWAY ML, RL EDGE, O/U EDGE, CONF */
   #tab-model tbody tr td:nth-child(3), #tab-model tbody tr td:nth-child(6),
@@ -1300,15 +1309,26 @@ tbody td {
   #tab-model tbody tr td:nth-child(10), #tab-model tbody tr td:nth-child(12)
   { display: none; }
 
-  /* Row 1: TIME (col 1) + MATCHUP (spans remaining columns) */
-  #tab-model tbody tr td:nth-child(1) { grid-row: 1; grid-column: 1; }
-  #tab-model tbody tr td:nth-child(2) { grid-row: 1; grid-column: 2 / -1; }
+  /* One line, explicit column order: TIME, MATCHUP, MARGIN, HOME ML, TOTAL, BET */
+  #tab-model tbody tr td:nth-child(1)  { grid-column: 1; }
+  #tab-model tbody tr td:nth-child(2)  { grid-column: 2; }
+  #tab-model tbody tr td:nth-child(4)  { grid-column: 3; text-align: right; }
+  #tab-model tbody tr td:nth-child(8)  { grid-column: 4; text-align: right; }
+  #tab-model tbody tr td:nth-child(5)  { grid-column: 5; text-align: right; }
+  #tab-model tbody tr td:nth-child(11) { grid-column: 6; }
 
-  /* Row 2: MARGIN, HOME ML, TOTAL, BET — tight inline row, no labels */
-  #tab-model tbody tr td:nth-child(4)  { grid-row: 2; grid-column: 1; font-size: 10px; }
-  #tab-model tbody tr td:nth-child(8)  { grid-row: 2; grid-column: 2; font-size: 10px; }
-  #tab-model tbody tr td:nth-child(5)  { grid-row: 2; grid-column: 3; font-size: 10px; }
-  #tab-model tbody tr td:nth-child(11) { grid-row: 2; grid-column: 4; font-size: 10px; }
+  /* Compact TIME/MATCHUP: hide the real (desktop) text with font-size:0,
+     show the compact data-compact string via ::before instead. */
+  #tab-model tbody tr:not([id^="model-row-"]) .mm-time,
+  #tab-model tbody tr:not([id^="model-row-"]) .mm-match { font-size: 0; }
+  #tab-model tbody tr:not([id^="model-row-"]) .mm-time::before,
+  #tab-model tbody tr:not([id^="model-row-"]) .mm-match::before {
+    content: attr(data-compact);
+    font-size: 10px;
+  }
+
+  /* HOME ML has no column header on mobile, so prefix it for clarity */
+  #tab-model tbody tr:not([id^="model-row-"]) td:nth-child(8)::before { content: 'H '; }
 
   /* Expanded detail row -> full-width block flow, not a table cell, so its
      content (bet-card, lineup, L5) is never constrained by table width.
@@ -1805,11 +1825,17 @@ function renderModelTable() {
     const hMLStr = hML != null ? (hML > 0 ? '+'+hML : ''+hML) : '-';
     const aMLCol = aML != null ? (aML > 0 ? 'pos' : 'neg') : 'dim';
     const hMLCol = hML != null ? (hML > 0 ? 'pos' : 'neg') : 'dim';
+    // Compact TIME/MATCHUP for the mobile single-line row (e.g. "6:00 PM CT"
+    // -> "6:00p", "LAD @ PHI" -> "LAD@PHI"). Shown via ::before on mobile
+    // only (see @media(max-width:500px)) — desktop keeps the full text below.
+    const tMatch  = (g.game_time_ct||'').match(/^(\d{1,2}:\d{2})\s*(AM|PM)/i);
+    const ctTime  = tMatch ? `${tMatch[1]}${tMatch[2][0].toLowerCase()}` : (g.game_time_ct||'-');
+    const ctMatch = `${g.away_abbr}@${g.home_abbr}`;
     return `<tr onclick="toggleModelRow('${rowId}','${g.home_abbr}','${g.away_abbr}')" style="cursor:pointer">
       <td class="mono dim">
         <span id="${rowId}-icon" style="display:inline-block;width:10px;transition:transform 0.2s">v</span>
-        ${g.game_time_ct||'-'}</td>
-      <td>${g.away_abbr} <span class="dim">@</span> ${g.home_abbr}</td>
+        <span class="mm-time" data-compact="${ctTime}">${g.game_time_ct||'-'}</span></td>
+      <td><span class="mm-match" data-compact="${ctMatch}">${g.away_abbr} <span class="dim">@</span> ${g.home_abbr}</span></td>
       <td class="dim" style="font-size:10px">${(g.away_sp||'TBD').split(' ').pop()} / ${(g.home_sp||'TBD').split(' ').pop()}</td>
       <td class="tc mono">${fav} <span class="${m>=0?'pos':'neg'}">${Math.abs(m).toFixed(1)}</span></td>
       <td class="tc mono">${(g.predicted_total||0).toFixed(1)}</td>
