@@ -1,25 +1,9 @@
 {
-  "LAD@PHI": {
-    "home": [],
-    "away": []
-  },
-  "MIN@CLE": {
-    "home": [],
-    "away": []
-  },
   "PIT@NYY": {
     "home": [],
     "away": []
   },
-  "TB@TOR": {
-    "home": [],
-    "away": []
-  },
   "BAL@BOS": {
-    "home": [],
-    "away": []
-  },
-  "SD@ATL": {
     "home": [],
     "away": []
   },
@@ -31,23 +15,7 @@
     "home": [],
     "away": []
   },
-  "CHW@TEX": {
-    "home": [],
-    "away": []
-  },
-  "DET@CHC": {
-    "home": [],
-    "away": []
-  },
-  "MIA@HOU": {
-    "home": [],
-    "away": []
-  },
   "WSH@COL": {
-    "home": [],
-    "away": []
-  },
-  "STL@LAA": {
     "home": [],
     "away": []
   },
@@ -56,6 +24,38 @@
     "away": []
   },
   "CIN@SEA": {
+    "home": [],
+    "away": []
+  },
+  "STL@LAA": {
+    "home": [],
+    "away": []
+  },
+  "LAD@PHI": {
+    "home": [],
+    "away": []
+  },
+  "MIN@CLE": {
+    "home": [],
+    "away": []
+  },
+  "TB@TOR": {
+    "home": [],
+    "away": []
+  },
+  "SD@ATL": {
+    "home": [],
+    "away": []
+  },
+  "DET@CHC": {
+    "home": [],
+    "away": []
+  },
+  "CHW@TEX": {
+    "home": [],
+    "away": []
+  },
+  "MIA@HOU": {
     "home": [],
     "away": []
   }
