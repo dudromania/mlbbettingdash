@@ -24,29 +24,6 @@
   },
   {
     "date": "2026-07-22",
-    "game_time": "12:35 PM CT",
-    "home_abbr": "BOS",
-    "away_abbr": "BAL",
-    "home_sp": "Jake Bennett",
-    "away_sp": "Dean Kremer",
-    "nrfi_prob": 41.0,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Jake Bennett",
-      "first_inning": {},
-      "season_era": 2.35
-    },
-    "away_pitcher": {
-      "name": "Dean Kremer",
-      "first_inning": {},
-      "season_era": 4.15
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-22",
     "game_time": "6:15 PM CT",
     "home_abbr": "ATL",
     "away_abbr": "SD",
@@ -162,6 +139,29 @@
   },
   {
     "date": "2026-07-22",
+    "game_time": "12:35 PM CT",
+    "home_abbr": "BOS",
+    "away_abbr": "BAL",
+    "home_sp": "Jake Bennett",
+    "away_sp": "Dean Kremer",
+    "nrfi_prob": 36.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jake Bennett",
+      "first_inning": {},
+      "season_era": 2.28
+    },
+    "away_pitcher": {
+      "name": "Dean Kremer",
+      "first_inning": {},
+      "season_era": 5.33
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-22",
     "game_time": "2:40 PM CT",
     "home_abbr": "SEA",
     "away_abbr": "CIN",
@@ -254,6 +254,29 @@
   },
   {
     "date": "2026-07-22",
+    "game_time": "12:05 PM CT",
+    "home_abbr": "NYY",
+    "away_abbr": "PIT",
+    "home_sp": "Gerrit Cole",
+    "away_sp": "Mitch Keller",
+    "nrfi_prob": 32.5,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Gerrit Cole",
+      "first_inning": {},
+      "season_era": 3.66
+    },
+    "away_pitcher": {
+      "name": "Mitch Keller",
+      "first_inning": {},
+      "season_era": 4.98
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-22",
     "game_time": "5:40 PM CT",
     "home_abbr": "CLE",
     "away_abbr": "MIN",
@@ -294,29 +317,6 @@
       "name": "Gage Jump",
       "first_inning": {},
       "season_era": 3.78
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-22",
-    "game_time": "12:05 PM CT",
-    "home_abbr": "NYY",
-    "away_abbr": "PIT",
-    "home_sp": "Gerrit Cole",
-    "away_sp": "Mitch Keller",
-    "nrfi_prob": 30.9,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Gerrit Cole",
-      "first_inning": {},
-      "season_era": 3.93
-    },
-    "away_pitcher": {
-      "name": "Mitch Keller",
-      "first_inning": {},
-      "season_era": 5.14
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
