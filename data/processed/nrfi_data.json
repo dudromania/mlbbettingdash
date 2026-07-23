@@ -24,29 +24,6 @@
   },
   {
     "date": "2026-07-23",
-    "game_time": "11:15 AM CT",
-    "home_abbr": "ATL",
-    "away_abbr": "SD",
-    "home_sp": "Chris Sale",
-    "away_sp": "Kyle Hart",
-    "nrfi_prob": 36.9,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Chris Sale",
-      "first_inning": {},
-      "season_era": 2.06
-    },
-    "away_pitcher": {
-      "name": "Kyle Hart",
-      "first_inning": {},
-      "season_era": 5.66
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-23",
     "game_time": "4:15 PM CT",
     "home_abbr": "STL",
     "away_abbr": "AZ",
@@ -75,18 +52,41 @@
     "away_abbr": "MIN",
     "home_sp": "Gavin Williams",
     "away_sp": "Taj Bradley",
-    "nrfi_prob": 35.8,
+    "nrfi_prob": 36.7,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Gavin Williams",
       "first_inning": {},
-      "season_era": 4.0
+      "season_era": 3.89
     },
     "away_pitcher": {
       "name": "Taj Bradley",
       "first_inning": {},
-      "season_era": 3.85
+      "season_era": 3.74
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-23",
+    "game_time": "11:15 AM CT",
+    "home_abbr": "ATL",
+    "away_abbr": "SD",
+    "home_sp": "Chris Sale",
+    "away_sp": "Kyle Hart",
+    "nrfi_prob": 36.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Chris Sale",
+      "first_inning": {},
+      "season_era": 2.2
+    },
+    "away_pitcher": {
+      "name": "Kyle Hart",
+      "first_inning": {},
+      "season_era": 5.5
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
