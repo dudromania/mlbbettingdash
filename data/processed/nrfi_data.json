@@ -28,7 +28,7 @@
     "home_abbr": "ATL",
     "away_abbr": "SD",
     "home_sp": "Chris Sale",
-    "away_sp": "Griffin Canning",
+    "away_sp": "Kyle Hart",
     "nrfi_prob": 36.9,
     "label": "LEAN YRFI",
     "confidence": "low",
@@ -38,9 +38,9 @@
       "season_era": 2.06
     },
     "away_pitcher": {
-      "name": "Griffin Canning",
+      "name": "Kyle Hart",
       "first_inning": {},
-      "season_era": 6.67
+      "season_era": 5.66
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -97,8 +97,8 @@
     "home_abbr": "TOR",
     "away_abbr": "TB",
     "home_sp": "Shane Bieber",
-    "away_sp": "Ian Seymour",
-    "nrfi_prob": 27.6,
+    "away_sp": "Casey Legumina",
+    "nrfi_prob": 30.5,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
@@ -107,9 +107,9 @@
       "season_era": 5.7
     },
     "away_pitcher": {
-      "name": "Ian Seymour",
+      "name": "Casey Legumina",
       "first_inning": {},
-      "season_era": 4.79
+      "season_era": 3.92
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
