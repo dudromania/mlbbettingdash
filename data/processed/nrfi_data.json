@@ -24,6 +24,29 @@
   },
   {
     "date": "2026-07-23",
+    "game_time": "12:10 PM CT",
+    "home_abbr": "CLE",
+    "away_abbr": "MIN",
+    "home_sp": "Gavin Williams",
+    "away_sp": "Taj Bradley",
+    "nrfi_prob": 37.3,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Gavin Williams",
+      "first_inning": {},
+      "season_era": 3.78
+    },
+    "away_pitcher": {
+      "name": "Taj Bradley",
+      "first_inning": {},
+      "season_era": 3.69
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-23",
     "game_time": "4:15 PM CT",
     "home_abbr": "STL",
     "away_abbr": "AZ",
@@ -47,69 +70,23 @@
   },
   {
     "date": "2026-07-23",
-    "game_time": "12:10 PM CT",
-    "home_abbr": "CLE",
-    "away_abbr": "MIN",
-    "home_sp": "Gavin Williams",
-    "away_sp": "Taj Bradley",
-    "nrfi_prob": 36.7,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Gavin Williams",
-      "first_inning": {},
-      "season_era": 3.89
-    },
-    "away_pitcher": {
-      "name": "Taj Bradley",
-      "first_inning": {},
-      "season_era": 3.74
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-23",
-    "game_time": "11:15 AM CT",
-    "home_abbr": "ATL",
-    "away_abbr": "SD",
-    "home_sp": "Chris Sale",
-    "away_sp": "Kyle Hart",
-    "nrfi_prob": 36.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Chris Sale",
-      "first_inning": {},
-      "season_era": 2.2
-    },
-    "away_pitcher": {
-      "name": "Kyle Hart",
-      "first_inning": {},
-      "season_era": 5.5
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-23",
     "game_time": "2:07 PM CT",
     "home_abbr": "TOR",
     "away_abbr": "TB",
     "home_sp": "Shane Bieber",
     "away_sp": "Casey Legumina",
-    "nrfi_prob": 30.5,
+    "nrfi_prob": 30.4,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Shane Bieber",
       "first_inning": {},
-      "season_era": 5.7
+      "season_era": 5.4
     },
     "away_pitcher": {
       "name": "Casey Legumina",
       "first_inning": {},
-      "season_era": 3.92
+      "season_era": 3.95
     },
     "away_batting_1st": {},
     "home_batting_1st": {}

@@ -5,31 +5,31 @@
     {
       "home_abbr": "ATL",
       "away_abbr": "SD",
-      "home_score": "5",
-      "away_score": "3",
-      "state": "in",
-      "detail": "Bot 6th",
-      "is_live": true,
-      "is_final": false
+      "home_score": "6",
+      "away_score": "5",
+      "state": "post",
+      "detail": "Final",
+      "is_live": false,
+      "is_final": true
     },
     {
       "home_abbr": "CLE",
       "away_abbr": "MIN",
-      "home_score": "0",
-      "away_score": "0",
+      "home_score": "1",
+      "away_score": "1",
       "state": "in",
-      "detail": "Bot 4th",
+      "detail": "Bot 11th",
       "is_live": true,
       "is_final": false
     },
     {
       "home_abbr": "TOR",
       "away_abbr": "TB",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "7/23 - 3:07 PM EDT",
-      "is_live": false,
+      "home_score": "2",
+      "away_score": "1",
+      "state": "in",
+      "detail": "Top 4th",
+      "is_live": true,
       "is_final": false
     },
     {
