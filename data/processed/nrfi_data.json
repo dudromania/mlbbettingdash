@@ -6,13 +6,13 @@
     "away_abbr": "NYY",
     "home_sp": "Jes\u00fas Luzardo",
     "away_sp": "Cam Schlittler",
-    "nrfi_prob": 45.0,
+    "nrfi_prob": 45.1,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Jes\u00fas Luzardo",
       "first_inning": {},
-      "season_era": 3.43
+      "season_era": 3.41
     },
     "away_pitcher": {
       "name": "Cam Schlittler",
@@ -29,13 +29,13 @@
     "away_abbr": "KC",
     "home_sp": "Tarik Skubal",
     "away_sp": "Beck Way",
-    "nrfi_prob": 43.3,
+    "nrfi_prob": 43.4,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Tarik Skubal",
       "first_inning": {},
-      "season_era": 2.83
+      "season_era": 2.82
     },
     "away_pitcher": {
       "name": "Beck Way",
@@ -139,23 +139,23 @@
   },
   {
     "date": "2026-07-24",
-    "game_time": "3:10 PM CT",
-    "home_abbr": "MIL",
-    "away_abbr": "COL",
-    "home_sp": "Shane Drohan",
-    "away_sp": "Tomoyuki Sugano",
+    "game_time": "5:40 PM CT",
+    "home_abbr": "PIT",
+    "away_abbr": "CHC",
+    "home_sp": "Jared Jones",
+    "away_sp": "Matthew Boyd",
     "nrfi_prob": 35.1,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Shane Drohan",
+      "name": "Jared Jones",
       "first_inning": {},
-      "season_era": 3.2
+      "season_era": 3.95
     },
     "away_pitcher": {
-      "name": "Tomoyuki Sugano",
+      "name": "Matthew Boyd",
       "first_inning": {},
-      "season_era": 4.76
+      "season_era": 4.08
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -173,7 +173,7 @@
     "home_pitcher": {
       "name": "Carson Palmquist",
       "first_inning": {},
-      "season_era": 8.74
+      "season_era": 8.49
     },
     "away_pitcher": {
       "name": "Eduardo Rodriguez",
@@ -185,23 +185,23 @@
   },
   {
     "date": "2026-07-24",
-    "game_time": "5:40 PM CT",
-    "home_abbr": "PIT",
-    "away_abbr": "CHC",
-    "home_sp": "Jared Jones",
-    "away_sp": "Matthew Boyd",
-    "nrfi_prob": 34.4,
+    "game_time": "3:10 PM CT",
+    "home_abbr": "MIL",
+    "away_abbr": "COL",
+    "home_sp": "Shane Drohan",
+    "away_sp": "Tomoyuki Sugano",
+    "nrfi_prob": 34.3,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Jared Jones",
+      "name": "Shane Drohan",
       "first_inning": {},
-      "season_era": 4.05
+      "season_era": 3.51
     },
     "away_pitcher": {
-      "name": "Matthew Boyd",
+      "name": "Tomoyuki Sugano",
       "first_inning": {},
-      "season_era": 4.15
+      "season_era": 4.69
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
