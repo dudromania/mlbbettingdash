@@ -1,6 +1,6 @@
 [
   {
-    "id": 1716,
+    "id": 1717,
     "game_date": "2026-07-23",
     "game_pick_id": null,
     "player_name": "Troy Melton",
@@ -20,11 +20,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-07-23 18:07:50",
-    "graded_at": null
+    "actual_value": 5.0,
+    "result": "W",
+    "pnl": 83.33333333333334,
+    "created_at": "2026-07-23 20:07:34",
+    "graded_at": "2026-07-24 17:17:58"
   },
   {
     "id": 1715,
@@ -47,11 +47,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 5.0,
+    "result": "W",
+    "pnl": 60.97560975609756,
     "created_at": "2026-07-23 18:07:50",
-    "graded_at": null
+    "graded_at": "2026-07-24 17:17:58"
   },
   {
     "id": 1714,
@@ -74,11 +74,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 11.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-07-23 18:07:50",
-    "graded_at": null
+    "graded_at": "2026-07-24 17:17:58"
   },
   {
     "id": 1713,
@@ -101,11 +101,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 11.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-07-23 18:07:50",
-    "graded_at": null
+    "graded_at": "2026-07-24 17:17:58"
   },
   {
     "id": 1702,

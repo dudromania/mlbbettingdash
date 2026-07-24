@@ -1,21 +1,207 @@
 {
-  "SD@ATL": {
-    "home": [],
-    "away": []
+  "COL@MIL": {
+    "home": [
+      {
+        "name": "Christian Yelich",
+        "pos": "DH",
+        "bats": "L",
+        "avg": 0.243,
+        "ops": 0.719,
+        "hr": 6
+      },
+      {
+        "name": "Jackson Chourio",
+        "pos": "LF",
+        "bats": "R",
+        "avg": 0.277,
+        "ops": 0.812,
+        "hr": 13
+      },
+      {
+        "name": "Brice Turang",
+        "pos": "2B",
+        "bats": "L",
+        "avg": 0.259,
+        "ops": 0.809,
+        "hr": 14
+      },
+      {
+        "name": "William Contreras",
+        "pos": "C",
+        "bats": "R",
+        "avg": 0.272,
+        "ops": 0.731,
+        "hr": 10
+      },
+      {
+        "name": "Garrett Mitchell",
+        "pos": "CF",
+        "bats": "L",
+        "avg": 0.277,
+        "ops": 0.818,
+        "hr": 8
+      },
+      {
+        "name": "Luis Lara",
+        "pos": "RF",
+        "bats": "S",
+        "avg": 0.24,
+        "ops": 0.647,
+        "hr": 0
+      },
+      {
+        "name": "Jake Bauers",
+        "pos": "1B",
+        "bats": "L",
+        "avg": 0.256,
+        "ops": 0.844,
+        "hr": 18
+      },
+      {
+        "name": "Joey Ortiz",
+        "pos": "SS",
+        "bats": "R",
+        "avg": 0.239,
+        "ops": 0.662,
+        "hr": 5
+      },
+      {
+        "name": "David Hamilton",
+        "pos": "3B",
+        "bats": "L",
+        "avg": 0.24,
+        "ops": 0.65,
+        "hr": 3
+      }
+    ],
+    "away": [
+      {
+        "name": "Jake McCarthy",
+        "pos": "LF",
+        "bats": "L",
+        "avg": 0.305,
+        "ops": 0.859,
+        "hr": 10
+      },
+      {
+        "name": "Kyle Karros",
+        "pos": "3B",
+        "bats": "R",
+        "avg": 0.259,
+        "ops": 0.789,
+        "hr": 9
+      },
+      {
+        "name": "Cole Carrigg",
+        "pos": "CF",
+        "bats": "S",
+        "avg": 0.291,
+        "ops": 0.869,
+        "hr": 4
+      },
+      {
+        "name": "Hunter Goodman",
+        "pos": "C",
+        "bats": "R",
+        "avg": 0.258,
+        "ops": 0.89,
+        "hr": 31
+      },
+      {
+        "name": "Willi Castro",
+        "pos": "2B",
+        "bats": "S",
+        "avg": 0.26,
+        "ops": 0.722,
+        "hr": 9
+      },
+      {
+        "name": "Troy Johnston",
+        "pos": "1B",
+        "bats": "L",
+        "avg": 0.296,
+        "ops": 0.775,
+        "hr": 3
+      },
+      {
+        "name": "Mickey Moniak",
+        "pos": "DH",
+        "bats": "L",
+        "avg": 0.279,
+        "ops": 0.887,
+        "hr": 16
+      },
+      {
+        "name": "Tyler Freeman",
+        "pos": "RF",
+        "bats": "R",
+        "avg": 0.255,
+        "ops": 0.66,
+        "hr": 3
+      },
+      {
+        "name": "Ezequiel Tovar",
+        "pos": "SS",
+        "bats": "R",
+        "avg": 0.195,
+        "ops": 0.559,
+        "hr": 8
+      }
+    ]
   },
-  "MIN@CLE": {
-    "home": [],
-    "away": []
-  },
-  "TB@TOR": {
-    "home": [],
-    "away": []
-  },
-  "ARI@STL": {
+  "CHC@PIT": {
     "home": [],
     "away": []
   },
   "KC@DET": {
+    "home": [],
+    "away": []
+  },
+  "ARI@WSH": {
+    "home": [],
+    "away": []
+  },
+  "NYY@PHI": {
+    "home": [],
+    "away": []
+  },
+  "ATL@BAL": {
+    "home": [],
+    "away": []
+  },
+  "CLE@TB": {
+    "home": [],
+    "away": []
+  },
+  "LAD@NYM": {
+    "home": [],
+    "away": []
+  },
+  "SD@MIA": {
+    "home": [],
+    "away": []
+  },
+  "TOR@BOS": {
+    "home": [],
+    "away": []
+  },
+  "HOU@CHW": {
+    "home": [],
+    "away": []
+  },
+  "SEA@TEX": {
+    "home": [],
+    "away": []
+  },
+  "ATH@MIN": {
+    "home": [],
+    "away": []
+  },
+  "CIN@STL": {
+    "home": [],
+    "away": []
+  },
+  "LAA@SF": {
     "home": [],
     "away": []
   }
