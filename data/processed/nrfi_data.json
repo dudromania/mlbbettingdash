@@ -6,13 +6,13 @@
     "away_abbr": "NYY",
     "home_sp": "Jes\u00fas Luzardo",
     "away_sp": "Cam Schlittler",
-    "nrfi_prob": 45.1,
+    "nrfi_prob": 45.2,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Jes\u00fas Luzardo",
       "first_inning": {},
-      "season_era": 3.41
+      "season_era": 3.4
     },
     "away_pitcher": {
       "name": "Cam Schlittler",
@@ -29,13 +29,13 @@
     "away_abbr": "KC",
     "home_sp": "Tarik Skubal",
     "away_sp": "Beck Way",
-    "nrfi_prob": 43.4,
+    "nrfi_prob": 43.5,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Tarik Skubal",
       "first_inning": {},
-      "season_era": 2.82
+      "season_era": 2.8
     },
     "away_pitcher": {
       "name": "Beck Way",
@@ -144,13 +144,13 @@
     "away_abbr": "CHC",
     "home_sp": "Jared Jones",
     "away_sp": "Matthew Boyd",
-    "nrfi_prob": 35.1,
+    "nrfi_prob": 35.2,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Jared Jones",
       "first_inning": {},
-      "season_era": 3.95
+      "season_era": 3.92
     },
     "away_pitcher": {
       "name": "Matthew Boyd",
@@ -173,7 +173,7 @@
     "home_pitcher": {
       "name": "Carson Palmquist",
       "first_inning": {},
-      "season_era": 8.49
+      "season_era": 8.03
     },
     "away_pitcher": {
       "name": "Eduardo Rodriguez",
