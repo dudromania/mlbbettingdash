@@ -47,29 +47,6 @@
   },
   {
     "date": "2026-07-25",
-    "game_time": "12:10 PM CT",
-    "home_abbr": "DET",
-    "away_abbr": "KC",
-    "home_sp": "Casey Mize",
-    "away_sp": "Michael Wacha",
-    "nrfi_prob": 42.2,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Casey Mize",
-      "first_inning": {},
-      "season_era": 2.7
-    },
-    "away_pitcher": {
-      "name": "Michael Wacha",
-      "first_inning": {},
-      "season_era": 3.6
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-25",
     "game_time": "5:10 PM CT",
     "home_abbr": "TB",
     "away_abbr": "CLE",
@@ -277,29 +254,6 @@
   },
   {
     "date": "2026-07-25",
-    "game_time": "6:10 PM CT",
-    "home_abbr": "MIN",
-    "away_abbr": "ATH",
-    "home_sp": "TBD",
-    "away_sp": "Brady Basso",
-    "nrfi_prob": 32.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Joe Ryan",
-      "first_inning": {},
-      "season_era": 3.38
-    },
-    "away_pitcher": {
-      "name": "Brady Basso",
-      "first_inning": {},
-      "season_era": 6.48
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-25",
     "game_time": "6:15 PM CT",
     "home_abbr": "STL",
     "away_abbr": "CIN",
@@ -317,6 +271,29 @@
       "name": "Hunter Greene",
       "first_inning": {},
       "season_era": 6.06
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-25",
+    "game_time": "6:10 PM CT",
+    "home_abbr": "MIN",
+    "away_abbr": "ATH",
+    "home_sp": "Mike Paredes",
+    "away_sp": "Brady Basso",
+    "nrfi_prob": 27.8,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Mike Paredes",
+      "first_inning": {},
+      "season_era": 4.72
+    },
+    "away_pitcher": {
+      "name": "Brady Basso",
+      "first_inning": {},
+      "season_era": 6.48
     },
     "away_batting_1st": {},
     "home_batting_1st": {}

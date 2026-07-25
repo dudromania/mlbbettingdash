@@ -1,6 +1,6 @@
 [
   {
-    "id": 1773,
+    "id": 1795,
     "game_date": "2026-07-25",
     "game_pick_id": null,
     "player_name": "Shota Imanaga",
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-25 19:16:53",
+    "created_at": "2026-07-25 19:20:01",
     "graded_at": null
   },
   {
-    "id": 1772,
+    "id": 1794,
     "game_date": "2026-07-25",
     "game_pick_id": null,
     "player_name": "Ryan Weathers",
@@ -50,11 +50,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-25 19:16:53",
+    "created_at": "2026-07-25 19:20:01",
     "graded_at": null
   },
   {
-    "id": 1777,
+    "id": 1799,
     "game_date": "2026-07-25",
     "game_pick_id": null,
     "player_name": "Robert Gasser",
@@ -77,11 +77,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-25 19:16:53",
+    "created_at": "2026-07-25 19:20:01",
     "graded_at": null
   },
   {
-    "id": 1767,
+    "id": 1789,
     "game_date": "2026-07-25",
     "game_pick_id": null,
     "player_name": "Robbie Ray",
@@ -104,11 +104,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-25 19:16:53",
+    "created_at": "2026-07-25 19:20:01",
     "graded_at": null
   },
   {
-    "id": 1769,
+    "id": 1791,
     "game_date": "2026-07-25",
     "game_pick_id": null,
     "player_name": "Paul Skenes",
@@ -131,11 +131,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-25 19:16:53",
+    "created_at": "2026-07-25 19:20:01",
     "graded_at": null
   },
   {
-    "id": 1771,
+    "id": 1793,
     "game_date": "2026-07-25",
     "game_pick_id": null,
     "player_name": "Nathan Eovaldi",
@@ -158,11 +158,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-25 19:16:53",
+    "created_at": "2026-07-25 19:20:01",
     "graded_at": null
   },
   {
-    "id": 1774,
+    "id": 1796,
     "game_date": "2026-07-25",
     "game_pick_id": null,
     "player_name": "Michael Wacha",
@@ -185,11 +185,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-25 19:16:53",
+    "created_at": "2026-07-25 19:20:01",
     "graded_at": null
   },
   {
-    "id": 1768,
+    "id": 1790,
     "game_date": "2026-07-25",
     "game_pick_id": null,
     "player_name": "Hunter Brown",
@@ -212,11 +212,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-25 19:16:53",
+    "created_at": "2026-07-25 19:20:01",
     "graded_at": null
   },
   {
-    "id": 1776,
+    "id": 1798,
     "game_date": "2026-07-25",
     "game_pick_id": null,
     "player_name": "Casey Mize",
@@ -239,11 +239,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-25 19:16:53",
+    "created_at": "2026-07-25 19:20:01",
     "graded_at": null
   },
   {
-    "id": 1775,
+    "id": 1797,
     "game_date": "2026-07-25",
     "game_pick_id": null,
     "player_name": "Bryce Elder",
@@ -266,11 +266,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-25 19:16:53",
+    "created_at": "2026-07-25 19:20:01",
     "graded_at": null
   },
   {
-    "id": 1770,
+    "id": 1792,
     "game_date": "2026-07-25",
     "game_pick_id": null,
     "player_name": "Bryan Woo",
@@ -293,7 +293,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-25 19:16:53",
+    "created_at": "2026-07-25 19:20:01",
     "graded_at": null
   },
   {
