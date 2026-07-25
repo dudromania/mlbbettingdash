@@ -52,18 +52,18 @@
     "away_abbr": "KC",
     "home_sp": "Casey Mize",
     "away_sp": "Michael Wacha",
-    "nrfi_prob": 41.5,
+    "nrfi_prob": 42.2,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Casey Mize",
       "first_inning": {},
-      "season_era": 2.79
+      "season_era": 2.7
     },
     "away_pitcher": {
       "name": "Michael Wacha",
       "first_inning": {},
-      "season_era": 3.66
+      "season_era": 3.6
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -87,29 +87,6 @@
       "name": "Tanner Bibee",
       "first_inning": {},
       "season_era": 3.86
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-25",
-    "game_time": "5:05 PM CT",
-    "home_abbr": "PHI",
-    "away_abbr": "NYY",
-    "home_sp": "TBD",
-    "away_sp": "Ryan Weathers",
-    "nrfi_prob": 38.7,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Cristopher S\u00e1nchez",
-      "first_inning": {},
-      "season_era": 2.65
-    },
-    "away_pitcher": {
-      "name": "Ryan Weathers",
-      "first_inning": {},
-      "season_era": 4.4
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -212,8 +189,8 @@
     "home_abbr": "MIA",
     "away_abbr": "SD",
     "home_sp": "Eury P\u00e9rez",
-    "away_sp": "JP Sears",
-    "nrfi_prob": 35.5,
+    "away_sp": "Randy V\u00e1squez",
+    "nrfi_prob": 34.1,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
@@ -222,32 +199,9 @@
       "season_era": 3.53
     },
     "away_pitcher": {
-      "name": "JP Sears",
+      "name": "Randy V\u00e1squez",
       "first_inning": {},
-      "season_era": 4.38
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-25",
-    "game_time": "6:10 PM CT",
-    "home_abbr": "MIN",
-    "away_abbr": "ATH",
-    "home_sp": "TBD",
-    "away_sp": "Mason Barnett",
-    "nrfi_prob": 34.9,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Joe Ryan",
-      "first_inning": {},
-      "season_era": 3.38
-    },
-    "away_pitcher": {
-      "name": "Mason Barnett",
-      "first_inning": {},
-      "season_era": 4.64
+      "season_era": 4.72
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -277,6 +231,29 @@
   },
   {
     "date": "2026-07-25",
+    "game_time": "5:05 PM CT",
+    "home_abbr": "PHI",
+    "away_abbr": "NYY",
+    "home_sp": "Tim Mayza",
+    "away_sp": "Ryan Weathers",
+    "nrfi_prob": 33.6,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Tim Mayza",
+      "first_inning": {},
+      "season_era": 4.0
+    },
+    "away_pitcher": {
+      "name": "Ryan Weathers",
+      "first_inning": {},
+      "season_era": 4.4
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-25",
     "game_time": "3:05 PM CT",
     "home_abbr": "SF",
     "away_abbr": "LAA",
@@ -294,6 +271,29 @@
       "name": "Ryan Johnson",
       "first_inning": {},
       "season_era": 6.1
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-25",
+    "game_time": "6:10 PM CT",
+    "home_abbr": "MIN",
+    "away_abbr": "ATH",
+    "home_sp": "TBD",
+    "away_sp": "Brady Basso",
+    "nrfi_prob": 32.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Joe Ryan",
+      "first_inning": {},
+      "season_era": 3.38
+    },
+    "away_pitcher": {
+      "name": "Brady Basso",
+      "first_inning": {},
+      "season_era": 6.48
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
