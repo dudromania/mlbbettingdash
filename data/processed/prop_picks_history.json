@@ -1,6 +1,6 @@
 [
   {
-    "id": 1838,
+    "id": 1849,
     "game_date": "2026-07-26",
     "game_pick_id": null,
     "player_name": "Reynaldo L\u00f3pez",
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-26 15:42:30",
+    "created_at": "2026-07-26 16:09:37",
     "graded_at": null
   },
   {
-    "id": 1841,
+    "id": 1852,
     "game_date": "2026-07-26",
     "game_pick_id": null,
     "player_name": "Jameson Taillon",
@@ -50,11 +50,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-26 15:42:30",
+    "created_at": "2026-07-26 16:09:37",
     "graded_at": null
   },
   {
-    "id": 1833,
+    "id": 1844,
     "game_date": "2026-07-26",
     "game_pick_id": null,
     "player_name": "Jacob deGrom",
@@ -77,11 +77,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-26 15:42:30",
+    "created_at": "2026-07-26 16:09:37",
     "graded_at": null
   },
   {
-    "id": 1832,
+    "id": 1843,
     "game_date": "2026-07-26",
     "game_pick_id": null,
     "player_name": "Jacob Misiorowski",
@@ -104,11 +104,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-26 15:42:30",
+    "created_at": "2026-07-26 16:09:37",
     "graded_at": null
   },
   {
-    "id": 1840,
+    "id": 1851,
     "game_date": "2026-07-26",
     "game_pick_id": null,
     "player_name": "Freddy Peralta",
@@ -131,11 +131,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-26 15:42:30",
+    "created_at": "2026-07-26 16:09:37",
     "graded_at": null
   },
   {
-    "id": 1834,
+    "id": 1845,
     "game_date": "2026-07-26",
     "game_pick_id": null,
     "player_name": "Framber Valdez",
@@ -158,11 +158,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-26 15:42:30",
+    "created_at": "2026-07-26 16:09:37",
     "graded_at": null
   },
   {
-    "id": 1835,
+    "id": 1846,
     "game_date": "2026-07-26",
     "game_pick_id": null,
     "player_name": "Emmet Sheehan",
@@ -185,11 +185,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-26 15:42:30",
+    "created_at": "2026-07-26 16:09:37",
     "graded_at": null
   },
   {
-    "id": 1839,
+    "id": 1850,
     "game_date": "2026-07-26",
     "game_pick_id": null,
     "player_name": "Drew Rasmussen",
@@ -212,11 +212,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-26 15:42:30",
+    "created_at": "2026-07-26 16:09:37",
     "graded_at": null
   },
   {
-    "id": 1831,
+    "id": 1842,
     "game_date": "2026-07-26",
     "game_pick_id": null,
     "player_name": "Cristopher S\u00e1nchez",
@@ -239,11 +239,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-26 15:42:30",
+    "created_at": "2026-07-26 16:09:37",
     "graded_at": null
   },
   {
-    "id": 1837,
+    "id": 1848,
     "game_date": "2026-07-26",
     "game_pick_id": null,
     "player_name": "Carson Whisenhunt",
@@ -266,11 +266,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-26 15:42:30",
+    "created_at": "2026-07-26 16:09:37",
     "graded_at": null
   },
   {
-    "id": 1836,
+    "id": 1847,
     "game_date": "2026-07-26",
     "game_pick_id": null,
     "player_name": "Braxton Ashcraft",
@@ -293,7 +293,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-26 15:42:30",
+    "created_at": "2026-07-26 16:09:37",
     "graded_at": null
   },
   {

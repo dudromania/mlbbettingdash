@@ -6,18 +6,18 @@
     "away_abbr": "CLE",
     "home_sp": "Drew Rasmussen",
     "away_sp": "Parker Messick",
-    "nrfi_prob": 43.7,
+    "nrfi_prob": 45.0,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Drew Rasmussen",
       "first_inning": {},
-      "season_era": 3.28
+      "season_era": 3.07
     },
     "away_pitcher": {
       "name": "Parker Messick",
       "first_inning": {},
-      "season_era": 2.68
+      "season_era": 2.59
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -116,29 +116,6 @@
   },
   {
     "date": "2026-07-26",
-    "game_time": "12:35 PM CT",
-    "home_abbr": "WSH",
-    "away_abbr": "AZ",
-    "home_sp": "Miles Mikolas",
-    "away_sp": "Kohl Drake",
-    "nrfi_prob": 37.7,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Miles Mikolas",
-      "first_inning": {},
-      "season_era": 5.6
-    },
-    "away_pitcher": {
-      "name": "Kohl Drake",
-      "first_inning": {},
-      "season_era": 1.8
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-26",
     "game_time": "1:15 PM CT",
     "home_abbr": "STL",
     "away_abbr": "CIN",
@@ -167,18 +144,18 @@
     "away_abbr": "TOR",
     "home_sp": "Ranger Suarez",
     "away_sp": "Kevin Gausman",
-    "nrfi_prob": 36.4,
+    "nrfi_prob": 36.8,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Ranger Suarez",
       "first_inning": {},
-      "season_era": 3.15
+      "season_era": 3.09
     },
     "away_pitcher": {
       "name": "Kevin Gausman",
       "first_inning": {},
-      "season_era": 4.51
+      "season_era": 4.47
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -190,18 +167,41 @@
     "away_abbr": "ATL",
     "home_sp": "Shane Baz",
     "away_sp": "Reynaldo L\u00f3pez",
-    "nrfi_prob": 35.2,
+    "nrfi_prob": 35.5,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Shane Baz",
       "first_inning": {},
-      "season_era": 4.05
+      "season_era": 4.02
     },
     "away_pitcher": {
       "name": "Reynaldo L\u00f3pez",
       "first_inning": {},
-      "season_era": 3.95
+      "season_era": 3.9
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-26",
+    "game_time": "12:35 PM CT",
+    "home_abbr": "WSH",
+    "away_abbr": "AZ",
+    "home_sp": "Miles Mikolas",
+    "away_sp": "Kohl Drake",
+    "nrfi_prob": 33.7,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Miles Mikolas",
+      "first_inning": {},
+      "season_era": 5.58
+    },
+    "away_pitcher": {
+      "name": "Kohl Drake",
+      "first_inning": {},
+      "season_era": 3.0
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -219,35 +219,12 @@
     "home_pitcher": {
       "name": "Braxton Ashcraft",
       "first_inning": {},
-      "season_era": 3.95
+      "season_era": 3.97
     },
     "away_pitcher": {
       "name": "Jameson Taillon",
       "first_inning": {},
-      "season_era": 5.38
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-26",
-    "game_time": "12:40 PM CT",
-    "home_abbr": "DET",
-    "away_abbr": "KC",
-    "home_sp": "Framber Valdez",
-    "away_sp": "Luinder Avila",
-    "nrfi_prob": 29.8,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Framber Valdez",
-      "first_inning": {},
-      "season_era": 4.57
-    },
-    "away_pitcher": {
-      "name": "Luinder Avila",
-      "first_inning": {},
-      "season_era": 4.86
+      "season_era": 5.3
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -278,22 +255,68 @@
   {
     "date": "2026-07-26",
     "game_time": "12:40 PM CT",
+    "home_abbr": "DET",
+    "away_abbr": "KC",
+    "home_sp": "Framber Valdez",
+    "away_sp": "Luinder Avila",
+    "nrfi_prob": 29.6,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Framber Valdez",
+      "first_inning": {},
+      "season_era": 4.61
+    },
+    "away_pitcher": {
+      "name": "Luinder Avila",
+      "first_inning": {},
+      "season_era": 4.86
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-26",
+    "game_time": "12:40 PM CT",
+    "home_abbr": "MIA",
+    "away_abbr": "SD",
+    "home_sp": "Janson Junk",
+    "away_sp": "Walker Buehler",
+    "nrfi_prob": 27.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Janson Junk",
+      "first_inning": {},
+      "season_era": 5.01
+    },
+    "away_pitcher": {
+      "name": "Walker Buehler",
+      "first_inning": {},
+      "season_era": 5.17
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-26",
+    "game_time": "12:40 PM CT",
     "home_abbr": "NYM",
     "away_abbr": "LAD",
     "home_sp": "Freddy Peralta",
     "away_sp": "Emmet Sheehan",
-    "nrfi_prob": 27.2,
+    "nrfi_prob": 27.0,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Freddy Peralta",
       "first_inning": {},
-      "season_era": 5.01
+      "season_era": 4.96
     },
     "away_pitcher": {
       "name": "Emmet Sheehan",
       "first_inning": {},
-      "season_era": 5.13
+      "season_era": 5.24
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -317,29 +340,6 @@
       "name": "Jeffrey Springs",
       "first_inning": {},
       "season_era": 5.96
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-26",
-    "game_time": "12:40 PM CT",
-    "home_abbr": "MIA",
-    "away_abbr": "SD",
-    "home_sp": "Janson Junk",
-    "away_sp": "Walker Buehler",
-    "nrfi_prob": 26.6,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Janson Junk",
-      "first_inning": {},
-      "season_era": 5.09
-    },
-    "away_pitcher": {
-      "name": "Walker Buehler",
-      "first_inning": {},
-      "season_era": 5.23
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
