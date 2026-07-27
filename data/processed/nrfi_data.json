@@ -121,18 +121,18 @@
     "away_abbr": "SEA",
     "home_sp": "Kumar Rocker",
     "away_sp": "George Kirby",
-    "nrfi_prob": 36.4,
+    "nrfi_prob": 34.9,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Kumar Rocker",
       "first_inning": {},
-      "season_era": 4.13
+      "season_era": 4.1
     },
     "away_pitcher": {
       "name": "George Kirby",
       "first_inning": {},
-      "season_era": 3.57
+      "season_era": 3.98
     },
     "away_batting_1st": {},
     "home_batting_1st": {}

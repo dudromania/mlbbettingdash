@@ -94,7 +94,7 @@
     "era": 4.3,
     "whip": 1.27,
     "k9": 8.67,
-    "bb9": 2.94,
+    "bb9": 2.93,
     "era_vs_lg": 0.2,
     "whip_vs_lg": -0.01,
     "k9_vs_lg": 0.07,
@@ -255,6 +255,21 @@
     "fatigue": "FRESH"
   },
   {
+    "team": "SEA",
+    "era": 3.7,
+    "whip": 1.18,
+    "k9": 8.66,
+    "bb9": 2.51,
+    "era_vs_lg": -0.4,
+    "whip_vs_lg": -0.1,
+    "k9_vs_lg": 0.06,
+    "quality": "GOOD",
+    "innings_3d": 9.0,
+    "pitchers_3d": 6,
+    "heavy": 0,
+    "fatigue": "FRESH"
+  },
+  {
     "team": "DET",
     "era": 3.61,
     "whip": 1.22,
@@ -266,21 +281,6 @@
     "quality": "GOOD",
     "innings_3d": 8.7,
     "pitchers_3d": 7,
-    "heavy": 0,
-    "fatigue": "FRESH"
-  },
-  {
-    "team": "SEA",
-    "era": 3.65,
-    "whip": 1.18,
-    "k9": 8.67,
-    "bb9": 2.53,
-    "era_vs_lg": -0.45,
-    "whip_vs_lg": -0.1,
-    "k9_vs_lg": 0.07,
-    "quality": "GOOD",
-    "innings_3d": 9.0,
-    "pitchers_3d": 6,
     "heavy": 0,
     "fatigue": "FRESH"
   },

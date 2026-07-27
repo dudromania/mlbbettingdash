@@ -5,11 +5,11 @@
     {
       "home_abbr": "TEX",
       "away_abbr": "SEA",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "7/27 - 2:35 PM EDT",
-      "is_live": false,
+      "home_score": "7",
+      "away_score": "2",
+      "state": "in",
+      "detail": "Bot 6th",
+      "is_live": true,
       "is_final": false
     },
     {
