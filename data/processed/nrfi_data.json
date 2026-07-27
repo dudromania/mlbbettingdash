@@ -70,6 +70,29 @@
   },
   {
     "date": "2026-07-27",
+    "game_time": "5:45 PM CT",
+    "home_abbr": "WSH",
+    "away_abbr": "TOR",
+    "home_sp": "Eddy Yean",
+    "away_sp": "Max Scherzer",
+    "nrfi_prob": 40.0,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Eddy Yean",
+      "first_inning": {},
+      "season_era": 0.0
+    },
+    "away_pitcher": {
+      "name": "Max Scherzer",
+      "first_inning": {},
+      "season_era": 10.23
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-27",
     "game_time": "6:10 PM CT",
     "home_abbr": "CIN",
     "away_abbr": "CLE",
@@ -202,29 +225,6 @@
       "name": "David Peterson",
       "first_inning": {},
       "season_era": 5.97
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-27",
-    "game_time": "5:45 PM CT",
-    "home_abbr": "WSH",
-    "away_abbr": "TOR",
-    "home_sp": "Andrew Alvarez",
-    "away_sp": "Max Scherzer",
-    "nrfi_prob": 29.5,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Andrew Alvarez",
-      "first_inning": {},
-      "season_era": 4.22
-    },
-    "away_pitcher": {
-      "name": "Max Scherzer",
-      "first_inning": {},
-      "season_era": 10.23
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
