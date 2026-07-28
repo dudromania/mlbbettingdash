@@ -1,6 +1,6 @@
 [
   {
-    "id": 1902,
+    "id": 1912,
     "game_date": "2026-07-28",
     "game_pick_id": null,
     "player_name": "Troy Melton",
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-28 16:11:09",
+    "created_at": "2026-07-28 18:11:11",
     "graded_at": null
   },
   {
-    "id": 1908,
+    "id": 1917,
     "game_date": "2026-07-28",
     "game_pick_id": null,
     "player_name": "Taj Bradley",
@@ -50,11 +50,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-28 16:11:09",
+    "created_at": "2026-07-28 18:11:11",
     "graded_at": null
   },
   {
-    "id": 1905,
+    "id": 1914,
     "game_date": "2026-07-28",
     "game_pick_id": null,
     "player_name": "Slade Cecconi",
@@ -77,11 +77,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-28 16:11:09",
+    "created_at": "2026-07-28 18:11:11",
     "graded_at": null
   },
   {
-    "id": 1906,
+    "id": 1915,
     "game_date": "2026-07-28",
     "game_pick_id": null,
     "player_name": "Sandy Alcantara",
@@ -104,11 +104,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-28 16:11:09",
+    "created_at": "2026-07-28 18:11:11",
     "graded_at": null
   },
   {
-    "id": 1907,
+    "id": 1916,
     "game_date": "2026-07-28",
     "game_pick_id": null,
     "player_name": "Griffin Jax",
@@ -131,11 +131,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-28 16:11:09",
+    "created_at": "2026-07-28 18:11:11",
     "graded_at": null
   },
   {
-    "id": 1909,
+    "id": 1918,
     "game_date": "2026-07-28",
     "game_pick_id": null,
     "player_name": "Gerrit Cole",
@@ -158,11 +158,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-28 16:11:09",
+    "created_at": "2026-07-28 18:11:11",
     "graded_at": null
   },
   {
-    "id": 1901,
+    "id": 1910,
     "game_date": "2026-07-28",
     "game_pick_id": null,
     "player_name": "Chris Sale",
@@ -185,11 +185,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-28 16:11:09",
+    "created_at": "2026-07-28 18:11:11",
     "graded_at": null
   },
   {
-    "id": 1903,
+    "id": 1911,
     "game_date": "2026-07-28",
     "game_pick_id": null,
     "player_name": "Chase Burns",
@@ -200,11 +200,11 @@
     "prop_line": 6.5,
     "prop_odds": -145,
     "prop_book": "bovada",
-    "predicted_value": 5.3,
-    "predicted_prob_over": 0.283,
-    "edge": 0.125,
+    "predicted_value": 5.0,
+    "predicted_prob_over": 0.238,
+    "edge": 0.17,
     "confidence": null,
-    "player_season_avg": 8.2,
+    "player_season_avg": 8.56,
     "player_last7_avg": null,
     "player_last30_avg": null,
     "matchup_factor": null,
@@ -212,11 +212,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-28 16:11:09",
+    "created_at": "2026-07-28 18:11:11",
     "graded_at": null
   },
   {
-    "id": 1904,
+    "id": 1913,
     "game_date": "2026-07-28",
     "game_pick_id": null,
     "player_name": "Anthony Kay",
@@ -239,7 +239,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-07-28 16:11:09",
+    "created_at": "2026-07-28 18:11:11",
     "graded_at": null
   },
   {
