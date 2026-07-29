@@ -24,6 +24,29 @@
   },
   {
     "date": "2026-07-29",
+    "game_time": "6:10 PM CT",
+    "home_abbr": "NYM",
+    "away_abbr": "ATL",
+    "home_sp": "Christian Scott",
+    "away_sp": "Chris Sale",
+    "nrfi_prob": 46.5,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Christian Scott",
+      "first_inning": {},
+      "season_era": 3.13
+    },
+    "away_pitcher": {
+      "name": "Chris Sale",
+      "first_inning": {},
+      "season_era": 2.19
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-29",
     "game_time": "6:40 PM CT",
     "home_abbr": "CWS",
     "away_abbr": "NYY",
@@ -48,68 +71,22 @@
   {
     "date": "2026-07-29",
     "game_time": "12:10 PM CT",
-    "home_abbr": "NYM",
-    "away_abbr": "ATL",
-    "home_sp": "Sean Manaea",
-    "away_sp": "AJ Smith-Shawver",
-    "nrfi_prob": 44.8,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Sean Manaea",
-      "first_inning": {},
-      "season_era": 4.33
-    },
-    "away_pitcher": {
-      "name": "AJ Smith-Shawver",
-      "first_inning": {},
-      "season_era": 0.0
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-29",
-    "game_time": "11:35 AM CT",
-    "home_abbr": "PIT",
-    "away_abbr": "AZ",
-    "home_sp": "Jared Jones",
-    "away_sp": "Eduardo Rodriguez",
-    "nrfi_prob": 41.9,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Jared Jones",
-      "first_inning": {},
-      "season_era": 3.81
-    },
-    "away_pitcher": {
-      "name": "Eduardo Rodriguez",
-      "first_inning": {},
-      "season_era": 2.52
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-29",
-    "game_time": "12:10 PM CT",
     "home_abbr": "DET",
     "away_abbr": "BAL",
     "home_sp": "Tarik Skubal",
     "away_sp": "Trevor Rogers",
-    "nrfi_prob": 39.8,
+    "nrfi_prob": 38.8,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Tarik Skubal",
       "first_inning": {},
-      "season_era": 2.59
+      "season_era": 2.79
     },
     "away_pitcher": {
       "name": "Trevor Rogers",
       "first_inning": {},
-      "season_era": 4.22
+      "season_era": 4.27
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -139,6 +116,29 @@
   },
   {
     "date": "2026-07-29",
+    "game_time": "2:45 PM CT",
+    "home_abbr": "SF",
+    "away_abbr": "MIL",
+    "home_sp": "Logan Webb",
+    "away_sp": "Thomas Pannone",
+    "nrfi_prob": 34.6,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Logan Webb",
+      "first_inning": {},
+      "season_era": 3.95
+    },
+    "away_pitcher": {
+      "name": "Thomas Pannone",
+      "first_inning": {},
+      "season_era": null
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-29",
     "game_time": "3:10 PM CT",
     "home_abbr": "SD",
     "away_abbr": "COL",
@@ -156,29 +156,6 @@
       "name": "Gabriel Hughes",
       "first_inning": {},
       "season_era": 2.79
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-29",
-    "game_time": "2:45 PM CT",
-    "home_abbr": "SF",
-    "away_abbr": "MIL",
-    "home_sp": "Logan Webb",
-    "away_sp": "Thomas Pannone",
-    "nrfi_prob": 34.5,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Logan Webb",
-      "first_inning": {},
-      "season_era": 3.98
-    },
-    "away_pitcher": {
-      "name": "Thomas Pannone",
-      "first_inning": {},
-      "season_era": null
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -254,46 +231,23 @@
   },
   {
     "date": "2026-07-29",
-    "game_time": "11:10 AM CT",
-    "home_abbr": "MIA",
-    "away_abbr": "PHI",
-    "home_sp": "Ryan Gusto",
-    "away_sp": "Jes\u00fas Luzardo",
-    "nrfi_prob": 32.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Ryan Gusto",
-      "first_inning": {},
-      "season_era": 5.31
-    },
-    "away_pitcher": {
-      "name": "Jes\u00fas Luzardo",
-      "first_inning": {},
-      "season_era": 3.36
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-29",
     "game_time": "12:05 PM CT",
     "home_abbr": "WSH",
     "away_abbr": "TOR",
     "home_sp": "Zack Littell",
     "away_sp": "Trey Yesavage",
-    "nrfi_prob": 32.2,
+    "nrfi_prob": 32.4,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Zack Littell",
       "first_inning": {},
-      "season_era": 4.97
+      "season_era": 4.94
     },
     "away_pitcher": {
       "name": "Trey Yesavage",
       "first_inning": {},
-      "season_era": 3.76
+      "season_era": 3.73
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
