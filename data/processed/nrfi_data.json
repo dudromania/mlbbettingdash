@@ -132,7 +132,7 @@
     "away_pitcher": {
       "name": "Cole Winn",
       "first_inning": {},
-      "season_era": 6.11
+      "season_era": 5.94
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -213,18 +213,18 @@
     "away_abbr": "KC",
     "home_sp": "Bailey Ober",
     "away_sp": "Noah Cameron",
-    "nrfi_prob": 29.5,
+    "nrfi_prob": 30.0,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Bailey Ober",
       "first_inning": {},
-      "season_era": 4.56
+      "season_era": 4.48
     },
     "away_pitcher": {
       "name": "Noah Cameron",
       "first_inning": {},
-      "season_era": 4.93
+      "season_era": 4.89
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
