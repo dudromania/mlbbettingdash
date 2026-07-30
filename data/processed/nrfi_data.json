@@ -24,6 +24,29 @@
   },
   {
     "date": "2026-07-30",
+    "game_time": "1:10 PM CT",
+    "home_abbr": "CWS",
+    "away_abbr": "NYY",
+    "home_sp": "Sean Burke",
+    "away_sp": "Ryan Weathers",
+    "nrfi_prob": 38.8,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Sean Burke",
+      "first_inning": {},
+      "season_era": 3.04
+    },
+    "away_pitcher": {
+      "name": "Ryan Weathers",
+      "first_inning": {},
+      "season_era": 4.05
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-30",
     "game_time": "8:40 PM CT",
     "home_abbr": "SD",
     "away_abbr": "SF",
@@ -47,23 +70,23 @@
   },
   {
     "date": "2026-07-30",
-    "game_time": "1:10 PM CT",
-    "home_abbr": "CWS",
-    "away_abbr": "NYY",
-    "home_sp": "Sean Burke",
-    "away_sp": "Ryan Weathers",
-    "nrfi_prob": 37.3,
+    "game_time": "1:15 PM CT",
+    "home_abbr": "STL",
+    "away_abbr": "CHC",
+    "home_sp": "Andre Pallante",
+    "away_sp": "Javier Assad",
+    "nrfi_prob": 37.6,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Sean Burke",
+      "name": "Andre Pallante",
       "first_inning": {},
-      "season_era": 3.19
+      "season_era": 3.65
     },
     "away_pitcher": {
-      "name": "Ryan Weathers",
+      "name": "Javier Assad",
       "first_inning": {},
-      "season_era": 4.25
+      "season_era": 3.75
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -93,52 +116,6 @@
   },
   {
     "date": "2026-07-30",
-    "game_time": "1:15 PM CT",
-    "home_abbr": "STL",
-    "away_abbr": "CHC",
-    "home_sp": "Andre Pallante",
-    "away_sp": "Javier Assad",
-    "nrfi_prob": 36.7,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Andre Pallante",
-      "first_inning": {},
-      "season_era": 3.77
-    },
-    "away_pitcher": {
-      "name": "Javier Assad",
-      "first_inning": {},
-      "season_era": 3.86
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-30",
-    "game_time": "11:10 AM CT",
-    "home_abbr": "TB",
-    "away_abbr": "TEX",
-    "home_sp": "Shane McClanahan",
-    "away_sp": "Cole Winn",
-    "nrfi_prob": 33.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Shane McClanahan",
-      "first_inning": {},
-      "season_era": 3.09
-    },
-    "away_pitcher": {
-      "name": "Cole Winn",
-      "first_inning": {},
-      "season_era": 5.94
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-30",
     "game_time": "6:10 PM CT",
     "home_abbr": "CIN",
     "away_abbr": "PIT",
@@ -156,6 +133,29 @@
       "name": "Yohan Ram\u00edrez",
       "first_inning": {},
       "season_era": 3.21
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-30",
+    "game_time": "12:40 PM CT",
+    "home_abbr": "MIN",
+    "away_abbr": "KC",
+    "home_sp": "Bailey Ober",
+    "away_sp": "Noah Cameron",
+    "nrfi_prob": 31.2,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Bailey Ober",
+      "first_inning": {},
+      "season_era": 4.45
+    },
+    "away_pitcher": {
+      "name": "Noah Cameron",
+      "first_inning": {},
+      "season_era": 4.59
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -202,29 +202,6 @@
       "name": "Bryan Woo",
       "first_inning": {},
       "season_era": 4.37
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-30",
-    "game_time": "12:40 PM CT",
-    "home_abbr": "MIN",
-    "away_abbr": "KC",
-    "home_sp": "Bailey Ober",
-    "away_sp": "Noah Cameron",
-    "nrfi_prob": 30.0,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Bailey Ober",
-      "first_inning": {},
-      "season_era": 4.48
-    },
-    "away_pitcher": {
-      "name": "Noah Cameron",
-      "first_inning": {},
-      "season_era": 4.89
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
