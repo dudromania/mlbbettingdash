@@ -162,6 +162,29 @@
   },
   {
     "date": "2026-07-31",
+    "game_time": "1:20 PM CT",
+    "home_abbr": "CHC",
+    "away_abbr": "NYY",
+    "home_sp": "Shota Imanaga",
+    "away_sp": "Will Warren",
+    "nrfi_prob": 35.9,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Shota Imanaga",
+      "first_inning": {},
+      "season_era": 3.67
+    },
+    "away_pitcher": {
+      "name": "Will Warren",
+      "first_inning": {},
+      "season_era": 4.14
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-31",
     "game_time": "9:10 PM CT",
     "home_abbr": "SEA",
     "away_abbr": "MIN",
@@ -179,29 +202,6 @@
       "name": "Zebby Matthews",
       "first_inning": {},
       "season_era": 5.21
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-31",
-    "game_time": "1:20 PM CT",
-    "home_abbr": "CHC",
-    "away_abbr": "NYY",
-    "home_sp": "Shota Imanaga",
-    "away_sp": "Will Warren",
-    "nrfi_prob": 34.6,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Shota Imanaga",
-      "first_inning": {},
-      "season_era": 3.72
-    },
-    "away_pitcher": {
-      "name": "Will Warren",
-      "first_inning": {},
-      "season_era": 4.41
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -326,15 +326,15 @@
     "game_time": "6:10 PM CT",
     "home_abbr": "NYM",
     "away_abbr": "MIA",
-    "home_sp": "Freddy Peralta",
+    "home_sp": "Kodai Senga",
     "away_sp": "Janson Junk",
-    "nrfi_prob": 28.2,
+    "nrfi_prob": 27.2,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Freddy Peralta",
+      "name": "Kodai Senga",
       "first_inning": {},
-      "season_era": 4.99
+      "season_era": 8.85
     },
     "away_pitcher": {
       "name": "Janson Junk",

@@ -211,11 +211,11 @@
   },
   {
     "team": "CHC",
-    "era": 4.15,
+    "era": 4.14,
     "whip": 1.26,
     "k9": 7.83,
-    "bb9": 3.05,
-    "era_vs_lg": 0.05,
+    "bb9": 3.03,
+    "era_vs_lg": 0.04,
     "whip_vs_lg": -0.02,
     "k9_vs_lg": -0.77,
     "quality": "AVG",
@@ -360,21 +360,6 @@
     "fatigue": "HEAVY"
   },
   {
-    "team": "NYY",
-    "era": 3.31,
-    "whip": 1.18,
-    "k9": 9.02,
-    "bb9": 3.06,
-    "era_vs_lg": -0.79,
-    "whip_vs_lg": -0.1,
-    "k9_vs_lg": 0.42,
-    "quality": "ELITE",
-    "innings_3d": 11.7,
-    "pitchers_3d": 8,
-    "heavy": 0,
-    "fatigue": "NORMAL"
-  },
-  {
     "team": "STL",
     "era": 4.16,
     "whip": 1.35,
@@ -388,6 +373,21 @@
     "pitchers_3d": 8,
     "heavy": 1,
     "fatigue": "HEAVY"
+  },
+  {
+    "team": "NYY",
+    "era": 3.29,
+    "whip": 1.18,
+    "k9": 9.02,
+    "bb9": 3.04,
+    "era_vs_lg": -0.81,
+    "whip_vs_lg": -0.1,
+    "k9_vs_lg": 0.42,
+    "quality": "ELITE",
+    "innings_3d": 11.7,
+    "pitchers_3d": 8,
+    "heavy": 0,
+    "fatigue": "NORMAL"
   },
   {
     "team": "ATL",
