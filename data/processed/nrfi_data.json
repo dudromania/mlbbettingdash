@@ -162,29 +162,6 @@
   },
   {
     "date": "2026-07-31",
-    "game_time": "8:40 PM CT",
-    "home_abbr": "ATH",
-    "away_abbr": "DET",
-    "home_sp": "Jeffrey Springs",
-    "away_sp": "Casey Mize",
-    "nrfi_prob": 34.7,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Jeffrey Springs",
-      "first_inning": {},
-      "season_era": 6.23
-    },
-    "away_pitcher": {
-      "name": "Casey Mize",
-      "first_inning": {},
-      "season_era": 2.7
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-07-31",
     "game_time": "9:10 PM CT",
     "home_abbr": "SEA",
     "away_abbr": "MIN",
@@ -317,6 +294,29 @@
       "name": "Mitch Bratt",
       "first_inning": {},
       "season_era": 6.32
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-07-31",
+    "game_time": "8:40 PM CT",
+    "home_abbr": "ATH",
+    "away_abbr": "DET",
+    "home_sp": "Jeffrey Springs",
+    "away_sp": "TBD",
+    "nrfi_prob": 28.5,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jeffrey Springs",
+      "first_inning": {},
+      "season_era": 6.23
+    },
+    "away_pitcher": {
+      "name": "Framber Valdez",
+      "first_inning": {},
+      "season_era": 4.53
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
