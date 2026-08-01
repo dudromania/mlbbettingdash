@@ -93,6 +93,29 @@
   },
   {
     "date": "2026-08-01",
+    "game_time": "2:07 PM CT",
+    "home_abbr": "TOR",
+    "away_abbr": "STL",
+    "home_sp": "Kevin Gausman",
+    "away_sp": "Quinn Mathews",
+    "nrfi_prob": 37.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Kevin Gausman",
+      "first_inning": {},
+      "season_era": 4.4
+    },
+    "away_pitcher": {
+      "name": "Quinn Mathews",
+      "first_inning": {},
+      "season_era": 3.0
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-01",
     "game_time": "6:15 PM CT",
     "home_abbr": "CLE",
     "away_abbr": "AZ",
@@ -133,29 +156,6 @@
       "name": "Braxton Ashcraft",
       "first_inning": {},
       "season_era": 4.05
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-01",
-    "game_time": "8:38 PM CT",
-    "home_abbr": "LAA",
-    "away_abbr": "MIL",
-    "home_sp": "Jos\u00e9 Soriano",
-    "away_sp": "Robert Gasser",
-    "nrfi_prob": 35.0,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Jos\u00e9 Soriano",
-      "first_inning": {},
-      "season_era": 3.29
-    },
-    "away_pitcher": {
-      "name": "Robert Gasser",
-      "first_inning": {},
-      "season_era": 4.71
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -208,29 +208,6 @@
   },
   {
     "date": "2026-08-01",
-    "game_time": "2:07 PM CT",
-    "home_abbr": "TOR",
-    "away_abbr": "STL",
-    "home_sp": "Kevin Gausman",
-    "away_sp": "Quinn Mathews",
-    "nrfi_prob": 32.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Kevin Gausman",
-      "first_inning": {},
-      "season_era": 4.51
-    },
-    "away_pitcher": {
-      "name": "Quinn Mathews",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-01",
     "game_time": "6:15 PM CT",
     "home_abbr": "ATL",
     "away_abbr": "WSH",
@@ -271,6 +248,29 @@
       "name": "Jacob deGrom",
       "first_inning": {},
       "season_era": 3.67
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-01",
+    "game_time": "8:38 PM CT",
+    "home_abbr": "LAA",
+    "away_abbr": "MIL",
+    "home_sp": "Brent Suter",
+    "away_sp": "Robert Gasser",
+    "nrfi_prob": 31.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Brent Suter",
+      "first_inning": {},
+      "season_era": 4.26
+    },
+    "away_pitcher": {
+      "name": "Robert Gasser",
+      "first_inning": {},
+      "season_era": 4.71
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
