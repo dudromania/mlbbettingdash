@@ -1,345 +1,345 @@
 [
   {
-    "date": "2026-08-01",
-    "game_time": "3:10 PM CT",
-    "home_abbr": "NYM",
-    "away_abbr": "MIA",
-    "home_sp": "Zac Thornton",
-    "away_sp": "Tyler Phillips",
-    "nrfi_prob": 43.6,
+    "date": "2026-08-02",
+    "game_time": "2:15 PM CT",
+    "home_abbr": "LAA",
+    "away_abbr": "MIL",
+    "home_sp": "Walbert Ure\u00f1a",
+    "away_sp": "Jacob Misiorowski",
+    "nrfi_prob": 51.3,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Zac Thornton",
+      "name": "Walbert Ure\u00f1a",
       "first_inning": {},
-      "season_era": 2.43
+      "season_era": 2.7
     },
     "away_pitcher": {
-      "name": "Tyler Phillips",
+      "name": "Jacob Misiorowski",
       "first_inning": {},
-      "season_era": 3.52
+      "season_era": 1.58
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
   },
   {
-    "date": "2026-08-01",
-    "game_time": "8:10 PM CT",
-    "home_abbr": "LAD",
-    "away_abbr": "BOS",
-    "home_sp": "Yoshinobu Yamamoto",
-    "away_sp": "Payton Tolle",
-    "nrfi_prob": 43.3,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Yoshinobu Yamamoto",
-      "first_inning": {},
-      "season_era": 2.72
-    },
-    "away_pitcher": {
-      "name": "Payton Tolle",
-      "first_inning": {},
-      "season_era": 3.32
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-01",
-    "game_time": "3:10 PM CT",
-    "home_abbr": "TB",
-    "away_abbr": "CWS",
-    "home_sp": "Drew Rasmussen",
-    "away_sp": "Jordan Hicks",
-    "nrfi_prob": 42.4,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Drew Rasmussen",
-      "first_inning": {},
-      "season_era": 3.07
-    },
-    "away_pitcher": {
-      "name": "Jordan Hicks",
-      "first_inning": {},
-      "season_era": 3.19
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-01",
-    "game_time": "6:05 PM CT",
+    "date": "2026-08-02",
+    "game_time": "12:35 PM CT",
     "home_abbr": "BAL",
     "away_abbr": "PHI",
-    "home_sp": "Shane Baz",
-    "away_sp": "Cristopher S\u00e1nchez",
-    "nrfi_prob": 40.3,
+    "home_sp": "Kyle Bradish",
+    "away_sp": "Zack Wheeler",
+    "nrfi_prob": 42.2,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Shane Baz",
+      "name": "Kyle Bradish",
+      "first_inning": {},
+      "season_era": 3.74
+    },
+    "away_pitcher": {
+      "name": "Zack Wheeler",
+      "first_inning": {},
+      "season_era": 2.53
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-02",
+    "game_time": "1:10 PM CT",
+    "home_abbr": "HOU",
+    "away_abbr": "TEX",
+    "home_sp": "Peter Lambert",
+    "away_sp": "Kumar Rocker",
+    "nrfi_prob": 38.8,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Peter Lambert",
+      "first_inning": {},
+      "season_era": 3.06
+    },
+    "away_pitcher": {
+      "name": "Kumar Rocker",
+      "first_inning": {},
+      "season_era": 4.03
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-02",
+    "game_time": "3:05 PM CT",
+    "home_abbr": "ATH",
+    "away_abbr": "DET",
+    "home_sp": "Gage Jump",
+    "away_sp": "Keider Montero",
+    "nrfi_prob": 37.8,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Gage Jump",
+      "first_inning": {},
+      "season_era": 4.0
+    },
+    "away_pitcher": {
+      "name": "Keider Montero",
+      "first_inning": {},
+      "season_era": 3.34
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-02",
+    "game_time": "12:40 PM CT",
+    "home_abbr": "CIN",
+    "away_abbr": "PIT",
+    "home_sp": "Chase Burns",
+    "away_sp": "Mitch Keller",
+    "nrfi_prob": 37.7,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Chase Burns",
+      "first_inning": {},
+      "season_era": 2.4
+    },
+    "away_pitcher": {
+      "name": "Mitch Keller",
+      "first_inning": {},
+      "season_era": 4.83
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-02",
+    "game_time": "3:10 PM CT",
+    "home_abbr": "SD",
+    "away_abbr": "SF",
+    "home_sp": "Michael King",
+    "away_sp": "Landen Roupp",
+    "nrfi_prob": 37.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Michael King",
+      "first_inning": {},
+      "season_era": 3.38
+    },
+    "away_pitcher": {
+      "name": "Landen Roupp",
+      "first_inning": {},
+      "season_era": 4.12
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-02",
+    "game_time": "3:10 PM CT",
+    "home_abbr": "SEA",
+    "away_abbr": "MIN",
+    "home_sp": "George Kirby",
+    "away_sp": "Taj Bradley",
+    "nrfi_prob": 36.7,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "George Kirby",
       "first_inning": {},
       "season_era": 3.98
     },
     "away_pitcher": {
-      "name": "Cristopher S\u00e1nchez",
+      "name": "Taj Bradley",
       "first_inning": {},
-      "season_era": 2.73
+      "season_era": 3.65
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
   },
   {
-    "date": "2026-08-01",
-    "game_time": "2:07 PM CT",
-    "home_abbr": "TOR",
-    "away_abbr": "STL",
-    "home_sp": "Kevin Gausman",
-    "away_sp": "Quinn Mathews",
-    "nrfi_prob": 37.4,
+    "date": "2026-08-02",
+    "game_time": "6:20 PM CT",
+    "home_abbr": "LAD",
+    "away_abbr": "BOS",
+    "home_sp": "Emmet Sheehan",
+    "away_sp": "Jake Bennett",
+    "nrfi_prob": 35.9,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Kevin Gausman",
-      "first_inning": {},
-      "season_era": 4.4
-    },
-    "away_pitcher": {
-      "name": "Quinn Mathews",
-      "first_inning": {},
-      "season_era": 3.0
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-01",
-    "game_time": "6:15 PM CT",
-    "home_abbr": "CLE",
-    "away_abbr": "AZ",
-    "home_sp": "Parker Messick",
-    "away_sp": "Kohl Drake",
-    "nrfi_prob": 36.2,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Parker Messick",
-      "first_inning": {},
-      "season_era": 2.59
-    },
-    "away_pitcher": {
-      "name": "Kohl Drake",
-      "first_inning": {},
-      "season_era": 5.0
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-01",
-    "game_time": "5:40 PM CT",
-    "home_abbr": "CIN",
-    "away_abbr": "PIT",
-    "home_sp": "Andrew Abbott",
-    "away_sp": "Braxton Ashcraft",
-    "nrfi_prob": 35.6,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Andrew Abbott",
-      "first_inning": {},
-      "season_era": 3.85
-    },
-    "away_pitcher": {
-      "name": "Braxton Ashcraft",
-      "first_inning": {},
-      "season_era": 4.05
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-01",
-    "game_time": "3:10 PM CT",
-    "home_abbr": "SEA",
-    "away_abbr": "MIN",
-    "home_sp": "Logan Gilbert",
-    "away_sp": "Connor Prielipp",
-    "nrfi_prob": 34.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Logan Gilbert",
-      "first_inning": {},
-      "season_era": 3.44
-    },
-    "away_pitcher": {
-      "name": "Connor Prielipp",
-      "first_inning": {},
-      "season_era": 4.73
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-01",
-    "game_time": "6:15 PM CT",
-    "home_abbr": "CHC",
-    "away_abbr": "NYY",
-    "home_sp": "David Peterson",
-    "away_sp": "Max Fried",
-    "nrfi_prob": 32.9,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "David Peterson",
-      "first_inning": {},
-      "season_era": 5.8
-    },
-    "away_pitcher": {
-      "name": "Max Fried",
-      "first_inning": {},
-      "season_era": 3.23
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-01",
-    "game_time": "6:15 PM CT",
-    "home_abbr": "ATL",
-    "away_abbr": "WSH",
-    "home_sp": "Reynaldo L\u00f3pez",
-    "away_sp": "Miles Mikolas",
-    "nrfi_prob": 31.5,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Reynaldo L\u00f3pez",
-      "first_inning": {},
-      "season_era": 3.64
-    },
-    "away_pitcher": {
-      "name": "Miles Mikolas",
-      "first_inning": {},
-      "season_era": 5.65
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-01",
-    "game_time": "6:10 PM CT",
-    "home_abbr": "HOU",
-    "away_abbr": "TEX",
-    "home_sp": "Ronel Blanco",
-    "away_sp": "Jacob deGrom",
-    "nrfi_prob": 31.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Ronel Blanco",
-      "first_inning": {},
-      "season_era": 8.1
-    },
-    "away_pitcher": {
-      "name": "Jacob deGrom",
-      "first_inning": {},
-      "season_era": 3.67
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-01",
-    "game_time": "8:38 PM CT",
-    "home_abbr": "LAA",
-    "away_abbr": "MIL",
-    "home_sp": "Brent Suter",
-    "away_sp": "Robert Gasser",
-    "nrfi_prob": 31.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Brent Suter",
-      "first_inning": {},
-      "season_era": 4.26
-    },
-    "away_pitcher": {
-      "name": "Robert Gasser",
-      "first_inning": {},
-      "season_era": 4.71
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-01",
-    "game_time": "8:40 PM CT",
-    "home_abbr": "ATH",
-    "away_abbr": "DET",
-    "home_sp": "Jack Perkins",
-    "away_sp": "Framber Valdez",
-    "nrfi_prob": 28.5,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Jack Perkins",
-      "first_inning": {},
-      "season_era": 6.45
-    },
-    "away_pitcher": {
-      "name": "Framber Valdez",
-      "first_inning": {},
-      "season_era": 4.53
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-01",
-    "game_time": "7:40 PM CT",
-    "home_abbr": "SD",
-    "away_abbr": "SF",
-    "home_sp": "Walker Buehler",
-    "away_sp": "Tyler Mahle",
-    "nrfi_prob": 27.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Walker Buehler",
-      "first_inning": {},
-      "season_era": 5.13
-    },
-    "away_pitcher": {
-      "name": "Tyler Mahle",
-      "first_inning": {},
-      "season_era": 4.96
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-01",
-    "game_time": "7:10 PM CT",
-    "home_abbr": "COL",
-    "away_abbr": "KC",
-    "home_sp": "Ryan Feltner",
-    "away_sp": "Luinder Avila",
-    "nrfi_prob": 27.0,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Ryan Feltner",
-      "first_inning": {},
-      "season_era": 5.73
-    },
-    "away_pitcher": {
-      "name": "Luinder Avila",
+      "name": "Emmet Sheehan",
       "first_inning": {},
       "season_era": 4.95
+    },
+    "away_pitcher": {
+      "name": "Jake Bennett",
+      "first_inning": {},
+      "season_era": 2.74
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-02",
+    "game_time": "12:40 PM CT",
+    "home_abbr": "TB",
+    "away_abbr": "CWS",
+    "home_sp": "Griffin Jax",
+    "away_sp": "Anthony Kay",
+    "nrfi_prob": 35.2,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Griffin Jax",
+      "first_inning": {},
+      "season_era": 3.74
+    },
+    "away_pitcher": {
+      "name": "Anthony Kay",
+      "first_inning": {},
+      "season_era": 4.25
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-02",
+    "game_time": "12:35 PM CT",
+    "home_abbr": "ATL",
+    "away_abbr": "WSH",
+    "home_sp": "JR Ritchie",
+    "away_sp": "Cade Cavalli",
+    "nrfi_prob": 34.9,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "JR Ritchie",
+      "first_inning": {},
+      "season_era": 4.5
+    },
+    "away_pitcher": {
+      "name": "Cade Cavalli",
+      "first_inning": {},
+      "season_era": 3.55
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-02",
+    "game_time": "1:20 PM CT",
+    "home_abbr": "CHC",
+    "away_abbr": "NYY",
+    "home_sp": "Colin Rea",
+    "away_sp": "Gerrit Cole",
+    "nrfi_prob": 34.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Colin Rea",
+      "first_inning": {},
+      "season_era": 4.67
+    },
+    "away_pitcher": {
+      "name": "Gerrit Cole",
+      "first_inning": {},
+      "season_era": 3.57
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-02",
+    "game_time": "12:40 PM CT",
+    "home_abbr": "CLE",
+    "away_abbr": "AZ",
+    "home_sp": "Gavin Williams",
+    "away_sp": "Merrill Kelly",
+    "nrfi_prob": 32.8,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Gavin Williams",
+      "first_inning": {},
+      "season_era": 3.71
+    },
+    "away_pitcher": {
+      "name": "Merrill Kelly",
+      "first_inning": {},
+      "season_era": 4.86
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-02",
+    "game_time": "12:40 PM CT",
+    "home_abbr": "NYM",
+    "away_abbr": "MIA",
+    "home_sp": "Robert Stock",
+    "away_sp": "Sandy Alcantara",
+    "nrfi_prob": 30.9,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Robert Stock",
+      "first_inning": {},
+      "season_era": 10.13
+    },
+    "away_pitcher": {
+      "name": "Sandy Alcantara",
+      "first_inning": {},
+      "season_era": 3.82
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-02",
+    "game_time": "2:10 PM CT",
+    "home_abbr": "COL",
+    "away_abbr": "KC",
+    "home_sp": "Kyle Freeland",
+    "away_sp": "Seth Lugo",
+    "nrfi_prob": 29.5,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Kyle Freeland",
+      "first_inning": {},
+      "season_era": 7.34
+    },
+    "away_pitcher": {
+      "name": "Seth Lugo",
+      "first_inning": {},
+      "season_era": 4.22
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-02",
+    "game_time": "12:37 PM CT",
+    "home_abbr": "TOR",
+    "away_abbr": "STL",
+    "home_sp": "Max Scherzer",
+    "away_sp": "Matthew Liberatore",
+    "nrfi_prob": 26.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Max Scherzer",
+      "first_inning": {},
+      "season_era": 9.49
+    },
+    "away_pitcher": {
+      "name": "Matthew Liberatore",
+      "first_inning": {},
+      "season_era": 5.26
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
