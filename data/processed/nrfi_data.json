@@ -47,29 +47,6 @@
   },
   {
     "date": "2026-08-03",
-    "game_time": "7:05 PM CT",
-    "home_abbr": "TEX",
-    "away_abbr": "SF",
-    "home_sp": "TBD",
-    "away_sp": "Logan Webb",
-    "nrfi_prob": 38.0,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_pitcher": {
-      "name": "Logan Webb",
-      "first_inning": {},
-      "season_era": 3.93
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-03",
     "game_time": "8:40 PM CT",
     "home_abbr": "AZ",
     "away_abbr": "SD",
@@ -87,6 +64,29 @@
       "name": "Michael King",
       "first_inning": {},
       "season_era": 3.38
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-03",
+    "game_time": "7:05 PM CT",
+    "home_abbr": "TEX",
+    "away_abbr": "SF",
+    "home_sp": "Cal Quantrill",
+    "away_sp": "Logan Webb",
+    "nrfi_prob": 36.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Cal Quantrill",
+      "first_inning": {},
+      "season_era": 3.84
+    },
+    "away_pitcher": {
+      "name": "Logan Webb",
+      "first_inning": {},
+      "season_era": 3.93
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
