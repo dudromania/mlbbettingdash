@@ -93,6 +93,29 @@
   },
   {
     "date": "2026-08-03",
+    "game_time": "5:40 PM CT",
+    "home_abbr": "PHI",
+    "away_abbr": "WSH",
+    "home_sp": "Aaron Nola",
+    "away_sp": "Andrew Alvarez",
+    "nrfi_prob": 30.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Aaron Nola",
+      "first_inning": {},
+      "season_era": 5.61
+    },
+    "away_pitcher": {
+      "name": "Andrew Alvarez",
+      "first_inning": {},
+      "season_era": 4.06
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-03",
     "game_time": "6:40 PM CT",
     "home_abbr": "MIL",
     "away_abbr": "PIT",
@@ -133,29 +156,6 @@
       "name": "Ian Seymour",
       "first_inning": {},
       "season_era": 4.37
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-03",
-    "game_time": "5:40 PM CT",
-    "home_abbr": "PHI",
-    "away_abbr": "WSH",
-    "home_sp": "Aaron Nola",
-    "away_sp": "TBD",
-    "nrfi_prob": 27.1,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Aaron Nola",
-      "first_inning": {},
-      "season_era": 5.61
-    },
-    "away_pitcher": {
-      "name": "Zack Littell",
-      "first_inning": {},
-      "season_era": 4.94
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
