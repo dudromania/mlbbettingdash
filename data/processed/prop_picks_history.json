@@ -1,6 +1,6 @@
 [
   {
-    "id": 2106,
+    "id": 2109,
     "game_date": "2026-08-03",
     "game_pick_id": null,
     "player_name": "Cam Schlittler",
@@ -20,14 +20,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-03 18:07:29",
-    "graded_at": null
+    "actual_value": 6.0,
+    "result": "W",
+    "pnl": 115.0,
+    "created_at": "2026-08-03 20:09:24",
+    "graded_at": "2026-08-04 13:00:16"
   },
   {
-    "id": 2107,
+    "id": 2110,
     "game_date": "2026-08-03",
     "game_pick_id": null,
     "player_name": "Bubba Chandler",
@@ -47,14 +47,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-03 18:07:29",
-    "graded_at": null
+    "actual_value": 5.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-03 20:09:24",
+    "graded_at": "2026-08-04 13:00:16"
   },
   {
-    "id": 2108,
+    "id": 2111,
     "game_date": "2026-08-03",
     "game_pick_id": null,
     "player_name": "Brandon Sproat",
@@ -74,11 +74,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-03 18:07:29",
-    "graded_at": null
+    "actual_value": 4.0,
+    "result": "W",
+    "pnl": 76.92307692307692,
+    "created_at": "2026-08-03 20:09:24",
+    "graded_at": "2026-08-04 13:00:16"
   },
   {
     "id": 2087,
