@@ -1,14 +1,44 @@
 {
-  "date": "2026-08-03",
-  "fetched_at": "2026-08-03",
+  "date": "2026-08-04",
+  "fetched_at": "2026-08-04",
   "games": [
+    {
+      "home_abbr": "BAL",
+      "away_abbr": "LAA",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "8/4 - 6:35 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "CIN",
+      "away_abbr": "ATH",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "8/4 - 6:40 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "CLE",
+      "away_abbr": "NYM",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "8/4 - 6:40 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
     {
       "home_abbr": "PHI",
       "away_abbr": "WSH",
       "home_score": "0",
       "away_score": "0",
       "state": "pre",
-      "detail": "8/3 - 6:40 PM EDT",
+      "detail": "8/4 - 6:40 PM EDT",
       "is_live": false,
       "is_final": false
     },
@@ -18,7 +48,37 @@
       "home_score": "0",
       "away_score": "0",
       "state": "pre",
-      "detail": "8/3 - 7:05 PM EDT",
+      "detail": "8/4 - 7:05 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "BOS",
+      "away_abbr": "CHW",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "8/4 - 7:10 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "ATL",
+      "away_abbr": "MIA",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "8/4 - 7:15 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "KC",
+      "away_abbr": "MIN",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "8/4 - 7:40 PM EDT",
       "is_live": false,
       "is_final": false
     },
@@ -28,17 +88,7 @@
       "home_score": "0",
       "away_score": "0",
       "state": "pre",
-      "detail": "8/3 - 7:40 PM EDT",
-      "is_live": false,
-      "is_final": false
-    },
-    {
-      "home_abbr": "TEX",
-      "away_abbr": "SF",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "8/3 - 8:00 PM EDT",
+      "detail": "8/4 - 7:40 PM EDT",
       "is_live": false,
       "is_final": false
     },
@@ -48,7 +98,17 @@
       "home_score": "0",
       "away_score": "0",
       "state": "pre",
-      "detail": "8/3 - 8:05 PM EDT",
+      "detail": "8/4 - 8:05 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "TEX",
+      "away_abbr": "SF",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "8/4 - 8:05 PM EDT",
       "is_live": false,
       "is_final": false
     },
@@ -58,7 +118,7 @@
       "home_score": "0",
       "away_score": "0",
       "state": "pre",
-      "detail": "8/3 - 8:10 PM EDT",
+      "detail": "8/4 - 8:10 PM EDT",
       "is_live": false,
       "is_final": false
     },
@@ -68,7 +128,17 @@
       "home_score": "0",
       "away_score": "0",
       "state": "pre",
-      "detail": "8/3 - 8:40 PM EDT",
+      "detail": "8/4 - 8:40 PM EDT",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "SEA",
+      "away_abbr": "DET",
+      "home_score": "0",
+      "away_score": "0",
+      "state": "pre",
+      "detail": "8/4 - 9:40 PM EDT",
       "is_live": false,
       "is_final": false
     },
@@ -78,7 +148,7 @@
       "home_score": "0",
       "away_score": "0",
       "state": "pre",
-      "detail": "8/3 - 9:40 PM EDT",
+      "detail": "8/4 - 9:40 PM EDT",
       "is_live": false,
       "is_final": false
     }
