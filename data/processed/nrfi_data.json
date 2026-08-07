@@ -1,115 +1,345 @@
 [
   {
-    "date": "2026-08-06",
-    "game_time": "6:15 PM CT",
-    "home_abbr": "ATL",
-    "away_abbr": "MIA",
-    "home_sp": "Mart\u00edn P\u00e9rez",
-    "away_sp": "Janson Junk",
-    "nrfi_prob": 35.9,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Mart\u00edn P\u00e9rez",
-      "first_inning": {},
-      "season_era": 3.14
-    },
-    "away_pitcher": {
-      "name": "Janson Junk",
-      "first_inning": {},
-      "season_era": 4.63
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-06",
-    "game_time": "6:40 PM CT",
-    "home_abbr": "KC",
-    "away_abbr": "MIN",
-    "home_sp": "Michael Wacha",
-    "away_sp": "Bailey Ober",
-    "nrfi_prob": 35.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Michael Wacha",
-      "first_inning": {},
-      "season_era": 3.47
-    },
-    "away_pitcher": {
-      "name": "Bailey Ober",
-      "first_inning": {},
-      "season_era": 4.45
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-06",
-    "game_time": "5:05 PM CT",
+    "date": "2026-08-07",
+    "game_time": "5:40 PM CT",
     "home_abbr": "PHI",
-    "away_abbr": "WSH",
-    "home_sp": "Cristopher S\u00e1nchez",
-    "away_sp": "Miles Mikolas",
-    "nrfi_prob": 34.9,
-    "label": "LEAN YRFI",
+    "away_abbr": "TOR",
+    "home_sp": "Zack Wheeler",
+    "away_sp": "Jos\u00e9 Soriano",
+    "nrfi_prob": 44.5,
+    "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Cristopher S\u00e1nchez",
+      "name": "Zack Wheeler",
       "first_inning": {},
-      "season_era": 2.65
+      "season_era": 2.49
     },
     "away_pitcher": {
-      "name": "Miles Mikolas",
+      "name": "Jos\u00e9 Soriano",
       "first_inning": {},
-      "season_era": 5.89
+      "season_era": 3.29
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
   },
   {
-    "date": "2026-08-06",
+    "date": "2026-08-07",
+    "game_time": "5:40 PM CT",
+    "home_abbr": "PIT",
+    "away_abbr": "NYM",
+    "home_sp": "Carmen Mlodzinski",
+    "away_sp": "Zac Thornton",
+    "nrfi_prob": 43.4,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Carmen Mlodzinski",
+      "first_inning": {},
+      "season_era": 3.15
+    },
+    "away_pitcher": {
+      "name": "Zac Thornton",
+      "first_inning": {},
+      "season_era": 2.88
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-07",
+    "game_time": "9:15 PM CT",
+    "home_abbr": "SF",
+    "away_abbr": "DET",
+    "home_sp": "JT Brubaker",
+    "away_sp": "Keider Montero",
+    "nrfi_prob": 42.1,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "JT Brubaker",
+      "first_inning": {},
+      "season_era": 3.17
+    },
+    "away_pitcher": {
+      "name": "Keider Montero",
+      "first_inning": {},
+      "season_era": 3.17
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-07",
+    "game_time": "8:45 PM CT",
+    "home_abbr": "SEA",
+    "away_abbr": "TB",
+    "home_sp": "Logan Gilbert",
+    "away_sp": "Drew Rasmussen",
+    "nrfi_prob": 41.9,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Logan Gilbert",
+      "first_inning": {},
+      "season_era": 3.46
+    },
+    "away_pitcher": {
+      "name": "Drew Rasmussen",
+      "first_inning": {},
+      "season_era": 2.91
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-07",
+    "game_time": "7:10 PM CT",
+    "home_abbr": "KC",
+    "away_abbr": "CHC",
+    "home_sp": "Daniel Lynch IV",
+    "away_sp": "Kevin Gausman",
+    "nrfi_prob": 41.4,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Daniel Lynch IV",
+      "first_inning": {},
+      "season_era": 1.96
+    },
+    "away_pitcher": {
+      "name": "Kevin Gausman",
+      "first_inning": {},
+      "season_era": 4.38
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-07",
+    "game_time": "6:40 PM CT",
+    "home_abbr": "CWS",
+    "away_abbr": "CLE",
+    "home_sp": "Noah Schultz",
+    "away_sp": "Parker Messick",
+    "nrfi_prob": 35.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Noah Schultz",
+      "first_inning": {},
+      "season_era": 5.82
+    },
+    "away_pitcher": {
+      "name": "Parker Messick",
+      "first_inning": {},
+      "season_era": 2.57
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-07",
+    "game_time": "5:45 PM CT",
+    "home_abbr": "WSH",
+    "away_abbr": "CIN",
+    "home_sp": "Cade Cavalli",
+    "away_sp": "Chase Petty",
+    "nrfi_prob": 35.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Cade Cavalli",
+      "first_inning": {},
+      "season_era": 3.52
+    },
+    "away_pitcher": {
+      "name": "Chase Petty",
+      "first_inning": {},
+      "season_era": 4.5
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-07",
+    "game_time": "7:15 PM CT",
+    "home_abbr": "TEX",
+    "away_abbr": "BAL",
+    "home_sp": "Nathan Eovaldi",
+    "away_sp": "Shane Baz",
+    "nrfi_prob": 34.5,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Nathan Eovaldi",
+      "first_inning": {},
+      "season_era": 4.31
+    },
+    "away_pitcher": {
+      "name": "Shane Baz",
+      "first_inning": {},
+      "season_era": 3.86
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-07",
+    "game_time": "6:05 PM CT",
+    "home_abbr": "NYY",
+    "away_abbr": "ATL",
+    "home_sp": "Max Fried",
+    "away_sp": "Tyler Mahle",
+    "nrfi_prob": 33.8,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Max Fried",
+      "first_inning": {},
+      "season_era": 3.12
+    },
+    "away_pitcher": {
+      "name": "Tyler Mahle",
+      "first_inning": {},
+      "season_era": 5.13
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-07",
+    "game_time": "8:40 PM CT",
+    "home_abbr": "SD",
+    "away_abbr": "HOU",
+    "home_sp": "Robbie Ray",
+    "away_sp": "Ronel Blanco",
+    "nrfi_prob": 33.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Robbie Ray",
+      "first_inning": {},
+      "season_era": 3.08
+    },
+    "away_pitcher": {
+      "name": "Ronel Blanco",
+      "first_inning": {},
+      "season_era": 7.36
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-07",
     "game_time": "6:10 PM CT",
     "home_abbr": "BOS",
-    "away_abbr": "CWS",
-    "home_sp": "Ranger Suarez",
-    "away_sp": "Luis Castillo",
+    "away_abbr": "ATH",
+    "home_sp": "Payton Tolle",
+    "away_sp": "Jack Perkins",
     "nrfi_prob": 32.6,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Ranger Suarez",
+      "name": "Payton Tolle",
       "first_inning": {},
-      "season_era": 3.32
+      "season_era": 3.3
     },
     "away_pitcher": {
-      "name": "Luis Castillo",
+      "name": "Jack Perkins",
       "first_inning": {},
-      "season_era": 5.3
+      "season_era": 6.72
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
   },
   {
-    "date": "2026-08-06",
-    "game_time": "8:40 PM CT",
-    "home_abbr": "AZ",
-    "away_abbr": "SD",
-    "home_sp": "Kohl Drake",
-    "away_sp": "Walker Buehler",
-    "nrfi_prob": 27.6,
+    "date": "2026-08-07",
+    "game_time": "6:40 PM CT",
+    "home_abbr": "MIL",
+    "away_abbr": "MIN",
+    "home_sp": "Shane Drohan",
+    "away_sp": "Zebby Matthews",
+    "nrfi_prob": 32.2,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Kohl Drake",
+      "name": "Shane Drohan",
       "first_inning": {},
-      "season_era": 4.85
+      "season_era": 3.48
     },
     "away_pitcher": {
-      "name": "Walker Buehler",
+      "name": "Zebby Matthews",
       "first_inning": {},
-      "season_era": 5.18
+      "season_era": 5.22
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-07",
+    "game_time": "7:15 PM CT",
+    "home_abbr": "STL",
+    "away_abbr": "COL",
+    "home_sp": "Kyle Leahy",
+    "away_sp": "Ryan Feltner",
+    "nrfi_prob": 32.2,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Kyle Leahy",
+      "first_inning": {},
+      "season_era": 3.44
+    },
+    "away_pitcher": {
+      "name": "Ryan Feltner",
+      "first_inning": {},
+      "season_era": 5.75
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-07",
+    "game_time": "6:10 PM CT",
+    "home_abbr": "MIA",
+    "away_abbr": "LAA",
+    "home_sp": "Tyler Phillips",
+    "away_sp": "George Klassen",
+    "nrfi_prob": 31.9,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Tyler Phillips",
+      "first_inning": {},
+      "season_era": 3.53
+    },
+    "away_pitcher": {
+      "name": "George Klassen",
+      "first_inning": {},
+      "season_era": 11.57
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-07",
+    "game_time": "8:40 PM CT",
+    "home_abbr": "AZ",
+    "away_abbr": "LAD",
+    "home_sp": "Merrill Kelly",
+    "away_sp": "Roki Sasaki",
+    "nrfi_prob": 28.9,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Merrill Kelly",
+      "first_inning": {},
+      "season_era": 5.04
+    },
+    "away_pitcher": {
+      "name": "Roki Sasaki",
+      "first_inning": {},
+      "season_era": 4.64
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
