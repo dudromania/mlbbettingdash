@@ -6,13 +6,13 @@
     "away_abbr": "ATL",
     "home_sp": "Gerrit Cole",
     "away_sp": "Chris Sale",
-    "nrfi_prob": 46.1,
+    "nrfi_prob": 46.4,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Gerrit Cole",
       "first_inning": {},
-      "season_era": 3.29
+      "season_era": 3.24
     },
     "away_pitcher": {
       "name": "Chris Sale",
