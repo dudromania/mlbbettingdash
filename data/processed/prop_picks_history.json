@@ -1,6 +1,6 @@
 [
   {
-    "id": 2125,
+    "id": 2145,
     "game_date": "2026-08-07",
     "game_pick_id": null,
     "player_name": "Zack Wheeler",
@@ -20,14 +20,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-07 21:10:14",
-    "graded_at": null
+    "actual_value": 6.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-07 21:12:22",
+    "graded_at": "2026-08-08 13:00:18"
   },
   {
-    "id": 2123,
+    "id": 2143,
     "game_date": "2026-08-07",
     "game_pick_id": null,
     "player_name": "Payton Tolle",
@@ -47,14 +47,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-07 21:10:14",
-    "graded_at": null
+    "actual_value": 14.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-07 21:12:22",
+    "graded_at": "2026-08-08 13:00:18"
   },
   {
-    "id": 2124,
+    "id": 2144,
     "game_date": "2026-08-07",
     "game_pick_id": null,
     "player_name": "Parker Messick",
@@ -74,14 +74,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-07 21:10:14",
-    "graded_at": null
+    "actual_value": 8.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-07 21:12:22",
+    "graded_at": "2026-08-08 13:00:18"
   },
   {
-    "id": 2126,
+    "id": 2146,
     "game_date": "2026-08-07",
     "game_pick_id": null,
     "player_name": "Max Fried",
@@ -101,14 +101,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-07 21:10:14",
-    "graded_at": null
+    "actual_value": 7.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-07 21:12:22",
+    "graded_at": "2026-08-08 13:00:18"
   },
   {
-    "id": 2127,
+    "id": 2147,
     "game_date": "2026-08-07",
     "game_pick_id": null,
     "player_name": "Cade Cavalli",
@@ -128,11 +128,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-07 21:10:14",
-    "graded_at": null
+    "actual_value": 8.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-07 21:12:22",
+    "graded_at": "2026-08-08 13:00:18"
   },
   {
     "id": 2122,
