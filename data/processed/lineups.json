@@ -1,6 +1,79 @@
 {
   "ATL@NYY": {
-    "home": [],
+    "home": [
+      {
+        "name": "Paul Goldschmidt",
+        "pos": "1B",
+        "bats": "R",
+        "avg": 0.246,
+        "ops": 0.757,
+        "hr": 16
+      },
+      {
+        "name": "Heliot Ramos",
+        "pos": "LF",
+        "bats": "R",
+        "avg": 0.263,
+        "ops": 0.734,
+        "hr": 9
+      },
+      {
+        "name": "Ben Rice",
+        "pos": "DH",
+        "bats": "L",
+        "avg": 0.26,
+        "ops": 0.9,
+        "hr": 31
+      },
+      {
+        "name": "Amed Rosario",
+        "pos": "3B",
+        "bats": "R",
+        "avg": 0.235,
+        "ops": 0.719,
+        "hr": 10
+      },
+      {
+        "name": "Trent Grisham",
+        "pos": "CF",
+        "bats": "L",
+        "avg": 0.209,
+        "ops": 0.683,
+        "hr": 12
+      },
+      {
+        "name": "George Lombard Jr.",
+        "pos": "SS",
+        "bats": "R",
+        "avg": 0.3,
+        "ops": 1.017,
+        "hr": 1
+      },
+      {
+        "name": "Spencer Jones",
+        "pos": "RF",
+        "bats": "L",
+        "avg": 0.205,
+        "ops": 0.663,
+        "hr": 5
+      },
+      {
+        "name": "Jos\u00e9 Caballero",
+        "pos": "2B",
+        "bats": "R",
+        "avg": 0.245,
+        "ops": 0.692,
+        "hr": 12
+      },
+      {
+        "name": "Austin Wells",
+        "pos": "C",
+        "bats": "L",
+        "avg": 0.17,
+        "ops": 0.561,
+        "hr": 8
+      }
+    ],
     "away": []
   },
   "ATH@BOS": {
