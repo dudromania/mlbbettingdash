@@ -96,15 +96,15 @@
     "game_time": "12:35 PM CT",
     "home_abbr": "BOS",
     "away_abbr": "ATH",
-    "home_sp": "TBD",
+    "home_sp": "Erik Miller",
     "away_sp": "J.T. Ginn",
-    "nrfi_prob": 42.2,
+    "nrfi_prob": 43.1,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Sonny Gray",
+      "name": "Erik Miller",
       "first_inning": {},
-      "season_era": 2.78
+      "season_era": 2.57
     },
     "away_pitcher": {
       "name": "J.T. Ginn",
@@ -143,9 +143,9 @@
     "home_abbr": "SEA",
     "away_abbr": "TB",
     "home_sp": "Emerson Hancock",
-    "away_sp": "TBD",
-    "nrfi_prob": 40.5,
-    "label": "NEUTRAL",
+    "away_sp": "Ian Seymour",
+    "nrfi_prob": 36.7,
+    "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Emerson Hancock",
@@ -153,9 +153,9 @@
       "season_era": 3.33
     },
     "away_pitcher": {
-      "name": "TBD",
+      "name": "Ian Seymour",
       "first_inning": {},
-      "season_era": null
+      "season_era": 4.27
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
