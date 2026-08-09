@@ -718,10 +718,11 @@ tbody td {
 
 /* -- STANDINGS -- */
 .standings-wrap {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1px;
-  background: var(--b1);
+  /* was an auto-fill grid of division blocks; the render now emits its own
+     league sections (each with a 3-up .std-grid inside), so this is just a
+     plain block container. Leaving it as a grid re-constrained those inner
+     grids to ~320px tracks and collapsed the tables. */
+  display: block;
   margin-bottom: 14px;
 }
 .div-block { background: var(--s1); }
@@ -740,6 +741,37 @@ tbody td {
 .std-tbl td { padding: 6px 8px; border-top: 1px solid #0f0f0f; }
 .std-tbl tr:hover td { background: var(--s2); }
 @media(max-width:400px){ .standings-wrap { grid-template-columns: 1fr; } }
+
+/* League sections: three divisions across, wild card underneath. Replaces the
+   old auto-fill grid, which reflowed AL and NL blocks into arbitrary rows. */
+.std-league { margin-bottom: 18px; }
+.std-league-hd {
+  font-family: var(--mono); font-size: 10px; letter-spacing: 2px;
+  color: var(--t2); text-transform: uppercase;
+  padding: 0 0 6px; margin-bottom: 1px;
+  border-bottom: 1px solid var(--b2);
+}
+.std-grid {
+  /* minmax(0,1fr) not 1fr: a bare 1fr track has min-width:auto and so cannot
+     shrink below its content, and the global `table { min-width: 600px }`
+     rule would then push three divisions out to ~1800px and scroll the page */
+  display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px; background: var(--b1); margin-bottom: 1px;
+}
+.std-grid .std-tbl, .std-wc .std-tbl { min-width: 0; }
+/* division leader marker + fixed-width gutter so team names stay aligned */
+.std-flag { display: inline-block; width: 9px; color: var(--hi); }
+.std-leader td { background: rgba(255,255,255,.02); }
+
+/* Wild card */
+.std-wc { margin-top: 1px; }
+.std-wc-note { color: var(--t3); letter-spacing: 0; text-transform: none; margin-left: 6px; font-size: 9px; }
+.std-wc-in td { background: rgba(77,179,128,.06); }
+.std-wc-in td:first-child { color: var(--pos); }
+/* the cut line: everything below this row is chasing a berth */
+.std-wc-cut td { border-top: 2px solid var(--warn); }
+
+@media(max-width:900px){ .std-grid { grid-template-columns: 1fr; } }
 
 /* -- TRENDS -- */
 .trends-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
@@ -1922,18 +1954,30 @@ async function loadModelLineup(rowId, homeAbbr, awayAbbr) {
 }
 
 // SP card lookup - used by betRow and renderGames
+// Team abbreviation aliases — data sources disagree (ESPN/picks_today: ARI,
+// CHW, ATH; MLB StatsAPI/series_schedule: AZ, CWS, ATH). The pipeline now
+// emits canonical ESPN-style, but normalizing here too keeps lookups working
+// against older cached JSON that still has the StatsAPI spellings.
+const TEAM_ABBR_ALIASES = { AZ: 'ARI', CWS: 'CHW', OAK: 'ATH' };
+function canonAbbr(a) {
+  if (!a) return a;
+  const k = String(a).trim().toUpperCase();
+  return TEAM_ABBR_ALIASES[k] || k;
+}
+
 function findCard(sp_name, team_abbr, opp_abbr) {
+  const team = canonAbbr(team_abbr), opp = canonAbbr(opp_abbr);
   if (sp_name && sp_name !== 'TBD') {
     const exact = DATA.pitchers.find(c => c.name === sp_name);
     if (exact) return exact;
     const lastName = sp_name.split(' ').pop().toLowerCase();
     const byLast = DATA.pitchers.find(c =>
       c.name.split(' ').pop().toLowerCase() === lastName &&
-      c.team_abbr === team_abbr);
+      canonAbbr(c.team_abbr) === team);
     if (byLast) return byLast;
   }
-  return DATA.pitchers.find(c => c.team_abbr === team_abbr && c.opponent === opp_abbr) ||
-         DATA.pitchers.find(c => c.team_abbr === team_abbr) || null;
+  return DATA.pitchers.find(c => canonAbbr(c.team_abbr) === team && canonAbbr(c.opponent) === opp) ||
+         DATA.pitchers.find(c => canonAbbr(c.team_abbr) === team) || null;
 }
 
 // L5 (last 5 graded games) — reuses DATA.history, already loaded for the
@@ -2121,8 +2165,8 @@ function renderGames() {
     const aCard = findCard(g.away_sp, g.away_abbr, g.home_abbr);
 
     // Bullpen data
-    const hBP = DATA.bullpen.find(t => t.team === g.home_abbr);
-    const aBP = DATA.bullpen.find(t => t.team === g.away_abbr);
+    const hBP = DATA.bullpen.find(t => canonAbbr(t.team) === canonAbbr(g.home_abbr));
+    const aBP = DATA.bullpen.find(t => canonAbbr(t.team) === canonAbbr(g.away_abbr));
 
     function miniSP(card, sp, abbr, isAway) {
       const name  = card ? card.name : (sp||'TBD');
@@ -2827,6 +2871,12 @@ function renderBatters() {
 // -- STANDINGS ----------------------------------------------------------------
 let stdLeague = 'both', stdCache = null, stdListenersAdded = false;
 
+// Fallback for when the standings payload doesn't hydrate division names
+const DIV_ID_NAMES = {
+  200: 'American League West', 201: 'American League East', 202: 'American League Central',
+  203: 'National League West', 204: 'National League East', 205: 'National League Central',
+};
+
 async function renderStandings() {
   const wrap = document.getElementById('standings-wrap');
 
@@ -2841,24 +2891,38 @@ async function renderStandings() {
       console.log('[standings] records:', data.records?.length);
       stdCache = [];
       for (const div of (data.records || [])) {
-        const dn  = div.division?.name || '';
         const lid = div.league?.id || 0;
-        const lg  = (lid === 103 || dn.includes('American')) ? 'AL' : 'NL';
-        const dvMatch = dn.match(/(East|Central|West)$/i);
-        const dv = dvMatch ? dvMatch[1] : dn;
-        const divKey = lg + ' ' + dv;
         for (const tr of (div.teamRecords || [])) {
+          // The record-level div.division only carries {id, link} -- its name
+          // is null, which used to make divKey "AL "/"NL " and left every
+          // division filter matching nothing. The hydrated team object does
+          // carry the full name, with a division-id map as a fallback.
+          const dObj = tr.team?.division || {};
+          const dn   = dObj.name || DIV_ID_NAMES[dObj.id] || div.division?.name || '';
+          const lg   = (lid === 103 || dn.includes('American')) ? 'AL' : 'NL';
+          const dvMatch = dn.match(/(East|Central|West)$/i);
+          const dv = dvMatch ? dvMatch[1] : dn;
+          const divKey = dv ? lg + ' ' + dv : lg;
+
           const rs = parseInt(tr.runsScored||0), ra = parseInt(tr.runsAllowed||0);
           const w = tr.wins||0, l = tr.losses||0, g = w + l;
           const L10 = tr.records?.splitRecords?.find(x => x.type === 'lastTen');
+          const wcr = parseInt(tr.wildCardRank);
           stdCache.push({
-            team: tr.team?.abbreviation||'?', lg, dv, divKey,
+            team: canonAbbr(tr.team?.abbreviation||'?'), lg, dv, divKey,
             W:w, L:l, G:g,
             pct: g > 0 ? (w/g).toFixed(3) : '.000',
             GB: tr.divisionGamesBack||'-',
             rs, ra, rd: rs-ra,
             pyth: (rs+ra>0 ? (rs**1.83/(rs**1.83+ra**1.83)) : 0.5).toFixed(3),
             L10: L10 ? L10.wins+'-'+L10.losses : '-',
+            divRank: parseInt(tr.divisionRank) || 99,
+            divLeader: !!tr.divisionLeader,
+            // division leaders have no wildCardRank; everyone else is ranked
+            // 1..N within their league, top 3 hold the wild card berths
+            wcRank: Number.isFinite(wcr) ? wcr : null,
+            wcGB: tr.wildCardGamesBack || '-',
+            streak: tr.streak?.streakCode || '',
           });
         }
       }
@@ -2893,34 +2957,86 @@ async function renderStandings() {
     }
   }
 
-  // ALL view - single table sorted by pct
-  if (stdLeague === 'both') {
-    const rows = [...filtered].sort((a,b)=>parseFloat(b.pct)-parseFloat(a.pct)).map(t=>{
-      const pc=parseFloat(t.pct)>=.550?'pos':parseFloat(t.pct)<=.450?'neg':'';
-      const rc=t.rd>20?'pos':t.rd<-20?'neg':'dim';
-      return `<tr><td>${t.team}</td><td class="mono dim" style="font-size:10px">${t.divKey}</td><td>${t.W}</td><td class="dim">${t.L}</td><td class="mono ${pc}">${t.pct}</td><td class="mono ${rc}">${t.rd>0?'+':''}${t.rd}</td><td class="mono dim">${t.pyth}</td><td class="mono">${t.L10}</td></tr>`;
+  const pctCol = v => parseFloat(v)>=.550?'pos':parseFloat(v)<=.450?'neg':'';
+  const rdCol  = v => v>20?'pos':v<-20?'neg':'dim';
+
+  // One division table. Sorted by the API's own divisionRank so it matches
+  // MLB's official order (tiebreakers included) rather than raw win pct.
+  function divBlock(divKey, teams) {
+    const rows = [...teams].sort((a,b)=>a.divRank-b.divRank || parseFloat(b.pct)-parseFloat(a.pct)).map(t=>`
+      <tr${t.divLeader?' class="std-leader"':''}>
+        <td>${t.divLeader?'<span class="std-flag" title="division leader">*</span>':'<span class="std-flag"></span>'}${t.team}</td>
+        <td>${t.W}</td><td class="dim">${t.L}</td>
+        <td class="mono ${pctCol(t.pct)}">${t.pct}</td>
+        <td class="dim">${t.GB}</td>
+        <td class="mono ${rdCol(t.rd)}">${t.rd>0?'+':''}${t.rd}</td>
+        <td class="mono">${t.L10}</td>
+      </tr>`).join('');
+    return `<div class="div-block"><div class="div-label">${divKey}</div>
+      <table class="std-tbl"><thead><tr>
+        <th>TEAM</th><th>W</th><th>L</th><th>PCT</th><th>GB</th><th>+/-</th><th>L10</th>
+      </tr></thead><tbody>${rows}</tbody></table></div>`;
+  }
+
+  // Wild card race for one league. Division leaders are excluded (they hold a
+  // berth already and carry no wildCardRank); the rest are ordered by the
+  // API's wildCardRank, with the top 3 holding the berths.
+  function wcBlock(lg, teams) {
+    const inRace = teams.filter(t => !t.divLeader && t.wcRank != null)
+                        .sort((a,b)=>a.wcRank-b.wcRank);
+    if (!inRace.length) return '';
+    const rows = inRace.map(t => {
+      const isIn  = t.wcRank <= 3;
+      const cls   = isIn ? 'std-wc-in' : '';
+      const cut   = t.wcRank === 4 ? ' std-wc-cut' : '';
+      // GB comes through as "+7.0" for teams above the cut line, "-" for the
+      // team exactly on it, or a plain number for those chasing
+      const gbTxt = t.wcGB;
+      const gbCls = gbTxt.startsWith('+') ? 'pos' : gbTxt === '-' ? 'dim' : '';
+      return `<tr class="${cls}${cut}">
+        <td class="mono dim" style="width:22px">${isIn?'WC'+t.wcRank:t.wcRank}</td>
+        <td>${t.team}</td>
+        <td class="mono dim" style="font-size:10px">${t.divKey.replace(lg+' ','')}</td>
+        <td>${t.W}</td><td class="dim">${t.L}</td>
+        <td class="mono ${pctCol(t.pct)}">${t.pct}</td>
+        <td class="mono ${gbCls}">${gbTxt}</td>
+        <td class="mono">${t.L10}</td>
+      </tr>`;
     }).join('');
-    wrap.innerHTML = `<div class="div-block" style="grid-column:1/-1"><div class="div-label">ALL TEAMS - BY WIN PCT</div><table class="std-tbl"><thead><tr><th>TEAM</th><th>DIV</th><th>W</th><th>L</th><th>PCT</th><th>+/-</th><th>PYTH</th><th>L10</th></tr></thead><tbody>${rows}</tbody></table></div>`;
+    return `<div class="div-block std-wc"><div class="div-label">${lg} WILD CARD <span class="std-wc-note">top 3 hold berths</span></div>
+      <table class="std-tbl"><thead><tr>
+        <th></th><th>TEAM</th><th>DIV</th><th>W</th><th>L</th><th>PCT</th><th>GB</th><th>L10</th>
+      </tr></thead><tbody>${rows}</tbody></table></div>`;
+  }
+
+  const DIV_ORDER = ['AL East','AL Central','AL West','NL East','NL Central','NL West'];
+
+  // Single-division filters: just that one table, nothing else to group.
+  if (stdLeague !== 'both' && stdLeague !== 'AL' && stdLeague !== 'NL') {
+    wrap.innerHTML = filtered.length
+      ? `<div class="std-grid">${divBlock(stdLeague, filtered)}</div>`
+      : '<div class="empty">No data for this filter</div>';
     return;
   }
 
-  // Division grouped view
-  const divs = {};
-  filtered.forEach(t => { if (!divs[t.divKey]) divs[t.divKey]=[]; divs[t.divKey].push(t); });
-  const order = ['AL East','AL Central','AL West','NL East','NL Central','NL West'];
-  const sorted = Object.entries(divs).sort(([a],[b])=>{
-    const ai=order.indexOf(a),bi=order.indexOf(b);
-    return ai===-1&&bi===-1?a.localeCompare(b):ai===-1?1:bi===-1?-1:ai-bi;
-  });
+  // League view(s): divisions 3-up, wild card underneath, AL above NL.
+  const leagues = stdLeague === 'both' ? ['AL','NL'] : [stdLeague];
+  const html = leagues.map(lg => {
+    const lgTeams = filtered.filter(t => t.lg === lg);
+    if (!lgTeams.length) return '';
+    const divs = {};
+    lgTeams.forEach(t => { (divs[t.divKey] = divs[t.divKey] || []).push(t); });
+    const blocks = Object.entries(divs)
+      .sort(([a],[b]) => DIV_ORDER.indexOf(a) - DIV_ORDER.indexOf(b))
+      .map(([k, v]) => divBlock(k, v)).join('');
+    return `<div class="std-league">
+      <div class="std-league-hd">${lg === 'AL' ? 'AMERICAN LEAGUE' : 'NATIONAL LEAGUE'}</div>
+      <div class="std-grid">${blocks}</div>
+      ${wcBlock(lg, lgTeams)}
+    </div>`;
+  }).join('');
 
-  wrap.innerHTML = sorted.map(([divKey, teams])=>{
-    const rows = teams.sort((a,b)=>parseFloat(b.pct)-parseFloat(a.pct)).map(t=>{
-      const pc=parseFloat(t.pct)>=.550?'pos':parseFloat(t.pct)<=.450?'neg':'';
-      const rc=t.rd>20?'pos':t.rd<-20?'neg':'dim';
-      return `<tr><td>${t.team}</td><td>${t.W}</td><td class="dim">${t.L}</td><td class="mono ${pc}">${t.pct}</td><td class="dim">${t.GB}</td><td class="mono ${rc}">${t.rd>0?'+':''}${t.rd}</td><td class="mono dim">${t.pyth}</td><td class="mono">${t.L10}</td></tr>`;
-    }).join('');
-    return `<div class="div-block"><div class="div-label">${divKey}</div><table class="std-tbl"><thead><tr><th>TEAM</th><th>W</th><th>L</th><th>PCT</th><th>GB</th><th>+/-</th><th>PYTH</th><th>L10</th></tr></thead><tbody>${rows}</tbody></table></div>`;
-  }).join('') || '<div class="empty">No data for this filter</div>';
+  wrap.innerHTML = html || '<div class="empty">No data for this filter</div>';
 }
 
 // -- TRENDS -------------------------------------------------------------------
