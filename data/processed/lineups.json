@@ -1,10 +1,156 @@
 {
   "CIN@WSH": {
     "home": [],
-    "away": []
+    "away": [
+      {
+        "name": "Elly De La Cruz",
+        "pos": "SS",
+        "bats": "S",
+        "avg": 0.274,
+        "ops": 0.86,
+        "hr": 20
+      },
+      {
+        "name": "Sal Stewart",
+        "pos": "1B",
+        "bats": "R",
+        "avg": 0.255,
+        "ops": 0.81,
+        "hr": 25
+      },
+      {
+        "name": "JJ Bleday",
+        "pos": "LF",
+        "bats": "L",
+        "avg": 0.225,
+        "ops": 0.8,
+        "hr": 20
+      },
+      {
+        "name": "Tyler Stephenson",
+        "pos": "C",
+        "bats": "R",
+        "avg": 0.248,
+        "ops": 0.746,
+        "hr": 10
+      },
+      {
+        "name": "Eugenio Su\u00e1rez",
+        "pos": "DH",
+        "bats": "R",
+        "avg": 0.204,
+        "ops": 0.688,
+        "hr": 16
+      },
+      {
+        "name": "H\u00e9ctor Rodr\u00edguez",
+        "pos": "RF",
+        "bats": "L",
+        "avg": 0.2,
+        "ops": 0.633,
+        "hr": 0
+      },
+      {
+        "name": "Dane Myers",
+        "pos": "CF",
+        "bats": "R",
+        "avg": 0.263,
+        "ops": 0.72,
+        "hr": 3
+      },
+      {
+        "name": "Matt McLain",
+        "pos": "2B",
+        "bats": "R",
+        "avg": 0.193,
+        "ops": 0.641,
+        "hr": 10
+      },
+      {
+        "name": "Ke'Bryan Hayes",
+        "pos": "3B",
+        "bats": "R",
+        "avg": 0.141,
+        "ops": 0.434,
+        "hr": 4
+      }
+    ]
   },
   "ATH@BOS": {
-    "home": [],
+    "home": [
+      {
+        "name": "Nick Sogard",
+        "pos": "3B",
+        "bats": "S",
+        "avg": 0.271,
+        "ops": 0.757,
+        "hr": 0
+      },
+      {
+        "name": "Ceddanne Rafaela",
+        "pos": "CF",
+        "bats": "R",
+        "avg": 0.288,
+        "ops": 0.796,
+        "hr": 15
+      },
+      {
+        "name": "Wilyer Abreu",
+        "pos": "DH",
+        "bats": "L",
+        "avg": 0.256,
+        "ops": 0.793,
+        "hr": 20
+      },
+      {
+        "name": "Willson Contreras",
+        "pos": "1B",
+        "bats": "R",
+        "avg": 0.287,
+        "ops": 0.929,
+        "hr": 23
+      },
+      {
+        "name": "Andruw Monasterio",
+        "pos": "SS",
+        "bats": "R",
+        "avg": 0.273,
+        "ops": 0.792,
+        "hr": 6
+      },
+      {
+        "name": "Anthony Seigler",
+        "pos": "2B",
+        "bats": "S",
+        "avg": 0.246,
+        "ops": 0.71,
+        "hr": 3
+      },
+      {
+        "name": "Jarren Duran",
+        "pos": "LF",
+        "bats": "L",
+        "avg": 0.202,
+        "ops": 0.617,
+        "hr": 16
+      },
+      {
+        "name": "Eli White",
+        "pos": "RF",
+        "bats": "R",
+        "avg": 0.221,
+        "ops": 0.662,
+        "hr": 5
+      },
+      {
+        "name": "Jake Rogers",
+        "pos": "C",
+        "bats": "R",
+        "avg": 0.178,
+        "ops": 0.616,
+        "hr": 3
+      }
+    ],
     "away": []
   },
   "NYM@PIT": {
