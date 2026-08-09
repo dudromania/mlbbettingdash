@@ -1,6 +1,6 @@
 [
   {
-    "id": 2176,
+    "id": 2183,
     "game_date": "2026-08-08",
     "game_pick_id": null,
     "player_name": "Sandy Alcantara",
@@ -20,14 +20,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-08 20:06:06",
-    "graded_at": null
+    "actual_value": 8.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-08 20:10:55",
+    "graded_at": "2026-08-09 13:00:17"
   },
   {
-    "id": 2178,
+    "id": 2185,
     "game_date": "2026-08-08",
     "game_pick_id": null,
     "player_name": "Kyle Bradish",
@@ -47,14 +47,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-08 20:06:06",
-    "graded_at": null
+    "actual_value": 4.0,
+    "result": "W",
+    "pnl": 73.52941176470588,
+    "created_at": "2026-08-08 20:10:55",
+    "graded_at": "2026-08-09 13:00:17"
   },
   {
-    "id": 2175,
+    "id": 2182,
     "game_date": "2026-08-08",
     "game_pick_id": null,
     "player_name": "Jake Bennett",
@@ -74,14 +74,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-08 20:06:06",
-    "graded_at": null
+    "actual_value": 5.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-08 20:10:55",
+    "graded_at": "2026-08-09 13:00:17"
   },
   {
-    "id": 2173,
+    "id": 2180,
     "game_date": "2026-08-08",
     "game_pick_id": null,
     "player_name": "Jacob deGrom",
@@ -101,14 +101,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-08 20:06:06",
-    "graded_at": null
+    "actual_value": 9.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-08 20:10:55",
+    "graded_at": "2026-08-09 13:00:17"
   },
   {
-    "id": 2177,
+    "id": 2184,
     "game_date": "2026-08-08",
     "game_pick_id": null,
     "player_name": "Gerrit Cole",
@@ -123,19 +123,19 @@
     "predicted_prob_over": 0.437,
     "edge": 0.076,
     "confidence": null,
-    "player_season_avg": 10.02,
+    "player_season_avg": 9.7,
     "player_last7_avg": null,
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-08 20:06:06",
-    "graded_at": null
+    "actual_value": 9.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-08 20:10:55",
+    "graded_at": "2026-08-09 13:00:17"
   },
   {
-    "id": 2174,
+    "id": 2181,
     "game_date": "2026-08-08",
     "game_pick_id": null,
     "player_name": "Gavin Williams",
@@ -155,14 +155,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-08 20:06:06",
-    "graded_at": null
+    "actual_value": 7.0,
+    "result": "W",
+    "pnl": 108.0,
+    "created_at": "2026-08-08 20:10:55",
+    "graded_at": "2026-08-09 13:00:17"
   },
   {
-    "id": 2172,
+    "id": 2179,
     "game_date": "2026-08-08",
     "game_pick_id": null,
     "player_name": "Chris Sale",
@@ -182,11 +182,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-08 20:06:06",
-    "graded_at": null
+    "actual_value": 8.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-08 20:10:55",
+    "graded_at": "2026-08-09 13:00:17"
   },
   {
     "id": 2145,
