@@ -777,6 +777,19 @@ tbody td {
 .trends-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 @media(max-width:700px){ .trends-cols { grid-template-columns: 1fr; } }
 
+/* Team form table (last 10 + runs + recent series) */
+.tf-tbl { min-width: 0; }
+.tf-tbl td, .tf-tbl th { white-space: nowrap; }
+.tf-series { display: flex; gap: 4px; flex-wrap: wrap; }
+.tf-ser {
+  font-family: var(--mono); font-size: 9px;
+  padding: 1px 4px; border: 1px solid var(--b1); background: var(--s1);
+  white-space: nowrap;
+}
+.tf-ser.pos { color: var(--pos); border-color: #2d6e4466; }
+.tf-ser.neg { color: var(--neg); border-color: #6e2d2d66; }
+.tf-ser.dim { color: var(--t3); }
+
 .trend-list { border: 1px solid var(--b1); }
 .trend-row {
   display: flex;
@@ -1676,16 +1689,20 @@ tbody td {
 
   <!-- TRENDS -->
   <div id="tab-trends" class="tab-panel">
-    <div class="trends-cols">
+    <div class="sec">Team Form - Last 10 Games</div>
+    <div class="tbl-wrap"><div id="trend-teams"></div></div>
+
+    <div class="trends-cols" style="margin-top:18px">
       <div>
         <div class="sec">Pitcher Trends - Last 3 Starts vs Season</div>
         <div id="trend-pitchers" class="trend-list"></div>
       </div>
       <div>
-        <div class="sec">Team Form - Last 5 Games</div>
-        <div id="trend-teams" class="trend-list"></div>
+        <div class="sec">Hot Batters - Last 14 Days</div>
+        <div id="trend-batters" class="trend-list"></div>
       </div>
     </div>
+
     <div class="sec" style="margin-top:20px">Series Momentum</div>
     <div id="series-wrap" class="series-wrap"></div>
   </div>
@@ -3068,39 +3085,13 @@ function renderTrends() {
       }).join('')
     : '<div class="empty">No pitcher trend data</div>';
 
-  // Team trends
-  const hist=DATA.history.filter(h=>h.actual_margin!=null), tmap={};
-  hist.forEach(h => {
-    ['home','away'].forEach(side => {
-      const abbr=h[side+'_abbr'], mg=side==='home'?h.actual_margin:-h.actual_margin;
-      if(!abbr) return;
-      if(!tmap[abbr]) tmap[abbr]=[];
-      tmap[abbr].push({date:h.date,mg,win:mg>0});
-    });
-  });
-
-  const tt = Object.entries(tmap).map(([abbr,games]) => {
-    const l5=games.sort((a,b)=>b.date.localeCompare(a.date)).slice(0,5);
-    const w=l5.filter(g=>g.win).length,l=l5.length-w;
-    const am=(l5.reduce((s,g)=>s+g.mg,0)/l5.length).toFixed(1);
-    return {abbr,w,l,am,dir:w>=4?'hot':w<=1?'cold':'neutral'};
-  }).filter(t=>t.w+t.l>=3).sort((a,b)=>Math.abs(b.w-2.5)-Math.abs(a.w-2.5));
-
-  document.getElementById('trend-teams').innerHTML = tt.length
-    ? tt.slice(0,10).map(t => {
-        const col=t.dir==='hot'?'warn':t.dir==='cold'?'hi':'dim';
-        return `<div class="trend-row ${t.dir}">
-          <div>
-            <div class="trend-name">${t.abbr}</div>
-            <div class="trend-sub">avg margin ${t.am>0?'+':''}${t.am} - last 5</div>
-          </div>
-          <div>
-            <div class="trend-val ${col}">${t.w}-${t.l}</div>
-            <div class="trend-val-sub">l5 record</div>
-          </div>
-        </div>`;
-      }).join('')
-    : '<div class="empty">No team trend data - needs graded history</div>';
+  // Team form and hot batters read live MLB results rather than DATA.history.
+  // picks_history.json only holds games the model actually picked, so any day
+  // it did not run silently vanished from a team's record -- DET showed 4-1
+  // over its "last 5" because a 2-4 loss on 2026-08-05 was simply absent and
+  // the window reached back an extra game to fill the gap.
+  renderTeamForm();
+  renderHotBatters();
 
   // Series
   document.getElementById('series-wrap').innerHTML = DATA.series.length
@@ -3126,6 +3117,157 @@ function renderTrends() {
         </div>`;
       }).join('')
     : '<div class="empty" style="grid-column:1/-1">No series data</div>';
+}
+
+// -- TEAM FORM (live results, not pick history) -------------------------------
+let teamFormCache = null, hotBatCache = null;
+
+function _isoDaysAgo(n) {
+  const d = new Date(); d.setDate(d.getDate() - n);
+  return d.toISOString().slice(0,10);
+}
+
+// Every final game for every team over the window, grouped per team.
+async function loadTeamForm() {
+  if (teamFormCache) return teamFormCache;
+  const start = _isoDaysAgo(30), end = _isoDaysAgo(0);
+  // hydrate=team is required: the bare schedule payload gives
+  // teams.home.team as {id, name, link} with no abbreviation, which silently
+  // collapsed every game under a single "undefined" key
+  const r = await fetch(`https://statsapi.mlb.com/api/v1/schedule?sportId=1&startDate=${start}&endDate=${end}&hydrate=team`);
+  const data = await r.json();
+
+  const byTeam = {};
+  for (const dt of (data.dates || [])) {
+    for (const g of (dt.games || [])) {
+      // postponed games come back as abstractGameState "Final" with null
+      // scores, so gate on detailedState the same way live_scores.json does
+      if (g.status?.detailedState !== 'Final') continue;
+      const h = g.teams?.home, a = g.teams?.away;
+      if (h?.score == null || a?.score == null) continue;
+      const hAb = canonAbbr(h.team?.abbreviation), aAb = canonAbbr(a.team?.abbreviation);
+      const rec = (me, opp, rs, ra, home) => ({
+        date: g.officialDate || dt.date, opp, rs, ra, home,
+        win: rs > ra, seriesGame: g.seriesGameNumber || 0,
+      });
+      (byTeam[hAb] = byTeam[hAb] || []).push(rec(hAb, aAb, h.score, a.score, true));
+      (byTeam[aAb] = byTeam[aAb] || []).push(rec(aAb, hAb, a.score, h.score, false));
+    }
+  }
+  for (const k in byTeam) byTeam[k].sort((x,y) => x.date.localeCompare(y.date));
+  teamFormCache = byTeam;
+  return byTeam;
+}
+
+// Split a team's chronological games into series. A new series starts when the
+// opponent changes or the API's seriesGameNumber resets.
+function _toSeries(games) {
+  const out = [];
+  for (const g of games) {
+    const cur = out[out.length-1];
+    if (!cur || cur.opp !== g.opp || g.seriesGame === 1) {
+      out.push({ opp: g.opp, home: g.home, w: g.win?1:0, l: g.win?0:1, games:[g] });
+    } else {
+      cur.w += g.win?1:0; cur.l += g.win?0:1; cur.games.push(g);
+    }
+  }
+  return out;
+}
+
+async function renderTeamForm() {
+  const el = document.getElementById('trend-teams');
+  if (!el) return;
+  el.innerHTML = '<div class="empty"><div class="spinner"></div>loading team form...</div>';
+  let byTeam;
+  try { byTeam = await loadTeamForm(); }
+  catch(e) { el.innerHTML = '<div class="empty">Team form unavailable: '+e.message+'</div>'; return; }
+
+  const rows = Object.entries(byTeam).map(([abbr, games]) => {
+    const l10 = games.slice(-10);
+    const w = l10.filter(g=>g.win).length, l = l10.length - w;
+    const rs = l10.reduce((s,g)=>s+g.rs,0), ra = l10.reduce((s,g)=>s+g.ra,0);
+    // current streak, walking backwards from the most recent game
+    let sk = 0, skWin = null;
+    for (let i=games.length-1; i>=0; i--) {
+      if (skWin === null) { skWin = games[i].win; sk = 1; }
+      else if (games[i].win === skWin) sk++;
+      else break;
+    }
+    const series = _toSeries(games).slice(-3).reverse();
+    return { abbr, w, l, n:l10.length, rs, ra, diff: rs-ra,
+             rpg:(rs/Math.max(l10.length,1)).toFixed(1), rapg:(ra/Math.max(l10.length,1)).toFixed(1),
+             streak:(skWin?'W':'L')+sk, streakWin:skWin, series };
+  }).filter(t => t.n >= 5)
+    .sort((a,b) => (b.w-b.l)-(a.w-a.l) || b.diff-a.diff);
+
+  const body = rows.map(t => {
+    const wc = t.w>=7?'pos':t.w<=3?'neg':'';
+    const dc = t.diff>0?'pos':t.diff<0?'neg':'dim';
+    const sc_ = t.streakWin ? (t.streak.slice(1)>=3?'pos':'') : (t.streak.slice(1)>=3?'neg':'');
+    const ser = t.series.map(s => {
+      const cls = s.w>s.l?'pos':s.w<s.l?'neg':'dim';
+      return `<span class="tf-ser ${cls}" title="${s.home?'vs':'@'} ${s.opp}">${s.home?'':'@'}${s.opp} ${s.w}-${s.l}</span>`;
+    }).join('');
+    return `<tr>
+      <td><strong>${t.abbr}</strong></td>
+      <td class="mono ${wc}">${t.w}-${t.l}</td>
+      <td class="mono ${sc_}">${t.streak}</td>
+      <td class="mono">${t.rs}</td>
+      <td class="mono dim">${t.ra}</td>
+      <td class="mono ${dc}">${t.diff>0?'+':''}${t.diff}</td>
+      <td class="mono dim">${t.rpg}/${t.rapg}</td>
+      <td class="tf-series">${ser}</td>
+    </tr>`;
+  }).join('');
+
+  el.innerHTML = `<table class="std-tbl tf-tbl"><thead><tr>
+      <th>TEAM</th><th>L10</th><th>STRK</th><th>RS</th><th>RA</th><th>DIFF</th><th>RS/RA PG</th><th>LAST 3 SERIES</th>
+    </tr></thead><tbody>${body}</tbody></table>`;
+}
+
+// -- HOT BATTERS --------------------------------------------------------------
+async function renderHotBatters() {
+  const el = document.getElementById('trend-batters');
+  if (!el) return;
+  el.innerHTML = '<div class="empty"><div class="spinner"></div>loading batters...</div>';
+  try {
+    if (!hotBatCache) {
+      const start = _isoDaysAgo(14), end = _isoDaysAgo(0);
+      const r = await fetch(`https://statsapi.mlb.com/api/v1/stats?stats=byDateRange&group=hitting&sportId=1`
+        + `&startDate=${start}&endDate=${end}&limit=250&hydrate=team`);
+      const d = await r.json();
+      hotBatCache = (d.stats?.[0]?.splits || []).map(s => ({
+        name: s.player?.fullName || '?',
+        team: canonAbbr(s.team?.abbreviation || ''),
+        g:  +s.stat?.gamesPlayed || 0,
+        pa: +s.stat?.plateAppearances || 0,
+        avg: s.stat?.avg || '-', ops: s.stat?.ops || '-',
+        hr: +s.stat?.homeRuns || 0, rbi: +s.stat?.rbi || 0, h: +s.stat?.hits || 0,
+      }));
+    }
+    // min PA guards against a 3-for-4 cameo topping the list
+    const top = hotBatCache.filter(b => b.pa >= 35)
+                           .sort((a,b) => parseFloat(b.ops||0) - parseFloat(a.ops||0))
+                           .slice(0,10);
+    el.innerHTML = top.length ? top.map((b,i) => {
+      const opsN = parseFloat(b.ops) || 0;
+      const dir = opsN >= 1.000 ? 'hot' : opsN >= .850 ? 'neutral' : '';
+      const col = opsN >= 1.000 ? 'warn' : '';
+      return `<div class="trend-row ${dir}">
+        <div>
+          <div class="trend-name"><span class="dim mono" style="font-size:10px">${i+1}.</span> ${b.name}
+            <span class="dim" style="font-size:10px">${b.team}</span></div>
+          <div class="trend-sub">${b.avg} avg - ${b.hr} hr - ${b.rbi} rbi - ${b.g}g / ${b.pa}pa</div>
+        </div>
+        <div>
+          <div class="trend-val ${col}">${b.ops}</div>
+          <div class="trend-val-sub">ops l14</div>
+        </div>
+      </div>`;
+    }).join('') : '<div class="empty">No batter data</div>';
+  } catch(e) {
+    el.innerHTML = '<div class="empty">Batter stats unavailable: '+e.message+'</div>';
+  }
 }
 
 // -- HELPERS ------------------------------------------------------------------
