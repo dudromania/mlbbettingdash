@@ -93,29 +93,6 @@
   },
   {
     "date": "2026-08-11",
-    "game_time": "5:45 PM CT",
-    "home_abbr": "WSH",
-    "away_abbr": "CHC",
-    "home_sp": "TBD",
-    "away_sp": "Shota Imanaga",
-    "nrfi_prob": 39.4,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_pitcher": {
-      "name": "Shota Imanaga",
-      "first_inning": {},
-      "season_era": 3.6
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-11",
     "game_time": "5:40 PM CT",
     "home_abbr": "MIA",
     "away_abbr": "PIT",
@@ -340,6 +317,29 @@
       "name": "Hunter Brown",
       "first_inning": {},
       "season_era": 3.53
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-11",
+    "game_time": "5:45 PM CT",
+    "home_abbr": "WSH",
+    "away_abbr": "CHC",
+    "home_sp": "Jake Irvin",
+    "away_sp": "Shota Imanaga",
+    "nrfi_prob": 31.6,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jake Irvin",
+      "first_inning": {},
+      "season_era": 5.37
+    },
+    "away_pitcher": {
+      "name": "Shota Imanaga",
+      "first_inning": {},
+      "season_era": 3.6
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
