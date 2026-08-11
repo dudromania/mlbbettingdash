@@ -1,6 +1,6 @@
 [
   {
-    "id": 2221,
+    "id": 2222,
     "game_date": "2026-08-10",
     "game_pick_id": null,
     "player_name": "Dean Kremer",
@@ -20,11 +20,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-10 18:10:26",
-    "graded_at": null
+    "actual_value": 7.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-10 20:10:02",
+    "graded_at": "2026-08-11 13:00:16"
   },
   {
     "id": 2217,

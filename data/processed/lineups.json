@@ -1,4 +1,20 @@
 {
+  "CLE@DET": {
+    "home": [],
+    "away": []
+  },
+  "PIT@MIA": {
+    "home": [],
+    "away": []
+  },
+  "CHC@WSH": {
+    "home": [],
+    "away": []
+  },
+  "SEA@NYY": {
+    "home": [],
+    "away": []
+  },
   "BOS@TOR": {
     "home": [],
     "away": []
@@ -8,6 +24,10 @@
     "away": []
   },
   "BAL@MIN": {
+    "home": [],
+    "away": []
+  },
+  "CIN@CHW": {
     "home": [],
     "away": []
   },
