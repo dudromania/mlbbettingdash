@@ -1,6 +1,6 @@
 [
   {
-    "id": 2239,
+    "id": 2244,
     "game_date": "2026-08-11",
     "game_pick_id": null,
     "player_name": "Sean Burke",
@@ -20,14 +20,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-11 18:11:13",
-    "graded_at": null
+    "actual_value": 8.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-11 20:11:39",
+    "graded_at": "2026-08-13 18:39:59"
   },
   {
-    "id": 2238,
+    "id": 2243,
     "game_date": "2026-08-11",
     "game_pick_id": null,
     "player_name": "Paul Skenes",
@@ -47,14 +47,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-11 18:11:13",
-    "graded_at": null
+    "actual_value": 4.0,
+    "result": "W",
+    "pnl": 115.0,
+    "created_at": "2026-08-11 20:11:39",
+    "graded_at": "2026-08-13 18:39:59"
   },
   {
-    "id": 2241,
+    "id": 2246,
     "game_date": "2026-08-11",
     "game_pick_id": null,
     "player_name": "Nick Lodolo",
@@ -74,14 +74,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-11 18:11:13",
-    "graded_at": null
+    "actual_value": 5.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-11 20:11:39",
+    "graded_at": "2026-08-13 18:39:59"
   },
   {
-    "id": 2242,
+    "id": 2247,
     "game_date": "2026-08-11",
     "game_pick_id": null,
     "player_name": "Eury P\u00e9rez",
@@ -101,14 +101,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-11 18:11:13",
-    "graded_at": null
+    "actual_value": 7.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-11 20:11:39",
+    "graded_at": "2026-08-13 18:39:59"
   },
   {
-    "id": 2240,
+    "id": 2245,
     "game_date": "2026-08-11",
     "game_pick_id": null,
     "player_name": "Bryan Woo",
@@ -128,11 +128,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-11 18:11:13",
-    "graded_at": null
+    "actual_value": 5.0,
+    "result": "W",
+    "pnl": 62.5,
+    "created_at": "2026-08-11 20:11:39",
+    "graded_at": "2026-08-13 18:39:59"
   },
   {
     "id": 2222,
