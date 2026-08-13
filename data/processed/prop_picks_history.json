@@ -1,6 +1,6 @@
 [
   {
-    "id": 2249,
+    "id": 2257,
     "game_date": "2026-08-13",
     "game_pick_id": null,
     "player_name": "Logan Gilbert",
@@ -15,7 +15,7 @@
     "predicted_prob_over": 0.437,
     "edge": 0.051,
     "confidence": null,
-    "player_season_avg": 8.24,
+    "player_season_avg": 8.26,
     "player_last7_avg": null,
     "player_last30_avg": null,
     "matchup_factor": null,
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-08-13 18:50:12",
+    "created_at": "2026-08-13 18:53:58",
     "graded_at": null
   },
   {
-    "id": 2248,
+    "id": 2256,
     "game_date": "2026-08-13",
     "game_pick_id": null,
     "player_name": "Braxton Ashcraft",
@@ -50,7 +50,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-08-13 18:50:12",
+    "created_at": "2026-08-13 18:53:58",
     "graded_at": null
   },
   {

@@ -1,22 +1,22 @@
 {
   "date": "2026-08-13",
-  "fetched_at": "2026-08-13T13:53:12",
+  "fetched_at": "2026-08-13T15:07:48",
   "games": [
     {
       "home_abbr": "DET",
       "away_abbr": "CLE",
-      "home_score": "2",
+      "home_score": "3",
       "away_score": "0",
-      "state": "in",
-      "detail": "In Progress",
-      "is_live": true,
-      "is_final": false
+      "state": "post",
+      "detail": "Final",
+      "is_live": false,
+      "is_final": true
     },
     {
       "home_abbr": "CHW",
       "away_abbr": "CIN",
-      "home_score": "5",
-      "away_score": "8",
+      "home_score": "7",
+      "away_score": "9",
       "state": "in",
       "detail": "In Progress",
       "is_live": true,
@@ -25,12 +25,12 @@
     {
       "home_abbr": "MIA",
       "away_abbr": "PIT",
-      "home_score": "0",
-      "away_score": "5",
-      "state": "in",
-      "detail": "In Progress",
-      "is_live": true,
-      "is_final": false
+      "home_score": "1",
+      "away_score": "13",
+      "state": "post",
+      "detail": "Final",
+      "is_live": false,
+      "is_final": true
     },
     {
       "home_abbr": "NYY",
@@ -46,9 +46,9 @@
       "home_abbr": "TOR",
       "away_abbr": "BOS",
       "home_score": "0",
-      "away_score": "0",
+      "away_score": "1",
       "state": "in",
-      "detail": "Warmup",
+      "detail": "In Progress",
       "is_live": true,
       "is_final": false
     },
@@ -57,18 +57,18 @@
       "away_abbr": "CHC",
       "home_score": "0",
       "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
+      "state": "in",
+      "detail": "In Progress",
+      "is_live": true,
       "is_final": false
     },
     {
       "home_abbr": "MIN",
       "away_abbr": "PHI",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
