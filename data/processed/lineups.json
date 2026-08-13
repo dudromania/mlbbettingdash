@@ -119,16 +119,16 @@
         "name": "Travis Bazzana",
         "pos": "2B",
         "bats": "L",
-        "avg": 0.24,
-        "ops": 0.719,
+        "avg": 0.239,
+        "ops": 0.716,
         "hr": 9
       },
       {
         "name": "Angel Genao",
         "pos": "3B",
         "bats": "S",
-        "avg": 0.308,
-        "ops": 0.841,
+        "avg": 0.296,
+        "ops": 0.811,
         "hr": 1
       },
       {
@@ -196,15 +196,15 @@
         "pos": "3B",
         "bats": "L",
         "avg": 0.213,
-        "ops": 0.732,
+        "ops": 0.731,
         "hr": 26
       },
       {
         "name": "Edgar Quero",
         "pos": "C",
         "bats": "S",
-        "avg": 0.194,
-        "ops": 0.518,
+        "avg": 0.199,
+        "ops": 0.526,
         "hr": 3
       },
       {
@@ -388,15 +388,15 @@
         "pos": "DH",
         "bats": "L",
         "avg": 0.249,
-        "ops": 0.793,
+        "ops": 0.791,
         "hr": 25
       },
       {
         "name": "Bryan Reynolds",
         "pos": "LF",
         "bats": "S",
-        "avg": 0.263,
-        "ops": 0.809,
+        "avg": 0.262,
+        "ops": 0.808,
         "hr": 15
       },
       {
@@ -496,7 +496,7 @@
         "pos": "2B",
         "bats": "L",
         "avg": 0.217,
-        "ops": 0.692,
+        "ops": 0.69,
         "hr": 17
       },
       {
@@ -585,8 +585,8 @@
         "name": "Jhonny Pereda",
         "pos": "C",
         "bats": "R",
-        "avg": 0.254,
-        "ops": 0.649,
+        "avg": 0.265,
+        "ops": 0.668,
         "hr": 2
       },
       {

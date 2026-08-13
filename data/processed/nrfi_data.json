@@ -6,7 +6,7 @@
     "away_abbr": "CLE",
     "home_sp": "Keider Montero",
     "away_sp": "Parker Messick",
-    "nrfi_prob": 44.6,
+    "nrfi_prob": 44.3,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
@@ -17,7 +17,7 @@
     "away_pitcher": {
       "name": "Parker Messick",
       "first_inning": {},
-      "season_era": 2.53
+      "season_era": 2.59
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -29,18 +29,18 @@
     "away_abbr": "SEA",
     "home_sp": "Max Fried",
     "away_sp": "Logan Gilbert",
-    "nrfi_prob": 42.6,
+    "nrfi_prob": 42.7,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Max Fried",
       "first_inning": {},
-      "season_era": 2.86
+      "season_era": 2.85
     },
     "away_pitcher": {
       "name": "Logan Gilbert",
       "first_inning": {},
-      "season_era": 3.35
+      "season_era": 3.34
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -75,13 +75,13 @@
     "away_abbr": "PIT",
     "home_sp": "Tyler Phillips",
     "away_sp": "Braxton Ashcraft",
-    "nrfi_prob": 37.6,
+    "nrfi_prob": 36.9,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Tyler Phillips",
       "first_inning": {},
-      "season_era": 3.47
+      "season_era": 3.65
     },
     "away_pitcher": {
       "name": "Braxton Ashcraft",
