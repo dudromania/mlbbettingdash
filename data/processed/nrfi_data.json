@@ -162,6 +162,29 @@
   },
   {
     "date": "2026-08-14",
+    "game_time": "1:20 PM CT",
+    "home_abbr": "CHC",
+    "away_abbr": "STL",
+    "home_sp": "Clay Holmes",
+    "away_sp": "Matthew Liberatore",
+    "nrfi_prob": 36.6,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Clay Holmes",
+      "first_inning": {},
+      "season_era": 2.59
+    },
+    "away_pitcher": {
+      "name": "Matthew Liberatore",
+      "first_inning": {},
+      "season_era": 4.92
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-14",
     "game_time": "8:40 PM CT",
     "home_abbr": "ATH",
     "away_abbr": "TEX",
@@ -179,29 +202,6 @@
       "name": "Kumar Rocker",
       "first_inning": {},
       "season_era": 4.46
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-14",
-    "game_time": "1:20 PM CT",
-    "home_abbr": "CHC",
-    "away_abbr": "STL",
-    "home_sp": "Clay Holmes",
-    "away_sp": "Matthew Liberatore",
-    "nrfi_prob": 34.6,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Clay Holmes",
-      "first_inning": {},
-      "season_era": 2.86
-    },
-    "away_pitcher": {
-      "name": "Matthew Liberatore",
-      "first_inning": {},
-      "season_era": 5.15
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
