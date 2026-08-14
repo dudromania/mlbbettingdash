@@ -2200,13 +2200,13 @@
       "opp_adj": 0.907,
       "park_adj": 1.018,
       "ump_adj": 1.0,
-      "hand_adj": 1.0,
-      "pitch_mix_adj": 1.0,
-      "combined_adj": 0.923,
-      "lambda_k": 4.168,
+      "hand_adj": 1.122,
+      "pitch_mix_adj": 1.002,
+      "combined_adj": 1.036,
+      "lambda_k": 4.676,
       "model_used": "xgboost_poisson",
-      "umpire": null,
-      "lineup_confirmed": false
+      "umpire": "Paul Clemons",
+      "lineup_confirmed": true
     },
     "first_inning": {},
     "game_id": 824643,
@@ -2412,7 +2412,7 @@
       "combined_adj": 0.986,
       "lambda_k": 4.829,
       "model_used": "xgboost_poisson",
-      "umpire": null,
+      "umpire": "Paul Clemons",
       "lineup_confirmed": false
     },
     "first_inning": {},
