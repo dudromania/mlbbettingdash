@@ -24,6 +24,29 @@
   },
   {
     "date": "2026-08-14",
+    "game_time": "6:15 PM CT",
+    "home_abbr": "ATL",
+    "away_abbr": "AZ",
+    "home_sp": "Chris Sale",
+    "away_sp": "Brandon Pfaadt",
+    "nrfi_prob": 45.4,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Chris Sale",
+      "first_inning": {},
+      "season_era": 2.2
+    },
+    "away_pitcher": {
+      "name": "Brandon Pfaadt",
+      "first_inning": {},
+      "season_era": 3.36
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-14",
     "game_time": "5:10 PM CT",
     "home_abbr": "CIN",
     "away_abbr": "MIA",
@@ -41,29 +64,6 @@
       "name": "Sandy Alcantara",
       "first_inning": {},
       "season_era": 3.52
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-14",
-    "game_time": "6:15 PM CT",
-    "home_abbr": "ATL",
-    "away_abbr": "AZ",
-    "home_sp": "TBD",
-    "away_sp": "Brandon Pfaadt",
-    "nrfi_prob": 40.4,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_pitcher": {
-      "name": "Brandon Pfaadt",
-      "first_inning": {},
-      "season_era": 3.36
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -232,29 +232,6 @@
   {
     "date": "2026-08-14",
     "game_time": "6:10 PM CT",
-    "home_abbr": "TB",
-    "away_abbr": "BAL",
-    "home_sp": "Steven Matz",
-    "away_sp": "TBD",
-    "nrfi_prob": 32.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Steven Matz",
-      "first_inning": {},
-      "season_era": 5.46
-    },
-    "away_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-14",
-    "game_time": "6:10 PM CT",
     "home_abbr": "NYM",
     "away_abbr": "WSH",
     "home_sp": "Robert Stock",
@@ -317,6 +294,29 @@
       "name": "Seth Lugo",
       "first_inning": {},
       "season_era": 4.41
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-14",
+    "game_time": "6:10 PM CT",
+    "home_abbr": "TB",
+    "away_abbr": "BAL",
+    "home_sp": "Steven Matz",
+    "away_sp": "Chris Bassitt",
+    "nrfi_prob": 26.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Steven Matz",
+      "first_inning": {},
+      "season_era": 5.46
+    },
+    "away_pitcher": {
+      "name": "Chris Bassitt",
+      "first_inning": {},
+      "season_era": 5.27
     },
     "away_batting_1st": {},
     "home_batting_1st": {}

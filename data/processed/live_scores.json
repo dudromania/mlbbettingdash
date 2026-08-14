@@ -1,15 +1,15 @@
 {
   "date": "2026-08-14",
-  "fetched_at": "2026-08-14T11:09:25",
+  "fetched_at": "2026-08-14T13:10:54",
   "games": [
     {
       "home_abbr": "CHC",
       "away_abbr": "STL",
-      "home_score": "",
-      "away_score": "",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
+      "home_score": "0",
+      "away_score": "0",
+      "state": "in",
+      "detail": "Warmup",
+      "is_live": true,
       "is_final": false
     },
     {
@@ -18,7 +18,7 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
