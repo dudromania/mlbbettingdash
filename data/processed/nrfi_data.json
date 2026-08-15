@@ -1,46 +1,23 @@
 [
   {
     "date": "2026-08-14",
-    "game_time": "5:40 PM CT",
-    "home_abbr": "DET",
-    "away_abbr": "CWS",
-    "home_sp": "Jackson Jobe",
-    "away_sp": "Sean Newcomb",
-    "nrfi_prob": 53.6,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Jackson Jobe",
-      "first_inning": {},
-      "season_era": 0.0
-    },
-    "away_pitcher": {
-      "name": "Sean Newcomb",
-      "first_inning": {},
-      "season_era": 2.66
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-14",
     "game_time": "6:15 PM CT",
     "home_abbr": "ATL",
     "away_abbr": "AZ",
     "home_sp": "Chris Sale",
     "away_sp": "Brandon Pfaadt",
-    "nrfi_prob": 45.4,
+    "nrfi_prob": 45.8,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Chris Sale",
       "first_inning": {},
-      "season_era": 2.2
+      "season_era": 2.21
     },
     "away_pitcher": {
       "name": "Brandon Pfaadt",
       "first_inning": {},
-      "season_era": 3.36
+      "season_era": 3.25
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -52,18 +29,18 @@
     "away_abbr": "MIA",
     "home_sp": "Chase Burns",
     "away_sp": "Sandy Alcantara",
-    "nrfi_prob": 42.9,
+    "nrfi_prob": 43.9,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Chase Burns",
       "first_inning": {},
-      "season_era": 2.61
+      "season_era": 2.47
     },
     "away_pitcher": {
       "name": "Sandy Alcantara",
       "first_inning": {},
-      "season_era": 3.52
+      "season_era": 3.43
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -98,18 +75,18 @@
     "away_abbr": "SD",
     "home_sp": "Gavin Williams",
     "away_sp": "Michael King",
-    "nrfi_prob": 39.6,
+    "nrfi_prob": 39.0,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Gavin Williams",
       "first_inning": {},
-      "season_era": 3.55
+      "season_era": 3.58
     },
     "away_pitcher": {
       "name": "Michael King",
       "first_inning": {},
-      "season_era": 3.37
+      "season_era": 3.49
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -144,64 +121,41 @@
     "away_abbr": "BOS",
     "home_sp": "Bubba Chandler",
     "away_sp": "Jake Bennett",
-    "nrfi_prob": 37.4,
+    "nrfi_prob": 36.4,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Bubba Chandler",
       "first_inning": {},
-      "season_era": 4.26
+      "season_era": 4.23
     },
     "away_pitcher": {
       "name": "Jake Bennett",
       "first_inning": {},
-      "season_era": 3.17
+      "season_era": 3.46
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
   },
   {
     "date": "2026-08-14",
-    "game_time": "1:20 PM CT",
-    "home_abbr": "CHC",
-    "away_abbr": "STL",
-    "home_sp": "Clay Holmes",
-    "away_sp": "Matthew Liberatore",
-    "nrfi_prob": 36.6,
+    "game_time": "5:40 PM CT",
+    "home_abbr": "DET",
+    "away_abbr": "CWS",
+    "home_sp": "Jackson Jobe",
+    "away_sp": "Sean Newcomb",
+    "nrfi_prob": 35.0,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Clay Holmes",
+      "name": "Jackson Jobe",
       "first_inning": {},
-      "season_era": 2.59
+      "season_era": 6.23
     },
     "away_pitcher": {
-      "name": "Matthew Liberatore",
+      "name": "Sean Newcomb",
       "first_inning": {},
-      "season_era": 4.92
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-14",
-    "game_time": "8:40 PM CT",
-    "home_abbr": "ATH",
-    "away_abbr": "TEX",
-    "home_sp": "TBD",
-    "away_sp": "Kumar Rocker",
-    "nrfi_prob": 35.7,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_pitcher": {
-      "name": "Kumar Rocker",
-      "first_inning": {},
-      "season_era": 4.46
+      "season_era": 2.6
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -213,18 +167,18 @@
     "away_abbr": "NYY",
     "home_sp": "Shane Bieber",
     "away_sp": "Gerrit Cole",
-    "nrfi_prob": 32.5,
+    "nrfi_prob": 34.0,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Shane Bieber",
       "first_inning": {},
-      "season_era": 5.48
+      "season_era": 5.01
     },
     "away_pitcher": {
       "name": "Gerrit Cole",
       "first_inning": {},
-      "season_era": 3.35
+      "season_era": 3.21
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -236,18 +190,41 @@
     "away_abbr": "WSH",
     "home_sp": "Robert Stock",
     "away_sp": "Andrew Alvarez",
-    "nrfi_prob": 31.1,
+    "nrfi_prob": 31.8,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Robert Stock",
       "first_inning": {},
-      "season_era": 10.13
+      "season_era": 6.75
     },
     "away_pitcher": {
       "name": "Andrew Alvarez",
       "first_inning": {},
-      "season_era": 3.76
+      "season_era": 3.56
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-14",
+    "game_time": "8:40 PM CT",
+    "home_abbr": "ATH",
+    "away_abbr": "TEX",
+    "home_sp": "Gage Jump",
+    "away_sp": "Kumar Rocker",
+    "nrfi_prob": 31.7,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Gage Jump",
+      "first_inning": {},
+      "season_era": 4.46
+    },
+    "away_pitcher": {
+      "name": "Kumar Rocker",
+      "first_inning": {},
+      "season_era": 4.46
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -305,18 +282,18 @@
     "away_abbr": "BAL",
     "home_sp": "Steven Matz",
     "away_sp": "Chris Bassitt",
-    "nrfi_prob": 26.0,
+    "nrfi_prob": 26.2,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Steven Matz",
       "first_inning": {},
-      "season_era": 5.46
+      "season_era": 5.37
     },
     "away_pitcher": {
       "name": "Chris Bassitt",
       "first_inning": {},
-      "season_era": 5.27
+      "season_era": 5.19
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
