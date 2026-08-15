@@ -1,35 +1,35 @@
 {
   "date": "2026-08-15",
-  "fetched_at": "2026-08-15T13:11:48",
+  "fetched_at": "2026-08-15T15:12:10",
   "games": [
     {
       "home_abbr": "DET",
       "away_abbr": "CHW",
-      "home_score": "1",
-      "away_score": "3",
+      "home_score": "3",
+      "away_score": "4",
+      "state": "post",
+      "detail": "Final",
+      "is_live": false,
+      "is_final": true
+    },
+    {
+      "home_abbr": "CHC",
+      "away_abbr": "STL",
+      "home_score": "3",
+      "away_score": "7",
       "state": "in",
       "detail": "In Progress",
       "is_live": true,
       "is_final": false
     },
     {
-      "home_abbr": "CHC",
-      "away_abbr": "STL",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "in",
-      "detail": "Warmup",
-      "is_live": true,
-      "is_final": false
-    },
-    {
       "home_abbr": "TOR",
       "away_abbr": "NYY",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
+      "home_score": "1",
+      "away_score": "1",
+      "state": "in",
+      "detail": "In Progress",
+      "is_live": true,
       "is_final": false
     },
     {
@@ -37,9 +37,9 @@
       "away_abbr": "COL",
       "home_score": "0",
       "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
+      "state": "in",
+      "detail": "In Progress",
+      "is_live": true,
       "is_final": false
     },
     {
@@ -47,16 +47,16 @@
       "away_abbr": "WSH",
       "home_score": "0",
       "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
+      "state": "in",
+      "detail": "In Progress",
+      "is_live": true,
       "is_final": false
     },
     {
       "home_abbr": "TB",
       "away_abbr": "BAL",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
       "detail": "Pre-Game",
       "is_live": false,
@@ -65,8 +65,8 @@
     {
       "home_abbr": "CIN",
       "away_abbr": "MIA",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
       "detail": "Pre-Game",
       "is_live": false,
@@ -75,20 +75,20 @@
     {
       "home_abbr": "CLE",
       "away_abbr": "SD",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
     {
       "home_abbr": "HOU",
       "away_abbr": "SEA",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
@@ -105,20 +105,20 @@
     {
       "home_abbr": "PIT",
       "away_abbr": "BOS",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
     {
       "home_abbr": "ATL",
       "away_abbr": "ARI",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
@@ -128,7 +128,7 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },

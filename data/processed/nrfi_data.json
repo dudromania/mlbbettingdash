@@ -29,18 +29,18 @@
     "away_abbr": "NYY",
     "home_sp": "Braydon Fisher",
     "away_sp": "Cam Schlittler",
-    "nrfi_prob": 44.5,
+    "nrfi_prob": 44.7,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Braydon Fisher",
       "first_inning": {},
-      "season_era": 3.54
+      "season_era": 3.48
     },
     "away_pitcher": {
       "name": "Cam Schlittler",
       "first_inning": {},
-      "season_era": 2.21
+      "season_era": 2.22
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -52,18 +52,18 @@
     "away_abbr": "CWS",
     "home_sp": "Troy Melton",
     "away_sp": "Anthony Kay",
-    "nrfi_prob": 44.3,
+    "nrfi_prob": 44.2,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Troy Melton",
       "first_inning": {},
-      "season_era": 1.73
+      "season_era": 1.71
     },
     "away_pitcher": {
       "name": "Anthony Kay",
       "first_inning": {},
-      "season_era": 3.97
+      "season_era": 4.01
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -116,29 +116,6 @@
   },
   {
     "date": "2026-08-15",
-    "game_time": "1:20 PM CT",
-    "home_abbr": "CHC",
-    "away_abbr": "STL",
-    "home_sp": "Matthew Boyd",
-    "away_sp": "Michael McGreevy",
-    "nrfi_prob": 38.7,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Matthew Boyd",
-      "first_inning": {},
-      "season_era": 3.5
-    },
-    "away_pitcher": {
-      "name": "Michael McGreevy",
-      "first_inning": {},
-      "season_era": 3.64
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-15",
     "game_time": "6:10 PM CT",
     "home_abbr": "HOU",
     "away_abbr": "SEA",
@@ -166,7 +143,7 @@
     "home_abbr": "CLE",
     "away_abbr": "SD",
     "home_sp": "Joey Cantillo",
-    "away_sp": "TBD",
+    "away_sp": "Wandy Peralta",
     "nrfi_prob": 38.0,
     "label": "LEAN YRFI",
     "confidence": "low",
@@ -176,9 +153,32 @@
       "season_era": 3.91
     },
     "away_pitcher": {
-      "name": "Casey Mize",
+      "name": "Wandy Peralta",
       "first_inning": {},
-      "season_era": 3.38
+      "season_era": 3.39
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-15",
+    "game_time": "1:20 PM CT",
+    "home_abbr": "CHC",
+    "away_abbr": "STL",
+    "home_sp": "Matthew Boyd",
+    "away_sp": "Michael McGreevy",
+    "nrfi_prob": 37.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Matthew Boyd",
+      "first_inning": {},
+      "season_era": 4.02
+    },
+    "away_pitcher": {
+      "name": "Michael McGreevy",
+      "first_inning": {},
+      "season_era": 3.5
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -311,7 +311,7 @@
     "home_pitcher": {
       "name": "Logan Webb",
       "first_inning": {},
-      "season_era": 3.59
+      "season_era": 3.58
     },
     "away_pitcher": {
       "name": "Michael Lorenzen",
