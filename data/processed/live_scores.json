@@ -1,15 +1,15 @@
 {
   "date": "2026-08-15",
-  "fetched_at": "2026-08-15T11:11:43",
+  "fetched_at": "2026-08-15T13:11:48",
   "games": [
     {
       "home_abbr": "DET",
       "away_abbr": "CHW",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
+      "home_score": "1",
+      "away_score": "3",
+      "state": "in",
+      "detail": "In Progress",
+      "is_live": true,
       "is_final": false
     },
     {
@@ -17,16 +17,16 @@
       "away_abbr": "STL",
       "home_score": "0",
       "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
+      "state": "in",
+      "detail": "Warmup",
+      "is_live": true,
       "is_final": false
     },
     {
       "home_abbr": "TOR",
       "away_abbr": "NYY",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
       "detail": "Pre-Game",
       "is_live": false,
@@ -35,20 +35,20 @@
     {
       "home_abbr": "SF",
       "away_abbr": "COL",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
     {
       "home_abbr": "NYM",
       "away_abbr": "WSH",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
@@ -58,7 +58,7 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
@@ -68,7 +68,7 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
@@ -98,7 +98,7 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },

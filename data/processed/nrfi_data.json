@@ -24,29 +24,6 @@
   },
   {
     "date": "2026-08-15",
-    "game_time": "12:10 PM CT",
-    "home_abbr": "DET",
-    "away_abbr": "CWS",
-    "home_sp": "Troy Melton",
-    "away_sp": "Anthony Kay",
-    "nrfi_prob": 45.5,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Troy Melton",
-      "first_inning": {},
-      "season_era": 1.46
-    },
-    "away_pitcher": {
-      "name": "Anthony Kay",
-      "first_inning": {},
-      "season_era": 3.96
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-15",
     "game_time": "2:07 PM CT",
     "home_abbr": "TOR",
     "away_abbr": "NYY",
@@ -64,6 +41,29 @@
       "name": "Cam Schlittler",
       "first_inning": {},
       "season_era": 2.21
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-15",
+    "game_time": "12:10 PM CT",
+    "home_abbr": "DET",
+    "away_abbr": "CWS",
+    "home_sp": "Troy Melton",
+    "away_sp": "Anthony Kay",
+    "nrfi_prob": 44.3,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Troy Melton",
+      "first_inning": {},
+      "season_era": 1.73
+    },
+    "away_pitcher": {
+      "name": "Anthony Kay",
+      "first_inning": {},
+      "season_era": 3.97
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
