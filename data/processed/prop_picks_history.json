@@ -1,6 +1,6 @@
 [
   {
-    "id": 2297,
+    "id": 2305,
     "game_date": "2026-08-15",
     "game_pick_id": null,
     "player_name": "Troy Melton",
@@ -11,9 +11,9 @@
     "prop_line": 5.5,
     "prop_odds": -160,
     "prop_book": "bovada",
-    "predicted_value": 4.4,
-    "predicted_prob_over": 0.28,
-    "edge": 0.105,
+    "predicted_value": 4.6,
+    "predicted_prob_over": 0.314,
+    "edge": 0.07,
     "confidence": null,
     "player_season_avg": 7.17,
     "player_last7_avg": null,
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-08-15 18:12:47",
+    "created_at": "2026-08-15 20:13:09",
     "graded_at": null
   },
   {
-    "id": 2299,
+    "id": 2304,
     "game_date": "2026-08-15",
     "game_pick_id": null,
     "player_name": "Logan Webb",
@@ -42,7 +42,7 @@
     "predicted_prob_over": 0.384,
     "edge": 0.077,
     "confidence": null,
-    "player_season_avg": 6.57,
+    "player_season_avg": 6.56,
     "player_last7_avg": null,
     "player_last30_avg": null,
     "matchup_factor": null,
@@ -50,11 +50,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-08-15 18:12:47",
+    "created_at": "2026-08-15 20:13:09",
     "graded_at": null
   },
   {
-    "id": 2300,
+    "id": 2306,
     "game_date": "2026-08-15",
     "game_pick_id": null,
     "player_name": "Justin Wrobleski",
@@ -77,11 +77,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-08-15 18:12:47",
+    "created_at": "2026-08-15 20:13:09",
     "graded_at": null
   },
   {
-    "id": 2296,
+    "id": 2302,
     "game_date": "2026-08-15",
     "game_pick_id": null,
     "player_name": "Jacob Misiorowski",
@@ -104,11 +104,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-08-15 18:12:47",
+    "created_at": "2026-08-15 20:13:09",
     "graded_at": null
   },
   {
-    "id": 2301,
+    "id": 2307,
     "game_date": "2026-08-15",
     "game_pick_id": null,
     "player_name": "Ian Seymour",
@@ -131,11 +131,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-08-15 18:12:47",
+    "created_at": "2026-08-15 20:13:09",
     "graded_at": null
   },
   {
-    "id": 2298,
+    "id": 2303,
     "game_date": "2026-08-15",
     "game_pick_id": null,
     "player_name": "Brady Singer",
@@ -158,7 +158,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-08-15 18:12:47",
+    "created_at": "2026-08-15 20:13:09",
     "graded_at": null
   },
   {

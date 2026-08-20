@@ -1,207 +1,61 @@
 {
-  "CHW@DET": {
-    "home": [
-      {
-        "name": "Gleyber Torres",
-        "pos": "2B",
-        "bats": "R",
-        "avg": 0.26,
-        "ops": 0.767,
-        "hr": 8
-      },
-      {
-        "name": "Hao-Yu Lee",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.265,
-        "ops": 0.717,
-        "hr": 6
-      },
-      {
-        "name": "Dillon Dingler",
-        "pos": "DH",
-        "bats": "R",
-        "avg": 0.261,
-        "ops": 0.827,
-        "hr": 26
-      },
-      {
-        "name": "Kevin McGonigle",
-        "pos": "SS",
-        "bats": "L",
-        "avg": 0.285,
-        "ops": 0.814,
-        "hr": 12
-      },
-      {
-        "name": "Eduardo Valencia",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.396,
-        "ops": 1.253,
-        "hr": 5
-      },
-      {
-        "name": "Spencer Torkelson",
-        "pos": "1B",
-        "bats": "R",
-        "avg": 0.232,
-        "ops": 0.748,
-        "hr": 20
-      },
-      {
-        "name": "Ben Malgeri",
-        "pos": "LF",
-        "bats": "R",
-        "avg": 0.283,
-        "ops": 0.882,
-        "hr": 3
-      },
-      {
-        "name": "Javier B\u00e1ez",
-        "pos": "CF",
-        "bats": "R",
-        "avg": 0.285,
-        "ops": 0.7,
-        "hr": 2
-      },
-      {
-        "name": "Corey Julks",
-        "pos": "RF",
-        "bats": "R",
-        "avg": 0.0,
-        "ops": 0.0,
-        "hr": 0
-      }
-    ],
-    "away": [
-      {
-        "name": "Sam Antonacci",
-        "pos": "LF",
-        "bats": "L",
-        "avg": 0.278,
-        "ops": 0.775,
-        "hr": 8
-      },
-      {
-        "name": "Munetaka Murakami",
-        "pos": "1B",
-        "bats": "L",
-        "avg": 0.235,
-        "ops": 0.909,
-        "hr": 27
-      },
-      {
-        "name": "Miguel Vargas",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.239,
-        "ops": 0.829,
-        "hr": 27
-      },
-      {
-        "name": "Andrew Benintendi",
-        "pos": "DH",
-        "bats": "L",
-        "avg": 0.245,
-        "ops": 0.73,
-        "hr": 12
-      },
-      {
-        "name": "Braden Montgomery",
-        "pos": "RF",
-        "bats": "S",
-        "avg": 0.237,
-        "ops": 0.71,
-        "hr": 4
-      },
-      {
-        "name": "Colson Montgomery",
-        "pos": "SS",
-        "bats": "L",
-        "avg": 0.209,
-        "ops": 0.72,
-        "hr": 26
-      },
-      {
-        "name": "Chase Meidroth",
-        "pos": "2B",
-        "bats": "R",
-        "avg": 0.28,
-        "ops": 0.777,
-        "hr": 12
-      },
-      {
-        "name": "Tristan Peters",
-        "pos": "CF",
-        "bats": "L",
-        "avg": 0.268,
-        "ops": 0.755,
-        "hr": 7
-      },
-      {
-        "name": "Jake Rogers",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.183,
-        "ops": 0.617,
-        "hr": 3
-      }
-    ]
-  },
-  "STL@CHC": {
+  "DET@PIT": {
     "home": [],
     "away": []
   },
-  "NYY@TOR": {
+  "SD@NYM": {
     "home": [],
     "away": []
   },
-  "COL@SF": {
+  "ATL@MIN": {
     "home": [],
     "away": []
   },
-  "WSH@NYM": {
+  "CHW@CHC": {
     "home": [],
     "away": []
   },
-  "BAL@TB": {
+  "ARI@BOS": {
     "home": [],
     "away": []
   },
-  "MIA@CIN": {
+  "MIA@PHI": {
     "home": [],
     "away": []
   },
-  "SD@CLE": {
+  "NYY@BAL": {
     "home": [],
     "away": []
   },
-  "SEA@HOU": {
+  "SF@CLE": {
     "home": [],
     "away": []
   },
-  "PHI@MIN": {
+  "STL@CIN": {
     "home": [],
     "away": []
   },
-  "BOS@PIT": {
+  "TOR@TB": {
     "home": [],
     "away": []
   },
-  "ARI@ATL": {
+  "ATH@KC": {
     "home": [],
     "away": []
   },
-  "MIL@LAD": {
+  "SEA@MIL": {
     "home": [],
     "away": []
   },
-  "KC@LAA": {
+  "WSH@TEX": {
     "home": [],
     "away": []
   },
-  "TEX@ATH": {
+  "LAA@HOU": {
+    "home": [],
+    "away": []
+  },
+  "LAD@COL": {
     "home": [],
     "away": []
   }
