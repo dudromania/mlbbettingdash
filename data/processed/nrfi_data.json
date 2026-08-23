@@ -24,6 +24,29 @@
   },
   {
     "date": "2026-08-23",
+    "game_time": "1:10 PM CT",
+    "home_abbr": "KC",
+    "away_abbr": "DET",
+    "home_sp": "Daniel Lynch IV",
+    "away_sp": "Jacob Waguespack",
+    "nrfi_prob": 49.0,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Daniel Lynch IV",
+      "first_inning": {},
+      "season_era": 2.83
+    },
+    "away_pitcher": {
+      "name": "Jacob Waguespack",
+      "first_inning": {},
+      "season_era": 1.95
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-23",
     "game_time": "12:35 PM CT",
     "home_abbr": "PHI",
     "away_abbr": "STL",
@@ -64,29 +87,6 @@
       "name": "Nolan McLean",
       "first_inning": {},
       "season_era": 3.34
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-23",
-    "game_time": "1:10 PM CT",
-    "home_abbr": "KC",
-    "away_abbr": "DET",
-    "home_sp": "Daniel Lynch IV",
-    "away_sp": "TBD",
-    "nrfi_prob": 42.6,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Daniel Lynch IV",
-      "first_inning": {},
-      "season_era": 2.83
-    },
-    "away_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
