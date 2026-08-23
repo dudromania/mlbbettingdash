@@ -52,18 +52,18 @@
     "away_abbr": "STL",
     "home_sp": "Cristopher S\u00e1nchez",
     "away_sp": "Kyle Leahy",
-    "nrfi_prob": 44.6,
+    "nrfi_prob": 44.7,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Cristopher S\u00e1nchez",
       "first_inning": {},
-      "season_era": 2.51
+      "season_era": 2.53
     },
     "away_pitcher": {
       "name": "Kyle Leahy",
       "first_inning": {},
-      "season_era": 3.24
+      "season_era": 3.2
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -98,18 +98,18 @@
     "away_abbr": "TOR",
     "home_sp": "Carlos Rod\u00f3n",
     "away_sp": "Jos\u00e9 Soriano",
-    "nrfi_prob": 41.6,
+    "nrfi_prob": 42.0,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Carlos Rod\u00f3n",
       "first_inning": {},
-      "season_era": 3.22
+      "season_era": 3.14
     },
     "away_pitcher": {
       "name": "Jos\u00e9 Soriano",
       "first_inning": {},
-      "season_era": 3.23
+      "season_era": 3.21
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -121,18 +121,18 @@
     "away_abbr": "TB",
     "home_sp": "Shane Baz",
     "away_sp": "Nick Martinez",
-    "nrfi_prob": 38.9,
+    "nrfi_prob": 39.3,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Shane Baz",
       "first_inning": {},
-      "season_era": 4.02
+      "season_era": 3.96
     },
     "away_pitcher": {
       "name": "Nick Martinez",
       "first_inning": {},
-      "season_era": 3.05
+      "season_era": 3.02
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -328,18 +328,18 @@
     "away_abbr": "WSH",
     "home_sp": "Janson Junk",
     "away_sp": "Jackson Kent",
-    "nrfi_prob": 29.0,
+    "nrfi_prob": 29.2,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Janson Junk",
       "first_inning": {},
-      "season_era": 4.37
+      "season_era": 4.32
     },
     "away_pitcher": {
       "name": "Jackson Kent",
       "first_inning": {},
-      "season_era": 9.39
+      "season_era": 9.35
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
