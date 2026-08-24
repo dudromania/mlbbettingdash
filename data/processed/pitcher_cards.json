@@ -1602,6 +1602,133 @@
     "game_time_ct": "8:40 PM CT"
   },
   {
+    "player_id": 664353,
+    "name": "Jos\u00e9 Urquidy",
+    "team_abbr": "CHW",
+    "opponent": "TEX",
+    "throws": "R",
+    "days_rest": null,
+    "trend": "neutral",
+    "l3_era": null,
+    "l5_era": null,
+    "l3_k_pct": null,
+    "season_stats": {
+      "season": 2026,
+      "W": 2,
+      "L": 1,
+      "ERA": 5.06,
+      "FIP": 2.98,
+      "WHIP": 1.5,
+      "IP": 16.0,
+      "GS": 0,
+      "G": 7,
+      "K": 17,
+      "BB": 2,
+      "HR": 2,
+      "H": 22,
+      "ER": 9,
+      "K9": 9.56,
+      "BB9": 1.12,
+      "HR9": 1.12,
+      "K_pct": 23.9,
+      "BB_pct": 2.8,
+      "K_BB": 8.5
+    },
+    "last_starts": [],
+    "arsenal": [
+      {
+        "pitch_type": "CH",
+        "pitch_name": "Changeup",
+        "usage_pct": 29.2,
+        "avg_velo": 83.7,
+        "avg_spin": 2069,
+        "whiff_pct": 25.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "FF",
+        "pitch_name": "4-Seam FB",
+        "usage_pct": 26.0,
+        "avg_velo": 92.6,
+        "avg_spin": 2275,
+        "whiff_pct": 13.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "CU",
+        "pitch_name": "Curveball",
+        "usage_pct": 18.2,
+        "avg_velo": 77.9,
+        "avg_spin": 2714,
+        "whiff_pct": 21.1,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "SI",
+        "pitch_name": "Sinker",
+        "usage_pct": 16.6,
+        "avg_velo": 92.8,
+        "avg_spin": 2175,
+        "whiff_pct": 0.0,
+        "put_away_pct": 0.0
+      },
+      {
+        "pitch_type": "ST",
+        "pitch_name": "Sweeper",
+        "usage_pct": 8.6,
+        "avg_velo": 81.2,
+        "avg_spin": 2615,
+        "whiff_pct": 50.0,
+        "put_away_pct": 0.0
+      }
+    ],
+    "splits": {
+      "vs_lhb": {
+        "avg": 0.229,
+        "ops": 0.564,
+        "k_pct": 27.8,
+        "bb_pct": 2.8,
+        "hr9": 0.0,
+        "whip": 0.93,
+        "bf": 36
+      },
+      "vs_rhb": {
+        "avg": 0.412,
+        "ops": 1.105,
+        "k_pct": 20.0,
+        "bb_pct": 2.9,
+        "hr9": 2.84,
+        "whip": 2.37,
+        "bf": 35
+      }
+    },
+    "k_prediction": {
+      "predicted_ks": 5.0,
+      "k_low_25": 3,
+      "k_high_75": 6,
+      "expected_ip": 5.5,
+      "season_k9": 9.56,
+      "last3_k9": 9.56,
+      "blended_k9": 9.56,
+      "opp_k_pct": 23.0,
+      "opp_k_pct_vs_lg": 0.5,
+      "opp_adj": 1.022,
+      "park_adj": 1.0,
+      "ump_adj": 1.0,
+      "hand_adj": 1.0,
+      "pitch_mix_adj": 1.0,
+      "combined_adj": 1.022,
+      "lambda_k": 5.972,
+      "model_used": "xgboost_poisson",
+      "umpire": null,
+      "lineup_confirmed": false
+    },
+    "first_inning": {},
+    "game_id": 824557,
+    "game_date": "2026-08-24",
+    "game_time_ct": "6:40 PM CT"
+  },
+  {
     "player_id": 677958,
     "name": "Kumar Rocker",
     "team_abbr": "TEX",

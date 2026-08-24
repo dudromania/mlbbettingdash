@@ -139,29 +139,6 @@
   },
   {
     "date": "2026-08-24",
-    "game_time": "6:40 PM CT",
-    "home_abbr": "CWS",
-    "away_abbr": "TEX",
-    "home_sp": "TBD",
-    "away_sp": "Kumar Rocker",
-    "nrfi_prob": 35.7,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_pitcher": {
-      "name": "Kumar Rocker",
-      "first_inning": {},
-      "season_era": 4.46
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-24",
     "game_time": "5:45 PM CT",
     "home_abbr": "WSH",
     "away_abbr": "COL",
@@ -179,6 +156,29 @@
       "name": "Ryan Feltner",
       "first_inning": {},
       "season_era": 5.97
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-24",
+    "game_time": "6:40 PM CT",
+    "home_abbr": "CWS",
+    "away_abbr": "TEX",
+    "home_sp": "Jos\u00e9 Urquidy",
+    "away_sp": "Kumar Rocker",
+    "nrfi_prob": 29.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jos\u00e9 Urquidy",
+      "first_inning": {},
+      "season_era": 5.06
+    },
+    "away_pitcher": {
+      "name": "Kumar Rocker",
+      "first_inning": {},
+      "season_era": 4.46
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
