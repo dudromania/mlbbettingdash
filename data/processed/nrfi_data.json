@@ -1,29 +1,6 @@
 [
   {
     "date": "2026-08-24",
-    "game_time": "8:45 PM CT",
-    "home_abbr": "SF",
-    "away_abbr": "CIN",
-    "home_sp": "TBD",
-    "away_sp": "Chase Burns",
-    "nrfi_prob": 44.0,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_pitcher": {
-      "name": "Chase Burns",
-      "first_inning": {},
-      "season_era": 2.51
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-24",
     "game_time": "8:40 PM CT",
     "home_abbr": "SEA",
     "away_abbr": "PHI",
@@ -133,6 +110,29 @@
       "name": "Drew Rasmussen",
       "first_inning": {},
       "season_era": 3.01
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-24",
+    "game_time": "8:45 PM CT",
+    "home_abbr": "SF",
+    "away_abbr": "CIN",
+    "home_sp": "Carson Whisenhunt",
+    "away_sp": "Chase Burns",
+    "nrfi_prob": 35.3,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Carson Whisenhunt",
+      "first_inning": {},
+      "season_era": 7.03
+    },
+    "away_pitcher": {
+      "name": "Chase Burns",
+      "first_inning": {},
+      "season_era": 2.51
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
