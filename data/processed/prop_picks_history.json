@@ -1,6 +1,6 @@
 [
   {
-    "id": 2348,
+    "id": 2350,
     "game_date": "2026-08-25",
     "game_pick_id": null,
     "player_name": "Tyler Glasnow",
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-08-25 16:12:07",
+    "created_at": "2026-08-25 18:11:45",
     "graded_at": null
   },
   {
-    "id": 2347,
+    "id": 2349,
     "game_date": "2026-08-25",
     "game_pick_id": null,
     "player_name": "Jacob deGrom",
@@ -50,7 +50,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-08-25 16:12:07",
+    "created_at": "2026-08-25 18:11:45",
     "graded_at": null
   },
   {

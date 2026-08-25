@@ -93,6 +93,29 @@
   },
   {
     "date": "2026-08-25",
+    "game_time": "5:40 PM CT",
+    "home_abbr": "MIA",
+    "away_abbr": "BOS",
+    "home_sp": "Tyler Phillips",
+    "away_sp": "Payton Tolle",
+    "nrfi_prob": 40.3,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Tyler Phillips",
+      "first_inning": {},
+      "season_era": 3.67
+    },
+    "away_pitcher": {
+      "name": "Payton Tolle",
+      "first_inning": {},
+      "season_era": 3.08
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-25",
     "game_time": "8:40 PM CT",
     "home_abbr": "SD",
     "away_abbr": "PIT",
@@ -116,29 +139,6 @@
   },
   {
     "date": "2026-08-25",
-    "game_time": "5:40 PM CT",
-    "home_abbr": "MIA",
-    "away_abbr": "BOS",
-    "home_sp": "TBD",
-    "away_sp": "Payton Tolle",
-    "nrfi_prob": 37.2,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Ryan Gusto",
-      "first_inning": {},
-      "season_era": 4.37
-    },
-    "away_pitcher": {
-      "name": "Payton Tolle",
-      "first_inning": {},
-      "season_era": 3.08
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-25",
     "game_time": "6:40 PM CT",
     "home_abbr": "CWS",
     "away_abbr": "TEX",
@@ -156,29 +156,6 @@
       "name": "Jacob deGrom",
       "first_inning": {},
       "season_era": 3.77
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-25",
-    "game_time": "6:45 PM CT",
-    "home_abbr": "STL",
-    "away_abbr": "BAL",
-    "home_sp": "TBD",
-    "away_sp": "Chris Bassitt",
-    "nrfi_prob": 33.1,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_pitcher": {
-      "name": "Chris Bassitt",
-      "first_inning": {},
-      "season_era": 5.08
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -340,6 +317,29 @@
       "name": "Seth Lugo",
       "first_inning": {},
       "season_era": 4.71
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-25",
+    "game_time": "6:45 PM CT",
+    "home_abbr": "STL",
+    "away_abbr": "BAL",
+    "home_sp": "Matthew Liberatore",
+    "away_sp": "Chris Bassitt",
+    "nrfi_prob": 27.3,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Matthew Liberatore",
+      "first_inning": {},
+      "season_era": 5.04
+    },
+    "away_pitcher": {
+      "name": "Chris Bassitt",
+      "first_inning": {},
+      "season_era": 5.08
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
