@@ -29,18 +29,18 @@
     "away_abbr": "CHC",
     "home_sp": "Eduardo Rodriguez",
     "away_sp": "Matthew Boyd",
-    "nrfi_prob": 40.0,
+    "nrfi_prob": 40.2,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Eduardo Rodriguez",
       "first_inning": {},
-      "season_era": 2.61
+      "season_era": 2.6
     },
     "away_pitcher": {
       "name": "Matthew Boyd",
       "first_inning": {},
-      "season_era": 4.15
+      "season_era": 4.12
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -87,29 +87,6 @@
       "name": "Kyle Bradish",
       "first_inning": {},
       "season_era": 3.7
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-26",
-    "game_time": "12:10 PM CT",
-    "home_abbr": "DET",
-    "away_abbr": "TB",
-    "home_sp": "Troy Melton",
-    "away_sp": "Freddy Peralta",
-    "nrfi_prob": 37.9,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Troy Melton",
-      "first_inning": {},
-      "season_era": 1.82
-    },
-    "away_pitcher": {
-      "name": "Freddy Peralta",
-      "first_inning": {},
-      "season_era": 5.2
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -213,18 +190,18 @@
     "away_abbr": "CIN",
     "home_sp": "Logan Webb",
     "away_sp": "Nick Lodolo",
-    "nrfi_prob": 32.0,
+    "nrfi_prob": 32.2,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Logan Webb",
       "first_inning": {},
-      "season_era": 3.75
+      "season_era": 3.72
     },
     "away_pitcher": {
       "name": "Nick Lodolo",
       "first_inning": {},
-      "season_era": 5.04
+      "season_era": 5.02
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
