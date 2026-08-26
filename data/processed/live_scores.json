@@ -1,6 +1,6 @@
 {
-  "date": "2026-08-25",
-  "fetched_at": "2026-08-25T15:10:53",
+  "date": "2026-08-26",
+  "fetched_at": "2026-08-26T11:08:37",
   "games": [
     {
       "home_abbr": "DET",
@@ -13,68 +13,8 @@
       "is_final": false
     },
     {
-      "home_abbr": "MIA",
-      "away_abbr": "BOS",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
-      "is_final": false
-    },
-    {
-      "home_abbr": "WSH",
-      "away_abbr": "COL",
-      "home_score": "",
-      "away_score": "",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
-      "is_final": false
-    },
-    {
-      "home_abbr": "NYY",
-      "away_abbr": "HOU",
-      "home_score": "",
-      "away_score": "",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
-      "is_final": false
-    },
-    {
-      "home_abbr": "TOR",
-      "away_abbr": "KC",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
-      "is_final": false
-    },
-    {
-      "home_abbr": "NYM",
-      "away_abbr": "MIL",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
-      "is_final": false
-    },
-    {
-      "home_abbr": "ATL",
-      "away_abbr": "LAD",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
-      "is_final": false
-    },
-    {
-      "home_abbr": "CHW",
-      "away_abbr": "TEX",
+      "home_abbr": "ARI",
+      "away_abbr": "CHC",
       "home_score": "",
       "away_score": "",
       "state": "pre",
@@ -83,28 +23,18 @@
       "is_final": false
     },
     {
-      "home_abbr": "STL",
-      "away_abbr": "BAL",
-      "home_score": "0",
-      "away_score": "0",
+      "home_abbr": "SF",
+      "away_abbr": "CIN",
+      "home_score": "",
+      "away_score": "",
       "state": "pre",
-      "detail": "Pre-Game",
+      "detail": "Scheduled",
       "is_live": false,
       "is_final": false
     },
     {
       "home_abbr": "LAA",
       "away_abbr": "CLE",
-      "home_score": "",
-      "away_score": "",
-      "state": "pre",
-      "detail": "Scheduled",
-      "is_live": false,
-      "is_final": false
-    },
-    {
-      "home_abbr": "ARI",
-      "away_abbr": "CHC",
       "home_score": "",
       "away_score": "",
       "state": "pre",
@@ -123,16 +53,6 @@
       "is_final": false
     },
     {
-      "home_abbr": "ATH",
-      "away_abbr": "MIN",
-      "home_score": "",
-      "away_score": "",
-      "state": "pre",
-      "detail": "Scheduled",
-      "is_live": false,
-      "is_final": false
-    },
-    {
       "home_abbr": "SEA",
       "away_abbr": "PHI",
       "home_score": "",
@@ -143,8 +63,88 @@
       "is_final": false
     },
     {
-      "home_abbr": "SF",
-      "away_abbr": "CIN",
+      "home_abbr": "MIA",
+      "away_abbr": "BOS",
+      "home_score": "",
+      "away_score": "",
+      "state": "pre",
+      "detail": "Scheduled",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "WSH",
+      "away_abbr": "COL",
+      "home_score": "",
+      "away_score": "",
+      "state": "pre",
+      "detail": "Scheduled",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "NYY",
+      "away_abbr": "HOU",
+      "home_score": "",
+      "away_score": "",
+      "state": "pre",
+      "detail": "Scheduled",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "TOR",
+      "away_abbr": "KC",
+      "home_score": "",
+      "away_score": "",
+      "state": "pre",
+      "detail": "Scheduled",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "NYM",
+      "away_abbr": "MIL",
+      "home_score": "",
+      "away_score": "",
+      "state": "pre",
+      "detail": "Scheduled",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "ATL",
+      "away_abbr": "LAD",
+      "home_score": "",
+      "away_score": "",
+      "state": "pre",
+      "detail": "Scheduled",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "CHW",
+      "away_abbr": "TEX",
+      "home_score": "",
+      "away_score": "",
+      "state": "pre",
+      "detail": "Scheduled",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "STL",
+      "away_abbr": "BAL",
+      "home_score": "",
+      "away_score": "",
+      "state": "pre",
+      "detail": "Scheduled",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "ATH",
+      "away_abbr": "MIN",
       "home_score": "",
       "away_score": "",
       "state": "pre",

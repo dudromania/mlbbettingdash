@@ -24,29 +24,6 @@
   },
   {
     "date": "2026-08-26",
-    "game_time": "6:05 PM CT",
-    "home_abbr": "NYY",
-    "away_abbr": "HOU",
-    "home_sp": "TBD",
-    "away_sp": "Peter Lambert",
-    "nrfi_prob": 40.1,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Gerrit Cole",
-      "first_inning": {},
-      "season_era": 3.11
-    },
-    "away_pitcher": {
-      "name": "Peter Lambert",
-      "first_inning": {},
-      "season_era": 3.68
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-26",
     "game_time": "2:40 PM CT",
     "home_abbr": "AZ",
     "away_abbr": "CHC",
@@ -179,6 +156,29 @@
       "name": "MacKenzie Gore",
       "first_inning": {},
       "season_era": 4.26
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-26",
+    "game_time": "6:05 PM CT",
+    "home_abbr": "NYY",
+    "away_abbr": "HOU",
+    "home_sp": "Elmer Rodr\u00edguez",
+    "away_sp": "Peter Lambert",
+    "nrfi_prob": 33.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Elmer Rodr\u00edguez",
+      "first_inning": {},
+      "season_era": 4.76
+    },
+    "away_pitcher": {
+      "name": "Peter Lambert",
+      "first_inning": {},
+      "season_era": 3.68
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
