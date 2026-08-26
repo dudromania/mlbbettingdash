@@ -98,18 +98,18 @@
     "away_abbr": "TB",
     "home_sp": "Troy Melton",
     "away_sp": "Freddy Peralta",
-    "nrfi_prob": 38.1,
-    "label": "NEUTRAL",
+    "nrfi_prob": 37.9,
+    "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Troy Melton",
       "first_inning": {},
-      "season_era": 1.7
+      "season_era": 1.82
     },
     "away_pitcher": {
       "name": "Freddy Peralta",
       "first_inning": {},
-      "season_era": 5.33
+      "season_era": 5.2
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -208,6 +208,29 @@
   },
   {
     "date": "2026-08-26",
+    "game_time": "2:45 PM CT",
+    "home_abbr": "SF",
+    "away_abbr": "CIN",
+    "home_sp": "Logan Webb",
+    "away_sp": "Nick Lodolo",
+    "nrfi_prob": 32.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Logan Webb",
+      "first_inning": {},
+      "season_era": 3.75
+    },
+    "away_pitcher": {
+      "name": "Nick Lodolo",
+      "first_inning": {},
+      "season_era": 5.04
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-26",
     "game_time": "8:05 PM CT",
     "home_abbr": "ATH",
     "away_abbr": "MIN",
@@ -248,29 +271,6 @@
       "name": "Joey Cantillo",
       "first_inning": {},
       "season_era": 3.73
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-26",
-    "game_time": "2:45 PM CT",
-    "home_abbr": "SF",
-    "away_abbr": "CIN",
-    "home_sp": "Landen Roupp",
-    "away_sp": "Nick Lodolo",
-    "nrfi_prob": 29.9,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Landen Roupp",
-      "first_inning": {},
-      "season_era": 4.34
-    },
-    "away_pitcher": {
-      "name": "Nick Lodolo",
-      "first_inning": {},
-      "season_era": 5.04
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
