@@ -47,6 +47,29 @@
   },
   {
     "date": "2026-08-27",
+    "game_time": "1:15 PM CT",
+    "home_abbr": "STL",
+    "away_abbr": "BAL",
+    "home_sp": "Gordon Graceffo",
+    "away_sp": "Trevor Rogers",
+    "nrfi_prob": 38.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Gordon Graceffo",
+      "first_inning": {},
+      "season_era": 3.13
+    },
+    "away_pitcher": {
+      "name": "Trevor Rogers",
+      "first_inning": {},
+      "season_era": 4.14
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-27",
     "game_time": "6:05 PM CT",
     "home_abbr": "NYY",
     "away_abbr": "HOU",
@@ -87,29 +110,6 @@
       "name": "Noah Cameron",
       "first_inning": {},
       "season_era": 4.02
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-27",
-    "game_time": "1:15 PM CT",
-    "home_abbr": "STL",
-    "away_abbr": "BAL",
-    "home_sp": "TBD",
-    "away_sp": "Trevor Rogers",
-    "nrfi_prob": 29.8,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Quinn Mathews",
-      "first_inning": {},
-      "season_era": 6.43
-    },
-    "away_pitcher": {
-      "name": "Trevor Rogers",
-      "first_inning": {},
-      "season_era": 4.14
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
