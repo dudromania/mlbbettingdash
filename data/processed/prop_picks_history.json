@@ -1,6 +1,6 @@
 [
   {
-    "id": 2362,
+    "id": 2366,
     "game_date": "2026-08-26",
     "game_pick_id": null,
     "player_name": "Sean Burke",
@@ -20,14 +20,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-26 18:09:57",
-    "graded_at": null
+    "actual_value": 3.0,
+    "result": "W",
+    "pnl": 120.0,
+    "created_at": "2026-08-26 20:09:28",
+    "graded_at": "2026-08-27 13:00:18"
   },
   {
-    "id": 2363,
+    "id": 2367,
     "game_date": "2026-08-26",
     "game_pick_id": null,
     "player_name": "MacKenzie Gore",
@@ -47,14 +47,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-26 18:09:57",
-    "graded_at": null
+    "actual_value": 4.0,
+    "result": "W",
+    "pnl": 64.1025641025641,
+    "created_at": "2026-08-26 20:09:28",
+    "graded_at": "2026-08-27 13:00:18"
   },
   {
-    "id": 2364,
+    "id": 2368,
     "game_date": "2026-08-26",
     "game_pick_id": null,
     "player_name": "Landen Roupp",
@@ -77,11 +77,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-08-26 18:09:57",
+    "created_at": "2026-08-26 20:09:28",
     "graded_at": null
   },
   {
-    "id": 2361,
+    "id": 2365,
     "game_date": "2026-08-26",
     "game_pick_id": null,
     "player_name": "Joey Cantillo",
@@ -101,11 +101,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-26 18:09:57",
-    "graded_at": null
+    "actual_value": 1.0,
+    "result": "W",
+    "pnl": 86.95652173913044,
+    "created_at": "2026-08-26 20:09:28",
+    "graded_at": "2026-08-27 13:00:18"
   },
   {
     "id": 2352,
