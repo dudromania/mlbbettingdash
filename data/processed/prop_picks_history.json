@@ -1,6 +1,6 @@
 [
   {
-    "id": 2377,
+    "id": 2380,
     "game_date": "2026-08-27",
     "game_pick_id": null,
     "player_name": "Yoshinobu Yamamoto",
@@ -20,14 +20,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-27 18:08:25",
-    "graded_at": null
+    "actual_value": 8.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-27 20:08:54",
+    "graded_at": "2026-08-28 13:00:17"
   },
   {
-    "id": 2375,
+    "id": 2378,
     "game_date": "2026-08-27",
     "game_pick_id": null,
     "player_name": "Jacob Misiorowski",
@@ -47,14 +47,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-27 18:08:25",
-    "graded_at": null
+    "actual_value": 6.0,
+    "result": "W",
+    "pnl": 87.71929824561404,
+    "created_at": "2026-08-27 20:08:54",
+    "graded_at": "2026-08-28 13:00:17"
   },
   {
-    "id": 2376,
+    "id": 2379,
     "game_date": "2026-08-27",
     "game_pick_id": null,
     "player_name": "Chris Sale",
@@ -74,11 +74,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-27 18:08:25",
-    "graded_at": null
+    "actual_value": 11.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-27 20:08:54",
+    "graded_at": "2026-08-28 13:00:17"
   },
   {
     "id": 2366,
