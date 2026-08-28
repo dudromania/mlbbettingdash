@@ -28,7 +28,7 @@
     "home_abbr": "TOR",
     "away_abbr": "SEA",
     "home_sp": "Dylan Cease",
-    "away_sp": "TBD",
+    "away_sp": "Emerson Hancock",
     "nrfi_prob": 44.6,
     "label": "NEUTRAL",
     "confidence": "low",
@@ -38,9 +38,9 @@
       "season_era": 2.37
     },
     "away_pitcher": {
-      "name": "TBD",
+      "name": "Emerson Hancock",
       "first_inning": {},
-      "season_era": null
+      "season_era": 3.37
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -305,18 +305,18 @@
     "away_abbr": "CIN",
     "home_sp": "David Peterson",
     "away_sp": "Rhett Lowder",
-    "nrfi_prob": 26.7,
+    "nrfi_prob": 26.9,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "David Peterson",
       "first_inning": {},
-      "season_era": 5.17
+      "season_era": 5.11
     },
     "away_pitcher": {
       "name": "Rhett Lowder",
       "first_inning": {},
-      "season_era": 5.13
+      "season_era": 5.14
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
