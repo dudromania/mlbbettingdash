@@ -6,18 +6,18 @@
     "away_abbr": "LAD",
     "home_sp": "Keider Montero",
     "away_sp": "Blake Snell",
-    "nrfi_prob": 44.1,
+    "nrfi_prob": 45.0,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Keider Montero",
       "first_inning": {},
-      "season_era": 3.23
+      "season_era": 3.24
     },
     "away_pitcher": {
       "name": "Blake Snell",
       "first_inning": {},
-      "season_era": 2.63
+      "season_era": 2.42
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -52,18 +52,18 @@
     "away_abbr": "BOS",
     "home_sp": "Carlos Rod\u00f3n",
     "away_sp": "Jake Bennett",
-    "nrfi_prob": 41.4,
+    "nrfi_prob": 41.5,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Carlos Rod\u00f3n",
       "first_inning": {},
-      "season_era": 3.12
+      "season_era": 3.2
     },
     "away_pitcher": {
       "name": "Jake Bennett",
       "first_inning": {},
-      "season_era": 3.38
+      "season_era": 3.27
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -81,7 +81,7 @@
     "home_pitcher": {
       "name": "Cade Cavalli",
       "first_inning": {},
-      "season_era": 3.21
+      "season_era": 3.2
     },
     "away_pitcher": {
       "name": "Sandy Alcantara",
@@ -139,6 +139,29 @@
   },
   {
     "date": "2026-08-29",
+    "game_time": "2:07 PM CT",
+    "home_abbr": "TOR",
+    "away_abbr": "SEA",
+    "home_sp": "Jos\u00e9 Soriano",
+    "away_sp": "Kade Anderson",
+    "nrfi_prob": 37.2,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jos\u00e9 Soriano",
+      "first_inning": {},
+      "season_era": 3.44
+    },
+    "away_pitcher": {
+      "name": "Kade Anderson",
+      "first_inning": {},
+      "season_era": 4.05
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-08-29",
     "game_time": "3:10 PM CT",
     "home_abbr": "TB",
     "away_abbr": "SD",
@@ -185,29 +208,6 @@
   },
   {
     "date": "2026-08-29",
-    "game_time": "2:07 PM CT",
-    "home_abbr": "TOR",
-    "away_abbr": "SEA",
-    "home_sp": "Jos\u00e9 Soriano",
-    "away_sp": "Kade Anderson",
-    "nrfi_prob": 34.3,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Jos\u00e9 Soriano",
-      "first_inning": {},
-      "season_era": 3.43
-    },
-    "away_pitcher": {
-      "name": "Kade Anderson",
-      "first_inning": {},
-      "season_era": 4.76
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-08-29",
     "game_time": "3:10 PM CT",
     "home_abbr": "ATL",
     "away_abbr": "COL",
@@ -231,23 +231,23 @@
   },
   {
     "date": "2026-08-29",
-    "game_time": "1:20 PM CT",
-    "home_abbr": "CHC",
-    "away_abbr": "CIN",
-    "home_sp": "Kevin Gausman",
-    "away_sp": "Andrew Abbott",
-    "nrfi_prob": 33.2,
+    "game_time": "1:10 PM CT",
+    "home_abbr": "MIN",
+    "away_abbr": "CWS",
+    "home_sp": "Bailey Ober",
+    "away_sp": "Erick Fedde",
+    "nrfi_prob": 33.1,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Kevin Gausman",
+      "name": "Bailey Ober",
       "first_inning": {},
       "season_era": 4.37
     },
     "away_pitcher": {
-      "name": "Andrew Abbott",
+      "name": "Erick Fedde",
       "first_inning": {},
-      "season_era": 4.15
+      "season_era": 4.16
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -277,23 +277,23 @@
   },
   {
     "date": "2026-08-29",
-    "game_time": "1:10 PM CT",
-    "home_abbr": "MIN",
-    "away_abbr": "CWS",
-    "home_sp": "Bailey Ober",
-    "away_sp": "Erick Fedde",
-    "nrfi_prob": 32.6,
+    "game_time": "1:20 PM CT",
+    "home_abbr": "CHC",
+    "away_abbr": "CIN",
+    "home_sp": "Kevin Gausman",
+    "away_sp": "Andrew Abbott",
+    "nrfi_prob": 31.3,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Bailey Ober",
+      "name": "Kevin Gausman",
       "first_inning": {},
-      "season_era": 4.49
+      "season_era": 4.52
     },
     "away_pitcher": {
-      "name": "Erick Fedde",
+      "name": "Andrew Abbott",
       "first_inning": {},
-      "season_era": 4.18
+      "season_era": 4.49
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
