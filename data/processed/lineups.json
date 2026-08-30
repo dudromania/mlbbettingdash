@@ -1,7 +1,680 @@
 {
+  "MIA@WSH": {
+    "home": [
+      {
+        "name": "CJ Abrams",
+        "pos": "2B",
+        "bats": "L",
+        "avg": 0.269,
+        "ops": 0.856,
+        "hr": 29
+      },
+      {
+        "name": "Abimelec Ortiz",
+        "pos": "DH",
+        "bats": "L",
+        "avg": 0.235,
+        "ops": 0.728,
+        "hr": 5
+      },
+      {
+        "name": "Andr\u00e9s Chaparro",
+        "pos": "1B",
+        "bats": "R",
+        "avg": 0.246,
+        "ops": 0.884,
+        "hr": 9
+      },
+      {
+        "name": "Daylen Lile",
+        "pos": "LF",
+        "bats": "L",
+        "avg": 0.252,
+        "ops": 0.733,
+        "hr": 18
+      },
+      {
+        "name": "Dylan Crews",
+        "pos": "RF",
+        "bats": "R",
+        "avg": 0.223,
+        "ops": 0.66,
+        "hr": 10
+      },
+      {
+        "name": "Jorbit Vivas",
+        "pos": "3B",
+        "bats": "L",
+        "avg": 0.236,
+        "ops": 0.646,
+        "hr": 3
+      },
+      {
+        "name": "Harry Ford",
+        "pos": "C",
+        "bats": "R",
+        "avg": 0.197,
+        "ops": 0.712,
+        "hr": 3
+      },
+      {
+        "name": "Jacob Young",
+        "pos": "CF",
+        "bats": "R",
+        "avg": 0.247,
+        "ops": 0.71,
+        "hr": 10
+      },
+      {
+        "name": "Nasim Nu\u00f1ez",
+        "pos": "SS",
+        "bats": "S",
+        "avg": 0.214,
+        "ops": 0.542,
+        "hr": 1
+      }
+    ],
+    "away": [
+      {
+        "name": "Heriberto Hern\u00e1ndez",
+        "pos": "LF",
+        "bats": "R",
+        "avg": 0.235,
+        "ops": 0.785,
+        "hr": 22
+      },
+      {
+        "name": "Otto Lopez",
+        "pos": "SS",
+        "bats": "R",
+        "avg": 0.306,
+        "ops": 0.781,
+        "hr": 9
+      },
+      {
+        "name": "Agust\u00edn Ram\u00edrez",
+        "pos": "DH",
+        "bats": "R",
+        "avg": 0.228,
+        "ops": 0.661,
+        "hr": 2
+      },
+      {
+        "name": "Esteury Ruiz",
+        "pos": "RF",
+        "bats": "R",
+        "avg": 0.236,
+        "ops": 0.783,
+        "hr": 6
+      },
+      {
+        "name": "Xavier Edwards",
+        "pos": "2B",
+        "bats": "S",
+        "avg": 0.283,
+        "ops": 0.737,
+        "hr": 6
+      },
+      {
+        "name": "Javier Sanoja",
+        "pos": "3B",
+        "bats": "R",
+        "avg": 0.281,
+        "ops": 0.743,
+        "hr": 6
+      },
+      {
+        "name": "Leo Jim\u00e9nez",
+        "pos": "1B",
+        "bats": "R",
+        "avg": 0.208,
+        "ops": 0.584,
+        "hr": 2
+      },
+      {
+        "name": "Jakob Marsee",
+        "pos": "CF",
+        "bats": "L",
+        "avg": 0.209,
+        "ops": 0.651,
+        "hr": 8
+      },
+      {
+        "name": "Brian Navarreto",
+        "pos": "C",
+        "bats": "R",
+        "avg": 0.114,
+        "ops": 0.429,
+        "hr": 1
+      }
+    ]
+  },
+  "COL@ATL": {
+    "home": [
+      {
+        "name": "Drake Baldwin",
+        "pos": "DH",
+        "bats": "L",
+        "avg": 0.275,
+        "ops": 0.81,
+        "hr": 22
+      },
+      {
+        "name": "Ronald Acu\u00f1a Jr.",
+        "pos": "RF",
+        "bats": "R",
+        "avg": 0.236,
+        "ops": 0.749,
+        "hr": 13
+      },
+      {
+        "name": "Matt Olson",
+        "pos": "1B",
+        "bats": "L",
+        "avg": 0.259,
+        "ops": 0.865,
+        "hr": 37
+      },
+      {
+        "name": "Michael Harris II",
+        "pos": "CF",
+        "bats": "L",
+        "avg": 0.296,
+        "ops": 0.82,
+        "hr": 22
+      },
+      {
+        "name": "Mauricio Dub\u00f3n",
+        "pos": "LF",
+        "bats": "R",
+        "avg": 0.27,
+        "ops": 0.704,
+        "hr": 10
+      },
+      {
+        "name": "Ozzie Albies",
+        "pos": "2B",
+        "bats": "S",
+        "avg": 0.254,
+        "ops": 0.724,
+        "hr": 20
+      },
+      {
+        "name": "Sean Murphy",
+        "pos": "C",
+        "bats": "R",
+        "avg": 0.212,
+        "ops": 0.553,
+        "hr": 1
+      },
+      {
+        "name": "Austin Riley",
+        "pos": "3B",
+        "bats": "R",
+        "avg": 0.22,
+        "ops": 0.654,
+        "hr": 15
+      },
+      {
+        "name": "Ha-Seong Kim",
+        "pos": "SS",
+        "bats": "R",
+        "avg": 0.084,
+        "ops": 0.267,
+        "hr": 0
+      }
+    ],
+    "away": [
+      {
+        "name": "Jake McCarthy",
+        "pos": "CF",
+        "bats": "L",
+        "avg": 0.29,
+        "ops": 0.804,
+        "hr": 13
+      },
+      {
+        "name": "Connor Norby",
+        "pos": "2B",
+        "bats": "R",
+        "avg": 0.225,
+        "ops": 0.696,
+        "hr": 6
+      },
+      {
+        "name": "Hunter Goodman",
+        "pos": "DH",
+        "bats": "R",
+        "avg": 0.254,
+        "ops": 0.866,
+        "hr": 36
+      },
+      {
+        "name": "TJ Rumfield",
+        "pos": "1B",
+        "bats": "L",
+        "avg": 0.289,
+        "ops": 0.819,
+        "hr": 13
+      },
+      {
+        "name": "Willi Castro",
+        "pos": "3B",
+        "bats": "S",
+        "avg": 0.263,
+        "ops": 0.757,
+        "hr": 15
+      },
+      {
+        "name": "Mickey Moniak",
+        "pos": "LF",
+        "bats": "L",
+        "avg": 0.253,
+        "ops": 0.807,
+        "hr": 21
+      },
+      {
+        "name": "Troy Johnston",
+        "pos": "RF",
+        "bats": "L",
+        "avg": 0.287,
+        "ops": 0.761,
+        "hr": 4
+      },
+      {
+        "name": "Brett Sullivan",
+        "pos": "C",
+        "bats": "L",
+        "avg": 0.231,
+        "ops": 0.701,
+        "hr": 7
+      },
+      {
+        "name": "Ryan Ritter",
+        "pos": "SS",
+        "bats": "R",
+        "avg": 0.2,
+        "ops": 0.45,
+        "hr": 0
+      }
+    ]
+  },
   "BOS@NYY": {
     "home": [],
-    "away": []
+    "away": [
+      {
+        "name": "Roman Anthony",
+        "pos": "DH",
+        "bats": "L",
+        "avg": 0.229,
+        "ops": 0.675,
+        "hr": 1
+      },
+      {
+        "name": "Ceddanne Rafaela",
+        "pos": "CF",
+        "bats": "R",
+        "avg": 0.284,
+        "ops": 0.77,
+        "hr": 16
+      },
+      {
+        "name": "Wilyer Abreu",
+        "pos": "RF",
+        "bats": "L",
+        "avg": 0.254,
+        "ops": 0.801,
+        "hr": 23
+      },
+      {
+        "name": "Willson Contreras",
+        "pos": "1B",
+        "bats": "R",
+        "avg": 0.276,
+        "ops": 0.906,
+        "hr": 26
+      },
+      {
+        "name": "Adley Rutschman",
+        "pos": "C",
+        "bats": "S",
+        "avg": 0.24,
+        "ops": 0.727,
+        "hr": 9
+      },
+      {
+        "name": "Caleb Durbin",
+        "pos": "3B",
+        "bats": "R",
+        "avg": 0.253,
+        "ops": 0.717,
+        "hr": 12
+      },
+      {
+        "name": "Jarren Duran",
+        "pos": "LF",
+        "bats": "L",
+        "avg": 0.208,
+        "ops": 0.63,
+        "hr": 18
+      },
+      {
+        "name": "Trevor Story",
+        "pos": "SS",
+        "bats": "R",
+        "avg": 0.206,
+        "ops": 0.547,
+        "hr": 3
+      },
+      {
+        "name": "Nick Sogard",
+        "pos": "2B",
+        "bats": "S",
+        "avg": 0.264,
+        "ops": 0.773,
+        "hr": 3
+      }
+    ]
+  },
+  "SEA@TOR": {
+    "home": [
+      {
+        "name": "Brett Bateman",
+        "pos": "CF",
+        "bats": "L",
+        "avg": 0.329,
+        "ops": 0.761,
+        "hr": 0
+      },
+      {
+        "name": "Vladimir Guerrero Jr.",
+        "pos": "1B",
+        "bats": "R",
+        "avg": 0.258,
+        "ops": 0.682,
+        "hr": 7
+      },
+      {
+        "name": "Alejandro Kirk",
+        "pos": "C",
+        "bats": "R",
+        "avg": 0.273,
+        "ops": 0.755,
+        "hr": 7
+      },
+      {
+        "name": "George Springer",
+        "pos": "DH",
+        "bats": "R",
+        "avg": 0.251,
+        "ops": 0.745,
+        "hr": 14
+      },
+      {
+        "name": "Nathan Lukes",
+        "pos": "RF",
+        "bats": "L",
+        "avg": 0.264,
+        "ops": 0.706,
+        "hr": 10
+      },
+      {
+        "name": "Kazuma Okamoto",
+        "pos": "3B",
+        "bats": "R",
+        "avg": 0.23,
+        "ops": 0.745,
+        "hr": 27
+      },
+      {
+        "name": "Andr\u00e9s Gim\u00e9nez",
+        "pos": "SS",
+        "bats": "L",
+        "avg": 0.241,
+        "ops": 0.643,
+        "hr": 8
+      },
+      {
+        "name": "Charles McAdoo",
+        "pos": "2B",
+        "bats": "R",
+        "avg": 0.243,
+        "ops": 0.646,
+        "hr": 2
+      },
+      {
+        "name": "Myles Straw",
+        "pos": "LF",
+        "bats": "R",
+        "avg": 0.227,
+        "ops": 0.629,
+        "hr": 3
+      }
+    ],
+    "away": [
+      {
+        "name": "Randy Arozarena",
+        "pos": "LF",
+        "bats": "R",
+        "avg": 0.271,
+        "ops": 0.827,
+        "hr": 20
+      },
+      {
+        "name": "Dominic Canzone",
+        "pos": "DH",
+        "bats": "L",
+        "avg": 0.256,
+        "ops": 0.81,
+        "hr": 20
+      },
+      {
+        "name": "Julio Rodr\u00edguez",
+        "pos": "CF",
+        "bats": "R",
+        "avg": 0.246,
+        "ops": 0.712,
+        "hr": 20
+      },
+      {
+        "name": "Cal Raleigh",
+        "pos": "C",
+        "bats": "S",
+        "avg": 0.169,
+        "ops": 0.638,
+        "hr": 19
+      },
+      {
+        "name": "Josh Naylor",
+        "pos": "1B",
+        "bats": "L",
+        "avg": 0.271,
+        "ops": 0.7,
+        "hr": 10
+      },
+      {
+        "name": "Taylor Ward",
+        "pos": "RF",
+        "bats": "R",
+        "avg": 0.23,
+        "ops": 0.685,
+        "hr": 7
+      },
+      {
+        "name": "Cole Young",
+        "pos": "2B",
+        "bats": "L",
+        "avg": 0.247,
+        "ops": 0.696,
+        "hr": 16
+      },
+      {
+        "name": "J.P. Crawford",
+        "pos": "SS",
+        "bats": "L",
+        "avg": 0.209,
+        "ops": 0.663,
+        "hr": 10
+      },
+      {
+        "name": "Brock Rodden",
+        "pos": "3B",
+        "bats": "S",
+        "avg": 0.158,
+        "ops": 0.513,
+        "hr": 0
+      }
+    ]
+  },
+  "KC@CLE": {
+    "home": [
+      {
+        "name": "Steven Kwan",
+        "pos": "CF",
+        "bats": "L",
+        "avg": 0.273,
+        "ops": 0.705,
+        "hr": 2
+      },
+      {
+        "name": "Chase DeLauter",
+        "pos": "RF",
+        "bats": "L",
+        "avg": 0.286,
+        "ops": 0.803,
+        "hr": 13
+      },
+      {
+        "name": "Jos\u00e9 Ram\u00edrez",
+        "pos": "DH",
+        "bats": "S",
+        "avg": 0.24,
+        "ops": 0.719,
+        "hr": 10
+      },
+      {
+        "name": "Jo Adell",
+        "pos": "LF",
+        "bats": "R",
+        "avg": 0.236,
+        "ops": 0.692,
+        "hr": 20
+      },
+      {
+        "name": "Nathaniel Lowe",
+        "pos": "1B",
+        "bats": "L",
+        "avg": 0.259,
+        "ops": 0.78,
+        "hr": 14
+      },
+      {
+        "name": "Travis Bazzana",
+        "pos": "2B",
+        "bats": "L",
+        "avg": 0.241,
+        "ops": 0.702,
+        "hr": 9
+      },
+      {
+        "name": "Angel Genao",
+        "pos": "3B",
+        "bats": "S",
+        "avg": 0.268,
+        "ops": 0.677,
+        "hr": 1
+      },
+      {
+        "name": "Austin Hedges",
+        "pos": "C",
+        "bats": "R",
+        "avg": 0.261,
+        "ops": 0.711,
+        "hr": 5
+      },
+      {
+        "name": "Brayan Rocchio",
+        "pos": "SS",
+        "bats": "S",
+        "avg": 0.248,
+        "ops": 0.671,
+        "hr": 10
+      }
+    ],
+    "away": [
+      {
+        "name": "Carter Jensen",
+        "pos": "C",
+        "bats": "L",
+        "avg": 0.221,
+        "ops": 0.719,
+        "hr": 19
+      },
+      {
+        "name": "Bobby Witt Jr.",
+        "pos": "SS",
+        "bats": "R",
+        "avg": 0.287,
+        "ops": 0.819,
+        "hr": 16
+      },
+      {
+        "name": "Jac Caglianone",
+        "pos": "RF",
+        "bats": "L",
+        "avg": 0.285,
+        "ops": 0.833,
+        "hr": 23
+      },
+      {
+        "name": "Salvador Perez",
+        "pos": "DH",
+        "bats": "R",
+        "avg": 0.222,
+        "ops": 0.64,
+        "hr": 17
+      },
+      {
+        "name": "Vinnie Pasquantino",
+        "pos": "1B",
+        "bats": "L",
+        "avg": 0.246,
+        "ops": 0.72,
+        "hr": 9
+      },
+      {
+        "name": "Nick Loftin",
+        "pos": "3B",
+        "bats": "R",
+        "avg": 0.237,
+        "ops": 0.71,
+        "hr": 6
+      },
+      {
+        "name": "John Rave",
+        "pos": "LF",
+        "bats": "L",
+        "avg": 0.225,
+        "ops": 0.712,
+        "hr": 3
+      },
+      {
+        "name": "Tyler Tolbert",
+        "pos": "2B",
+        "bats": "R",
+        "avg": 0.306,
+        "ops": 0.808,
+        "hr": 3
+      },
+      {
+        "name": "Kyle Isbel",
+        "pos": "CF",
+        "bats": "L",
+        "avg": 0.235,
+        "ops": 0.643,
+        "hr": 6
+      }
+    ]
   },
   "LAD@DET": {
     "home": [
@@ -14,16 +687,16 @@
         "hr": 8
       },
       {
-        "name": "Hao-Yu Lee",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.268,
-        "ops": 0.725,
-        "hr": 7
+        "name": "Colt Keith",
+        "pos": "1B",
+        "bats": "L",
+        "avg": 0.262,
+        "ops": 0.732,
+        "hr": 9
       },
       {
         "name": "Kevin McGonigle",
-        "pos": "SS",
+        "pos": "3B",
         "bats": "L",
         "avg": 0.276,
         "ops": 0.797,
@@ -31,27 +704,19 @@
       },
       {
         "name": "Dillon Dingler",
-        "pos": "DH",
+        "pos": "C",
         "bats": "R",
         "avg": 0.252,
         "ops": 0.79,
         "hr": 26
       },
       {
-        "name": "Eduardo Valencia",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.316,
-        "ops": 0.978,
-        "hr": 6
-      },
-      {
-        "name": "Colt Keith",
-        "pos": "1B",
+        "name": "Brett Callahan",
+        "pos": "LF",
         "bats": "L",
-        "avg": 0.262,
-        "ops": 0.732,
-        "hr": 9
+        "avg": 0.292,
+        "ops": 0.875,
+        "hr": 1
       },
       {
         "name": "Zach McKinstry",
@@ -62,12 +727,12 @@
         "hr": 4
       },
       {
-        "name": "Javier B\u00e1ez",
-        "pos": "LF",
+        "name": "Hao-Yu Lee",
+        "pos": "DH",
         "bats": "R",
-        "avg": 0.26,
-        "ops": 0.667,
-        "hr": 2
+        "avg": 0.268,
+        "ops": 0.725,
+        "hr": 7
       },
       {
         "name": "Max Clark",
@@ -75,6 +740,14 @@
         "bats": "L",
         "avg": 0.25,
         "ops": 0.734,
+        "hr": 2
+      },
+      {
+        "name": "Javier B\u00e1ez",
+        "pos": "SS",
+        "bats": "R",
+        "avg": 0.26,
+        "ops": 0.667,
         "hr": 2
       }
     ],
@@ -88,12 +761,12 @@
         "hr": 30
       },
       {
-        "name": "Freddie Freeman",
-        "pos": "1B",
-        "bats": "L",
-        "avg": 0.301,
-        "ops": 0.83,
-        "hr": 15
+        "name": "Tommy Edman",
+        "pos": "2B",
+        "bats": "S",
+        "avg": 0.266,
+        "ops": 0.755,
+        "hr": 5
       },
       {
         "name": "Mookie Betts",
@@ -104,28 +777,12 @@
         "hr": 16
       },
       {
-        "name": "Max Muncy",
-        "pos": "3B",
+        "name": "Freddie Freeman",
+        "pos": "1B",
         "bats": "L",
-        "avg": 0.249,
-        "ops": 0.838,
-        "hr": 26
-      },
-      {
-        "name": "Tommy Edman",
-        "pos": "2B",
-        "bats": "S",
-        "avg": 0.266,
-        "ops": 0.755,
-        "hr": 5
-      },
-      {
-        "name": "Kyle Tucker",
-        "pos": "RF",
-        "bats": "L",
-        "avg": 0.23,
-        "ops": 0.686,
-        "hr": 11
+        "avg": 0.301,
+        "ops": 0.83,
+        "hr": 15
       },
       {
         "name": "Teoscar Hern\u00e1ndez",
@@ -133,6 +790,22 @@
         "bats": "R",
         "avg": 0.245,
         "ops": 0.692,
+        "hr": 11
+      },
+      {
+        "name": "Miguel Rojas",
+        "pos": "3B",
+        "bats": "R",
+        "avg": 0.276,
+        "ops": 0.714,
+        "hr": 3
+      },
+      {
+        "name": "Kyle Tucker",
+        "pos": "RF",
+        "bats": "L",
+        "avg": 0.23,
+        "ops": 0.686,
         "hr": 11
       },
       {
@@ -153,6 +826,83 @@
       }
     ]
   },
+  "SD@TB": {
+    "home": [
+      {
+        "name": "Yandy D\u00edaz",
+        "pos": "DH",
+        "bats": "R",
+        "avg": 0.304,
+        "ops": 0.838,
+        "hr": 20
+      },
+      {
+        "name": "Jonathan Aranda",
+        "pos": "1B",
+        "bats": "L",
+        "avg": 0.279,
+        "ops": 0.786,
+        "hr": 17
+      },
+      {
+        "name": "Junior Caminero",
+        "pos": "3B",
+        "bats": "R",
+        "avg": 0.28,
+        "ops": 0.9,
+        "hr": 36
+      },
+      {
+        "name": "Ryan Vilade",
+        "pos": "RF",
+        "bats": "R",
+        "avg": 0.261,
+        "ops": 0.798,
+        "hr": 11
+      },
+      {
+        "name": "Chandler Simpson",
+        "pos": "LF",
+        "bats": "L",
+        "avg": 0.311,
+        "ops": 0.705,
+        "hr": 0
+      },
+      {
+        "name": "Jonny DeLuca",
+        "pos": "CF",
+        "bats": "R",
+        "avg": 0.267,
+        "ops": 0.727,
+        "hr": 8
+      },
+      {
+        "name": "Jorge Mateo",
+        "pos": "2B",
+        "bats": "R",
+        "avg": 0.232,
+        "ops": 0.655,
+        "hr": 5
+      },
+      {
+        "name": "Nick Fortes",
+        "pos": "C",
+        "bats": "R",
+        "avg": 0.263,
+        "ops": 0.67,
+        "hr": 4
+      },
+      {
+        "name": "Taylor Walls",
+        "pos": "SS",
+        "bats": "S",
+        "avg": 0.221,
+        "ops": 0.599,
+        "hr": 2
+      }
+    ],
+    "away": []
+  },
   "CHW@MIN": {
     "home": [
       {
@@ -167,8 +917,8 @@
         "name": "Brooks Lee",
         "pos": "3B",
         "bats": "S",
-        "avg": 0.247,
-        "ops": 0.739,
+        "avg": 0.246,
+        "ops": 0.737,
         "hr": 22
       },
       {
@@ -176,24 +926,24 @@
         "pos": "2B",
         "bats": "L",
         "avg": 0.239,
-        "ops": 0.761,
+        "ops": 0.759,
         "hr": 22
+      },
+      {
+        "name": "Ryan Jeffers",
+        "pos": "C",
+        "bats": "R",
+        "avg": 0.269,
+        "ops": 0.834,
+        "hr": 10
       },
       {
         "name": "Josh Bell",
         "pos": "DH",
         "bats": "S",
-        "avg": 0.254,
-        "ops": 0.738,
+        "avg": 0.253,
+        "ops": 0.737,
         "hr": 17
-      },
-      {
-        "name": "Royce Lewis",
-        "pos": "1B",
-        "bats": "R",
-        "avg": 0.235,
-        "ops": 0.702,
-        "hr": 13
       },
       {
         "name": "Trevor Larnach",
@@ -204,20 +954,20 @@
         "hr": 11
       },
       {
+        "name": "Royce Lewis",
+        "pos": "1B",
+        "bats": "R",
+        "avg": 0.235,
+        "ops": 0.7,
+        "hr": 13
+      },
+      {
         "name": "Kaelen Culpepper",
         "pos": "SS",
         "bats": "R",
-        "avg": 0.317,
-        "ops": 0.863,
+        "avg": 0.313,
+        "ops": 0.85,
         "hr": 3
-      },
-      {
-        "name": "Victor Caratini",
-        "pos": "C",
-        "bats": "S",
-        "avg": 0.222,
-        "ops": 0.638,
-        "hr": 7
       },
       {
         "name": "Walker Jenkins",
@@ -230,19 +980,19 @@
     ],
     "away": [
       {
-        "name": "Randal Grichuk",
-        "pos": "PH",
-        "bats": "R",
-        "avg": 0.275,
-        "ops": 0.851,
-        "hr": 11
+        "name": "Sam Antonacci",
+        "pos": "2B",
+        "bats": "L",
+        "avg": 0.266,
+        "ops": 0.755,
+        "hr": 8
       },
       {
         "name": "Munetaka Murakami",
         "pos": "1B",
         "bats": "L",
         "avg": 0.221,
-        "ops": 0.862,
+        "ops": 0.864,
         "hr": 29
       },
       {
@@ -250,23 +1000,23 @@
         "pos": "3B",
         "bats": "R",
         "avg": 0.249,
-        "ops": 0.854,
+        "ops": 0.855,
         "hr": 29
       },
       {
         "name": "Andrew Benintendi",
         "pos": "DH",
         "bats": "L",
-        "avg": 0.253,
-        "ops": 0.752,
+        "avg": 0.252,
+        "ops": 0.751,
         "hr": 14
       },
       {
         "name": "Braden Montgomery",
         "pos": "RF",
         "bats": "S",
-        "avg": 0.23,
-        "ops": 0.685,
+        "avg": 0.229,
+        "ops": 0.682,
         "hr": 5
       },
       {
@@ -274,1236 +1024,32 @@
         "pos": "SS",
         "bats": "L",
         "avg": 0.213,
-        "ops": 0.719,
+        "ops": 0.72,
         "hr": 28
-      },
-      {
-        "name": "Chase Meidroth",
-        "pos": "2B",
-        "bats": "R",
-        "avg": 0.271,
-        "ops": 0.744,
-        "hr": 12
       },
       {
         "name": "Tristan Peters",
-        "pos": "CF",
+        "pos": "LF",
         "bats": "L",
         "avg": 0.279,
-        "ops": 0.81,
+        "ops": 0.812,
         "hr": 12
       },
       {
-        "name": "Jake Rogers",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.173,
-        "ops": 0.595,
-        "hr": 4
-      }
-    ]
-  },
-  "PIT@STL": {
-    "home": [
-      {
-        "name": "JJ Wetherholt",
-        "pos": "SS",
-        "bats": "L",
-        "avg": 0.242,
-        "ops": 0.715,
-        "hr": 17
-      },
-      {
-        "name": "Iv\u00e1n Herrera",
-        "pos": "DH",
-        "bats": "R",
-        "avg": 0.242,
-        "ops": 0.732,
-        "hr": 14
-      },
-      {
-        "name": "Alec Burleson",
-        "pos": "1B",
-        "bats": "L",
-        "avg": 0.289,
-        "ops": 0.832,
-        "hr": 21
-      },
-      {
-        "name": "Jordan Walker",
-        "pos": "RF",
-        "bats": "R",
-        "avg": 0.288,
-        "ops": 0.847,
-        "hr": 27
-      },
-      {
-        "name": "Nathan Church",
-        "pos": "CF",
-        "bats": "L",
-        "avg": 0.242,
-        "ops": 0.658,
-        "hr": 10
-      },
-      {
-        "name": "Jos\u00e9 Ferm\u00edn",
-        "pos": "2B",
-        "bats": "R",
-        "avg": 0.241,
-        "ops": 0.667,
-        "hr": 6
-      },
-      {
-        "name": "Nolan Gorman",
-        "pos": "3B",
-        "bats": "L",
-        "avg": 0.191,
-        "ops": 0.601,
-        "hr": 8
-      },
-      {
-        "name": "Joshua B\u00e1ez",
-        "pos": "LF",
-        "bats": "R",
-        "avg": 0.176,
-        "ops": 0.742,
-        "hr": 5
-      },
-      {
-        "name": "Jimmy Crooks",
-        "pos": "C",
-        "bats": "L",
-        "avg": 0.173,
-        "ops": 0.573,
-        "hr": 5
-      }
-    ],
-    "away": [
-      {
-        "name": "Spencer Horwitz",
-        "pos": "1B",
-        "bats": "L",
-        "avg": 0.25,
-        "ops": 0.739,
-        "hr": 10
-      },
-      {
-        "name": "Brandon Lowe",
-        "pos": "2B",
-        "bats": "L",
-        "avg": 0.249,
-        "ops": 0.791,
-        "hr": 28
-      },
-      {
-        "name": "Bryan Reynolds",
-        "pos": "LF",
-        "bats": "S",
-        "avg": 0.26,
-        "ops": 0.79,
-        "hr": 15
-      },
-      {
-        "name": "Nick Gonzales",
-        "pos": "DH",
-        "bats": "R",
-        "avg": 0.306,
-        "ops": 0.759,
-        "hr": 6
-      },
-      {
-        "name": "Oneil Cruz",
-        "pos": "CF",
-        "bats": "L",
-        "avg": 0.265,
-        "ops": 0.84,
-        "hr": 17
-      },
-      {
-        "name": "Jake Mangum",
-        "pos": "RF",
-        "bats": "S",
-        "avg": 0.288,
-        "ops": 0.72,
-        "hr": 4
-      },
-      {
-        "name": "Rafael Flores Jr.",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.237,
-        "ops": 0.871,
-        "hr": 7
-      },
-      {
-        "name": "Jacob Gonzalez",
-        "pos": "SS",
-        "bats": "L",
-        "avg": 0.213,
-        "ops": 0.616,
-        "hr": 6
-      },
-      {
-        "name": "Jared Triolo",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.247,
-        "ops": 0.63,
-        "hr": 2
-      }
-    ]
-  },
-  "CIN@CHC": {
-    "home": [
-      {
-        "name": "Pete Crow-Armstrong",
-        "pos": "CF",
-        "bats": "L",
-        "avg": 0.281,
-        "ops": 0.939,
-        "hr": 35
-      },
-      {
-        "name": "Seiya Suzuki",
-        "pos": "DH",
-        "bats": "R",
-        "avg": 0.276,
-        "ops": 0.851,
-        "hr": 22
-      },
-      {
-        "name": "Alex Bregman",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.254,
-        "ops": 0.761,
-        "hr": 20
-      },
-      {
-        "name": "Michael Busch",
-        "pos": "1B",
-        "bats": "L",
-        "avg": 0.242,
-        "ops": 0.749,
-        "hr": 17
-      },
-      {
-        "name": "Nico Hoerner",
-        "pos": "SS",
-        "bats": "R",
-        "avg": 0.259,
-        "ops": 0.67,
-        "hr": 7
-      },
-      {
-        "name": "Ian Happ",
-        "pos": "LF",
-        "bats": "S",
-        "avg": 0.219,
-        "ops": 0.748,
-        "hr": 23
-      },
-      {
-        "name": "Tyrone Taylor",
-        "pos": "RF",
-        "bats": "R",
-        "avg": 0.268,
-        "ops": 0.82,
-        "hr": 10
-      },
-      {
-        "name": "Pedro Ram\u00edrez",
-        "pos": "2B",
-        "bats": "S",
-        "avg": 0.293,
-        "ops": 0.802,
-        "hr": 4
-      },
-      {
-        "name": "Carson Kelly",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.258,
-        "ops": 0.72,
-        "hr": 9
-      }
-    ],
-    "away": [
-      {
-        "name": "H\u00e9ctor Rodr\u00edguez",
-        "pos": "RF",
-        "bats": "L",
-        "avg": 0.232,
-        "ops": 0.735,
-        "hr": 3
-      },
-      {
-        "name": "Elly De La Cruz",
-        "pos": "SS",
-        "bats": "S",
-        "avg": 0.269,
-        "ops": 0.823,
-        "hr": 21
-      },
-      {
-        "name": "Sal Stewart",
-        "pos": "1B",
-        "bats": "R",
-        "avg": 0.263,
-        "ops": 0.819,
-        "hr": 30
-      },
-      {
-        "name": "JJ Bleday",
-        "pos": "LF",
-        "bats": "L",
-        "avg": 0.218,
-        "ops": 0.76,
-        "hr": 21
-      },
-      {
-        "name": "Tyler Stephenson",
-        "pos": "DH",
-        "bats": "R",
-        "avg": 0.249,
-        "ops": 0.745,
-        "hr": 13
-      },
-      {
-        "name": "Eugenio Su\u00e1rez",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.207,
-        "ops": 0.711,
-        "hr": 20
-      },
-      {
-        "name": "Jose Trevino",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.231,
-        "ops": 0.616,
-        "hr": 5
-      },
-      {
-        "name": "TJ Friedl",
-        "pos": "CF",
-        "bats": "L",
-        "avg": 0.168,
-        "ops": 0.507,
-        "hr": 4
-      },
-      {
-        "name": "Matt McLain",
-        "pos": "2B",
-        "bats": "R",
-        "avg": 0.19,
-        "ops": 0.631,
-        "hr": 13
-      }
-    ]
-  },
-  "SEA@TOR": {
-    "home": [
-      {
-        "name": "Brett Bateman",
-        "pos": "RF",
-        "bats": "L",
-        "avg": 0.324,
-        "ops": 0.746,
-        "hr": 0
-      },
-      {
-        "name": "Alejandro Kirk",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.272,
-        "ops": 0.757,
-        "hr": 7
-      },
-      {
-        "name": "Vladimir Guerrero Jr.",
-        "pos": "1B",
-        "bats": "R",
-        "avg": 0.259,
-        "ops": 0.684,
-        "hr": 7
-      },
-      {
-        "name": "George Springer",
-        "pos": "DH",
-        "bats": "R",
-        "avg": 0.25,
-        "ops": 0.74,
-        "hr": 14
-      },
-      {
-        "name": "Kazuma Okamoto",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.231,
-        "ops": 0.747,
-        "hr": 27
-      },
-      {
-        "name": "Charles McAdoo",
-        "pos": "2B",
-        "bats": "R",
-        "avg": 0.25,
-        "ops": 0.656,
-        "hr": 2
-      },
-      {
-        "name": "Ernie Clement",
-        "pos": "SS",
-        "bats": "R",
-        "avg": 0.279,
-        "ops": 0.698,
-        "hr": 9
-      },
-      {
-        "name": "Daz Cameron",
-        "pos": "LF",
-        "bats": "R",
-        "avg": 0.238,
-        "ops": 0.656,
-        "hr": 1
-      },
-      {
-        "name": "Myles Straw",
-        "pos": "CF",
-        "bats": "R",
-        "avg": 0.222,
-        "ops": 0.618,
-        "hr": 3
-      }
-    ],
-    "away": [
-      {
-        "name": "Randy Arozarena",
-        "pos": "LF",
-        "bats": "R",
-        "avg": 0.272,
-        "ops": 0.832,
-        "hr": 20
-      },
-      {
-        "name": "Dominic Canzone",
-        "pos": "RF",
-        "bats": "L",
-        "avg": 0.258,
-        "ops": 0.817,
-        "hr": 20
-      },
-      {
-        "name": "Julio Rodr\u00edguez",
-        "pos": "CF",
-        "bats": "R",
-        "avg": 0.247,
-        "ops": 0.714,
-        "hr": 20
-      },
-      {
-        "name": "Josh Naylor",
-        "pos": "1B",
-        "bats": "L",
-        "avg": 0.268,
-        "ops": 0.696,
-        "hr": 10
-      },
-      {
-        "name": "Cal Raleigh",
-        "pos": "C",
-        "bats": "S",
-        "avg": 0.168,
-        "ops": 0.634,
-        "hr": 19
-      },
-      {
-        "name": "Cole Young",
-        "pos": "2B",
-        "bats": "L",
-        "avg": 0.248,
-        "ops": 0.697,
-        "hr": 16
-      },
-      {
-        "name": "Taylor Ward",
-        "pos": "DH",
-        "bats": "R",
-        "avg": 0.229,
-        "ops": 0.685,
-        "hr": 7
-      },
-      {
-        "name": "J.P. Crawford",
-        "pos": "SS",
-        "bats": "L",
-        "avg": 0.209,
-        "ops": 0.665,
-        "hr": 10
-      },
-      {
-        "name": "Brock Rodden",
-        "pos": "3B",
-        "bats": "S",
-        "avg": 0.171,
-        "ops": 0.554,
-        "hr": 0
-      }
-    ]
-  },
-  "ARI@SF": {
-    "home": [],
-    "away": []
-  },
-  "MIA@WSH": {
-    "home": [
-      {
-        "name": "CJ Abrams",
-        "pos": "DH",
-        "bats": "L",
-        "avg": 0.272,
-        "ops": 0.864,
-        "hr": 29
-      },
-      {
-        "name": "Abimelec Ortiz",
-        "pos": "1B",
-        "bats": "L",
-        "avg": 0.224,
-        "ops": 0.724,
-        "hr": 5
-      },
-      {
-        "name": "Jos\u00e9 Tena",
-        "pos": "LF",
-        "bats": "L",
-        "avg": 0.233,
-        "ops": 0.702,
-        "hr": 7
-      },
-      {
-        "name": "Daylen Lile",
-        "pos": "RF",
-        "bats": "L",
-        "avg": 0.251,
-        "ops": 0.729,
-        "hr": 18
-      },
-      {
-        "name": "Dylan Crews",
+        "name": "Brenton Doyle",
         "pos": "CF",
         "bats": "R",
         "avg": 0.22,
-        "ops": 0.658,
-        "hr": 10
-      },
-      {
-        "name": "Keibert Ruiz",
-        "pos": "C",
-        "bats": "S",
-        "avg": 0.281,
-        "ops": 0.773,
-        "hr": 9
-      },
-      {
-        "name": "Brady House",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.233,
-        "ops": 0.694,
-        "hr": 10
-      },
-      {
-        "name": "Jorbit Vivas",
-        "pos": "2B",
-        "bats": "L",
-        "avg": 0.235,
-        "ops": 0.642,
+        "ops": 0.584,
         "hr": 3
       },
       {
-        "name": "Nasim Nu\u00f1ez",
-        "pos": "SS",
-        "bats": "S",
-        "avg": 0.216,
-        "ops": 0.548,
-        "hr": 1
-      }
-    ],
-    "away": [
-      {
-        "name": "Kyle Stowers",
-        "pos": "1B",
-        "bats": "L",
-        "avg": 0.242,
-        "ops": 0.785,
-        "hr": 16
-      },
-      {
-        "name": "Heriberto Hern\u00e1ndez",
-        "pos": "LF",
-        "bats": "R",
-        "avg": 0.235,
-        "ops": 0.78,
-        "hr": 21
-      },
-      {
-        "name": "Xavier Edwards",
-        "pos": "2B",
-        "bats": "S",
-        "avg": 0.285,
-        "ops": 0.744,
-        "hr": 6
-      },
-      {
-        "name": "Griffin Conine",
-        "pos": "DH",
-        "bats": "L",
-        "avg": 0.253,
-        "ops": 0.847,
-        "hr": 14
-      },
-      {
-        "name": "Otto Lopez",
-        "pos": "SS",
-        "bats": "R",
-        "avg": 0.307,
-        "ops": 0.786,
-        "hr": 9
-      },
-      {
-        "name": "Jakob Marsee",
-        "pos": "CF",
-        "bats": "L",
-        "avg": 0.211,
-        "ops": 0.655,
-        "hr": 8
-      },
-      {
-        "name": "Javier Sanoja",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.28,
-        "ops": 0.742,
-        "hr": 6
-      },
-      {
-        "name": "Owen Caissie",
-        "pos": "RF",
-        "bats": "L",
-        "avg": 0.224,
-        "ops": 0.71,
-        "hr": 13
-      },
-      {
-        "name": "Joe Mack",
+        "name": "Drew Romo",
         "pos": "C",
-        "bats": "L",
-        "avg": 0.23,
-        "ops": 0.698,
-        "hr": 12
-      }
-    ]
-  },
-  "KC@CLE": {
-    "home": [
-      {
-        "name": "Steven Kwan",
-        "pos": "CF",
-        "bats": "L",
-        "avg": 0.273,
-        "ops": 0.707,
-        "hr": 2
-      },
-      {
-        "name": "Chase DeLauter",
-        "pos": "DH",
-        "bats": "L",
-        "avg": 0.289,
-        "ops": 0.811,
-        "hr": 13
-      },
-      {
-        "name": "Jos\u00e9 Ram\u00edrez",
-        "pos": "3B",
         "bats": "S",
-        "avg": 0.24,
-        "ops": 0.717,
-        "hr": 10
-      },
-      {
-        "name": "Jo Adell",
-        "pos": "RF",
-        "bats": "R",
-        "avg": 0.238,
-        "ops": 0.695,
-        "hr": 20
-      },
-      {
-        "name": "Angel Mart\u00ednez",
-        "pos": "LF",
-        "bats": "S",
-        "avg": 0.242,
-        "ops": 0.698,
-        "hr": 12
-      },
-      {
-        "name": "David Fry",
-        "pos": "1B",
-        "bats": "R",
-        "avg": 0.181,
-        "ops": 0.635,
-        "hr": 6
-      },
-      {
-        "name": "Angel Genao",
-        "pos": "2B",
-        "bats": "S",
-        "avg": 0.284,
-        "ops": 0.715,
-        "hr": 1
-      },
-      {
-        "name": "Austin Hedges",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.266,
-        "ops": 0.723,
-        "hr": 5
-      },
-      {
-        "name": "Brayan Rocchio",
-        "pos": "SS",
-        "bats": "S",
-        "avg": 0.249,
-        "ops": 0.675,
-        "hr": 10
-      }
-    ],
-    "away": [
-      {
-        "name": "Carter Jensen",
-        "pos": "DH",
-        "bats": "L",
-        "avg": 0.223,
-        "ops": 0.724,
-        "hr": 19
-      },
-      {
-        "name": "Bobby Witt Jr.",
-        "pos": "SS",
-        "bats": "R",
-        "avg": 0.288,
-        "ops": 0.824,
-        "hr": 16
-      },
-      {
-        "name": "Jac Caglianone",
-        "pos": "RF",
-        "bats": "L",
-        "avg": 0.283,
-        "ops": 0.833,
-        "hr": 23
-      },
-      {
-        "name": "Salvador Perez",
-        "pos": "1B",
-        "bats": "R",
-        "avg": 0.221,
-        "ops": 0.634,
-        "hr": 17
-      },
-      {
-        "name": "Nick Loftin",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.234,
-        "ops": 0.706,
-        "hr": 6
-      },
-      {
-        "name": "Tyler Tolbert",
-        "pos": "CF",
-        "bats": "R",
-        "avg": 0.3,
-        "ops": 0.793,
-        "hr": 3
-      },
-      {
-        "name": "Isaac Collins",
-        "pos": "2B",
-        "bats": "S",
-        "avg": 0.232,
-        "ops": 0.683,
-        "hr": 6
-      },
-      {
-        "name": "Matthew Lugo",
-        "pos": "LF",
-        "bats": "R",
-        "avg": 1.0,
-        "ops": 2.0,
-        "hr": 0
-      },
-      {
-        "name": "Luke Maile",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.172,
-        "ops": 0.51,
-        "hr": 1
-      }
-    ]
-  },
-  "HOU@NYM": {
-    "home": [
-      {
-        "name": "Francisco Lindor",
-        "pos": "SS",
-        "bats": "S",
-        "avg": 0.233,
-        "ops": 0.737,
-        "hr": 13
-      },
-      {
-        "name": "Juan Soto",
-        "pos": "DH",
-        "bats": "L",
-        "avg": 0.283,
-        "ops": 0.947,
-        "hr": 21
-      },
-      {
-        "name": "Bo Bichette",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.262,
-        "ops": 0.699,
-        "hr": 14
-      },
-      {
-        "name": "Carson Benge",
-        "pos": "RF",
-        "bats": "L",
-        "avg": 0.279,
-        "ops": 0.764,
-        "hr": 16
-      },
-      {
-        "name": "Jared Young",
-        "pos": "1B",
-        "bats": "L",
-        "avg": 0.265,
-        "ops": 0.761,
-        "hr": 8
-      },
-      {
-        "name": "Marcus Semien",
-        "pos": "2B",
-        "bats": "R",
-        "avg": 0.216,
-        "ops": 0.626,
-        "hr": 14
-      },
-      {
-        "name": "A.J. Ewing",
-        "pos": "CF",
-        "bats": "L",
-        "avg": 0.238,
-        "ops": 0.66,
+        "avg": 0.141,
+        "ops": 0.524,
         "hr": 7
-      },
-      {
-        "name": "Brett Baty",
-        "pos": "LF",
-        "bats": "L",
-        "avg": 0.219,
-        "ops": 0.626,
-        "hr": 8
-      },
-      {
-        "name": "Francisco Alvarez",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.233,
-        "ops": 0.718,
-        "hr": 13
-      }
-    ],
-    "away": [
-      {
-        "name": "Jeremy Pe\u00f1a",
-        "pos": "DH",
-        "bats": "R",
-        "avg": 0.285,
-        "ops": 0.821,
-        "hr": 16
-      },
-      {
-        "name": "Yordan Alvarez",
-        "pos": "LF",
-        "bats": "L",
-        "avg": 0.318,
-        "ops": 1.042,
-        "hr": 36
-      },
-      {
-        "name": "Isaac Paredes",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.26,
-        "ops": 0.782,
-        "hr": 17
-      },
-      {
-        "name": "Jose Altuve",
-        "pos": "2B",
-        "bats": "R",
-        "avg": 0.246,
-        "ops": 0.706,
-        "hr": 14
-      },
-      {
-        "name": "Daulton Varsho",
-        "pos": "CF",
-        "bats": "L",
-        "avg": 0.234,
-        "ops": 0.666,
-        "hr": 10
-      },
-      {
-        "name": "Christian Walker",
-        "pos": "1B",
-        "bats": "R",
-        "avg": 0.231,
-        "ops": 0.743,
-        "hr": 24
-      },
-      {
-        "name": "Taylor Trammell",
-        "pos": "RF",
-        "bats": "L",
-        "avg": 0.207,
-        "ops": 0.657,
-        "hr": 7
-      },
-      {
-        "name": "Nick Allen",
-        "pos": "SS",
-        "bats": "R",
-        "avg": 0.264,
-        "ops": 0.655,
-        "hr": 2
-      },
-      {
-        "name": "Christian V\u00e1zquez",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.214,
-        "ops": 0.61,
-        "hr": 7
-      }
-    ]
-  },
-  "SD@TB": {
-    "home": [
-      {
-        "name": "Yandy D\u00edaz",
-        "pos": "DH",
-        "bats": "R",
-        "avg": 0.302,
-        "ops": 0.835,
-        "hr": 20
-      },
-      {
-        "name": "Jonathan Aranda",
-        "pos": "1B",
-        "bats": "L",
-        "avg": 0.279,
-        "ops": 0.782,
-        "hr": 16
-      },
-      {
-        "name": "Junior Caminero",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.28,
-        "ops": 0.894,
-        "hr": 35
-      },
-      {
-        "name": "Liam Hicks",
-        "pos": "C",
-        "bats": "L",
-        "avg": 0.284,
-        "ops": 0.814,
-        "hr": 17
-      },
-      {
-        "name": "Chandler Simpson",
-        "pos": "LF",
-        "bats": "L",
-        "avg": 0.309,
-        "ops": 0.701,
-        "hr": 0
-      },
-      {
-        "name": "Jonny DeLuca",
-        "pos": "RF",
-        "bats": "R",
-        "avg": 0.271,
-        "ops": 0.737,
-        "hr": 8
-      },
-      {
-        "name": "Richie Palacios",
-        "pos": "2B",
-        "bats": "L",
-        "avg": 0.228,
-        "ops": 0.66,
-        "hr": 5
-      },
-      {
-        "name": "Cedric Mullins",
-        "pos": "CF",
-        "bats": "L",
-        "avg": 0.205,
-        "ops": 0.642,
-        "hr": 14
-      },
-      {
-        "name": "Taylor Walls",
-        "pos": "SS",
-        "bats": "S",
-        "avg": 0.217,
-        "ops": 0.595,
-        "hr": 2
-      }
-    ],
-    "away": [
-      {
-        "name": "Fernando Tatis Jr.",
-        "pos": "RF",
-        "bats": "R",
-        "avg": 0.284,
-        "ops": 0.796,
-        "hr": 17
-      },
-      {
-        "name": "Jake Cronenworth",
-        "pos": "SS",
-        "bats": "L",
-        "avg": 0.226,
-        "ops": 0.617,
-        "hr": 4
-      },
-      {
-        "name": "Manny Machado",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.212,
-        "ops": 0.698,
-        "hr": 24
-      },
-      {
-        "name": "Ty France",
-        "pos": "1B",
-        "bats": "R",
-        "avg": 0.285,
-        "ops": 0.856,
-        "hr": 18
-      },
-      {
-        "name": "Jackson Merrill",
-        "pos": "CF",
-        "bats": "L",
-        "avg": 0.241,
-        "ops": 0.717,
-        "hr": 22
-      },
-      {
-        "name": "Luis Campusano",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.287,
-        "ops": 0.862,
-        "hr": 5
-      },
-      {
-        "name": "Gavin Sheets",
-        "pos": "DH",
-        "bats": "L",
-        "avg": 0.21,
-        "ops": 0.703,
-        "hr": 16
-      },
-      {
-        "name": "Luis Rengifo",
-        "pos": "2B",
-        "bats": "S",
-        "avg": 0.242,
-        "ops": 0.638,
-        "hr": 4
-      },
-      {
-        "name": "Dustin Harris",
-        "pos": "LF",
-        "bats": "L",
-        "avg": 0.245,
-        "ops": 0.66,
-        "hr": 0
-      }
-    ]
-  },
-  "COL@ATL": {
-    "home": [
-      {
-        "name": "Drake Baldwin",
-        "pos": "C",
-        "bats": "L",
-        "avg": 0.276,
-        "ops": 0.813,
-        "hr": 22
-      },
-      {
-        "name": "Ronald Acu\u00f1a Jr.",
-        "pos": "RF",
-        "bats": "R",
-        "avg": 0.235,
-        "ops": 0.748,
-        "hr": 13
-      },
-      {
-        "name": "Matt Olson",
-        "pos": "1B",
-        "bats": "L",
-        "avg": 0.258,
-        "ops": 0.866,
-        "hr": 37
-      },
-      {
-        "name": "Mauricio Dub\u00f3n",
-        "pos": "SS",
-        "bats": "R",
-        "avg": 0.27,
-        "ops": 0.705,
-        "hr": 10
-      },
-      {
-        "name": "Michael Harris II",
-        "pos": "CF",
-        "bats": "L",
-        "avg": 0.294,
-        "ops": 0.817,
-        "hr": 22
-      },
-      {
-        "name": "Ozzie Albies",
-        "pos": "2B",
-        "bats": "S",
-        "avg": 0.255,
-        "ops": 0.725,
-        "hr": 20
-      },
-      {
-        "name": "Mike Yastrzemski",
-        "pos": "LF",
-        "bats": "L",
-        "avg": 0.229,
-        "ops": 0.695,
-        "hr": 9
-      },
-      {
-        "name": "Austin Riley",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.221,
-        "ops": 0.655,
-        "hr": 15
-      },
-      {
-        "name": "Dominic Smith",
-        "pos": "DH",
-        "bats": "L",
-        "avg": 0.261,
-        "ops": 0.701,
-        "hr": 8
-      }
-    ],
-    "away": [
-      {
-        "name": "Jake McCarthy",
-        "pos": "DH",
-        "bats": "L",
-        "avg": 0.291,
-        "ops": 0.805,
-        "hr": 13
-      },
-      {
-        "name": "Cole Carrigg",
-        "pos": "CF",
-        "bats": "S",
-        "avg": 0.263,
-        "ops": 0.789,
-        "hr": 6
-      },
-      {
-        "name": "Hunter Goodman",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.256,
-        "ops": 0.87,
-        "hr": 36
-      },
-      {
-        "name": "TJ Rumfield",
-        "pos": "1B",
-        "bats": "L",
-        "avg": 0.29,
-        "ops": 0.822,
-        "hr": 13
-      },
-      {
-        "name": "Connor Norby",
-        "pos": "2B",
-        "bats": "R",
-        "avg": 0.22,
-        "ops": 0.686,
-        "hr": 6
-      },
-      {
-        "name": "Willi Castro",
-        "pos": "3B",
-        "bats": "S",
-        "avg": 0.262,
-        "ops": 0.756,
-        "hr": 15
-      },
-      {
-        "name": "Mickey Moniak",
-        "pos": "RF",
-        "bats": "L",
-        "avg": 0.256,
-        "ops": 0.816,
-        "hr": 21
-      },
-      {
-        "name": "Jordan Beck",
-        "pos": "LF",
-        "bats": "R",
-        "avg": 0.2,
-        "ops": 0.569,
-        "hr": 1
-      },
-      {
-        "name": "Ezequiel Tovar",
-        "pos": "SS",
-        "bats": "R",
-        "avg": 0.211,
-        "ops": 0.596,
-        "hr": 10
       }
     ]
   },
@@ -1513,75 +1059,156 @@
         "name": "Brice Turang",
         "pos": "2B",
         "bats": "L",
-        "avg": 0.257,
-        "ops": 0.782,
+        "avg": 0.255,
+        "ops": 0.777,
         "hr": 17
-      },
-      {
-        "name": "Jackson Chourio",
-        "pos": "LF",
-        "bats": "R",
-        "avg": 0.282,
-        "ops": 0.816,
-        "hr": 19
-      },
-      {
-        "name": "Jake Bauers",
-        "pos": "1B",
-        "bats": "L",
-        "avg": 0.275,
-        "ops": 0.893,
-        "hr": 23
-      },
-      {
-        "name": "William Contreras",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.268,
-        "ops": 0.729,
-        "hr": 12
       },
       {
         "name": "Garrett Mitchell",
         "pos": "CF",
         "bats": "L",
-        "avg": 0.262,
-        "ops": 0.773,
+        "avg": 0.259,
+        "ops": 0.766,
         "hr": 9
+      },
+      {
+        "name": "Jake Bauers",
+        "pos": "1B",
+        "bats": "L",
+        "avg": 0.273,
+        "ops": 0.888,
+        "hr": 23
+      },
+      {
+        "name": "Jackson Chourio",
+        "pos": "LF",
+        "bats": "R",
+        "avg": 0.281,
+        "ops": 0.82,
+        "hr": 20
       },
       {
         "name": "Christian Yelich",
         "pos": "DH",
         "bats": "L",
-        "avg": 0.239,
-        "ops": 0.701,
+        "avg": 0.242,
+        "ops": 0.71,
         "hr": 9
       },
       {
-        "name": "Luis Lara",
-        "pos": "RF",
-        "bats": "S",
-        "avg": 0.267,
-        "ops": 0.716,
-        "hr": 1
+        "name": "Gary S\u00e1nchez",
+        "pos": "C",
+        "bats": "R",
+        "avg": 0.205,
+        "ops": 0.76,
+        "hr": 10
       },
       {
-        "name": "Cooper Pratt",
-        "pos": "SS",
-        "bats": "R",
-        "avg": 0.268,
-        "ops": 0.694,
-        "hr": 2
+        "name": "Sal Frelick",
+        "pos": "RF",
+        "bats": "L",
+        "avg": 0.243,
+        "ops": 0.649,
+        "hr": 4
       },
       {
         "name": "David Hamilton",
         "pos": "3B",
         "bats": "L",
-        "avg": 0.245,
-        "ops": 0.658,
+        "avg": 0.242,
+        "ops": 0.652,
         "hr": 4
+      },
+      {
+        "name": "Joey Ortiz",
+        "pos": "SS",
+        "bats": "R",
+        "avg": 0.25,
+        "ops": 0.695,
+        "hr": 7
       }
     ],
+    "away": []
+  },
+  "PIT@STL": {
+    "home": [
+      {
+        "name": "Bryan Torres",
+        "pos": "LF",
+        "bats": "L",
+        "avg": 0.252,
+        "ops": 0.701,
+        "hr": 4
+      },
+      {
+        "name": "Iv\u00e1n Herrera",
+        "pos": "C",
+        "bats": "R",
+        "avg": 0.242,
+        "ops": 0.73,
+        "hr": 14
+      },
+      {
+        "name": "Alec Burleson",
+        "pos": "1B",
+        "bats": "L",
+        "avg": 0.288,
+        "ops": 0.831,
+        "hr": 21
+      },
+      {
+        "name": "Jordan Walker",
+        "pos": "RF",
+        "bats": "R",
+        "avg": 0.288,
+        "ops": 0.845,
+        "hr": 27
+      },
+      {
+        "name": "Nolan Gorman",
+        "pos": "DH",
+        "bats": "L",
+        "avg": 0.191,
+        "ops": 0.601,
+        "hr": 8
+      },
+      {
+        "name": "Jos\u00e9 Ferm\u00edn",
+        "pos": "2B",
+        "bats": "R",
+        "avg": 0.24,
+        "ops": 0.665,
+        "hr": 6
+      },
+      {
+        "name": "Nathan Church",
+        "pos": "CF",
+        "bats": "L",
+        "avg": 0.241,
+        "ops": 0.657,
+        "hr": 10
+      },
+      {
+        "name": "Ram\u00f3n Ur\u00edas",
+        "pos": "3B",
+        "bats": "R",
+        "avg": 0.157,
+        "ops": 0.597,
+        "hr": 3
+      },
+      {
+        "name": "Thomas Saggese",
+        "pos": "SS",
+        "bats": "R",
+        "avg": 0.182,
+        "ops": 0.514,
+        "hr": 1
+      }
+    ],
+    "away": []
+  },
+  "HOU@NYM": {
+    "home": [],
     "away": []
   },
   "BAL@ATH": {
@@ -1589,6 +1216,10 @@
     "away": []
   },
   "PHI@LAA": {
+    "home": [],
+    "away": []
+  },
+  "CIN@CHC": {
     "home": [],
     "away": []
   }
