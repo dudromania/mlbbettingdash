@@ -188,15 +188,15 @@
     "game_time": "8:40 PM CT",
     "home_abbr": "AZ",
     "away_abbr": "PHI",
-    "home_sp": "TBD",
+    "home_sp": "Brandon Pfaadt",
     "away_sp": "Aaron Nola",
-    "nrfi_prob": 33.3,
+    "nrfi_prob": 32.8,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "TBD",
+      "name": "Brandon Pfaadt",
       "first_inning": {},
-      "season_era": null
+      "season_era": 3.51
     },
     "away_pitcher": {
       "name": "Aaron Nola",

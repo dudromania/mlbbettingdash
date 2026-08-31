@@ -1,6 +1,6 @@
 {
   "date": "2026-08-31",
-  "fetched_at": "2026-08-31T11:10:32",
+  "fetched_at": "2026-08-31T13:10:04",
   "games": [
     {
       "home_abbr": "ATL",
@@ -58,7 +58,7 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
