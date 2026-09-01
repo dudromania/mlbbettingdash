@@ -1,9 +1,9 @@
 {
-  "SF@ATL": {
+  "SD@CIN": {
     "home": [],
     "away": []
   },
-  "SD@CIN": {
+  "SF@PIT": {
     "home": [],
     "away": []
   },
@@ -11,15 +11,23 @@
     "home": [],
     "away": []
   },
+  "TOR@CLE": {
+    "home": [],
+    "away": []
+  },
   "SEA@BOS": {
     "home": [],
     "away": []
   },
-  "MIA@WSH": {
+  "ATL@WSH": {
     "home": [],
     "away": []
   },
   "DET@MIN": {
+    "home": [],
+    "away": []
+  },
+  "MIA@KC": {
     "home": [],
     "away": []
   },
@@ -44,6 +52,10 @@
     "away": []
   },
   "PHI@ARI": {
+    "home": [],
+    "away": []
+  },
+  "STL@LAD": {
     "home": [],
     "away": []
   }

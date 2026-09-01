@@ -1,6 +1,6 @@
 [
   {
-    "id": 2448,
+    "id": 2450,
     "game_date": "2026-08-31",
     "game_pick_id": null,
     "player_name": "Payton Tolle",
@@ -20,14 +20,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-31 18:10:55",
-    "graded_at": null
+    "actual_value": 6.0,
+    "result": "W",
+    "pnl": 120.0,
+    "created_at": "2026-08-31 20:11:16",
+    "graded_at": "2026-09-01 13:00:18"
   },
   {
-    "id": 2449,
+    "id": 2451,
     "game_date": "2026-08-31",
     "game_pick_id": null,
     "player_name": "Michael King",
@@ -47,11 +47,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-08-31 18:10:55",
-    "graded_at": null
+    "actual_value": 6.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-08-31 20:11:16",
+    "graded_at": "2026-09-01 13:00:18"
   },
   {
     "id": 2438,
