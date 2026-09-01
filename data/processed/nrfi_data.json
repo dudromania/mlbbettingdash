@@ -71,6 +71,29 @@
   {
     "date": "2026-09-01",
     "game_time": "5:40 PM CT",
+    "home_abbr": "CLE",
+    "away_abbr": "TOR",
+    "home_sp": "Gavin Williams",
+    "away_sp": "Spencer Miles",
+    "nrfi_prob": 39.6,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Gavin Williams",
+      "first_inning": {},
+      "season_era": 3.98
+    },
+    "away_pitcher": {
+      "name": "Spencer Miles",
+      "first_inning": {},
+      "season_era": 2.92
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-01",
+    "game_time": "5:40 PM CT",
     "home_abbr": "PIT",
     "away_abbr": "SF",
     "home_sp": "Paul Skenes",
@@ -87,29 +110,6 @@
       "name": "Logan Webb",
       "first_inning": {},
       "season_era": 3.72
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-01",
-    "game_time": "5:45 PM CT",
-    "home_abbr": "BOS",
-    "away_abbr": "SEA",
-    "home_sp": "TBD",
-    "away_sp": "Bryan Woo",
-    "nrfi_prob": 33.0,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Patrick Sandoval",
-      "first_inning": {},
-      "season_era": 4.2
-    },
-    "away_pitcher": {
-      "name": "Bryan Woo",
-      "first_inning": {},
-      "season_era": 4.36
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -208,29 +208,6 @@
   },
   {
     "date": "2026-09-01",
-    "game_time": "5:40 PM CT",
-    "home_abbr": "CLE",
-    "away_abbr": "TOR",
-    "home_sp": "Gavin Williams",
-    "away_sp": "Spencer Arrighetti",
-    "nrfi_prob": 32.1,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Gavin Williams",
-      "first_inning": {},
-      "season_era": 3.98
-    },
-    "away_pitcher": {
-      "name": "Spencer Arrighetti",
-      "first_inning": {},
-      "season_era": 4.81
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-01",
     "game_time": "7:05 PM CT",
     "home_abbr": "TEX",
     "away_abbr": "ATH",
@@ -294,6 +271,29 @@
       "name": "Kyle Bradish",
       "first_inning": {},
       "season_era": 4.03
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-01",
+    "game_time": "5:45 PM CT",
+    "home_abbr": "BOS",
+    "away_abbr": "SEA",
+    "home_sp": "Jedixson Paez",
+    "away_sp": "Bryan Woo",
+    "nrfi_prob": 29.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jedixson Paez",
+      "first_inning": {},
+      "season_era": 18.0
+    },
+    "away_pitcher": {
+      "name": "Bryan Woo",
+      "first_inning": {},
+      "season_era": 4.36
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
