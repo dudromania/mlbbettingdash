@@ -144,18 +144,18 @@
     "away_abbr": "PHI",
     "home_sp": "Taylor Clarke",
     "away_sp": "Andrew Painter",
-    "nrfi_prob": 35.0,
+    "nrfi_prob": 35.2,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Taylor Clarke",
       "first_inning": {},
-      "season_era": 2.6
+      "season_era": 2.56
     },
     "away_pitcher": {
       "name": "Andrew Painter",
       "first_inning": {},
-      "season_era": 5.95
+      "season_era": 5.89
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -208,29 +208,6 @@
   },
   {
     "date": "2026-09-02",
-    "game_time": "1:35 PM CT",
-    "home_abbr": "TEX",
-    "away_abbr": "ATH",
-    "home_sp": "Cody Bradford",
-    "away_sp": "Jacob Lopez",
-    "nrfi_prob": 34.0,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Cody Bradford",
-      "first_inning": {},
-      "season_era": 3.42
-    },
-    "away_pitcher": {
-      "name": "Jacob Lopez",
-      "first_inning": {},
-      "season_era": 4.82
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-02",
     "game_time": "3:10 PM CT",
     "home_abbr": "BOS",
     "away_abbr": "SEA",
@@ -277,29 +254,6 @@
   },
   {
     "date": "2026-09-02",
-    "game_time": "11:40 AM CT",
-    "home_abbr": "CIN",
-    "away_abbr": "SD",
-    "home_sp": "Brandon Williamson",
-    "away_sp": "Casey Mize",
-    "nrfi_prob": 31.5,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Brandon Williamson",
-      "first_inning": {},
-      "season_era": 6.19
-    },
-    "away_pitcher": {
-      "name": "Casey Mize",
-      "first_inning": {},
-      "season_era": 3.64
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-02",
     "game_time": "6:40 PM CT",
     "home_abbr": "MIN",
     "away_abbr": "DET",
@@ -323,23 +277,46 @@
   },
   {
     "date": "2026-09-02",
+    "game_time": "1:35 PM CT",
+    "home_abbr": "TEX",
+    "away_abbr": "ATH",
+    "home_sp": "Cody Bradford",
+    "away_sp": "Jacob Lopez",
+    "nrfi_prob": 30.3,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Cody Bradford",
+      "first_inning": {},
+      "season_era": 4.45
+    },
+    "away_pitcher": {
+      "name": "Jacob Lopez",
+      "first_inning": {},
+      "season_era": 4.84
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-02",
     "game_time": "2:10 PM CT",
     "home_abbr": "COL",
     "away_abbr": "BAL",
     "home_sp": "Tomoyuki Sugano",
     "away_sp": "Trevor Rogers",
-    "nrfi_prob": 29.0,
+    "nrfi_prob": 29.2,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Tomoyuki Sugano",
       "first_inning": {},
-      "season_era": 5.23
+      "season_era": 5.32
     },
     "away_pitcher": {
       "name": "Trevor Rogers",
       "first_inning": {},
-      "season_era": 4.38
+      "season_era": 4.3
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
