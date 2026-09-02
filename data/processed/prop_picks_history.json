@@ -1,6 +1,6 @@
 [
   {
-    "id": 2465,
+    "id": 2468,
     "game_date": "2026-09-02",
     "game_pick_id": null,
     "player_name": "Trevor Rogers",
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-09-02 13:11:14",
+    "created_at": "2026-09-02 16:09:30",
     "graded_at": null
   },
   {
-    "id": 2466,
+    "id": 2469,
     "game_date": "2026-09-02",
     "game_pick_id": null,
     "player_name": "Jacob Misiorowski",
@@ -50,11 +50,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-09-02 13:11:14",
+    "created_at": "2026-09-02 16:09:30",
     "graded_at": null
   },
   {
-    "id": 2464,
+    "id": 2467,
     "game_date": "2026-09-02",
     "game_pick_id": null,
     "player_name": "Cody Bradford",
@@ -77,7 +77,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-09-02 13:11:14",
+    "created_at": "2026-09-02 16:09:30",
     "graded_at": null
   },
   {

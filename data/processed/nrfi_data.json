@@ -70,6 +70,29 @@
   },
   {
     "date": "2026-09-02",
+    "game_time": "12:05 PM CT",
+    "home_abbr": "WSH",
+    "away_abbr": "ATL",
+    "home_sp": "Brad Lord",
+    "away_sp": "Grant Holmes",
+    "nrfi_prob": 38.4,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Brad Lord",
+      "first_inning": {},
+      "season_era": 3.58
+    },
+    "away_pitcher": {
+      "name": "Grant Holmes",
+      "first_inning": {},
+      "season_era": 3.62
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-02",
     "game_time": "6:40 PM CT",
     "home_abbr": "KC",
     "away_abbr": "MIA",
@@ -87,29 +110,6 @@
       "name": "Eury P\u00e9rez",
       "first_inning": {},
       "season_era": 3.44
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-02",
-    "game_time": "12:05 PM CT",
-    "home_abbr": "WSH",
-    "away_abbr": "ATL",
-    "home_sp": "Brad Lord",
-    "away_sp": "Grant Holmes",
-    "nrfi_prob": 37.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Brad Lord",
-      "first_inning": {},
-      "season_era": 3.75
-    },
-    "away_pitcher": {
-      "name": "Grant Holmes",
-      "first_inning": {},
-      "season_era": 3.71
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -282,18 +282,18 @@
     "away_abbr": "SD",
     "home_sp": "Brandon Williamson",
     "away_sp": "Casey Mize",
-    "nrfi_prob": 32.1,
+    "nrfi_prob": 31.5,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Brandon Williamson",
       "first_inning": {},
-      "season_era": 6.11
+      "season_era": 6.19
     },
     "away_pitcher": {
       "name": "Casey Mize",
       "first_inning": {},
-      "season_era": 3.45
+      "season_era": 3.64
     },
     "away_batting_1st": {},
     "home_batting_1st": {}

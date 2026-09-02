@@ -1,15 +1,15 @@
 {
   "date": "2026-09-02",
-  "fetched_at": "2026-09-02T11:08:32",
+  "fetched_at": "2026-09-02T13:09:00",
   "games": [
     {
       "home_abbr": "CIN",
       "away_abbr": "SD",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
+      "home_score": "4",
+      "away_score": "3",
+      "state": "in",
+      "detail": "In Progress",
+      "is_live": true,
       "is_final": false
     },
     {
@@ -17,9 +17,9 @@
       "away_abbr": "ATL",
       "home_score": "0",
       "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
+      "state": "in",
+      "detail": "Delayed",
+      "is_live": true,
       "is_final": false
     },
     {
@@ -35,8 +35,8 @@
     {
       "home_abbr": "COL",
       "away_abbr": "BAL",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
       "detail": "Pre-Game",
       "is_live": false,
@@ -45,8 +45,8 @@
     {
       "home_abbr": "ARI",
       "away_abbr": "PHI",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
       "detail": "Pre-Game",
       "is_live": false,
@@ -55,10 +55,10 @@
     {
       "home_abbr": "BOS",
       "away_abbr": "SEA",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
