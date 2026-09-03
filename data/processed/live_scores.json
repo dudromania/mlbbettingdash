@@ -1,14 +1,14 @@
 {
   "date": "2026-09-03",
-  "fetched_at": "2026-09-03T11:07:48",
+  "fetched_at": "2026-09-03T13:08:18",
   "games": [
     {
       "home_abbr": "PIT",
       "away_abbr": "SF",
-      "home_score": "0",
+      "home_score": "2",
       "away_score": "0",
       "state": "in",
-      "detail": "Warmup",
+      "detail": "In Progress",
       "is_live": true,
       "is_final": false
     },
@@ -17,9 +17,9 @@
       "away_abbr": "TOR",
       "home_score": "0",
       "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
+      "state": "in",
+      "detail": "In Progress",
+      "is_live": true,
       "is_final": false
     },
     {
@@ -27,9 +27,9 @@
       "away_abbr": "CHW",
       "home_score": "0",
       "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
+      "state": "in",
+      "detail": "Warmup",
+      "is_live": true,
       "is_final": false
     },
     {

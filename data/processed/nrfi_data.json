@@ -98,18 +98,18 @@
     "away_abbr": "TOR",
     "home_sp": "Tanner Bibee",
     "away_sp": "Jos\u00e9 Soriano",
-    "nrfi_prob": 37.9,
-    "label": "LEAN YRFI",
+    "nrfi_prob": 38.3,
+    "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Tanner Bibee",
       "first_inning": {},
-      "season_era": 3.88
+      "season_era": 3.83
     },
     "away_pitcher": {
       "name": "Jos\u00e9 Soriano",
       "first_inning": {},
-      "season_era": 3.45
+      "season_era": 3.4
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -144,13 +144,13 @@
     "away_abbr": "SF",
     "home_sp": "Lake Bachar",
     "away_sp": "Blade Tidwell",
-    "nrfi_prob": 34.2,
+    "nrfi_prob": 34.6,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Lake Bachar",
       "first_inning": {},
-      "season_era": 3.7
+      "season_era": 3.59
     },
     "away_pitcher": {
       "name": "Blade Tidwell",
