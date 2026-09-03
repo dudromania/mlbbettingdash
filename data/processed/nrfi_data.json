@@ -98,18 +98,18 @@
     "away_abbr": "TOR",
     "home_sp": "Tanner Bibee",
     "away_sp": "Jos\u00e9 Soriano",
-    "nrfi_prob": 38.3,
-    "label": "NEUTRAL",
+    "nrfi_prob": 36.9,
+    "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Tanner Bibee",
       "first_inning": {},
-      "season_era": 3.83
+      "season_era": 4.06
     },
     "away_pitcher": {
       "name": "Jos\u00e9 Soriano",
       "first_inning": {},
-      "season_era": 3.4
+      "season_era": 3.52
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -139,46 +139,23 @@
   },
   {
     "date": "2026-09-03",
-    "game_time": "11:35 AM CT",
-    "home_abbr": "PIT",
-    "away_abbr": "SF",
-    "home_sp": "Lake Bachar",
-    "away_sp": "Blade Tidwell",
-    "nrfi_prob": 34.6,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Lake Bachar",
-      "first_inning": {},
-      "season_era": 3.59
-    },
-    "away_pitcher": {
-      "name": "Blade Tidwell",
-      "first_inning": {},
-      "season_era": 4.54
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-03",
     "game_time": "1:10 PM CT",
     "home_abbr": "HOU",
     "away_abbr": "CWS",
     "home_sp": "Hunter Brown",
     "away_sp": "Luis Castillo",
-    "nrfi_prob": 32.5,
+    "nrfi_prob": 32.6,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Hunter Brown",
       "first_inning": {},
-      "season_era": 3.33
+      "season_era": 3.31
     },
     "away_pitcher": {
       "name": "Luis Castillo",
       "first_inning": {},
-      "season_era": 5.31
+      "season_era": 5.57
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
