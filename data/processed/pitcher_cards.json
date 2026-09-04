@@ -2401,7 +2401,7 @@
       "combined_adj": 0.99,
       "lambda_k": 4.012,
       "model_used": "xgboost_poisson",
-      "umpire": null,
+      "umpire": "James Jean",
       "lineup_confirmed": false
     },
     "first_inning": {},
@@ -2603,13 +2603,13 @@
       "opp_adj": 1.124,
       "park_adj": 1.036,
       "ump_adj": 1.0,
-      "hand_adj": 1.0,
-      "pitch_mix_adj": 1.0,
-      "combined_adj": 1.165,
-      "lambda_k": 6.096,
+      "hand_adj": 1.099,
+      "pitch_mix_adj": 0.981,
+      "combined_adj": 1.28,
+      "lambda_k": 6.699,
       "model_used": "xgboost_poisson",
-      "umpire": null,
-      "lineup_confirmed": false
+      "umpire": "James Jean",
+      "lineup_confirmed": true
     },
     "first_inning": {},
     "game_id": 824471,

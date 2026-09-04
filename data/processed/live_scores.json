@@ -1,6 +1,6 @@
 {
   "date": "2026-09-04",
-  "fetched_at": "2026-09-04T11:12:01",
+  "fetched_at": "2026-09-04T13:12:01",
   "games": [
     {
       "home_abbr": "CLE",
@@ -8,7 +8,7 @@
       "home_score": "0",
       "away_score": "0",
       "state": "pre",
-      "detail": "Pre-Game",
+      "detail": "Delayed Start",
       "is_live": false,
       "is_final": false
     },
@@ -28,7 +28,7 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
