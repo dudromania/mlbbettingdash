@@ -1,6 +1,6 @@
 [
   {
-    "id": 2491,
+    "id": 2494,
     "game_date": "2026-09-04",
     "game_pick_id": null,
     "player_name": "Ranger Suarez",
@@ -20,14 +20,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-09-04 18:12:59",
-    "graded_at": null
+    "actual_value": 3.0,
+    "result": "W",
+    "pnl": 83.33333333333334,
+    "created_at": "2026-09-04 20:13:09",
+    "graded_at": "2026-09-05 13:00:16"
   },
   {
-    "id": 2490,
+    "id": 2493,
     "game_date": "2026-09-04",
     "game_pick_id": null,
     "player_name": "Jared Jones",
@@ -47,14 +47,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-09-04 18:12:59",
-    "graded_at": null
+    "actual_value": 9.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-09-04 20:13:09",
+    "graded_at": "2026-09-05 13:00:16"
   },
   {
-    "id": 2492,
+    "id": 2495,
     "game_date": "2026-09-04",
     "game_pick_id": null,
     "player_name": "Foster Griffin",
@@ -74,11 +74,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-09-04 18:12:59",
-    "graded_at": null
+    "actual_value": 3.0,
+    "result": "W",
+    "pnl": 73.52941176470588,
+    "created_at": "2026-09-04 20:13:09",
+    "graded_at": "2026-09-05 13:00:16"
   },
   {
     "id": 2483,
