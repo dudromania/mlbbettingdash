@@ -6,18 +6,18 @@
     "away_abbr": "CHC",
     "home_sp": "Tyler Phillips",
     "away_sp": "Clay Holmes",
-    "nrfi_prob": 45.5,
+    "nrfi_prob": 45.9,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Tyler Phillips",
       "first_inning": {},
-      "season_era": 3.43
+      "season_era": 3.36
     },
     "away_pitcher": {
       "name": "Clay Holmes",
       "first_inning": {},
-      "season_era": 2.09
+      "season_era": 2.07
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -29,18 +29,18 @@
     "away_abbr": "SF",
     "home_sp": "Christian Scott",
     "away_sp": "Cesar Perdomo",
-    "nrfi_prob": 43.1,
+    "nrfi_prob": 45.1,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Christian Scott",
       "first_inning": {},
-      "season_era": 3.8
+      "season_era": 3.75
     },
     "away_pitcher": {
       "name": "Cesar Perdomo",
       "first_inning": {},
-      "season_era": 2.25
+      "season_era": 1.8
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -98,18 +98,18 @@
     "away_abbr": "LAA",
     "home_sp": "Paul Skenes",
     "away_sp": "Walbert Ure\u00f1a",
-    "nrfi_prob": 39.9,
+    "nrfi_prob": 40.3,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Paul Skenes",
       "first_inning": {},
-      "season_era": 3.97
+      "season_era": 3.92
     },
     "away_pitcher": {
       "name": "Walbert Ure\u00f1a",
       "first_inning": {},
-      "season_era": 2.85
+      "season_era": 2.8
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -144,18 +144,18 @@
     "away_abbr": "BOS",
     "home_sp": "Kyle Bradish",
     "away_sp": "Payton Tolle",
-    "nrfi_prob": 38.2,
+    "nrfi_prob": 38.1,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Kyle Bradish",
       "first_inning": {},
-      "season_era": 4.01
+      "season_era": 3.99
     },
     "away_pitcher": {
       "name": "Payton Tolle",
       "first_inning": {},
-      "season_era": 3.23
+      "season_era": 3.27
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -208,29 +208,6 @@
   },
   {
     "date": "2026-09-06",
-    "game_time": "11:10 AM CT",
-    "home_abbr": "CIN",
-    "away_abbr": "MIL",
-    "home_sp": "Brady Singer",
-    "away_sp": "Kyle Harrison",
-    "nrfi_prob": 33.9,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Brady Singer",
-      "first_inning": {},
-      "season_era": 4.83
-    },
-    "away_pitcher": {
-      "name": "Kyle Harrison",
-      "first_inning": {},
-      "season_era": 3.45
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-06",
     "game_time": "2:10 PM CT",
     "home_abbr": "COL",
     "away_abbr": "STL",
@@ -248,29 +225,6 @@
       "name": "Kyle Leahy",
       "first_inning": {},
       "season_era": 3.13
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-06",
-    "game_time": "12:40 PM CT",
-    "home_abbr": "CLE",
-    "away_abbr": "DET",
-    "home_sp": "Gavin Williams",
-    "away_sp": "Jackson Jobe",
-    "nrfi_prob": 33.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Gavin Williams",
-      "first_inning": {},
-      "season_era": 3.81
-    },
-    "away_pitcher": {
-      "name": "Jackson Jobe",
-      "first_inning": {},
-      "season_era": 4.63
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -300,23 +254,69 @@
   },
   {
     "date": "2026-09-06",
+    "game_time": "11:10 AM CT",
+    "home_abbr": "CIN",
+    "away_abbr": "MIL",
+    "home_sp": "Brady Singer",
+    "away_sp": "Kyle Harrison",
+    "nrfi_prob": 32.3,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Brady Singer",
+      "first_inning": {},
+      "season_era": 5.03
+    },
+    "away_pitcher": {
+      "name": "Kyle Harrison",
+      "first_inning": {},
+      "season_era": 3.66
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-06",
+    "game_time": "12:40 PM CT",
+    "home_abbr": "CLE",
+    "away_abbr": "DET",
+    "home_sp": "Gavin Williams",
+    "away_sp": "Jackson Jobe",
+    "nrfi_prob": 31.8,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Gavin Williams",
+      "first_inning": {},
+      "season_era": 3.9
+    },
+    "away_pitcher": {
+      "name": "Jackson Jobe",
+      "first_inning": {},
+      "season_era": 4.94
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-06",
     "game_time": "12:10 PM CT",
     "home_abbr": "PHI",
     "away_abbr": "ATL",
     "home_sp": "Aaron Nola",
     "away_sp": "Tyler Mahle",
-    "nrfi_prob": 30.6,
+    "nrfi_prob": 31.3,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Aaron Nola",
       "first_inning": {},
-      "season_era": 4.93
+      "season_era": 4.83
     },
     "away_pitcher": {
       "name": "Tyler Mahle",
       "first_inning": {},
-      "season_era": 4.25
+      "season_era": 4.17
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
