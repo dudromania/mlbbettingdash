@@ -1,6 +1,29 @@
 [
   {
     "date": "2026-09-07",
+    "game_time": "1:10 PM CT",
+    "home_abbr": "KC",
+    "away_abbr": "AZ",
+    "home_sp": "Noah Cameron",
+    "away_sp": "Derek Law",
+    "nrfi_prob": 46.0,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Noah Cameron",
+      "first_inning": {},
+      "season_era": 3.93
+    },
+    "away_pitcher": {
+      "name": "Derek Law",
+      "first_inning": {},
+      "season_era": 1.35
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-07",
     "game_time": "8:10 PM CT",
     "home_abbr": "LAD",
     "away_abbr": "CIN",
@@ -29,64 +52,18 @@
     "away_abbr": "MIN",
     "home_sp": "Troy Melton",
     "away_sp": "Joe Ryan",
-    "nrfi_prob": 44.0,
+    "nrfi_prob": 43.5,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Troy Melton",
       "first_inning": {},
-      "season_era": 2.2
+      "season_era": 2.22
     },
     "away_pitcher": {
       "name": "Joe Ryan",
       "first_inning": {},
-      "season_era": 3.65
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-07",
-    "game_time": "1:10 PM CT",
-    "home_abbr": "KC",
-    "away_abbr": "AZ",
-    "home_sp": "Noah Cameron",
-    "away_sp": "Derek Law",
-    "nrfi_prob": 43.0,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Noah Cameron",
-      "first_inning": {},
-      "season_era": 4.08
-    },
-    "away_pitcher": {
-      "name": "Derek Law",
-      "first_inning": {},
-      "season_era": 1.93
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-07",
-    "game_time": "12:05 PM CT",
-    "home_abbr": "PHI",
-    "away_abbr": "ATL",
-    "home_sp": "Jes\u00fas Luzardo",
-    "away_sp": "Grant Holmes",
-    "nrfi_prob": 41.5,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Jes\u00fas Luzardo",
-      "first_inning": {},
-      "season_era": 2.95
-    },
-    "away_pitcher": {
-      "name": "Grant Holmes",
-      "first_inning": {},
-      "season_era": 3.52
+      "season_era": 3.74
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -121,18 +98,18 @@
     "away_abbr": "CLE",
     "home_sp": "Trevor Rogers",
     "away_sp": "Joey Cantillo",
-    "nrfi_prob": 34.9,
+    "nrfi_prob": 34.6,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Trevor Rogers",
       "first_inning": {},
-      "season_era": 4.27
+      "season_era": 4.16
     },
     "away_pitcher": {
       "name": "Joey Cantillo",
       "first_inning": {},
-      "season_era": 3.79
+      "season_era": 4.0
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -167,18 +144,18 @@
     "away_abbr": "CHC",
     "home_sp": "Robert Gasser",
     "away_sp": "Matthew Boyd",
-    "nrfi_prob": 32.8,
+    "nrfi_prob": 34.0,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Robert Gasser",
       "first_inning": {},
-      "season_era": 4.57
+      "season_era": 4.43
     },
     "away_pitcher": {
       "name": "Matthew Boyd",
       "first_inning": {},
-      "season_era": 4.05
+      "season_era": 3.87
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -190,18 +167,18 @@
     "away_abbr": "NYM",
     "home_sp": "Eury P\u00e9rez",
     "away_sp": "Jonah Tong",
-    "nrfi_prob": 31.1,
+    "nrfi_prob": 32.3,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Eury P\u00e9rez",
       "first_inning": {},
-      "season_era": 3.74
+      "season_era": 3.94
     },
     "away_pitcher": {
       "name": "Jonah Tong",
       "first_inning": {},
-      "season_era": 6.0
+      "season_era": 4.8
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -236,18 +213,18 @@
     "away_abbr": "LAA",
     "home_sp": "Brayan Bello",
     "away_sp": "Grayson Rodriguez",
-    "nrfi_prob": 26.8,
+    "nrfi_prob": 27.5,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Brayan Bello",
       "first_inning": {},
-      "season_era": 5.02
+      "season_era": 4.82
     },
     "away_pitcher": {
       "name": "Grayson Rodriguez",
       "first_inning": {},
-      "season_era": 5.95
+      "season_era": 6.28
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
