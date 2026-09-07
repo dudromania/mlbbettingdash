@@ -1,6 +1,6 @@
 [
   {
-    "id": 2546,
+    "id": 2550,
     "game_date": "2026-09-07",
     "game_pick_id": null,
     "player_name": "Jonah Tong",
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-09-07 13:11:34",
+    "created_at": "2026-09-07 16:10:21",
     "graded_at": null
   },
   {
-    "id": 2545,
+    "id": 2549,
     "game_date": "2026-09-07",
     "game_pick_id": null,
     "player_name": "Joey Cantillo",
@@ -50,11 +50,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-09-07 13:11:34",
+    "created_at": "2026-09-07 16:10:21",
     "graded_at": null
   },
   {
-    "id": 2547,
+    "id": 2551,
     "game_date": "2026-09-07",
     "game_pick_id": null,
     "player_name": "Jes\u00fas Luzardo",
@@ -77,11 +77,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-09-07 13:11:34",
+    "created_at": "2026-09-07 16:10:21",
     "graded_at": null
   },
   {
-    "id": 2548,
+    "id": 2552,
     "game_date": "2026-09-07",
     "game_pick_id": null,
     "player_name": "Eury P\u00e9rez",
@@ -104,7 +104,34 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-09-07 13:11:34",
+    "created_at": "2026-09-07 16:10:21",
+    "graded_at": null
+  },
+  {
+    "id": 2553,
+    "game_date": "2026-09-07",
+    "game_pick_id": null,
+    "player_name": "Brayan Bello",
+    "player_id": null,
+    "player_team": "BOS",
+    "prop_type": "strikeouts",
+    "prop_market": "UNDER 4.5 K",
+    "prop_line": 4.5,
+    "prop_odds": -124,
+    "prop_book": "betrivers",
+    "predicted_value": 4.0,
+    "predicted_prob_over": 0.371,
+    "edge": 0.075,
+    "confidence": null,
+    "player_season_avg": 5.34,
+    "player_last7_avg": null,
+    "player_last30_avg": null,
+    "matchup_factor": null,
+    "park_factor": null,
+    "actual_value": null,
+    "result": null,
+    "pnl": null,
+    "created_at": "2026-09-07 16:10:21",
     "graded_at": null
   },
   {
@@ -13471,32 +13498,5 @@
     "pnl": -100.0,
     "created_at": "2026-04-23 16:09:38",
     "graded_at": "2026-04-24 13:59:53"
-  },
-  {
-    "id": 683,
-    "game_date": "2026-04-22",
-    "game_pick_id": null,
-    "player_name": "Zack Littell",
-    "player_id": null,
-    "player_team": "WSH",
-    "prop_type": "strikeouts",
-    "prop_market": "OVER 3.5 K",
-    "prop_line": 3.5,
-    "prop_odds": -104,
-    "prop_book": "fanduel",
-    "predicted_value": 4.1,
-    "predicted_prob_over": 0.586,
-    "edge": 0.076,
-    "confidence": null,
-    "player_season_avg": 7.67,
-    "player_last7_avg": null,
-    "player_last30_avg": null,
-    "matchup_factor": null,
-    "park_factor": null,
-    "actual_value": 1.0,
-    "result": "L",
-    "pnl": -100.0,
-    "created_at": "2026-04-22 16:10:53",
-    "graded_at": "2026-04-23 12:18:21"
   }
 ]

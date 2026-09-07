@@ -75,18 +75,18 @@
     "away_abbr": "ATL",
     "home_sp": "Jes\u00fas Luzardo",
     "away_sp": "Grant Holmes",
-    "nrfi_prob": 40.7,
+    "nrfi_prob": 41.5,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Jes\u00fas Luzardo",
       "first_inning": {},
-      "season_era": 3.02
+      "season_era": 2.95
     },
     "away_pitcher": {
       "name": "Grant Holmes",
       "first_inning": {},
-      "season_era": 3.62
+      "season_era": 3.52
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -116,46 +116,23 @@
   },
   {
     "date": "2026-09-07",
-    "game_time": "12:10 PM CT",
-    "home_abbr": "MIA",
-    "away_abbr": "NYM",
-    "home_sp": "Eury P\u00e9rez",
-    "away_sp": "Jonah Tong",
-    "nrfi_prob": 37.9,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Eury P\u00e9rez",
-      "first_inning": {},
-      "season_era": 3.72
-    },
-    "away_pitcher": {
-      "name": "Jonah Tong",
-      "first_inning": {},
-      "season_era": 3.6
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-07",
     "game_time": "12:35 PM CT",
     "home_abbr": "BAL",
     "away_abbr": "CLE",
     "home_sp": "Trevor Rogers",
     "away_sp": "Joey Cantillo",
-    "nrfi_prob": 34.7,
+    "nrfi_prob": 34.9,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Trevor Rogers",
       "first_inning": {},
-      "season_era": 4.3
+      "season_era": 4.27
     },
     "away_pitcher": {
       "name": "Joey Cantillo",
       "first_inning": {},
-      "season_era": 3.81
+      "season_era": 3.79
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -208,6 +185,29 @@
   },
   {
     "date": "2026-09-07",
+    "game_time": "12:10 PM CT",
+    "home_abbr": "MIA",
+    "away_abbr": "NYM",
+    "home_sp": "Eury P\u00e9rez",
+    "away_sp": "Jonah Tong",
+    "nrfi_prob": 31.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Eury P\u00e9rez",
+      "first_inning": {},
+      "season_era": 3.74
+    },
+    "away_pitcher": {
+      "name": "Jonah Tong",
+      "first_inning": {},
+      "season_era": 6.0
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-07",
     "game_time": "4:10 PM CT",
     "home_abbr": "SD",
     "away_abbr": "WSH",
@@ -236,18 +236,18 @@
     "away_abbr": "LAA",
     "home_sp": "Brayan Bello",
     "away_sp": "Grayson Rodriguez",
-    "nrfi_prob": 26.6,
+    "nrfi_prob": 26.8,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Brayan Bello",
       "first_inning": {},
-      "season_era": 5.07
+      "season_era": 5.02
     },
     "away_pitcher": {
       "name": "Grayson Rodriguez",
       "first_inning": {},
-      "season_era": 6.03
+      "season_era": 5.95
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
