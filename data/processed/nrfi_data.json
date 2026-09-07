@@ -24,6 +24,52 @@
   },
   {
     "date": "2026-09-07",
+    "game_time": "2:10 PM CT",
+    "home_abbr": "DET",
+    "away_abbr": "MIN",
+    "home_sp": "Troy Melton",
+    "away_sp": "Joe Ryan",
+    "nrfi_prob": 44.0,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Troy Melton",
+      "first_inning": {},
+      "season_era": 2.2
+    },
+    "away_pitcher": {
+      "name": "Joe Ryan",
+      "first_inning": {},
+      "season_era": 3.65
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-07",
+    "game_time": "1:10 PM CT",
+    "home_abbr": "KC",
+    "away_abbr": "AZ",
+    "home_sp": "Noah Cameron",
+    "away_sp": "Derek Law",
+    "nrfi_prob": 43.0,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Noah Cameron",
+      "first_inning": {},
+      "season_era": 4.08
+    },
+    "away_pitcher": {
+      "name": "Derek Law",
+      "first_inning": {},
+      "season_era": 1.93
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-07",
     "game_time": "12:05 PM CT",
     "home_abbr": "PHI",
     "away_abbr": "ATL",
@@ -87,52 +133,6 @@
       "name": "Jonah Tong",
       "first_inning": {},
       "season_era": 3.6
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-07",
-    "game_time": "1:10 PM CT",
-    "home_abbr": "KC",
-    "away_abbr": "AZ",
-    "home_sp": "Noah Cameron",
-    "away_sp": "TBD",
-    "nrfi_prob": 37.3,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Noah Cameron",
-      "first_inning": {},
-      "season_era": 4.08
-    },
-    "away_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-07",
-    "game_time": "2:10 PM CT",
-    "home_abbr": "DET",
-    "away_abbr": "MIN",
-    "home_sp": "Troy Melton",
-    "away_sp": "TBD",
-    "nrfi_prob": 36.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Troy Melton",
-      "first_inning": {},
-      "season_era": 2.2
-    },
-    "away_pitcher": {
-      "name": "Dean Kremer",
-      "first_inning": {},
-      "season_era": 5.81
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -208,29 +208,6 @@
   },
   {
     "date": "2026-09-07",
-    "game_time": "12:35 PM CT",
-    "home_abbr": "BOS",
-    "away_abbr": "LAA",
-    "home_sp": "TBD",
-    "away_sp": "Grayson Rodriguez",
-    "nrfi_prob": 28.9,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Patrick Sandoval",
-      "first_inning": {},
-      "season_era": 4.41
-    },
-    "away_pitcher": {
-      "name": "Grayson Rodriguez",
-      "first_inning": {},
-      "season_era": 6.03
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-07",
     "game_time": "4:10 PM CT",
     "home_abbr": "SD",
     "away_abbr": "WSH",
@@ -248,6 +225,29 @@
       "name": "Jake Irvin",
       "first_inning": {},
       "season_era": 5.57
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-07",
+    "game_time": "12:35 PM CT",
+    "home_abbr": "BOS",
+    "away_abbr": "LAA",
+    "home_sp": "Brayan Bello",
+    "away_sp": "Grayson Rodriguez",
+    "nrfi_prob": 26.6,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Brayan Bello",
+      "first_inning": {},
+      "season_era": 5.07
+    },
+    "away_pitcher": {
+      "name": "Grayson Rodriguez",
+      "first_inning": {},
+      "season_era": 6.03
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
