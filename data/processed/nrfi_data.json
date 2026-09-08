@@ -28,8 +28,8 @@
     "home_abbr": "SEA",
     "away_abbr": "TEX",
     "home_sp": "TBD",
-    "away_sp": "TBD",
-    "nrfi_prob": 40.3,
+    "away_sp": "Cal Quantrill",
+    "nrfi_prob": 42.8,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
@@ -38,9 +38,9 @@
       "season_era": null
     },
     "away_pitcher": {
-      "name": "TBD",
+      "name": "Cal Quantrill",
       "first_inning": {},
-      "season_era": null
+      "season_era": 2.79
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
