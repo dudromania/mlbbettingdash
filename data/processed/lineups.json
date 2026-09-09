@@ -1,9 +1,25 @@
 {
-  "CLE@BAL": {
+  "MIN@DET": {
     "home": [],
     "away": []
   },
-  "MIN@DET": {
+  "TOR@ATH": {
+    "home": [],
+    "away": []
+  },
+  "STL@SF": {
+    "home": [],
+    "away": []
+  },
+  "WSH@SD": {
+    "home": [],
+    "away": []
+  },
+  "TEX@SEA": {
+    "home": [],
+    "away": []
+  },
+  "CLE@BAL": {
     "home": [],
     "away": []
   },
@@ -36,22 +52,6 @@
     "away": []
   },
   "CHC@MIL": {
-    "home": [],
-    "away": []
-  },
-  "WSH@SD": {
-    "home": [],
-    "away": []
-  },
-  "TEX@SEA": {
-    "home": [],
-    "away": []
-  },
-  "TOR@ATH": {
-    "home": [],
-    "away": []
-  },
-  "STL@SF": {
     "home": [],
     "away": []
   },
