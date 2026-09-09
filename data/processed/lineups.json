@@ -21,16 +21,16 @@
         "name": "Colt Keith",
         "pos": "1B",
         "bats": "L",
-        "avg": 0.257,
-        "ops": 0.714,
-        "hr": 9
+        "avg": 0.259,
+        "ops": 0.726,
+        "hr": 10
       },
       {
         "name": "Riley Greene",
         "pos": "DH",
         "bats": "L",
-        "avg": 0.277,
-        "ops": 0.836,
+        "avg": 0.276,
+        "ops": 0.835,
         "hr": 19
       },
       {
@@ -38,7 +38,7 @@
         "pos": "C",
         "bats": "R",
         "avg": 0.245,
-        "ops": 0.764,
+        "ops": 0.762,
         "hr": 26
       },
       {
@@ -104,15 +104,15 @@
         "pos": "DH",
         "bats": "S",
         "avg": 0.254,
-        "ops": 0.737,
+        "ops": 0.735,
         "hr": 18
       },
       {
         "name": "Kaelen Culpepper",
         "pos": "SS",
         "bats": "R",
-        "avg": 0.296,
-        "ops": 0.785,
+        "avg": 0.293,
+        "ops": 0.777,
         "hr": 3
       },
       {
@@ -120,7 +120,7 @@
         "pos": "LF",
         "bats": "L",
         "avg": 0.263,
-        "ops": 0.768,
+        "ops": 0.77,
         "hr": 12
       },
       {
@@ -128,7 +128,7 @@
         "pos": "1B",
         "bats": "R",
         "avg": 0.232,
-        "ops": 0.693,
+        "ops": 0.692,
         "hr": 14
       },
       {
@@ -155,16 +155,16 @@
         "name": "Henry Bolte",
         "pos": "CF",
         "bats": "R",
-        "avg": 0.278,
-        "ops": 0.756,
+        "avg": 0.277,
+        "ops": 0.753,
         "hr": 9
       },
       {
         "name": "Lawrence Butler",
         "pos": "RF",
         "bats": "L",
-        "avg": 0.227,
-        "ops": 0.684,
+        "avg": 0.226,
+        "ops": 0.683,
         "hr": 13
       },
       {
@@ -229,16 +229,16 @@
         "name": "Brett Bateman",
         "pos": "RF",
         "bats": "L",
-        "avg": 0.33,
-        "ops": 0.783,
+        "avg": 0.327,
+        "ops": 0.777,
         "hr": 0
       },
       {
         "name": "Charles McAdoo",
         "pos": "LF",
         "bats": "R",
-        "avg": 0.244,
-        "ops": 0.64,
+        "avg": 0.241,
+        "ops": 0.633,
         "hr": 2
       },
       {
@@ -246,15 +246,15 @@
         "pos": "1B",
         "bats": "R",
         "avg": 0.261,
-        "ops": 0.684,
+        "ops": 0.686,
         "hr": 8
       },
       {
         "name": "Alejandro Kirk",
         "pos": "DH",
         "bats": "R",
-        "avg": 0.275,
-        "ops": 0.762,
+        "avg": 0.274,
+        "ops": 0.76,
         "hr": 9
       },
       {
@@ -916,7 +916,80 @@
     "away": []
   },
   "TB@ATL": {
-    "home": [],
+    "home": [
+      {
+        "name": "Drake Baldwin",
+        "pos": "DH",
+        "bats": "L",
+        "avg": 0.276,
+        "ops": 0.798,
+        "hr": 22
+      },
+      {
+        "name": "Ronald Acu\u00f1a Jr.",
+        "pos": "RF",
+        "bats": "R",
+        "avg": 0.253,
+        "ops": 0.789,
+        "hr": 16
+      },
+      {
+        "name": "Matt Olson",
+        "pos": "1B",
+        "bats": "L",
+        "avg": 0.249,
+        "ops": 0.828,
+        "hr": 37
+      },
+      {
+        "name": "Michael Harris II",
+        "pos": "CF",
+        "bats": "L",
+        "avg": 0.289,
+        "ops": 0.806,
+        "hr": 24
+      },
+      {
+        "name": "Mauricio Dub\u00f3n",
+        "pos": "SS",
+        "bats": "R",
+        "avg": 0.266,
+        "ops": 0.696,
+        "hr": 11
+      },
+      {
+        "name": "Mike Yastrzemski",
+        "pos": "LF",
+        "bats": "L",
+        "avg": 0.224,
+        "ops": 0.678,
+        "hr": 9
+      },
+      {
+        "name": "Ozzie Albies",
+        "pos": "2B",
+        "bats": "S",
+        "avg": 0.249,
+        "ops": 0.713,
+        "hr": 21
+      },
+      {
+        "name": "Austin Riley",
+        "pos": "3B",
+        "bats": "R",
+        "avg": 0.224,
+        "ops": 0.662,
+        "hr": 16
+      },
+      {
+        "name": "Sean Murphy",
+        "pos": "C",
+        "bats": "R",
+        "avg": 0.211,
+        "ops": 0.653,
+        "hr": 3
+      }
+    ],
     "away": []
   },
   "ARI@KC": {

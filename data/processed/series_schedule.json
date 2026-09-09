@@ -51,7 +51,7 @@
         "game_id": 824956,
         "date": "2026-09-09",
         "game_time_ct": "2:05 PM CT",
-        "status": "P",
+        "status": "I",
         "home_name": "Athletics",
         "away_name": "Toronto Blue Jays",
         "home_abbr": "ATH",
@@ -67,7 +67,7 @@
         "venue": "Sutter Health Park",
         "prediction": {
           "predicted_margin": -3.53,
-          "predicted_total": 8.9,
+          "predicted_total": 9.1,
           "home_win_prob": 0.292,
           "away_win_prob": 0.708,
           "spread_confidence": 47,
@@ -327,13 +327,13 @@
         "away_score": null,
         "venue": "Comerica Park",
         "prediction": {
-          "predicted_margin": 0.99,
+          "predicted_margin": 1.0,
           "predicted_total": 9.1,
           "home_win_prob": 0.562,
           "away_win_prob": 0.438,
           "spread_confidence": 35,
-          "margin_p25": -1.73,
-          "margin_p75": 3.71,
+          "margin_p25": -1.72,
+          "margin_p75": 3.72,
           "margin_std": 4.03,
           "method": "trained_xgboost"
         }
@@ -1954,7 +1954,7 @@
         "venue": "Comerica Park",
         "prediction": {
           "predicted_margin": 1.98,
-          "predicted_total": 6.3,
+          "predicted_total": 6.5,
           "home_win_prob": 0.621,
           "away_win_prob": 0.379,
           "spread_confidence": 35,
@@ -1984,7 +1984,7 @@
         "venue": "Comerica Park",
         "prediction": {
           "predicted_margin": 1.49,
-          "predicted_total": 6.9,
+          "predicted_total": 7.0,
           "home_win_prob": 0.592,
           "away_win_prob": 0.408,
           "spread_confidence": 22,
@@ -2014,7 +2014,7 @@
         "venue": "Comerica Park",
         "prediction": {
           "predicted_margin": 0.56,
-          "predicted_total": 7.7,
+          "predicted_total": 7.9,
           "home_win_prob": 0.535,
           "away_win_prob": 0.465,
           "spread_confidence": 33,

@@ -98,13 +98,13 @@
     "away_abbr": "TOR",
     "home_sp": "Brady Basso",
     "away_sp": "Braydon Fisher",
-    "nrfi_prob": 37.0,
+    "nrfi_prob": 37.2,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Brady Basso",
       "first_inning": {},
-      "season_era": 4.32
+      "season_era": 4.28
     },
     "away_pitcher": {
       "name": "Braydon Fisher",
@@ -190,18 +190,18 @@
     "away_abbr": "MIN",
     "home_sp": "Keider Montero",
     "away_sp": "Zebby Matthews",
-    "nrfi_prob": 34.2,
+    "nrfi_prob": 33.8,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Keider Montero",
       "first_inning": {},
-      "season_era": 3.52
+      "season_era": 3.5
     },
     "away_pitcher": {
       "name": "Zebby Matthews",
       "first_inning": {},
-      "season_era": 4.69
+      "season_era": 4.81
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
