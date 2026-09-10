@@ -24,29 +24,6 @@
   },
   {
     "date": "2026-09-10",
-    "game_time": "11:15 AM CT",
-    "home_abbr": "ATL",
-    "away_abbr": "TB",
-    "home_sp": "Mart\u00edn P\u00e9rez",
-    "away_sp": "Nick Martinez",
-    "nrfi_prob": 43.6,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Mart\u00edn P\u00e9rez",
-      "first_inning": {},
-      "season_era": 3.08
-    },
-    "away_pitcher": {
-      "name": "Nick Martinez",
-      "first_inning": {},
-      "season_era": 2.92
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-10",
     "game_time": "3:10 PM CT",
     "home_abbr": "SEA",
     "away_abbr": "TEX",
@@ -87,29 +64,6 @@
       "name": "Ryan Feltner",
       "first_inning": {},
       "season_era": 5.91
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-10",
-    "game_time": "12:05 PM CT",
-    "home_abbr": "PHI",
-    "away_abbr": "HOU",
-    "home_sp": "Zack Wheeler",
-    "away_sp": "Cristian Javier",
-    "nrfi_prob": 32.9,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Zack Wheeler",
-      "first_inning": {},
-      "season_era": 3.21
-    },
-    "away_pitcher": {
-      "name": "Cristian Javier",
-      "first_inning": {},
-      "season_era": 5.64
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
