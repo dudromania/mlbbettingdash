@@ -29,18 +29,18 @@
     "away_abbr": "TB",
     "home_sp": "Mart\u00edn P\u00e9rez",
     "away_sp": "Nick Martinez",
-    "nrfi_prob": 42.3,
+    "nrfi_prob": 43.6,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Mart\u00edn P\u00e9rez",
       "first_inning": {},
-      "season_era": 3.25
+      "season_era": 3.08
     },
     "away_pitcher": {
       "name": "Nick Martinez",
       "first_inning": {},
-      "season_era": 3.04
+      "season_era": 2.92
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -104,12 +104,12 @@
     "home_pitcher": {
       "name": "Zack Wheeler",
       "first_inning": {},
-      "season_era": 3.23
+      "season_era": 3.21
     },
     "away_pitcher": {
       "name": "Cristian Javier",
       "first_inning": {},
-      "season_era": 5.98
+      "season_era": 5.64
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
