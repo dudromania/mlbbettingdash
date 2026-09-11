@@ -70,29 +70,6 @@
   },
   {
     "date": "2026-09-11",
-    "game_time": "8:40 PM CT",
-    "home_abbr": "AZ",
-    "away_abbr": "TEX",
-    "home_sp": "TBD",
-    "away_sp": "TBD",
-    "nrfi_prob": 40.3,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-11",
     "game_time": "6:10 PM CT",
     "home_abbr": "TB",
     "away_abbr": "HOU",
@@ -179,6 +156,29 @@
       "name": "Seth Lugo",
       "first_inning": {},
       "season_era": 5.04
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-11",
+    "game_time": "8:40 PM CT",
+    "home_abbr": "AZ",
+    "away_abbr": "TEX",
+    "home_sp": "TBD",
+    "away_sp": "MacKenzie Gore",
+    "nrfi_prob": 35.5,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "TBD",
+      "first_inning": {},
+      "season_era": null
+    },
+    "away_pitcher": {
+      "name": "MacKenzie Gore",
+      "first_inning": {},
+      "season_era": 4.51
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
