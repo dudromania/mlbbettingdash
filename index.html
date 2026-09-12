@@ -1157,6 +1157,47 @@ tbody td {
 .fb:hover { color: var(--t2); background: var(--s2); }
 .fb.active { background: var(--b2); color: var(--t1); }
 
+/* -- ALL VEGAS LINES -- */
+.vg-note {
+  font-family: var(--mono); font-size: 10px; color: var(--t3);
+  line-height: 1.6; margin: 0 0 14px; padding: 8px 10px;
+  border: 1px solid var(--b1); background: var(--s1);
+}
+.vg-game { border: 1px solid var(--b1); margin-bottom: 14px; }
+.vg-head {
+  display: flex; align-items: baseline; gap: 10px; flex-wrap: wrap;
+  background: var(--s1); padding: 9px 12px; border-bottom: 1px solid var(--b1);
+}
+.vg-match { font-family: var(--mono); font-size: 13px; letter-spacing: .5px; }
+.vg-time { font-family: var(--mono); font-size: 10px; color: var(--t3); }
+.vg-meta { font-family: var(--mono); font-size: 10px; color: var(--t3); margin-left: auto; }
+.vg-meta b { color: var(--t2); font-weight: 400; }
+.vg-arb {
+  font-family: var(--mono); font-size: 10px; letter-spacing: .5px;
+  padding: 2px 6px; border: 1px solid var(--pos); color: var(--pos);
+}
+.vg-tbl { width: 100%; border-collapse: collapse; min-width: 560px; }
+.vg-tbl thead th { cursor: default; }
+.vg-tbl td { font-family: var(--mono); font-size: 11px; padding: 5px 10px; white-space: nowrap; }
+.vg-tbl td.bk { font-family: inherit; font-size: 12px; }
+.vg-best { color: var(--pos); font-weight: 500; }
+.vg-off { color: var(--warn); }
+.vg-foot {
+  font-family: var(--mono); font-size: 10px; color: var(--t3);
+  padding: 7px 12px; border-top: 1px solid var(--b1); background: var(--s1);
+  display: flex; gap: 16px; flex-wrap: wrap;
+}
+.vg-foot b { color: var(--t2); font-weight: 400; }
+.vg-arb-detail {
+  font-family: var(--mono); font-size: 10px; color: var(--pos);
+  padding: 7px 12px; border-top: 1px solid var(--b1); line-height: 1.7;
+}
+@media(max-width:500px) {
+  .vg-match { font-size: 12px; }
+  .vg-meta { margin-left: 0; width: 100%; }
+  .vg-tbl td, .vg-tbl thead th { padding: 5px 6px; }
+}
+
 /* -- EMPTY -- */
 .empty { padding: 40px; text-align: center; color: var(--t3); font-family: var(--mono); font-size: 11px; }
 .spinner { width: 20px; height: 20px; border: 1px solid var(--b2); border-top-color: var(--t3); animation: spin .8s linear infinite; margin: 0 auto 8px; }
@@ -1430,6 +1471,7 @@ tbody td {
     <div class="nav-sub" id="group-today">
       <div class="nav-item" data-tab="games">Today's Games</div>
       <div class="nav-item" data-tab="standings">Standings</div>
+      <div class="nav-item" data-tab="vegas">All Vegas Lines</div>
     </div>
   </div>
   <div class="drawer-section">
@@ -1551,6 +1593,22 @@ tbody td {
   </div>
 
   <!-- F5 INNINGS -->
+  <div id="tab-vegas" class="tab-panel">
+    <div class="sec">All Vegas Lines - Every Book</div>
+    <div class="stat-row" id="vg-stats"></div>
+    <div class="filters" id="vg-filters">
+      <div class="fb active" data-vgf="all">All Games</div>
+      <div class="fb" data-vgf="arb">Arbitrage Only</div>
+    </div>
+    <div class="vg-note">
+      Best available price on each side is highlighted. Hold is the vig implied by those
+      best prices - a negative hold is an arbitrage. Run-line and total legs are only ever
+      compared on the same number from opposite sides (away +1.5 against home -1.5,
+      over 8.5 against under 8.5); books disagree on which side is the run-line favorite,
+      so any other pairing would report an edge that does not exist.
+    </div>
+    <div id="vg-games"></div>
+  </div>
   <div id="tab-f5" class="tab-panel">
     <div id="f5-stats" class="stat-row"></div>
     <div class="sec">F5 Best Bets</div>
@@ -1711,7 +1769,7 @@ tbody td {
 
 <script>
 const DATA = { games:[], series:[], pitchers:[], history:[], nrfi:[], scores:[], kprops:[], bullpen:[], kpropHistory:[], date:'' };
-const LABELS = { model:'FULL GAME PREDICTIONS', games:"TODAY'S GAMES", pitchers:'PITCHER STATS', batters:'BATTER PROPS', standings:'STANDINGS', trends:'SERIES TRACKING', nrfi:'NRFI MATRIX', f5:'FIRST 5 INNINGS', kprops:'K STRIKEOUT PROPS', bullpen:'BULLPEN REPORT', results:'MODEL PERFORMANCE' };
+const LABELS = { model:'FULL GAME PREDICTIONS', games:"TODAY'S GAMES", pitchers:'PITCHER STATS', batters:'BATTER PROPS', standings:'STANDINGS', trends:'SERIES TRACKING', nrfi:'NRFI MATRIX', f5:'FIRST 5 INNINGS', kprops:'K STRIKEOUT PROPS', bullpen:'BULLPEN REPORT', vegas:'ALL VEGAS LINES', results:'MODEL PERFORMANCE' };
 
 async function loadJSON(path, fallback) {
   try {
@@ -1786,6 +1844,7 @@ function showTab(tab) {
   if (tab==='f5')      renderF5();
   if (tab==='kprops')  renderKProps();
   if (tab==='bullpen') renderBullpen();
+  if (tab==='vegas')   renderVegas();
   window.scrollTo(0,0);
 }
 
@@ -1861,6 +1920,155 @@ function renderModel() {
     });
   });
 }
+
+// -- ALL VEGAS LINES ---------------------------------------------------------
+// Reads data/processed/vegas_lines.json, which daily_export builds from the
+// single daily Odds API request. The API key stays server-side; nothing here
+// talks to the sportsbook API directly.
+let VEGAS = null;          // cached payload
+let vgFilter = 'all';
+
+const vgOdds = v => v === null || v === undefined ? '-' : (v > 0 ? '+' + v : '' + v);
+const vgPt   = v => v === null || v === undefined ? '' : (v > 0 ? '+' + v : '' + v);
+
+async function renderVegas() {
+  const host = document.getElementById('vg-games');
+  if (!VEGAS) {
+    host.innerHTML = '<div class="empty"><div class="spinner"></div>Loading lines...</div>';
+    VEGAS = await loadJSON('data/processed/vegas_lines.json', { games: [], books: [] });
+  }
+
+  const games = VEGAS.games || [];
+  const holds = games.map(g => g.hold?.ml).filter(h => h !== null && h !== undefined);
+  const avgHold = holds.length ? (holds.reduce((a, b) => a + b, 0) / holds.length).toFixed(2) : '-';
+
+  document.getElementById('vg-stats').innerHTML = `
+    <div class="stat-cell"><div class="v">${games.length}</div><div class="l">Games</div></div>
+    <div class="stat-cell"><div class="v">${VEGAS.book_count || 0}</div><div class="l">Books</div></div>
+    <div class="stat-cell"><div class="v ${VEGAS.arb_count ? 'pos' : ''}">${VEGAS.arb_count || 0}</div><div class="l">Arbitrage</div></div>
+    <div class="stat-cell"><div class="v">${avgHold}%</div><div class="l">Avg ML Hold</div></div>`;
+
+  const shown = vgFilter === 'arb' ? games.filter(g => g.arb) : games;
+  if (!shown.length) {
+    host.innerHTML = `<div class="empty">${vgFilter === 'arb'
+      ? 'No arbitrage in today&rsquo;s prices.'
+      : 'No lines available.'}</div>`;
+    return;
+  }
+  host.innerHTML = shown.map(vgGame).join('');
+}
+
+function vgGame(g) {
+  const books = g.books || [];
+
+  // Best price per side. Run line and total are only comparable within the same
+  // number, so the "best" flag for those is scoped to each book's own point.
+  const bestBy = (getPt, getPrice) => {
+    const m = {};
+    books.forEach(b => {
+      const pt = getPt(b), pr = getPrice(b);
+      if (pt === null || pt === undefined || pr === null || pr === undefined) return;
+      if (m[pt] === undefined || pr > m[pt]) m[pt] = pr;
+    });
+    return m;
+  };
+  const bestMlA = Math.max(...books.map(b => b.ml_away).filter(v => v != null), -Infinity);
+  const bestMlH = Math.max(...books.map(b => b.ml_home).filter(v => v != null), -Infinity);
+  const bRlA = bestBy(b => b.rl_away_point, b => b.rl_away_price);
+  const bRlH = bestBy(b => b.rl_home_point, b => b.rl_home_price);
+  const bOv  = bestBy(b => b.total_point,   b => b.over_price);
+  const bUn  = bestBy(b => b.total_point,   b => b.under_price);
+
+  // The most common run line / total, so an off-consensus number stands out.
+  const modeOf = key => {
+    const c = {};
+    books.forEach(b => { const v = b[key]; if (v != null) c[v] = (c[v] || 0) + 1; });
+    const e = Object.entries(c).sort((a, b) => b[1] - a[1])[0];
+    return e ? parseFloat(e[0]) : null;
+  };
+  const modeRl = modeOf('rl_away_point'), modeTot = modeOf('total_point');
+
+  const cell = (price, isBest) =>
+    `<td class="tr${isBest ? ' vg-best' : ''}">${vgOdds(price)}</td>`;
+  const ptCell = (pt, price, isBest, offConsensus) =>
+    `<td class="tr${isBest ? ' vg-best' : ''}">` +
+    (pt == null ? '-' : `<span class="${offConsensus ? 'vg-off' : 'dim'}">${vgPt(pt)}</span> ${vgOdds(price)}`) +
+    '</td>';
+
+  const rows = books.map(b => `
+    <tr>
+      <td class="bk">${b.book_title || b.book}</td>
+      ${cell(b.ml_away, b.ml_away != null && b.ml_away === bestMlA)}
+      ${cell(b.ml_home, b.ml_home != null && b.ml_home === bestMlH)}
+      ${ptCell(b.rl_away_point, b.rl_away_price,
+               b.rl_away_price != null && b.rl_away_price === bRlA[b.rl_away_point],
+               modeRl != null && b.rl_away_point != null && b.rl_away_point !== modeRl)}
+      ${ptCell(b.rl_home_point, b.rl_home_price,
+               b.rl_home_price != null && b.rl_home_price === bRlH[b.rl_home_point],
+               modeRl != null && b.rl_home_point != null && b.rl_home_point !== -modeRl)}
+      ${ptCell(b.total_point, b.over_price,
+               b.over_price != null && b.over_price === bOv[b.total_point],
+               modeTot != null && b.total_point != null && b.total_point !== modeTot)}
+      ${ptCell(b.total_point, b.under_price,
+               b.under_price != null && b.under_price === bUn[b.total_point],
+               modeTot != null && b.total_point != null && b.total_point !== modeTot)}
+    </tr>`).join('');
+
+  const holdCell = (label, v) =>
+    v === null || v === undefined ? '' :
+    `<span>${label} hold <b class="${v < 0 ? 'pos' : ''}">${v}%</b></span>`;
+
+  const arbBadge = g.arb
+    ? `<span class="vg-arb">ARB ${g.arb.market} +${g.arb.roi_pct}%</span>` : '';
+
+  const arbDetail = (g.arbs || []).map(a => {
+    const legs = a.legs.map(l =>
+      `${l.side}${l.point != null ? ' ' + vgPt(l.point) : ''} ${vgOdds(l.price)} @ ${l.book_title} (${l.stake_pct}% of stake)`
+    ).join('  |  ');
+    return `<div class="vg-arb-detail">${a.market} +${a.roi_pct}%${a.same_book ? ' - SAME BOOK, likely a stale quote' : ''}<br>${legs}</div>`;
+  }).join('');
+
+  return `
+  <div class="vg-game">
+    <div class="vg-head">
+      <span class="vg-match">${g.away_abbr || g.away_name} @ ${g.home_abbr || g.home_name}</span>
+      <span class="vg-time">${g.commence_ct || ''}</span>
+      ${arbBadge}
+      <span class="vg-meta">${g.book_count} books</span>
+    </div>
+    <div class="tbl-wrap" style="border:none;margin:0">
+      <table class="vg-tbl">
+        <thead><tr>
+          <th>Book</th>
+          <th class="tr">${g.away_abbr || 'AWAY'} ML</th>
+          <th class="tr">${g.home_abbr || 'HOME'} ML</th>
+          <th class="tr">${g.away_abbr || 'AWAY'} RL</th>
+          <th class="tr">${g.home_abbr || 'HOME'} RL</th>
+          <th class="tr">Over</th>
+          <th class="tr">Under</th>
+        </tr></thead>
+        <tbody>${rows}</tbody>
+      </table>
+    </div>
+    ${arbDetail}
+    <div class="vg-foot">
+      <span>Best ML <b>${g.away_abbr} ${vgOdds(g.best?.ml_away?.price)}</b> ${g.best?.ml_away?.book_title || ''}</span>
+      <span>/ <b>${g.home_abbr} ${vgOdds(g.best?.ml_home?.price)}</b> ${g.best?.ml_home?.book_title || ''}</span>
+      ${holdCell('ML', g.hold?.ml)}
+      ${holdCell('RL', g.hold?.rl)}
+      ${holdCell('Total', g.hold?.total)}
+    </div>
+  </div>`;
+}
+
+document.querySelectorAll('#vg-filters .fb').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('#vg-filters .fb').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    vgFilter = btn.dataset.vgf;
+    renderVegas();
+  });
+});
 
 function renderModelTable() {
   let games = [...DATA.games];
