@@ -81,7 +81,7 @@
     "home_pitcher": {
       "name": "Andrew Alvarez",
       "first_inning": {},
-      "season_era": 3.6
+      "season_era": 3.59
     },
     "away_pitcher": {
       "name": "Walbert Ure\u00f1a",
@@ -127,12 +127,12 @@
     "home_pitcher": {
       "name": "Clay Holmes",
       "first_inning": {},
-      "season_era": 2.83
+      "season_era": 2.85
     },
     "away_pitcher": {
       "name": "Paul Skenes",
       "first_inning": {},
-      "season_era": 3.83
+      "season_era": 3.8
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -144,18 +144,18 @@
     "away_abbr": "BAL",
     "home_sp": "Spencer Miles",
     "away_sp": "Kyle Bradish",
-    "nrfi_prob": 40.5,
+    "nrfi_prob": 39.8,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Spencer Miles",
       "first_inning": {},
-      "season_era": 2.77
+      "season_era": 2.71
     },
     "away_pitcher": {
       "name": "Kyle Bradish",
       "first_inning": {},
-      "season_era": 3.91
+      "season_era": 4.12
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -167,18 +167,41 @@
     "away_abbr": "NYM",
     "home_sp": "Gerrit Cole",
     "away_sp": "Zac Thornton",
-    "nrfi_prob": 39.0,
+    "nrfi_prob": 38.8,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Gerrit Cole",
       "first_inning": {},
-      "season_era": 3.59
+      "season_era": 3.67
     },
     "away_pitcher": {
       "name": "Zac Thornton",
       "first_inning": {},
-      "season_era": 3.48
+      "season_era": 3.44
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-12",
+    "game_time": "6:15 PM CT",
+    "home_abbr": "ATL",
+    "away_abbr": "PHI",
+    "home_sp": "Tyler Mahle",
+    "away_sp": "Tim Mayza",
+    "nrfi_prob": 38.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Tyler Mahle",
+      "first_inning": {},
+      "season_era": 4.05
+    },
+    "away_pitcher": {
+      "name": "Tim Mayza",
+      "first_inning": {},
+      "season_era": 3.23
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -300,29 +323,6 @@
   },
   {
     "date": "2026-09-12",
-    "game_time": "6:15 PM CT",
-    "home_abbr": "ATL",
-    "away_abbr": "PHI",
-    "home_sp": "Tyler Mahle",
-    "away_sp": "TBD",
-    "nrfi_prob": 30.1,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Tyler Mahle",
-      "first_inning": {},
-      "season_era": 4.05
-    },
-    "away_pitcher": {
-      "name": "Andrew Painter",
-      "first_inning": {},
-      "season_era": 5.71
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-12",
     "game_time": "12:10 PM CT",
     "home_abbr": "DET",
     "away_abbr": "COL",
@@ -334,12 +334,12 @@
     "home_pitcher": {
       "name": "Andrew Sears",
       "first_inning": {},
-      "season_era": 5.28
+      "season_era": 5.4
     },
     "away_pitcher": {
       "name": "Tanner Gordon",
       "first_inning": {},
-      "season_era": 5.36
+      "season_era": 5.55
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
