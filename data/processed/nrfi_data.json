@@ -167,18 +167,18 @@
     "away_abbr": "NYM",
     "home_sp": "Gerrit Cole",
     "away_sp": "Zac Thornton",
-    "nrfi_prob": 39.5,
+    "nrfi_prob": 39.0,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Gerrit Cole",
       "first_inning": {},
-      "season_era": 3.41
+      "season_era": 3.59
     },
     "away_pitcher": {
       "name": "Zac Thornton",
       "first_inning": {},
-      "season_era": 3.53
+      "season_era": 3.48
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -257,15 +257,15 @@
     "game_time": "6:10 PM CT",
     "home_abbr": "MIL",
     "away_abbr": "CIN",
-    "home_sp": "TBD",
+    "home_sp": "Shane Drohan",
     "away_sp": "Brady Singer",
-    "nrfi_prob": 33.3,
+    "nrfi_prob": 30.8,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "TBD",
+      "name": "Shane Drohan",
       "first_inning": {},
-      "season_era": null
+      "season_era": 4.09
     },
     "away_pitcher": {
       "name": "Brady Singer",
@@ -328,18 +328,18 @@
     "away_abbr": "COL",
     "home_sp": "Andrew Sears",
     "away_sp": "Tanner Gordon",
-    "nrfi_prob": 29.0,
+    "nrfi_prob": 26.0,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Andrew Sears",
       "first_inning": {},
-      "season_era": 4.38
+      "season_era": 5.28
     },
     "away_pitcher": {
       "name": "Tanner Gordon",
       "first_inning": {},
-      "season_era": 5.4
+      "season_era": 5.36
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
