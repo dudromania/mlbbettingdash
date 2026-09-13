@@ -29,18 +29,18 @@
     "away_abbr": "NYM",
     "home_sp": "Cam Schlittler",
     "away_sp": "Christian Scott",
-    "nrfi_prob": 44.0,
+    "nrfi_prob": 44.5,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Cam Schlittler",
       "first_inning": {},
-      "season_era": 2.01
+      "season_era": 1.95
     },
     "away_pitcher": {
       "name": "Christian Scott",
       "first_inning": {},
-      "season_era": 3.81
+      "season_era": 3.76
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -52,7 +52,7 @@
     "away_abbr": "BAL",
     "home_sp": "Dylan Cease",
     "away_sp": "Trevor Rogers",
-    "nrfi_prob": 41.0,
+    "nrfi_prob": 40.6,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
@@ -63,7 +63,7 @@
     "away_pitcher": {
       "name": "Trevor Rogers",
       "first_inning": {},
-      "season_era": 4.13
+      "season_era": 4.22
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -98,18 +98,18 @@
     "away_abbr": "CIN",
     "home_sp": "Robert Gasser",
     "away_sp": "Chase Burns",
-    "nrfi_prob": 38.3,
+    "nrfi_prob": 38.6,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Robert Gasser",
       "first_inning": {},
-      "season_era": 4.43
+      "season_era": 4.3
     },
     "away_pitcher": {
       "name": "Chase Burns",
       "first_inning": {},
-      "season_era": 2.73
+      "season_era": 2.8
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -144,18 +144,18 @@
     "away_abbr": "CLE",
     "home_sp": "Joe Ryan",
     "away_sp": "Tanner Bibee",
-    "nrfi_prob": 35.6,
+    "nrfi_prob": 35.3,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Joe Ryan",
       "first_inning": {},
-      "season_era": 3.68
+      "season_era": 3.84
     },
     "away_pitcher": {
       "name": "Tanner Bibee",
       "first_inning": {},
-      "season_era": 4.22
+      "season_era": 4.13
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -167,18 +167,18 @@
     "away_abbr": "PIT",
     "home_sp": "Matthew Boyd",
     "away_sp": "Bubba Chandler",
-    "nrfi_prob": 34.1,
+    "nrfi_prob": 34.3,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Matthew Boyd",
       "first_inning": {},
-      "season_era": 4.03
+      "season_era": 4.0
     },
     "away_pitcher": {
       "name": "Bubba Chandler",
       "first_inning": {},
-      "season_era": 4.25
+      "season_era": 4.22
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -190,41 +190,18 @@
     "away_abbr": "HOU",
     "home_sp": "Freddy Peralta",
     "away_sp": "Hayden Wesneski",
-    "nrfi_prob": 32.6,
+    "nrfi_prob": 33.7,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Freddy Peralta",
       "first_inning": {},
-      "season_era": 4.78
+      "season_era": 4.67
     },
     "away_pitcher": {
       "name": "Hayden Wesneski",
       "first_inning": {},
-      "season_era": 3.86
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-13",
-    "game_time": "12:35 PM CT",
-    "home_abbr": "ATL",
-    "away_abbr": "PHI",
-    "home_sp": "Grant Holmes",
-    "away_sp": "Andrew Painter",
-    "nrfi_prob": 32.2,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Grant Holmes",
-      "first_inning": {},
-      "season_era": 3.43
-    },
-    "away_pitcher": {
-      "name": "Andrew Painter",
-      "first_inning": {},
-      "season_era": 5.74
+      "season_era": 3.7
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -236,18 +213,41 @@
     "away_abbr": "LAD",
     "home_sp": "Eury P\u00e9rez",
     "away_sp": "Emmet Sheehan",
-    "nrfi_prob": 31.5,
+    "nrfi_prob": 32.1,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Eury P\u00e9rez",
       "first_inning": {},
-      "season_era": 3.89
+      "season_era": 3.99
     },
     "away_pitcher": {
       "name": "Emmet Sheehan",
       "first_inning": {},
-      "season_era": 5.03
+      "season_era": 4.79
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-13",
+    "game_time": "12:35 PM CT",
+    "home_abbr": "ATL",
+    "away_abbr": "PHI",
+    "home_sp": "Grant Holmes",
+    "away_sp": "Andrew Painter",
+    "nrfi_prob": 32.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Grant Holmes",
+      "first_inning": {},
+      "season_era": 3.49
+    },
+    "away_pitcher": {
+      "name": "Andrew Painter",
+      "first_inning": {},
+      "season_era": 5.54
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -282,41 +282,18 @@
     "away_abbr": "CWS",
     "home_sp": "Michael McGreevy",
     "away_sp": "David Sandlin",
-    "nrfi_prob": 30.5,
+    "nrfi_prob": 30.8,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Michael McGreevy",
       "first_inning": {},
-      "season_era": 3.92
+      "season_era": 3.83
     },
     "away_pitcher": {
       "name": "David Sandlin",
       "first_inning": {},
-      "season_era": 6.93
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-13",
-    "game_time": "11:10 AM CT",
-    "home_abbr": "DET",
-    "away_abbr": "COL",
-    "home_sp": "Jackson Jobe",
-    "away_sp": "Gabriel Hughes",
-    "nrfi_prob": 30.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Jackson Jobe",
-      "first_inning": {},
-      "season_era": 3.97
-    },
-    "away_pitcher": {
-      "name": "Gabriel Hughes",
-      "first_inning": {},
-      "season_era": 6.37
+      "season_era": 5.64
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -328,18 +305,18 @@
     "away_abbr": "LAA",
     "home_sp": "Riley Cornelio",
     "away_sp": "Grayson Rodriguez",
-    "nrfi_prob": 26.7,
+    "nrfi_prob": 27.3,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Riley Cornelio",
       "first_inning": {},
-      "season_era": 5.06
+      "season_era": 4.88
     },
     "away_pitcher": {
       "name": "Grayson Rodriguez",
       "first_inning": {},
-      "season_era": 6.21
+      "season_era": 6.1
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
