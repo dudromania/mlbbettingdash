@@ -1,44 +1,44 @@
 {
   "date": "2026-09-15",
-  "fetched_at": "2026-09-15T13:11:28",
+  "fetched_at": "2026-09-15T15:11:29",
   "games": [
     {
       "home_abbr": "CIN",
       "away_abbr": "LAD",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
     {
       "home_abbr": "TB",
       "away_abbr": "ATH",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
     {
       "home_abbr": "CLE",
       "away_abbr": "CHW",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
     {
       "home_abbr": "PIT",
       "away_abbr": "MIL",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
@@ -48,7 +48,7 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
@@ -58,17 +58,17 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
     {
       "home_abbr": "NYM",
       "away_abbr": "BAL",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
@@ -78,7 +78,7 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
@@ -88,17 +88,17 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
     {
       "home_abbr": "STL",
       "away_abbr": "SF",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
@@ -108,7 +108,7 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
@@ -118,7 +118,7 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Scheduled",
+      "detail": "Pre-Game",
       "is_live": false,
       "is_final": false
     },
