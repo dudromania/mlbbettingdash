@@ -1,6 +1,6 @@
 [
   {
-    "id": 2659,
+    "id": 2662,
     "game_date": "2026-09-14",
     "game_pick_id": null,
     "player_name": "Tarik Skubal",
@@ -20,14 +20,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-09-14 18:09:58",
-    "graded_at": null
+    "actual_value": 9.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-09-14 20:11:22",
+    "graded_at": "2026-09-15 13:00:14"
   },
   {
-    "id": 2660,
+    "id": 2663,
     "game_date": "2026-09-14",
     "game_pick_id": null,
     "player_name": "Jonah Tong",
@@ -47,14 +47,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-09-14 18:09:58",
-    "graded_at": null
+    "actual_value": 6.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-09-14 20:11:22",
+    "graded_at": "2026-09-15 13:00:14"
   },
   {
-    "id": 2658,
+    "id": 2661,
     "game_date": "2026-09-14",
     "game_pick_id": null,
     "player_name": "Gavin Williams",
@@ -74,11 +74,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-09-14 18:09:58",
-    "graded_at": null
+    "actual_value": 7.0,
+    "result": "W",
+    "pnl": 64.51612903225806,
+    "created_at": "2026-09-14 20:11:22",
+    "graded_at": "2026-09-15 13:00:14"
   },
   {
     "id": 2650,
