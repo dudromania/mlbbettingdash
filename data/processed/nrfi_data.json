@@ -93,46 +93,23 @@
   },
   {
     "date": "2026-09-16",
-    "game_time": "12:10 PM CT",
-    "home_abbr": "CLE",
-    "away_abbr": "CWS",
-    "home_sp": "Parker Messick",
-    "away_sp": "Anthony Kay",
-    "nrfi_prob": 39.3,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Parker Messick",
-      "first_inning": {},
-      "season_era": 2.46
-    },
-    "away_pitcher": {
-      "name": "Anthony Kay",
-      "first_inning": {},
-      "season_era": 4.44
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-16",
     "game_time": "12:40 PM CT",
     "home_abbr": "MIN",
     "away_abbr": "NYY",
     "home_sp": "Zebby Matthews",
     "away_sp": "Carlos Rod\u00f3n",
-    "nrfi_prob": 34.9,
+    "nrfi_prob": 36.1,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Zebby Matthews",
       "first_inning": {},
-      "season_era": 4.94
+      "season_era": 4.74
     },
     "away_pitcher": {
       "name": "Carlos Rod\u00f3n",
       "first_inning": {},
-      "season_era": 3.04
+      "season_era": 2.95
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -185,6 +162,29 @@
   },
   {
     "date": "2026-09-16",
+    "game_time": "6:10 PM CT",
+    "home_abbr": "NYM",
+    "away_abbr": "BAL",
+    "home_sp": "Xzavion Curry",
+    "away_sp": "Chris Bassitt",
+    "nrfi_prob": 33.7,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Xzavion Curry",
+      "first_inning": {},
+      "season_era": 3.44
+    },
+    "away_pitcher": {
+      "name": "Chris Bassitt",
+      "first_inning": {},
+      "season_era": 4.88
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-16",
     "game_time": "5:45 PM CT",
     "home_abbr": "WSH",
     "away_abbr": "PHI",
@@ -208,6 +208,29 @@
   },
   {
     "date": "2026-09-16",
+    "game_time": "2:07 PM CT",
+    "home_abbr": "TOR",
+    "away_abbr": "DET",
+    "home_sp": "Max Scherzer",
+    "away_sp": "Keider Montero",
+    "nrfi_prob": 32.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Max Scherzer",
+      "first_inning": {},
+      "season_era": 6.24
+    },
+    "away_pitcher": {
+      "name": "Keider Montero",
+      "first_inning": {},
+      "season_era": 3.5
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-16",
     "game_time": "7:10 PM CT",
     "home_abbr": "HOU",
     "away_abbr": "KC",
@@ -225,29 +248,6 @@
       "name": "Daniel Lynch IV",
       "first_inning": {},
       "season_era": 3.52
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-16",
-    "game_time": "2:07 PM CT",
-    "home_abbr": "TOR",
-    "away_abbr": "DET",
-    "home_sp": "Max Scherzer",
-    "away_sp": "Keider Montero",
-    "nrfi_prob": 31.8,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Max Scherzer",
-      "first_inning": {},
-      "season_era": 6.38
-    },
-    "away_pitcher": {
-      "name": "Keider Montero",
-      "first_inning": {},
-      "season_era": 3.55
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -305,41 +305,18 @@
     "away_abbr": "SF",
     "home_sp": "Matthew Liberatore",
     "away_sp": "Anthony Molina",
-    "nrfi_prob": 27.7,
+    "nrfi_prob": 29.6,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Matthew Liberatore",
       "first_inning": {},
-      "season_era": 5.47
+      "season_era": 5.36
     },
     "away_pitcher": {
       "name": "Anthony Molina",
       "first_inning": {},
-      "season_era": 4.74
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-16",
-    "game_time": "6:10 PM CT",
-    "home_abbr": "NYM",
-    "away_abbr": "BAL",
-    "home_sp": "Robert Stock",
-    "away_sp": "Chris Bassitt",
-    "nrfi_prob": 27.3,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Robert Stock",
-      "first_inning": {},
-      "season_era": 5.93
-    },
-    "away_pitcher": {
-      "name": "Chris Bassitt",
-      "first_inning": {},
-      "season_era": 4.88
+      "season_era": 4.18
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
