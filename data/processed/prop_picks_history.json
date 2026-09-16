@@ -1,6 +1,6 @@
 [
   {
-    "id": 2672,
+    "id": 2676,
     "game_date": "2026-09-15",
     "game_pick_id": null,
     "player_name": "Yoshinobu Yamamoto",
@@ -20,14 +20,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-09-15 18:12:25",
-    "graded_at": null
+    "actual_value": 7.0,
+    "result": "W",
+    "pnl": 86.95652173913044,
+    "created_at": "2026-09-15 20:12:28",
+    "graded_at": "2026-09-16 13:00:16"
   },
   {
-    "id": 2674,
+    "id": 2678,
     "game_date": "2026-09-15",
     "game_pick_id": null,
     "player_name": "Sean Manaea",
@@ -47,14 +47,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-09-15 18:12:25",
-    "graded_at": null
+    "actual_value": 6.0,
+    "result": "W",
+    "pnl": 64.93506493506493,
+    "created_at": "2026-09-15 20:12:28",
+    "graded_at": "2026-09-16 13:00:16"
   },
   {
-    "id": 2673,
+    "id": 2677,
     "game_date": "2026-09-15",
     "game_pick_id": null,
     "player_name": "Jacob Misiorowski",
@@ -74,14 +74,14 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-09-15 18:12:25",
-    "graded_at": null
+    "actual_value": 7.0,
+    "result": "W",
+    "pnl": 64.1025641025641,
+    "created_at": "2026-09-15 20:12:28",
+    "graded_at": "2026-09-16 13:00:16"
   },
   {
-    "id": 2675,
+    "id": 2679,
     "game_date": "2026-09-15",
     "game_pick_id": null,
     "player_name": "Cristopher S\u00e1nchez",
@@ -101,11 +101,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-09-15 18:12:25",
-    "graded_at": null
+    "actual_value": 5.0,
+    "result": "W",
+    "pnl": 85.47008547008548,
+    "created_at": "2026-09-15 20:12:28",
+    "graded_at": "2026-09-16 13:00:16"
   },
   {
     "id": 2662,
