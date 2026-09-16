@@ -98,18 +98,18 @@
     "away_abbr": "CWS",
     "home_sp": "Parker Messick",
     "away_sp": "Anthony Kay",
-    "nrfi_prob": 38.7,
+    "nrfi_prob": 39.3,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Parker Messick",
       "first_inning": {},
-      "season_era": 2.51
+      "season_era": 2.46
     },
     "away_pitcher": {
       "name": "Anthony Kay",
       "first_inning": {},
-      "season_era": 4.53
+      "season_era": 4.44
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -121,18 +121,18 @@
     "away_abbr": "NYY",
     "home_sp": "Zebby Matthews",
     "away_sp": "Carlos Rod\u00f3n",
-    "nrfi_prob": 35.1,
+    "nrfi_prob": 34.9,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Zebby Matthews",
       "first_inning": {},
-      "season_era": 4.98
+      "season_era": 4.94
     },
     "away_pitcher": {
       "name": "Carlos Rod\u00f3n",
       "first_inning": {},
-      "season_era": 2.94
+      "season_era": 3.04
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -300,6 +300,29 @@
   },
   {
     "date": "2026-09-16",
+    "game_time": "12:15 PM CT",
+    "home_abbr": "STL",
+    "away_abbr": "SF",
+    "home_sp": "Matthew Liberatore",
+    "away_sp": "Anthony Molina",
+    "nrfi_prob": 27.7,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Matthew Liberatore",
+      "first_inning": {},
+      "season_era": 5.47
+    },
+    "away_pitcher": {
+      "name": "Anthony Molina",
+      "first_inning": {},
+      "season_era": 4.74
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-16",
     "game_time": "6:10 PM CT",
     "home_abbr": "NYM",
     "away_abbr": "BAL",
@@ -317,29 +340,6 @@
       "name": "Chris Bassitt",
       "first_inning": {},
       "season_era": 4.88
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-16",
-    "game_time": "12:15 PM CT",
-    "home_abbr": "STL",
-    "away_abbr": "SF",
-    "home_sp": "Matthew Liberatore",
-    "away_sp": "Anthony Molina",
-    "nrfi_prob": 26.0,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Matthew Liberatore",
-      "first_inning": {},
-      "season_era": 5.53
-    },
-    "away_pitcher": {
-      "name": "Anthony Molina",
-      "first_inning": {},
-      "season_era": 5.24
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
