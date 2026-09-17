@@ -98,41 +98,18 @@
     "away_abbr": "ATH",
     "home_sp": "Drew Rasmussen",
     "away_sp": "Jeffrey Springs",
-    "nrfi_prob": 34.5,
+    "nrfi_prob": 34.6,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Drew Rasmussen",
       "first_inning": {},
-      "season_era": 2.76
+      "season_era": 2.72
     },
     "away_pitcher": {
       "name": "Jeffrey Springs",
       "first_inning": {},
-      "season_era": 5.8
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-17",
-    "game_time": "2:10 PM CT",
-    "home_abbr": "COL",
-    "away_abbr": "SD",
-    "home_sp": "Tanner Gordon",
-    "away_sp": "Michael King",
-    "nrfi_prob": 33.6,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Tanner Gordon",
-      "first_inning": {},
-      "season_era": 5.55
-    },
-    "away_pitcher": {
-      "name": "Michael King",
-      "first_inning": {},
-      "season_era": 3.03
+      "season_era": 6.18
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -142,15 +119,15 @@
     "game_time": "6:15 PM CT",
     "home_abbr": "HOU",
     "away_abbr": "KC",
-    "home_sp": "TBD",
+    "home_sp": "Miguel Ullola",
     "away_sp": "Seth Lugo",
     "nrfi_prob": 33.5,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "TBD",
+      "name": "Miguel Ullola",
       "first_inning": {},
-      "season_era": null
+      "season_era": 3.38
     },
     "away_pitcher": {
       "name": "Seth Lugo",
@@ -162,46 +139,23 @@
   },
   {
     "date": "2026-09-17",
-    "game_time": "11:40 AM CT",
-    "home_abbr": "CIN",
-    "away_abbr": "LAD",
-    "home_sp": "Brady Singer",
-    "away_sp": "Justin Wrobleski",
-    "nrfi_prob": 31.3,
+    "game_time": "2:10 PM CT",
+    "home_abbr": "COL",
+    "away_abbr": "SD",
+    "home_sp": "Tanner Gordon",
+    "away_sp": "Michael King",
+    "nrfi_prob": 33.4,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Brady Singer",
+      "name": "Tanner Gordon",
       "first_inning": {},
-      "season_era": 5.67
+      "season_era": 6.07
     },
     "away_pitcher": {
-      "name": "Justin Wrobleski",
+      "name": "Michael King",
       "first_inning": {},
-      "season_era": 3.7
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-17",
-    "game_time": "11:35 AM CT",
-    "home_abbr": "PIT",
-    "away_abbr": "MIL",
-    "home_sp": "Wilber Dotel",
-    "away_sp": "Kyle Harrison",
-    "nrfi_prob": 31.1,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Wilber Dotel",
-      "first_inning": {},
-      "season_era": 4.82
-    },
-    "away_pitcher": {
-      "name": "Kyle Harrison",
-      "first_inning": {},
-      "season_era": 4.25
+      "season_era": 3.07
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
