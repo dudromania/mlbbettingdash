@@ -75,41 +75,18 @@
     "away_abbr": "PHI",
     "home_sp": "Nolan McLean",
     "away_sp": "Aaron Nola",
-    "nrfi_prob": 35.2,
+    "nrfi_prob": 35.3,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Nolan McLean",
       "first_inning": {},
-      "season_era": 3.24
+      "season_era": 3.22
     },
     "away_pitcher": {
       "name": "Aaron Nola",
       "first_inning": {},
       "season_era": 4.69
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-17",
-    "game_time": "12:10 PM CT",
-    "home_abbr": "TB",
-    "away_abbr": "ATH",
-    "home_sp": "Drew Rasmussen",
-    "away_sp": "Jeffrey Springs",
-    "nrfi_prob": 34.6,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Drew Rasmussen",
-      "first_inning": {},
-      "season_era": 2.72
-    },
-    "away_pitcher": {
-      "name": "Jeffrey Springs",
-      "first_inning": {},
-      "season_era": 6.18
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -133,29 +110,6 @@
       "name": "Seth Lugo",
       "first_inning": {},
       "season_era": 4.99
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-17",
-    "game_time": "2:10 PM CT",
-    "home_abbr": "COL",
-    "away_abbr": "SD",
-    "home_sp": "Tanner Gordon",
-    "away_sp": "Michael King",
-    "nrfi_prob": 33.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Tanner Gordon",
-      "first_inning": {},
-      "season_era": 6.07
-    },
-    "away_pitcher": {
-      "name": "Michael King",
-      "first_inning": {},
-      "season_era": 3.07
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
