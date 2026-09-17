@@ -98,18 +98,18 @@
     "away_abbr": "ATH",
     "home_sp": "Drew Rasmussen",
     "away_sp": "Jeffrey Springs",
-    "nrfi_prob": 34.3,
+    "nrfi_prob": 34.5,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Drew Rasmussen",
       "first_inning": {},
-      "season_era": 2.81
+      "season_era": 2.76
     },
     "away_pitcher": {
       "name": "Jeffrey Springs",
       "first_inning": {},
-      "season_era": 5.93
+      "season_era": 5.8
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -162,46 +162,46 @@
   },
   {
     "date": "2026-09-17",
-    "game_time": "11:35 AM CT",
-    "home_abbr": "PIT",
-    "away_abbr": "MIL",
-    "home_sp": "Wilber Dotel",
-    "away_sp": "Kyle Harrison",
-    "nrfi_prob": 32.0,
+    "game_time": "11:40 AM CT",
+    "home_abbr": "CIN",
+    "away_abbr": "LAD",
+    "home_sp": "Brady Singer",
+    "away_sp": "Justin Wrobleski",
+    "nrfi_prob": 31.3,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Wilber Dotel",
+      "name": "Brady Singer",
       "first_inning": {},
-      "season_era": 4.84
+      "season_era": 5.67
     },
     "away_pitcher": {
-      "name": "Kyle Harrison",
+      "name": "Justin Wrobleski",
       "first_inning": {},
-      "season_era": 3.98
+      "season_era": 3.7
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
   },
   {
     "date": "2026-09-17",
-    "game_time": "11:40 AM CT",
-    "home_abbr": "CIN",
-    "away_abbr": "LAD",
-    "home_sp": "Brady Singer",
-    "away_sp": "Justin Wrobleski",
-    "nrfi_prob": 31.0,
+    "game_time": "11:35 AM CT",
+    "home_abbr": "PIT",
+    "away_abbr": "MIL",
+    "home_sp": "Wilber Dotel",
+    "away_sp": "Kyle Harrison",
+    "nrfi_prob": 31.1,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Brady Singer",
+      "name": "Wilber Dotel",
       "first_inning": {},
-      "season_era": 5.38
+      "season_era": 4.82
     },
     "away_pitcher": {
-      "name": "Justin Wrobleski",
+      "name": "Kyle Harrison",
       "first_inning": {},
-      "season_era": 3.78
+      "season_era": 4.25
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
