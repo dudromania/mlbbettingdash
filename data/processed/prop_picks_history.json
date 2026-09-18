@@ -20,11 +20,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 6.0,
+    "result": "L",
+    "pnl": -100.0,
     "created_at": "2026-09-17 20:08:48",
-    "graded_at": null
+    "graded_at": "2026-09-18 13:00:28"
   },
   {
     "id": 2694,
@@ -47,11 +47,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
+    "actual_value": 3.0,
+    "result": "W",
+    "pnl": 123.0,
     "created_at": "2026-09-17 20:08:48",
-    "graded_at": null
+    "graded_at": "2026-09-18 13:00:28"
   },
   {
     "id": 2691,
