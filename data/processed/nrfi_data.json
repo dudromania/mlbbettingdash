@@ -208,29 +208,6 @@
   },
   {
     "date": "2026-09-18",
-    "game_time": "6:05 PM CT",
-    "home_abbr": "BAL",
-    "away_abbr": "MIL",
-    "home_sp": "TBD",
-    "away_sp": "Dustin May",
-    "nrfi_prob": 35.6,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_pitcher": {
-      "name": "Dustin May",
-      "first_inning": {},
-      "season_era": 4.49
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-18",
     "game_time": "6:10 PM CT",
     "home_abbr": "CLE",
     "away_abbr": "ATH",
@@ -254,11 +231,34 @@
   },
   {
     "date": "2026-09-18",
+    "game_time": "6:05 PM CT",
+    "home_abbr": "BAL",
+    "away_abbr": "MIL",
+    "home_sp": "Cade Povich",
+    "away_sp": "Dustin May",
+    "nrfi_prob": 33.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Cade Povich",
+      "first_inning": {},
+      "season_era": 4.05
+    },
+    "away_pitcher": {
+      "name": "Dustin May",
+      "first_inning": {},
+      "season_era": 4.49
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-18",
     "game_time": "6:15 PM CT",
     "home_abbr": "NYM",
     "away_abbr": "PHI",
     "home_sp": "Zac Thornton",
-    "away_sp": "Andrew Painter",
+    "away_sp": "TBD",
     "nrfi_prob": 32.2,
     "label": "LEAN YRFI",
     "confidence": "low",

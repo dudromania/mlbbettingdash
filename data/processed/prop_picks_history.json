@@ -1,6 +1,6 @@
 [
   {
-    "id": 2696,
+    "id": 2698,
     "game_date": "2026-09-18",
     "game_pick_id": null,
     "player_name": "Dustin May",
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-09-18 13:13:23",
+    "created_at": "2026-09-18 16:12:39",
     "graded_at": null
   },
   {
-    "id": 2695,
+    "id": 2697,
     "game_date": "2026-09-18",
     "game_pick_id": null,
     "player_name": "Clay Holmes",
@@ -50,7 +50,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-09-18 13:13:23",
+    "created_at": "2026-09-18 16:12:39",
     "graded_at": null
   },
   {
