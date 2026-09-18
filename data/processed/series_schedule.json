@@ -848,13 +848,13 @@
         "away_score": null,
         "venue": "Angel Stadium",
         "prediction": {
-          "predicted_margin": -0.53,
+          "predicted_margin": -0.57,
           "predicted_total": 8.2,
-          "home_win_prob": 0.467,
-          "away_win_prob": 0.533,
+          "home_win_prob": 0.464,
+          "away_win_prob": 0.536,
           "spread_confidence": 20,
-          "margin_p25": -3.2,
-          "margin_p75": 2.14,
+          "margin_p25": -3.24,
+          "margin_p75": 2.1,
           "margin_std": 3.96,
           "method": "trained_xgboost"
         }
@@ -878,13 +878,13 @@
         "away_score": null,
         "venue": "Angel Stadium",
         "prediction": {
-          "predicted_margin": -0.2,
+          "predicted_margin": -0.23,
           "predicted_total": 6.8,
-          "home_win_prob": 0.488,
-          "away_win_prob": 0.512,
+          "home_win_prob": 0.485,
+          "away_win_prob": 0.515,
           "spread_confidence": 26,
-          "margin_p25": -2.74,
-          "margin_p75": 2.34,
+          "margin_p25": -2.77,
+          "margin_p75": 2.31,
           "margin_std": 3.77,
           "method": "trained_xgboost"
         }
@@ -908,13 +908,13 @@
         "away_score": null,
         "venue": "Angel Stadium",
         "prediction": {
-          "predicted_margin": -0.85,
+          "predicted_margin": -0.87,
           "predicted_total": 8.1,
-          "home_win_prob": 0.447,
-          "away_win_prob": 0.553,
+          "home_win_prob": 0.446,
+          "away_win_prob": 0.554,
           "spread_confidence": 23,
-          "margin_p25": -3.51,
-          "margin_p75": 1.81,
+          "margin_p25": -3.53,
+          "margin_p75": 1.79,
           "margin_std": 3.95,
           "method": "trained_xgboost"
         }
@@ -1189,13 +1189,13 @@
         "away_score": null,
         "venue": "Oriole Park at Camden Yards",
         "prediction": {
-          "predicted_margin": -1.57,
+          "predicted_margin": -1.61,
           "predicted_total": 9.0,
-          "home_win_prob": 0.403,
-          "away_win_prob": 0.597,
+          "home_win_prob": 0.401,
+          "away_win_prob": 0.599,
           "spread_confidence": 30,
-          "margin_p25": -4.32,
-          "margin_p75": 1.18,
+          "margin_p25": -4.36,
+          "margin_p75": 1.14,
           "margin_std": 4.08,
           "method": "trained_xgboost"
         }
@@ -1219,13 +1219,13 @@
         "away_score": null,
         "venue": "Oriole Park at Camden Yards",
         "prediction": {
-          "predicted_margin": -1.89,
+          "predicted_margin": -1.93,
           "predicted_total": 8.6,
-          "home_win_prob": 0.384,
-          "away_win_prob": 0.616,
+          "home_win_prob": 0.381,
+          "away_win_prob": 0.619,
           "spread_confidence": 23,
-          "margin_p25": -4.61,
-          "margin_p75": 0.83,
+          "margin_p25": -4.65,
+          "margin_p75": 0.79,
           "margin_std": 4.04,
           "method": "trained_xgboost"
         }
@@ -1249,13 +1249,13 @@
         "away_score": null,
         "venue": "Oriole Park at Camden Yards",
         "prediction": {
-          "predicted_margin": -1.89,
+          "predicted_margin": -1.93,
           "predicted_total": 8.6,
-          "home_win_prob": 0.384,
-          "away_win_prob": 0.616,
+          "home_win_prob": 0.381,
+          "away_win_prob": 0.619,
           "spread_confidence": 23,
-          "margin_p25": -4.61,
-          "margin_p75": 0.83,
+          "margin_p25": -4.65,
+          "margin_p75": 0.79,
           "margin_std": 4.04,
           "method": "trained_xgboost"
         }
@@ -1510,13 +1510,13 @@
         "away_score": null,
         "venue": "Coors Field",
         "prediction": {
-          "predicted_margin": -2.99,
+          "predicted_margin": -2.89,
           "predicted_total": 9.7,
-          "home_win_prob": 0.321,
-          "away_win_prob": 0.679,
-          "spread_confidence": 38,
-          "margin_p25": -5.84,
-          "margin_p75": -0.14,
+          "home_win_prob": 0.327,
+          "away_win_prob": 0.673,
+          "spread_confidence": 37,
+          "margin_p25": -5.74,
+          "margin_p75": -0.04,
           "margin_std": 4.23,
           "method": "trained_xgboost"
         }
@@ -1540,13 +1540,13 @@
         "away_score": null,
         "venue": "Coors Field",
         "prediction": {
-          "predicted_margin": -1.87,
+          "predicted_margin": -1.76,
           "predicted_total": 11.2,
-          "home_win_prob": 0.385,
-          "away_win_prob": 0.615,
+          "home_win_prob": 0.392,
+          "away_win_prob": 0.608,
           "spread_confidence": 39,
-          "margin_p25": -4.82,
-          "margin_p75": 1.08,
+          "margin_p25": -4.71,
+          "margin_p75": 1.19,
           "margin_std": 4.37,
           "method": "trained_xgboost"
         }
@@ -1570,13 +1570,13 @@
         "away_score": null,
         "venue": "Coors Field",
         "prediction": {
-          "predicted_margin": -1.51,
+          "predicted_margin": -1.36,
           "predicted_total": 11.0,
-          "home_win_prob": 0.407,
-          "away_win_prob": 0.593,
+          "home_win_prob": 0.416,
+          "away_win_prob": 0.584,
           "spread_confidence": 40,
-          "margin_p25": -4.46,
-          "margin_p75": 1.44,
+          "margin_p25": -4.31,
+          "margin_p75": 1.59,
           "margin_std": 4.38,
           "method": "trained_xgboost"
         }
@@ -1831,13 +1831,13 @@
         "away_score": null,
         "venue": "PNC Park",
         "prediction": {
-          "predicted_margin": 1.48,
+          "predicted_margin": 1.67,
           "predicted_total": 7.3,
-          "home_win_prob": 0.592,
-          "away_win_prob": 0.408,
-          "spread_confidence": 48,
-          "margin_p25": -1.06,
-          "margin_p75": 4.02,
+          "home_win_prob": 0.603,
+          "away_win_prob": 0.397,
+          "spread_confidence": 49,
+          "margin_p25": -0.87,
+          "margin_p75": 4.21,
           "margin_std": 3.77,
           "method": "trained_xgboost"
         }
@@ -1861,13 +1861,13 @@
         "away_score": null,
         "venue": "PNC Park",
         "prediction": {
-          "predicted_margin": 0.24,
+          "predicted_margin": 0.42,
           "predicted_total": 8.3,
-          "home_win_prob": 0.515,
-          "away_win_prob": 0.485,
+          "home_win_prob": 0.526,
+          "away_win_prob": 0.474,
           "spread_confidence": 18,
-          "margin_p25": -2.42,
-          "margin_p75": 2.9,
+          "margin_p25": -2.24,
+          "margin_p75": 3.08,
           "margin_std": 3.94,
           "method": "trained_xgboost"
         }
@@ -1891,13 +1891,13 @@
         "away_score": null,
         "venue": "PNC Park",
         "prediction": {
-          "predicted_margin": 0.09,
+          "predicted_margin": 0.27,
           "predicted_total": 8.5,
-          "home_win_prob": 0.505,
-          "away_win_prob": 0.495,
-          "spread_confidence": 24,
-          "margin_p25": -2.54,
-          "margin_p75": 2.72,
+          "home_win_prob": 0.517,
+          "away_win_prob": 0.483,
+          "spread_confidence": 25,
+          "margin_p25": -2.36,
+          "margin_p75": 2.9,
           "margin_std": 3.9,
           "method": "trained_xgboost"
         }
@@ -2152,13 +2152,13 @@
         "away_score": null,
         "venue": "Tropicana Field",
         "prediction": {
-          "predicted_margin": 0.05,
+          "predicted_margin": 0.07,
           "predicted_total": 6.1,
-          "home_win_prob": 0.503,
-          "away_win_prob": 0.497,
+          "home_win_prob": 0.504,
+          "away_win_prob": 0.496,
           "spread_confidence": 17,
-          "margin_p25": -2.46,
-          "margin_p75": 2.56,
+          "margin_p25": -2.44,
+          "margin_p75": 2.58,
           "margin_std": 3.72,
           "method": "trained_xgboost"
         }
@@ -2182,13 +2182,13 @@
         "away_score": null,
         "venue": "Tropicana Field",
         "prediction": {
-          "predicted_margin": 0.36,
+          "predicted_margin": 0.39,
           "predicted_total": 6.8,
-          "home_win_prob": 0.522,
-          "away_win_prob": 0.478,
+          "home_win_prob": 0.525,
+          "away_win_prob": 0.475,
           "spread_confidence": 26,
-          "margin_p25": -2.22,
-          "margin_p75": 2.94,
+          "margin_p25": -2.19,
+          "margin_p75": 2.97,
           "margin_std": 3.83,
           "method": "trained_xgboost"
         }
@@ -2212,13 +2212,13 @@
         "away_score": null,
         "venue": "Tropicana Field",
         "prediction": {
-          "predicted_margin": 1.25,
+          "predicted_margin": 1.31,
           "predicted_total": 6.7,
-          "home_win_prob": 0.577,
-          "away_win_prob": 0.423,
+          "home_win_prob": 0.581,
+          "away_win_prob": 0.419,
           "spread_confidence": 44,
-          "margin_p25": -1.25,
-          "margin_p75": 3.75,
+          "margin_p25": -1.19,
+          "margin_p75": 3.81,
           "margin_std": 3.7,
           "method": "trained_xgboost"
         }
@@ -2259,13 +2259,13 @@
         "away_score": null,
         "venue": "Globe Life Field",
         "prediction": {
-          "predicted_margin": -0.54,
+          "predicted_margin": -0.55,
           "predicted_total": 9.9,
-          "home_win_prob": 0.466,
-          "away_win_prob": 0.534,
+          "home_win_prob": 0.465,
+          "away_win_prob": 0.535,
           "spread_confidence": 37,
-          "margin_p25": -3.26,
-          "margin_p75": 2.18,
+          "margin_p25": -3.27,
+          "margin_p75": 2.17,
           "margin_std": 4.04,
           "method": "trained_xgboost"
         }
@@ -2289,13 +2289,13 @@
         "away_score": null,
         "venue": "Globe Life Field",
         "prediction": {
-          "predicted_margin": -0.42,
+          "predicted_margin": -0.43,
           "predicted_total": 9.9,
-          "home_win_prob": 0.474,
-          "away_win_prob": 0.526,
+          "home_win_prob": 0.473,
+          "away_win_prob": 0.527,
           "spread_confidence": 38,
-          "margin_p25": -3.2,
-          "margin_p75": 2.36,
+          "margin_p25": -3.21,
+          "margin_p75": 2.35,
           "margin_std": 4.12,
           "method": "trained_xgboost"
         }
@@ -2319,13 +2319,13 @@
         "away_score": null,
         "venue": "Globe Life Field",
         "prediction": {
-          "predicted_margin": 0.12,
+          "predicted_margin": 0.13,
           "predicted_total": 8.2,
-          "home_win_prob": 0.507,
-          "away_win_prob": 0.493,
+          "home_win_prob": 0.508,
+          "away_win_prob": 0.492,
           "spread_confidence": 24,
-          "margin_p25": -2.59,
-          "margin_p75": 2.83,
+          "margin_p25": -2.58,
+          "margin_p75": 2.84,
           "margin_std": 4.02,
           "method": "trained_xgboost"
         }
@@ -2443,13 +2443,13 @@
         "away_score": null,
         "venue": "Comerica Park",
         "prediction": {
-          "predicted_margin": 0.78,
+          "predicted_margin": 0.75,
           "predicted_total": 9.3,
-          "home_win_prob": 0.548,
-          "away_win_prob": 0.452,
+          "home_win_prob": 0.547,
+          "away_win_prob": 0.453,
           "spread_confidence": 20,
-          "margin_p25": -1.92,
-          "margin_p75": 3.48,
+          "margin_p25": -1.95,
+          "margin_p75": 3.45,
           "margin_std": 4.0,
           "method": "trained_xgboost"
         }
@@ -2473,13 +2473,13 @@
         "away_score": null,
         "venue": "Comerica Park",
         "prediction": {
-          "predicted_margin": 0.78,
+          "predicted_margin": 0.75,
           "predicted_total": 9.3,
-          "home_win_prob": 0.548,
-          "away_win_prob": 0.452,
+          "home_win_prob": 0.547,
+          "away_win_prob": 0.453,
           "spread_confidence": 20,
-          "margin_p25": -1.92,
-          "margin_p75": 3.48,
+          "margin_p25": -1.95,
+          "margin_p75": 3.45,
           "margin_std": 4.0,
           "method": "trained_xgboost"
         }
@@ -2520,13 +2520,13 @@
         "away_score": null,
         "venue": "Oracle Park",
         "prediction": {
-          "predicted_margin": 0.12,
+          "predicted_margin": 0.21,
           "predicted_total": 8.1,
-          "home_win_prob": 0.507,
-          "away_win_prob": 0.493,
-          "spread_confidence": 15,
-          "margin_p25": -2.51,
-          "margin_p75": 2.75,
+          "home_win_prob": 0.513,
+          "away_win_prob": 0.487,
+          "spread_confidence": 16,
+          "margin_p25": -2.42,
+          "margin_p75": 2.84,
           "margin_std": 3.9,
           "method": "trained_xgboost"
         }
@@ -2550,13 +2550,13 @@
         "away_score": null,
         "venue": "Oracle Park",
         "prediction": {
-          "predicted_margin": 0.12,
+          "predicted_margin": 0.21,
           "predicted_total": 8.1,
-          "home_win_prob": 0.507,
-          "away_win_prob": 0.493,
-          "spread_confidence": 15,
-          "margin_p25": -2.51,
-          "margin_p75": 2.75,
+          "home_win_prob": 0.513,
+          "away_win_prob": 0.487,
+          "spread_confidence": 16,
+          "margin_p25": -2.42,
+          "margin_p75": 2.84,
           "margin_std": 3.9,
           "method": "trained_xgboost"
         }
@@ -2691,13 +2691,13 @@
         "away_score": null,
         "venue": "Fenway Park",
         "prediction": {
-          "predicted_margin": 0.99,
+          "predicted_margin": 0.98,
           "predicted_total": 8.4,
-          "home_win_prob": 0.562,
-          "away_win_prob": 0.438,
+          "home_win_prob": 0.561,
+          "away_win_prob": 0.439,
           "spread_confidence": 20,
-          "margin_p25": -1.78,
-          "margin_p75": 3.76,
+          "margin_p25": -1.79,
+          "margin_p75": 3.75,
           "margin_std": 4.1,
           "method": "trained_xgboost"
         }
@@ -2879,13 +2879,13 @@
         "away_score": null,
         "venue": "UNIQLO Field at Dodger Stadium",
         "prediction": {
-          "predicted_margin": 1.21,
+          "predicted_margin": 1.2,
           "predicted_total": 8.3,
-          "home_win_prob": 0.575,
-          "away_win_prob": 0.425,
+          "home_win_prob": 0.574,
+          "away_win_prob": 0.426,
           "spread_confidence": 22,
-          "margin_p25": -1.42,
-          "margin_p75": 3.84,
+          "margin_p25": -1.43,
+          "margin_p75": 3.83,
           "margin_std": 3.9,
           "method": "trained_xgboost"
         }
@@ -3097,13 +3097,13 @@
         "away_score": null,
         "venue": "T-Mobile Park",
         "prediction": {
-          "predicted_margin": -0.19,
+          "predicted_margin": -0.21,
           "predicted_total": 8.7,
-          "home_win_prob": 0.488,
-          "away_win_prob": 0.512,
+          "home_win_prob": 0.487,
+          "away_win_prob": 0.513,
           "spread_confidence": 18,
-          "margin_p25": -2.82,
-          "margin_p75": 2.44,
+          "margin_p25": -2.84,
+          "margin_p75": 2.42,
           "margin_std": 3.9,
           "method": "trained_xgboost"
         }
@@ -3144,13 +3144,13 @@
         "away_score": null,
         "venue": "Globe Life Field",
         "prediction": {
-          "predicted_margin": -0.64,
+          "predicted_margin": -0.75,
           "predicted_total": 8.6,
-          "home_win_prob": 0.46,
-          "away_win_prob": 0.54,
+          "home_win_prob": 0.453,
+          "away_win_prob": 0.547,
           "spread_confidence": 19,
-          "margin_p25": -3.36,
-          "margin_p75": 2.08,
+          "margin_p25": -3.47,
+          "margin_p75": 1.97,
           "margin_std": 4.04,
           "method": "trained_xgboost"
         }
