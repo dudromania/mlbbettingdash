@@ -1,20 +1,10 @@
 {
-  "date": "2026-09-18",
-  "fetched_at": "2026-09-18T15:11:32",
+  "date": "2026-09-19",
+  "fetched_at": "2026-09-19T11:00:56",
   "games": [
     {
-      "home_abbr": "CIN",
-      "away_abbr": "CHC",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
-      "is_final": false
-    },
-    {
-      "home_abbr": "PIT",
-      "away_abbr": "KC",
+      "home_abbr": "CHW",
+      "away_abbr": "DET",
       "home_score": "0",
       "away_score": "0",
       "state": "pre",
@@ -25,30 +15,20 @@
     {
       "home_abbr": "BAL",
       "away_abbr": "MIL",
-      "home_score": "0",
-      "away_score": "0",
+      "home_score": "",
+      "away_score": "",
       "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
-      "is_final": false
-    },
-    {
-      "home_abbr": "CLE",
-      "away_abbr": "ATH",
-      "home_score": "0",
-      "away_score": "0",
-      "state": "pre",
-      "detail": "Pre-Game",
+      "detail": "Scheduled",
       "is_live": false,
       "is_final": false
     },
     {
       "home_abbr": "TB",
       "away_abbr": "BOS",
-      "home_score": "0",
-      "away_score": "0",
+      "home_score": "",
+      "away_score": "",
       "state": "pre",
-      "detail": "Pre-Game",
+      "detail": "Scheduled",
       "is_live": false,
       "is_final": false
     },
@@ -58,17 +38,37 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Pre-Game",
+      "detail": "Scheduled",
       "is_live": false,
       "is_final": false
     },
     {
-      "home_abbr": "CHW",
-      "away_abbr": "DET",
+      "home_abbr": "CLE",
+      "away_abbr": "ATH",
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Pre-Game",
+      "detail": "Scheduled",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "CIN",
+      "away_abbr": "CHC",
+      "home_score": "",
+      "away_score": "",
+      "state": "pre",
+      "detail": "Scheduled",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "PIT",
+      "away_abbr": "KC",
+      "home_score": "",
+      "away_score": "",
+      "state": "pre",
+      "detail": "Scheduled",
       "is_live": false,
       "is_final": false
     },
@@ -78,17 +78,7 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
-      "is_final": false
-    },
-    {
-      "home_abbr": "COL",
-      "away_abbr": "SEA",
-      "home_score": "",
-      "away_score": "",
-      "state": "pre",
-      "detail": "Pre-Game",
+      "detail": "Scheduled",
       "is_live": false,
       "is_final": false
     },
@@ -98,7 +88,7 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Pre-Game",
+      "detail": "Scheduled",
       "is_live": false,
       "is_final": false
     },
@@ -108,23 +98,13 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Pre-Game",
-      "is_live": false,
-      "is_final": false
-    },
-    {
-      "home_abbr": "LAA",
-      "away_abbr": "MIN",
-      "home_score": "",
-      "away_score": "",
-      "state": "pre",
       "detail": "Scheduled",
       "is_live": false,
       "is_final": false
     },
     {
-      "home_abbr": "SD",
-      "away_abbr": "MIA",
+      "home_abbr": "COL",
+      "away_abbr": "SEA",
       "home_score": "",
       "away_score": "",
       "state": "pre",
@@ -143,8 +123,28 @@
       "is_final": false
     },
     {
+      "home_abbr": "SD",
+      "away_abbr": "MIA",
+      "home_score": "",
+      "away_score": "",
+      "state": "pre",
+      "detail": "Scheduled",
+      "is_live": false,
+      "is_final": false
+    },
+    {
       "home_abbr": "LAD",
       "away_abbr": "SF",
+      "home_score": "",
+      "away_score": "",
+      "state": "pre",
+      "detail": "Scheduled",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "LAA",
+      "away_abbr": "MIN",
       "home_score": "",
       "away_score": "",
       "state": "pre",
