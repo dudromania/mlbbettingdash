@@ -144,18 +144,18 @@
     "away_abbr": "DET",
     "home_sp": "Sean Burke",
     "away_sp": "Jackson Jobe",
-    "nrfi_prob": 37.8,
-    "label": "LEAN YRFI",
+    "nrfi_prob": 38.2,
+    "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Sean Burke",
       "first_inning": {},
-      "season_era": 3.47
+      "season_era": 3.4
     },
     "away_pitcher": {
       "name": "Jackson Jobe",
       "first_inning": {},
-      "season_era": 3.89
+      "season_era": 3.86
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
