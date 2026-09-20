@@ -24,29 +24,6 @@
   },
   {
     "date": "2026-09-20",
-    "game_time": "12:10 PM CT",
-    "home_abbr": "NYM",
-    "away_abbr": "PHI",
-    "home_sp": "Jonah Tong",
-    "away_sp": "Cristopher S\u00e1nchez",
-    "nrfi_prob": 42.0,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Jonah Tong",
-      "first_inning": {},
-      "season_era": 3.43
-    },
-    "away_pitcher": {
-      "name": "Cristopher S\u00e1nchez",
-      "first_inning": {},
-      "season_era": 2.93
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-20",
     "game_time": "1:35 PM CT",
     "home_abbr": "TEX",
     "away_abbr": "TOR",
@@ -121,18 +98,41 @@
     "away_abbr": "KC",
     "home_sp": "Lake Bachar",
     "away_sp": "Michael Wacha",
-    "nrfi_prob": 39.9,
+    "nrfi_prob": 39.8,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Lake Bachar",
       "first_inning": {},
-      "season_era": 3.5
+      "season_era": 3.56
     },
     "away_pitcher": {
       "name": "Michael Wacha",
       "first_inning": {},
-      "season_era": 3.34
+      "season_era": 3.32
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-20",
+    "game_time": "12:10 PM CT",
+    "home_abbr": "NYM",
+    "away_abbr": "PHI",
+    "home_sp": "Jonah Tong",
+    "away_sp": "Cristopher S\u00e1nchez",
+    "nrfi_prob": 37.3,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jonah Tong",
+      "first_inning": {},
+      "season_era": 4.5
+    },
+    "away_pitcher": {
+      "name": "Cristopher S\u00e1nchez",
+      "first_inning": {},
+      "season_era": 2.9
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -185,29 +185,6 @@
   },
   {
     "date": "2026-09-20",
-    "game_time": "12:40 PM CT",
-    "home_abbr": "TB",
-    "away_abbr": "BOS",
-    "home_sp": "Griffin Jax",
-    "away_sp": "Patrick Sandoval",
-    "nrfi_prob": 32.0,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Griffin Jax",
-      "first_inning": {},
-      "season_era": 3.8
-    },
-    "away_pitcher": {
-      "name": "Patrick Sandoval",
-      "first_inning": {},
-      "season_era": 4.99
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-20",
     "game_time": "1:15 PM CT",
     "home_abbr": "STL",
     "away_abbr": "WSH",
@@ -225,6 +202,29 @@
       "name": "Jake Irvin",
       "first_inning": {},
       "season_era": 5.51
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-20",
+    "game_time": "12:40 PM CT",
+    "home_abbr": "TB",
+    "away_abbr": "BOS",
+    "home_sp": "Griffin Jax",
+    "away_sp": "Patrick Sandoval",
+    "nrfi_prob": 31.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Griffin Jax",
+      "first_inning": {},
+      "season_era": 3.76
+    },
+    "away_pitcher": {
+      "name": "Patrick Sandoval",
+      "first_inning": {},
+      "season_era": 5.55
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -311,12 +311,12 @@
     "home_pitcher": {
       "name": "Rhett Lowder",
       "first_inning": {},
-      "season_era": 5.79
+      "season_era": 5.82
     },
     "away_pitcher": {
       "name": "David Peterson",
       "first_inning": {},
-      "season_era": 5.11
+      "season_era": 5.1
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
