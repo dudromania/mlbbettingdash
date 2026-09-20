@@ -186,29 +186,6 @@
   {
     "date": "2026-09-20",
     "game_time": "12:40 PM CT",
-    "home_abbr": "CIN",
-    "away_abbr": "CHC",
-    "home_sp": "Rhett Lowder",
-    "away_sp": "TBD",
-    "nrfi_prob": 32.4,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Rhett Lowder",
-      "first_inning": {},
-      "season_era": 5.79
-    },
-    "away_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-20",
-    "game_time": "12:40 PM CT",
     "home_abbr": "TB",
     "away_abbr": "BOS",
     "home_sp": "Griffin Jax",
@@ -317,6 +294,29 @@
       "name": "Dean Kremer",
       "first_inning": {},
       "season_era": 5.35
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-20",
+    "game_time": "12:40 PM CT",
+    "home_abbr": "CIN",
+    "away_abbr": "CHC",
+    "home_sp": "Rhett Lowder",
+    "away_sp": "David Peterson",
+    "nrfi_prob": 26.5,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Rhett Lowder",
+      "first_inning": {},
+      "season_era": 5.79
+    },
+    "away_pitcher": {
+      "name": "David Peterson",
+      "first_inning": {},
+      "season_era": 5.11
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
