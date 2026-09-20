@@ -1,25 +1,5 @@
 {
-  "DET@CHW": {
-    "home": [],
-    "away": []
-  },
-  "MIL@BAL": {
-    "home": [],
-    "away": []
-  },
-  "BOS@TB": {
-    "home": [],
-    "away": []
-  },
   "PHI@NYM": {
-    "home": [],
-    "away": []
-  },
-  "ATH@CLE": {
-    "home": [],
-    "away": []
-  },
-  "CHC@CIN": {
     "home": [],
     "away": []
   },
@@ -27,7 +7,15 @@
     "home": [],
     "away": []
   },
-  "TOR@TEX": {
+  "CHC@CIN": {
+    "home": [],
+    "away": []
+  },
+  "ATH@CLE": {
+    "home": [],
+    "away": []
+  },
+  "BOS@TB": {
     "home": [],
     "away": []
   },
@@ -35,7 +23,15 @@
     "home": [],
     "away": []
   },
+  "DET@CHW": {
+    "home": [],
+    "away": []
+  },
   "WSH@STL": {
+    "home": [],
+    "away": []
+  },
+  "TOR@TEX": {
     "home": [],
     "away": []
   },
@@ -43,11 +39,7 @@
     "home": [],
     "away": []
   },
-  "NYY@ARI": {
-    "home": [],
-    "away": []
-  },
-  "MIA@SD": {
+  "MIN@LAA": {
     "home": [],
     "away": []
   },
@@ -55,7 +47,15 @@
     "home": [],
     "away": []
   },
-  "MIN@LAA": {
+  "MIA@SD": {
+    "home": [],
+    "away": []
+  },
+  "NYY@ARI": {
+    "home": [],
+    "away": []
+  },
+  "MIL@BAL": {
     "home": [],
     "away": []
   }
