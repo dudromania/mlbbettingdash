@@ -1,61 +1,13 @@
 {
-  "PHI@NYM": {
+  "TOR@BAL": {
     "home": [],
     "away": []
   },
-  "KC@PIT": {
+  "WSH@DET": {
     "home": [],
     "away": []
   },
-  "CHC@CIN": {
-    "home": [],
-    "away": []
-  },
-  "ATH@CLE": {
-    "home": [],
-    "away": []
-  },
-  "BOS@TB": {
-    "home": [],
-    "away": []
-  },
-  "ATL@HOU": {
-    "home": [],
-    "away": []
-  },
-  "DET@CHW": {
-    "home": [],
-    "away": []
-  },
-  "WSH@STL": {
-    "home": [],
-    "away": []
-  },
-  "TOR@TEX": {
-    "home": [],
-    "away": []
-  },
-  "SEA@COL": {
-    "home": [],
-    "away": []
-  },
-  "MIN@LAA": {
-    "home": [],
-    "away": []
-  },
-  "SF@LAD": {
-    "home": [],
-    "away": []
-  },
-  "MIA@SD": {
-    "home": [],
-    "away": []
-  },
-  "NYY@ARI": {
-    "home": [],
-    "away": []
-  },
-  "MIL@BAL": {
+  "MIN@SF": {
     "home": [],
     "away": []
   }
