@@ -29,18 +29,18 @@
     "away_abbr": "TB",
     "home_sp": "Carlos Rod\u00f3n",
     "away_sp": "Nick Martinez",
-    "nrfi_prob": 44.0,
+    "nrfi_prob": 44.5,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Carlos Rod\u00f3n",
       "first_inning": {},
-      "season_era": 2.95
+      "season_era": 2.8
     },
     "away_pitcher": {
       "name": "Nick Martinez",
       "first_inning": {},
-      "season_era": 2.94
+      "season_era": 2.98
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
