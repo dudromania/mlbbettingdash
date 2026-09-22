@@ -37,28 +37,59 @@ function Invoke-GitTimed {
         [Parameter(Mandatory=$true)][string[]]$GitArgs,
         [int]$TimeoutSec = 120
     )
-    $outFile = [System.IO.Path]::GetTempFileName()
-    $errFile = [System.IO.Path]::GetTempFileName()
+    # Quote arguments containing spaces ourselves - the command line is a single
+    # string, so an unquoted commit message would split into several arguments.
+    $quoted = $GitArgs | ForEach-Object {
+        if ($_ -match '\s') { '"' + ($_ -replace '"', '""') + '"' } else { $_ }
+    }
+
+    # System.Diagnostics.Process rather than Start-Process: Start-Process
+    # -PassThru returns an object whose ExitCode is null in PowerShell 5.1 even
+    # after the process has exited, which would make every result look like
+    # success.
+    $psi = New-Object System.Diagnostics.ProcessStartInfo
+    $psi.FileName               = "git.exe"
+    $psi.Arguments              = ($quoted -join ' ')
+    $psi.UseShellExecute        = $false
+    $psi.CreateNoWindow         = $true
+    $psi.RedirectStandardOutput = $true
+    $psi.RedirectStandardError  = $true
+    $psi.RedirectStandardInput  = $true
+    $psi.WorkingDirectory       = (Get-Location).Path
+
+    $proc = New-Object System.Diagnostics.Process
+    $proc.StartInfo = $psi
     try {
-        $p = Start-Process -FilePath "git.exe" -ArgumentList $GitArgs -NoNewWindow -PassThru `
-                           -RedirectStandardOutput $outFile -RedirectStandardError $errFile
-        if (-not $p.WaitForExit($TimeoutSec * 1000)) {
-            Log "  git $($GitArgs -join ' ') exceeded ${TimeoutSec}s - killing process tree"
-            # /T kills the credential-helper children too, which is what was
-            # surviving and accumulating before.
-            & taskkill.exe /T /F /PID $p.Id 2>&1 | Out-Null
+        [void]$proc.Start()
+        # Close stdin immediately. A credential prompt then reads EOF and git
+        # gives up, instead of waiting forever for input nobody will type.
+        $proc.StandardInput.Close()
+
+        # Async reads: draining one stream synchronously while the other fills
+        # its buffer is a classic deadlock.
+        $outTask = $proc.StandardOutput.ReadToEndAsync()
+        $errTask = $proc.StandardError.ReadToEndAsync()
+
+        if (-not $proc.WaitForExit($TimeoutSec * 1000)) {
+            Log "  git $($GitArgs -join ' ') exceeded $TimeoutSec s - killing process tree"
+            # /T takes the credential-helper children with it - those are what
+            # survived the old hangs and piled up, 116 of them by 9/22.
+            & taskkill.exe /T /F /PID $proc.Id 2>&1 | Out-Null
             return 124
         }
-        foreach ($f in @($outFile, $errFile)) {
-            Get-Content $f -ErrorAction SilentlyContinue |
-                Where-Object { $_ -ne "" } | ForEach-Object { Log "  $_" }
+
+        foreach ($text in @($outTask.Result, $errTask.Result)) {
+            if ($text) {
+                $text -split "`r?`n" | Where-Object { $_ -ne "" } |
+                    ForEach-Object { Log "  $_" }
+            }
         }
-        return $p.ExitCode
+        return $proc.ExitCode
     } catch {
         Log "  git $($GitArgs -join ' ') failed to start: $($_.Exception.Message)"
         return 125
     } finally {
-        Remove-Item $outFile, $errFile -Force -ErrorAction SilentlyContinue
+        $proc.Dispose()
     }
 }
 
