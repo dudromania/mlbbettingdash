@@ -405,6 +405,41 @@ tbody td {
   .l5-col.home { border-left: none; border-top: 1px solid var(--b1); }
 }
 
+/* Public betting splits block — appended below l5Block() in expanded table
+   rows only. Three market columns on desktop, stacked on mobile. Omitted
+   entirely when betting_splits.json has nothing for the game. */
+.sp-block { border-top: 1px solid var(--b1); margin-top: 8px; }
+.sp-head {
+  display: flex; align-items: baseline; gap: 8px;
+  padding: 5px 8px 3px;
+}
+.sp-head .sp-title { font-size: 8px; letter-spacing: .3px; text-transform: uppercase; color: var(--t3); }
+.sp-head .sp-hint  { font-family: var(--mono); font-size: 9px; color: var(--t3); margin-left: auto; }
+.sp-head .sp-hint.warn { color: var(--warn); }
+.sp-cols { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); }
+.sp-col { padding: 3px 8px 6px; min-width: 0; overflow: hidden; }
+.sp-col + .sp-col { border-left: 1px solid var(--b1); }
+.sp-mkt { font-size: 8px; letter-spacing: .3px; text-transform: uppercase; color: var(--t3); margin-bottom: 2px; }
+.sp-row {
+  display: grid; grid-template-columns: minmax(0,1fr) 30px 30px 26px;
+  gap: 4px; align-items: baseline;
+  font-family: var(--mono); font-size: 10px; padding: 1px 0; white-space: nowrap;
+}
+.sp-row .sp-side { overflow: hidden; text-overflow: ellipsis; }
+.sp-row .sp-b, .sp-row .sp-h { text-align: right; color: var(--t2); }
+.sp-row .sp-g { text-align: right; }
+.sp-row.sharp .sp-side { color: var(--t1); }
+.sp-legend {
+  display: grid; grid-template-columns: minmax(0,1fr) 30px 30px 26px;
+  gap: 4px; font-family: var(--mono); font-size: 8px; color: var(--t3);
+  letter-spacing: .3px; padding-bottom: 1px;
+}
+.sp-legend span:not(:first-child) { text-align: right; }
+@media(max-width:500px) {
+  .sp-cols { grid-template-columns: 1fr; }
+  .sp-col + .sp-col { border-left: none; border-top: 1px solid var(--b1); }
+}
+
 /* Lineup block — away/home batting orders in expanded table rows only.
    Hidden until loadModelLineup() confirms a posted lineup, then shown
    immediately (no toggle). */
@@ -1768,7 +1803,7 @@ tbody td {
 </main>
 
 <script>
-const DATA = { games:[], series:[], pitchers:[], history:[], nrfi:[], scores:[], kprops:[], bullpen:[], kpropHistory:[], date:'' };
+const DATA = { games:[], series:[], pitchers:[], history:[], nrfi:[], scores:[], kprops:[], bullpen:[], kpropHistory:[], splits:null, date:'' };
 const LABELS = { model:'FULL GAME PREDICTIONS', games:"TODAY'S GAMES", pitchers:'PITCHER STATS', batters:'BATTER PROPS', standings:'STANDINGS', trends:'SERIES TRACKING', nrfi:'NRFI MATRIX', f5:'FIRST 5 INNINGS', kprops:'K STRIKEOUT PROPS', bullpen:'BULLPEN REPORT', vegas:'ALL VEGAS LINES', results:'MODEL PERFORMANCE' };
 
 async function loadJSON(path, fallback) {
@@ -1789,7 +1824,7 @@ function formatGeneratedAt(iso) {
 }
 
 async function init() {
-  const [today, series, pitchers, history, nrfi, scores, kprops, bullpen, kpropHistory] = await Promise.all([
+  const [today, series, pitchers, history, nrfi, scores, kprops, bullpen, kpropHistory, splits] = await Promise.all([
     loadJSON('data/processed/picks_today.json',     { date:'', games: SAMPLE }),
     loadJSON('data/processed/series_schedule.json', []),
     loadJSON('data/processed/pitcher_cards.json',   []),
@@ -1799,6 +1834,7 @@ async function init() {
     loadJSON('data/processed/strikeout_props.json', []),
     loadJSON('data/processed/bullpen_report.json',  []),
     loadJSON('data/processed/prop_picks_history.json', []),
+    loadJSON('data/processed/betting_splits.json',  { games:{} }),
   ]);
   DATA.games    = ((today?.games||today||[]).filter(g=>g?.home_abbr)).sort((a,b)=>(a.game_time_ct||'').localeCompare(b.game_time_ct||''));
   DATA.series   = Array.isArray(series)   ? series   : [];
@@ -1809,6 +1845,7 @@ async function init() {
   DATA.kprops   = Array.isArray(kprops)   ? kprops   : [];
   DATA.kpropHistory = Array.isArray(kpropHistory) ? kpropHistory : [];
   DATA.bullpen  = Array.isArray(bullpen)  ? bullpen  : [];
+  DATA.splits   = (splits && splits.games) ? splits : { games:{} };
   DATA.date     = today?.date || todayStr();
   DATA.generatedAt = today?.generated_at || null;
 
@@ -2118,7 +2155,7 @@ function renderModelTable() {
     </tr>
     <tr id="${rowId}">
       <td colspan="12" style="padding:0;background:var(--b1)">
-        <div style="padding:12px;border-top:1px solid var(--b2)">${betRow(g)}${lineupBlock(rowId)}${l5Block(g)}</div>
+        <div style="padding:12px;border-top:1px solid var(--b2)">${betRow(g)}${lineupBlock(rowId)}${l5Block(g)}${splitsBlock(g)}</div>
       </td>
     </tr>`;
   }).join('') || '<tr><td colspan="10" class="empty">No games match filter</td></tr>';
@@ -2203,6 +2240,74 @@ function findCard(sp_name, team_abbr, opp_abbr) {
   }
   return DATA.pitchers.find(c => canonAbbr(c.team_abbr) === team && canonAbbr(c.opponent) === opp) ||
          DATA.pitchers.find(c => canonAbbr(c.team_abbr) === team) || null;
+}
+
+// Public betting splits — bet% and handle% per side, scraped from cleatz.com
+// into betting_splits.json. Display only; the model never sees these.
+//
+// handle_gap = handle% - bets%. A side drawing a small share of tickets but a
+// large share of money is where the money is going against the crowd; the
+// reverse is public money. Sides at or beyond +/-10 are marked.
+const SP_SHARP = 10;
+
+function splitsFor(g) {
+  const games = DATA.splits?.games;
+  if (!games) return null;
+  return games[`${canonAbbr(g.away_abbr)}@${canonAbbr(g.home_abbr)}`] || null;
+}
+
+function spRow(s) {
+  const gap  = s.handle_gap;
+  const col  = gap >= SP_SHARP ? 'pos' : gap <= -SP_SHARP ? 'neg' : 'dim';
+  // The point belongs with the side for run line and total; moneyline has none.
+  const pt   = s.point === null || s.point === undefined ? ''
+             : (Number.isInteger(s.point) ? s.point : s.point.toFixed(1));
+  const sign = s.point > 0 ? '+' : '';
+  const label = s.side + (pt === '' ? '' : ' ' + (s.side === 'Over' || s.side === 'Under' ? pt : sign + pt));
+  return `<div class="sp-row ${Math.abs(gap) >= SP_SHARP ? 'sharp' : ''}">
+    <span class="sp-side">${label}</span>
+    <span class="sp-b">${s.bets_pct}%</span>
+    <span class="sp-h">${s.handle_pct}%</span>
+    <span class="sp-g ${col}">${gap > 0 ? '+' : ''}${gap}</span>
+  </div>`;
+}
+
+function spCol(title, sides) {
+  if (!sides || !sides.length) return '';
+  return `<div class="sp-col">
+    <div class="sp-mkt">${title}</div>
+    <div class="sp-legend"><span></span><span>BETS</span><span>HANDLE</span><span>GAP</span></div>
+    ${sides.map(spRow).join('')}
+  </div>`;
+}
+
+function splitsBlock(g) {
+  const s = splitsFor(g);
+  if (!s || !s.markets) return '';
+  const cols = spCol('Moneyline', s.markets.moneyline)
+             + spCol('Run Line',  s.markets.run_line)
+             + spCol('Total',     s.markets.total);
+  if (!cols) return '';
+  // Cleatz occasionally reports a 100/0 split; flag it rather than letting it
+  // read as a real consensus.
+  const lopsided = Object.values(s.markets).flat()
+    .some(x => x.bets_pct === 100 || x.bets_pct === 0);
+  // A doubleheader puts two model games under one AWAY@HOME key while the
+  // source lists a single block, so say which start time these splits are for
+  // rather than showing game one's numbers twice with nothing to distinguish them.
+  const key = `${canonAbbr(g.away_abbr)}@${canonAbbr(g.home_abbr)}`;
+  const dh  = DATA.games.filter(x =>
+    `${canonAbbr(x.away_abbr)}@${canonAbbr(x.home_abbr)}` === key).length > 1;
+  const hint = dh ? `doubleheader - source lists one game only (${s.time_raw})`
+             : lopsided ? 'thin market - 100/0 reported'
+             : 'gap = handle% - bets%';
+  return `<div class="sp-block">
+    <div class="sp-head">
+      <span class="sp-title">Public Betting Splits</span>
+      <span class="sp-hint${dh ? ' warn' : ''}">${hint}</span>
+    </div>
+    <div class="sp-cols">${cols}</div>
+  </div>`;
 }
 
 // L5 (last 5 graded games) — reuses DATA.history, already loaded for the
