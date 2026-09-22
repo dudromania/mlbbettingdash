@@ -1856,12 +1856,14 @@ async function init() {
     d.toLocaleDateString('en-US',{year:'numeric',month:'long',day:'numeric'});
   // Last updated timestamp: when the model actually generated picks_today.json,
   // not when the browser loaded the page
-  const updatedEl = document.getElementById('header-updated');
-  if (updatedEl) {
-    updatedEl.textContent = 'updated ' + formatGeneratedAt(DATA.generatedAt);
-  }
+  renderUpdatedStamp();
 
   renderAll();
+
+  // Started here, not at parse time: init() awaits the local copy, so a
+  // parse-time call would be overwritten by that resolve a moment later.
+  refreshSplits();
+  setInterval(refreshSplits, SPLITS_POLL_MS);
 }
 
 // -- NAV ----------------------------------------------------------------------
@@ -2107,6 +2109,77 @@ document.querySelectorAll('#vg-filters .fb').forEach(btn => {
   });
 });
 
+// -- SPLITS: LIVE RE-READ -----------------------------------------------------
+// betting_splits.json is refreshed hourly by a scheduled job that publishes it
+// to the dashboard repo's splits-data branch -- an orphan branch holding that
+// one file, so the refresh can never touch index.html or anything else on main.
+//
+// Read order: the splits-data branch first (fresher, updated hourly), then the
+// copy committed alongside the rest of the data (updated when the model runs).
+// If both fail we keep whatever is already in memory rather than blanking the
+// page, so an outage degrades to stale-but-correct.
+const SPLITS_REMOTE = 'https://raw.githubusercontent.com/dudromania/mlbbettingdash/splits-data/betting_splits.json';
+const SPLITS_LOCAL  = 'data/processed/betting_splits.json';
+const SPLITS_POLL_MS = 300000;   // 5 min; the job publishes hourly
+
+async function loadSplits() {
+  for (const url of [SPLITS_REMOTE, SPLITS_LOCAL]) {
+    try {
+      const r = await fetch(url + '?v=' + Date.now(), { cache: 'no-store' });
+      if (!r.ok) continue;
+      const j = await r.json();
+      // A payload with no games is a failed scrape, not an empty slate -- the
+      // job refuses to publish those, but never render one if it appears.
+      if (j && j.games && Object.keys(j.games).length) return j;
+    } catch (e) { /* try the next source */ }
+  }
+  return null;
+}
+
+function splitsStamp(iso) {
+  if (!iso) return null;
+  const d = new Date(iso);
+  if (isNaN(d)) return null;
+  return d.toLocaleTimeString('en-US',
+    { hour: 'numeric', minute: '2-digit', timeZone: 'America/Chicago' });
+}
+
+// The header stamp names which clock it is showing. picks_today.json carries no
+// generated_at, which is why this read "updated --" before; splits do carry one,
+// so the label says splits rather than implying the model just ran.
+function renderUpdatedStamp() {
+  const el = document.getElementById('header-updated');
+  if (!el) return;
+  const model  = DATA.generatedAt ? formatGeneratedAt(DATA.generatedAt) : null;
+  const splits = splitsStamp(DATA.splits && DATA.splits.updated_at);
+  el.textContent = model && splits ? `model ${model} · splits ${splits}`
+                 : splits          ? `splits updated ${splits}`
+                 : model           ? `updated ${model}`
+                 : 'updated —';
+}
+
+// Re-render the splits block inside every expanded row in place, so a refresh
+// never collapses a dropdown the user has open.
+function refreshSplitsDom() {
+  document.querySelectorAll('#tab-model tbody tr[data-key]').forEach(tr => {
+    const g = DATA.games.find(x =>
+      `${canonAbbr(x.away_abbr)}@${canonAbbr(x.home_abbr)}` === tr.dataset.key);
+    if (!g) return;
+    const html     = splitsBlock(g);
+    const existing = tr.querySelector('.sp-block');
+    if (html && existing)      existing.outerHTML = html;
+    else if (html && !existing) tr.querySelector('td > div')?.insertAdjacentHTML('beforeend', html);
+    else if (!html && existing) existing.remove();
+  });
+}
+
+async function refreshSplits() {
+  const fresh = await loadSplits();
+  if (fresh) DATA.splits = fresh;
+  renderUpdatedStamp();
+  refreshSplitsDom();
+}
+
 function renderModelTable() {
   let games = [...DATA.games];
   if (mFilter==='edge')   games=games.filter(g=>g.spread_edge_label!=='NONE'&&g.spread_edge_label!=='NO LINE'||g.total_edge_label!=='NONE'&&g.total_edge_label!=='NO LINE');
@@ -2153,7 +2226,7 @@ function renderModelTable() {
       <td class="mono" style="font-size:11px">${bb}</td>
       <td class="tc mono ${cc}">${c}</td>
     </tr>
-    <tr id="${rowId}">
+    <tr id="${rowId}" data-key="${canonAbbr(g.away_abbr)}@${canonAbbr(g.home_abbr)}">
       <td colspan="12" style="padding:0;background:var(--b1)">
         <div style="padding:12px;border-top:1px solid var(--b2)">${betRow(g)}${lineupBlock(rowId)}${l5Block(g)}${splitsBlock(g)}</div>
       </td>
