@@ -1,52 +1,6 @@
 [
   {
     "date": "2026-09-21",
-    "game_time": "5:35 PM CT",
-    "home_abbr": "BAL",
-    "away_abbr": "TOR",
-    "home_sp": "Shane Baz",
-    "away_sp": "Trey Yesavage",
-    "nrfi_prob": 36.1,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Shane Baz",
-      "first_inning": {},
-      "season_era": 4.11
-    },
-    "away_pitcher": {
-      "name": "Trey Yesavage",
-      "first_inning": {},
-      "season_era": 3.65
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-21",
-    "game_time": "5:40 PM CT",
-    "home_abbr": "DET",
-    "away_abbr": "WSH",
-    "home_sp": "River Ryan",
-    "away_sp": "DJ Herz",
-    "nrfi_prob": 33.6,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "River Ryan",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_pitcher": {
-      "name": "DJ Herz",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-21",
     "game_time": "8:45 PM CT",
     "home_abbr": "SF",
     "away_abbr": "MIN",
@@ -58,12 +12,12 @@
     "home_pitcher": {
       "name": "Blade Tidwell",
       "first_inning": {},
-      "season_era": 4.56
+      "season_era": 4.45
     },
     "away_pitcher": {
       "name": "Zebby Matthews",
       "first_inning": {},
-      "season_era": 4.74
+      "season_era": 4.87
     },
     "away_batting_1st": {},
     "home_batting_1st": {}

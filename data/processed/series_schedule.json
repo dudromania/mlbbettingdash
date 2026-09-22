@@ -866,7 +866,7 @@
         "game_id": 824787,
         "date": "2026-09-21",
         "game_time_ct": "5:35 PM CT",
-        "status": "P",
+        "status": "F",
         "home_name": "Baltimore Orioles",
         "away_name": "Toronto Blue Jays",
         "home_abbr": "BAL",
@@ -877,20 +877,10 @@
         "home_sp_id": 669358,
         "away_sp": "Trey Yesavage",
         "away_sp_id": 702056,
-        "home_score": null,
-        "away_score": null,
+        "home_score": 4,
+        "away_score": 3,
         "venue": "Oriole Park at Camden Yards",
-        "prediction": {
-          "predicted_margin": 0.07,
-          "predicted_total": 8.7,
-          "home_win_prob": 0.504,
-          "away_win_prob": 0.496,
-          "spread_confidence": 18,
-          "margin_p25": -2.65,
-          "margin_p75": 2.79,
-          "margin_std": 4.03,
-          "method": "trained_xgboost"
-        }
+        "prediction": null
       },
       {
         "game_id": 824785,
@@ -911,13 +901,13 @@
         "away_score": null,
         "venue": "Oriole Park at Camden Yards",
         "prediction": {
-          "predicted_margin": 0.56,
-          "predicted_total": 9.0,
-          "home_win_prob": 0.535,
-          "away_win_prob": 0.465,
-          "spread_confidence": 34,
-          "margin_p25": -2.19,
-          "margin_p75": 3.31,
+          "predicted_margin": 0.69,
+          "predicted_total": 9.2,
+          "home_win_prob": 0.543,
+          "away_win_prob": 0.457,
+          "spread_confidence": 36,
+          "margin_p25": -2.06,
+          "margin_p75": 3.44,
           "margin_std": 4.07,
           "method": "trained_xgboost"
         }
@@ -941,25 +931,25 @@
         "away_score": null,
         "venue": "Oriole Park at Camden Yards",
         "prediction": {
-          "predicted_margin": -0.53,
-          "predicted_total": 8.8,
-          "home_win_prob": 0.467,
-          "away_win_prob": 0.533,
+          "predicted_margin": -0.31,
+          "predicted_total": 9.0,
+          "home_win_prob": 0.481,
+          "away_win_prob": 0.519,
           "spread_confidence": 17,
-          "margin_p25": -3.25,
-          "margin_p75": 2.19,
+          "margin_p25": -3.03,
+          "margin_p75": 2.41,
           "margin_std": 4.04,
           "method": "trained_xgboost"
         }
       }
     ],
-    "home_wins": 0,
+    "home_wins": 1,
     "away_wins": 0,
     "series_start": "2026-09-21",
     "series_end": "2026-09-23",
     "total_games": 3,
-    "games_played": 0,
-    "games_remaining": 3
+    "games_played": 1,
+    "games_remaining": 2
   },
   {
     "series_id": "WSH@DET",
@@ -973,7 +963,7 @@
         "game_id": 824221,
         "date": "2026-09-21",
         "game_time_ct": "5:40 PM CT",
-        "status": "P",
+        "status": "F",
         "home_name": "Detroit Tigers",
         "away_name": "Washington Nationals",
         "home_abbr": "DET",
@@ -984,20 +974,10 @@
         "home_sp_id": 689981,
         "away_sp": "DJ Herz",
         "away_sp_id": 687792,
-        "home_score": null,
-        "away_score": null,
+        "home_score": 9,
+        "away_score": 2,
         "venue": "Comerica Park",
-        "prediction": {
-          "predicted_margin": 0.75,
-          "predicted_total": 9.1,
-          "home_win_prob": 0.546,
-          "away_win_prob": 0.454,
-          "spread_confidence": 19,
-          "margin_p25": -1.95,
-          "margin_p75": 3.45,
-          "margin_std": 4.0,
-          "method": "trained_xgboost"
-        }
+        "prediction": null
       },
       {
         "game_id": 824222,
@@ -1018,13 +998,13 @@
         "away_score": null,
         "venue": "Comerica Park",
         "prediction": {
-          "predicted_margin": 0.75,
-          "predicted_total": 9.1,
-          "home_win_prob": 0.546,
-          "away_win_prob": 0.454,
-          "spread_confidence": 19,
-          "margin_p25": -1.95,
-          "margin_p75": 3.45,
+          "predicted_margin": 0.84,
+          "predicted_total": 9.2,
+          "home_win_prob": 0.552,
+          "away_win_prob": 0.448,
+          "spread_confidence": 20,
+          "margin_p25": -1.86,
+          "margin_p75": 3.54,
           "margin_std": 4.0,
           "method": "trained_xgboost"
         }
@@ -1048,25 +1028,25 @@
         "away_score": null,
         "venue": "Comerica Park",
         "prediction": {
-          "predicted_margin": 1.36,
-          "predicted_total": 8.5,
-          "home_win_prob": 0.584,
-          "away_win_prob": 0.416,
+          "predicted_margin": 1.44,
+          "predicted_total": 8.6,
+          "home_win_prob": 0.589,
+          "away_win_prob": 0.411,
           "spread_confidence": 34,
-          "margin_p25": -1.29,
-          "margin_p75": 4.01,
+          "margin_p25": -1.21,
+          "margin_p75": 4.09,
           "margin_std": 3.93,
           "method": "trained_xgboost"
         }
       }
     ],
-    "home_wins": 0,
+    "home_wins": 1,
     "away_wins": 0,
     "series_start": "2026-09-21",
     "series_end": "2026-09-23",
     "total_games": 3,
-    "games_played": 0,
-    "games_remaining": 3
+    "games_played": 1,
+    "games_remaining": 2
   },
   {
     "series_id": "MIN@SF",
@@ -1080,7 +1060,7 @@
         "game_id": 823169,
         "date": "2026-09-21",
         "game_time_ct": "8:45 PM CT",
-        "status": "S",
+        "status": "I",
         "home_name": "San Francisco Giants",
         "away_name": "Minnesota Twins",
         "home_abbr": "SF",
@@ -1095,13 +1075,13 @@
         "away_score": null,
         "venue": "Oracle Park",
         "prediction": {
-          "predicted_margin": -0.38,
+          "predicted_margin": -0.41,
           "predicted_total": 8.3,
-          "home_win_prob": 0.476,
-          "away_win_prob": 0.524,
+          "home_win_prob": 0.474,
+          "away_win_prob": 0.526,
           "spread_confidence": 21,
-          "margin_p25": -2.98,
-          "margin_p75": 2.22,
+          "margin_p25": -3.01,
+          "margin_p75": 2.19,
           "margin_std": 3.85,
           "method": "trained_xgboost"
         }
@@ -1125,13 +1105,13 @@
         "away_score": null,
         "venue": "Oracle Park",
         "prediction": {
-          "predicted_margin": -0.07,
+          "predicted_margin": -0.1,
           "predicted_total": 8.0,
-          "home_win_prob": 0.495,
-          "away_win_prob": 0.505,
-          "spread_confidence": 18,
-          "margin_p25": -2.71,
-          "margin_p75": 2.57,
+          "home_win_prob": 0.494,
+          "away_win_prob": 0.506,
+          "spread_confidence": 19,
+          "margin_p25": -2.74,
+          "margin_p75": 2.54,
           "margin_std": 3.91,
           "method": "trained_xgboost"
         }
@@ -1155,13 +1135,13 @@
         "away_score": null,
         "venue": "Oracle Park",
         "prediction": {
-          "predicted_margin": -0.12,
+          "predicted_margin": -0.15,
           "predicted_total": 8.1,
-          "home_win_prob": 0.492,
-          "away_win_prob": 0.508,
+          "home_win_prob": 0.491,
+          "away_win_prob": 0.509,
           "spread_confidence": 16,
-          "margin_p25": -2.75,
-          "margin_p75": 2.51,
+          "margin_p25": -2.78,
+          "margin_p75": 2.48,
           "margin_std": 3.9,
           "method": "trained_xgboost"
         }
@@ -2939,13 +2919,13 @@
         "away_score": null,
         "venue": "Yankee Stadium",
         "prediction": {
-          "predicted_margin": 4.86,
+          "predicted_margin": 4.69,
           "predicted_total": 10.9,
-          "home_win_prob": 0.771,
-          "away_win_prob": 0.229,
-          "spread_confidence": 30,
-          "margin_p25": 2.15,
-          "margin_p75": 7.57,
+          "home_win_prob": 0.764,
+          "away_win_prob": 0.236,
+          "spread_confidence": 29,
+          "margin_p25": 1.98,
+          "margin_p75": 7.4,
           "margin_std": 4.02,
           "method": "trained_xgboost"
         }
@@ -3127,13 +3107,13 @@
         "away_score": null,
         "venue": "Rogers Centre",
         "prediction": {
-          "predicted_margin": 0.44,
-          "predicted_total": 7.7,
-          "home_win_prob": 0.528,
-          "away_win_prob": 0.472,
+          "predicted_margin": 0.14,
+          "predicted_total": 7.9,
+          "home_win_prob": 0.509,
+          "away_win_prob": 0.491,
           "spread_confidence": 24,
-          "margin_p25": -2.21,
-          "margin_p75": 3.09,
+          "margin_p25": -2.51,
+          "margin_p75": 2.79,
           "margin_std": 3.93,
           "method": "trained_xgboost"
         }
