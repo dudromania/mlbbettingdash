@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-22T14:52:14-05:00",
-  "updated_at": "2026-09-22T14:52:14-05:00",
+  "generated_at": "2026-09-22T15:19:47-05:00",
+  "updated_at": "2026-09-22T15:19:47-05:00",
   "source": "https://cleatz.com/public-betting/mlb/",
   "game_count": 15,
   "games": {
@@ -1031,7 +1031,7 @@
       "home_abbr": "NYY",
       "away_name": "TB Rays",
       "home_name": "NY Yankees",
-      "time_raw": "LIVE · started 11:05 am",
+      "time_raw": "LIVE \u00b7 started 11:05 am",
       "handle_split": {
         "away_pct": 70,
         "home_pct": 30

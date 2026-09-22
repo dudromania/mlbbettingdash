@@ -1,6 +1,29 @@
 [
   {
     "date": "2026-09-22",
+    "game_time": "6:05 PM CT",
+    "home_abbr": "NYY",
+    "away_abbr": "TB",
+    "home_sp": "Max Fried",
+    "away_sp": "Drew Rasmussen",
+    "nrfi_prob": 46.5,
+    "label": "NEUTRAL",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Max Fried",
+      "first_inning": {},
+      "season_era": 2.63
+    },
+    "away_pitcher": {
+      "name": "Drew Rasmussen",
+      "first_inning": {},
+      "season_era": 2.72
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-22",
     "game_time": "5:45 PM CT",
     "home_abbr": "BOS",
     "away_abbr": "CLE",
@@ -18,29 +41,6 @@
       "name": "Parker Messick",
       "first_inning": {},
       "season_era": 2.57
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-22",
-    "game_time": "12:05 PM CT",
-    "home_abbr": "NYY",
-    "away_abbr": "TB",
-    "home_sp": "Carlos Rod\u00f3n",
-    "away_sp": "Nick Martinez",
-    "nrfi_prob": 44.5,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Carlos Rod\u00f3n",
-      "first_inning": {},
-      "season_era": 2.8
-    },
-    "away_pitcher": {
-      "name": "Nick Martinez",
-      "first_inning": {},
-      "season_era": 2.98
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
