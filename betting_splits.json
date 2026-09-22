@@ -1,0 +1,154 @@
+{
+  "generated_at": "2026-10-13T18:00:04-05:00",
+  "updated_at": "2026-10-13T18:00:04-05:00",
+  "source": "https://cleatz.com/public-betting/mlb/",
+  "game_count": 2,
+  "games": {
+    "CLE@TB": {
+      "away_abbr": "CLE",
+      "home_abbr": "TB",
+      "away_name": "CLE Guardians",
+      "home_name": "TB Rays",
+      "time_raw": "Tue, Oct 13 · 8:00 pm EDT",
+      "handle_split": {
+        "away_pct": 12,
+        "home_pct": 88
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "side": "TB",
+            "team": "TB",
+            "point": null,
+            "price": -136,
+            "bets_pct": 74,
+            "handle_pct": 88,
+            "handle_gap": 14
+          },
+          {
+            "side": "CLE",
+            "team": "CLE",
+            "point": null,
+            "price": 113,
+            "bets_pct": 26,
+            "handle_pct": 12,
+            "handle_gap": -14
+          }
+        ],
+        "total": [
+          {
+            "side": "Over",
+            "team": "",
+            "point": 6.5,
+            "price": -122,
+            "bets_pct": 68,
+            "handle_pct": 70,
+            "handle_gap": 2
+          },
+          {
+            "side": "Under",
+            "team": "",
+            "point": 6.5,
+            "price": 101,
+            "bets_pct": 32,
+            "handle_pct": 30,
+            "handle_gap": -2
+          }
+        ],
+        "run_line": [
+          {
+            "side": "TB",
+            "team": "TB",
+            "point": -1.5,
+            "price": 159,
+            "bets_pct": 74,
+            "handle_pct": 89,
+            "handle_gap": 15
+          },
+          {
+            "side": "CLE",
+            "team": "CLE",
+            "point": 1.5,
+            "price": -194,
+            "bets_pct": 26,
+            "handle_pct": 11,
+            "handle_gap": -15
+          }
+        ]
+      }
+    },
+    "MIL@LAD": {
+      "away_abbr": "MIL",
+      "home_abbr": "LAD",
+      "away_name": "MIL Brewers",
+      "home_name": "LA Dodgers",
+      "time_raw": "Wed, Oct 14 · 8:00 pm EDT",
+      "handle_split": {
+        "away_pct": 26,
+        "home_pct": 74
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "side": "LAD",
+            "team": "LAD",
+            "point": null,
+            "price": -185,
+            "bets_pct": 76,
+            "handle_pct": 74,
+            "handle_gap": -2
+          },
+          {
+            "side": "MIL",
+            "team": "MIL",
+            "point": null,
+            "price": 152,
+            "bets_pct": 24,
+            "handle_pct": 26,
+            "handle_gap": 2
+          }
+        ],
+        "total": [
+          {
+            "side": "Over",
+            "team": "",
+            "point": 7.5,
+            "price": -106,
+            "bets_pct": 56,
+            "handle_pct": 79,
+            "handle_gap": 23
+          },
+          {
+            "side": "Under",
+            "team": "",
+            "point": 7.5,
+            "price": -114,
+            "bets_pct": 44,
+            "handle_pct": 21,
+            "handle_gap": -23
+          }
+        ],
+        "run_line": [
+          {
+            "side": "LAD",
+            "team": "LAD",
+            "point": -1.5,
+            "price": 122,
+            "bets_pct": 82,
+            "handle_pct": 99,
+            "handle_gap": 17
+          },
+          {
+            "side": "MIL",
+            "team": "MIL",
+            "point": 1.5,
+            "price": -147,
+            "bets_pct": 18,
+            "handle_pct": 1,
+            "handle_gap": -17
+          }
+        ]
+      }
+    }
+  }
+}
