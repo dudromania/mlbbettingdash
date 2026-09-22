@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-21T22:16:05",
-  "date": "2026-09-21",
+  "generated_at": "2026-09-22T08:13:37",
+  "date": "2026-09-22",
   "book_count": 11,
   "books": [
     {
@@ -50,241 +50,6 @@
   ],
   "games": [
     {
-      "away_name": "Minnesota Twins",
-      "home_name": "San Francisco Giants",
-      "away_abbr": "MIN",
-      "home_abbr": "SF",
-      "commence_ct": "8:46 PM CT",
-      "commence_iso": "2026-09-22T01:46:00Z",
-      "book_count": 8,
-      "books": [
-        {
-          "book": "betmgm",
-          "book_title": "BetMGM",
-          "ml_away": 600,
-          "ml_home": -1000,
-          "rl_away_point": 2.5,
-          "rl_away_price": 120,
-          "rl_home_point": -2.5,
-          "rl_home_price": -155,
-          "total_point": 8.5,
-          "over_price": 110,
-          "under_price": -145,
-          "last_update": "2026-09-22T03:08:15Z"
-        },
-        {
-          "book": "betrivers",
-          "book_title": "BetRivers",
-          "ml_away": 540,
-          "ml_home": -1250,
-          "rl_away_point": 2.5,
-          "rl_away_price": 125,
-          "rl_home_point": -2.5,
-          "rl_home_price": -177,
-          "total_point": 8.5,
-          "over_price": -103,
-          "under_price": -137,
-          "last_update": "2026-09-22T03:07:56Z"
-        },
-        {
-          "book": "bovada",
-          "book_title": "Bovada",
-          "ml_away": 550,
-          "ml_home": -1000,
-          "rl_away_point": 3.0,
-          "rl_away_price": -120,
-          "rl_home_point": -3.0,
-          "rl_home_price": -110,
-          "total_point": 8.5,
-          "over_price": -110,
-          "under_price": -120,
-          "last_update": "2026-09-22T03:07:58Z"
-        },
-        {
-          "book": "williamhill_us",
-          "book_title": "Caesars",
-          "ml_away": 440,
-          "ml_home": -700,
-          "rl_away_point": 2.5,
-          "rl_away_price": -107,
-          "rl_home_point": -2.5,
-          "rl_home_price": -122,
-          "total_point": 8.5,
-          "over_price": -141,
-          "under_price": 109,
-          "last_update": "2026-09-22T03:01:40Z"
-        },
-        {
-          "book": "draftkings",
-          "book_title": "DraftKings",
-          "ml_away": 556,
-          "ml_home": -1040,
-          "rl_away_point": 2.5,
-          "rl_away_price": 121,
-          "rl_home_point": -2.5,
-          "rl_home_price": -158,
-          "total_point": 8.5,
-          "over_price": 100,
-          "under_price": -131,
-          "last_update": "2026-09-22T03:07:55Z"
-        },
-        {
-          "book": "fanatics",
-          "book_title": "Fanatics",
-          "ml_away": 550,
-          "ml_home": -950,
-          "rl_away_point": 2.5,
-          "rl_away_price": 115,
-          "rl_home_point": -2.5,
-          "rl_home_price": -155,
-          "total_point": 8.5,
-          "over_price": -105,
-          "under_price": -125,
-          "last_update": "2026-09-22T03:07:55Z"
-        },
-        {
-          "book": "fanduel",
-          "book_title": "FanDuel",
-          "ml_away": 520,
-          "ml_home": -900,
-          "rl_away_point": 2.5,
-          "rl_away_price": 112,
-          "rl_home_point": -2.5,
-          "rl_home_price": -148,
-          "total_point": 8.5,
-          "over_price": -110,
-          "under_price": -120,
-          "last_update": "2026-09-22T03:07:55Z"
-        },
-        {
-          "book": "mybookieag",
-          "book_title": "MyBookie.ag",
-          "ml_away": 600,
-          "ml_home": -1111,
-          "rl_away_point": 2.5,
-          "rl_away_price": 125,
-          "rl_home_point": -2.5,
-          "rl_home_price": -182,
-          "total_point": 8.5,
-          "over_price": -105,
-          "under_price": -125,
-          "last_update": "2026-09-22T03:08:15Z"
-        }
-      ],
-      "best": {
-        "ml_away": {
-          "price": 600,
-          "book": "mybookieag",
-          "book_title": "MyBookie.ag"
-        },
-        "ml_home": {
-          "price": -700,
-          "book": "williamhill_us",
-          "book_title": "Caesars"
-        },
-        "rl_away": {
-          "price": 125,
-          "book": "mybookieag",
-          "book_title": "MyBookie.ag",
-          "point": 2.5
-        },
-        "rl_home": {
-          "price": -122,
-          "book": "williamhill_us",
-          "book_title": "Caesars",
-          "point": -2.5
-        },
-        "over": {
-          "price": 110,
-          "book": "betmgm",
-          "book_title": "BetMGM",
-          "point": 8.5
-        },
-        "under": {
-          "price": 109,
-          "book": "williamhill_us",
-          "book_title": "Caesars",
-          "point": 8.5
-        }
-      },
-      "hold": {
-        "ml": 1.79,
-        "rl": -0.6,
-        "total": -4.53
-      },
-      "arbs": [
-        {
-          "market": "TOTAL",
-          "roi_pct": 4.75,
-          "same_book": false,
-          "legs": [
-            {
-              "side": "Over 8.5",
-              "price": 110,
-              "point": 8.5,
-              "book": "betmgm",
-              "book_title": "BetMGM",
-              "stake_pct": 49.88
-            },
-            {
-              "side": "Under 8.5",
-              "price": 109,
-              "point": 8.5,
-              "book": "williamhill_us",
-              "book_title": "Caesars",
-              "stake_pct": 50.12
-            }
-          ]
-        },
-        {
-          "market": "RUN LINE",
-          "roi_pct": 0.6,
-          "same_book": false,
-          "legs": [
-            {
-              "side": "Minnesota Twins",
-              "price": 125,
-              "point": 2.5,
-              "book": "mybookieag",
-              "book_title": "MyBookie.ag",
-              "stake_pct": 44.71
-            },
-            {
-              "side": "San Francisco Giants",
-              "price": -122,
-              "point": -2.5,
-              "book": "williamhill_us",
-              "book_title": "Caesars",
-              "stake_pct": 55.29
-            }
-          ]
-        }
-      ],
-      "arb": {
-        "market": "TOTAL",
-        "roi_pct": 4.75,
-        "same_book": false,
-        "legs": [
-          {
-            "side": "Over 8.5",
-            "price": 110,
-            "point": 8.5,
-            "book": "betmgm",
-            "book_title": "BetMGM",
-            "stake_pct": 49.88
-          },
-          {
-            "side": "Under 8.5",
-            "price": 109,
-            "point": 8.5,
-            "book": "williamhill_us",
-            "book_title": "Caesars",
-            "stake_pct": 50.12
-          }
-        ]
-      }
-    },
-    {
       "away_name": "Tampa Bay Rays",
       "home_name": "New York Yankees",
       "away_abbr": "TB",
@@ -297,7 +62,7 @@
           "book": "betmgm",
           "book_title": "BetMGM",
           "ml_away": 105,
-          "ml_home": -130,
+          "ml_home": -125,
           "rl_away_point": 1.5,
           "rl_away_price": -210,
           "rl_home_point": -1.5,
@@ -305,189 +70,189 @@
           "total_point": 7.0,
           "over_price": -115,
           "under_price": -105,
-          "last_update": "2026-09-22T03:08:15Z"
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betonlineag",
           "book_title": "BetOnline.ag",
-          "ml_away": 113,
-          "ml_home": -125,
+          "ml_away": 107,
+          "ml_home": -118,
           "rl_away_point": 1.5,
-          "rl_away_price": -200,
+          "rl_away_price": -207,
           "rl_home_point": -1.5,
-          "rl_home_price": 174,
+          "rl_home_price": 178,
           "total_point": 7.0,
-          "over_price": -105,
-          "under_price": -115,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -112,
+          "under_price": -108,
+          "last_update": "2026-09-22T13:00:15Z"
         },
         {
           "book": "betrivers",
           "book_title": "BetRivers",
-          "ml_away": 112,
-          "ml_home": -134,
+          "ml_away": 107,
+          "ml_home": -127,
           "rl_away_point": 1.5,
-          "rl_away_price": -205,
+          "rl_away_price": -215,
           "rl_home_point": -1.5,
-          "rl_home_price": 163,
+          "rl_home_price": 170,
           "total_point": 7.0,
-          "over_price": -117,
-          "under_price": -122,
-          "last_update": "2026-09-22T03:07:56Z"
+          "over_price": -121,
+          "under_price": -118,
+          "last_update": "2026-09-22T12:59:37Z"
         },
         {
           "book": "betus",
           "book_title": "BetUS",
-          "ml_away": 114,
-          "ml_home": -125,
+          "ml_away": 108,
+          "ml_home": -118,
           "rl_away_point": 1.5,
           "rl_away_price": -200,
           "rl_home_point": -1.5,
           "rl_home_price": 172,
           "total_point": 7.0,
-          "over_price": -105,
-          "under_price": -115,
-          "last_update": "2026-09-22T03:08:14Z"
+          "over_price": -110,
+          "under_price": -110,
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
           "book_title": "Bovada",
-          "ml_away": 111,
-          "ml_home": -133,
+          "ml_away": 107,
+          "ml_home": -128,
           "rl_away_point": 1.5,
-          "rl_away_price": -200,
+          "rl_away_price": -210,
           "rl_home_point": -1.5,
-          "rl_home_price": 170,
-          "total_point": 6.5,
-          "over_price": -140,
-          "under_price": 120,
-          "last_update": "2026-09-22T03:07:58Z"
+          "rl_home_price": 175,
+          "total_point": 7.0,
+          "over_price": -115,
+          "under_price": -105,
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
           "book_title": "Caesars",
-          "ml_away": 113,
-          "ml_home": -132,
+          "ml_away": 108,
+          "ml_home": -127,
           "rl_away_point": 1.5,
           "rl_away_price": -205,
           "rl_home_point": -1.5,
           "rl_home_price": 172,
           "total_point": 7.5,
-          "over_price": 118,
-          "under_price": -139,
-          "last_update": "2026-09-22T03:01:40Z"
+          "over_price": 114,
+          "under_price": -136,
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
           "book_title": "DraftKings",
-          "ml_away": 109,
-          "ml_home": -131,
+          "ml_away": 105,
+          "ml_home": -126,
           "rl_away_point": 1.5,
-          "rl_away_price": -206,
+          "rl_away_price": -207,
           "rl_home_point": -1.5,
-          "rl_home_price": 168,
+          "rl_home_price": 170,
           "total_point": 7.0,
-          "over_price": -107,
-          "under_price": -112,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -112,
+          "under_price": -108,
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
           "book_title": "Fanatics",
-          "ml_away": 110,
-          "ml_home": -130,
+          "ml_away": 105,
+          "ml_home": -125,
           "rl_away_point": 1.5,
-          "rl_away_price": -200,
+          "rl_away_price": -205,
           "rl_home_point": -1.5,
-          "rl_home_price": 160,
+          "rl_home_price": 165,
           "total_point": 7.0,
-          "over_price": -110,
-          "under_price": -110,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -115,
+          "under_price": -105,
+          "last_update": "2026-09-22T12:58:40Z"
         },
         {
           "book": "fanduel",
           "book_title": "FanDuel",
-          "ml_away": 112,
-          "ml_home": -132,
-          "rl_away_point": 1.5,
-          "rl_away_price": -205,
-          "rl_home_point": -1.5,
-          "rl_home_price": 168,
+          "ml_away": 108,
+          "ml_home": -126,
+          "rl_away_point": -1.5,
+          "rl_away_price": 176,
+          "rl_home_point": 1.5,
+          "rl_home_price": -215,
           "total_point": 7.5,
-          "over_price": 116,
-          "under_price": -142,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": 106,
+          "under_price": -130,
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "lowvig",
           "book_title": "LowVig.ag",
-          "ml_away": 113,
-          "ml_home": -125,
+          "ml_away": 107,
+          "ml_home": -118,
           "rl_away_point": 1.5,
-          "rl_away_price": -200,
+          "rl_away_price": -206,
           "rl_home_point": -1.5,
-          "rl_home_price": 175,
+          "rl_home_price": 180,
           "total_point": 7.0,
-          "over_price": -102,
-          "under_price": -113,
-          "last_update": "2026-09-22T03:07:34Z"
+          "over_price": -109,
+          "under_price": -105,
+          "last_update": "2026-09-22T12:59:21Z"
         },
         {
           "book": "mybookieag",
           "book_title": "MyBookie.ag",
-          "ml_away": 110,
-          "ml_home": -129,
+          "ml_away": 106,
+          "ml_home": -125,
           "rl_away_point": 1.5,
-          "rl_away_price": -197,
+          "rl_away_price": -206,
           "rl_home_point": -1.5,
-          "rl_home_price": 165,
+          "rl_home_price": 173,
           "total_point": 7.0,
-          "over_price": -108,
-          "under_price": -113,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -116,
+          "under_price": -105,
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
         "ml_away": {
-          "price": 114,
-          "book": "betus",
-          "book_title": "BetUS"
+          "price": 108,
+          "book": "fanduel",
+          "book_title": "FanDuel"
         },
         "ml_home": {
-          "price": -125,
+          "price": -118,
           "book": "betonlineag",
           "book_title": "BetOnline.ag"
         },
         "rl_away": {
-          "price": -197,
-          "book": "mybookieag",
-          "book_title": "MyBookie.ag",
+          "price": -200,
+          "book": "betus",
+          "book_title": "BetUS",
           "point": 1.5
         },
         "rl_home": {
-          "price": 175,
+          "price": 180,
           "book": "lowvig",
           "book_title": "LowVig.ag",
           "point": -1.5
         },
         "over": {
-          "price": -102,
+          "price": -109,
           "book": "lowvig",
           "book_title": "LowVig.ag",
           "point": 7.0
         },
         "under": {
           "price": -105,
-          "book": "betmgm",
-          "book_title": "BetMGM",
+          "book": "fanatics",
+          "book_title": "Fanatics",
           "point": 7.0
         }
       },
       "hold": {
-        "ml": 2.28,
-        "rl": 2.69,
-        "total": 1.71
+        "ml": 2.21,
+        "rl": 2.38,
+        "total": 3.37
       },
       "arbs": [],
       "arb": null
@@ -506,70 +271,70 @@
           "book_title": "BetMGM",
           "ml_away": 100,
           "ml_home": -120,
-          "rl_away_point": 1.5,
-          "rl_away_price": -200,
-          "rl_home_point": -1.5,
-          "rl_home_price": 165,
+          "rl_away_point": -1.5,
+          "rl_away_price": 170,
+          "rl_home_point": 1.5,
+          "rl_home_price": -210,
           "total_point": 7.5,
-          "over_price": -115,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": 105,
+          "under_price": -125,
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betonlineag",
           "book_title": "BetOnline.ag",
-          "ml_away": 104,
-          "ml_home": -115,
+          "ml_away": 106,
+          "ml_home": -117,
           "rl_away_point": 1.5,
           "rl_away_price": -205,
           "rl_home_point": -1.5,
           "rl_home_price": 177,
           "total_point": 7.5,
-          "over_price": -110,
-          "under_price": -110,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": 105,
+          "under_price": -125,
+          "last_update": "2026-09-22T13:00:15Z"
         },
         {
           "book": "betrivers",
           "book_title": "BetRivers",
-          "ml_away": 105,
+          "ml_away": 104,
           "ml_home": -124,
-          "rl_away_point": 1.0,
-          "rl_away_price": -143,
-          "rl_home_point": -1.0,
-          "rl_home_price": 118,
+          "rl_away_point": 1.5,
+          "rl_away_price": -205,
+          "rl_home_point": -1.5,
+          "rl_home_price": 165,
           "total_point": 7.5,
-          "over_price": -112,
-          "under_price": -109,
-          "last_update": "2026-09-22T03:07:56Z"
+          "over_price": -108,
+          "under_price": -113,
+          "last_update": "2026-09-22T12:59:37Z"
         },
         {
           "book": "betus",
           "book_title": "BetUS",
-          "ml_away": 107,
-          "ml_home": -117,
+          "ml_away": 109,
+          "ml_home": -120,
           "rl_away_point": 1.5,
           "rl_away_price": -205,
           "rl_home_point": -1.5,
           "rl_home_price": 176,
           "total_point": 7.5,
-          "over_price": -110,
-          "under_price": -110,
-          "last_update": "2026-09-22T03:08:14Z"
+          "over_price": 105,
+          "under_price": -125,
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
           "book_title": "Bovada",
-          "ml_away": 101,
-          "ml_home": -121,
+          "ml_away": 102,
+          "ml_home": -122,
           "rl_away_point": 1.5,
-          "rl_away_price": -210,
+          "rl_away_price": -220,
           "rl_home_point": -1.5,
-          "rl_home_price": 175,
+          "rl_home_price": 180,
           "total_point": 7.5,
-          "over_price": -115,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:07:58Z"
+          "over_price": 105,
+          "under_price": -125,
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
@@ -579,123 +344,123 @@
           "rl_away_point": 1.5,
           "rl_away_price": -205,
           "rl_home_point": -1.5,
-          "rl_home_price": 173,
+          "rl_home_price": 174,
           "total_point": 7.5,
-          "over_price": -113,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:01:40Z"
+          "over_price": -102,
+          "under_price": -117,
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
           "book_title": "DraftKings",
-          "ml_away": 101,
-          "ml_home": -122,
+          "ml_away": 102,
+          "ml_home": -123,
           "rl_away_point": 1.5,
-          "rl_away_price": -207,
+          "rl_away_price": -208,
           "rl_home_point": -1.5,
-          "rl_home_price": 169,
-          "total_point": 7.5,
-          "over_price": -114,
-          "under_price": -106,
-          "last_update": "2026-09-22T03:07:55Z"
+          "rl_home_price": 170,
+          "total_point": 7.0,
+          "over_price": -125,
+          "under_price": 104,
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
           "book_title": "Fanatics",
           "ml_away": 100,
           "ml_home": -120,
-          "rl_away_point": -1.5,
-          "rl_away_price": 165,
-          "rl_home_point": 1.5,
-          "rl_home_price": -205,
+          "rl_away_point": 1.5,
+          "rl_away_price": -215,
+          "rl_home_point": -1.5,
+          "rl_home_price": 170,
           "total_point": 7.5,
-          "over_price": -115,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": 105,
+          "under_price": -125,
+          "last_update": "2026-09-22T12:58:40Z"
         },
         {
           "book": "fanduel",
           "book_title": "FanDuel",
           "ml_away": 102,
           "ml_home": -120,
-          "rl_away_point": -1.5,
-          "rl_away_price": 180,
-          "rl_home_point": 1.5,
-          "rl_home_price": -220,
+          "rl_away_point": 1.5,
+          "rl_away_price": -220,
+          "rl_home_point": -1.5,
+          "rl_home_price": 180,
           "total_point": 7.5,
-          "over_price": -115,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": 100,
+          "under_price": -122,
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "lowvig",
           "book_title": "LowVig.ag",
-          "ml_away": 104,
-          "ml_home": -115,
+          "ml_away": 106,
+          "ml_home": -117,
           "rl_away_point": 1.5,
           "rl_away_price": -204,
           "rl_home_point": -1.5,
           "rl_home_price": 179,
           "total_point": 7.5,
-          "over_price": -107,
-          "under_price": -107,
-          "last_update": "2026-09-22T03:07:34Z"
+          "over_price": 107,
+          "under_price": -123,
+          "last_update": "2026-09-22T12:59:21Z"
         },
         {
           "book": "mybookieag",
           "book_title": "MyBookie.ag",
-          "ml_away": 102,
-          "ml_home": -120,
+          "ml_away": 105,
+          "ml_home": -123,
           "rl_away_point": 1.5,
-          "rl_away_price": -199,
+          "rl_away_price": -204,
           "rl_home_point": -1.5,
-          "rl_home_price": 167,
+          "rl_home_price": 172,
           "total_point": 7.5,
-          "over_price": -116,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -102,
+          "under_price": -119,
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
         "ml_away": {
-          "price": 107,
+          "price": 109,
           "book": "betus",
           "book_title": "BetUS"
         },
         "ml_home": {
-          "price": -115,
+          "price": -117,
           "book": "lowvig",
           "book_title": "LowVig.ag"
         },
         "rl_away": {
-          "price": -199,
+          "price": -204,
           "book": "mybookieag",
           "book_title": "MyBookie.ag",
           "point": 1.5
         },
         "rl_home": {
-          "price": 179,
-          "book": "lowvig",
-          "book_title": "LowVig.ag",
+          "price": 180,
+          "book": "fanduel",
+          "book_title": "FanDuel",
           "point": -1.5
         },
         "over": {
-          "price": -107,
+          "price": 107,
           "book": "lowvig",
           "book_title": "LowVig.ag",
           "point": 7.5
         },
         "under": {
-          "price": -105,
-          "book": "fanduel",
-          "book_title": "FanDuel",
+          "price": -113,
+          "book": "betrivers",
+          "book_title": "BetRivers",
           "point": 7.5
         }
       },
       "hold": {
-        "ml": 1.8,
-        "rl": 2.4,
-        "total": 2.91
+        "ml": 1.76,
+        "rl": 2.82,
+        "total": 1.36
       },
       "arbs": [],
       "arb": null
@@ -719,15 +484,15 @@
           "rl_home_point": -1.5,
           "rl_home_price": 135,
           "total_point": 8.0,
-          "over_price": -115,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betonlineag",
           "book_title": "BetOnline.ag",
-          "ml_away": 136,
-          "ml_home": -150,
+          "ml_away": 135,
+          "ml_home": -149,
           "rl_away_point": 1.5,
           "rl_away_price": -155,
           "rl_home_point": -1.5,
@@ -735,21 +500,21 @@
           "total_point": 8.5,
           "over_price": 105,
           "under_price": -125,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T13:00:15Z"
         },
         {
           "book": "betrivers",
           "book_title": "BetRivers",
-          "ml_away": 138,
-          "ml_home": -165,
-          "rl_away_point": 1.0,
-          "rl_away_price": -104,
-          "rl_home_point": -1.0,
-          "rl_home_price": -118,
+          "ml_away": 128,
+          "ml_home": -155,
+          "rl_away_point": 1.5,
+          "rl_away_price": -159,
+          "rl_home_point": -1.5,
+          "rl_home_price": 130,
           "total_point": 8.5,
-          "over_price": -107,
-          "under_price": -114,
-          "last_update": "2026-09-22T03:07:56Z"
+          "over_price": -106,
+          "under_price": -115,
+          "last_update": "2026-09-22T12:59:37Z"
         },
         {
           "book": "betus",
@@ -763,21 +528,21 @@
           "total_point": 8.5,
           "over_price": 105,
           "under_price": -125,
-          "last_update": "2026-09-22T03:08:14Z"
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
           "book_title": "Bovada",
-          "ml_away": 127,
-          "ml_home": -152,
+          "ml_away": 130,
+          "ml_home": -155,
           "rl_away_point": 1.5,
-          "rl_away_price": -165,
+          "rl_away_price": -160,
           "rl_home_point": -1.5,
-          "rl_home_price": 140,
-          "total_point": 8.0,
-          "over_price": -120,
-          "under_price": 100,
-          "last_update": "2026-09-22T03:07:58Z"
+          "rl_home_price": 135,
+          "total_point": 8.5,
+          "over_price": 100,
+          "under_price": -120,
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
@@ -791,21 +556,21 @@
           "total_point": 8.5,
           "over_price": -103,
           "under_price": -115,
-          "last_update": "2026-09-22T03:01:40Z"
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
           "book_title": "DraftKings",
-          "ml_away": 129,
-          "ml_home": -156,
+          "ml_away": 130,
+          "ml_home": -157,
           "rl_away_point": 1.5,
-          "rl_away_price": -163,
+          "rl_away_price": -162,
           "rl_home_point": -1.5,
-          "rl_home_price": 135,
+          "rl_home_price": 134,
           "total_point": 8.0,
-          "over_price": -116,
-          "under_price": -104,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -118,
+          "under_price": -102,
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
@@ -813,33 +578,33 @@
           "ml_away": 130,
           "ml_home": -155,
           "rl_away_point": 1.5,
-          "rl_away_price": -170,
+          "rl_away_price": -165,
           "rl_home_point": -1.5,
-          "rl_home_price": 140,
+          "rl_home_price": 135,
           "total_point": 8.0,
           "over_price": -115,
           "under_price": -105,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T12:58:40Z"
         },
         {
           "book": "fanduel",
           "book_title": "FanDuel",
-          "ml_away": 138,
-          "ml_home": -164,
+          "ml_away": 134,
+          "ml_home": -158,
           "rl_away_point": 1.5,
-          "rl_away_price": -172,
+          "rl_away_price": -166,
           "rl_home_point": -1.5,
-          "rl_home_price": 142,
+          "rl_home_price": 138,
           "total_point": 8.5,
-          "over_price": -104,
-          "under_price": -118,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": 100,
+          "under_price": -122,
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "lowvig",
           "book_title": "LowVig.ag",
-          "ml_away": 136,
-          "ml_home": -150,
+          "ml_away": 135,
+          "ml_home": -149,
           "rl_away_point": 1.5,
           "rl_away_price": -154,
           "rl_home_point": -1.5,
@@ -847,42 +612,42 @@
           "total_point": 8.5,
           "over_price": 107,
           "under_price": -123,
-          "last_update": "2026-09-22T03:07:34Z"
+          "last_update": "2026-09-22T12:59:21Z"
         },
         {
           "book": "mybookieag",
           "book_title": "MyBookie.ag",
           "ml_away": 130,
-          "ml_home": -154,
+          "ml_home": -153,
           "rl_away_point": 1.5,
-          "rl_away_price": -152,
+          "rl_away_price": -157,
           "rl_home_point": -1.5,
-          "rl_home_price": 129,
+          "rl_home_price": 133,
           "total_point": 8.5,
-          "over_price": -102,
-          "under_price": -120,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -103,
+          "under_price": -118,
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
         "ml_away": {
-          "price": 138,
-          "book": "fanduel",
-          "book_title": "FanDuel"
+          "price": 136,
+          "book": "williamhill_us",
+          "book_title": "Caesars"
         },
         "ml_home": {
-          "price": -150,
+          "price": -149,
           "book": "lowvig",
           "book_title": "LowVig.ag"
         },
         "rl_away": {
-          "price": -152,
-          "book": "mybookieag",
-          "book_title": "MyBookie.ag",
+          "price": -154,
+          "book": "lowvig",
+          "book_title": "LowVig.ag",
           "point": 1.5
         },
         "rl_home": {
-          "price": 142,
+          "price": 138,
           "book": "fanduel",
           "book_title": "FanDuel",
           "point": -1.5
@@ -894,16 +659,16 @@
           "point": 8.5
         },
         "under": {
-          "price": -114,
-          "book": "betrivers",
-          "book_title": "BetRivers",
+          "price": -115,
+          "book": "williamhill_us",
+          "book_title": "Caesars",
           "point": 8.5
         }
       },
       "hold": {
-        "ml": 2.02,
-        "rl": 1.64,
-        "total": 1.58
+        "ml": 2.21,
+        "rl": 2.65,
+        "total": 1.8
       },
       "arbs": [],
       "arb": null
@@ -923,19 +688,19 @@
           "ml_away": 115,
           "ml_home": -140,
           "rl_away_point": 1.5,
-          "rl_away_price": -190,
+          "rl_away_price": -185,
           "rl_home_point": -1.5,
-          "rl_home_price": 155,
-          "total_point": 7.0,
-          "over_price": -125,
-          "under_price": 105,
-          "last_update": "2026-09-22T03:08:15Z"
+          "rl_home_price": 150,
+          "total_point": 7.5,
+          "over_price": 105,
+          "under_price": -125,
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betonlineag",
           "book_title": "BetOnline.ag",
-          "ml_away": 117,
-          "ml_home": -129,
+          "ml_away": 118,
+          "ml_home": -130,
           "rl_away_point": 1.5,
           "rl_away_price": -180,
           "rl_home_point": -1.5,
@@ -943,7 +708,7 @@
           "total_point": 7.5,
           "over_price": 110,
           "under_price": -130,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T13:00:15Z"
         },
         {
           "book": "betrivers",
@@ -955,37 +720,37 @@
           "rl_home_point": -1.5,
           "rl_home_price": 150,
           "total_point": 7.0,
-          "over_price": -130,
-          "under_price": -109,
-          "last_update": "2026-09-22T03:07:56Z"
+          "over_price": -127,
+          "under_price": -112,
+          "last_update": "2026-09-22T12:59:37Z"
         },
         {
           "book": "betus",
           "book_title": "BetUS",
           "ml_away": 118,
-          "ml_home": -129,
+          "ml_home": -130,
           "rl_away_point": 1.5,
           "rl_away_price": -180,
           "rl_home_point": -1.5,
           "rl_home_price": 156,
-          "total_point": 7.5,
-          "over_price": 110,
-          "under_price": -130,
-          "last_update": "2026-09-22T03:08:14Z"
+          "total_point": 7.0,
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
           "book_title": "Bovada",
-          "ml_away": 112,
-          "ml_home": -134,
+          "ml_away": 115,
+          "ml_home": -138,
           "rl_away_point": 1.5,
           "rl_away_price": -195,
           "rl_home_point": -1.5,
           "rl_home_price": 165,
           "total_point": 7.0,
-          "over_price": -125,
-          "under_price": 105,
-          "last_update": "2026-09-22T03:07:58Z"
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
@@ -999,13 +764,13 @@
           "total_point": 7.5,
           "over_price": 106,
           "under_price": -125,
-          "last_update": "2026-09-22T03:01:40Z"
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
           "book_title": "DraftKings",
-          "ml_away": 113,
-          "ml_home": -137,
+          "ml_away": 118,
+          "ml_home": -142,
           "rl_away_point": 1.5,
           "rl_away_price": -187,
           "rl_home_point": -1.5,
@@ -1013,7 +778,7 @@
           "total_point": 7.0,
           "over_price": -120,
           "under_price": 100,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
@@ -1021,13 +786,13 @@
           "ml_away": 115,
           "ml_home": -140,
           "rl_away_point": 1.5,
-          "rl_away_price": -200,
+          "rl_away_price": -190,
           "rl_home_point": -1.5,
-          "rl_home_price": 160,
+          "rl_home_price": 155,
           "total_point": 7.0,
           "over_price": -120,
           "under_price": 100,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T12:58:40Z"
         },
         {
           "book": "fanduel",
@@ -1035,19 +800,19 @@
           "ml_away": 120,
           "ml_home": -142,
           "rl_away_point": 1.5,
-          "rl_away_price": -192,
+          "rl_away_price": -188,
           "rl_home_point": -1.5,
-          "rl_home_price": 158,
+          "rl_home_price": 155,
           "total_point": 7.5,
-          "over_price": 106,
-          "under_price": -130,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": 104,
+          "under_price": -128,
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "lowvig",
           "book_title": "LowVig.ag",
-          "ml_away": 117,
-          "ml_home": -129,
+          "ml_away": 118,
+          "ml_home": -130,
           "rl_away_point": 1.5,
           "rl_away_price": -180,
           "rl_home_point": -1.5,
@@ -1055,21 +820,21 @@
           "total_point": 7.5,
           "over_price": 112,
           "under_price": -128,
-          "last_update": "2026-09-22T03:07:34Z"
+          "last_update": "2026-09-22T12:59:21Z"
         },
         {
           "book": "mybookieag",
           "book_title": "MyBookie.ag",
           "ml_away": 116,
-          "ml_home": -136,
+          "ml_home": -137,
           "rl_away_point": 1.5,
-          "rl_away_price": -184,
+          "rl_away_price": -178,
           "rl_home_point": -1.5,
-          "rl_home_price": 155,
-          "total_point": null,
-          "over_price": null,
-          "under_price": null,
-          "last_update": "2026-09-22T03:08:15Z"
+          "rl_home_price": 151,
+          "total_point": 7.0,
+          "over_price": -120,
+          "under_price": -102,
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
@@ -1079,14 +844,14 @@
           "book_title": "FanDuel"
         },
         "ml_home": {
-          "price": -129,
+          "price": -130,
           "book": "betonlineag",
           "book_title": "BetOnline.ag"
         },
         "rl_away": {
-          "price": -180,
-          "book": "betonlineag",
-          "book_title": "BetOnline.ag",
+          "price": -178,
+          "book": "mybookieag",
+          "book_title": "MyBookie.ag",
           "point": 1.5
         },
         "rl_home": {
@@ -1096,22 +861,22 @@
           "point": -1.5
         },
         "over": {
-          "price": 112,
-          "book": "lowvig",
-          "book_title": "LowVig.ag",
-          "point": 7.5
+          "price": -120,
+          "book": "fanatics",
+          "book_title": "Fanatics",
+          "point": 7.0
         },
         "under": {
-          "price": -125,
-          "book": "williamhill_us",
-          "book_title": "Caesars",
-          "point": 7.5
+          "price": 100,
+          "book": "fanatics",
+          "book_title": "Fanatics",
+          "point": 7.0
         }
       },
       "hold": {
-        "ml": 1.79,
-        "rl": 2.02,
-        "total": 2.73
+        "ml": 1.98,
+        "rl": 1.76,
+        "total": 4.55
       },
       "arbs": [],
       "arb": null
@@ -1131,13 +896,13 @@
           "ml_away": 125,
           "ml_home": -155,
           "rl_away_point": 1.5,
-          "rl_away_price": -180,
+          "rl_away_price": -185,
           "rl_home_point": -1.5,
-          "rl_home_price": 145,
-          "total_point": 7.5,
-          "over_price": 105,
-          "under_price": -125,
-          "last_update": "2026-09-22T03:08:15Z"
+          "rl_home_price": 150,
+          "total_point": 7.0,
+          "over_price": -130,
+          "under_price": 100,
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betonlineag",
@@ -1148,24 +913,24 @@
           "rl_away_price": -170,
           "rl_home_point": -1.5,
           "rl_home_price": 149,
-          "total_point": 7.5,
-          "over_price": 110,
-          "under_price": -130,
-          "last_update": "2026-09-22T03:07:55Z"
+          "total_point": 7.0,
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T13:00:15Z"
         },
         {
           "book": "betrivers",
           "book_title": "BetRivers",
-          "ml_away": 125,
-          "ml_home": -150,
-          "rl_away_point": 1.0,
-          "rl_away_price": -122,
-          "rl_home_point": -1.0,
-          "rl_home_price": 100,
-          "total_point": 7.5,
-          "over_price": 100,
-          "under_price": -122,
-          "last_update": "2026-09-22T03:02:21Z"
+          "ml_away": 123,
+          "ml_home": -148,
+          "rl_away_point": 1.5,
+          "rl_away_price": -182,
+          "rl_home_point": -1.5,
+          "rl_home_price": 148,
+          "total_point": 7.0,
+          "over_price": -127,
+          "under_price": -112,
+          "last_update": "2026-09-22T12:59:37Z"
         },
         {
           "book": "betus",
@@ -1176,16 +941,16 @@
           "rl_away_price": -170,
           "rl_home_point": -1.5,
           "rl_home_price": 148,
-          "total_point": 7.5,
-          "over_price": 110,
-          "under_price": -130,
-          "last_update": "2026-09-22T03:08:14Z"
+          "total_point": 7.0,
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
           "book_title": "Bovada",
-          "ml_away": 127,
-          "ml_home": -152,
+          "ml_away": 128,
+          "ml_home": -153,
           "rl_away_point": 1.5,
           "rl_away_price": -175,
           "rl_home_point": -1.5,
@@ -1193,7 +958,7 @@
           "total_point": 7.0,
           "over_price": -120,
           "under_price": 100,
-          "last_update": "2026-09-22T03:07:58Z"
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
@@ -1207,21 +972,21 @@
           "total_point": 7.5,
           "over_price": 105,
           "under_price": -124,
-          "last_update": "2026-09-22T03:01:40Z"
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
           "book_title": "DraftKings",
-          "ml_away": 129,
+          "ml_away": 128,
           "ml_home": -155,
           "rl_away_point": 1.5,
-          "rl_away_price": -181,
+          "rl_away_price": -175,
           "rl_home_point": -1.5,
-          "rl_home_price": 149,
+          "rl_home_price": 145,
           "total_point": 7.0,
-          "over_price": -120,
-          "under_price": 100,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -124,
+          "under_price": 103,
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
@@ -1229,27 +994,27 @@
           "ml_away": 125,
           "ml_home": -150,
           "rl_away_point": 1.5,
-          "rl_away_price": -185,
+          "rl_away_price": -180,
           "rl_home_point": -1.5,
-          "rl_home_price": 150,
-          "total_point": 7.0,
-          "over_price": -120,
-          "under_price": 100,
-          "last_update": "2026-09-22T03:07:55Z"
+          "rl_home_price": 145,
+          "total_point": 7.5,
+          "over_price": 105,
+          "under_price": -125,
+          "last_update": "2026-09-22T12:58:40Z"
         },
         {
           "book": "fanduel",
           "book_title": "FanDuel",
-          "ml_away": 126,
-          "ml_home": -148,
+          "ml_away": 130,
+          "ml_home": -154,
           "rl_away_point": 1.5,
-          "rl_away_price": -192,
+          "rl_away_price": -178,
           "rl_home_point": -1.5,
-          "rl_home_price": 158,
+          "rl_home_price": 146,
           "total_point": 7.5,
-          "over_price": 104,
-          "under_price": -128,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": 102,
+          "under_price": -124,
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "lowvig",
@@ -1260,24 +1025,24 @@
           "rl_away_price": -170,
           "rl_home_point": -1.5,
           "rl_home_price": 150,
-          "total_point": 7.5,
-          "over_price": 112,
-          "under_price": -128,
-          "last_update": "2026-09-22T03:07:34Z"
+          "total_point": 7.0,
+          "over_price": -118,
+          "under_price": 103,
+          "last_update": "2026-09-22T12:59:21Z"
         },
         {
           "book": "mybookieag",
           "book_title": "MyBookie.ag",
-          "ml_away": 127,
-          "ml_home": -150,
+          "ml_away": 128,
+          "ml_home": -151,
           "rl_away_point": 1.5,
-          "rl_away_price": -165,
+          "rl_away_price": -174,
           "rl_home_point": -1.5,
-          "rl_home_price": 139,
-          "total_point": null,
-          "over_price": null,
-          "under_price": null,
-          "last_update": "2026-09-22T03:08:15Z"
+          "rl_home_price": 146,
+          "total_point": 7.0,
+          "over_price": -123,
+          "under_price": 101,
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
@@ -1292,34 +1057,34 @@
           "book_title": "LowVig.ag"
         },
         "rl_away": {
-          "price": -165,
-          "book": "mybookieag",
-          "book_title": "MyBookie.ag",
+          "price": -170,
+          "book": "lowvig",
+          "book_title": "LowVig.ag",
           "point": 1.5
         },
         "rl_home": {
-          "price": 158,
-          "book": "fanduel",
-          "book_title": "FanDuel",
+          "price": 153,
+          "book": "williamhill_us",
+          "book_title": "Caesars",
           "point": -1.5
         },
         "over": {
-          "price": 112,
+          "price": -118,
           "book": "lowvig",
           "book_title": "LowVig.ag",
-          "point": 7.5
+          "point": 7.0
         },
         "under": {
-          "price": -122,
-          "book": "betrivers",
-          "book_title": "BetRivers",
-          "point": 7.5
+          "price": 103,
+          "book": "lowvig",
+          "book_title": "LowVig.ag",
+          "point": 7.0
         }
       },
       "hold": {
         "ml": 2.47,
-        "rl": 1.02,
-        "total": 2.12
+        "rl": 2.49,
+        "total": 3.39
       },
       "arbs": [],
       "arb": null
@@ -1336,72 +1101,72 @@
         {
           "book": "betmgm",
           "book_title": "BetMGM",
-          "ml_away": 110,
-          "ml_home": -135,
+          "ml_away": 105,
+          "ml_home": -125,
           "rl_away_point": 1.5,
           "rl_away_price": -200,
           "rl_home_point": -1.5,
           "rl_home_price": 165,
           "total_point": 6.5,
-          "over_price": -130,
-          "under_price": 105,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betonlineag",
           "book_title": "BetOnline.ag",
-          "ml_away": 112,
-          "ml_home": -123,
+          "ml_away": 109,
+          "ml_home": -120,
           "rl_away_point": 1.5,
           "rl_away_price": -195,
           "rl_home_point": -1.5,
           "rl_home_price": 170,
           "total_point": 7.0,
-          "over_price": 105,
-          "under_price": -125,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": 110,
+          "under_price": -130,
+          "last_update": "2026-09-22T13:00:15Z"
         },
         {
           "book": "betrivers",
           "book_title": "BetRivers",
-          "ml_away": 110,
-          "ml_home": -130,
-          "rl_away_point": 1.0,
-          "rl_away_price": -148,
-          "rl_home_point": -1.0,
-          "rl_home_price": 118,
-          "total_point": 6.5,
-          "over_price": -139,
-          "under_price": 114,
-          "last_update": "2026-09-22T03:07:56Z"
+          "ml_away": 107,
+          "ml_home": -127,
+          "rl_away_point": 1.5,
+          "rl_away_price": -220,
+          "rl_home_point": -1.5,
+          "rl_home_price": 175,
+          "total_point": 7.0,
+          "over_price": -108,
+          "under_price": -132,
+          "last_update": "2026-09-22T12:59:37Z"
         },
         {
           "book": "betus",
           "book_title": "BetUS",
-          "ml_away": 112,
-          "ml_home": -123,
+          "ml_away": 109,
+          "ml_home": -120,
           "rl_away_point": 1.5,
           "rl_away_price": -195,
           "rl_home_point": -1.5,
           "rl_home_price": 168,
-          "total_point": 7.0,
-          "over_price": 105,
-          "under_price": -125,
-          "last_update": "2026-09-22T03:08:14Z"
+          "total_point": 6.5,
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
           "book_title": "Bovada",
-          "ml_away": 111,
-          "ml_home": -133,
+          "ml_away": 108,
+          "ml_home": -130,
           "rl_away_point": 1.5,
           "rl_away_price": -210,
           "rl_home_point": -1.5,
           "rl_home_price": 175,
-          "total_point": 7.0,
-          "over_price": 100,
-          "under_price": -120,
-          "last_update": "2026-09-22T03:07:58Z"
+          "total_point": 6.5,
+          "over_price": -125,
+          "under_price": 105,
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
@@ -1413,37 +1178,37 @@
           "rl_home_point": -1.5,
           "rl_home_price": 173,
           "total_point": 6.5,
-          "over_price": -132,
-          "under_price": 112,
-          "last_update": "2026-09-22T03:01:40Z"
+          "over_price": -122,
+          "under_price": 104,
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
           "book_title": "DraftKings",
-          "ml_away": 110,
-          "ml_home": -132,
+          "ml_away": 108,
+          "ml_home": -131,
           "rl_away_point": 1.5,
-          "rl_away_price": -207,
+          "rl_away_price": -205,
           "rl_home_point": -1.5,
-          "rl_home_price": 169,
-          "total_point": 7.0,
-          "over_price": 102,
-          "under_price": -123,
-          "last_update": "2026-09-22T03:07:55Z"
+          "rl_home_price": 168,
+          "total_point": 6.5,
+          "over_price": -123,
+          "under_price": 102,
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
           "book_title": "Fanatics",
-          "ml_away": 110,
-          "ml_home": -130,
+          "ml_away": 105,
+          "ml_home": -125,
           "rl_away_point": 1.5,
           "rl_away_price": -205,
           "rl_home_point": -1.5,
           "rl_home_price": 165,
-          "total_point": 7.0,
-          "over_price": 100,
-          "under_price": -120,
-          "last_update": "2026-09-22T03:07:55Z"
+          "total_point": 6.5,
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T12:58:40Z"
         },
         {
           "book": "fanduel",
@@ -1451,83 +1216,83 @@
           "ml_away": 110,
           "ml_home": -130,
           "rl_away_point": 1.5,
-          "rl_away_price": -220,
+          "rl_away_price": -210,
           "rl_home_point": -1.5,
-          "rl_home_price": 180,
+          "rl_home_price": 172,
           "total_point": 6.5,
-          "over_price": -140,
-          "under_price": 114,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -124,
+          "under_price": 102,
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "lowvig",
           "book_title": "LowVig.ag",
-          "ml_away": 112,
-          "ml_home": -123,
+          "ml_away": 109,
+          "ml_home": -120,
           "rl_away_point": 1.5,
           "rl_away_price": -195,
           "rl_home_point": -1.5,
           "rl_home_price": 171,
           "total_point": 7.0,
-          "over_price": 107,
-          "under_price": -123,
-          "last_update": "2026-09-22T03:07:34Z"
+          "over_price": 112,
+          "under_price": -128,
+          "last_update": "2026-09-22T12:59:21Z"
         },
         {
           "book": "mybookieag",
           "book_title": "MyBookie.ag",
           "ml_away": 110,
-          "ml_home": -130,
+          "ml_home": -129,
           "rl_away_point": 1.5,
-          "rl_away_price": -194,
+          "rl_away_price": -202,
           "rl_home_point": -1.5,
-          "rl_home_price": 163,
-          "total_point": 7.0,
-          "over_price": 102,
-          "under_price": -125,
-          "last_update": "2026-09-22T03:08:15Z"
+          "rl_home_price": 170,
+          "total_point": 6.5,
+          "over_price": -121,
+          "under_price": -101,
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
         "ml_away": {
-          "price": 112,
-          "book": "lowvig",
-          "book_title": "LowVig.ag"
+          "price": 110,
+          "book": "fanduel",
+          "book_title": "FanDuel"
         },
         "ml_home": {
-          "price": -123,
+          "price": -120,
           "book": "lowvig",
           "book_title": "LowVig.ag"
         },
         "rl_away": {
-          "price": -194,
-          "book": "mybookieag",
-          "book_title": "MyBookie.ag",
+          "price": -195,
+          "book": "lowvig",
+          "book_title": "LowVig.ag",
           "point": 1.5
         },
         "rl_home": {
-          "price": 180,
-          "book": "fanduel",
-          "book_title": "FanDuel",
+          "price": 175,
+          "book": "bovada",
+          "book_title": "Bovada",
           "point": -1.5
         },
         "over": {
-          "price": 107,
-          "book": "lowvig",
-          "book_title": "LowVig.ag",
-          "point": 7.0
-        },
-        "under": {
           "price": -120,
           "book": "fanatics",
           "book_title": "Fanatics",
-          "point": 7.0
+          "point": 6.5
+        },
+        "under": {
+          "price": 105,
+          "book": "bovada",
+          "book_title": "Bovada",
+          "point": 6.5
         }
       },
       "hold": {
-        "ml": 2.33,
-        "rl": 1.7,
-        "total": 2.85
+        "ml": 2.16,
+        "rl": 2.47,
+        "total": 3.33
       },
       "arbs": [],
       "arb": null
@@ -1544,78 +1309,78 @@
         {
           "book": "betmgm",
           "book_title": "BetMGM",
-          "ml_away": 115,
-          "ml_home": -140,
+          "ml_away": 110,
+          "ml_home": -135,
           "rl_away_point": 1.5,
-          "rl_away_price": -200,
+          "rl_away_price": -210,
           "rl_home_point": -1.5,
-          "rl_home_price": 165,
+          "rl_home_price": 170,
           "total_point": 6.5,
-          "over_price": -118,
-          "under_price": -102,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -110,
+          "under_price": -110,
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betonlineag",
           "book_title": "BetOnline.ag",
-          "ml_away": 116,
-          "ml_home": -128,
+          "ml_away": 113,
+          "ml_home": -125,
           "rl_away_point": 1.5,
-          "rl_away_price": -195,
+          "rl_away_price": -200,
           "rl_home_point": -1.5,
-          "rl_home_price": 170,
-          "total_point": 7.0,
-          "over_price": 105,
-          "under_price": -125,
-          "last_update": "2026-09-22T03:07:55Z"
+          "rl_home_price": 174,
+          "total_point": 6.5,
+          "over_price": -105,
+          "under_price": -115,
+          "last_update": "2026-09-22T13:00:15Z"
         },
         {
           "book": "betrivers",
           "book_title": "BetRivers",
-          "ml_away": 117,
-          "ml_home": -139,
-          "rl_away_point": 1.0,
-          "rl_away_price": -141,
-          "rl_home_point": -1.0,
-          "rl_home_price": 115,
+          "ml_away": 112,
+          "ml_home": -134,
+          "rl_away_point": 1.5,
+          "rl_away_price": -205,
+          "rl_home_point": -1.5,
+          "rl_home_price": 165,
           "total_point": 6.5,
-          "over_price": -114,
-          "under_price": -107,
-          "last_update": "2026-09-22T03:07:56Z"
+          "over_price": -110,
+          "under_price": -110,
+          "last_update": "2026-09-22T12:59:37Z"
         },
         {
           "book": "betus",
           "book_title": "BetUS",
-          "ml_away": 117,
-          "ml_home": -128,
+          "ml_away": 114,
+          "ml_home": -125,
           "rl_away_point": 1.5,
-          "rl_away_price": -195,
+          "rl_away_price": -200,
           "rl_home_point": -1.5,
-          "rl_home_price": 168,
-          "total_point": 7.0,
-          "over_price": 105,
-          "under_price": -125,
-          "last_update": "2026-09-22T03:08:14Z"
+          "rl_home_price": 172,
+          "total_point": 6.5,
+          "over_price": -105,
+          "under_price": -115,
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
           "book_title": "Bovada",
-          "ml_away": 114,
-          "ml_home": -136,
+          "ml_away": 109,
+          "ml_home": -131,
           "rl_away_point": 1.5,
-          "rl_away_price": -220,
+          "rl_away_price": -210,
           "rl_home_point": -1.5,
-          "rl_home_price": 180,
+          "rl_home_price": 175,
           "total_point": 6.5,
-          "over_price": -115,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:07:58Z"
+          "over_price": -105,
+          "under_price": -115,
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
           "book_title": "Caesars",
-          "ml_away": 116,
-          "ml_home": -136,
+          "ml_away": 112,
+          "ml_home": -132,
           "rl_away_point": 1.5,
           "rl_away_price": -205,
           "rl_home_point": -1.5,
@@ -1623,21 +1388,21 @@
           "total_point": 6.5,
           "over_price": -120,
           "under_price": 102,
-          "last_update": "2026-09-22T03:01:40Z"
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
           "book_title": "DraftKings",
-          "ml_away": 113,
-          "ml_home": -137,
+          "ml_away": 109,
+          "ml_home": -132,
           "rl_away_point": 1.5,
-          "rl_away_price": -206,
+          "rl_away_price": -207,
           "rl_home_point": -1.5,
           "rl_home_price": 169,
           "total_point": 6.5,
-          "over_price": -120,
-          "under_price": 100,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -112,
+          "under_price": -107,
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
@@ -1649,80 +1414,80 @@
           "rl_home_point": -1.5,
           "rl_home_price": 165,
           "total_point": 6.5,
-          "over_price": -120,
-          "under_price": 100,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -105,
+          "under_price": -115,
+          "last_update": "2026-09-22T12:58:40Z"
         },
         {
           "book": "fanduel",
           "book_title": "FanDuel",
-          "ml_away": 120,
-          "ml_home": -142,
+          "ml_away": 110,
+          "ml_home": -130,
           "rl_away_point": 1.5,
-          "rl_away_price": -205,
+          "rl_away_price": -215,
           "rl_home_point": -1.5,
-          "rl_home_price": 172,
+          "rl_home_price": 176,
           "total_point": 6.5,
-          "over_price": -118,
-          "under_price": -104,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -112,
+          "under_price": -108,
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "lowvig",
           "book_title": "LowVig.ag",
-          "ml_away": 116,
-          "ml_home": -128,
+          "ml_away": 113,
+          "ml_home": -125,
           "rl_away_point": 1.5,
-          "rl_away_price": -195,
+          "rl_away_price": -200,
           "rl_home_point": -1.5,
-          "rl_home_price": 171,
-          "total_point": 7.0,
-          "over_price": 107,
-          "under_price": -123,
-          "last_update": "2026-09-22T03:07:34Z"
+          "rl_home_price": 175,
+          "total_point": 6.5,
+          "over_price": -102,
+          "under_price": -113,
+          "last_update": "2026-09-22T12:59:21Z"
         },
         {
           "book": "mybookieag",
           "book_title": "MyBookie.ag",
-          "ml_away": 115,
-          "ml_home": -135,
+          "ml_away": 109,
+          "ml_home": -128,
           "rl_away_point": 1.5,
-          "rl_away_price": -191,
+          "rl_away_price": -208,
           "rl_home_point": -1.5,
-          "rl_home_price": 161,
+          "rl_home_price": 174,
           "total_point": 6.5,
-          "over_price": -118,
-          "under_price": -104,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -106,
+          "under_price": -115,
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
         "ml_away": {
-          "price": 120,
-          "book": "fanduel",
-          "book_title": "FanDuel"
+          "price": 114,
+          "book": "betus",
+          "book_title": "BetUS"
         },
         "ml_home": {
-          "price": -128,
+          "price": -125,
           "book": "lowvig",
           "book_title": "LowVig.ag"
         },
         "rl_away": {
-          "price": -191,
-          "book": "mybookieag",
-          "book_title": "MyBookie.ag",
+          "price": -200,
+          "book": "lowvig",
+          "book_title": "LowVig.ag",
           "point": 1.5
         },
         "rl_home": {
-          "price": 180,
-          "book": "bovada",
-          "book_title": "Bovada",
+          "price": 176,
+          "book": "fanduel",
+          "book_title": "FanDuel",
           "point": -1.5
         },
         "over": {
-          "price": -114,
-          "book": "betrivers",
-          "book_title": "BetRivers",
+          "price": -102,
+          "book": "lowvig",
+          "book_title": "LowVig.ag",
           "point": 6.5
         },
         "under": {
@@ -1733,9 +1498,9 @@
         }
       },
       "hold": {
-        "ml": 1.59,
-        "rl": 1.35,
-        "total": 2.78
+        "ml": 2.28,
+        "rl": 2.9,
+        "total": 0.0
       },
       "arbs": [],
       "arb": null
@@ -1758,66 +1523,66 @@
           "rl_away_price": -135,
           "rl_home_point": -1.5,
           "rl_home_price": 110,
-          "total_point": 9.5,
-          "over_price": 100,
-          "under_price": -120,
-          "last_update": "2026-09-22T03:08:15Z"
+          "total_point": 9.0,
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betonlineag",
           "book_title": "BetOnline.ag",
-          "ml_away": 163,
-          "ml_home": -181,
+          "ml_away": 166,
+          "ml_home": -184,
           "rl_away_point": 1.5,
           "rl_away_price": -130,
           "rl_home_point": -1.5,
           "rl_home_price": 110,
           "total_point": 9.0,
-          "over_price": -125,
-          "under_price": 105,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T13:00:15Z"
         },
         {
           "book": "betrivers",
           "book_title": "BetRivers",
-          "ml_away": 150,
-          "ml_home": -180,
-          "rl_away_point": 1.0,
-          "rl_away_price": 106,
-          "rl_home_point": -1.0,
-          "rl_home_price": -127,
-          "total_point": 9.5,
-          "over_price": 107,
-          "under_price": -130,
-          "last_update": "2026-09-22T03:07:56Z"
+          "ml_away": 155,
+          "ml_home": -190,
+          "rl_away_point": 1.5,
+          "rl_away_price": -132,
+          "rl_home_point": -1.5,
+          "rl_home_price": 108,
+          "total_point": 9.0,
+          "over_price": -129,
+          "under_price": -110,
+          "last_update": "2026-09-22T12:59:37Z"
         },
         {
           "book": "betus",
           "book_title": "BetUS",
-          "ml_away": 159,
-          "ml_home": -181,
+          "ml_away": 162,
+          "ml_home": -185,
           "rl_away_point": 1.5,
           "rl_away_price": -130,
           "rl_home_point": -1.5,
           "rl_home_price": 110,
           "total_point": 9.0,
-          "over_price": -125,
-          "under_price": 105,
-          "last_update": "2026-09-22T03:08:14Z"
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
           "book_title": "Bovada",
-          "ml_away": 157,
-          "ml_home": -192,
+          "ml_away": 160,
+          "ml_home": -195,
           "rl_away_point": 1.5,
           "rl_away_price": -130,
           "rl_home_point": -1.5,
           "rl_home_price": 110,
-          "total_point": 9.5,
-          "over_price": 100,
-          "under_price": -120,
-          "last_update": "2026-09-22T03:07:58Z"
+          "total_point": 9.0,
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
@@ -1831,7 +1596,7 @@
           "total_point": 9.5,
           "over_price": 105,
           "under_price": -124,
-          "last_update": "2026-09-22T03:01:40Z"
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
@@ -1843,23 +1608,23 @@
           "rl_home_point": -1.5,
           "rl_home_price": 109,
           "total_point": 9.0,
-          "over_price": -123,
-          "under_price": 102,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
           "book_title": "Fanatics",
-          "ml_away": 155,
-          "ml_home": -190,
+          "ml_away": 160,
+          "ml_home": -195,
           "rl_away_point": 1.5,
-          "rl_away_price": -140,
+          "rl_away_price": -135,
           "rl_home_point": -1.5,
-          "rl_home_price": 120,
-          "total_point": 9.5,
-          "over_price": 100,
-          "under_price": -120,
-          "last_update": "2026-09-22T03:07:55Z"
+          "rl_home_price": 110,
+          "total_point": 9.0,
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T12:58:40Z"
         },
         {
           "book": "fanduel",
@@ -1869,81 +1634,81 @@
           "rl_away_point": 1.5,
           "rl_away_price": -134,
           "rl_home_point": -1.5,
-          "rl_home_price": 114,
+          "rl_home_price": 112,
           "total_point": 9.5,
-          "over_price": 110,
-          "under_price": -134,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": 106,
+          "under_price": -130,
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "lowvig",
           "book_title": "LowVig.ag",
-          "ml_away": 163,
-          "ml_home": -181,
+          "ml_away": 166,
+          "ml_home": -184,
           "rl_away_point": 1.5,
           "rl_away_price": -128,
           "rl_home_point": -1.5,
           "rl_home_price": 113,
           "total_point": 9.0,
-          "over_price": -123,
-          "under_price": 107,
-          "last_update": "2026-09-22T03:07:34Z"
+          "over_price": -118,
+          "under_price": 103,
+          "last_update": "2026-09-22T12:59:21Z"
         },
         {
           "book": "mybookieag",
           "book_title": "MyBookie.ag",
-          "ml_away": 158,
-          "ml_home": -188,
+          "ml_away": 157,
+          "ml_home": -186,
           "rl_away_point": 1.5,
-          "rl_away_price": -127,
+          "rl_away_price": -129,
           "rl_home_point": -1.5,
-          "rl_home_price": 108,
+          "rl_home_price": 110,
           "total_point": 9.0,
-          "over_price": -121,
-          "under_price": -101,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -120,
+          "under_price": -102,
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
         "ml_away": {
-          "price": 163,
+          "price": 166,
           "book": "betonlineag",
           "book_title": "BetOnline.ag"
         },
         "ml_home": {
-          "price": -180,
-          "book": "betrivers",
-          "book_title": "BetRivers"
+          "price": -184,
+          "book": "fanduel",
+          "book_title": "FanDuel"
         },
         "rl_away": {
-          "price": -127,
-          "book": "mybookieag",
-          "book_title": "MyBookie.ag",
+          "price": -128,
+          "book": "lowvig",
+          "book_title": "LowVig.ag",
           "point": 1.5
         },
         "rl_home": {
-          "price": 120,
-          "book": "fanatics",
-          "book_title": "Fanatics",
+          "price": 116,
+          "book": "williamhill_us",
+          "book_title": "Caesars",
           "point": -1.5
         },
         "over": {
-          "price": 110,
-          "book": "fanduel",
-          "book_title": "FanDuel",
-          "point": 9.5
+          "price": -118,
+          "book": "lowvig",
+          "book_title": "LowVig.ag",
+          "point": 9.0
         },
         "under": {
-          "price": -120,
-          "book": "fanatics",
-          "book_title": "Fanatics",
-          "point": 9.5
+          "price": 103,
+          "book": "lowvig",
+          "book_title": "LowVig.ag",
+          "point": 9.0
         }
       },
       "hold": {
-        "ml": 2.31,
-        "rl": 1.4,
-        "total": 2.16
+        "ml": 2.38,
+        "rl": 2.44,
+        "total": 3.39
       },
       "arbs": [],
       "arb": null
@@ -1955,7 +1720,7 @@
       "home_abbr": "CHC",
       "commence_ct": "6:40 PM CT",
       "commence_iso": "2026-09-22T23:40:00Z",
-      "book_count": 8,
+      "book_count": 10,
       "books": [
         {
           "book": "betmgm",
@@ -1967,15 +1732,29 @@
           "rl_home_point": -1.5,
           "rl_home_price": 105,
           "total_point": 6.5,
-          "over_price": -115,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -118,
+          "under_price": -102,
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betonlineag",
           "book_title": "BetOnline.ag",
-          "ml_away": 180,
-          "ml_home": -200,
+          "ml_away": 182,
+          "ml_home": -203,
+          "rl_away_point": 1.5,
+          "rl_away_price": -125,
+          "rl_home_point": -1.5,
+          "rl_home_price": 105,
+          "total_point": 6.5,
+          "over_price": -117,
+          "under_price": -103,
+          "last_update": "2026-09-22T13:00:15Z"
+        },
+        {
+          "book": "betus",
+          "book_title": "BetUS",
+          "ml_away": 182,
+          "ml_home": -210,
           "rl_away_point": 1.5,
           "rl_away_price": -125,
           "rl_home_point": -1.5,
@@ -1983,21 +1762,21 @@
           "total_point": 6.5,
           "over_price": -120,
           "under_price": 100,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
           "book_title": "Bovada",
-          "ml_away": 180,
-          "ml_home": -220,
-          "rl_away_point": null,
-          "rl_away_price": null,
-          "rl_home_point": null,
-          "rl_home_price": null,
-          "total_point": null,
-          "over_price": null,
-          "under_price": null,
-          "last_update": "2026-09-22T03:07:58Z"
+          "ml_away": 185,
+          "ml_home": -225,
+          "rl_away_point": 1.5,
+          "rl_away_price": -130,
+          "rl_home_point": -1.5,
+          "rl_home_price": 110,
+          "total_point": 6.5,
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
@@ -2007,11 +1786,11 @@
           "rl_away_point": 1.5,
           "rl_away_price": -122,
           "rl_home_point": -1.5,
-          "rl_home_price": 104,
-          "total_point": null,
-          "over_price": null,
-          "under_price": null,
-          "last_update": "2026-09-22T03:01:40Z"
+          "rl_home_price": 105,
+          "total_point": 6.5,
+          "over_price": -118,
+          "under_price": 100,
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
@@ -2023,15 +1802,15 @@
           "rl_home_point": -1.5,
           "rl_home_price": 105,
           "total_point": 6.5,
-          "over_price": -115,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -118,
+          "under_price": -102,
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
           "book_title": "Fanatics",
-          "ml_away": 175,
-          "ml_home": -215,
+          "ml_away": 180,
+          "ml_home": -220,
           "rl_away_point": 1.5,
           "rl_away_price": -125,
           "rl_home_point": -1.5,
@@ -2039,13 +1818,27 @@
           "total_point": 6.5,
           "over_price": -120,
           "under_price": 100,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T12:58:40Z"
+        },
+        {
+          "book": "fanduel",
+          "book_title": "FanDuel",
+          "ml_away": 180,
+          "ml_home": -215,
+          "rl_away_point": 1.5,
+          "rl_away_price": -137,
+          "rl_home_point": -1.5,
+          "rl_home_price": 114,
+          "total_point": 6.5,
+          "over_price": -118,
+          "under_price": -104,
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "lowvig",
           "book_title": "LowVig.ag",
-          "ml_away": 180,
-          "ml_home": -200,
+          "ml_away": 182,
+          "ml_home": -203,
           "rl_away_point": 1.5,
           "rl_away_price": -122,
           "rl_home_point": -1.5,
@@ -2053,31 +1846,31 @@
           "total_point": 6.5,
           "over_price": -115,
           "under_price": 100,
-          "last_update": "2026-09-22T03:07:34Z"
+          "last_update": "2026-09-22T12:59:21Z"
         },
         {
           "book": "mybookieag",
           "book_title": "MyBookie.ag",
-          "ml_away": 176,
-          "ml_home": -210,
+          "ml_away": 177,
+          "ml_home": -212,
           "rl_away_point": 1.5,
-          "rl_away_price": -126,
+          "rl_away_price": -124,
           "rl_home_point": -1.5,
-          "rl_home_price": 108,
+          "rl_home_price": 106,
           "total_point": 6.5,
-          "over_price": -115,
-          "under_price": -106,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -120,
+          "under_price": -102,
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
         "ml_away": {
-          "price": 181,
-          "book": "williamhill_us",
-          "book_title": "Caesars"
+          "price": 185,
+          "book": "bovada",
+          "book_title": "Bovada"
         },
         "ml_home": {
-          "price": -200,
+          "price": -203,
           "book": "betonlineag",
           "book_title": "BetOnline.ag"
         },
@@ -2088,27 +1881,27 @@
           "point": 1.5
         },
         "rl_home": {
-          "price": 108,
-          "book": "lowvig",
-          "book_title": "LowVig.ag",
+          "price": 114,
+          "book": "fanduel",
+          "book_title": "FanDuel",
           "point": -1.5
         },
         "over": {
           "price": -115,
-          "book": "draftkings",
-          "book_title": "DraftKings",
+          "book": "lowvig",
+          "book_title": "LowVig.ag",
           "point": 6.5
         },
         "under": {
           "price": 100,
-          "book": "fanatics",
-          "book_title": "Fanatics",
+          "book": "williamhill_us",
+          "book_title": "Caesars",
           "point": 6.5
         }
       },
       "hold": {
-        "ml": 2.25,
-        "rl": 3.03,
+        "ml": 2.08,
+        "rl": 1.68,
         "total": 3.49
       },
       "arbs": [],
@@ -2126,64 +1919,64 @@
         {
           "book": "betmgm",
           "book_title": "BetMGM",
-          "ml_away": -120,
-          "ml_home": 100,
+          "ml_away": -118,
+          "ml_home": -102,
           "rl_away_point": -1.5,
-          "rl_away_price": 140,
+          "rl_away_price": 145,
           "rl_home_point": 1.5,
-          "rl_home_price": -170,
+          "rl_home_price": -180,
           "total_point": 8.0,
-          "over_price": -110,
-          "under_price": -110,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -115,
+          "under_price": -105,
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betonlineag",
           "book_title": "BetOnline.ag",
-          "ml_away": -118,
-          "ml_home": 107,
+          "ml_away": -116,
+          "ml_home": 105,
           "rl_away_point": -1.5,
           "rl_away_price": 145,
           "rl_home_point": 1.5,
           "rl_home_price": -165,
           "total_point": 8.5,
-          "over_price": 105,
-          "under_price": -125,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": 101,
+          "under_price": -121,
+          "last_update": "2026-09-22T13:00:15Z"
         },
         {
           "book": "betrivers",
           "book_title": "BetRivers",
-          "ml_away": -114,
-          "ml_home": -105,
-          "rl_away_point": -1.0,
-          "rl_away_price": 116,
-          "rl_home_point": 1.0,
-          "rl_home_price": -141,
-          "total_point": 7.5,
-          "over_price": -129,
-          "under_price": 105,
-          "last_update": "2026-09-22T03:07:56Z"
+          "ml_away": -117,
+          "ml_home": -103,
+          "rl_away_point": -1.5,
+          "rl_away_price": 143,
+          "rl_home_point": 1.5,
+          "rl_home_price": -177,
+          "total_point": 8.5,
+          "over_price": -103,
+          "under_price": -118,
+          "last_update": "2026-09-22T12:59:37Z"
         },
         {
           "book": "betus",
           "book_title": "BetUS",
-          "ml_away": -118,
-          "ml_home": 108,
+          "ml_away": -113,
+          "ml_home": 103,
           "rl_away_point": -1.5,
           "rl_away_price": 144,
           "rl_home_point": 1.5,
           "rl_home_price": -165,
           "total_point": 8.5,
-          "over_price": 105,
-          "under_price": -125,
-          "last_update": "2026-09-22T03:08:14Z"
+          "over_price": 100,
+          "under_price": -120,
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
           "book_title": "Bovada",
-          "ml_away": -119,
-          "ml_home": -101,
+          "ml_away": -117,
+          "ml_home": -103,
           "rl_away_point": -1.5,
           "rl_away_price": 145,
           "rl_home_point": 1.5,
@@ -2191,7 +1984,7 @@
           "total_point": 8.0,
           "over_price": -115,
           "under_price": -105,
-          "last_update": "2026-09-22T03:07:58Z"
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
@@ -2205,27 +1998,27 @@
           "total_point": 8.5,
           "over_price": 106,
           "under_price": -125,
-          "last_update": "2026-09-22T03:01:40Z"
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
           "book_title": "DraftKings",
-          "ml_away": -120,
-          "ml_home": 100,
+          "ml_away": -125,
+          "ml_home": 104,
           "rl_away_point": -1.5,
-          "rl_away_price": 140,
+          "rl_away_price": 135,
           "rl_home_point": 1.5,
-          "rl_home_price": -170,
+          "rl_home_price": -164,
           "total_point": 8.0,
           "over_price": -115,
           "under_price": -105,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
           "book_title": "Fanatics",
-          "ml_away": -120,
-          "ml_home": 100,
+          "ml_away": -115,
+          "ml_home": -105,
           "rl_away_point": -1.5,
           "rl_away_price": 140,
           "rl_home_point": 1.5,
@@ -2233,7 +2026,7 @@
           "total_point": 8.0,
           "over_price": -115,
           "under_price": -105,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T12:58:40Z"
         },
         {
           "book": "fanduel",
@@ -2241,27 +2034,27 @@
           "ml_away": -118,
           "ml_home": 100,
           "rl_away_point": -1.5,
-          "rl_away_price": 146,
+          "rl_away_price": 150,
           "rl_home_point": 1.5,
-          "rl_home_price": -178,
+          "rl_home_price": -182,
           "total_point": 8.5,
-          "over_price": 108,
-          "under_price": -132,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": 100,
+          "under_price": -122,
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "lowvig",
           "book_title": "LowVig.ag",
-          "ml_away": -118,
-          "ml_home": 107,
+          "ml_away": -116,
+          "ml_home": 105,
           "rl_away_point": -1.5,
           "rl_away_price": 146,
           "rl_home_point": 1.5,
           "rl_home_price": -165,
           "total_point": 8.5,
-          "over_price": 107,
-          "under_price": -123,
-          "last_update": "2026-09-22T03:07:34Z"
+          "over_price": 104,
+          "under_price": -119,
+          "last_update": "2026-09-22T12:59:21Z"
         },
         {
           "book": "mybookieag",
@@ -2271,53 +2064,53 @@
           "rl_away_point": -1.5,
           "rl_away_price": 141,
           "rl_home_point": 1.5,
-          "rl_home_price": -166,
+          "rl_home_price": -167,
           "total_point": 8.0,
-          "over_price": -114,
-          "under_price": -107,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -116,
+          "under_price": -105,
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
         "ml_away": {
-          "price": -114,
-          "book": "betrivers",
-          "book_title": "BetRivers"
-        },
-        "ml_home": {
-          "price": 108,
+          "price": -113,
           "book": "betus",
           "book_title": "BetUS"
         },
+        "ml_home": {
+          "price": 105,
+          "book": "lowvig",
+          "book_title": "LowVig.ag"
+        },
         "rl_away": {
-          "price": 149,
-          "book": "williamhill_us",
-          "book_title": "Caesars",
+          "price": 150,
+          "book": "fanduel",
+          "book_title": "FanDuel",
           "point": -1.5
         },
         "rl_home": {
-          "price": -165,
-          "book": "lowvig",
-          "book_title": "LowVig.ag",
+          "price": -164,
+          "book": "draftkings",
+          "book_title": "DraftKings",
           "point": 1.5
         },
         "over": {
-          "price": 108,
-          "book": "fanduel",
-          "book_title": "FanDuel",
+          "price": 106,
+          "book": "williamhill_us",
+          "book_title": "Caesars",
           "point": 8.5
         },
         "under": {
-          "price": -123,
-          "book": "lowvig",
-          "book_title": "LowVig.ag",
+          "price": -118,
+          "book": "betrivers",
+          "book_title": "BetRivers",
           "point": 8.5
         }
       },
       "hold": {
-        "ml": 1.35,
-        "rl": 2.42,
-        "total": 3.23
+        "ml": 1.83,
+        "rl": 2.12,
+        "total": 2.67
       },
       "arbs": [],
       "arb": null
@@ -2334,16 +2127,16 @@
         {
           "book": "betmgm",
           "book_title": "BetMGM",
-          "ml_away": 120,
+          "ml_away": 118,
           "ml_home": -145,
           "rl_away_point": 1.5,
           "rl_away_price": -180,
           "rl_home_point": -1.5,
           "rl_home_price": 145,
           "total_point": 8.0,
-          "over_price": 100,
-          "under_price": -120,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -105,
+          "under_price": -115,
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betonlineag",
@@ -2355,23 +2148,23 @@
           "rl_home_point": -1.5,
           "rl_home_price": 157,
           "total_point": 7.5,
-          "over_price": -115,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -122,
+          "under_price": 102,
+          "last_update": "2026-09-22T13:00:15Z"
         },
         {
           "book": "betrivers",
           "book_title": "BetRivers",
-          "ml_away": 118,
-          "ml_home": -141,
-          "rl_away_point": 1.0,
-          "rl_away_price": -125,
-          "rl_home_point": -1.0,
-          "rl_home_price": 102,
+          "ml_away": 123,
+          "ml_home": -148,
+          "rl_away_point": 1.5,
+          "rl_away_price": -177,
+          "rl_home_point": -1.5,
+          "rl_home_price": 143,
           "total_point": 7.5,
-          "over_price": -124,
-          "under_price": 102,
-          "last_update": "2026-09-22T03:07:56Z"
+          "over_price": -114,
+          "under_price": -107,
+          "last_update": "2026-09-22T12:59:37Z"
         },
         {
           "book": "betus",
@@ -2383,23 +2176,23 @@
           "rl_home_point": -1.5,
           "rl_home_price": 156,
           "total_point": 7.5,
-          "over_price": -115,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:08:14Z"
+          "over_price": -120,
+          "under_price": 100,
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
           "book_title": "Bovada",
-          "ml_away": 122,
-          "ml_home": -145,
+          "ml_away": 119,
+          "ml_home": -142,
           "rl_away_point": 1.5,
           "rl_away_price": -175,
           "rl_home_point": -1.5,
           "rl_home_price": 150,
-          "total_point": 7.5,
-          "over_price": -120,
-          "under_price": 100,
-          "last_update": "2026-09-22T03:07:58Z"
+          "total_point": 8.0,
+          "over_price": -105,
+          "under_price": -115,
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
@@ -2407,27 +2200,27 @@
           "ml_away": 123,
           "ml_home": -143,
           "rl_away_point": 1.5,
-          "rl_away_price": -173,
+          "rl_away_price": -179,
           "rl_home_point": -1.5,
-          "rl_home_price": 148,
+          "rl_home_price": 152,
           "total_point": 7.5,
-          "over_price": -117,
-          "under_price": -102,
-          "last_update": "2026-09-22T03:01:40Z"
+          "over_price": -121,
+          "under_price": 103,
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
           "book_title": "DraftKings",
-          "ml_away": 123,
-          "ml_home": -149,
+          "ml_away": 119,
+          "ml_home": -144,
           "rl_away_point": 1.5,
-          "rl_away_price": -180,
+          "rl_away_price": -186,
           "rl_home_point": -1.5,
-          "rl_home_price": 148,
-          "total_point": 7.5,
-          "over_price": -119,
-          "under_price": -101,
-          "last_update": "2026-09-22T03:07:55Z"
+          "rl_home_price": 153,
+          "total_point": 8.0,
+          "over_price": -105,
+          "under_price": -115,
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
@@ -2438,10 +2231,10 @@
           "rl_away_price": -185,
           "rl_home_point": -1.5,
           "rl_home_price": 150,
-          "total_point": 7.5,
-          "over_price": -120,
-          "under_price": 100,
-          "last_update": "2026-09-22T03:07:55Z"
+          "total_point": 8.0,
+          "over_price": -105,
+          "under_price": -115,
+          "last_update": "2026-09-22T12:58:40Z"
         },
         {
           "book": "fanduel",
@@ -2449,13 +2242,13 @@
           "ml_away": 122,
           "ml_home": -144,
           "rl_away_point": 1.5,
-          "rl_away_price": -184,
+          "rl_away_price": -178,
           "rl_home_point": -1.5,
-          "rl_home_price": 152,
-          "total_point": 7.5,
-          "over_price": -122,
-          "under_price": 100,
-          "last_update": "2026-09-22T03:07:55Z"
+          "rl_home_price": 146,
+          "total_point": 8.5,
+          "over_price": 104,
+          "under_price": -128,
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "lowvig",
@@ -2467,23 +2260,23 @@
           "rl_home_point": -1.5,
           "rl_home_price": 158,
           "total_point": 7.5,
-          "over_price": -113,
-          "under_price": -102,
-          "last_update": "2026-09-22T03:07:34Z"
+          "over_price": -120,
+          "under_price": 105,
+          "last_update": "2026-09-22T12:59:21Z"
         },
         {
           "book": "mybookieag",
           "book_title": "MyBookie.ag",
-          "ml_away": 122,
+          "ml_away": 123,
           "ml_home": -144,
           "rl_away_point": 1.5,
-          "rl_away_price": -168,
+          "rl_away_price": -180,
           "rl_home_point": -1.5,
-          "rl_home_price": 142,
-          "total_point": null,
-          "over_price": null,
-          "under_price": null,
-          "last_update": "2026-09-22T03:08:15Z"
+          "rl_home_price": 153,
+          "total_point": 8.0,
+          "over_price": -106,
+          "under_price": -115,
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
@@ -2498,9 +2291,9 @@
           "book_title": "BetOnline.ag"
         },
         "rl_away": {
-          "price": -168,
-          "book": "mybookieag",
-          "book_title": "MyBookie.ag",
+          "price": -175,
+          "book": "bovada",
+          "book_title": "Bovada",
           "point": 1.5
         },
         "rl_home": {
@@ -2510,22 +2303,22 @@
           "point": -1.5
         },
         "over": {
-          "price": -113,
-          "book": "lowvig",
-          "book_title": "LowVig.ag",
-          "point": 7.5
+          "price": -105,
+          "book": "draftkings",
+          "book_title": "DraftKings",
+          "point": 8.0
         },
         "under": {
-          "price": 102,
-          "book": "betrivers",
-          "book_title": "BetRivers",
-          "point": 7.5
+          "price": -115,
+          "book": "draftkings",
+          "book_title": "DraftKings",
+          "point": 8.0
         }
       },
       "hold": {
         "ml": 2.39,
-        "rl": 1.45,
-        "total": 2.56
+        "rl": 2.4,
+        "total": 4.71
       },
       "arbs": [],
       "arb": null
@@ -2542,44 +2335,44 @@
         {
           "book": "betmgm",
           "book_title": "BetMGM",
-          "ml_away": -190,
-          "ml_home": 154,
+          "ml_away": -200,
+          "ml_home": 165,
           "rl_away_point": -1.5,
-          "rl_away_price": -125,
+          "rl_away_price": -130,
           "rl_home_point": 1.5,
           "rl_home_price": 105,
           "total_point": 11.0,
           "over_price": 100,
           "under_price": -120,
-          "last_update": "2026-09-22T03:08:15Z"
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betonlineag",
           "book_title": "BetOnline.ag",
-          "ml_away": -190,
-          "ml_home": 171,
+          "ml_away": -189,
+          "ml_home": 170,
           "rl_away_point": -1.5,
           "rl_away_price": -125,
           "rl_home_point": 1.5,
           "rl_home_price": 105,
           "total_point": 11.0,
-          "over_price": -105,
-          "under_price": -115,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -102,
+          "under_price": -118,
+          "last_update": "2026-09-22T13:00:15Z"
         },
         {
           "book": "betrivers",
           "book_title": "BetRivers",
-          "ml_away": -186,
-          "ml_home": 155,
+          "ml_away": -200,
+          "ml_home": 163,
           "rl_away_point": -2.0,
-          "rl_away_price": -104,
+          "rl_away_price": -107,
           "rl_home_point": 2.0,
-          "rl_home_price": -118,
-          "total_point": 11.5,
-          "over_price": 105,
-          "under_price": -127,
-          "last_update": "2026-09-22T03:07:56Z"
+          "rl_home_price": -114,
+          "total_point": 10.5,
+          "over_price": -121,
+          "under_price": -103,
+          "last_update": "2026-09-22T12:59:37Z"
         },
         {
           "book": "betus",
@@ -2591,23 +2384,23 @@
           "rl_home_point": 1.5,
           "rl_home_price": 105,
           "total_point": 11.0,
-          "over_price": -105,
-          "under_price": -115,
-          "last_update": "2026-09-22T03:08:14Z"
+          "over_price": 100,
+          "under_price": -120,
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
           "book_title": "Bovada",
-          "ml_away": -195,
-          "ml_home": 160,
+          "ml_away": -196,
+          "ml_home": 161,
           "rl_away_point": -1.5,
           "rl_away_price": -125,
           "rl_home_point": 1.5,
           "rl_home_price": 105,
           "total_point": 11.0,
-          "over_price": -105,
-          "under_price": -115,
-          "last_update": "2026-09-22T03:07:58Z"
+          "over_price": -110,
+          "under_price": -110,
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
@@ -2621,21 +2414,21 @@
           "total_point": 10.5,
           "over_price": -130,
           "under_price": 110,
-          "last_update": "2026-09-22T03:01:40Z"
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
           "book_title": "DraftKings",
-          "ml_away": -194,
-          "ml_home": 160,
+          "ml_away": -198,
+          "ml_home": 162,
           "rl_away_point": -1.5,
           "rl_away_price": -126,
           "rl_home_point": 1.5,
           "rl_home_price": 104,
           "total_point": 11.0,
-          "over_price": -105,
-          "under_price": -115,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -107,
+          "under_price": -112,
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
@@ -2647,68 +2440,68 @@
           "rl_home_point": 1.5,
           "rl_home_price": 105,
           "total_point": 11.0,
-          "over_price": -105,
-          "under_price": -115,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -110,
+          "under_price": -110,
+          "last_update": "2026-09-22T12:58:40Z"
         },
         {
           "book": "fanduel",
           "book_title": "FanDuel",
-          "ml_away": -188,
-          "ml_home": 158,
+          "ml_away": -196,
+          "ml_home": 164,
           "rl_away_point": -1.5,
-          "rl_away_price": -122,
+          "rl_away_price": -125,
           "rl_home_point": 1.5,
-          "rl_home_price": 102,
+          "rl_home_price": 104,
           "total_point": 10.5,
           "over_price": -132,
           "under_price": 108,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "lowvig",
           "book_title": "LowVig.ag",
-          "ml_away": -190,
-          "ml_home": 171,
+          "ml_away": -189,
+          "ml_home": 170,
           "rl_away_point": -1.5,
           "rl_away_price": -122,
           "rl_home_point": 1.5,
           "rl_home_price": 108,
           "total_point": 11.0,
-          "over_price": -102,
-          "under_price": -113,
-          "last_update": "2026-09-22T03:07:34Z"
+          "over_price": 101,
+          "under_price": -116,
+          "last_update": "2026-09-22T12:59:21Z"
         },
         {
           "book": "mybookieag",
           "book_title": "MyBookie.ag",
-          "ml_away": -191,
-          "ml_home": 161,
+          "ml_away": -194,
+          "ml_home": 163,
           "rl_away_point": -1.5,
-          "rl_away_price": -122,
+          "rl_away_price": -123,
           "rl_home_point": 1.5,
-          "rl_home_price": 104,
+          "rl_home_price": 105,
           "total_point": 11.0,
           "over_price": -106,
           "under_price": -115,
-          "last_update": "2026-09-22T03:08:15Z"
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
         "ml_away": {
-          "price": -186,
-          "book": "betrivers",
-          "book_title": "BetRivers"
+          "price": -189,
+          "book": "lowvig",
+          "book_title": "LowVig.ag"
         },
         "ml_home": {
-          "price": 171,
+          "price": 170,
           "book": "lowvig",
           "book_title": "LowVig.ag"
         },
         "rl_away": {
           "price": -122,
-          "book": "fanduel",
-          "book_title": "FanDuel",
+          "book": "lowvig",
+          "book_title": "LowVig.ag",
           "point": -1.5
         },
         "rl_home": {
@@ -2718,22 +2511,22 @@
           "point": 1.5
         },
         "over": {
-          "price": 100,
-          "book": "betmgm",
-          "book_title": "BetMGM",
+          "price": 101,
+          "book": "lowvig",
+          "book_title": "LowVig.ag",
           "point": 11.0
         },
         "under": {
-          "price": -113,
-          "book": "lowvig",
-          "book_title": "LowVig.ag",
+          "price": -110,
+          "book": "bovada",
+          "book_title": "Bovada",
           "point": 11.0
         }
       },
       "hold": {
-        "ml": 1.94,
+        "ml": 2.43,
         "rl": 3.03,
-        "total": 3.05
+        "total": 2.13
       },
       "arbs": [],
       "arb": null
@@ -2753,13 +2546,13 @@
           "ml_away": -110,
           "ml_home": -110,
           "rl_away_point": -1.5,
-          "rl_away_price": 154,
+          "rl_away_price": 145,
           "rl_home_point": 1.5,
-          "rl_home_price": -190,
+          "rl_home_price": -175,
           "total_point": 9.5,
-          "over_price": 100,
-          "under_price": -120,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -102,
+          "under_price": -118,
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betonlineag",
@@ -2771,9 +2564,9 @@
           "rl_home_point": -1.5,
           "rl_home_price": 180,
           "total_point": 9.5,
-          "over_price": 105,
-          "under_price": -125,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -102,
+          "under_price": -118,
+          "last_update": "2026-09-22T13:00:15Z"
         },
         {
           "book": "betrivers",
@@ -2787,7 +2580,7 @@
           "total_point": 9.5,
           "over_price": 100,
           "under_price": -121,
-          "last_update": "2026-09-22T03:07:56Z"
+          "last_update": "2026-09-22T12:59:37Z"
         },
         {
           "book": "betus",
@@ -2799,23 +2592,23 @@
           "rl_home_point": -1.5,
           "rl_home_price": 180,
           "total_point": 9.5,
-          "over_price": 105,
-          "under_price": -125,
-          "last_update": "2026-09-22T03:08:14Z"
+          "over_price": 100,
+          "under_price": -120,
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
           "book_title": "Bovada",
-          "ml_away": -108,
-          "ml_home": -112,
-          "rl_away_point": 1.5,
-          "rl_away_price": -220,
-          "rl_home_point": -1.5,
-          "rl_home_price": 180,
+          "ml_away": -109,
+          "ml_home": -111,
+          "rl_away_point": -1.5,
+          "rl_away_price": 145,
+          "rl_home_point": 1.5,
+          "rl_home_price": -170,
           "total_point": 9.5,
-          "over_price": 100,
-          "under_price": -120,
-          "last_update": "2026-09-22T03:07:58Z"
+          "over_price": -105,
+          "under_price": -115,
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
@@ -2829,21 +2622,21 @@
           "total_point": 9.5,
           "over_price": 101,
           "under_price": -118,
-          "last_update": "2026-09-22T03:01:40Z"
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
           "book_title": "DraftKings",
-          "ml_away": -109,
+          "ml_away": -110,
           "ml_home": -110,
           "rl_away_point": -1.5,
-          "rl_away_price": 147,
+          "rl_away_price": 152,
           "rl_home_point": 1.5,
-          "rl_home_price": -178,
+          "rl_home_price": -184,
           "total_point": 9.5,
-          "over_price": 101,
-          "under_price": -121,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -102,
+          "under_price": -118,
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
@@ -2855,23 +2648,23 @@
           "rl_home_point": 1.5,
           "rl_home_price": -180,
           "total_point": 9.5,
-          "over_price": 100,
-          "under_price": -120,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -105,
+          "under_price": -115,
+          "last_update": "2026-09-22T12:58:40Z"
         },
         {
           "book": "fanduel",
           "book_title": "FanDuel",
-          "ml_away": -104,
-          "ml_home": -112,
+          "ml_away": -108,
+          "ml_home": -108,
           "rl_away_point": -1.5,
-          "rl_away_price": 158,
+          "rl_away_price": 146,
           "rl_home_point": 1.5,
-          "rl_home_price": -192,
+          "rl_home_price": -178,
           "total_point": 9.5,
-          "over_price": 100,
-          "under_price": -122,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -104,
+          "under_price": -118,
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "lowvig",
@@ -2883,9 +2676,9 @@
           "rl_home_point": -1.5,
           "rl_home_price": 182,
           "total_point": 9.5,
-          "over_price": 107,
-          "under_price": -123,
-          "last_update": "2026-09-22T03:07:34Z"
+          "over_price": 101,
+          "under_price": -116,
+          "last_update": "2026-09-22T12:59:21Z"
         },
         {
           "book": "mybookieag",
@@ -2893,20 +2686,20 @@
           "ml_away": -107,
           "ml_home": -110,
           "rl_away_point": -1.5,
-          "rl_away_price": 149,
+          "rl_away_price": 145,
           "rl_home_point": 1.5,
-          "rl_home_price": -176,
+          "rl_home_price": -172,
           "total_point": 9.5,
-          "over_price": -103,
+          "over_price": -104,
           "under_price": -118,
-          "last_update": "2026-09-22T03:08:15Z"
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
         "ml_away": {
-          "price": -104,
-          "book": "fanduel",
-          "book_title": "FanDuel"
+          "price": -105,
+          "book": "lowvig",
+          "book_title": "LowVig.ag"
         },
         "ml_home": {
           "price": -105,
@@ -2914,34 +2707,34 @@
           "book_title": "LowVig.ag"
         },
         "rl_away": {
-          "price": 158,
-          "book": "fanduel",
-          "book_title": "FanDuel",
+          "price": 152,
+          "book": "draftkings",
+          "book_title": "DraftKings",
           "point": -1.5
         },
         "rl_home": {
-          "price": -176,
-          "book": "mybookieag",
-          "book_title": "MyBookie.ag",
+          "price": -170,
+          "book": "bovada",
+          "book_title": "Bovada",
           "point": 1.5
         },
         "over": {
-          "price": 107,
+          "price": 101,
           "book": "lowvig",
           "book_title": "LowVig.ag",
           "point": 9.5
         },
         "under": {
-          "price": -118,
-          "book": "mybookieag",
-          "book_title": "MyBookie.ag",
+          "price": -115,
+          "book": "bovada",
+          "book_title": "Bovada",
           "point": 9.5
         }
       },
       "hold": {
-        "ml": 2.2,
-        "rl": 2.53,
-        "total": 2.44
+        "ml": 2.44,
+        "rl": 2.65,
+        "total": 3.24
       },
       "arbs": [],
       "arb": null
@@ -2958,22 +2751,22 @@
         {
           "book": "betmgm",
           "book_title": "BetMGM",
-          "ml_away": 120,
-          "ml_home": -145,
+          "ml_away": 125,
+          "ml_home": -150,
           "rl_away_point": 1.5,
-          "rl_away_price": -180,
+          "rl_away_price": -170,
           "rl_home_point": -1.5,
-          "rl_home_price": 145,
+          "rl_home_price": 140,
           "total_point": 7.5,
-          "over_price": -115,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -110,
+          "under_price": -110,
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betonlineag",
           "book_title": "BetOnline.ag",
-          "ml_away": 127,
-          "ml_home": -140,
+          "ml_away": 131,
+          "ml_home": -145,
           "rl_away_point": 1.5,
           "rl_away_price": -165,
           "rl_home_point": -1.5,
@@ -2981,27 +2774,27 @@
           "total_point": 7.5,
           "over_price": -110,
           "under_price": -110,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T13:00:15Z"
         },
         {
           "book": "betrivers",
           "book_title": "BetRivers",
-          "ml_away": 118,
-          "ml_home": -141,
+          "ml_away": 130,
+          "ml_home": -157,
           "rl_away_point": 1.0,
-          "rl_away_price": -122,
+          "rl_away_price": -109,
           "rl_home_point": -1.0,
-          "rl_home_price": 100,
+          "rl_home_price": -110,
           "total_point": 7.5,
           "over_price": -121,
           "under_price": -103,
-          "last_update": "2026-09-22T03:07:56Z"
+          "last_update": "2026-09-22T12:59:37Z"
         },
         {
           "book": "betus",
           "book_title": "BetUS",
-          "ml_away": 126,
-          "ml_home": -140,
+          "ml_away": 130,
+          "ml_home": -145,
           "rl_away_point": 1.5,
           "rl_away_price": -165,
           "rl_home_point": -1.5,
@@ -3009,13 +2802,13 @@
           "total_point": 7.5,
           "over_price": -110,
           "under_price": -110,
-          "last_update": "2026-09-22T03:08:14Z"
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
           "book_title": "Bovada",
-          "ml_away": 128,
-          "ml_home": -153,
+          "ml_away": 126,
+          "ml_home": -150,
           "rl_away_point": 1.5,
           "rl_away_price": -170,
           "rl_home_point": -1.5,
@@ -3023,7 +2816,7 @@
           "total_point": 7.5,
           "over_price": -110,
           "under_price": -110,
-          "last_update": "2026-09-22T03:07:58Z"
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
@@ -3037,21 +2830,21 @@
           "total_point": 7.5,
           "over_price": -114,
           "under_price": -104,
-          "last_update": "2026-09-22T03:01:40Z"
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
           "book_title": "DraftKings",
           "ml_away": 124,
-          "ml_home": -150,
+          "ml_home": -149,
           "rl_away_point": 1.5,
-          "rl_away_price": -172,
+          "rl_away_price": -171,
           "rl_home_point": -1.5,
-          "rl_home_price": 142,
+          "rl_home_price": 141,
           "total_point": 7.5,
-          "over_price": -112,
-          "under_price": -108,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -110,
+          "under_price": -110,
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
@@ -3065,7 +2858,7 @@
           "total_point": 7.5,
           "over_price": -110,
           "under_price": -110,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T12:58:40Z"
         },
         {
           "book": "fanduel",
@@ -3077,15 +2870,15 @@
           "rl_home_point": -1.5,
           "rl_home_price": 146,
           "total_point": 7.5,
-          "over_price": -110,
-          "under_price": -110,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -112,
+          "under_price": -108,
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "lowvig",
           "book_title": "LowVig.ag",
-          "ml_away": 127,
-          "ml_home": -140,
+          "ml_away": 131,
+          "ml_home": -145,
           "rl_away_point": 1.5,
           "rl_away_price": -165,
           "rl_home_point": -1.5,
@@ -3093,33 +2886,33 @@
           "total_point": 7.5,
           "over_price": -107,
           "under_price": -107,
-          "last_update": "2026-09-22T03:07:34Z"
+          "last_update": "2026-09-22T12:59:21Z"
         },
         {
           "book": "mybookieag",
           "book_title": "MyBookie.ag",
-          "ml_away": 125,
-          "ml_home": -147,
+          "ml_away": 126,
+          "ml_home": -149,
           "rl_away_point": 1.5,
-          "rl_away_price": -167,
+          "rl_away_price": -168,
           "rl_home_point": -1.5,
-          "rl_home_price": 141,
-          "total_point": null,
-          "over_price": null,
-          "under_price": null,
-          "last_update": "2026-09-22T03:08:15Z"
+          "rl_home_price": 142,
+          "total_point": 7.5,
+          "over_price": -111,
+          "under_price": -110,
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
         "ml_away": {
-          "price": 128,
-          "book": "bovada",
-          "book_title": "Bovada"
-        },
-        "ml_home": {
-          "price": -140,
+          "price": 131,
           "book": "lowvig",
           "book_title": "LowVig.ag"
+        },
+        "ml_home": {
+          "price": -143,
+          "book": "williamhill_us",
+          "book_title": "Caesars"
         },
         "rl_away": {
           "price": -165,
@@ -3147,7 +2940,7 @@
         }
       },
       "hold": {
-        "ml": 2.19,
+        "ml": 2.14,
         "rl": 2.91,
         "total": 2.43
       },
@@ -3173,23 +2966,23 @@
           "rl_home_point": 1.5,
           "rl_home_price": -155,
           "total_point": 7.5,
-          "over_price": -115,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -110,
+          "under_price": -110,
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betonlineag",
           "book_title": "BetOnline.ag",
-          "ml_away": -125,
-          "ml_home": 113,
+          "ml_away": -128,
+          "ml_home": 116,
           "rl_away_point": -1.5,
-          "rl_away_price": 135,
+          "rl_away_price": 132,
           "rl_home_point": 1.5,
-          "rl_home_price": -155,
+          "rl_home_price": -152,
           "total_point": 7.5,
-          "over_price": -115,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -113,
+          "under_price": -107,
+          "last_update": "2026-09-22T13:00:15Z"
         },
         {
           "book": "betrivers",
@@ -3203,27 +2996,27 @@
           "total_point": 7.5,
           "over_price": -105,
           "under_price": -117,
-          "last_update": "2026-09-22T03:07:56Z"
+          "last_update": "2026-09-22T12:59:37Z"
         },
         {
           "book": "betus",
           "book_title": "BetUS",
-          "ml_away": -125,
-          "ml_home": 114,
+          "ml_away": -128,
+          "ml_home": 117,
           "rl_away_point": -1.5,
-          "rl_away_price": 135,
+          "rl_away_price": 130,
           "rl_home_point": 1.5,
-          "rl_home_price": -155,
+          "rl_home_price": -150,
           "total_point": 7.5,
           "over_price": -115,
           "under_price": -105,
-          "last_update": "2026-09-22T03:08:14Z"
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
           "book_title": "Bovada",
-          "ml_away": -134,
-          "ml_home": 112,
+          "ml_away": -136,
+          "ml_home": 114,
           "rl_away_point": -1.5,
           "rl_away_price": 130,
           "rl_home_point": 1.5,
@@ -3231,7 +3024,7 @@
           "total_point": 7.5,
           "over_price": -110,
           "under_price": -110,
-          "last_update": "2026-09-22T03:07:58Z"
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
@@ -3245,7 +3038,7 @@
           "total_point": 7.5,
           "over_price": -110,
           "under_price": -108,
-          "last_update": "2026-09-22T03:01:40Z"
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
@@ -3259,7 +3052,7 @@
           "total_point": 7.5,
           "over_price": -113,
           "under_price": -107,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
@@ -3267,13 +3060,13 @@
           "ml_away": -130,
           "ml_home": 110,
           "rl_away_point": -1.5,
-          "rl_away_price": 130,
+          "rl_away_price": 125,
           "rl_home_point": 1.5,
-          "rl_home_price": -160,
+          "rl_home_price": -150,
           "total_point": 7.5,
-          "over_price": -115,
-          "under_price": -105,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -110,
+          "under_price": -110,
+          "last_update": "2026-09-22T12:58:40Z"
         },
         {
           "book": "fanduel",
@@ -3281,64 +3074,64 @@
           "ml_away": -134,
           "ml_home": 114,
           "rl_away_point": -1.5,
-          "rl_away_price": 132,
+          "rl_away_price": 134,
           "rl_home_point": 1.5,
-          "rl_home_price": -160,
+          "rl_home_price": -162,
           "total_point": 7.5,
-          "over_price": -112,
-          "under_price": -108,
-          "last_update": "2026-09-22T03:07:55Z"
+          "over_price": -110,
+          "under_price": -110,
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "lowvig",
           "book_title": "LowVig.ag",
-          "ml_away": -125,
-          "ml_home": 113,
+          "ml_away": -128,
+          "ml_home": 116,
           "rl_away_point": -1.5,
-          "rl_away_price": 136,
+          "rl_away_price": 133,
           "rl_home_point": 1.5,
-          "rl_home_price": -154,
+          "rl_home_price": -151,
           "total_point": 7.5,
-          "over_price": -113,
-          "under_price": -102,
-          "last_update": "2026-09-22T03:07:34Z"
+          "over_price": -110,
+          "under_price": -104,
+          "last_update": "2026-09-22T12:59:21Z"
         },
         {
           "book": "mybookieag",
           "book_title": "MyBookie.ag",
-          "ml_away": -132,
-          "ml_home": 112,
+          "ml_away": -131,
+          "ml_home": 111,
           "rl_away_point": -1.5,
-          "rl_away_price": 127,
+          "rl_away_price": 130,
           "rl_home_point": 1.5,
-          "rl_home_price": -150,
+          "rl_home_price": -153,
           "total_point": 7.5,
-          "over_price": -113,
-          "under_price": -108,
-          "last_update": "2026-09-22T03:08:15Z"
+          "over_price": -115,
+          "under_price": -106,
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
         "ml_away": {
-          "price": -125,
+          "price": -128,
           "book": "lowvig",
           "book_title": "LowVig.ag"
         },
         "ml_home": {
-          "price": 114,
-          "book": "fanduel",
-          "book_title": "FanDuel"
+          "price": 117,
+          "book": "betus",
+          "book_title": "BetUS"
         },
         "rl_away": {
-          "price": 136,
-          "book": "lowvig",
-          "book_title": "LowVig.ag",
+          "price": 134,
+          "book": "fanduel",
+          "book_title": "FanDuel",
           "point": -1.5
         },
         "rl_home": {
           "price": -150,
-          "book": "mybookieag",
-          "book_title": "MyBookie.ag",
+          "book": "bovada",
+          "book_title": "Bovada",
           "point": 1.5
         },
         "over": {
@@ -3348,16 +3141,16 @@
           "point": 7.5
         },
         "under": {
-          "price": -102,
+          "price": -104,
           "book": "lowvig",
           "book_title": "LowVig.ag",
           "point": 7.5
         }
       },
       "hold": {
-        "ml": 2.28,
-        "rl": 2.37,
-        "total": 1.71
+        "ml": 2.22,
+        "rl": 2.74,
+        "total": 2.2
       },
       "arbs": [],
       "arb": null
@@ -3369,7 +3162,7 @@
       "home_abbr": "LAD",
       "commence_ct": "9:11 PM CT",
       "commence_iso": "2026-09-23T02:11:00Z",
-      "book_count": 8,
+      "book_count": 9,
       "books": [
         {
           "book": "betmgm",
@@ -3377,27 +3170,41 @@
           "ml_away": 100,
           "ml_home": -120,
           "rl_away_point": -1.5,
-          "rl_away_price": 155,
+          "rl_away_price": 165,
           "rl_home_point": 1.5,
-          "rl_home_price": -190,
+          "rl_home_price": -200,
           "total_point": 8.0,
           "over_price": -118,
           "under_price": -102,
-          "last_update": "2026-09-22T03:08:15Z"
+          "last_update": "2026-09-22T12:58:38Z"
         },
         {
           "book": "betrivers",
           "book_title": "BetRivers",
-          "ml_away": 102,
-          "ml_home": -122,
-          "rl_away_point": 1.0,
-          "rl_away_price": -148,
-          "rl_home_point": -1.0,
-          "rl_home_price": 120,
-          "total_point": 8.5,
-          "over_price": -103,
-          "under_price": -120,
-          "last_update": "2026-09-22T03:07:56Z"
+          "ml_away": 105,
+          "ml_home": -124,
+          "rl_away_point": 1.5,
+          "rl_away_price": -205,
+          "rl_home_point": -1.5,
+          "rl_home_price": 165,
+          "total_point": 8.0,
+          "over_price": -121,
+          "under_price": -118,
+          "last_update": "2026-09-22T12:59:37Z"
+        },
+        {
+          "book": "betus",
+          "book_title": "BetUS",
+          "ml_away": 105,
+          "ml_home": -115,
+          "rl_away_point": 1.5,
+          "rl_away_price": -200,
+          "rl_home_point": -1.5,
+          "rl_home_price": 172,
+          "total_point": 8.0,
+          "over_price": -115,
+          "under_price": -105,
+          "last_update": "2026-09-22T13:00:16Z"
         },
         {
           "book": "bovada",
@@ -3411,7 +3218,7 @@
           "total_point": 8.5,
           "over_price": 100,
           "under_price": -120,
-          "last_update": "2026-09-22T03:07:58Z"
+          "last_update": "2026-09-22T12:58:44Z"
         },
         {
           "book": "williamhill_us",
@@ -3419,27 +3226,27 @@
           "ml_away": 103,
           "ml_home": -121,
           "rl_away_point": -1.5,
-          "rl_away_price": 161,
+          "rl_away_price": 166,
           "rl_home_point": 1.5,
-          "rl_home_price": -193,
+          "rl_home_price": -197,
           "total_point": 8.5,
           "over_price": 101,
           "under_price": -120,
-          "last_update": "2026-09-22T03:01:40Z"
+          "last_update": "2026-09-22T12:55:17Z"
         },
         {
           "book": "draftkings",
           "book_title": "DraftKings",
-          "ml_away": 100,
-          "ml_home": -120,
+          "ml_away": 102,
+          "ml_home": -122,
           "rl_away_point": -1.5,
-          "rl_away_price": 165,
+          "rl_away_price": 168,
           "rl_home_point": 1.5,
-          "rl_home_price": -201,
+          "rl_home_price": -205,
           "total_point": 8.0,
           "over_price": -115,
           "under_price": -105,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T12:59:17Z"
         },
         {
           "book": "fanatics",
@@ -3453,7 +3260,7 @@
           "total_point": 8.0,
           "over_price": -115,
           "under_price": -105,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T12:58:40Z"
         },
         {
           "book": "fanduel",
@@ -3467,7 +3274,7 @@
           "total_point": 8.5,
           "over_price": -102,
           "under_price": -120,
-          "last_update": "2026-09-22T03:07:55Z"
+          "last_update": "2026-09-22T13:00:17Z"
         },
         {
           "book": "mybookieag",
@@ -3475,28 +3282,28 @@
           "ml_away": 102,
           "ml_home": -120,
           "rl_away_point": 1.5,
-          "rl_away_price": -197,
+          "rl_away_price": -208,
           "rl_home_point": -1.5,
-          "rl_home_price": 166,
-          "total_point": 8.0,
-          "over_price": -119,
-          "under_price": -102,
-          "last_update": "2026-09-22T03:08:15Z"
+          "rl_home_price": 174,
+          "total_point": 8.5,
+          "over_price": -104,
+          "under_price": -118,
+          "last_update": "2026-09-22T13:00:15Z"
         }
       ],
       "best": {
         "ml_away": {
-          "price": 103,
-          "book": "williamhill_us",
-          "book_title": "Caesars"
+          "price": 105,
+          "book": "betrivers",
+          "book_title": "BetRivers"
         },
         "ml_home": {
-          "price": -120,
-          "book": "fanduel",
-          "book_title": "FanDuel"
+          "price": -115,
+          "book": "betus",
+          "book_title": "BetUS"
         },
         "rl_away": {
-          "price": 165,
+          "price": 168,
           "book": "draftkings",
           "book_title": "DraftKings",
           "point": -1.5
@@ -3508,26 +3315,26 @@
           "point": 1.5
         },
         "over": {
-          "price": 101,
-          "book": "williamhill_us",
-          "book_title": "Caesars",
-          "point": 8.5
+          "price": -115,
+          "book": "fanatics",
+          "book_title": "Fanatics",
+          "point": 8.0
         },
         "under": {
-          "price": -120,
-          "book": "fanduel",
-          "book_title": "FanDuel",
-          "point": 8.5
+          "price": -102,
+          "book": "betmgm",
+          "book_title": "BetMGM",
+          "point": 8.0
         }
       },
       "hold": {
-        "ml": 3.81,
-        "rl": 2.65,
-        "total": 4.3
+        "ml": 2.27,
+        "rl": 2.23,
+        "total": 3.98
       },
       "arbs": [],
       "arb": null
     }
   ],
-  "arb_count": 1
+  "arb_count": 0
 }
