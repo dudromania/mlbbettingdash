@@ -117,6 +117,29 @@
   {
     "date": "2026-09-22",
     "game_time": "5:40 PM CT",
+    "home_abbr": "DET",
+    "away_abbr": "WSH",
+    "home_sp": "Drew Anderson",
+    "away_sp": "Riley Cornelio",
+    "nrfi_prob": 35.8,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Drew Anderson",
+      "first_inning": {},
+      "season_era": 3.62
+    },
+    "away_pitcher": {
+      "name": "Riley Cornelio",
+      "first_inning": {},
+      "season_era": 4.22
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-22",
+    "game_time": "5:40 PM CT",
     "home_abbr": "PIT",
     "away_abbr": "STL",
     "home_sp": "Jared Jones",
@@ -133,29 +156,6 @@
       "name": "Andre Pallante",
       "first_inning": {},
       "season_era": 3.7
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-22",
-    "game_time": "6:40 PM CT",
-    "home_abbr": "CHC",
-    "away_abbr": "MIA",
-    "home_sp": "TBD",
-    "away_sp": "Janson Junk",
-    "nrfi_prob": 35.6,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_pitcher": {
-      "name": "Janson Junk",
-      "first_inning": {},
-      "season_era": 4.5
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -185,6 +185,29 @@
   },
   {
     "date": "2026-09-22",
+    "game_time": "6:40 PM CT",
+    "home_abbr": "CHC",
+    "away_abbr": "MIA",
+    "home_sp": "Shota Imanaga",
+    "away_sp": "Janson Junk",
+    "nrfi_prob": 34.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Shota Imanaga",
+      "first_inning": {},
+      "season_era": 3.8
+    },
+    "away_pitcher": {
+      "name": "Janson Junk",
+      "first_inning": {},
+      "season_era": 4.5
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-22",
     "game_time": "7:40 PM CT",
     "home_abbr": "COL",
     "away_abbr": "AZ",
@@ -202,29 +225,6 @@
       "name": "Michael Soroka",
       "first_inning": {},
       "season_era": 3.45
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-22",
-    "game_time": "5:40 PM CT",
-    "home_abbr": "DET",
-    "away_abbr": "WSH",
-    "home_sp": "Drew Anderson",
-    "away_sp": "Jackson Kent",
-    "nrfi_prob": 31.6,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Drew Anderson",
-      "first_inning": {},
-      "season_era": 3.62
-    },
-    "away_pitcher": {
-      "name": "Jackson Kent",
-      "first_inning": {},
-      "season_era": 6.4
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
