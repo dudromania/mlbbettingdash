@@ -121,13 +121,13 @@
     "away_abbr": "WSH",
     "home_sp": "Framber Valdez",
     "away_sp": "Richard Lovelady",
-    "nrfi_prob": 36.5,
+    "nrfi_prob": 36.2,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Framber Valdez",
       "first_inning": {},
-      "season_era": 3.97
+      "season_era": 4.03
     },
     "away_pitcher": {
       "name": "Richard Lovelady",
@@ -236,18 +236,18 @@
     "away_abbr": "MIN",
     "home_sp": "Cesar Perdomo",
     "away_sp": "Connor Prielipp",
-    "nrfi_prob": 32.5,
+    "nrfi_prob": 33.7,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Cesar Perdomo",
       "first_inning": {},
-      "season_era": 3.72
+      "season_era": 3.43
     },
     "away_pitcher": {
       "name": "Connor Prielipp",
       "first_inning": {},
-      "season_era": 4.94
+      "season_era": 4.9
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -316,7 +316,7 @@
     "away_pitcher": {
       "name": "Max Scherzer",
       "first_inning": {},
-      "season_era": 5.99
+      "season_era": 6.14
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
