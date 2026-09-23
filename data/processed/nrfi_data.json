@@ -121,41 +121,18 @@
     "away_abbr": "WSH",
     "home_sp": "Framber Valdez",
     "away_sp": "Richard Lovelady",
-    "nrfi_prob": 35.5,
+    "nrfi_prob": 36.5,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Framber Valdez",
       "first_inning": {},
-      "season_era": 4.06
+      "season_era": 3.97
     },
     "away_pitcher": {
       "name": "Richard Lovelady",
       "first_inning": {},
-      "season_era": 3.86
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-23",
-    "game_time": "6:05 PM CT",
-    "home_abbr": "NYY",
-    "away_abbr": "TB",
-    "home_sp": "Gerrit Cole",
-    "away_sp": "Ian Seymour",
-    "nrfi_prob": 35.1,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Gerrit Cole",
-      "first_inning": {},
-      "season_era": 3.63
-    },
-    "away_pitcher": {
-      "name": "Ian Seymour",
-      "first_inning": {},
-      "season_era": 4.38
+      "season_era": 3.71
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -225,6 +202,29 @@
       "name": "Bryan Hudson",
       "first_inning": {},
       "season_era": 3.03
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-23",
+    "game_time": "6:05 PM CT",
+    "home_abbr": "NYY",
+    "away_abbr": "TB",
+    "home_sp": "Gerrit Cole",
+    "away_sp": "Mason Englert",
+    "nrfi_prob": 34.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Gerrit Cole",
+      "first_inning": {},
+      "season_era": 3.63
+    },
+    "away_pitcher": {
+      "name": "Mason Englert",
+      "first_inning": {},
+      "season_era": 4.54
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -305,18 +305,18 @@
     "away_abbr": "TOR",
     "home_sp": "Chris Bassitt",
     "away_sp": "Max Scherzer",
-    "nrfi_prob": 28.1,
+    "nrfi_prob": 28.3,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Chris Bassitt",
       "first_inning": {},
-      "season_era": 4.64
+      "season_era": 4.59
     },
     "away_pitcher": {
       "name": "Max Scherzer",
       "first_inning": {},
-      "season_era": 6.07
+      "season_era": 5.99
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
