@@ -1,6 +1,6 @@
 [
   {
-    "id": 2763,
+    "id": 2765,
     "game_date": "2026-09-23",
     "game_pick_id": null,
     "player_name": "Kevin Gausman",
@@ -20,11 +20,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-09-23 18:10:51",
-    "graded_at": null
+    "actual_value": 7.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-09-23 20:10:48",
+    "graded_at": "2026-09-24 13:00:17"
   },
   {
     "id": 2761,
@@ -54,7 +54,7 @@
     "graded_at": null
   },
   {
-    "id": 2762,
+    "id": 2764,
     "game_date": "2026-09-23",
     "game_pick_id": null,
     "player_name": "Framber Valdez",
@@ -65,20 +65,20 @@
     "prop_line": 5.5,
     "prop_odds": -164,
     "prop_book": "fanduel",
-    "predicted_value": 4.2,
-    "predicted_prob_over": 0.247,
-    "edge": 0.132,
+    "predicted_value": 4.1,
+    "predicted_prob_over": 0.231,
+    "edge": 0.148,
     "confidence": null,
-    "player_season_avg": 8.31,
+    "player_season_avg": 8.09,
     "player_last7_avg": null,
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-09-23 18:10:51",
-    "graded_at": null
+    "actual_value": 6.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-09-23 20:10:48",
+    "graded_at": "2026-09-24 13:00:17"
   },
   {
     "id": 2754,

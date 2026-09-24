@@ -1,35 +1,80 @@
 {
-  "WSH@DET": {
-    "home": [],
-    "away": []
-  },
-  "TOR@BAL": {
-    "home": [],
-    "away": []
-  },
-  "MIN@SF": {
-    "home": [],
-    "away": []
-  },
   "STL@PIT": {
     "home": [],
-    "away": []
-  },
-  "MIL@PHI": {
-    "home": [],
-    "away": []
-  },
-  "TB@NYY": {
-    "home": [],
-    "away": []
-  },
-  "CLE@BOS": {
-    "home": [],
-    "away": []
-  },
-  "CIN@ATL": {
-    "home": [],
-    "away": []
+    "away": [
+      {
+        "name": "JJ Wetherholt",
+        "pos": "2B",
+        "bats": "L",
+        "avg": 0.244,
+        "ops": 0.711,
+        "hr": 17
+      },
+      {
+        "name": "Iv\u00e1n Herrera",
+        "pos": "C",
+        "bats": "R",
+        "avg": 0.244,
+        "ops": 0.74,
+        "hr": 18
+      },
+      {
+        "name": "Alec Burleson",
+        "pos": "1B",
+        "bats": "L",
+        "avg": 0.279,
+        "ops": 0.805,
+        "hr": 23
+      },
+      {
+        "name": "Jordan Walker",
+        "pos": "RF",
+        "bats": "R",
+        "avg": 0.273,
+        "ops": 0.8,
+        "hr": 28
+      },
+      {
+        "name": "Leo Bernal",
+        "pos": "DH",
+        "bats": "S",
+        "avg": 0.296,
+        "ops": 0.818,
+        "hr": 4
+      },
+      {
+        "name": "Bryan Torres",
+        "pos": "LF",
+        "bats": "L",
+        "avg": 0.235,
+        "ops": 0.648,
+        "hr": 4
+      },
+      {
+        "name": "Thomas Saggese",
+        "pos": "3B",
+        "bats": "R",
+        "avg": 0.243,
+        "ops": 0.675,
+        "hr": 4
+      },
+      {
+        "name": "Nathan Church",
+        "pos": "CF",
+        "bats": "L",
+        "avg": 0.251,
+        "ops": 0.666,
+        "hr": 10
+      },
+      {
+        "name": "Masyn Winn",
+        "pos": "SS",
+        "bats": "R",
+        "avg": 0.235,
+        "ops": 0.631,
+        "hr": 5
+      }
+    ]
   },
   "CHW@KC": {
     "home": [],
@@ -47,15 +92,31 @@
     "home": [],
     "away": []
   },
-  "LAA@ATH": {
+  "MIL@PHI": {
+    "home": [],
+    "away": []
+  },
+  "CLE@BOS": {
+    "home": [],
+    "away": []
+  },
+  "TB@NYY": {
+    "home": [],
+    "away": []
+  },
+  "CIN@ATL": {
+    "home": [],
+    "away": []
+  },
+  "HOU@ATH": {
+    "home": [],
+    "away": []
+  },
+  "LAA@SEA": {
     "home": [],
     "away": []
   },
   "SD@LAD": {
-    "home": [],
-    "away": []
-  },
-  "HOU@SEA": {
     "home": [],
     "away": []
   }

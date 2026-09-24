@@ -1,237 +1,18 @@
 {
-  "generated_at": "2026-09-23T08:11:30-05:00",
-  "updated_at": "2026-09-23T08:11:30-05:00",
+  "generated_at": "2026-09-24T08:11:10-05:00",
+  "updated_at": "2026-09-24T08:11:10-05:00",
   "source": "https://cleatz.com/public-betting/mlb/",
-  "game_count": 15,
+  "game_count": 12,
   "games": {
-    "WSH@DET": {
-      "away_abbr": "WSH",
-      "home_abbr": "DET",
-      "away_name": "WAS Nationals",
-      "home_name": "DET Tigers",
-      "time_raw": "11:10 am",
-      "handle_split": {
-        "away_pct": 74,
-        "home_pct": 26
-      },
-      "markets": {
-        "moneyline": [
-          {
-            "side": "DET",
-            "team": "DET",
-            "point": null,
-            "price": -180,
-            "bets_pct": 85,
-            "handle_pct": 26,
-            "handle_gap": -59
-          },
-          {
-            "side": "WSH",
-            "team": "WSH",
-            "point": null,
-            "price": 148,
-            "bets_pct": 15,
-            "handle_pct": 74,
-            "handle_gap": 59
-          }
-        ],
-        "total": [
-          {
-            "side": "Over",
-            "team": "",
-            "point": 8.0,
-            "price": -110,
-            "bets_pct": 70,
-            "handle_pct": 96,
-            "handle_gap": 26
-          },
-          {
-            "side": "Under",
-            "team": "",
-            "point": 8.0,
-            "price": -109,
-            "bets_pct": 30,
-            "handle_pct": 4,
-            "handle_gap": -26
-          }
-        ],
-        "run_line": [
-          {
-            "side": "DET",
-            "team": "DET",
-            "point": -1.5,
-            "price": 119,
-            "bets_pct": 29,
-            "handle_pct": 60,
-            "handle_gap": 31
-          },
-          {
-            "side": "WSH",
-            "team": "WSH",
-            "point": 1.5,
-            "price": -144,
-            "bets_pct": 71,
-            "handle_pct": 40,
-            "handle_gap": -31
-          }
-        ]
-      }
-    },
-    "TOR@BAL": {
-      "away_abbr": "TOR",
-      "home_abbr": "BAL",
-      "away_name": "TOR Blue Jays",
-      "home_name": "BAL Orioles",
-      "time_raw": "11:35 am",
-      "handle_split": {
-        "away_pct": 12,
-        "home_pct": 88
-      },
-      "markets": {
-        "moneyline": [
-          {
-            "side": "BAL",
-            "team": "BAL",
-            "point": null,
-            "price": -131,
-            "bets_pct": 75,
-            "handle_pct": 88,
-            "handle_gap": 13
-          },
-          {
-            "side": "TOR",
-            "team": "TOR",
-            "point": null,
-            "price": 109,
-            "bets_pct": 25,
-            "handle_pct": 12,
-            "handle_gap": -13
-          }
-        ],
-        "total": [
-          {
-            "side": "Over",
-            "team": "",
-            "point": 7.0,
-            "price": -122,
-            "bets_pct": 70,
-            "handle_pct": 56,
-            "handle_gap": -14
-          },
-          {
-            "side": "Under",
-            "team": "",
-            "point": 7.0,
-            "price": 102,
-            "bets_pct": 30,
-            "handle_pct": 44,
-            "handle_gap": 14
-          }
-        ],
-        "run_line": [
-          {
-            "side": "BAL",
-            "team": "BAL",
-            "point": -1.5,
-            "price": 169,
-            "bets_pct": 27,
-            "handle_pct": 85,
-            "handle_gap": 58
-          },
-          {
-            "side": "TOR",
-            "team": "TOR",
-            "point": 1.5,
-            "price": -206,
-            "bets_pct": 73,
-            "handle_pct": 15,
-            "handle_gap": -58
-          }
-        ]
-      }
-    },
-    "MIN@SF": {
-      "away_abbr": "MIN",
-      "home_abbr": "SF",
-      "away_name": "MIN Twins",
-      "home_name": "SF Giants",
-      "time_raw": "1:45 pm",
-      "handle_split": {
-        "away_pct": 51,
-        "home_pct": 49
-      },
-      "markets": {
-        "moneyline": [
-          {
-            "side": "SF",
-            "team": "SF",
-            "point": null,
-            "price": 123,
-            "bets_pct": 32,
-            "handle_pct": 49,
-            "handle_gap": 17
-          },
-          {
-            "side": "MIN",
-            "team": "MIN",
-            "point": null,
-            "price": -148,
-            "bets_pct": 68,
-            "handle_pct": 51,
-            "handle_gap": -17
-          }
-        ],
-        "total": [
-          {
-            "side": "Over",
-            "team": "",
-            "point": 8.0,
-            "price": -115,
-            "bets_pct": 50,
-            "handle_pct": 100,
-            "handle_gap": 50
-          },
-          {
-            "side": "Under",
-            "team": "",
-            "point": 8.0,
-            "price": -104,
-            "bets_pct": 50,
-            "handle_pct": 0,
-            "handle_gap": -50
-          }
-        ],
-        "run_line": [
-          {
-            "side": "SF",
-            "team": "SF",
-            "point": 1.5,
-            "price": -142,
-            "bets_pct": 75,
-            "handle_pct": 94,
-            "handle_gap": 19
-          },
-          {
-            "side": "MIN",
-            "team": "MIN",
-            "point": -1.5,
-            "price": 117,
-            "bets_pct": 25,
-            "handle_pct": 6,
-            "handle_gap": -19
-          }
-        ]
-      }
-    },
     "STL@PIT": {
       "away_abbr": "STL",
       "home_abbr": "PIT",
       "away_name": "STL Cardinals",
       "home_name": "PIT Pirates",
-      "time_raw": "4:40 pm",
+      "time_raw": "10:35 am",
       "handle_split": {
-        "away_pct": 5,
-        "home_pct": 95
+        "away_pct": 30,
+        "home_pct": 70
       },
       "markets": {
         "moneyline": [
@@ -239,38 +20,38 @@
             "side": "PIT",
             "team": "PIT",
             "point": null,
-            "price": -121,
-            "bets_pct": 85,
-            "handle_pct": 95,
-            "handle_gap": 10
+            "price": -163,
+            "bets_pct": 78,
+            "handle_pct": 70,
+            "handle_gap": -8
           },
           {
             "side": "STL",
             "team": "STL",
             "point": null,
-            "price": 100,
-            "bets_pct": 15,
-            "handle_pct": 5,
-            "handle_gap": -10
+            "price": 134,
+            "bets_pct": 22,
+            "handle_pct": 30,
+            "handle_gap": 8
           }
         ],
         "total": [
           {
             "side": "Over",
             "team": "",
-            "point": 7.5,
-            "price": -112,
-            "bets_pct": 50,
-            "handle_pct": 88,
-            "handle_gap": 38
+            "point": 7.0,
+            "price": -105,
+            "bets_pct": 63,
+            "handle_pct": 100,
+            "handle_gap": 37
           },
           {
             "side": "Under",
             "team": "",
-            "point": 7.5,
-            "price": -107,
-            "bets_pct": 50,
-            "handle_pct": 12,
+            "point": 7.0,
+            "price": -115,
+            "bets_pct": 38,
+            "handle_pct": 0,
             "handle_gap": -38
           }
         ],
@@ -278,20 +59,312 @@
           {
             "side": "PIT",
             "team": "PIT",
-            "point": 1.5,
-            "price": -204,
-            "bets_pct": 50,
-            "handle_pct": 1,
-            "handle_gap": -49
+            "point": -1.5,
+            "price": 144,
+            "bets_pct": 63,
+            "handle_pct": 31,
+            "handle_gap": -32
           },
           {
             "side": "STL",
             "team": "STL",
+            "point": 1.5,
+            "price": -175,
+            "bets_pct": 38,
+            "handle_pct": 69,
+            "handle_gap": 31
+          }
+        ]
+      }
+    },
+    "CHW@KC": {
+      "away_abbr": "CHW",
+      "home_abbr": "KC",
+      "away_name": "CHI White Sox",
+      "home_name": "KC Royals",
+      "time_raw": "12:10 pm",
+      "handle_split": {
+        "away_pct": 44,
+        "home_pct": 56
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "side": "KC",
+            "team": "KC",
+            "point": null,
+            "price": 104,
+            "bets_pct": 35,
+            "handle_pct": 56,
+            "handle_gap": 21
+          },
+          {
+            "side": "CHW",
+            "team": "CHW",
+            "point": null,
+            "price": -125,
+            "bets_pct": 65,
+            "handle_pct": 44,
+            "handle_gap": -21
+          }
+        ],
+        "total": [
+          {
+            "side": "Over",
+            "team": "",
+            "point": 8.5,
+            "price": -122,
+            "bets_pct": 40,
+            "handle_pct": 95,
+            "handle_gap": 55
+          },
+          {
+            "side": "Under",
+            "team": "",
+            "point": 8.5,
+            "price": 102,
+            "bets_pct": 60,
+            "handle_pct": 5,
+            "handle_gap": -55
+          }
+        ],
+        "run_line": [
+          {
+            "side": "KC",
+            "team": "KC",
+            "point": 1.5,
+            "price": -163,
+            "bets_pct": 25,
+            "handle_pct": 4,
+            "handle_gap": -21
+          },
+          {
+            "side": "CHW",
+            "team": "CHW",
             "point": -1.5,
-            "price": 167,
+            "price": 134,
+            "bets_pct": 75,
+            "handle_pct": 96,
+            "handle_gap": 21
+          }
+        ]
+      }
+    },
+    "MIA@CHC": {
+      "away_abbr": "MIA",
+      "home_abbr": "CHC",
+      "away_name": "MIA Marlins",
+      "home_name": "CHI Cubs",
+      "time_raw": "12:20 pm",
+      "handle_split": {
+        "away_pct": 0,
+        "home_pct": 100
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "side": "CHC",
+            "team": "CHC",
+            "point": null,
+            "price": -206,
+            "bets_pct": 87,
+            "handle_pct": 100,
+            "handle_gap": 13
+          },
+          {
+            "side": "MIA",
+            "team": "MIA",
+            "point": null,
+            "price": 169,
+            "bets_pct": 13,
+            "handle_pct": 0,
+            "handle_gap": -13
+          }
+        ],
+        "total": [
+          {
+            "side": "Over",
+            "team": "",
+            "point": 7.5,
+            "price": -110,
+            "bets_pct": 60,
+            "handle_pct": 96,
+            "handle_gap": 36
+          },
+          {
+            "side": "Under",
+            "team": "",
+            "point": 7.5,
+            "price": -110,
+            "bets_pct": 40,
+            "handle_pct": 4,
+            "handle_gap": -36
+          }
+        ],
+        "run_line": [
+          {
+            "side": "CHC",
+            "team": "CHC",
+            "point": -1.5,
+            "price": 113,
+            "bets_pct": 100,
+            "handle_pct": 100,
+            "handle_gap": 0
+          },
+          {
+            "side": "MIA",
+            "team": "MIA",
+            "point": 1.5,
+            "price": -136,
+            "bets_pct": 0,
+            "handle_pct": 0,
+            "handle_gap": 0
+          }
+        ]
+      }
+    },
+    "NYM@TEX": {
+      "away_abbr": "NYM",
+      "home_abbr": "TEX",
+      "away_name": "NY Mets",
+      "home_name": "TEX Rangers",
+      "time_raw": "12:35 pm",
+      "handle_split": {
+        "away_pct": 12,
+        "home_pct": 88
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "side": "TEX",
+            "team": "TEX",
+            "point": null,
+            "price": -131,
+            "bets_pct": 59,
+            "handle_pct": 88,
+            "handle_gap": 29
+          },
+          {
+            "side": "NYM",
+            "team": "NYM",
+            "point": null,
+            "price": 109,
+            "bets_pct": 41,
+            "handle_pct": 12,
+            "handle_gap": -29
+          }
+        ],
+        "total": [
+          {
+            "side": "Over",
+            "team": "",
+            "point": 8.0,
+            "price": -118,
             "bets_pct": 50,
-            "handle_pct": 99,
-            "handle_gap": 49
+            "handle_pct": 59,
+            "handle_gap": 9
+          },
+          {
+            "side": "Under",
+            "team": "",
+            "point": 8.0,
+            "price": -102,
+            "bets_pct": 50,
+            "handle_pct": 41,
+            "handle_gap": -9
+          }
+        ],
+        "run_line": [
+          {
+            "side": "TEX",
+            "team": "TEX",
+            "point": -1.5,
+            "price": 163,
+            "bets_pct": 50,
+            "handle_pct": 100,
+            "handle_gap": 50
+          },
+          {
+            "side": "NYM",
+            "team": "NYM",
+            "point": 1.5,
+            "price": -199,
+            "bets_pct": 50,
+            "handle_pct": 0,
+            "handle_gap": -50
+          }
+        ]
+      }
+    },
+    "ARI@COL": {
+      "away_abbr": "ARI",
+      "home_abbr": "COL",
+      "away_name": "ARI Diamondbacks",
+      "home_name": "COL Rockies",
+      "time_raw": "1:10 pm",
+      "handle_split": {
+        "away_pct": 87,
+        "home_pct": 13
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "side": "COL",
+            "team": "COL",
+            "point": null,
+            "price": 158,
+            "bets_pct": 16,
+            "handle_pct": 13,
+            "handle_gap": -3
+          },
+          {
+            "side": "ARI",
+            "team": "ARI",
+            "point": null,
+            "price": -192,
+            "bets_pct": 84,
+            "handle_pct": 87,
+            "handle_gap": 3
+          }
+        ],
+        "total": [
+          {
+            "side": "Over",
+            "team": "",
+            "point": 10.0,
+            "price": -115,
+            "bets_pct": 60,
+            "handle_pct": 91,
+            "handle_gap": 31
+          },
+          {
+            "side": "Under",
+            "team": "",
+            "point": 10.0,
+            "price": -105,
+            "bets_pct": 40,
+            "handle_pct": 9,
+            "handle_gap": -31
+          }
+        ],
+        "run_line": [
+          {
+            "side": "COL",
+            "team": "COL",
+            "point": 1.5,
+            "price": -101,
+            "bets_pct": 33,
+            "handle_pct": 4,
+            "handle_gap": -29
+          },
+          {
+            "side": "ARI",
+            "team": "ARI",
+            "point": -1.5,
+            "price": -119,
+            "bets_pct": 67,
+            "handle_pct": 96,
+            "handle_gap": 29
           }
         ]
       }
@@ -301,10 +374,10 @@
       "home_abbr": "PHI",
       "away_name": "MIL Brewers",
       "home_name": "PHI Phillies",
-      "time_raw": "4:40 pm",
+      "time_raw": "4:05 pm",
       "handle_split": {
-        "away_pct": 86,
-        "home_pct": 14
+        "away_pct": 31,
+        "home_pct": 69
       },
       "markets": {
         "moneyline": [
@@ -312,39 +385,39 @@
             "side": "PHI",
             "team": "PHI",
             "point": null,
-            "price": 120,
-            "bets_pct": 25,
-            "handle_pct": 14,
-            "handle_gap": -11
+            "price": -121,
+            "bets_pct": 39,
+            "handle_pct": 69,
+            "handle_gap": 30
           },
           {
             "side": "MIL",
             "team": "MIL",
             "point": null,
-            "price": -145,
-            "bets_pct": 75,
-            "handle_pct": 86,
-            "handle_gap": 11
+            "price": 100,
+            "bets_pct": 61,
+            "handle_pct": 31,
+            "handle_gap": -30
           }
         ],
         "total": [
           {
             "side": "Over",
             "team": "",
-            "point": 7.5,
+            "point": 8.5,
             "price": -105,
-            "bets_pct": 100,
-            "handle_pct": 100,
-            "handle_gap": 0
+            "bets_pct": 50,
+            "handle_pct": 32,
+            "handle_gap": -18
           },
           {
             "side": "Under",
             "team": "",
-            "point": 7.5,
+            "point": 8.5,
             "price": -115,
-            "bets_pct": 0,
-            "handle_pct": 0,
-            "handle_gap": 0
+            "bets_pct": 50,
+            "handle_pct": 68,
+            "handle_gap": 18
           }
         ],
         "run_line": [
@@ -352,19 +425,72 @@
             "side": "PHI",
             "team": "PHI",
             "point": 1.5,
-            "price": -144,
-            "bets_pct": 67,
-            "handle_pct": 13,
-            "handle_gap": -54
+            "price": -202,
+            "bets_pct": 100,
+            "handle_pct": 100,
+            "handle_gap": 0
           },
           {
             "side": "MIL",
             "team": "MIL",
             "point": -1.5,
-            "price": 120,
-            "bets_pct": 33,
-            "handle_pct": 87,
-            "handle_gap": 54
+            "price": 166,
+            "bets_pct": 0,
+            "handle_pct": 0,
+            "handle_gap": 0
+          }
+        ]
+      }
+    },
+    "CLE@BOS": {
+      "away_abbr": "CLE",
+      "home_abbr": "BOS",
+      "away_name": "CLE Guardians",
+      "home_name": "BOS Red Sox",
+      "time_raw": "4:45 pm",
+      "handle_split": {
+        "away_pct": 1,
+        "home_pct": 99
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "side": "BOS",
+            "team": "BOS",
+            "point": null,
+            "price": -143,
+            "bets_pct": 88,
+            "handle_pct": 99,
+            "handle_gap": 11
+          },
+          {
+            "side": "CLE",
+            "team": "CLE",
+            "point": null,
+            "price": 119,
+            "bets_pct": 12,
+            "handle_pct": 1,
+            "handle_gap": -11
+          }
+        ],
+        "total": [
+          {
+            "side": "Over",
+            "team": "",
+            "point": 7.5,
+            "price": -102,
+            "bets_pct": 44,
+            "handle_pct": 100,
+            "handle_gap": 56
+          },
+          {
+            "side": "Under",
+            "team": "",
+            "point": 7.5,
+            "price": -118,
+            "bets_pct": 56,
+            "handle_pct": 0,
+            "handle_gap": -56
           }
         ]
       }
@@ -376,8 +502,8 @@
       "home_name": "NY Yankees",
       "time_raw": "5:05 pm",
       "handle_split": {
-        "away_pct": 6,
-        "home_pct": 94
+        "away_pct": 18,
+        "home_pct": 82
       },
       "markets": {
         "moneyline": [
@@ -385,132 +511,59 @@
             "side": "NYY",
             "team": "NYY",
             "point": null,
-            "price": -158,
-            "bets_pct": 91,
-            "handle_pct": 94,
-            "handle_gap": 3
-          },
-          {
-            "side": "TB",
-            "team": "TB",
-            "point": null,
-            "price": 131,
-            "bets_pct": 9,
-            "handle_pct": 6,
-            "handle_gap": -3
-          }
-        ],
-        "total": [
-          {
-            "side": "Over",
-            "team": "",
-            "point": 7.0,
-            "price": -105,
-            "bets_pct": 60,
-            "handle_pct": 94,
-            "handle_gap": 34
-          },
-          {
-            "side": "Under",
-            "team": "",
-            "point": 7.0,
-            "price": -114,
-            "bets_pct": 40,
-            "handle_pct": 6,
-            "handle_gap": -34
-          }
-        ],
-        "run_line": [
-          {
-            "side": "NYY",
-            "team": "NYY",
-            "point": -1.5,
-            "price": 148,
-            "bets_pct": 31,
-            "handle_pct": 25,
-            "handle_gap": -6
-          },
-          {
-            "side": "TB",
-            "team": "TB",
-            "point": 1.5,
-            "price": -180,
-            "bets_pct": 69,
-            "handle_pct": 75,
+            "price": -156,
+            "bets_pct": 76,
+            "handle_pct": 82,
             "handle_gap": 6
-          }
-        ]
-      }
-    },
-    "CLE@BOS": {
-      "away_abbr": "CLE",
-      "home_abbr": "BOS",
-      "away_name": "CLE Guardians",
-      "home_name": "BOS Red Sox",
-      "time_raw": "5:10 pm",
-      "handle_split": {
-        "away_pct": 10,
-        "home_pct": 90
-      },
-      "markets": {
-        "moneyline": [
-          {
-            "side": "BOS",
-            "team": "BOS",
-            "point": null,
-            "price": -136,
-            "bets_pct": 42,
-            "handle_pct": 90,
-            "handle_gap": 48
           },
           {
-            "side": "CLE",
-            "team": "CLE",
+            "side": "TB",
+            "team": "TB",
             "point": null,
-            "price": 113,
-            "bets_pct": 58,
-            "handle_pct": 10,
-            "handle_gap": -48
+            "price": 129,
+            "bets_pct": 24,
+            "handle_pct": 18,
+            "handle_gap": -6
           }
         ],
         "total": [
           {
             "side": "Over",
             "team": "",
-            "point": 7.0,
-            "price": -117,
-            "bets_pct": 82,
-            "handle_pct": 95,
-            "handle_gap": 13
+            "point": 6.5,
+            "price": -115,
+            "bets_pct": 67,
+            "handle_pct": 78,
+            "handle_gap": 11
           },
           {
             "side": "Under",
             "team": "",
-            "point": 7.0,
-            "price": -103,
-            "bets_pct": 18,
-            "handle_pct": 5,
-            "handle_gap": -13
+            "point": 6.5,
+            "price": -104,
+            "bets_pct": 33,
+            "handle_pct": 22,
+            "handle_gap": -11
           }
         ],
         "run_line": [
           {
-            "side": "BOS",
-            "team": "BOS",
+            "side": "NYY",
+            "team": "NYY",
             "point": -1.5,
-            "price": 162,
-            "bets_pct": 41,
-            "handle_pct": 90,
-            "handle_gap": 49
+            "price": 153,
+            "bets_pct": 100,
+            "handle_pct": 100,
+            "handle_gap": 0
           },
           {
-            "side": "CLE",
-            "team": "CLE",
+            "side": "TB",
+            "team": "TB",
             "point": 1.5,
-            "price": -198,
-            "bets_pct": 59,
-            "handle_pct": 10,
-            "handle_gap": -49
+            "price": -186,
+            "bets_pct": 0,
+            "handle_pct": 0,
+            "handle_gap": 0
           }
         ]
       }
@@ -522,8 +575,8 @@
       "home_name": "ATL Braves",
       "time_raw": "5:15 pm",
       "handle_split": {
-        "away_pct": 11,
-        "home_pct": 89
+        "away_pct": 75,
+        "home_pct": 25
       },
       "markets": {
         "moneyline": [
@@ -531,18 +584,164 @@
             "side": "ATL",
             "team": "ATL",
             "point": null,
-            "price": -263,
-            "bets_pct": 92,
-            "handle_pct": 89,
-            "handle_gap": -3
+            "price": -225,
+            "bets_pct": 64,
+            "handle_pct": 25,
+            "handle_gap": -39
           },
           {
             "side": "CIN",
             "team": "CIN",
             "point": null,
-            "price": 211,
-            "bets_pct": 8,
+            "price": 183,
+            "bets_pct": 36,
+            "handle_pct": 75,
+            "handle_gap": 39
+          }
+        ],
+        "total": [
+          {
+            "side": "Over",
+            "team": "",
+            "point": 7.5,
+            "price": -112,
+            "bets_pct": 50,
+            "handle_pct": 98,
+            "handle_gap": 48
+          },
+          {
+            "side": "Under",
+            "team": "",
+            "point": 7.5,
+            "price": -108,
+            "bets_pct": 50,
+            "handle_pct": 2,
+            "handle_gap": -48
+          }
+        ],
+        "run_line": [
+          {
+            "side": "ATL",
+            "team": "ATL",
+            "point": -1.5,
+            "price": 100,
+            "bets_pct": 50,
+            "handle_pct": 89,
+            "handle_gap": 39
+          },
+          {
+            "side": "CIN",
+            "team": "CIN",
+            "point": 1.5,
+            "price": -120,
+            "bets_pct": 50,
             "handle_pct": 11,
+            "handle_gap": -39
+          }
+        ]
+      }
+    },
+    "LAA@SEA": {
+      "away_abbr": "LAA",
+      "home_abbr": "SEA",
+      "away_name": "LA Angels",
+      "home_name": "SEA Mariners",
+      "time_raw": "7:40 pm",
+      "handle_split": {
+        "away_pct": 4,
+        "home_pct": 96
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "side": "SEA",
+            "team": "SEA",
+            "point": null,
+            "price": -199,
+            "bets_pct": 90,
+            "handle_pct": 96,
+            "handle_gap": 6
+          },
+          {
+            "side": "LAA",
+            "team": "LAA",
+            "point": null,
+            "price": 163,
+            "bets_pct": 10,
+            "handle_pct": 4,
+            "handle_gap": -6
+          }
+        ],
+        "total": [
+          {
+            "side": "Over",
+            "team": "",
+            "point": 7.0,
+            "price": -120,
+            "bets_pct": 100,
+            "handle_pct": 100,
+            "handle_gap": 0
+          },
+          {
+            "side": "Under",
+            "team": "",
+            "point": 7.0,
+            "price": 100,
+            "bets_pct": 0,
+            "handle_pct": 0,
+            "handle_gap": 0
+          }
+        ],
+        "run_line": [
+          {
+            "side": "SEA",
+            "team": "SEA",
+            "point": -1.5,
+            "price": 113,
+            "bets_pct": 100,
+            "handle_pct": 100,
+            "handle_gap": 0
+          },
+          {
+            "side": "LAA",
+            "team": "LAA",
+            "point": 1.5,
+            "price": -136,
+            "bets_pct": 0,
+            "handle_pct": 0,
+            "handle_gap": 0
+          }
+        ]
+      }
+    },
+    "HOU@ATH": {
+      "away_abbr": "HOU",
+      "home_abbr": "ATH",
+      "away_name": "HOU Astros",
+      "home_name": "Athletics",
+      "time_raw": "7:40 pm",
+      "handle_split": {
+        "away_pct": 98,
+        "home_pct": 2
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "side": "ATH",
+            "team": "ATH",
+            "point": null,
+            "price": 134,
+            "bets_pct": 5,
+            "handle_pct": 2,
+            "handle_gap": -3
+          },
+          {
+            "side": "HOU",
+            "team": "HOU",
+            "point": null,
+            "price": -163,
+            "bets_pct": 95,
+            "handle_pct": 98,
             "handle_gap": 3
           }
         ],
@@ -550,405 +749,40 @@
           {
             "side": "Over",
             "team": "",
-            "point": 7.5,
-            "price": 100,
-            "bets_pct": 14,
-            "handle_pct": 54,
-            "handle_gap": 40
-          },
-          {
-            "side": "Under",
-            "team": "",
-            "point": 7.5,
-            "price": -120,
-            "bets_pct": 86,
-            "handle_pct": 46,
-            "handle_gap": -40
-          }
-        ],
-        "run_line": [
-          {
-            "side": "ATL",
-            "team": "ATL",
-            "point": -1.5,
-            "price": -105,
-            "bets_pct": 67,
-            "handle_pct": 79,
-            "handle_gap": 12
-          },
-          {
-            "side": "CIN",
-            "team": "CIN",
-            "point": 1.5,
-            "price": -114,
-            "bets_pct": 33,
-            "handle_pct": 21,
-            "handle_gap": -12
-          }
-        ]
-      }
-    },
-    "MIA@CHC": {
-      "away_abbr": "MIA",
-      "home_abbr": "CHC",
-      "away_name": "MIA Marlins",
-      "home_name": "CHI Cubs",
-      "time_raw": "5:40 pm",
-      "handle_split": {
-        "away_pct": 3,
-        "home_pct": 97
-      },
-      "markets": {
-        "moneyline": [
-          {
-            "side": "CHC",
-            "team": "CHC",
-            "point": null,
-            "price": -175,
-            "bets_pct": 96,
-            "handle_pct": 97,
-            "handle_gap": 1
-          },
-          {
-            "side": "MIA",
-            "team": "MIA",
-            "point": null,
-            "price": 144,
-            "bets_pct": 4,
-            "handle_pct": 3,
-            "handle_gap": -1
-          }
-        ],
-        "total": [
-          {
-            "side": "Over",
-            "team": "",
-            "point": 7.0,
-            "price": -107,
-            "bets_pct": 80,
-            "handle_pct": 100,
-            "handle_gap": 20
-          },
-          {
-            "side": "Under",
-            "team": "",
-            "point": 7.0,
-            "price": -112,
-            "bets_pct": 20,
-            "handle_pct": 0,
-            "handle_gap": -20
-          }
-        ],
-        "run_line": [
-          {
-            "side": "CHC",
-            "team": "CHC",
-            "point": -1.5,
-            "price": 129,
-            "bets_pct": 45,
-            "handle_pct": 89,
-            "handle_gap": 44
-          },
-          {
-            "side": "MIA",
-            "team": "MIA",
-            "point": 1.5,
-            "price": -156,
-            "bets_pct": 55,
-            "handle_pct": 11,
-            "handle_gap": -44
-          }
-        ]
-      }
-    },
-    "CHW@KC": {
-      "away_abbr": "CHW",
-      "home_abbr": "KC",
-      "away_name": "CHI White Sox",
-      "home_name": "KC Royals",
-      "time_raw": "5:40 pm",
-      "handle_split": {
-        "away_pct": 97,
-        "home_pct": 3
-      },
-      "markets": {
-        "moneyline": [
-          {
-            "side": "KC",
-            "team": "KC",
-            "point": null,
-            "price": -102,
-            "bets_pct": 24,
-            "handle_pct": 3,
-            "handle_gap": -21
-          },
-          {
-            "side": "CHW",
-            "team": "CHW",
-            "point": null,
-            "price": -118,
-            "bets_pct": 76,
-            "handle_pct": 97,
-            "handle_gap": 21
-          }
-        ],
-        "total": [
-          {
-            "side": "Over",
-            "team": "",
-            "point": 8.5,
-            "price": -109,
-            "bets_pct": 17,
-            "handle_pct": 77,
-            "handle_gap": 60
-          },
-          {
-            "side": "Under",
-            "team": "",
-            "point": 8.5,
-            "price": -110,
-            "bets_pct": 83,
-            "handle_pct": 23,
-            "handle_gap": -60
-          }
-        ],
-        "run_line": [
-          {
-            "side": "KC",
-            "team": "KC",
-            "point": 1.5,
-            "price": -170,
-            "bets_pct": 65,
-            "handle_pct": 7,
-            "handle_gap": -58
-          },
-          {
-            "side": "CHW",
-            "team": "CHW",
-            "point": -1.5,
-            "price": 141,
-            "bets_pct": 35,
-            "handle_pct": 93,
-            "handle_gap": 58
-          }
-        ]
-      }
-    },
-    "NYM@TEX": {
-      "away_abbr": "NYM",
-      "home_abbr": "TEX",
-      "away_name": "NY Mets",
-      "home_name": "TEX Rangers",
-      "time_raw": "6:05 pm",
-      "handle_split": {
-        "away_pct": 90,
-        "home_pct": 10
-      },
-      "markets": {
-        "moneyline": [
-          {
-            "side": "TEX",
-            "team": "TEX",
-            "point": null,
-            "price": -112,
-            "bets_pct": 48,
-            "handle_pct": 10,
-            "handle_gap": -38
-          },
-          {
-            "side": "NYM",
-            "team": "NYM",
-            "point": null,
-            "price": -108,
-            "bets_pct": 52,
-            "handle_pct": 90,
-            "handle_gap": 38
-          }
-        ],
-        "total": [
-          {
-            "side": "Over",
-            "team": "",
-            "point": 7.5,
-            "price": -110,
-            "bets_pct": 0,
-            "handle_pct": 0,
-            "handle_gap": 0
-          },
-          {
-            "side": "Under",
-            "team": "",
-            "point": 7.5,
-            "price": -110,
-            "bets_pct": 100,
-            "handle_pct": 100,
-            "handle_gap": 0
-          }
-        ],
-        "run_line": [
-          {
-            "side": "TEX",
-            "team": "TEX",
-            "point": 1.5,
-            "price": -190,
-            "bets_pct": 100,
-            "handle_pct": 100,
-            "handle_gap": 0
-          },
-          {
-            "side": "NYM",
-            "team": "NYM",
-            "point": -1.5,
-            "price": 156,
-            "bets_pct": 0,
-            "handle_pct": 0,
-            "handle_gap": 0
-          }
-        ]
-      }
-    },
-    "ARI@COL": {
-      "away_abbr": "ARI",
-      "home_abbr": "COL",
-      "away_name": "ARI Diamondbacks",
-      "home_name": "COL Rockies",
-      "time_raw": "6:40 pm",
-      "handle_split": {
-        "away_pct": 61,
-        "home_pct": 39
-      },
-      "markets": {
-        "moneyline": [
-          {
-            "side": "COL",
-            "team": "COL",
-            "point": null,
-            "price": 134,
-            "bets_pct": 14,
-            "handle_pct": 39,
+            "point": 11.0,
+            "price": -116,
+            "bets_pct": 50,
+            "handle_pct": 75,
             "handle_gap": 25
           },
           {
-            "side": "ARI",
-            "team": "ARI",
-            "point": null,
-            "price": -162,
-            "bets_pct": 86,
-            "handle_pct": 61,
+            "side": "Under",
+            "team": "",
+            "point": 11.0,
+            "price": -104,
+            "bets_pct": 50,
+            "handle_pct": 25,
             "handle_gap": -25
           }
         ],
-        "total": [
-          {
-            "side": "Over",
-            "team": "",
-            "point": 11.0,
-            "price": -111,
-            "bets_pct": 80,
-            "handle_pct": 100,
-            "handle_gap": 20
-          },
-          {
-            "side": "Under",
-            "team": "",
-            "point": 11.0,
-            "price": -108,
-            "bets_pct": 20,
-            "handle_pct": 0,
-            "handle_gap": -20
-          }
-        ],
         "run_line": [
           {
-            "side": "COL",
-            "team": "COL",
+            "side": "ATH",
+            "team": "ATH",
             "point": 1.5,
-            "price": -114,
-            "bets_pct": 67,
-            "handle_pct": 68,
-            "handle_gap": 1
+            "price": -115,
+            "bets_pct": 0,
+            "handle_pct": 0,
+            "handle_gap": 0
           },
           {
-            "side": "ARI",
-            "team": "ARI",
+            "side": "HOU",
+            "team": "HOU",
             "point": -1.5,
             "price": -105,
-            "bets_pct": 33,
-            "handle_pct": 32,
-            "handle_gap": -1
-          }
-        ]
-      }
-    },
-    "LAA@ATH": {
-      "away_abbr": "LAA",
-      "home_abbr": "ATH",
-      "away_name": "LA Angels",
-      "home_name": "Athletics",
-      "time_raw": "7:40 pm",
-      "handle_split": {
-        "away_pct": 87,
-        "home_pct": 13
-      },
-      "markets": {
-        "moneyline": [
-          {
-            "side": "ATH",
-            "team": "ATH",
-            "point": null,
-            "price": 109,
-            "bets_pct": 19,
-            "handle_pct": 13,
-            "handle_gap": -6
-          },
-          {
-            "side": "LAA",
-            "team": "LAA",
-            "point": null,
-            "price": -131,
-            "bets_pct": 81,
-            "handle_pct": 87,
-            "handle_gap": 6
-          }
-        ],
-        "total": [
-          {
-            "side": "Over",
-            "team": "",
-            "point": 9.5,
-            "price": -108,
-            "bets_pct": 25,
-            "handle_pct": 24,
-            "handle_gap": -1
-          },
-          {
-            "side": "Under",
-            "team": "",
-            "point": 9.5,
-            "price": -112,
-            "bets_pct": 75,
-            "handle_pct": 76,
-            "handle_gap": 1
-          }
-        ],
-        "run_line": [
-          {
-            "side": "ATH",
-            "team": "ATH",
-            "point": 1.5,
-            "price": -143,
-            "bets_pct": 87,
-            "handle_pct": 29,
-            "handle_gap": -58
-          },
-          {
-            "side": "LAA",
-            "team": "LAA",
-            "point": -1.5,
-            "price": 118,
-            "bets_pct": 13,
-            "handle_pct": 71,
-            "handle_gap": 58
+            "bets_pct": 100,
+            "handle_pct": 100,
+            "handle_gap": 0
           }
         ]
       }
@@ -960,8 +794,8 @@
       "home_name": "LA Dodgers",
       "time_raw": "8:10 pm",
       "handle_split": {
-        "away_pct": 1,
-        "home_pct": 99
+        "away_pct": 0,
+        "home_pct": 100
       },
       "markets": {
         "moneyline": [
@@ -969,132 +803,59 @@
             "side": "LAD",
             "team": "LAD",
             "point": null,
-            "price": -224,
-            "bets_pct": 95,
-            "handle_pct": 99,
-            "handle_gap": 4
+            "price": -175,
+            "bets_pct": 78,
+            "handle_pct": 100,
+            "handle_gap": 22
           },
           {
             "side": "SD",
             "team": "SD",
             "point": null,
-            "price": 182,
-            "bets_pct": 5,
-            "handle_pct": 1,
-            "handle_gap": -4
-          }
-        ],
-        "total": [
-          {
-            "side": "Over",
-            "team": "",
-            "point": 8.0,
-            "price": -114,
-            "bets_pct": 33,
-            "handle_pct": 100,
-            "handle_gap": 67
-          },
-          {
-            "side": "Under",
-            "team": "",
-            "point": 8.0,
-            "price": -105,
-            "bets_pct": 67,
-            "handle_pct": 0,
-            "handle_gap": -67
-          }
-        ],
-        "run_line": [
-          {
-            "side": "LAD",
-            "team": "LAD",
-            "point": -1.5,
-            "price": 100,
-            "bets_pct": 63,
-            "handle_pct": 81,
-            "handle_gap": 18
-          },
-          {
-            "side": "SD",
-            "team": "SD",
-            "point": 1.5,
-            "price": -120,
-            "bets_pct": 38,
-            "handle_pct": 19,
-            "handle_gap": -19
-          }
-        ]
-      }
-    },
-    "HOU@SEA": {
-      "away_abbr": "HOU",
-      "home_abbr": "SEA",
-      "away_name": "HOU Astros",
-      "home_name": "SEA Mariners",
-      "time_raw": "8:10 pm",
-      "handle_split": {
-        "away_pct": 88,
-        "home_pct": 12
-      },
-      "markets": {
-        "moneyline": [
-          {
-            "side": "SEA",
-            "team": "SEA",
-            "point": null,
-            "price": -144,
-            "bets_pct": 72,
-            "handle_pct": 12,
-            "handle_gap": -60
-          },
-          {
-            "side": "HOU",
-            "team": "HOU",
-            "point": null,
-            "price": 119,
-            "bets_pct": 28,
-            "handle_pct": 88,
-            "handle_gap": 60
-          }
-        ],
-        "total": [
-          {
-            "side": "Over",
-            "team": "",
-            "point": 7.5,
-            "price": -118,
-            "bets_pct": 50,
-            "handle_pct": 100,
-            "handle_gap": 50
-          },
-          {
-            "side": "Under",
-            "team": "",
-            "point": 7.5,
-            "price": -102,
-            "bets_pct": 50,
-            "handle_pct": 0,
-            "handle_gap": -50
-          }
-        ],
-        "run_line": [
-          {
-            "side": "SEA",
-            "team": "SEA",
-            "point": -1.5,
             "price": 144,
-            "bets_pct": 0,
+            "bets_pct": 22,
             "handle_pct": 0,
-            "handle_gap": 0
+            "handle_gap": -22
+          }
+        ],
+        "total": [
+          {
+            "side": "Over",
+            "team": "",
+            "point": 7.5,
+            "price": -110,
+            "bets_pct": 67,
+            "handle_pct": 99,
+            "handle_gap": 32
           },
           {
-            "side": "HOU",
-            "team": "HOU",
+            "side": "Under",
+            "team": "",
+            "point": 7.5,
+            "price": -110,
+            "bets_pct": 33,
+            "handle_pct": 1,
+            "handle_gap": -32
+          }
+        ],
+        "run_line": [
+          {
+            "side": "LAD",
+            "team": "LAD",
+            "point": -1.5,
+            "price": 124,
+            "bets_pct": 25,
+            "handle_pct": 55,
+            "handle_gap": 30
+          },
+          {
+            "side": "SD",
+            "team": "SD",
             "point": 1.5,
-            "price": -174,
-            "bets_pct": 100,
-            "handle_pct": 100,
-            "handle_gap": 0
+            "price": -149,
+            "bets_pct": 75,
+            "handle_pct": 45,
+            "handle_gap": -30
           }
         ]
       }
