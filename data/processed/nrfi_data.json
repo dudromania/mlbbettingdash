@@ -47,6 +47,29 @@
   },
   {
     "date": "2026-09-24",
+    "game_time": "11:35 AM CT",
+    "home_abbr": "PIT",
+    "away_abbr": "STL",
+    "home_sp": "Paul Skenes",
+    "away_sp": "Kyle Leahy",
+    "nrfi_prob": 37.2,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Paul Skenes",
+      "first_inning": {},
+      "season_era": 3.85
+    },
+    "away_pitcher": {
+      "name": "Kyle Leahy",
+      "first_inning": {},
+      "season_era": 3.66
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-24",
     "game_time": "1:20 PM CT",
     "home_abbr": "CHC",
     "away_abbr": "MIA",
@@ -64,29 +87,6 @@
       "name": "Tyler Phillips",
       "first_inning": {},
       "season_era": 3.45
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-24",
-    "game_time": "11:35 AM CT",
-    "home_abbr": "PIT",
-    "away_abbr": "STL",
-    "home_sp": "Paul Skenes",
-    "away_sp": "Kyle Leahy",
-    "nrfi_prob": 37.0,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Paul Skenes",
-      "first_inning": {},
-      "season_era": 3.91
-    },
-    "away_pitcher": {
-      "name": "Kyle Leahy",
-      "first_inning": {},
-      "season_era": 3.65
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -258,8 +258,8 @@
     "home_abbr": "PHI",
     "away_abbr": "MIL",
     "home_sp": "Andrew Painter",
-    "away_sp": "TBD",
-    "nrfi_prob": 30.2,
+    "away_sp": "Shane Drohan",
+    "nrfi_prob": 29.4,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
@@ -268,9 +268,9 @@
       "season_era": 5.59
     },
     "away_pitcher": {
-      "name": "Robert Gasser",
+      "name": "Shane Drohan",
       "first_inning": {},
-      "season_era": 4.01
+      "season_era": 4.26
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
