@@ -327,8 +327,8 @@
     "home_abbr": "NYY",
     "away_abbr": "BAL",
     "home_sp": "TBD",
-    "away_sp": "Brandon Young",
-    "nrfi_prob": 31.6,
+    "away_sp": "Trevor Rogers",
+    "nrfi_prob": 30.0,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
@@ -337,9 +337,9 @@
       "season_era": 8.22
     },
     "away_pitcher": {
-      "name": "Brandon Young",
+      "name": "Trevor Rogers",
       "first_inning": {},
-      "season_era": 3.62
+      "season_era": 4.07
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
