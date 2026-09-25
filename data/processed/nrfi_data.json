@@ -305,18 +305,18 @@
     "away_abbr": "BAL",
     "home_sp": "Brendan Beck",
     "away_sp": "Trevor Rogers",
-    "nrfi_prob": 30.0,
+    "nrfi_prob": 30.3,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Brendan Beck",
       "first_inning": {},
-      "season_era": 8.22
+      "season_era": 7.59
     },
     "away_pitcher": {
       "name": "Trevor Rogers",
       "first_inning": {},
-      "season_era": 4.07
+      "season_era": 4.0
     },
     "away_batting_1st": {},
     "home_batting_1st": {}

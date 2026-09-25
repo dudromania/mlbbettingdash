@@ -1,6 +1,6 @@
 [
   {
-    "id": 2788,
+    "id": 2790,
     "game_date": "2026-09-25",
     "game_pick_id": null,
     "player_name": "Sean Burke",
@@ -23,11 +23,11 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-09-25 18:11:24",
+    "created_at": "2026-09-25 20:12:12",
     "graded_at": null
   },
   {
-    "id": 2789,
+    "id": 2791,
     "game_date": "2026-09-25",
     "game_pick_id": null,
     "player_name": "Cristopher S\u00e1nchez",
@@ -50,7 +50,7 @@
     "actual_value": null,
     "result": null,
     "pnl": null,
-    "created_at": "2026-09-25 18:11:24",
+    "created_at": "2026-09-25 20:12:12",
     "graded_at": null
   },
   {
