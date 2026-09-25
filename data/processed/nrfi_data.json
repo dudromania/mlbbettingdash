@@ -6,18 +6,18 @@
     "away_abbr": "CHC",
     "home_sp": "Alec Gamboa",
     "away_sp": "Clay Holmes",
-    "nrfi_prob": 50.4,
+    "nrfi_prob": 47.5,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Alec Gamboa",
       "first_inning": {},
-      "season_era": 1.16
+      "season_era": 1.91
     },
     "away_pitcher": {
       "name": "Clay Holmes",
       "first_inning": {},
-      "season_era": 3.25
+      "season_era": 3.17
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -326,7 +326,7 @@
     "game_time": "3:05 PM CT",
     "home_abbr": "NYY",
     "away_abbr": "BAL",
-    "home_sp": "TBD",
+    "home_sp": "Brendan Beck",
     "away_sp": "Trevor Rogers",
     "nrfi_prob": 30.0,
     "label": "LEAN YRFI",
