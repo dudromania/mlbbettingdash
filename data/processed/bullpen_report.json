@@ -240,36 +240,6 @@
     "fatigue": "TIRED"
   },
   {
-    "team": "CHC",
-    "era": 4.14,
-    "whip": 1.26,
-    "k9": 7.84,
-    "bb9": 3.1,
-    "era_vs_lg": 0.04,
-    "whip_vs_lg": -0.02,
-    "k9_vs_lg": -0.76,
-    "quality": "AVG",
-    "innings_3d": 12.3,
-    "pitchers_3d": 9,
-    "heavy": 0,
-    "fatigue": "NORMAL"
-  },
-  {
-    "team": "BOS",
-    "era": 3.56,
-    "whip": 1.23,
-    "k9": 8.76,
-    "bb9": 2.94,
-    "era_vs_lg": -0.54,
-    "whip_vs_lg": -0.05,
-    "k9_vs_lg": 0.16,
-    "quality": "GOOD",
-    "innings_3d": 10.3,
-    "pitchers_3d": 8,
-    "heavy": 0,
-    "fatigue": "NORMAL"
-  },
-  {
     "team": "SEA",
     "era": 4.21,
     "whip": 1.27,
@@ -375,6 +345,21 @@
     "fatigue": "HEAVY"
   },
   {
+    "team": "CHC",
+    "era": 4.14,
+    "whip": 1.26,
+    "k9": 7.82,
+    "bb9": 3.1,
+    "era_vs_lg": 0.04,
+    "whip_vs_lg": -0.02,
+    "k9_vs_lg": -0.78,
+    "quality": "AVG",
+    "innings_3d": 16.0,
+    "pitchers_3d": 9,
+    "heavy": 1,
+    "fatigue": "HEAVY"
+  },
+  {
     "team": "CLE",
     "era": 3.73,
     "whip": 1.26,
@@ -446,6 +431,21 @@
     "quality": "GOOD",
     "innings_3d": 16.3,
     "pitchers_3d": 9,
+    "heavy": 1,
+    "fatigue": "HEAVY"
+  },
+  {
+    "team": "BOS",
+    "era": 3.54,
+    "whip": 1.23,
+    "k9": 8.76,
+    "bb9": 2.94,
+    "era_vs_lg": -0.56,
+    "whip_vs_lg": -0.05,
+    "k9_vs_lg": 0.16,
+    "quality": "GOOD",
+    "innings_3d": 17.3,
+    "pitchers_3d": 10,
     "heavy": 1,
     "fatigue": "HEAVY"
   }

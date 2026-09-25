@@ -1,23 +1,23 @@
 [
   {
     "date": "2026-09-25",
-    "game_time": "12:05 PM CT",
-    "home_abbr": "BOS",
-    "away_abbr": "CHC",
-    "home_sp": "Alec Gamboa",
-    "away_sp": "Clay Holmes",
-    "nrfi_prob": 47.5,
+    "game_time": "6:10 PM CT",
+    "home_abbr": "MIA",
+    "away_abbr": "ATL",
+    "home_sp": "Eury P\u00e9rez",
+    "away_sp": "Ray Kerr",
+    "nrfi_prob": 43.4,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
-      "name": "Alec Gamboa",
+      "name": "Eury P\u00e9rez",
       "first_inning": {},
-      "season_era": 1.91
+      "season_era": 4.14
     },
     "away_pitcher": {
-      "name": "Clay Holmes",
+      "name": "Ray Kerr",
       "first_inning": {},
-      "season_era": 3.17
+      "season_era": 1.76
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -87,29 +87,6 @@
       "name": "Reid Detmers",
       "first_inning": {},
       "season_era": 3.47
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-25",
-    "game_time": "6:10 PM CT",
-    "home_abbr": "MIA",
-    "away_abbr": "ATL",
-    "home_sp": "Eury P\u00e9rez",
-    "away_sp": "TBD",
-    "nrfi_prob": 37.1,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Eury P\u00e9rez",
-      "first_inning": {},
-      "season_era": 4.14
-    },
-    "away_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -254,29 +231,6 @@
   },
   {
     "date": "2026-09-25",
-    "game_time": "6:07 PM CT",
-    "home_abbr": "TOR",
-    "away_abbr": "CIN",
-    "home_sp": "TBD",
-    "away_sp": "Nick Lodolo",
-    "nrfi_prob": 33.3,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_pitcher": {
-      "name": "Nick Lodolo",
-      "first_inning": {},
-      "season_era": 5.04
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-25",
     "game_time": "8:40 PM CT",
     "home_abbr": "ATH",
     "away_abbr": "HOU",
@@ -323,6 +277,29 @@
   },
   {
     "date": "2026-09-25",
+    "game_time": "6:07 PM CT",
+    "home_abbr": "TOR",
+    "away_abbr": "CIN",
+    "home_sp": "Jos\u00e9 Soriano",
+    "away_sp": "Nick Lodolo",
+    "nrfi_prob": 32.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Jos\u00e9 Soriano",
+      "first_inning": {},
+      "season_era": 3.72
+    },
+    "away_pitcher": {
+      "name": "Nick Lodolo",
+      "first_inning": {},
+      "season_era": 5.04
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-25",
     "game_time": "3:05 PM CT",
     "home_abbr": "NYY",
     "away_abbr": "BAL",
@@ -340,6 +317,29 @@
       "name": "Trevor Rogers",
       "first_inning": {},
       "season_era": 4.07
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-25",
+    "game_time": "4:35 PM CT",
+    "home_abbr": "BOS",
+    "away_abbr": "CHC",
+    "home_sp": "Brayan Bello",
+    "away_sp": "David Peterson",
+    "nrfi_prob": 29.7,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Brayan Bello",
+      "first_inning": {},
+      "season_era": 4.49
+    },
+    "away_pitcher": {
+      "name": "David Peterson",
+      "first_inning": {},
+      "season_era": 4.96
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
