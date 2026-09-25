@@ -1,110 +1,45 @@
 {
-  "STL@PIT": {
-    "home": [],
-    "away": [
-      {
-        "name": "JJ Wetherholt",
-        "pos": "2B",
-        "bats": "L",
-        "avg": 0.244,
-        "ops": 0.711,
-        "hr": 17
-      },
-      {
-        "name": "Iv\u00e1n Herrera",
-        "pos": "C",
-        "bats": "R",
-        "avg": 0.244,
-        "ops": 0.74,
-        "hr": 18
-      },
-      {
-        "name": "Alec Burleson",
-        "pos": "1B",
-        "bats": "L",
-        "avg": 0.279,
-        "ops": 0.805,
-        "hr": 23
-      },
-      {
-        "name": "Jordan Walker",
-        "pos": "RF",
-        "bats": "R",
-        "avg": 0.273,
-        "ops": 0.8,
-        "hr": 28
-      },
-      {
-        "name": "Leo Bernal",
-        "pos": "DH",
-        "bats": "S",
-        "avg": 0.296,
-        "ops": 0.818,
-        "hr": 4
-      },
-      {
-        "name": "Bryan Torres",
-        "pos": "LF",
-        "bats": "L",
-        "avg": 0.235,
-        "ops": 0.648,
-        "hr": 4
-      },
-      {
-        "name": "Thomas Saggese",
-        "pos": "3B",
-        "bats": "R",
-        "avg": 0.243,
-        "ops": 0.675,
-        "hr": 4
-      },
-      {
-        "name": "Nathan Church",
-        "pos": "CF",
-        "bats": "L",
-        "avg": 0.251,
-        "ops": 0.666,
-        "hr": 10
-      },
-      {
-        "name": "Masyn Winn",
-        "pos": "SS",
-        "bats": "R",
-        "avg": 0.235,
-        "ops": 0.631,
-        "hr": 5
-      }
-    ]
-  },
-  "CHW@KC": {
+  "CHC@BOS": {
     "home": [],
     "away": []
   },
-  "MIA@CHC": {
+  "BAL@NYY": {
     "home": [],
     "away": []
   },
-  "NYM@TEX": {
+  "PIT@DET": {
     "home": [],
     "away": []
   },
-  "ARI@COL": {
+  "TB@PHI": {
     "home": [],
     "away": []
   },
-  "MIL@PHI": {
+  "NYM@WSH": {
     "home": [],
     "away": []
   },
-  "CLE@BOS": {
+  "CIN@TOR": {
     "home": [],
     "away": []
   },
-  "TB@NYY": {
+  "ATL@MIA": {
     "home": [],
     "away": []
   },
-  "CIN@ATL": {
+  "CLE@KC": {
+    "home": [],
+    "away": []
+  },
+  "COL@CHW": {
+    "home": [],
+    "away": []
+  },
+  "STL@MIL": {
+    "home": [],
+    "away": []
+  },
+  "TEX@MIN": {
     "home": [],
     "away": []
   },
@@ -112,11 +47,15 @@
     "home": [],
     "away": []
   },
+  "ARI@SD": {
+    "home": [],
+    "away": []
+  },
   "LAA@SEA": {
     "home": [],
     "away": []
   },
-  "SD@LAD": {
+  "LAD@SF": {
     "home": [],
     "away": []
   }
