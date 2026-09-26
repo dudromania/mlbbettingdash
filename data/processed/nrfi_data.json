@@ -52,18 +52,18 @@
     "away_abbr": "NYM",
     "home_sp": "Connelly Early",
     "away_sp": "Jonah Tong",
-    "nrfi_prob": 36.5,
-    "label": "LEAN YRFI",
+    "nrfi_prob": 38.6,
+    "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Connelly Early",
       "first_inning": {},
-      "season_era": 3.44
+      "season_era": 3.33
     },
     "away_pitcher": {
       "name": "Jonah Tong",
       "first_inning": {},
-      "season_era": 4.21
+      "season_era": 3.82
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -190,18 +190,18 @@
     "away_abbr": "PIT",
     "home_sp": "Justin Verlander",
     "away_sp": "Kirby Yates",
-    "nrfi_prob": 32.6,
+    "nrfi_prob": 33.0,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Justin Verlander",
       "first_inning": {},
-      "season_era": 12.27
+      "season_era": 7.11
     },
     "away_pitcher": {
       "name": "Kirby Yates",
       "first_inning": {},
-      "season_era": 3.32
+      "season_era": 3.19
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
