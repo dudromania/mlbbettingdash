@@ -916,7 +916,7 @@
         "game_id": 824057,
         "date": "2026-09-26",
         "game_time_ct": "6:10 PM CT",
-        "status": "S",
+        "status": "P",
         "home_name": "Kansas City Royals",
         "away_name": "Cleveland Guardians",
         "home_abbr": "KC",
@@ -1391,7 +1391,7 @@
         "game_id": 823407,
         "date": "2026-09-26",
         "game_time_ct": "6:15 PM CT",
-        "status": "S",
+        "status": "P",
         "home_name": "Philadelphia Phillies",
         "away_name": "Tampa Bay Rays",
         "home_abbr": "PHI",
@@ -1682,7 +1682,7 @@
         "game_id": 822759,
         "date": "2026-09-26",
         "game_time_ct": "2:07 PM CT",
-        "status": "P",
+        "status": "I",
         "home_name": "Toronto Blue Jays",
         "away_name": "Cincinnati Reds",
         "home_abbr": "TOR",
@@ -1779,7 +1779,7 @@
         "game_id": 822678,
         "date": "2026-09-26",
         "game_time_ct": "11:35 AM CT",
-        "status": "I",
+        "status": "F",
         "home_name": "Washington Nationals",
         "away_name": "New York Mets",
         "home_abbr": "WSH",
@@ -1790,20 +1790,10 @@
         "home_sp_id": 813349,
         "away_sp": "Jonah Tong",
         "away_sp_id": 804636,
-        "home_score": null,
-        "away_score": null,
+        "home_score": 1,
+        "away_score": 7,
         "venue": "Nationals Park",
-        "prediction": {
-          "predicted_margin": -0.83,
-          "predicted_total": 9.3,
-          "home_win_prob": 0.448,
-          "away_win_prob": 0.552,
-          "spread_confidence": 21,
-          "margin_p25": -3.49,
-          "margin_p75": 1.83,
-          "margin_std": 3.94,
-          "method": "trained_xgboost"
-        }
+        "prediction": null
       },
       {
         "game_id": 822679,
@@ -1837,11 +1827,11 @@
       }
     ],
     "home_wins": 1,
-    "away_wins": 0,
+    "away_wins": 1,
     "series_start": "2026-09-25",
     "series_end": "2026-09-27",
     "total_games": 3,
-    "games_played": 1,
-    "games_remaining": 2
+    "games_played": 2,
+    "games_remaining": 1
   }
 ]
