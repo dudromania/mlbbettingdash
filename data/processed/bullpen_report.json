@@ -45,21 +45,6 @@
     "fatigue": "FRESH"
   },
   {
-    "team": "SF",
-    "era": 4.34,
-    "whip": 1.36,
-    "k9": 7.57,
-    "bb9": 3.74,
-    "era_vs_lg": 0.24,
-    "whip_vs_lg": 0.08,
-    "k9_vs_lg": -1.03,
-    "quality": "AVG",
-    "innings_3d": 7.7,
-    "pitchers_3d": 6,
-    "heavy": 0,
-    "fatigue": "FRESH"
-  },
-  {
     "team": "CIN",
     "era": 4.85,
     "whip": 1.45,
@@ -73,6 +58,21 @@
     "pitchers_3d": 8,
     "heavy": 0,
     "fatigue": "NORMAL"
+  },
+  {
+    "team": "SF",
+    "era": 4.1,
+    "whip": 1.28,
+    "k9": 8.6,
+    "bb9": 3.2,
+    "era_vs_lg": 0.0,
+    "whip_vs_lg": 0.0,
+    "k9_vs_lg": 0.0,
+    "quality": "AVG",
+    "innings_3d": 7.7,
+    "pitchers_3d": 6,
+    "heavy": 0,
+    "fatigue": "FRESH"
   },
   {
     "team": "MIA",
