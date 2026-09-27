@@ -1,6 +1,6 @@
 [
   {
-    "id": 2800,
+    "id": 2802,
     "game_date": "2026-09-26",
     "game_pick_id": null,
     "player_name": "Justin Verlander",
@@ -11,23 +11,23 @@
     "prop_line": 5.5,
     "prop_odds": -213,
     "prop_book": "betonlineag",
-    "predicted_value": 3.5,
-    "predicted_prob_over": 0.142,
-    "edge": 0.177,
+    "predicted_value": 4.2,
+    "predicted_prob_over": 0.247,
+    "edge": 0.073,
     "confidence": null,
-    "player_season_avg": 6.38,
+    "player_season_avg": 7.84,
     "player_last7_avg": null,
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-09-26 18:10:14",
-    "graded_at": null
+    "actual_value": 6.0,
+    "result": "L",
+    "pnl": -100.0,
+    "created_at": "2026-09-26 20:09:35",
+    "graded_at": "2026-09-27 13:00:18"
   },
   {
-    "id": 2799,
+    "id": 2801,
     "game_date": "2026-09-26",
     "game_pick_id": null,
     "player_name": "Blake Snell",
@@ -47,11 +47,11 @@
     "player_last30_avg": null,
     "matchup_factor": null,
     "park_factor": null,
-    "actual_value": null,
-    "result": null,
-    "pnl": null,
-    "created_at": "2026-09-26 18:10:14",
-    "graded_at": null
+    "actual_value": 3.0,
+    "result": "W",
+    "pnl": 88.49557522123895,
+    "created_at": "2026-09-26 20:09:35",
+    "graded_at": "2026-09-27 13:00:18"
   },
   {
     "id": 2792,
