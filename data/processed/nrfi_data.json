@@ -93,29 +93,6 @@
   },
   {
     "date": "2026-09-27",
-    "game_time": "2:05 PM CT",
-    "home_abbr": "BOS",
-    "away_abbr": "CHC",
-    "home_sp": "TBD",
-    "away_sp": "Shota Imanaga",
-    "nrfi_prob": 38.8,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "TBD",
-      "first_inning": {},
-      "season_era": null
-    },
-    "away_pitcher": {
-      "name": "Shota Imanaga",
-      "first_inning": {},
-      "season_era": 3.74
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-27",
     "game_time": "2:10 PM CT",
     "home_abbr": "SD",
     "away_abbr": "AZ",
@@ -143,8 +120,8 @@
     "home_abbr": "SF",
     "away_abbr": "LAD",
     "home_sp": "Carson Seymour",
-    "away_sp": "TBD",
-    "nrfi_prob": 34.7,
+    "away_sp": "Jack Dreyer",
+    "nrfi_prob": 35.5,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
@@ -153,9 +130,9 @@
       "season_era": 4.7
     },
     "away_pitcher": {
-      "name": "TBD",
+      "name": "Jack Dreyer",
       "first_inning": {},
-      "season_era": null
+      "season_era": 3.16
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -179,6 +156,29 @@
       "name": "Yusei Kikuchi",
       "first_inning": {},
       "season_era": 4.88
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-27",
+    "game_time": "2:05 PM CT",
+    "home_abbr": "BOS",
+    "away_abbr": "CHC",
+    "home_sp": "Tanner Houck",
+    "away_sp": "Shota Imanaga",
+    "nrfi_prob": 31.1,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Tanner Houck",
+      "first_inning": {},
+      "season_era": 8.04
+    },
+    "away_pitcher": {
+      "name": "Shota Imanaga",
+      "first_inning": {},
+      "season_era": 3.74
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
