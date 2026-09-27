@@ -2,45 +2,22 @@
   {
     "date": "2026-09-27",
     "game_time": "2:10 PM CT",
-    "home_abbr": "DET",
-    "away_abbr": "PIT",
-    "home_sp": "River Ryan",
-    "away_sp": "Jared Jones",
-    "nrfi_prob": 47.3,
-    "label": "NEUTRAL",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "River Ryan",
-      "first_inning": {},
-      "season_era": 0.0
-    },
-    "away_pitcher": {
-      "name": "Jared Jones",
-      "first_inning": {},
-      "season_era": 3.87
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-27",
-    "game_time": "2:10 PM CT",
     "home_abbr": "MIL",
     "away_abbr": "STL",
     "home_sp": "Jacob Misiorowski",
     "away_sp": "Andre Pallante",
-    "nrfi_prob": 45.6,
+    "nrfi_prob": 45.1,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Jacob Misiorowski",
       "first_inning": {},
-      "season_era": 1.86
+      "season_era": 1.83
     },
     "away_pitcher": {
       "name": "Andre Pallante",
       "first_inning": {},
-      "season_era": 3.61
+      "season_era": 3.73
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -52,18 +29,18 @@
     "away_abbr": "TB",
     "home_sp": "Zack Wheeler",
     "away_sp": "Nick Martinez",
-    "nrfi_prob": 43.6,
+    "nrfi_prob": 43.0,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Zack Wheeler",
       "first_inning": {},
-      "season_era": 3.06
+      "season_era": 3.03
     },
     "away_pitcher": {
       "name": "Nick Martinez",
       "first_inning": {},
-      "season_era": 2.94
+      "season_era": 3.1
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -75,18 +52,18 @@
     "away_abbr": "CLE",
     "home_sp": "Daniel Lynch IV",
     "away_sp": "Parker Messick",
-    "nrfi_prob": 40.3,
+    "nrfi_prob": 40.5,
     "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Daniel Lynch IV",
       "first_inning": {},
-      "season_era": 4.13
+      "season_era": 4.09
     },
     "away_pitcher": {
       "name": "Parker Messick",
       "first_inning": {},
-      "season_era": 2.55
+      "season_era": 2.56
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -98,18 +75,18 @@
     "away_abbr": "AZ",
     "home_sp": "Randy V\u00e1squez",
     "away_sp": "Michael Soroka",
-    "nrfi_prob": 37.9,
-    "label": "LEAN YRFI",
+    "nrfi_prob": 38.1,
+    "label": "NEUTRAL",
     "confidence": "low",
     "home_pitcher": {
       "name": "Randy V\u00e1squez",
       "first_inning": {},
-      "season_era": 4.01
+      "season_era": 3.89
     },
     "away_pitcher": {
       "name": "Michael Soroka",
       "first_inning": {},
-      "season_era": 3.31
+      "season_era": 3.38
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -121,18 +98,41 @@
     "away_abbr": "LAD",
     "home_sp": "Carson Seymour",
     "away_sp": "Jack Dreyer",
-    "nrfi_prob": 35.5,
+    "nrfi_prob": 36.0,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Carson Seymour",
       "first_inning": {},
-      "season_era": 4.7
+      "season_era": 4.55
     },
     "away_pitcher": {
       "name": "Jack Dreyer",
       "first_inning": {},
-      "season_era": 3.16
+      "season_era": 3.2
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-27",
+    "game_time": "2:10 PM CT",
+    "home_abbr": "DET",
+    "away_abbr": "PIT",
+    "home_sp": "River Ryan",
+    "away_sp": "Jared Jones",
+    "nrfi_prob": 35.4,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "River Ryan",
+      "first_inning": {},
+      "season_era": 4.15
+    },
+    "away_pitcher": {
+      "name": "Jared Jones",
+      "first_inning": {},
+      "season_era": 3.79
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -144,41 +144,18 @@
     "away_abbr": "LAA",
     "home_sp": "Logan Gilbert",
     "away_sp": "Yusei Kikuchi",
-    "nrfi_prob": 32.4,
+    "nrfi_prob": 31.8,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Logan Gilbert",
       "first_inning": {},
-      "season_era": 3.81
+      "season_era": 3.75
     },
     "away_pitcher": {
       "name": "Yusei Kikuchi",
       "first_inning": {},
-      "season_era": 4.88
-    },
-    "away_batting_1st": {},
-    "home_batting_1st": {}
-  },
-  {
-    "date": "2026-09-27",
-    "game_time": "2:05 PM CT",
-    "home_abbr": "BOS",
-    "away_abbr": "CHC",
-    "home_sp": "Tanner Houck",
-    "away_sp": "Shota Imanaga",
-    "nrfi_prob": 31.1,
-    "label": "LEAN YRFI",
-    "confidence": "low",
-    "home_pitcher": {
-      "name": "Tanner Houck",
-      "first_inning": {},
-      "season_era": 8.04
-    },
-    "away_pitcher": {
-      "name": "Shota Imanaga",
-      "first_inning": {},
-      "season_era": 3.74
+      "season_era": 5.07
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -190,18 +167,41 @@
     "away_abbr": "ATL",
     "home_sp": "Janson Junk",
     "away_sp": "JR Ritchie",
-    "nrfi_prob": 31.0,
+    "nrfi_prob": 31.5,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Janson Junk",
       "first_inning": {},
-      "season_era": 4.31
+      "season_era": 4.24
     },
     "away_pitcher": {
       "name": "JR Ritchie",
       "first_inning": {},
-      "season_era": 4.79
+      "season_era": 4.71
+    },
+    "away_batting_1st": {},
+    "home_batting_1st": {}
+  },
+  {
+    "date": "2026-09-27",
+    "game_time": "2:05 PM CT",
+    "home_abbr": "BOS",
+    "away_abbr": "CHC",
+    "home_sp": "Tanner Houck",
+    "away_sp": "Shota Imanaga",
+    "nrfi_prob": 31.0,
+    "label": "LEAN YRFI",
+    "confidence": "low",
+    "home_pitcher": {
+      "name": "Tanner Houck",
+      "first_inning": {},
+      "season_era": 9.0
+    },
+    "away_pitcher": {
+      "name": "Shota Imanaga",
+      "first_inning": {},
+      "season_era": 3.77
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -213,18 +213,18 @@
     "away_abbr": "HOU",
     "home_sp": "Seth Johnson",
     "away_sp": "Peter Lambert",
-    "nrfi_prob": 30.7,
+    "nrfi_prob": 30.9,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Seth Johnson",
       "first_inning": {},
-      "season_era": 6.19
+      "season_era": 5.88
     },
     "away_pitcher": {
       "name": "Peter Lambert",
       "first_inning": {},
-      "season_era": 3.87
+      "season_era": 3.82
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -259,18 +259,18 @@
     "away_abbr": "TEX",
     "home_sp": "Dean Kremer",
     "away_sp": "MacKenzie Gore",
-    "nrfi_prob": 29.3,
+    "nrfi_prob": 29.6,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Dean Kremer",
       "first_inning": {},
-      "season_era": 4.97
+      "season_era": 4.9
     },
     "away_pitcher": {
       "name": "MacKenzie Gore",
       "first_inning": {},
-      "season_era": 4.59
+      "season_era": 4.58
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -282,18 +282,18 @@
     "away_abbr": "COL",
     "home_sp": "Anthony Kay",
     "away_sp": "Kyle Freeland",
-    "nrfi_prob": 28.5,
+    "nrfi_prob": 28.6,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Anthony Kay",
       "first_inning": {},
-      "season_era": 4.53
+      "season_era": 4.5
     },
     "away_pitcher": {
       "name": "Kyle Freeland",
       "first_inning": {},
-      "season_era": 6.58
+      "season_era": 6.6
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -305,18 +305,18 @@
     "away_abbr": "NYM",
     "home_sp": "DJ Herz",
     "away_sp": "Sean Manaea",
-    "nrfi_prob": 28.0,
+    "nrfi_prob": 27.6,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "DJ Herz",
       "first_inning": {},
-      "season_era": 9.0
+      "season_era": 10.29
     },
     "away_pitcher": {
       "name": "Sean Manaea",
       "first_inning": {},
-      "season_era": 4.67
+      "season_era": 4.78
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
@@ -328,18 +328,18 @@
     "away_abbr": "CIN",
     "home_sp": "Max Scherzer",
     "away_sp": "Brandon Williamson",
-    "nrfi_prob": 27.2,
+    "nrfi_prob": 26.2,
     "label": "LEAN YRFI",
     "confidence": "low",
     "home_pitcher": {
       "name": "Max Scherzer",
       "first_inning": {},
-      "season_era": 6.14
+      "season_era": 6.02
     },
     "away_pitcher": {
       "name": "Brandon Williamson",
       "first_inning": {},
-      "season_era": 4.89
+      "season_era": 5.19
     },
     "away_batting_1st": {},
     "home_batting_1st": {}
