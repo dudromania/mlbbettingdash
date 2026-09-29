@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-29T08:02:01-05:00",
-  "updated_at": "2026-09-29T08:02:01-05:00",
+  "generated_at": "2026-09-29T11:26:35-05:00",
+  "updated_at": "2026-09-29T11:26:35-05:00",
   "source": "https://cleatz.com/public-betting/mlb/",
   "game_count": 4,
   "games": {
@@ -11,8 +11,8 @@
       "home_name": "ATL Braves",
       "time_raw": "Tue, Sep 29 \u00b7 2:00 pm EDT",
       "handle_split": {
-        "away_pct": 14,
-        "home_pct": 86
+        "away_pct": 36,
+        "home_pct": 64
       },
       "markets": {
         "moneyline": [
@@ -21,18 +21,18 @@
             "team": "ATL",
             "point": null,
             "price": -205,
-            "bets_pct": 89,
-            "handle_pct": 86,
-            "handle_gap": -3
+            "bets_pct": 84,
+            "handle_pct": 64,
+            "handle_gap": -20
           },
           {
             "side": "PHI",
             "team": "PHI",
             "point": null,
             "price": 168,
-            "bets_pct": 11,
-            "handle_pct": 14,
-            "handle_gap": 3
+            "bets_pct": 16,
+            "handle_pct": 36,
+            "handle_gap": 20
           }
         ],
         "total": [
@@ -41,18 +41,18 @@
             "team": "",
             "point": 6.5,
             "price": -120,
-            "bets_pct": 67,
-            "handle_pct": 66,
-            "handle_gap": -1
+            "bets_pct": 66,
+            "handle_pct": 52,
+            "handle_gap": -14
           },
           {
             "side": "Under",
             "team": "",
             "point": 6.5,
             "price": 100,
-            "bets_pct": 33,
-            "handle_pct": 34,
-            "handle_gap": 1
+            "bets_pct": 34,
+            "handle_pct": 48,
+            "handle_gap": 14
           }
         ],
         "run_line": [
@@ -61,18 +61,18 @@
             "team": "ATL",
             "point": -1.5,
             "price": 112,
-            "bets_pct": 82,
-            "handle_pct": 75,
-            "handle_gap": -7
+            "bets_pct": 78,
+            "handle_pct": 32,
+            "handle_gap": -46
           },
           {
             "side": "PHI",
             "team": "PHI",
             "point": 1.5,
             "price": -135,
-            "bets_pct": 18,
-            "handle_pct": 25,
-            "handle_gap": 7
+            "bets_pct": 22,
+            "handle_pct": 68,
+            "handle_gap": 46
           }
         ]
       }
@@ -84,8 +84,8 @@
       "home_name": "HOU Astros",
       "time_raw": "Tue, Sep 29 \u00b7 5:00 pm EDT",
       "handle_split": {
-        "away_pct": 38,
-        "home_pct": 62
+        "away_pct": 41,
+        "home_pct": 59
       },
       "markets": {
         "moneyline": [
@@ -93,18 +93,18 @@
             "side": "HOU",
             "team": "HOU",
             "point": null,
-            "price": -122,
-            "bets_pct": 62,
-            "handle_pct": 62,
+            "price": -126,
+            "bets_pct": 59,
+            "handle_pct": 59,
             "handle_gap": 0
           },
           {
             "side": "CHW",
             "team": "CHW",
             "point": null,
-            "price": 102,
-            "bets_pct": 38,
-            "handle_pct": 38,
+            "price": 105,
+            "bets_pct": 41,
+            "handle_pct": 41,
             "handle_gap": 0
           }
         ],
@@ -115,8 +115,8 @@
             "point": 8.0,
             "price": -117,
             "bets_pct": 50,
-            "handle_pct": 59,
-            "handle_gap": 9
+            "handle_pct": 56,
+            "handle_gap": 6
           },
           {
             "side": "Under",
@@ -124,8 +124,8 @@
             "point": 8.0,
             "price": -103,
             "bets_pct": 50,
-            "handle_pct": 41,
-            "handle_gap": -9
+            "handle_pct": 44,
+            "handle_gap": -6
           }
         ],
         "run_line": [
@@ -133,19 +133,19 @@
             "side": "HOU",
             "team": "HOU",
             "point": -1.5,
-            "price": 159,
-            "bets_pct": 69,
-            "handle_pct": 93,
-            "handle_gap": 24
+            "price": 163,
+            "bets_pct": 64,
+            "handle_pct": 46,
+            "handle_gap": -18
           },
           {
             "side": "CHW",
             "team": "CHW",
             "point": 1.5,
-            "price": -194,
-            "bets_pct": 31,
-            "handle_pct": 7,
-            "handle_gap": -24
+            "price": -199,
+            "bets_pct": 36,
+            "handle_pct": 54,
+            "handle_gap": 18
           }
         ]
       }
@@ -157,8 +157,8 @@
       "home_name": "NY Yankees",
       "time_raw": "Tue, Sep 29 \u00b7 8:10 pm EDT",
       "handle_split": {
-        "away_pct": 76,
-        "home_pct": 24
+        "away_pct": 75,
+        "home_pct": 25
       },
       "markets": {
         "moneyline": [
@@ -168,8 +168,8 @@
             "point": null,
             "price": -145,
             "bets_pct": 36,
-            "handle_pct": 24,
-            "handle_gap": -12
+            "handle_pct": 25,
+            "handle_gap": -11
           },
           {
             "side": "BOS",
@@ -177,28 +177,28 @@
             "point": null,
             "price": 120,
             "bets_pct": 64,
-            "handle_pct": 76,
-            "handle_gap": 12
+            "handle_pct": 75,
+            "handle_gap": 11
           }
         ],
         "total": [
           {
             "side": "Over",
             "team": "",
-            "point": 6.0,
-            "price": -119,
-            "bets_pct": 52,
-            "handle_pct": 39,
-            "handle_gap": -13
+            "point": 6.5,
+            "price": 100,
+            "bets_pct": 46,
+            "handle_pct": 32,
+            "handle_gap": -14
           },
           {
             "side": "Under",
             "team": "",
-            "point": 6.0,
-            "price": -101,
-            "bets_pct": 48,
-            "handle_pct": 61,
-            "handle_gap": 13
+            "point": 6.5,
+            "price": -120,
+            "bets_pct": 54,
+            "handle_pct": 68,
+            "handle_gap": 14
           }
         ],
         "run_line": [
@@ -207,18 +207,18 @@
             "team": "NYY",
             "point": -1.5,
             "price": 156,
-            "bets_pct": 44,
+            "bets_pct": 42,
             "handle_pct": 16,
-            "handle_gap": -28
+            "handle_gap": -26
           },
           {
             "side": "BOS",
             "team": "BOS",
             "point": 1.5,
             "price": -190,
-            "bets_pct": 56,
+            "bets_pct": 58,
             "handle_pct": 84,
-            "handle_gap": 28
+            "handle_gap": 26
           }
         ]
       }
@@ -230,8 +230,8 @@
       "home_name": "SD Padres",
       "time_raw": "Tue, Sep 29 \u00b7 10:10 pm EDT",
       "handle_split": {
-        "away_pct": 48,
-        "home_pct": 52
+        "away_pct": 47,
+        "home_pct": 53
       },
       "markets": {
         "moneyline": [
@@ -239,19 +239,19 @@
             "side": "SD",
             "team": "SD",
             "point": null,
-            "price": -126,
-            "bets_pct": 48,
-            "handle_pct": 52,
-            "handle_gap": 4
+            "price": -130,
+            "bets_pct": 52,
+            "handle_pct": 53,
+            "handle_gap": 1
           },
           {
             "side": "CHC",
             "team": "CHC",
             "point": null,
-            "price": 105,
-            "bets_pct": 52,
-            "handle_pct": 48,
-            "handle_gap": -4
+            "price": 108,
+            "bets_pct": 48,
+            "handle_pct": 47,
+            "handle_gap": -1
           }
         ],
         "total": [
@@ -259,19 +259,19 @@
             "side": "Over",
             "team": "",
             "point": 7.0,
-            "price": -117,
-            "bets_pct": 80,
+            "price": -119,
+            "bets_pct": 81,
             "handle_pct": 98,
-            "handle_gap": 18
+            "handle_gap": 17
           },
           {
             "side": "Under",
             "team": "",
             "point": 7.0,
-            "price": -103,
-            "bets_pct": 20,
+            "price": -102,
+            "bets_pct": 19,
             "handle_pct": 2,
-            "handle_gap": -18
+            "handle_gap": -17
           }
         ],
         "run_line": [
@@ -280,8 +280,8 @@
             "team": "SD",
             "point": -1.5,
             "price": 168,
-            "bets_pct": 53,
-            "handle_pct": 23,
+            "bets_pct": 55,
+            "handle_pct": 25,
             "handle_gap": -30
           },
           {
@@ -289,8 +289,8 @@
             "team": "CHC",
             "point": 1.5,
             "price": -206,
-            "bets_pct": 47,
-            "handle_pct": 77,
+            "bets_pct": 45,
+            "handle_pct": 75,
             "handle_gap": 30
           }
         ]
