@@ -1,20 +1,10 @@
 {
-  "date": "2026-09-29",
-  "fetched_at": "2026-09-29T15:00:49",
+  "date": "2026-09-30",
+  "fetched_at": "2026-09-30T11:00:26",
   "games": [
     {
       "home_abbr": "ATL",
       "away_abbr": "PHI",
-      "home_score": "2",
-      "away_score": "1",
-      "state": "in",
-      "detail": "In Progress",
-      "is_live": true,
-      "is_final": false
-    },
-    {
-      "home_abbr": "HOU",
-      "away_abbr": "CHW",
       "home_score": "0",
       "away_score": "0",
       "state": "pre",
@@ -23,12 +13,22 @@
       "is_final": false
     },
     {
+      "home_abbr": "HOU",
+      "away_abbr": "CHW",
+      "home_score": "",
+      "away_score": "",
+      "state": "pre",
+      "detail": "Scheduled",
+      "is_live": false,
+      "is_final": false
+    },
+    {
       "home_abbr": "NYY",
       "away_abbr": "BOS",
-      "home_score": "0",
-      "away_score": "0",
+      "home_score": "",
+      "away_score": "",
       "state": "pre",
-      "detail": "Pre-Game",
+      "detail": "Scheduled",
       "is_live": false,
       "is_final": false
     },
