@@ -1,12 +1,12 @@
 {
   "date": "2026-10-07",
-  "fetched_at": "2026-10-07T11:00:22",
+  "fetched_at": "2026-10-07T13:00:19",
   "games": [
     {
       "home_abbr": "CHW",
       "away_abbr": "CLE",
-      "home_score": "",
-      "away_score": "",
+      "home_score": "0",
+      "away_score": "0",
       "state": "pre",
       "detail": "Pre-Game",
       "is_live": false,
