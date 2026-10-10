@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-08",
-  "fetched_at": "2026-10-08T15:00:14",
+  "date": "2026-10-10",
+  "fetched_at": "2026-10-10T11:00:15",
   "games": [
     {
-      "home_abbr": "CHW",
-      "away_abbr": "CLE",
+      "home_abbr": "CLE",
+      "away_abbr": "CHW",
       "home_score": "",
       "away_score": "",
       "state": "pre",
