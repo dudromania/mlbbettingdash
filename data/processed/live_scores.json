@@ -1,6 +1,6 @@
 {
-  "date": "2026-10-11",
-  "fetched_at": "2026-10-11T15:00:17",
+  "date": "2026-10-12",
+  "fetched_at": "2026-10-12T11:00:20",
   "games": [
     {
       "home_abbr": "MIL",
@@ -8,7 +8,17 @@
       "home_score": "",
       "away_score": "",
       "state": "pre",
-      "detail": "Pre-Game",
+      "detail": "Scheduled",
+      "is_live": false,
+      "is_final": false
+    },
+    {
+      "home_abbr": "TB",
+      "away_abbr": "CLE",
+      "home_score": "",
+      "away_score": "",
+      "state": "pre",
+      "detail": "Scheduled",
       "is_live": false,
       "is_final": false
     }
