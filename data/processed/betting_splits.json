@@ -1,38 +1,38 @@
 {
-  "generated_at": "2026-10-12T08:00:24-05:00",
-  "updated_at": "2026-10-12T08:00:24-05:00",
+  "generated_at": "2026-10-13T08:00:23-05:00",
+  "updated_at": "2026-10-13T08:00:23-05:00",
   "source": "https://cleatz.com/public-betting/mlb/",
   "game_count": 2,
   "games": {
-    "LAD@MIL": {
-      "away_abbr": "LAD",
-      "home_abbr": "MIL",
-      "away_name": "LA Dodgers",
-      "home_name": "MIL Brewers",
-      "time_raw": "Mon, Oct 12 \u00b7 5:00 pm EDT",
+    "CLE@TB": {
+      "away_abbr": "CLE",
+      "home_abbr": "TB",
+      "away_name": "CLE Guardians",
+      "home_name": "TB Rays",
+      "time_raw": "Tue, Oct 13 \u00b7 8:00 pm EDT",
       "handle_split": {
-        "away_pct": 96,
-        "home_pct": 4
+        "away_pct": 36,
+        "home_pct": 64
       },
       "markets": {
         "moneyline": [
           {
-            "side": "MIL",
-            "team": "MIL",
+            "side": "TB",
+            "team": "TB",
             "point": null,
-            "price": 113,
-            "bets_pct": 13,
-            "handle_pct": 4,
-            "handle_gap": -9
+            "price": -143,
+            "bets_pct": 56,
+            "handle_pct": 64,
+            "handle_gap": 8
           },
           {
-            "side": "LAD",
-            "team": "LAD",
+            "side": "CLE",
+            "team": "CLE",
             "point": null,
-            "price": -136,
-            "bets_pct": 88,
-            "handle_pct": 96,
-            "handle_gap": 8
+            "price": 119,
+            "bets_pct": 44,
+            "handle_pct": 36,
+            "handle_gap": -8
           }
         ],
         "total": [
@@ -40,7 +40,80 @@
             "side": "Over",
             "team": "",
             "point": 7.0,
-            "price": 101,
+            "price": 102,
+            "bets_pct": 50,
+            "handle_pct": 1,
+            "handle_gap": -49
+          },
+          {
+            "side": "Under",
+            "team": "",
+            "point": 7.0,
+            "price": -122,
+            "bets_pct": 50,
+            "handle_pct": 99,
+            "handle_gap": 49
+          }
+        ],
+        "run_line": [
+          {
+            "side": "TB",
+            "team": "TB",
+            "point": -1.5,
+            "price": 159,
+            "bets_pct": 33,
+            "handle_pct": 7,
+            "handle_gap": -26
+          },
+          {
+            "side": "CLE",
+            "team": "CLE",
+            "point": 1.5,
+            "price": -194,
+            "bets_pct": 67,
+            "handle_pct": 93,
+            "handle_gap": 26
+          }
+        ]
+      }
+    },
+    "MIL@LAD": {
+      "away_abbr": "MIL",
+      "home_abbr": "LAD",
+      "away_name": "MIL Brewers",
+      "home_name": "LA Dodgers",
+      "time_raw": "Wed, Oct 14 \u00b7 8:00 pm EDT",
+      "handle_split": {
+        "away_pct": 24,
+        "home_pct": 76
+      },
+      "markets": {
+        "moneyline": [
+          {
+            "side": "LAD",
+            "team": "LAD",
+            "point": null,
+            "price": -179,
+            "bets_pct": 58,
+            "handle_pct": 76,
+            "handle_gap": 18
+          },
+          {
+            "side": "MIL",
+            "team": "MIL",
+            "point": null,
+            "price": 148,
+            "bets_pct": 42,
+            "handle_pct": 24,
+            "handle_gap": -18
+          }
+        ],
+        "total": [
+          {
+            "side": "Over",
+            "team": "",
+            "point": 7.5,
+            "price": -108,
             "bets_pct": 0,
             "handle_pct": 0,
             "handle_gap": 0
@@ -48,8 +121,8 @@
           {
             "side": "Under",
             "team": "",
-            "point": 7.0,
-            "price": -122,
+            "point": 7.5,
+            "price": -112,
             "bets_pct": 100,
             "handle_pct": 100,
             "handle_gap": 0
@@ -57,95 +130,22 @@
         ],
         "run_line": [
           {
-            "side": "MIL",
-            "team": "MIL",
-            "point": 1.5,
-            "price": -162,
-            "bets_pct": 33,
-            "handle_pct": 69,
-            "handle_gap": 36
-          },
-          {
             "side": "LAD",
             "team": "LAD",
             "point": -1.5,
-            "price": 134,
-            "bets_pct": 67,
-            "handle_pct": 31,
-            "handle_gap": -36
-          }
-        ]
-      }
-    },
-    "CLE@TB": {
-      "away_abbr": "CLE",
-      "home_abbr": "TB",
-      "away_name": "CLE Guardians",
-      "home_name": "TB Rays",
-      "time_raw": "Mon, Oct 12 \u00b7 8:00 pm EDT",
-      "handle_split": {
-        "away_pct": 63,
-        "home_pct": 37
-      },
-      "markets": {
-        "moneyline": [
-          {
-            "side": "TB",
-            "team": "TB",
-            "point": null,
-            "price": -172,
-            "bets_pct": 93,
-            "handle_pct": 37,
-            "handle_gap": -56
+            "price": 129,
+            "bets_pct": 83,
+            "handle_pct": 96,
+            "handle_gap": 13
           },
           {
-            "side": "CLE",
-            "team": "CLE",
-            "point": null,
-            "price": 142,
-            "bets_pct": 7,
-            "handle_pct": 63,
-            "handle_gap": 56
-          }
-        ],
-        "total": [
-          {
-            "side": "Over",
-            "team": "",
-            "point": 6.5,
-            "price": -120,
-            "bets_pct": 67,
-            "handle_pct": 57,
-            "handle_gap": -10
-          },
-          {
-            "side": "Under",
-            "team": "",
-            "point": 6.5,
-            "price": 100,
-            "bets_pct": 33,
-            "handle_pct": 43,
-            "handle_gap": 10
-          }
-        ],
-        "run_line": [
-          {
-            "side": "TB",
-            "team": "TB",
-            "point": -1.5,
-            "price": 130,
-            "bets_pct": 95,
-            "handle_pct": 100,
-            "handle_gap": 5
-          },
-          {
-            "side": "CLE",
-            "team": "CLE",
+            "side": "MIL",
+            "team": "MIL",
             "point": 1.5,
-            "price": -157,
-            "bets_pct": 5,
-            "handle_pct": 0,
-            "handle_gap": -5
+            "price": -156,
+            "bets_pct": 17,
+            "handle_pct": 4,
+            "handle_gap": -13
           }
         ]
       }
