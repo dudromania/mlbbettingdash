@@ -1,18 +1,18 @@
 {
-  "generated_at": "2026-10-16T08:00:20-05:00",
-  "updated_at": "2026-10-16T08:00:20-05:00",
+  "generated_at": "2026-10-17T08:00:21-05:00",
+  "updated_at": "2026-10-17T08:00:21-05:00",
   "source": "https://cleatz.com/public-betting/mlb/",
-  "game_count": 2,
+  "game_count": 1,
   "games": {
     "TB@CLE": {
       "away_abbr": "TB",
       "home_abbr": "CLE",
       "away_name": "TB Rays",
       "home_name": "CLE Guardians",
-      "time_raw": "Fri, Oct 16 \u00b7 6:00 pm EDT",
+      "time_raw": "Sat, Oct 17 \u00b7 8:00 pm EDT",
       "handle_split": {
-        "away_pct": 99,
-        "home_pct": 1
+        "away_pct": 85,
+        "home_pct": 15
       },
       "markets": {
         "moneyline": [
@@ -20,136 +20,62 @@
             "side": "CLE",
             "team": "CLE",
             "point": null,
-            "price": -110,
-            "bets_pct": 39,
-            "handle_pct": 1,
-            "handle_gap": -38
-          },
-          {
-            "side": "TB",
-            "team": "TB",
-            "point": null,
-            "price": -110,
-            "bets_pct": 61,
-            "handle_pct": 99,
-            "handle_gap": 38
-          }
-        ],
-        "total": [
-          {
-            "side": "Over",
-            "team": "",
-            "point": 6.5,
-            "price": -110,
-            "bets_pct": 0,
-            "handle_pct": 0,
-            "handle_gap": 0
-          },
-          {
-            "side": "Under",
-            "team": "",
-            "point": 6.5,
-            "price": -110,
-            "bets_pct": 100,
-            "handle_pct": 100,
-            "handle_gap": 0
-          }
-        ],
-        "run_line": [
-          {
-            "side": "CLE",
-            "team": "CLE",
-            "point": 1.5,
-            "price": -198,
-            "bets_pct": 14,
-            "handle_pct": 2,
-            "handle_gap": -12
-          },
-          {
-            "side": "TB",
-            "team": "TB",
-            "point": -1.5,
-            "price": 163,
-            "bets_pct": 86,
-            "handle_pct": 98,
-            "handle_gap": 12
-          }
-        ]
-      }
-    },
-    "TB@CLE-2": {
-      "away_abbr": "TB",
-      "home_abbr": "CLE",
-      "away_name": "TB Rays",
-      "home_name": "CLE Guardians",
-      "time_raw": "Fri, Oct 16 \u00b7 8:00 pm EDT",
-      "handle_split": {
-        "away_pct": 97,
-        "home_pct": 3
-      },
-      "markets": {
-        "moneyline": [
-          {
-            "side": "CLE",
-            "team": "CLE",
-            "point": null,
-            "price": -108,
-            "bets_pct": 33,
-            "handle_pct": 3,
-            "handle_gap": -30
-          },
-          {
-            "side": "TB",
-            "team": "TB",
-            "point": null,
-            "price": -112,
-            "bets_pct": 67,
-            "handle_pct": 97,
-            "handle_gap": 30
-          }
-        ],
-        "total": [
-          {
-            "side": "Over",
-            "team": "",
-            "point": 6.5,
-            "price": -110,
-            "bets_pct": 50,
-            "handle_pct": 70,
-            "handle_gap": 20
-          },
-          {
-            "side": "Under",
-            "team": "",
-            "point": 6.5,
-            "price": -110,
-            "bets_pct": 50,
-            "handle_pct": 30,
-            "handle_gap": -20
-          }
-        ],
-        "run_line": [
-          {
-            "side": "CLE",
-            "team": "CLE",
-            "point": 1.5,
-            "price": -199,
-            "bets_pct": 13,
-            "handle_pct": 2,
+            "price": -104,
+            "bets_pct": 26,
+            "handle_pct": 15,
             "handle_gap": -11
           },
           {
             "side": "TB",
             "team": "TB",
-            "point": -1.5,
-            "price": 163,
-            "bets_pct": 88,
-            "handle_pct": 98,
+            "point": null,
+            "price": -116,
+            "bets_pct": 74,
+            "handle_pct": 85,
+            "handle_gap": 11
+          }
+        ],
+        "total": [
+          {
+            "side": "Over",
+            "team": "",
+            "point": 6.5,
+            "price": -108,
+            "bets_pct": 71,
+            "handle_pct": 61,
+            "handle_gap": -10
+          },
+          {
+            "side": "Under",
+            "team": "",
+            "point": 6.5,
+            "price": -112,
+            "bets_pct": 29,
+            "handle_pct": 39,
             "handle_gap": 10
           }
+        ],
+        "run_line": [
+          {
+            "side": "CLE",
+            "team": "CLE",
+            "point": 1.5,
+            "price": -187,
+            "bets_pct": 27,
+            "handle_pct": 26,
+            "handle_gap": -1
+          },
+          {
+            "side": "TB",
+            "team": "TB",
+            "point": -1.5,
+            "price": 153,
+            "bets_pct": 73,
+            "handle_pct": 74,
+            "handle_gap": 1
+          }
         ]
-      },
-      "doubleheader_extra": true
+      }
     }
   }
 }
