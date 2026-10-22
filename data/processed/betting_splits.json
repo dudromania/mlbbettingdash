@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-20T18:00:03-05:00",
-  "updated_at": "2026-10-20T18:00:03-05:00",
+  "generated_at": "2026-10-21T18:00:04-05:00",
+  "updated_at": "2026-10-21T18:00:04-05:00",
   "source": "https://cleatz.com/public-betting/mlb/",
   "game_count": 1,
   "games": {
@@ -11,8 +11,8 @@
       "home_name": "MIL Brewers",
       "time_raw": "Fri, Oct 23 · 8:00 pm EDT",
       "handle_split": {
-        "away_pct": 73,
-        "home_pct": 27
+        "away_pct": 46,
+        "home_pct": 54
       },
       "markets": {
         "moneyline": [
@@ -20,18 +20,18 @@
             "side": "MIL",
             "team": "MIL",
             "point": null,
-            "price": -162,
-            "bets_pct": 36,
-            "handle_pct": 27,
+            "price": -161,
+            "bets_pct": 63,
+            "handle_pct": 54,
             "handle_gap": -9
           },
           {
             "side": "TB",
             "team": "TB",
             "point": null,
-            "price": 134,
-            "bets_pct": 64,
-            "handle_pct": 73,
+            "price": 133,
+            "bets_pct": 37,
+            "handle_pct": 46,
             "handle_gap": 9
           }
         ],
@@ -41,18 +41,18 @@
             "team": "",
             "point": 6.0,
             "price": -110,
-            "bets_pct": 100,
-            "handle_pct": 100,
-            "handle_gap": 0
+            "bets_pct": 93,
+            "handle_pct": 78,
+            "handle_gap": -15
           },
           {
             "side": "Under",
             "team": "",
             "point": 6.0,
             "price": -110,
-            "bets_pct": 0,
-            "handle_pct": 0,
-            "handle_gap": 0
+            "bets_pct": 7,
+            "handle_pct": 22,
+            "handle_gap": 15
           }
         ],
         "run_line": [
@@ -60,19 +60,19 @@
             "side": "MIL",
             "team": "MIL",
             "point": -1.5,
-            "price": 154,
-            "bets_pct": 67,
-            "handle_pct": 31,
-            "handle_gap": -36
+            "price": 152,
+            "bets_pct": 85,
+            "handle_pct": 89,
+            "handle_gap": 4
           },
           {
             "side": "TB",
             "team": "TB",
             "point": 1.5,
-            "price": -188,
-            "bets_pct": 33,
-            "handle_pct": 69,
-            "handle_gap": 36
+            "price": -185,
+            "bets_pct": 15,
+            "handle_pct": 11,
+            "handle_gap": -4
           }
         ]
       }
