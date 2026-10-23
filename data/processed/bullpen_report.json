@@ -1,20 +1,5 @@
 [
   {
-    "team": "CLE",
-    "era": 3.77,
-    "whip": 1.26,
-    "k9": 9.58,
-    "bb9": 3.32,
-    "era_vs_lg": -0.33,
-    "whip_vs_lg": -0.02,
-    "k9_vs_lg": 0.98,
-    "quality": "GOOD",
-    "innings_3d": 0.0,
-    "pitchers_3d": 0,
-    "heavy": 0,
-    "fatigue": "FRESH"
-  },
-  {
     "team": "TB",
     "era": 3.7,
     "whip": 1.14,
@@ -23,6 +8,21 @@
     "era_vs_lg": -0.4,
     "whip_vs_lg": -0.14,
     "k9_vs_lg": -0.35,
+    "quality": "GOOD",
+    "innings_3d": 0.0,
+    "pitchers_3d": 0,
+    "heavy": 0,
+    "fatigue": "FRESH"
+  },
+  {
+    "team": "MIL",
+    "era": 3.51,
+    "whip": 1.18,
+    "k9": 9.61,
+    "bb9": 3.22,
+    "era_vs_lg": -0.59,
+    "whip_vs_lg": -0.1,
+    "k9_vs_lg": 1.01,
     "quality": "GOOD",
     "innings_3d": 0.0,
     "pitchers_3d": 0,
