@@ -22,7 +22,7 @@
       "edge_score": 8,
       "cover_prob": 0.796,
       "over_prob": 0.704,
-      "edge_spread": 0.341,
+      "edge_spread": 0.361,
       "edge_total": 0.18,
       "edge_ml": 0.231,
       "spread_edge_label": "STRONG",
