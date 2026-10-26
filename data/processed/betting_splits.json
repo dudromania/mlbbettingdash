@@ -1,78 +1,78 @@
 {
-  "generated_at": "2026-10-23T18:00:06-05:00",
-  "updated_at": "2026-10-23T18:00:06-05:00",
+  "generated_at": "2026-10-26T08:00:27-05:00",
+  "updated_at": "2026-10-26T08:00:27-05:00",
   "source": "https://cleatz.com/public-betting/mlb/",
   "game_count": 1,
   "games": {
-    "TB@MIL": {
-      "away_abbr": "TB",
-      "home_abbr": "MIL",
-      "away_name": "TB Rays",
-      "home_name": "MIL Brewers",
-      "time_raw": "Fri, Oct 23 \u00b7 8:00 pm EDT",
+    "MIL@TB": {
+      "away_abbr": "MIL",
+      "home_abbr": "TB",
+      "away_name": "MIL Brewers",
+      "home_name": "TB Rays",
+      "time_raw": "Mon, Oct 26 \u00b7 8:00 pm EDT",
       "handle_split": {
-        "away_pct": 57,
-        "home_pct": 43
+        "away_pct": 90,
+        "home_pct": 10
       },
       "markets": {
         "moneyline": [
           {
-            "side": "MIL",
-            "team": "MIL",
-            "point": null,
-            "price": -194,
-            "bets_pct": 71,
-            "handle_pct": 43,
-            "handle_gap": -28
-          },
-          {
             "side": "TB",
             "team": "TB",
             "point": null,
-            "price": 159,
-            "bets_pct": 29,
-            "handle_pct": 57,
-            "handle_gap": 28
+            "price": -120,
+            "bets_pct": 58,
+            "handle_pct": 10,
+            "handle_gap": -48
+          },
+          {
+            "side": "MIL",
+            "team": "MIL",
+            "point": null,
+            "price": -101,
+            "bets_pct": 42,
+            "handle_pct": 90,
+            "handle_gap": 48
           }
         ],
         "total": [
           {
             "side": "Over",
             "team": "",
-            "point": 6.5,
-            "price": -115,
-            "bets_pct": 76,
-            "handle_pct": 58,
-            "handle_gap": -18
+            "point": 7.0,
+            "price": -113,
+            "bets_pct": 80,
+            "handle_pct": 96,
+            "handle_gap": 16
           },
           {
             "side": "Under",
             "team": "",
-            "point": 6.5,
-            "price": -105,
-            "bets_pct": 24,
-            "handle_pct": 42,
-            "handle_gap": 18
+            "point": 7.0,
+            "price": -107,
+            "bets_pct": 20,
+            "handle_pct": 4,
+            "handle_gap": -16
           }
         ],
         "run_line": [
           {
-            "side": "MIL",
-            "team": "MIL",
-            "point": -1.5,
-            "price": 123,
-            "bets_pct": 75,
-            "handle_pct": 18,
-            "handle_gap": -57
-          },
-          {
             "side": "TB",
             "team": "TB",
             "point": 1.5,
-            "price": -149,
-            "bets_pct": 25,
-            "handle_pct": 82,
-            "handle_gap": 57
+            "price": -212,
+            "bets_pct": 61,
+            "handle_pct": 1,
+            "handle_gap": -60
+          },
+          {
+            "side": "MIL",
+            "team": "MIL",
+            "point": -1.5,
+            "price": 173,
+            "bets_pct": 39,
+            "handle_pct": 99,
+            "handle_gap": 60
           }
         ]
       }
