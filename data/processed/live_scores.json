@@ -1,10 +1,10 @@
 {
-  "date": "2026-10-23",
-  "fetched_at": "2026-10-23T15:00:12",
+  "date": "2026-10-26",
+  "fetched_at": "2026-10-26T11:00:26",
   "games": [
     {
-      "home_abbr": "MIL",
-      "away_abbr": "TB",
+      "home_abbr": "TB",
+      "away_abbr": "MIL",
       "home_score": "",
       "away_score": "",
       "state": "pre",
