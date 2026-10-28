@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-27T08:00:22-05:00",
-  "updated_at": "2026-10-27T08:00:22-05:00",
+  "generated_at": "2026-10-28T08:00:23-05:00",
+  "updated_at": "2026-10-28T08:00:23-05:00",
   "source": "https://cleatz.com/public-betting/mlb/",
   "game_count": 0,
   "games": {},
-  "error": "ValueError: no div.ccsp-game found - page markup changed?"
+  "error": "ValueError: 1 game blocks found but none parsed"
 }
